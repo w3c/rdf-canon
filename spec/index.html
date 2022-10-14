@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="content-type" />
 <meta content="width=device-width,initial-scale=1" name="viewport" />
@@ -9,71 +9,110 @@
 <script class="remove">
 //<![CDATA[
   var respecConfig = {
-      doJsonLd: true,
-      // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
-      specStatus:           "CG-DRAFT",
-      //publishDate:          "2010-04-29",
-      copyrightStart:       "2010",
-
-      // the specification's short name, as in http://www.w3.org/TR/short-name/
-      shortName:            "rdf-dataset-canonicalization",
-      subtitle:             "A Standard RDF Dataset Canonicalization Algorithm",
-      // if you wish the publication date to be other than today, set this
-      // publishDate:  "2009-08-06",
-
-      // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
-      // and its maturity status
-      //previousPublishDate:  "2011-08-17",
-      //previousMaturity:     "ED",
-      //previousDiffURI:      "https://json-ld.org/spec/ED/20110817/index.html",
-      //diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
-
-      // if there a publicly available Editor's Draft, this is the link
-      edDraftURI:           "https://json-ld.github.io/rdf-dataset-canonicalization/spec/",
-
-      github: {
-        repoURL: "https://github.com/json-ld/rdf-dataset-canonicalization/",
-          branch: "main"
+    localBiblio: {
+      "CCG-RDC-FINAL": {
+        id: "CCG-RDC-FINAL",
+        title: "RDF Dataset Canonicalization",
+        authors: ["Dave Longley"],
+        editors: [
+          "Dave Longley",
+          "Manu Sporny"
+        ],
+        date: "2022-10-09",
+        href: "https://www.w3.org/community/reports/credentials/CG-FINAL-rdf-dataset-canonicalization-20221009/",
+        status: "CG-FINAL",
+        publisher: "W3C"
       },
+      "DesignIssues-Diff": {
+        id: "DesignIssues-Diff",
+        title: "Delta: an ontology for the distribution of differences between RDF graphs",
+        authors: ["Tim Berners-Leee"],
+        date: "2015-09-25",
+        href: "https://www.w3.org/DesignIssues/Diff",
+        status: "unofficial",
+        publisher: "W3C"
+      },
+      "eswc2014Kasten": {
+        id: "eswc2014Kasten",
+        title: "A Framework for Iterative Signing of Graph Data on the Web",
+        authors: ["Andreas Kasten", "Ansgar Scherp", "Peter Schauß "],
+        date: "2014",
+        href: "https://doi.org/10.1007/978-3-319-07443-6_11",
+        status: "unofficial",
+        publisher: "ISWC 2014"
+      },
+      "Hogan-Canonical-RDF": {
+        id: "Hogan-Canonical-RDF",
+        title: "Canonical Forms for Isomorphic and Equivalent RDF Graphs: Algorithms for Leaning and Labelling Blank Nodes",
+        authors: ["Aiden Hogan"],
+        date: "2017-07-17",
+        href: "https://aidanhogan.com/docs/rdf-canonicalisation.pdf",
+        status: "unofficial",
+        publisher: "ACM Transactions on the Web"
+      },
+      "HPL-2003-142": {
+        id: "HPL-2003-142",
+        title: "Signing RDF Graphs",
+        authors: ["Jeremy J. Carroll"],
+        date: "2003-07-23",
+        href: "https://www.hpl.hp.com/techreports/2003/HPL-2003-142.pdf",
+        publisher: "HP Laboratories Bristol",
+        status: "unofficial"
+      }
+    },
+    doJsonLd: true,
+    specStatus:           "ED",
+    //publishDate:          "2010-04-29",
+    copyrightStart:       "2010",
 
-      // if this is a LCWD, uncomment and set the end of its review period
-      // lcEnd: "2009-08-05",
+    // the specification's short name, as in http://www.w3.org/TR/short-name/
+    shortName:            "rdf-dataset-canonicalization",
+    subtitle:             "A Standard RDF Dataset Canonicalization Algorithm",
+    // if you wish the publication date to be other than today, set this
+    // publishDate:  "2009-08-06",
 
-      // if you want to have extra CSS, append them to this list
-      // it is recommended that the respec.css stylesheet be kept
-      // extraCSS: [],
+    // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
+    // and its maturity status
+    //previousPublishDate:  "2022-10-09",
+    //previousMaturity:     "CG-FINAL",
+    //previousDiffURI:      "",
 
-      // editors, add as many as you like
-      // only "name" is required
-      editors:  [
-          { name: "Dave Longley", url: "https://digitalbazaar.com/",
-            company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"},
-          { name: "Manu Sporny", url: "http://manu.sporny.org/",
-            company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/" }
-      ],
+    github: "https://github.com/w3c/rch-rdc/",
 
-      // authors, add as many as you like.
-      // This is optional, uncomment if you have authors as well as editors.
-      // only "name" is required. Same format as editors.
-      authors:  [
-          { name: "Dave Longley", url: "https://digitalbazaar.com/",
-            company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"}
-      ],
+    // if this is a LCWD, uncomment and set the end of its review period
+    // lcEnd: "2009-08-05",
 
-      // name of the 
-      group: "credentials",
+    // if you want to have extra CSS, append them to this list
+    // it is recommended that the respec.css stylesheet be kept
+    // extraCSS: [],
 
-      // URI of the public WG page
-      wgURI: "https://www.w3.org/community/credentials/",
+    // editors, add as many as you like
+    // only "name" is required
+    editors:  [
+        { name: "Dave Longley", url: "https://digitalbazaar.com/",
+          company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"},
+        { name: "Manu Sporny", url: "http://manu.sporny.org/",
+          company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/" }
+    ],
 
-      // name (with the @w3c.org) of the public mailing to which comments are due
-      wgPublicList: "public-credentials-wg@w3.org",
-      wgPatentURI:  "https://www.w3.org/Consortium/Patent-Policy-20200915/",
-      maxTocLevel: 2
+    // authors, add as many as you like.
+    // This is optional, uncomment if you have authors as well as editors.
+    // only "name" is required. Same format as editors.
+    authors:  [
+        { name: "Dave Longley", url: "https://digitalbazaar.com/",
+          company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"}
+    ],
+
+    // name of the 
+    group: "rch",
+    xref: ["rdf11-concepts", "rdf11-mt"],
+
+    // name (with the @w3c.org) of the public mailing to which comments are due
+    wgPublicList: "public-rch-wg@w3.org"
   };
 //]]>
 </script>
-<style type="text/css">
+<style>
   .highlight { font-weight: bold; color: #0a3; }
   .comment { color: #999; }
   table, thead, tr, td { padding: 5px; border-width: 1px; border-spacing: 0px; border-style: solid; border-collapse: collapse; }
@@ -105,14 +144,12 @@
 </section>
 
 <section id="sotd">
-  <p>This document is a work in progress.</p>
-  <!-- <p>This document has been reviewed by W3C Members, by software
-    developers, and by other W3C groups and interested parties, and is
-    endorsed by the Director as a W3C Recommendation. It is a stable
-    document and may be used as reference material or cited from another
-    document. W3C's role in making the Recommendation is to draw attention
-    to the specification and to promote its widespread deployment. This
-    enhances the functionality and interoperability of the Web.</p> -->
+  <p>
+    A previous version
+    of this specification was published by the
+    <a href="https://www.w3.org/community/credentials/">W3C Credentials Community Group</a>
+    as [[CCG-RDC-FINAL]].
+  </p>
 </section>
 
 <section>
@@ -152,7 +189,6 @@
     <strong>Universal RDF Dataset Canonicalization Algorithm 2015</strong> or
     <a>URDNA2015</a>.</p>
 
-  <div class="issue" data-number="2"></div>
   <section>
     <h2>Uses of Dataset Canonicalization</h2>
     <p>There are different use cases where graph or dataset canonicalization are important:</p>
@@ -171,8 +207,20 @@
     <p>Further more, RDF semantics dictate that deserializing the same RDF document results in the creation of unique <a>blank nodes</a>, unless it can be determined that on each occasion, the <a>blank node identifiers</a> the same resource; this is due to the fact that <a>blank node identifiers</a> are an aspect of a concrete RDF syntax and are not intended to be persistent or portable. Within the abstract RDF model, blank nodes do not have identifiers (although some <a data-cite="RDF11-CONCEPTS#dfn-rdf-store">RDF store</a> implementations may use stable identifiers and choose to make them portable). See <cite><a data-cite="RDF11-CONCEPTS#section-blank-nodes">Blank Nodes</a></cite> in [[!RDF-CONCEPTS]] for more information.</p>
     <p>RDF does have a provision for allowing blank nodes to be published in an externally identifiable way through the use of <a data-cite="RDF11-CONCEPTS#dfn-skolem-iri">Skolem IRIs</a>, which allows a given RDF store to replace the use of blank nodes in a concrete syntax with IRIs, which serve to repeatably identify that blank node within that particular RDF store, however, this is not generally useful for talking about the same graph in different RDF stores, or other concrete representations. In any case, a stable <a>blank node identifier</a> defined for one RDF store, serialization is arbitrary, and typically not relatable to the context within which it is used.</p>
     <p>This specification defines an algorithm for creating stable <a>blank node identifiers</a> repeatably for different serializations possibly using individualized <a>blank node identifiers</a> of the same RDF graph (dataset) by grounding each <a>blank node</a> through the nodes to which it is connected, essentially creating <em>Skolem <a>blank node identifiers</a></em>. As a result, a graph signature can be obtained by hashing a canonical serialization of the resulting <a>normalized dataset</a>, allowing for the isomorphism and digital signing use cases. As blank node identifiers can be stable even with other changes to a graph (dataset), in some cases it is possible to compute the difference between two graphs (datasets), for example if changes are made only to ground triples, or if new blank nodes are introduced which do not create an automorphic confusion with other existing blank nodes. If any information which would change the generated blank node identifier, a resulting diff might indicate a greater set of changes than actually exists.</p>
-    <p class="ednote">TimBL has a <a href="http://www.w3.org/DesignIssues/Diff">design note</a> on problems with Diff which should be referenced.</p>
-    <p class="ednote">Jerremy Carroll has a <a href="http://www.hpl.hp.com/techreports/2003/HPL-2003-142.pdf">paper</a> on signing RDF graphs.</p>
+
+    <div class="ednote">
+      <p>Add descriptions for relevant historical discussions and prior art:</p>
+      <dl>
+        <dt>[[DesignIssues-Diff]]</dt>
+        <dd>TimBL's design note on problems with Diff.</dd>
+        <dt>[[eswc2014Kasten]]</dt>
+        <dd>A Framework for Iterative Signing of Graph Data on the Web.</dd>
+        <dt>[[Hogan-Canonical-RDF]]</dt>
+        <dd>Aiden Hogan's paper on canonicalizing RDF</dd>
+        <dt>[[HPL-2003-142]]</dt>
+        <dd>Jeremy J. Carroll's paper on signing RDF graphs.</dd>
+      </dl>
+    </div>
   </section>
 
   <section>
@@ -193,31 +241,6 @@
       <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a> and
       <a href="https://en.wikipedia.org/wiki/Graph_isomorphism">graph isomorphism</a>
       is also recommended.</p>
-  </section>
-
-  <section>
-    <h2>Contributing</h2>
-
-    <p>There are a number of ways that one may participate in the development
-      of this specification:</p>
-
-    <ul>
-      <li>Technical discussion typically occurs on the public mailing list:
-        <a href="http://lists.w3.org/Archives/Public/public-credentials/">public-credentials@w3.org</a></li>
-
-      <li><a href="https://opencreds.org/minutes/">Public teleconferences</a> are
-        held on Tuesdays at 1600UTC every week of each month.</li>
-
-      <li>Specification bugs and issues should be reported in the
-        <a href="https://github.com/json-ld/rdf-dataset-canonicalization/issues">issue tracker</a>.</li>
-
-      <li><a href="https://github.com/json-ld/rdf-dataset-canonicalization/tree/main/spec">Source code</a> for the
-        specification can be found on GitHub.</li>
-
-      <li>The <a href="https://webchat.freenode.net/?channels=#credentials">#credentials</a>
-        IRC channel is available for real-time discussion on
-        <a href="irc.freenode.net">irc.freenode.net.</a></li>
-    </ul>
   </section>
 </section>
 
@@ -297,7 +320,7 @@
   <p>In time, there may be more than one canonicalization algorithm and,
     therefore, for identification purposes, this algorithm is named the
     "Universal RDF Dataset Canonicalization Algorithm 2015"
-    (<abbr title="Universal RDF Dataset Canonicalization Algorithm 2015"><dfn>URDNA2015</dfn></abbr>).</p>
+    (<abbr title="Universal RDF Dataset Canonicalization Algorithm 2015"><dfn class="export">URDNA2015</dfn></abbr>).</p>
 
   <p class="ednote">This statement is overly prescriptive and does not include normative language.
     This spec should describe the theoretical basis for graph canonicalization and describe
@@ -850,7 +873,7 @@
   <p>A previous version of this algorithm has light deployment. For purposes of identification,
     the algorithm is called the
     "Universal RDF Graph Canonicalization Algorithm 2012"
-    (<abbr title="Universal RDF Graph Canonicalization Algorithm 2012"><dfn>URGNA2012</dfn></abbr>),
+    (<abbr title="Universal RDF Graph Canonicalization Algorithm 2012"><dfn class="export">URGNA2012</dfn></abbr>),
     and differs from the stated algorithm in the following ways:</p>
   <ul>
     <li>In <a href="#hash-first-degree-quads" class="sectionRef"></a>, if any blank node was used in the <a>graph name</a>
