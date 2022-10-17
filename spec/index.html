@@ -109,7 +109,7 @@
   </p>
 </section>
 
-<section>
+<section id="introduction">
   <h2>Introduction</h2>
 
   <p>When data scientists discuss canonicalization, they do so in the context of
@@ -146,7 +146,7 @@
     <strong>Universal RDF Dataset Canonicalization Algorithm 2015</strong> or
     <a>URDNA2015</a>.</p>
 
-  <section>
+  <section id="intro-uses">
     <h2>Uses of Dataset Canonicalization</h2>
     <p>There are different use cases where graph or dataset canonicalization are important:</p>
     <ul>
@@ -180,7 +180,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="how-to-read">
     <h2>How to Read this Document</h2>
 
     <p>This document is a detailed specification for an <a>RDF dataset</a>
@@ -200,7 +200,7 @@
       is also recommended.</p>
   </section>
 
-  <section class="informative">
+  <section id="typo-conventions" class="informative">
     <h2>Typographical conventions</h2>
     <div data-include="common/typographical-conventions.html"></div>
   </section>
@@ -208,63 +208,59 @@
 
 <section id="conformance"></section>
 
-<section class="normative">
+<section id="terminology" class="normative">
   <h2>Terminology</h2>
 
-  <section class="normative">
-    <h2>General Terminology</h2>
-
-    <dl>
-      <dt><dfn>string</dfn></dt><dd>
-        A string is a sequence of zero or more Unicode characters.</dd>
-      <dt><code>true</code> and <code>false</code></dt><dd>
-        Values that are used to express one of two possible boolean states.</dd>
-      <dt><dfn data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
-      <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
-        defined in [[RFC3987]].</dd>
-      <dt><dfn data-lt="subject|subjects">subject</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-subject">subject</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="predicate|predicates">predicate</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-predicate">predicate</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="object|objects">object</dfn></dt>
-      <dd>An <a data-cite="RDF11-CONCEPTS#dfn-object">object</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-triple">triple</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
-      <dd>An <a data-cite="RDF11-CONCEPTS#dfn-rdf-graph">RDF graph</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="graph name|graph names">graph name</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-graph-name">graph name</a>
-        as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="quad|quads">quad</dfn></dt>
-      <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
-        This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
-      <dt><dfn data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-rdf-dataset">dataset</a>
-        as specified by [[!RDF11-CONCEPTS]].
-        For the purposes of this specification, an <a>RDF dataset</a>
-        is considered to be a set of <a>quads</a></dd>
-      <dt><dfn data-lt="blank node|blank nodes">blank node</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</a>
-        as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
-        neither an <a>IRI</a>, nor a
-        <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>.</dd>
-      <dt><dfn data-lt="blank node identifier|blank node identifiers">blank node identifier</dfn></dt>
-      <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</a>
-        as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
-        with <code>_:</code> that is used as an identifier for an
-        <a>blank node</a>. <a>Blank node identifiers</a>
-        are typically implementation-specific local identifiers; this document
-        specifies an algorithm for deterministically specifying them.</dd>
-    </dl>
-  </section>
+  <dl>
+    <dt><dfn>string</dfn></dt><dd>
+      A string is a sequence of zero or more Unicode characters.</dd>
+    <dt><code>true</code> and <code>false</code></dt><dd>
+      Values that are used to express one of two possible boolean states.</dd>
+    <dt><dfn data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
+    <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
+      defined in [[RFC3987]].</dd>
+    <dt><dfn data-lt="subject|subjects">subject</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-subject">subject</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="predicate|predicates">predicate</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-predicate">predicate</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="object|objects">object</dfn></dt>
+    <dd>An <a data-cite="RDF11-CONCEPTS#dfn-object">object</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-triple">triple</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
+    <dd>An <a data-cite="RDF11-CONCEPTS#dfn-rdf-graph">RDF graph</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="graph name|graph names">graph name</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-graph-name">graph name</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="quad|quads">quad</dfn></dt>
+    <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
+      This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
+    <dt><dfn data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-rdf-dataset">dataset</a>
+      as specified by [[!RDF11-CONCEPTS]].
+      For the purposes of this specification, an <a>RDF dataset</a>
+      is considered to be a set of <a>quads</a></dd>
+    <dt><dfn data-lt="blank node|blank nodes">blank node</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</a>
+      as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
+      neither an <a>IRI</a>, nor a
+      <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>.</dd>
+    <dt><dfn data-lt="blank node identifier|blank node identifiers">blank node identifier</dfn></dt>
+    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</a>
+      as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
+      with <code>_:</code> that is used as an identifier for an
+      <a>blank node</a>. <a>Blank node identifiers</a>
+      are typically implementation-specific local identifiers; this document
+      specifies an algorithm for deterministically specifying them.</dd>
+  </dl>
 </section>
 
-<section>
+<section id="canonicalization">
   <h2>Canonicalization</h2>
 
   <p>Canonicalization is the process of transforming an
@@ -288,7 +284,11 @@
     This spec should describe the theoretical basis for graph canonicalization and describe
     behavior using normative statements. The explicit algorithms should follow as an informative appendix.</p>
 
-  <section>
+  <section id="canon-overview" class="informative">
+    <h3>Overview</h3>
+  </section>
+
+  <section id="canon-terms">
     <h2>Canonicalization Algorithm Terms</h2>
     <dl>
       <dt><dfn data-lt="input dataset|input datasets">input dataset</dfn></dt>
@@ -300,7 +300,7 @@
       <dt><dfn>identifier issuer</dfn></dt>
       <dd>An identifier issuer is used to issue new <a>blank node identifier</a>. It
         maintains a
-        <a href="#blank-node-identifier-issuer-state">blank node identifier issuer state</a>.</dd>
+        <a href="#bn-issuer-state">blank node identifier issuer state</a>.</dd>
       <dt><dfn>hash</dfn></dt>
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
@@ -308,7 +308,7 @@
     </dl>
   </section>
 
-  <section>
+  <section id="canon-state">
     <h2>Canonicalization State</h2>
 
     <p>When performing the steps required by the canonicalization algorithm,
@@ -344,7 +344,7 @@
     </dl>
   </section>
 
-  <section>
+  <section id="bn-issuer-state">
     <h2>Blank Node Identifier Issuer State</h2>
 
     <p>During the canonicalization algorithm, it is sometimes necessary to
@@ -377,7 +377,7 @@
     </dl>
   </section>
 
-  <section>
+  <section id="canon-algorithm">
     <h2>Canonicalization Algorithm</h2>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
@@ -397,11 +397,11 @@
       algorithm should make the loop effectual.
     </p>
 
-    <section class="informative">
+    <section id="canon-algo-overview" class="informative">
       <h3>Overview</h3>
     </section>
 
-    <section>
+    <section id="canon-algo-algo">
       <h3>Algorithm</h3>
 
       <ol class="algorithm">
@@ -437,7 +437,7 @@
               <var>identifier</var> in <var>non-normalized identifiers</var>:
               <ol class="algorithm">
                 <li>Create a <a>hash</a>, <var>hash</var>, according to the
-                  <a href="#hash-first-degree-quads">Hash First Degree Quads algorithm</a>.</li>
+                  <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</li>
                 <li>Add <var>hash</var> and <var>identifier</var> to
                   <a>hash to blank nodes map</a>, creating a new entry if
                   necessary.</li>
@@ -470,7 +470,7 @@
           <ol class="algorithm">
             <li>Create <var>hash path list</var> where each item will be a result
               of running the
-              <a href="#hash-n-degree-quads">Hash N-Degree Quads algorithm</a>.</li>
+              <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.</li>
             <li>For each <a>blank node identifier</a>
               <var>identifier</var> in <var>identifier list</var>:
               <ol class="algorithm">
@@ -486,7 +486,7 @@
                   issue a new temporary <a>blank node identifier</a>
                   for <var>identifier</var>.</li>
                 <li>Run the
-                  <a href="#hash-n-degree-quads">Hash N-Degree Quads algorithm</a>,
+                  <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                   passing <var>temporary issuer</var>, and append the
                   result to the <var>hash path list</var>.</li>
               </ol>
@@ -524,38 +524,38 @@
   <section id="issue-identifier">
     <h2>Issue Identifier Algorithm</h2>
 
-    <section class="informative">
+    <section id="issue-identifier-overview" class="informative">
       <h3>Overview</h3>
     </section>
 
-    <section>
+    <section id="issue-identifier-algorithm">
       <h3>Algorithm</h3>
+
+      <p>This algorithm issues a new <a>blank node identifier</a> for
+        a given existing <a>blank node identifier</a>. It also updates
+        state information that tracks the order in which new
+        <a>blank node identifiers</a> were issued.</p>
+
+      <p>This algorithm takes an <a>identifier issuer</a> and an
+        <var>existing identifier</var> as inputs. The output is a new
+        <var>issued identifier</var>. The steps of the algorithm are:</p>
+
+      <ol class="algorithm">
+        <li>If there is already an issued identifier for
+          <var>existing identifier</var> in <a>issued identifiers list</a>,
+          return it.</li>
+        <li>Generate <var>issued identifier</var> by concatenating
+          <a>identifier prefix</a> with the string value of
+          <a>identifier counter</a>.</li>
+        <li>Append an item to <a>issued identifiers list</a> that maps
+          <var>existing identifier</var> to <var>issued identifier</var>.</li>
+        <li>Increment <a>identifier counter</a>.</li>
+        <li>Return <var>issued identifier</var>.</li>
+      </ol>
     </section>
-
-    <p>This algorithm issues a new <a>blank node identifier</a> for
-      a given existing <a>blank node identifier</a>. It also updates
-      state information that tracks the order in which new
-      <a>blank node identifiers</a> were issued.</p>
-
-    <p>This algorithm takes an <a>identifier issuer</a> and an
-      <var>existing identifier</var> as inputs. The output is a new
-      <var>issued identifier</var>. The steps of the algorithm are:</p>
-
-    <ol class="algorithm">
-      <li>If there is already an issued identifier for
-        <var>existing identifier</var> in <a>issued identifiers list</a>,
-        return it.</li>
-      <li>Generate <var>issued identifier</var> by concatenating
-        <a>identifier prefix</a> with the string value of
-        <a>identifier counter</a>.</li>
-      <li>Append an item to <a>issued identifiers list</a> that maps
-        <var>existing identifier</var> to <var>issued identifier</var>.</li>
-      <li>Increment <a>identifier counter</a>.</li>
-      <li>Return <var>issued identifier</var>.</li>
-    </ol>
   </section>
 
-  <section>
+  <section id="hash-1d-quads">
     <h2>Hash First Degree Quads</h2>
 
     <p class="ednote">Add note that the result of this algorithm for a
@@ -571,11 +571,11 @@
       once. A future version of this algorithm should correct this mistake.
     </p>
 
-    <section class="informative">
+    <section id="hash-1d-quads-overview" class="informative">
       <h3>Overview</h3>
     </section>
 
-    <section>
+    <section id="hash-1d-quads-algorithm">
       <h3>Algorithm</h3>
 
       <p>This algorithm takes the <a>canonicalization state</a> and a
@@ -620,14 +620,14 @@
     </section>
   </section>
 
-  <section>
+  <section id="hash-related-blank-node">
     <h2>Hash Related Blank Node</h2>
 
-    <section class="informative">
+    <section id="hash-related-bn-overview" class="informative">
       <h3>Overview</h3>
     </section>
 
-    <section>
+    <section id="hash-related-algorithm">
       <h3>Algorithm</h3>
 
       <p>This algorithm creates a <a>hash</a> to identify how one
@@ -642,7 +642,7 @@
           first the canonical identifier for <var>related</var> if issued, second
           the identifier issued by <var>issuer</var> if issued, and last, if
           necessary, the result of the
-          <a href="#hash-first-degree-quads">Hash First Degree Quads algorithm</a>,
+          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
           passing <var>related</var>.
         </li>
         <li>Initialize a <a>string</a> <var>input</var> to the value of
@@ -657,7 +657,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="hash-nd-quads">
     <h2>Hash N-Degree Quads</h2>
 
     <p class="ednote">The relationship and difference between this algorithm
@@ -668,7 +668,7 @@
       indicate what a path is (a particular deterministic serialization for
       a subgraph/subdataset of nodes without globally-unique identifiers).</p>
 
-    <section class="informative">
+    <section id="hash-nd-quads-overview" class="informative">
       <h3>Overview</h3>
 
       <p>Usually, when trying to determine if two nodes in a graph are
@@ -697,7 +697,7 @@
         node through any other adjacent blank nodes.</p>
     </section>
 
-    <section>
+    <section id="hash-nd-quads-algorithm">
       <h3>Algorithm</h3>
 
       <div class="issue" data-number="16">
@@ -791,7 +791,7 @@
                   <ol class="algorithm">
                     <li>Set <var>result</var> to the result of recursively executing
                       the
-                      <a href="#hash-n-degree-quads">Hash N-Degree Quads algorithm</a>,
+                      <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                       passing <var>related</var> for <var>identifier</var> and
                       <var>issuer copy</var> for <var>path identifier issuer</var>.</li>
                     <li>Use the
@@ -828,17 +828,17 @@
   </section>
 </section>
 
-<section>
+<section id="use-cases informative">
   <h2>Use Cases</h2>
   <p class="ednote">TBD</p>
 </section>
 
-<section>
+<section id="examples informative">
   <h2>Examples</h2>
   <p class="ednote">TBD</p>
 </section>
 
-<section class="appendix">
+<section id="urgna2021" class="appendix">
   <h2>URGNA2012</h2>
   <p>A previous version of this algorithm has light deployment. For purposes of identification,
     the algorithm is called the
@@ -846,20 +846,20 @@
     (<abbr title="Universal RDF Graph Canonicalization Algorithm 2012"><dfn class="export">URGNA2012</dfn></abbr>),
     and differs from the stated algorithm in the following ways:</p>
   <ul>
-    <li>In <a href="#hash-first-degree-quads" class="sectionRef"></a>, if any blank node was used in the <a>graph name</a>
+    <li>In <a href="#hash-1d-quads" class="sectionRef"></a>, if any blank node was used in the <a>graph name</a>
       position in the <a>quad</a>, then the value was serialized using
       the special <a>blank node identifier</a>, <code>_:g</code>, instead of <code>_:z</code>.</li>
     <li>In <a href="#hash-related-blank-node" class="sectionRef"></a>, value of the <a>predicate</a>
       was not delimited by <code>&lt;</code> and <code>&gt;</code>; there
       were no delimiters.</li>
-    <li>In <a href="#hash-n-degree-quads" class="sectionRef"></a>, the <var>position</var> parameter passed to
+    <li>In <a href="#hash-nd-quads" class="sectionRef"></a>, the <var>position</var> parameter passed to
       the <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
       was instead modeled as a <var>direction</var> parameter, where it could have
       the value <code>p</code>, for property, when the related blank node was a
       <a>subject</a> and the value <code>r</code>, for reverse or reference, when
       the related blank node was an <a>object</a>. Since <a>URGNA2012</a> only normalized
       graphs, not datasets, there was no use of the <a>graph name</a> position.</li>
-    <li>In <a href="#hash-n-degree-quads" class="sectionRef"></a>, building the
+    <li>In <a href="#hash-nd-quads" class="sectionRef"></a>, building the
       <var>hash to related blank nodes map</var> was done as follows:
       <ol class="algorithm">
         <li>For each <var>quad</var> in <var>quads</var>:
@@ -893,7 +893,7 @@
   </ul>
 </section>
 
-<section class="appendix">
+<section id="ack" class="appendix informative">
   <h2>Acknowledgements</h2>
 
   <p>The editors would like to thank Jeremy Carroll for his work on the
@@ -902,6 +902,8 @@
     specification, Sir Tim Berners Lee for his thoughts on graph canonicalization
     over the years, Jesús Arias Fisteus for his work on a similar
     algorithm.</p>
+
+  <p class="ednote">Acknowledge CCG and RCH WG. Consider using `.publ_ack.json`.</p>
 </section>
 
 </body>
