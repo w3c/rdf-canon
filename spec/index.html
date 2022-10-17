@@ -86,6 +86,10 @@
     content: counters(numsection, ".") ") ";
   }
   a.externalDFN {border-bottom:  1px solid #99c; font-style: italic;}
+
+  code {
+    color:#c63501
+  }
 </style>
 </head>
 
@@ -112,14 +116,16 @@
 <section id="introduction">
   <h2>Introduction</h2>
 
-  <p>When data scientists discuss canonicalization, they do so in the context of
-    achieving a particular set of goals. Since the same information may
-    sometimes be expressed in a variety of different ways, it often becomes
-    necessary to be able to transform each of these different ways into a
-    single, standard format. With a standard format, the differences between
-    two different sets of data can be easily determined, a
-    cryptographically-strong hash identifier can be generated for a particular
-    set of data, and a particular set of data may be digitally-signed for later
+  <p>When data scientists discuss canonicalization,
+    they do so in the context of achieving a particular set of goals.
+    Since the same information may sometimes be expressed in a variety of different ways,
+    it often becomes necessary to be able to transform each of these
+    different ways into a single, standard representation.
+    With a standard representation, the differences between
+    two different sets of data can be easily determined,
+    a cryptographically-strong hash identifier can be generated for a particular
+    set of data,
+    and a particular set of data may be digitally-signed for later
     verification.</p>
 
   <p>In particular, this specification is about normalizing
@@ -161,8 +167,35 @@
       <li>when a node is used to stitch together parts of a graph and the nodes themselves are not interesting (e.g., <a data-cite="RDF11-MT#rdf-collections">RDF Collections</a> in [[RDF11-MT]]),</li>
       <li>when someone is trying to create an intentionally difficult graph topology.</li>
     </ul>
-    <p>Further more, RDF semantics dictate that deserializing the same RDF document results in the creation of unique <a>blank nodes</a>, unless it can be determined that on each occasion, the <a>blank node identifiers</a> the same resource; this is due to the fact that <a>blank node identifiers</a> are an aspect of a concrete RDF syntax and are not intended to be persistent or portable. Within the abstract RDF model, blank nodes do not have identifiers (although some <a data-cite="RDF11-CONCEPTS#dfn-rdf-store">RDF store</a> implementations may use stable identifiers and choose to make them portable). See <cite><a data-cite="RDF11-CONCEPTS#section-blank-nodes">Blank Nodes</a></cite> in [[!RDF11-CONCEPTS]] for more information.</p>
-    <p>RDF does have a provision for allowing blank nodes to be published in an externally identifiable way through the use of <a data-cite="RDF11-CONCEPTS#dfn-skolem-iri">Skolem IRIs</a>, which allows a given RDF store to replace the use of blank nodes in a concrete syntax with IRIs, which serve to repeatably identify that blank node within that particular RDF store, however, this is not generally useful for talking about the same graph in different RDF stores, or other concrete representations. In any case, a stable <a>blank node identifier</a> defined for one RDF store, serialization is arbitrary, and typically not relatable to the context within which it is used.</p>
+    <p>Further more,
+      RDF semantics dictate that deserializing the same RDF document
+      results in the creation of unique <a>blank nodes</a>,
+      unless it can be determined that on each occasion,
+      the <a>blank node</a> identifies the same resource;
+      this is due to the fact that <a>blank node identifiers</a>
+      are an aspect of a concrete RDF syntax
+      and are not intended to be persistent or portable.
+      Within the abstract RDF model,
+      blank nodes do not have identifiers
+      (although some
+      <a data-cite="RDF11-CONCEPTS#dfn-rdf-store">RDF store</a>
+      implementations may use stable identifiers and choose to make them portable).
+      See <a data-cite="RDF11-CONCEPTS#section-blank-nodes">Blank Nodes</a>
+      in [[!RDF11-CONCEPTS]] for more information.</p>
+
+    <p>RDF does have a provision for allowing blank nodes
+      to be published in an externally identifiable way through the use of
+      <a data-cite="RDF11-CONCEPTS#dfn-skolem-iri">Skolem IRIs</a>,
+      which allows a given RDF store to replace the use of blank nodes
+      in a concrete syntax with <a>IRIs</a>,
+      which serve to repeatably identify that blank node within that particular RDF store,
+      however, this is not generally useful for talking about the
+      same graph in different RDF stores,
+      or other concrete representations.
+      In any case, a stable <a>blank node identifier</a> defined for one
+      RDF store, serialization is arbitrary,
+      and typically not relatable to the context within which it is used.</p>
+
     <p>This specification defines an algorithm for creating stable <a>blank node identifiers</a> repeatably for different serializations possibly using individualized <a>blank node identifiers</a> of the same RDF graph (dataset) by grounding each <a>blank node</a> through the nodes to which it is connected, essentially creating <em>Skolem <a>blank node identifiers</a></em>. As a result, a graph signature can be obtained by hashing a canonical serialization of the resulting <a>normalized dataset</a>, allowing for the isomorphism and digital signing use cases. As blank node identifiers can be stable even with other changes to a graph (dataset), in some cases it is possible to compute the difference between two graphs (datasets), for example if changes are made only to ground triples, or if new blank nodes are introduced which do not create an automorphic confusion with other existing blank nodes. If any information which would change the generated blank node identifier, a resulting diff might indicate a greater set of changes than actually exists.</p>
 
     <div class="ednote">
@@ -828,12 +861,12 @@
   </section>
 </section>
 
-<section id="use-cases informative">
+<section id="use-cases" class="informative">
   <h2>Use Cases</h2>
   <p class="ednote">TBD</p>
 </section>
 
-<section id="examples informative">
+<section id="examples" class="informative">
   <h2>Examples</h2>
   <p class="ednote">TBD</p>
 </section>
