@@ -190,9 +190,9 @@
     problematic dataset and may choose to assume it's an attempted denial of
     service attack, rather than a real input, and abort.</p>
 
-  <p>This document outlines an algorithm for generating a normalized
-    <a>RDF dataset</a> given an <a>RDF dataset</a> as input. The
-    algorithm is called the
+  <p>This document outlines an algorithm for generating a canonical
+    serialization of an <a>RDF dataset</a> given an <a>RDF dataset</a> as input.
+    The algorithm is called the
     <strong>Universal RDF Dataset Canonicalization Algorithm 2015</strong> or
     <a>URDNA2015</a>.</p>
 
@@ -373,7 +373,7 @@
       <dd>An <a>identifier issuer</a>, initialized with the
         prefix <code>_:c14n</code>, for issuing canonical
         <a>blank node identifiers</a>.
-        <div class="issue">
+        <div class="ednote">
           Mapping all <a>blank nodes</a> to use this
           identifier spec means that an <a>RDF dataset</a> composed of two
           different <a>RDF graphs</a> will use different
@@ -459,7 +459,12 @@
               <a>blank node identifier</a> in the
               <a>blank node to quads map</a>, creating a new entry if
               necessary.
-              <div class="issue">It seems that quads must be normalized, so that literals with different syntactic representations but the same semantic representations are merged, and that two graphs differing in the syntactic representation of a literal will produce the same set of blank node identifiers.</div>
+              <div class="issue" data-number="15">
+                It seems that quads must be normalized,
+                so that literals with different syntactic representations
+                but the same semantic representations are merged,
+                and that two graphs differing in the syntactic representation
+                of a literal will produce the same set of blank node identifiers.</div>
             </li>
           </ol>
         </li>
@@ -645,7 +650,10 @@
                   </ol>
                 </li>
               </ol>
-              <p class="issue">Note potential need to normalize literals to their canonical representation here as well, if not done on the original <a>input dataset</a>.</p>
+              <p class="issue" data-number="15">
+                Note potential need to normalize literals to their
+                canonical representation here as well,
+                if not done on the original <a>input dataset</a>.</p>
             </li>
           </ol>
         </li>
@@ -737,7 +745,7 @@
     <section>
       <h3>Algorithm</h3>
 
-      <div class="issue">
+      <div class="issue" data-number="16">
         An additional input to this algorithm should be added that
         allows it to be optionally skipped and throw an error if any
         equivalent related hashes were produced that must be permuted
