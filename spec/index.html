@@ -270,6 +270,9 @@
     <dt><dfn data-lt="graph name|graph names">graph name</dfn></dt>
     <dd>A <a data-cite="RDF11-CONCEPTS#dfn-graph-name">graph name</a>
       as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn>default graph</dfn></dt>
+    <dd>The <a data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
     <dt><dfn data-lt="quad|quads">quad</dfn></dt>
     <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
       This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
@@ -290,6 +293,10 @@
       <a>blank node</a>. <a>Blank node identifiers</a>
       are typically implementation-specific local identifiers; this document
       specifies an algorithm for deterministically specifying them.</dd>
+    <dt><dfn>mention set</dfn></dt>
+    <dd>The set of all <a>quads</a> in a <a>dataset</a>
+      that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
+      denoted <var>Q<sub>n</sub></var>.</dd>
   </dl>
 </section>
 
@@ -319,6 +326,23 @@
 
   <section id="canon-overview" class="informative">
     <h3>Overview</h3>
+
+    <p>To determine a canonical labeling, the <a>URDNA2015</a> considers the
+      information connected to each blank node.
+      Nodes with unique first degree information can be issued a canonical identifier
+      immediately via the <a href="#issue-identifier">Issue Identifier algorithm</a>.
+      When a node has non-unique first degree information,
+      it is necessary to determine all information that is connected
+      to it transitively throughout the entire dataset.
+      <a href="#hash-1d-quads" class="sectionRef"></a> defines a
+      node’s first degree information via its first degree hash. </p>
+
+    <p>Hashes are computed from the information of each blank node.
+      In particular, these hashes encode the mentions incident to each blank node.
+      The <a>hash</a> of a string <var>s</var>, is the lower-case,
+      hexidecimal representation of the result of passing <var>s</var>
+      through a cryptographic hash function.
+      URDNA2015 uses the hash algorithm SHA-256.</p>
   </section>
 
   <section id="canon-terms">
@@ -432,6 +456,42 @@
 
     <section id="canon-algo-overview" class="informative">
       <h3>Overview</h3>
+
+      <p><a>URDNA2015</a> canonically labels an <a>RDF dataset</a>.
+        In URDNA2015, an RDF dataset <var>D</var>
+        is represented as a set of <a>quads</a> of the form `&lt; s, p, o, g >`
+        where the graph component `g` is empty if and only if the
+        <a>triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
+        This algorithm considers an RDF dataset to be a set of quads.
+        Two RDF datasets are considered to be the same modulo blank nodes,
+        or isomorphic, if and only if they return the same canonically labeled list of quads
+        via <a>URDNA2015</a>.</p>
+
+      <p><a>URDNA2015</a> consists of several sub-algorithms.
+        These sub-algorithms are introduced in the following sub-sections.
+        Below we give a high level summary of URDNA2015.</p>
+
+      <ol>
+        <li><strong>Initialization</strong>.
+          Initialize the state needed for the rest of the algorithm
+          using <a href="#canon-state" class="sectionRef"></a>.</li>
+        <li><strong>Compute first degree hashes</strong>.
+          Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
+        <li><strong>Canonically label unique nodes</strong>.
+          Assign canonical identifiers via <a href="#issue-identifier" class="sectionRef"></a>,
+          in lexicographical order, to each blank node whose first degree hash is unique.</li>
+        <li><strong>Compute N-degree hashes for non-unique nodes</strong>.
+          For each repeated first degree hash (proceeding in lexicographical order),
+          compute the N-degree hash via <a href="#hash-nd-quads" class="sectionRef"></a>
+          of every unlabeled blank node that corresponds to the given repeated hash.</li>
+        <li><strong>Canonically label remaining nodes</strong>.
+          In lexicographical order of the N-degree hashes,
+          issue canonical identifiers to each corresponding blank node using
+          <a href="#issue-identifier" class="sectionRef"></a>.
+          If more than one node produces the same N-degree hash,
+          the order in which these nodes receive a canonical identifier does not matter.</li>
+        <li><strong>Finish</strong>. Return the normalized dataset.</li>
+      </ol>
     </section>
 
     <section id="canon-algo-algo">
@@ -557,9 +617,9 @@
   <section id="issue-identifier">
     <h2>Issue Identifier Algorithm</h2>
 
-    <section id="issue-identifier-overview" class="informative">
+    <!--section id="issue-identifier-overview" class="informative">
       <h3>Overview</h3>
-    </section>
+    </section-->
 
     <section id="issue-identifier-algorithm">
       <h3>Algorithm</h3>
@@ -606,6 +666,24 @@
 
     <section id="hash-1d-quads-overview" class="informative">
       <h3>Overview</h3>
+
+      <p>To determine whether the first degree information of a node <var>n</var> is unique,
+        a <a>hash</a> is assigned to its <a>mention set</a>,
+        <var>Q<sub>n</sub></var>.
+        The first degree hash of a blank node <var>n</var>,
+        denoted <var>h<sub>f</sub>(n)</var>,
+        is the hash that results from <a href="#hash-1d-quads" class="sectionRef"></a>
+        when passing <var>n</var>.
+        Nodes with unique first degree hashes have unique first degree information.</p>
+
+      <p>For consistency, <a>blank node identifiers</a> used in <var>Q<sub>n</sub></var>
+        are replaced with placeholders in an [[N-Quads]] serialization of that quad.
+        Every blank node component is replaced with either `_:a` or `_:z`,
+        depending on if that component is <var>n</var> or not.</p>
+
+      <p>The resulting serialized quads are then lexicogaphically sorted,
+        concatenated and hashed.
+        This hash is the first degree hash of <var>n</var>, <var>h<sub>f</sub>(n)</var>.</p>
     </section>
 
     <section id="hash-1d-quads-algorithm">
@@ -616,13 +694,13 @@
 
       <ol class="algorithm">
         <li>Initialize <dfn>nquads</dfn> to an empty list. It will be
-          used to store quads in N-Quads format.</li>
+          used to store quads in [[N-Quads]] format.</li>
         <li>Get the list of <a>quads</a> <var>quads</var> associated with the
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
         <li>For each <a>quad</a> <var>quad</var> in <var>quads</var>:
           <ol class="algorithm">
-            <li>Serialize the <a>quad</a> in N-Quads format with the
+            <li>Serialize the <a>quad</a> in [[N-Quads]] format with the
               following special rule:
               <ol class="algorithm">
                 <li>If any component in <var>quad</var> is an
