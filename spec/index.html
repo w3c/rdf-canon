@@ -84,14 +84,14 @@
   .highlight { font-weight: bold; color: #0a3; }
   .comment { color: #999; }
   table, thead, tr, td { padding: 5px; border-width: 1px; border-spacing: 0px; border-style: solid; border-collapse: collapse; }
-  ol.algorithm {
+  .algorithm ol {
     counter-reset: numsection;
     list-style-type: none;
   }
-  ol.algorithm li {
+  .algorithm ol>li {
     margin: 0.5em 0;
   }
-  ol.algorithm li:before {
+  .algorithm ol>li:before {
     font-weight: bold;
     counter-increment: numsection;
     content: counters(numsection, ".") ") ";
@@ -445,7 +445,7 @@
     </dl>
   </section>
 
-  <section id="canon-algorithm">
+  <section id="canon-algorithm" class="algorithm">
     <h2>Canonicalization Algorithm</h2>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
@@ -483,36 +483,36 @@
         First, we give a high level summary of URDNA2015.</p>
 
       <ol>
-        <li><strong>Initialization</strong>.
+        <li id="ca-hl-1"><strong>Initialization</strong>.
           Initialize the state needed for the rest of the algorithm
           using <a href="#canon-state" class="sectionRef"></a>.</li>
-        <li><strong>Compute first degree hashes</strong>.
+        <li id="ca-hl-2"><strong>Compute first degree hashes</strong>.
           Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
-        <li><strong>Canonically label unique nodes</strong>.
+        <li id="ca-hl-3"><strong>Canonically label unique nodes</strong>.
           Assign canonical identifiers via <a href="#issue-identifier" class="sectionRef"></a>,
-          in lexicographical order, to each blank node whose first degree hash is unique.</li>
-        <li><strong>Compute N-degree hashes for non-unique nodes</strong>.
+          in <a>lexicographical order</a>, to each blank node whose first degree hash is unique.</li>
+        <li id="ca-hl-4"><strong>Compute N-degree hashes for non-unique nodes</strong>.
           For each repeated first degree hash (proceeding in lexicographical order),
           compute the N-degree hash via <a href="#hash-nd-quads" class="sectionRef"></a>
           of every unlabeled blank node that corresponds to the given repeated hash.</li>
-        <li><strong>Canonically label remaining nodes</strong>.
+        <li id="ca-hl-5"><strong>Canonically label remaining nodes</strong>.
           In lexicographical order of the N-degree hashes,
           issue canonical identifiers to each corresponding blank node using
           <a href="#issue-identifier" class="sectionRef"></a>.
           If more than one node produces the same N-degree hash,
           the order in which these nodes receive a canonical identifier does not matter.</li>
-        <li><strong>Finish</strong>. Return the normalized dataset.</li>
+        <li id="ca-hl-6"><strong>Finish</strong>. Return the normalized dataset.</li>
       </ol>
     </section>
 
     <section id="canon-algo-algo">
       <h3>Algorithm</h3>
 
-      <ol class="algorithm">
-        <li>Create the <a>canonicalization state</a>.</li>
-        <li>For every <a>quad</a> in <a>input dataset</a>:
-          <ol class="algorithm">
-            <li>For each <a>blank node</a> that occurs in the
+      <ol>
+        <li id="ca-1">Create the <a>canonicalization state</a>.</li>
+        <li id="ca-2">For every <a>quad</a> in <a>input dataset</a>:
+          <ol>
+            <li id="ca-2-1">For each <a>blank node</a> that occurs in the
               <a>quad</a>, add a reference to the
               <a>quad</a> using the
               <a>blank node identifier</a> in the
@@ -527,64 +527,65 @@
             </li>
           </ol>
         </li>
-        <li>Create a list of non-normalized <a>blank node identifiers</a>
+        <li id="ca-3">Create a list of non-normalized <a>blank node identifiers</a>
           <var>non-normalized identifiers</var> and populate it using the keys
           from the <a>blank node to quads map</a>.</li>
-        <li>Initialize <var>simple</var>, a boolean flag, to
+        <li id="ca-4">Initialize <var>simple</var>, a boolean flag, to
           <code>true</code>.</li>
-        <li>While <var>simple</var> is <code>true</code>,
+        <li id="ca-5">While <var>simple</var> is <code>true</code>,
           issue canonical identifiers for <a>blank nodes</a>:
-          <ol class="algorithm">
-            <li>Set <var>simple</var> to <code>false</code>.</li>
-            <li>Clear <a>hash to blank nodes map</a>.</li>
-            <li>For each <a>blank node identifier</a>
-              <var>identifier</var> in <var>non-normalized identifiers</var>:
-              <ol class="algorithm">
-                <li>Create a <a>hash</a>, <var>hash</var>, according to the
+          <ol>
+            <li id="ca-5-1">Set <var>simple</var> to <code>false</code>.</li>
+            <li id="ca-5-2">Clear <a>hash to blank nodes map</a>.</li>
+            <li id="ca-5-3">For each <a>blank node identifier</a>
+              <var>n</var> in <var>non-normalized identifiers</var>:
+              <ol>
+                <li id="ca-5-3-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
+                  for <var>n</var> according to the
                   <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</li>
-                <li>Add <var>hash</var> and <var>identifier</var> to
+                <li id="ca-5-3-2">Add <var>hash</var> and <var>identifier</var> to
                   <a>hash to blank nodes map</a>, creating a new entry if
                   necessary.</li>
               </ol>
             </li>
-            <li>For each <var>hash</var> to <var>identifier list</var> mapping in
+            <li id="ca-5-4">For each <var>hash</var> to <var>identifier list</var> mapping in
               <a>hash to blank nodes map</a>, lexicographically-sorted by
               <var>hash</var>:
               <ol class="algorithm">
-                <li>If the length of <var>identifier list</var> is greater than
+                <li id="ca-5-4-1">If the length of <var>identifier list</var> is greater than
                   <code>1</code>, continue to the next mapping.</li>
-                <li>Use the
+                <li id="ca-5-4-2">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <a>canonical issuer</a> and the
                   single <a>blank node identifier</a> in
                   <var>identifier list</var>, <var>identifier</var>, to issue a
                   canonical replacement identifier for <var>identifier</var>.</li>
-                <li>Remove <var>identifier</var> from
+                <li id="ca-5-4-3">Remove <var>identifier</var> from
                   <var>non-normalized identifiers</var>.</li>
-                <li>Remove <var>hash</var> from the
+                <li id="ca-5-4-4">Remove <var>hash</var> from the
                   <a>hash to blank nodes map</a>.</li>
-                <li>Set <var>simple</var> to <code>true</code>.</li>
+                <li id="ca-5-4-5">Set <var>simple</var> to <code>true</code>.</li>
               </ol>
             </li>
           </ol>
         </li>
-        <li>For each <var>hash</var> to <var>identifier list</var> mapping in
+        <li id="ca-6">For each <var>hash</var> to <var>identifier list</var> mapping in
           <a>hash to blank nodes map</a>, lexicographically-sorted by
           <var>hash</var>:
-          <ol class="algorithm">
-            <li>Create <var>hash path list</var> where each item will be a result
+          <ol>
+            <li id="ca-6-1">Create <var>hash path list</var> where each item will be a result
               of running the
               <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.</li>
-            <li>For each <a>blank node identifier</a>
-              <var>identifier</var> in <var>identifier list</var>:
-              <ol class="algorithm">
-                <li>If a canonical identifier has already been issued for
-                  <var>identifier</var>, continue to the next
-                  <var>identifier</var>.</li>
-                <li>Create <var>temporary issuer</var>, an
+            <li id="ca-6-2">For each <a>blank node identifier</a>
+              <var>n</var> in <var>identifier list</var>:
+              <ol>
+                <li id="ca-6-2-1">If a canonical identifier has already been issued for
+                  <var>n</var>, continue to the next
+                  <a>blank node identifier</a>.</li>
+                <li id="ca-6-2-2">Create <var>temporary issuer</var>, an
                   <a>identifier issuer</a> initialized with the prefix
                   <code>_:b</code>.</li>
-                <li>Use the
+                <li id="ca-6-2-3">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <var>temporary issuer</var> and <var>identifier</var>, to
                   issue a new temporary <a>blank node identifier</a>
@@ -595,9 +596,9 @@
                   result to the <var>hash path list</var>.</li>
               </ol>
             </li>
-            <li>For each <var>result</var> in the <var>hash path list</var>,
+            <li id="ca-6-3">For each <var>result</var> in the <var>hash path list</var>,
               lexicographically-sorted by the <var>hash</var> in <var>result</var>:
-              <ol class="algorithm">
+              <ol>
                 <li>For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
                   identifier by <var>identifier issuer</var> in <var>result</var>, issue
@@ -609,23 +610,23 @@
             </li>
           </ol>
         </li>
-        <li>For each <a>quad</a>, <var>quad</var>, in
+        <li id="ca-7">For each <a>quad</a>, <var>quad</var>, in
           <a>input dataset</a>:
-          <ol class="algorithm">
-            <li>Create a copy, <var>quad copy</var>, of <var>quad</var> and replace any
+          <ol>
+            <li id="ca-7-1">Create a copy, <var>quad copy</var>, of <var>quad</var> and replace any
               existing <a>blank node identifier</a>s using the
               canonical identifiers previously issued
               by <a>canonical issuer</a>.</li>
-            <li>Add <var>quad copy</var> to the
+            <li id="ca-7-2">Add <var>quad copy</var> to the
               <a>normalized dataset</a>.</li>
           </ol>
         </li>
-        <li>Return the <a>normalized dataset</a>.</li>
+        <li id="ca-8">Return the <a>normalized dataset</a>.</li>
       </ol>
     </section>
   </section>
 
-  <section id="issue-identifier">
+  <section id="issue-identifier" class="algorithm">
     <h2>Issue Identifier Algorithm</h2>
 
     <!--section id="issue-identifier-overview" class="informative">
@@ -644,22 +645,22 @@
         <var>existing identifier</var> as inputs. The output is a new
         <var>issued identifier</var>. The steps of the algorithm are:</p>
 
-      <ol class="algorithm">
-        <li>If there is already an issued identifier for
+      <ol>
+        <li id="iia-1">If there is already an issued identifier for
           <var>existing identifier</var> in <a>issued identifiers list</a>,
           return it.</li>
-        <li>Generate <var>issued identifier</var> by concatenating
+        <li id="iia-2">Generate <var>issued identifier</var> by concatenating
           <a>identifier prefix</a> with the string value of
           <a>identifier counter</a>.</li>
-        <li>Append an item to <a>issued identifiers list</a> that maps
+        <li id="iia-3">Append an item to <a>issued identifiers list</a> that maps
           <var>existing identifier</var> to <var>issued identifier</var>.</li>
-        <li>Increment <a>identifier counter</a>.</li>
-        <li>Return <var>issued identifier</var>.</li>
+        <li id="iia-4">Increment <a>identifier counter</a>.</li>
+        <li id="iia-5">Return <var>issued identifier</var>.</li>
       </ol>
     </section>
   </section>
 
-  <section id="hash-1d-quads">
+  <section id="hash-1d-quads" class="algorithm">
     <h2>Hash First Degree Quads</h2>
 
     <p class="ednote">Add note that the result of this algorithm for a
@@ -703,22 +704,22 @@
       <p>This algorithm takes the <a>canonicalization state</a> and a
         <dfn>reference blank node identifier</dfn> as inputs.</p>
 
-      <ol class="algorithm">
-        <li>Initialize <dfn>nquads</dfn> to an empty list. It will be
+      <ol>
+        <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty list. It will be
           used to store quads in [[N-Quads]] format.</li>
-        <li>Get the list of <a>quads</a> <var>quads</var> associated with the
+        <li id="h1d-2">Get the list of <a>quads</a> <var>quads</var> associated with the
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
-        <li>For each <a>quad</a> <var>quad</var> in <var>quads</var>:
-          <ol class="algorithm">
-            <li>Serialize the <a>quad</a> in [[N-Quads]] format with the
+        <li id="h1d-3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
+          <ol>
+            <li id="h1d-3-1">Serialize the <a>quad</a> in [[N-Quads]] format with the
               following special rule:
-              <ol class="algorithm">
-                <li>If any component in <var>quad</var> is an
+              <ol>
+                <li id="h1d-3-1-1">If any component in <var>quad</var> is an
                   <a>blank node</a>, then serialize it using a
                   special identifier as follows:
-                  <ol class="algorithm">
-                    <li>If the <a>blank node</a>'s existing
+                  <ol>
+                    <li id="h1d-3-1-1-1">If the <a>blank node</a>'s existing
                     <a>blank node identifier</a> matches the
                     <a>reference blank node identifier</a> then use the
                     <a>blank node identifier</a> <code>_:a</code>,
@@ -734,15 +735,15 @@
             </li>
           </ol>
         </li>
-        <li>Sort <a>nquads</a> in lexicographical order.</li>
-        <li>Return the <a>hash</a> that results from passing the sorted,
+        <li id="h1d-4">Sort <a>nquads</a> in lexicographical order.</li>
+        <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted,
           joined <a>nquads</a> through the
           <a>hash algorithm</a>.</li>
       </ol>
     </section>
   </section>
 
-  <section id="hash-related-blank-node">
+  <section id="hash-related-blank-node" class="algorithm">
     <h2>Hash Related Blank Node</h2>
 
     <section id="hash-related-bn-overview" class="informative">
@@ -759,27 +760,27 @@
         <a>identifier issuer</a>, <var>issuer</var>, and a
         <a>string</a> <var>position</var> as inputs.</p>
 
-      <ol class="algorithm">
-        <li>Set the <var>identifier</var> to use for <var>related</var>, preferring
+      <ol>
+        <li id="hrbn-1">Set the <var>identifier</var> to use for <var>related</var>, preferring
           first the canonical identifier for <var>related</var> if issued, second
           the identifier issued by <var>issuer</var> if issued, and last, if
           necessary, the result of the
           <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
           passing <var>related</var>.
         </li>
-        <li>Initialize a <a>string</a> <var>input</var> to the value of
+        <li id="hrbn-2">Initialize a <a>string</a> <var>input</var> to the value of
           <var>position</var>.</li>
-        <li>If <var>position</var> is not <code>g</code>, append
+        <li id="hrbn-3">If <var>position</var> is not <code>g</code>, append
           <code>&lt;</code>, the value of the <a>predicate</a> in
           <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
-        <li>Append <var>identifier</var> to <var>input</var>.</li>
-        <li>Return the <a>hash</a> that results from passing <var>input</var>
+        <li id="hrbn-4">Append <var>identifier</var> to <var>input</var>.</li>
+        <li id="hrbn-5">Return the <a>hash</a> that results from passing <var>input</var>
           through the <a>hash algorithm</a>.</li>
       </ol>
     </section>
   </section>
 
-  <section id="hash-nd-quads">
+  <section id="hash-nd-quads" class="algorithm">
     <h2>Hash N-Degree Quads</h2>
 
     <p class="ednote">The relationship and difference between this algorithm
@@ -840,21 +841,21 @@
         will be a <a>hash</a> and the <a>identifier issuer</a> used
         to help generate it.</p>
 
-      <ol class="algorithm">
-        <li>Create a <var>hash to related blank nodes map</var> for storing
+      <ol>
+        <li id="hndq-1">Create a <var>hash to related blank nodes map</var> for storing
           hashes that identify related <a>blank nodes</a>.</li>
-        <li>Get a reference, <var>quads</var>, to the list of <a>quads</a>
+        <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
           in the <a>blank node to quads map</a> for the key
           <var>identifier</var>.</li>
-        <li>For each <var>quad</var> in <var>quads</var>:
-          <ol class="algorithm">
-            <li>For each <var>component</var> in <var>quad</var>, where <var>component</var>
+        <li id="hndq-3">For each <var>quad</var> in <var>quads</var>:
+          <ol>
+            <li id="hndq-3-1">For each <var>component</var> in <var>quad</var>, where <var>component</var>
               is the <a>subject</a>, <a>object</a>, or
               <a>graph name</a>, and it is a
               <a>blank node</a> that is not identified by
               <var>identifier</var>:
-              <ol class="algorithm">
-                <li>Set <var>hash</var> to the result of the
+              <ol>
+                <li id="hndq-3-1-1">Set <var>hash</var> to the result of the
                   <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                   passing the <a>blank node identifier</a> for
                   <var>component</var> as <var>related</var>, <var>quad</var>,
@@ -863,7 +864,7 @@
                   <code>g</code> based on whether <var>component</var> is a
                   <a>subject</a>, <a>object</a>,
                   <a>graph name</a>, respectively.</li>
-                <li>Add a mapping of <var>hash</var> to the
+                <li id="hndq-3-1-2">Add a mapping of <var>hash</var> to the
                   <a>blank node identifier</a> for <var>component</var>
                   to <var>hash to related blank nodes map</var>, adding an entry
                   as necessary.</li>
@@ -871,37 +872,37 @@
             </li>
           </ol>
         </li>
-        <li>Create an empty string, <var>data to hash</var>.</li>
-        <li>For each <var>related hash</var> to <var>blank node list</var> mapping in
+        <li id="hndq-4">Create an empty string, <var>data to hash</var>.</li>
+        <li id="hndq-5">For each <var>related hash</var> to <var>blank node list</var> mapping in
           <var>hash to related blank nodes map</var>, sorted lexicographically
           by <var>related hash</var>:
-          <ol class="algorithm">
-            <li>Append the <var>related hash</var> to the <var>data to hash</var>.</li>
-            <li>Create a <a>string</a> <var>chosen path</var>.</li>
-            <li>Create an unset <var>chosen issuer</var> variable.</li>
-            <li>For each <var>permutation</var> of <var>blank node list</var>:
-              <ol class="algorithm">
-                <li>Create a copy of <var>issuer</var>, <var>issuer copy</var>.</li>
-                <li>Create a <a>string</a> <var>path</var>.</li>
-                <li>Create a <var>recursion list</var>, to store
+          <ol>
+            <li id="hndq-5-1">Append the <var>related hash</var> to the <var>data to hash</var>.</li>
+            <li id="hndq-5-2">Create a <a>string</a> <var>chosen path</var>.</li>
+            <li id="hndq-5-3">Create an unset <var>chosen issuer</var> variable.</li>
+            <li id="hndq-5-4">For each <var>permutation</var> of <var>blank node list</var>:
+              <ol>
+                <li id="hndq-5-4-1">Create a copy of <var>issuer</var>, <var>issuer copy</var>.</li>
+                <li id="hndq-5-4-2">Create a <a>string</a> <var>path</var>.</li>
+                <li id="hndq-5-4-3">Create a <var>recursion list</var>, to store
                   <a>blank node identifiers</a> that must be
                   recursively processed by this algorithm.</li>
-                <li>For each <var>related</var> in <var>permutation</var>:
-                  <ol class="algorithm">
-                    <li>If a canonical identifier has been issued for
+                <li id="hndq-5-4-4">For each <var>related</var> in <var>permutation</var>:
+                  <ol>
+                    <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
                       <var>related</var>, append it to <var>path</var>.</li>
-                    <li>Otherwise:
-                      <ol class="algorithm">
-                        <li>If <i>issuer copy</i> has not issued
+                    <li id="hndq-5-4-4-2">Otherwise:
+                      <ol>
+                        <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
                           an identifier for <var>related</var>, append
                           <var>related</var> to <var>recursion list</var>.</li>
-                        <li>Use the
+                        <li id="hndq-5-4-4-2-2">Use the
                           <a href="#issue-identifier">Issue Identifier algorithm</a>,
                           passing <var>issuer copy</var> and <var>related</var> and
                           append the result to <var>path</var>.</li>
                       </ol>
                     </li>
-                    <li>If <var>chosen path</var> is not empty and the length
+                    <li id="hndq-5-4-4-3">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is lexicographically
                       greater than <var>chosen path</var>, then skip to the next
@@ -909,40 +910,40 @@
                     </li>
                   </ol>
                 </li>
-                <li>For each <var>related</var> in <var>recursion list</var>:
-                  <ol class="algorithm">
-                    <li>Set <var>result</var> to the result of recursively executing
+                <li id="hndq-5-4-5">For each <var>related</var> in <var>recursion list</var>:
+                  <ol>
+                    <li id="hndq-5-4-5-1">Set <var>result</var> to the result of recursively executing
                       the
                       <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                       passing <var>related</var> for <var>identifier</var> and
                       <var>issuer copy</var> for <var>path identifier issuer</var>.</li>
-                    <li>Use the
+                    <li id="hndq-5-4-5-2">Use the
                       <a href="#issue-identifier">Issue Identifier algorithm</a>,
                       passing <var>issuer copy</var> and <var>related</var> and
                       append the result to <var>path</var>.</li>
-                    <li>Append <code>&lt;</code>, the <a>hash</a> in
+                    <li id="hndq-5-4-5-3">Append <code>&lt;</code>, the <a>hash</a> in
                       <var>result</var>, and <code>&gt;</code> to <var>path</var>.</li>
-                    <li>Set <var>issuer copy</var> to the
+                    <li id="hndq-5-4-5-4">Set <var>issuer copy</var> to the
                       <a>identifier issuer</a> in result.</li>
-                    <li>If <var>chosen path</var> is not empty and the length
+                    <li id="hndq-5-4-5-5">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is lexicographically
                       greater than <var>chosen path</var>, then skip to the next
                       <var>permutation</var>.</li>
                   </ol>
                 </li>
-                <li>If <var>chosen path</var> is empty or <var>path</var> is
+                <li id="hndq-5-4-6">If <var>chosen path</var> is empty or <var>path</var> is
                   lexicographically less than <var>chosen path</var>, set
                   <var>chosen path</var> to <var>path</var> and <var>chosen issuer</var>
                   to <var>issuer copy</var>.</li>
               </ol>
             </li>
-            <li>Append <var>chosen path</var> to <var>data to hash</var>.</li>
-            <li>Replace <var>issuer</var>, by reference, with
+            <li id="hndq-5-5">Append <var>chosen path</var> to <var>data to hash</var>.</li>
+            <li id="hndq-5-6">Replace <var>issuer</var>, by reference, with
               <var>chosen issuer</var>.</li>
           </ol>
         </li>
-        <li>Return <var>issuer</var> and the <a>hash</a> that results from
+        <li id="hndq-6">Return <var>issuer</var> and the <a>hash</a> that results from
           passing <var>data to hash</var> through the
           <a>hash algorithm</a>.</li>
       </ol>
@@ -960,7 +961,7 @@
   <p class="ednote">TBD</p>
 </section>
 
-<section id="urgna2021" class="appendix">
+<section id="urgna2021" class="appendix algorithm">
   <h2>URGNA2012</h2>
   <p>A previous version of this algorithm has light deployment. For purposes of identification,
     the algorithm is called the
@@ -983,10 +984,10 @@
       graphs, not datasets, there was no use of the <a>graph name</a> position.</li>
     <li>In <a href="#hash-nd-quads" class="sectionRef"></a>, building the
       <var>hash to related blank nodes map</var> was done as follows:
-      <ol class="algorithm">
-        <li>For each <var>quad</var> in <var>quads</var>:
-          <ol class="algorithm">
-            <li>If the <var>quad</var>'s <a>subject</a> is a <a>blank node</a> that does not
+      <ol>
+        <li id="urgna-1">For each <var>quad</var> in <var>quads</var>:
+          <ol>
+            <li id="urgna-1-1">If the <var>quad</var>'s <a>subject</a> is a <a>blank node</a> that does not
               match <var>identifier</var>, set <var>hash</var> to the result of the
                 <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                 passing the <a>blank node identifier</a> for
@@ -994,7 +995,7 @@
                 <var>path identifier issuer</var> as <var>issuer</var>, and
                 <code>p</code> as <var>position</var>.
             </li>
-            <li>Otherwise, if <var>quad</var>'s <a>object</a> is a <a>blank node</a> that does
+            <li id="urgna-1-2">Otherwise, if <var>quad</var>'s <a>object</a> is a <a>blank node</a> that does
               not match <var>identifier</var>, set <var>hash</var> to the result of the
                 <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                 passing the <a>blank node identifier</a> for
@@ -1002,8 +1003,8 @@
                 <var>path identifier issuer</var> as <var>issuer</var>, and
                 <code>r</code> as <var>position</var>.
             </li>
-            <li>Otherwise, continue to the next quad.</li>
-            <li>Add a mapping of <var>hash</var> to the
+            <li id="urgna-1-3">Otherwise, continue to the next quad.</li>
+            <li id="urgna-1-4">Add a mapping of <var>hash</var> to the
               <a>blank node identifier</a> for the component
               that matched (<a>subject</a> or <a>object</a>) to
               <var>hash to related blank nodes map</var>, adding an entry
