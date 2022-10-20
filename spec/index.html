@@ -130,7 +130,7 @@
   <p>When data scientists discuss canonicalization,
     they do so in the context of achieving a particular set of goals.
     Since the same information may sometimes be expressed in a variety of different ways,
-    it often becomes necessary to be able to transform each of these
+    it often becomes necessary to transform each of these
     different ways into a single, standard representation.
     With a standard representation, the differences between
     two different sets of data can be easily determined,
@@ -178,33 +178,33 @@
       <li>when a node is used to stitch together parts of a graph and the nodes themselves are not interesting (e.g., <a data-cite="RDF11-MT#rdf-collections">RDF Collections</a> in [[RDF11-MT]]),</li>
       <li>when someone is trying to create an intentionally difficult graph topology.</li>
     </ul>
-    <p>Further more,
-      RDF semantics dictate that deserializing the same RDF document
+    <p>Furthermore,
+      RDF semantics dictate that deserializing an RDF document
       results in the creation of unique <a>blank nodes</a>,
       unless it can be determined that on each occasion,
-      the <a>blank node</a> identifies the same resource;
-      this is due to the fact that <a>blank node identifiers</a>
+      the <a>blank node</a> identifies the same resource.
+      This is due to the fact that <a>blank node identifiers</a>
       are an aspect of a concrete RDF syntax
       and are not intended to be persistent or portable.
       Within the abstract RDF model,
       blank nodes do not have identifiers
       (although some
       <a data-cite="RDF11-CONCEPTS#dfn-rdf-store">RDF store</a>
-      implementations may use stable identifiers and choose to make them portable).
+      implementations may use stable identifiers and may choose to make them portable).
       See <a data-cite="RDF11-CONCEPTS#section-blank-nodes">Blank Nodes</a>
       in [[!RDF11-CONCEPTS]] for more information.</p>
 
     <p>RDF does have a provision for allowing blank nodes
       to be published in an externally identifiable way through the use of
       <a data-cite="RDF11-CONCEPTS#dfn-skolem-iri">Skolem IRIs</a>,
-      which allows a given RDF store to replace the use of blank nodes
+      which allow a given RDF store to replace the use of blank nodes
       in a concrete syntax with <a>IRIs</a>,
-      which serve to repeatably identify that blank node within that particular RDF store,
+      which then serve to repeatably identify that blank node within that particular RDF store;
       however, this is not generally useful for talking about the
       same graph in different RDF stores,
       or other concrete representations.
       In any case, a stable <a>blank node identifier</a> defined for one
-      RDF store, serialization is arbitrary,
+      RDF store or serialization is arbitrary,
       and typically not relatable to the context within which it is used.</p>
 
     <p>This specification defines an algorithm for creating stable <a>blank node identifiers</a> repeatably for different serializations possibly using individualized <a>blank node identifiers</a> of the same RDF graph (dataset) by grounding each <a>blank node</a> through the nodes to which it is connected, essentially creating <em>Skolem <a>blank node identifiers</a></em>. As a result, a graph signature can be obtained by hashing a canonical serialization of the resulting <a>normalized dataset</a>, allowing for the isomorphism and digital signing use cases. As blank node identifiers can be stable even with other changes to a graph (dataset), in some cases it is possible to compute the difference between two graphs (datasets), for example if changes are made only to ground triples, or if new blank nodes are introduced which do not create an automorphic confusion with other existing blank nodes. If any information which would change the generated blank node identifier, a resulting diff might indicate a greater set of changes than actually exists.</p>
@@ -338,22 +338,22 @@
   <section id="canon-overview" class="informative">
     <h3>Overview</h3>
 
-    <p>To determine a canonical labeling, the <a>URDNA2015</a> considers the
+    <p>To determine a canonical labeling, <a>URDNA2015</a> considers the
       information connected to each blank node.
-      Nodes with unique first degree information can be issued a canonical identifier
-      immediately via the <a href="#issue-identifier">Issue Identifier algorithm</a>.
+      Nodes with unique first degree information can immediately be issued a canonical identifier
+      via the <a href="#issue-identifier">Issue Identifier algorithm</a>.
       When a node has non-unique first degree information,
-      it is necessary to determine all information that is connected
-      to it transitively throughout the entire dataset.
+      it is necessary to determine all information that is transitively connected
+      to it throughout the entire dataset.
       <a href="#hash-1d-quads" class="sectionRef"></a> defines a
       node’s first degree information via its first degree hash. </p>
 
     <p>Hashes are computed from the information of each blank node.
-      In particular, these hashes encode the mentions incident to each blank node.
+      These hashes encode the mentions incident to each blank node.
       The <a>hash</a> of a string <var>s</var>, is the lower-case,
       hexidecimal representation of the result of passing <var>s</var>
       through a cryptographic hash function.
-      URDNA2015 uses the hash algorithm SHA-256.</p>
+      URDNA2015 uses the SHA-256 hash algorithm.</p>
   </section>
 
   <section id="canon-terms">
@@ -474,13 +474,13 @@
         where the graph component `g` is empty if and only if the
         <a>triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
         This algorithm considers an RDF dataset to be a set of quads.
-        Two RDF datasets are considered to be the same modulo blank nodes,
-        or isomorphic, if and only if they return the same canonically labeled list of quads
+        Two RDF datasets are considered to be isomorphic (i.e., the same modulo blank nodes),
+        if and only if they return the same canonically labeled list of quads
         via <a>URDNA2015</a>.</p>
 
       <p><a>URDNA2015</a> consists of several sub-algorithms.
         These sub-algorithms are introduced in the following sub-sections.
-        Below we give a high level summary of URDNA2015.</p>
+        First, we give a high level summary of URDNA2015.</p>
 
       <ol>
         <li><strong>Initialization</strong>.
