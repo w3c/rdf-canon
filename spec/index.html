@@ -304,10 +304,6 @@
       <a>blank node</a>. <a>Blank node identifiers</a>
       are typically implementation-specific local identifiers; this document
       specifies an algorithm for deterministically specifying them.</dd>
-    <dt><dfn>mention set</dfn></dt>
-    <dd>The set of all <a>quads</a> in a <a>dataset</a>
-      that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
-      denoted <var>Q<sub>n</sub></var>.</dd>
   </dl>
 </section>
 
@@ -373,6 +369,23 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
+      <dt><dfn>lexicographical order</dfn></dt>
+      <dd>This refers to determining the order of two Unicode strings,
+        as defined in [[UTS10]].</dd>
+      <dt><dfn>lexicographically-sorted</dfn></dt>
+      <dd>This refers to an algorithm for reordering entries in
+       a list or array based upon their <a>lexicographical order</a>.</dd>
+      <dt><dfn data-lt="mention">mention set</dfn></dt>
+      <dd>The set of all <a>quads</a> in a <a>dataset</a>
+        that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
+        denoted <var>Q<sub>n</sub></var>.</dd>
+      <dt><dfn>gossip path</dfn></dt>
+      <dd>The gossip path between two <a>blank nodes</a> contained within
+        <a>quads</a> in a <a>dataset</a>, where the path is a sequence
+        of nodes and quads such that the first quad includes
+        the starting node as an component, and the last quad includes
+        the ending node as an component with each quad in the path
+        containing both the preceding and following nodes.</dd>
     </dl>
   </section>
 
@@ -597,7 +610,7 @@
               </ol>
             </li>
             <li id="ca-6-3">For each <var>result</var> in the <var>hash path list</var>,
-              lexicographically-sorted by the <var>hash</var> in <var>result</var>:
+              <a>lexicographically-sorted</a> by the <var>hash</var> in <var>result</var>:
               <ol>
                 <li>For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
@@ -735,7 +748,7 @@
             </li>
           </ol>
         </li>
-        <li id="h1d-4">Sort <a>nquads</a> in lexicographical order.</li>
+        <li id="h1d-4">Sort <a>nquads</a> in <a>lexicographical order</a>.</li>
         <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted,
           joined <a>nquads</a> through the
           <a>hash algorithm</a>.</li>
