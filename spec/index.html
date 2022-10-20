@@ -523,16 +523,15 @@
 
       <ol>
         <li id="ca-1">Create the <a>canonicalization state</a>.</li>
-        <li id="ca-2">For every <a>quad</a> in <a>input dataset</a>:
+        <li id="ca-2">For every <a>quad</a> <var>Q</var> in <a>input dataset</a>:
           <ol>
-            <li id="ca-2-1">For each <a>blank node</a> that occurs in the
-              <a>quad</a>, add a reference to the
-              <a>quad</a> using the
+            <li id="ca-2-1">For each <a>blank node</a> that is a component of <var>Q</var>,
+              add a reference to the <var>Q</var> using the
               <a>blank node identifier</a> in the
-              <a>blank node to quads map</a>, creating a new entry if
-              necessary.
+              <a>blank node to quads map</a>,
+              creating a new entry if necessary.
               <div class="issue" data-number="15">
-                It seems that quads must be normalized,
+                It seems that <var>Q</var> must be normalized,
                 so that literals with different syntactic representations
                 but the same semantic representations are merged,
                 and that two graphs differing in the syntactic representation
@@ -556,22 +555,22 @@
                 <li id="ca-5-3-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
                   for <var>n</var> according to the
                   <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</li>
-                <li id="ca-5-3-2">Add <var>hash</var> and <var>identifier</var> to
-                  <a>hash to blank nodes map</a>, creating a new entry if
-                  necessary.</li>
+                <li id="ca-5-3-2">Add <var>h<sub>f</sub>(n)</var> and <var>n</var> to
+                  <a>hash to blank nodes map</a>, including repetitions,
+                  creating a new entry if necessary.</li>
               </ol>
             </li>
             <li id="ca-5-4">For each <var>hash</var> to <var>identifier list</var> mapping in
-              <a>hash to blank nodes map</a>, lexicographically-sorted by
+              <a>hash to blank nodes map</a>, <a>lexicographically-sorted</a> by
               <var>hash</var>:
-              <ol class="algorithm">
-                <li id="ca-5-4-1">If the length of <var>identifier list</var> is greater than
-                  <code>1</code>, continue to the next mapping.</li>
+              <ol>
+                <li id="ca-5-4-1">If  <var>identifier list</var> is not empty,
+                  continue to the next mapping.</li>
                 <li id="ca-5-4-2">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <a>canonical issuer</a> and the
-                  single <a>blank node identifier</a> in
-                  <var>identifier list</var>, <var>identifier</var>, to issue a
+                  single <a>blank node identifier</a>, <var>identifier</var> in
+                  <var>identifier list</var> to issue a
                   canonical replacement identifier for <var>identifier</var>.</li>
                 <li id="ca-5-4-3">Remove <var>identifier</var> from
                   <var>non-normalized identifiers</var>.</li>
@@ -583,7 +582,7 @@
           </ol>
         </li>
         <li id="ca-6">For each <var>hash</var> to <var>identifier list</var> mapping in
-          <a>hash to blank nodes map</a>, lexicographically-sorted by
+          <a>hash to blank nodes map</a>, <a>lexicographically-sorted</a> by
           <var>hash</var>:
           <ol>
             <li id="ca-6-1">Create <var>hash path list</var> where each item will be a result
@@ -600,10 +599,10 @@
                   <code>_:b</code>.</li>
                 <li id="ca-6-2-3">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
-                  passing <var>temporary issuer</var> and <var>identifier</var>, to
-                  issue a new temporary <a>blank node identifier</a>
-                  for <var>identifier</var>.</li>
-                <li>Run the
+                  passing <var>temporary issuer</var> and <var>n</var>, to
+                  issue a new temporary <a>blank node identifier</a> <var>b<sub>n</sub></var>
+                  to <var>n</var>.</li>
+                <li id="ca-6-2-4">Run the
                   <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                   passing <var>temporary issuer</var>, and append the
                   result to the <var>hash path list</var>.</li>
@@ -612,7 +611,7 @@
             <li id="ca-6-3">For each <var>result</var> in the <var>hash path list</var>,
               <a>lexicographically-sorted</a> by the <var>hash</var> in <var>result</var>:
               <ol>
-                <li>For each <a>blank node identifier</a>,
+                <li id="ca-6-3-1">For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
                   identifier by <var>identifier issuer</var> in <var>result</var>, issue
                   a canonical identifier, in the same order, using the
@@ -623,11 +622,10 @@
             </li>
           </ol>
         </li>
-        <li id="ca-7">For each <a>quad</a>, <var>quad</var>, in
-          <a>input dataset</a>:
+        <li id="ca-7">For each <a>quad</a>, <var>q</var>, in <a>input dataset</a>:
           <ol>
-            <li id="ca-7-1">Create a copy, <var>quad copy</var>, of <var>quad</var> and replace any
-              existing <a>blank node identifier</a>s using the
+            <li id="ca-7-1">Create a copy, <var>quad copy</var>, of <var>q</var> and replace any
+              existing <a>blank node identifier</a> <var>n</var> using the
               canonical identifiers previously issued
               by <a>canonical issuer</a>.</li>
             <li id="ca-7-2">Add <var>quad copy</var> to the
@@ -654,13 +652,13 @@
         state information that tracks the order in which new
         <a>blank node identifiers</a> were issued.</p>
 
-      <p>This algorithm takes an <a>identifier issuer</a> and an
+      <p>This algorithm takes an <a>identifier issuer</a> <var>I</var> and an
         <var>existing identifier</var> as inputs. The output is a new
         <var>issued identifier</var>. The steps of the algorithm are:</p>
 
       <ol>
         <li id="iia-1">If there is already an issued identifier for
-          <var>existing identifier</var> in <a>issued identifiers list</a>,
+          <var>existing identifier</var> in <a>issued identifiers list</a> for <var>I</var>,
           return it.</li>
         <li id="iia-2">Generate <var>issued identifier</var> by concatenating
           <a>identifier prefix</a> with the string value of
@@ -709,6 +707,14 @@
       <p>The resulting serialized quads are then lexicogaphically sorted,
         concatenated and hashed.
         This hash is the first degree hash of <var>n</var>, <var>h<sub>f</sub>(n)</var>.</p>
+    </section>
+
+    <section id="hash-1d-quads-exampkes" class="informative">
+      <h3>Examples</h3>
+
+      <p class="ednote">
+        Add some examples where the algorithm results are unique or not.
+      </p>
     </section>
 
     <section id="hash-1d-quads-algorithm">
@@ -761,6 +767,10 @@
 
     <section id="hash-related-bn-overview" class="informative">
       <h3>Overview</h3>
+
+      <p class="ednote">The text from the Arnold/Longley paper
+        is a bit opaque here; recasting this in simpler terms
+        would be more useful for the target audience.</p>
     </section>
 
     <section id="hash-related-algorithm">
@@ -825,12 +835,128 @@
         <a>hash</a> is used to indicate a particular way that the graph
         has been drawn and can be used to compare nodes.</p>
 
+      <p>When two blank nodes have the same first degree hash,
+        extra steps must be taken to detect global,
+        or <em>N</em>-degree, distinctions.
+        All information that is in any way connected to the blank node <var>n</var>
+        through other blank nodes, even transitively, must be considered.</p>
+
+      <p>To consider all transitive information,
+        the algorithm traverses and encodes all possible paths of incident
+        mentions emanating from <var>n</var>, called <a>gossip paths</a>,
+        that reach every unlabeled blank node connected to <var>n</var>.
+        Each unlabeled blank node is assigned a temporary label
+        in the order in which it is reached in the
+        gossip path being explored.
+        The mentions that are traversed to reach
+        connected blank nodes are encoded in these paths via related hashes.
+        This provides a deterministic way to order all paths coming from <var>n</var> that
+        reach all blank nodes connected to n without relying on input blank
+        node labels.</p>
+  
       <p>This algorithm works in concert with the main canonicalization algorithm
         to produce a unique, deterministic identifier for a particular blank
         node. This <a>hash</a> incorporates all of the information that
         is connected to the blank node as well as how it is connected. It does
         this by creating deterministic paths that emanate out from the blank
         node through any other adjacent blank nodes.</p>
+
+      <p>Ultimately, the algorithm selects a shortest <a>gossip path</a>,
+        distributing canonical labels to the unlabeled blank nodes
+        in the order in which they appear in this path.
+        The hash of this encoded shortest path,
+        called the N-degree hash of <var>n</var>,
+        distinguishes <var>n</var> from other blank nodes in the dataset.</p>
+
+      <p>For clarity, we consider a <a>gossip path</a> encoded via the string <var>s</var>
+        to be shortest1 provided that:</p>
+
+      <ol>
+        <li>The length of <var>s</var> is less than or equal to the length
+          of any other gossip path string <var>s′</var>.</li>
+        <li>If <var>s</var> and <var>s′</var> have the same length (as strings),
+          then <var>s</var> is lexicographically less than or equal to <var>s′</var>.</li>
+      </ol>
+
+      <p>For example, <em>abc</em> is shorter than <em>bbc</em>,
+        whereas <em>abcd</em> is longer than <em>bcd</em>.</p>
+
+      <p>The following provides a high level outline for how the N-degree hash of <var>n</var>
+        is computed along the shortest <a>gossip path</a>.
+        Note that the full algorithm considers all gossip paths,
+        ultimately returning the <a>hash</a> of the shortest encoded path.</p>
+
+      <ol>
+        <li id="ndh-hl-s1"><strong>Compute related hashes</strong>.
+          Compute the related hash <var>H<sub>n</sub></var> set for <var>n</var>,
+          i.e. all first degree <a>mentions</a> between <var>n</var> and another blank node.
+          Note that this includes both labeled and unlabeled blank nodes.</li>
+        <li id="ndh-hl-s2"><strong>Explore mentions</strong>.
+          Given the related hash <var>x</var> in <var>H<sub>n</sub></var>,
+          record <var>x</var> in the data to hash <var>D<sub>n</sub></var>.
+          Determine whether each blank node reachable via the <a>mention</a> with related hash <var>x</var>
+          has already received a label.
+          <ol>
+            <li id="ndh-hl-s2-1"><strong>Record the labels of labeled nodes</strong>.
+              If a blank node already has a label,
+              record its label in <var>D<sub>n</sub></var> once for every
+              <a>mention</a> with related hash <var>x</var>.
+              Skip to the next related hash in <var>H<sub>n</sub></var>
+              and repeat <a href="#ndh-hl-s2">step 2</a>.</li>
+            <li id="ndh-hl-s2-2"><strong>Distribute and record temporary labels to unlabeled nodes</strong>.
+              For each unlabeled blank node,
+              assign it a temporary label according to the order in which it is reached in the gossip path,
+              recording its given label in <var>D<sub>n</sub></var> (including repetitions).
+              Add each unlabeled node to the recursion list <var>R<sub>n</sub>(x)</var>
+              in this same order (omitting repetitions).</li>
+            <li id="ndh-hl-s2-3"><strong>Recurse on newly labeled nodes</strong>.
+              For each <var>n<sub>i</sub></var> in <var>R<sub>n</sub>(x)</var>
+              <ol>
+                <li id="ndh-hl-s2-3-1">Record its label in <var>D<sub>n</sub></var></li>
+                <li id="ndh-hl-s2-3-2">Append &lt; <var>r(i)</var> > to <var>D<sub>n</sub></var>
+                  where <var>r(i)</var> is the data to hash that results from returning to
+                  <a href="#ndh-hl-s1">step 1</a>,
+                  replacing <var>n</var> with <var>n<sub>i</sub></var>.</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li id="ndh-hl-s3"><strong>Compute the <em>N</em>-degree hash of n</strong>.
+          Hash <var>D<sub>n</sub></var> to return the <em>N</em>-degree hash of <var>n</var>,
+          namely <var>h<sub>N</sub>(n)</var>.
+          Return the updated issuer <var>I<sub>n</sub></var>
+          that has now distributed temporary labels to all unlabeled blank nodes connected to <var>n</var>.</li>
+      </ol>
+
+      <p>As described above in <a href="#ndh-hl-s2-3">step 2.3</a>,
+        <var>HN</var> recurses on each unlabeled blank node
+        when it is first reached along the <a>gossip path</a> being explored.
+        This recursion can be visualized as moving along the path from <var>n</var>
+        to the blank node <var>n<sub>i</sub></var> that is receiving a temporary identifier.
+        If, when recursing on <var>n<sub>i</sub></var>,
+        another unlabeled blank node <var>n<sub>j</sub></var> is discovered,
+        the algorithm again recurses.
+        Such a recursion traces out the <a>gossip path</a> from <var>n</var>
+        to <var>n<sub>j</sub></var> via <var>n<sub>i</sub></var>.</p>
+
+      <p>The recursive hash <var>r(i)</var> is the <a>hash</a> returned from
+        the completed recursion on the node <var>n<sub>i</sub></var>
+        when computing <var>h<sub>N</sub>(n)</var>.
+        Just as <var>h<sub>N</sub>(n)</var> is the hash of <var>D<sub>n</sub></var>,
+        we denote the data to hash in the recursion on <var>n<sub>i</sub></var>
+        as <var>D<sub>i</sub></var>.
+        So, <var>r(i)</var> = <var>h(D<sub>i</sub>)</var>.
+        For each related hash <var>x</var> ∈ <var>H<sub>n</sub></var>,
+        <var>R<sub>n</sub>(x)</var> is called the <em>recursion list</em> on
+        which the algorithm recurses.</p>
+    </section>
+
+    <section id="hash-nd-quads-exampkes" class="informative">
+      <h3>Examples</h3>
+
+      <p class="ednote">
+        Add some examples ranging from simple to complicated and resource consuming.
+      </p>
     </section>
 
     <section id="hash-nd-quads-algorithm">
