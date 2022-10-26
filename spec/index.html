@@ -369,12 +369,18 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
-      <dt><dfn>lexicographical order</dfn></dt>
-      <dd>This refers to determining the order of two Unicode strings,
-        as defined in [[UTS10]].
+      <dt><dfn data-lt="lexicographical|lexicographically">lexicographical order</dfn></dt>
+      <dd>This refers to determining the order of two Unicode strings (`A` and `B`),
+        by using <br/><code><a data-cite="XPATH-FUNCTIONS#func-compare">fn:compare</a>(A, B, "http://www.w3.org/2005/xpath-functions/collation/codepoint")</code>,
+        as defined in [[XPATH-FUNCTIONS]].
+        This defines an absolute ordering of Unicode strings independent of language and localle.
+        <div class="note">
+          Ordering is performed after quads are transformed to N-Quads, so ordered strings
+          are always UTF-8.
+        </div>
         <div class="issue" data-number="18"></div>
       </dd>
-      <dt><dfn>lexicographically-sorted</dfn></dt>
+      <dt><dfn data-lt="sorted lexicographically">lexicographically-sorted</dfn></dt>
       <dd>This refers to an algorithm for reordering entries in
        a list or array based upon their <a>lexicographical order</a>.</dd>
       <dt><dfn data-lt="mention">mention set</dfn></dt>
@@ -507,11 +513,11 @@
           Assign canonical identifiers via <a href="#issue-identifier" class="sectionRef"></a>,
           in <a>lexicographical order</a>, to each blank node whose first degree hash is unique.</li>
         <li id="ca-hl-4"><strong>Compute N-degree hashes for non-unique nodes</strong>.
-          For each repeated first degree hash (proceeding in lexicographical order),
+          For each repeated first degree hash (proceeding in <a>lexicographical order</a>),
           compute the N-degree hash via <a href="#hash-nd-quads" class="sectionRef"></a>
           of every unlabeled blank node that corresponds to the given repeated hash.</li>
         <li id="ca-hl-5"><strong>Canonically label remaining nodes</strong>.
-          In lexicographical order of the N-degree hashes,
+          In <a>lexicographical order</a> of the N-degree hashes,
           issue canonical identifiers to each corresponding blank node using
           <a href="#issue-identifier" class="sectionRef"></a>.
           If more than one node produces the same N-degree hash,
@@ -706,7 +712,7 @@
         Every blank node component is replaced with either `_:a` or `_:z`,
         depending on if that component is <var>n</var> or not.</p>
 
-      <p>The resulting serialized quads are then lexicogaphically sorted,
+      <p>The resulting serialized quads are then <a>lexicographically-sorted</a>,
         concatenated and hashed.
         This hash is the first degree hash of <var>n</var>, <var>h<sub>f</sub>(n)</var>.</p>
     </section>
@@ -877,7 +883,7 @@
         <li>The length of <var>s</var> is less than or equal to the length
           of any other gossip path string <var>s′</var>.</li>
         <li>If <var>s</var> and <var>s′</var> have the same length (as strings),
-          then <var>s</var> is lexicographically less than or equal to <var>s′</var>.</li>
+          then <var>s</var> is <a>lexicographically</a> less than or equal to <var>s′</var>.</li>
       </ol>
 
       <p>For example, <em>abc</em> is shorter than <em>bbc</em>,
@@ -1015,7 +1021,7 @@
         </li>
         <li id="hndq-4">Create an empty string, <var>data to hash</var>.</li>
         <li id="hndq-5">For each <var>related hash</var> to <var>blank node list</var> mapping in
-          <var>hash to related blank nodes map</var>, sorted lexicographically
+          <var>hash to related blank nodes map</var>, <a>lexicographically-sorted</a>
           by <var>related hash</var>:
           <ol>
             <li id="hndq-5-1">Append the <var>related hash</var> to the <var>data to hash</var>.</li>
@@ -1045,7 +1051,7 @@
                     </li>
                     <li id="hndq-5-4-4-3">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
-                      of <var>chosen path</var> and <var>path</var> is lexicographically
+                      of <var>chosen path</var> and <var>path</var> is <a>lexicographically</a>
                       greater than <var>chosen path</var>, then skip to the next
                       <var>permutation</var>.
                     </li>
@@ -1068,13 +1074,13 @@
                       <a>identifier issuer</a> in result.</li>
                     <li id="hndq-5-4-5-5">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
-                      of <var>chosen path</var> and <var>path</var> is lexicographically
+                      of <var>chosen path</var> and <var>path</var> is <a>lexicographically</a>
                       greater than <var>chosen path</var>, then skip to the next
                       <var>permutation</var>.</li>
                   </ol>
                 </li>
                 <li id="hndq-5-4-6">If <var>chosen path</var> is empty or <var>path</var> is
-                  lexicographically less than <var>chosen path</var>, set
+                  <a>lexicographically</a> less than <var>chosen path</var>, set
                   <var>chosen path</var> to <var>path</var> and <var>chosen issuer</var>
                   to <var>issuer copy</var>.</li>
               </ol>
