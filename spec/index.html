@@ -879,7 +879,7 @@
         <li>The length of <var>s</var> is less than or equal to the length
           of any other gossip path string <var>s′</var>.</li>
         <li>If <var>s</var> and <var>s′</var> have the same length (as strings),
-          then <var>s</var> <a>code point orders</a> less than or equal to <var>s′</var>.</li>
+          then <var>s</var> is <a>code point ordered</a> less than or equal to <var>s′</var>.</li>
       </ol>
 
       <p>For example, <em>abc</em> is shorter than <em>bbc</em>,
@@ -1072,12 +1072,12 @@
                     <li id="hndq-5-4-5-5">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is
-                      greater than <var>chosen path</var> when consider <a>code point order</a>,
+                      greater than <var>chosen path</var> when considering <a>code point order</a>,
                       then skip to the next <var>permutation</var>.</li>
                   </ol>
                 </li>
                 <li id="hndq-5-4-6">If <var>chosen path</var> is empty or <var>path</var> is
-                  less than <var>chosen path</var>  when consider <a>code point order</a>,
+                  less than <var>chosen path</var> when considering <a>code point order</a>,
                   set <var>chosen path</var> to <var>path</var> and <var>chosen issuer</var>
                   to <var>issuer copy</var>.</li>
               </ol>
