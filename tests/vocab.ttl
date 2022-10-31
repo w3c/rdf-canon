@@ -2,11 +2,11 @@
 # This vocabulary defines classes an properties which extend
 # the test-manifest vocabulary at <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest>.
 
-@prefix :       <http://w3c-ccg.github.io/rdf-dataset-canonicalization/tests/vocab#> .
+@prefix :       <http://w3c.github.io/rch-rdc/tests/vocab#> .
 @prefix dc:     <http://purl.org/dc/elements/1.1/> .
 @prefix mf:     <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfn:   <http://w3c-ccg.github.io/rdf-dataset-canonicalization/tests/vocab#> .
+@prefix rdfn:   <http://w3c.github.io/rch-rdc/tests/vocab#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdft:   <http://www.w3.org/ns/rdftest#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
@@ -16,11 +16,11 @@
   dc:publisher     "W3C Credentials Community Group";
   dc:description   """
     This is a vocabulary document used to define classes and properties used in
-    [RDF Dataset Canonicalization Test Cases](http://w3c-ccg.github.io/rdf-dataset-canonicalization/tests/) and associated test manifests.
+    [RDF Dataset Canonicalization Test Cases](http://w3c.github.io/rch-rdc/tests/) and associated test manifests.
   """;
   rdfs:comment     """
     This is a vocabulary document used to define classes and properties used in
-    [RDF Dataset Canonicalization Test Cases](http://w3c-ccg.github.io/rdf-dataset-canonicalization/tests/) and associated test manifests.
+    [RDF Dataset Canonicalization Test Cases](http://w3c.github.io/rch-rdc/tests/) and associated test manifests.
   """;
   dc:date          "2015-05-19";
   dc:identifier    rdfn: .
