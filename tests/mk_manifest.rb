@@ -40,10 +40,10 @@ class Manifest
       # Create entry as object indexed by symbolized column name
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
-      urgna2012 = "#{entry[:test]}-urgna2012.nq" if entry[:urgna2012] == "TRUE"
-      urdna2015 = "#{entry[:test]}-urdna2015.nq" if entry[:urdna2015] == "TRUE"
+      urgna2012 = "urgna2012/#{entry[:test]}-urgna2012.nq" if entry[:urgna2012] == "TRUE"
+      urdna2015 = "urdna2015/#{entry[:test]}-urdna2015.nq" if entry[:urdna2015] == "TRUE"
       Test.new(entry[:test], entry[:name], entry[:comment], entry[:approval],
-               "#{entry[:test]}-in.nq", urgna2012, urdna2015)
+               "urdna2015/#{entry[:test]}-in.nq", urgna2012, urdna2015)
     end
   end
 
@@ -70,7 +70,7 @@ class Manifest
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "mf": "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#",
       "mq": "http://www.w3.org/2001/sw/DataAccess/tests/test-query#",
-      "rdfn": "http://w3c-ccg.github.io/rdf-dataset-canonicalization/test-vocab#",
+      "rdfn": "https://w3c.github.io/rch-rdc/tests/vocab#",
       "rdft": "http://www.w3.org/ns/rdftest#",
       "id": "@id",
       "type": "@type",
@@ -143,7 +143,7 @@ class Manifest
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix mf:   <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix rdft: <http://www.w3.org/ns/rdftest#> .
-@prefix rdfn: <http://w3c-ccg.github.io/rdf-dataset-canonicalization/test-vocab#> .
+@prefix rdfn: <http://w3c.github.io/rch-rdc/tests/vocab#> .
 
 <manifest-#{variant}>  a mf:Manifest ;
 )
