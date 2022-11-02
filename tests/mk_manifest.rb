@@ -17,11 +17,11 @@ class Manifest
   )
 
   TITLE = {
-    urgna2012: "RDF Graph Normalization (URGNA2012)",
+    #urgna2012: "RDF Graph Normalization (URGNA2012)",
     urdna2015: "RDF Dataset Canonicalization (URDNA2015)",
   }
   DESCRIPTION = {
-    urgna2012: "Tests the 2012 version of RDF Graph Normalization.",
+    #urgna2012: "Tests the 2012 version of RDF Graph Normalization.",
     urdna2015: "Tests the 2015 version of RDF Dataset Canonicalization."
   }
 
@@ -135,7 +135,6 @@ class Manifest
 ## 3. http://www.w3.org/2004/10/27-testcases
 ##
 ## Test types
-## * rdfn:Urgna2012EvalTest  - Normalization using URGNA2012
 ## * rdfn:Urdna2015EvalTest  - Canonicalization using URDNA2015
 
 @prefix : <manifest-#{variant}#> .
