@@ -5,6 +5,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport" />
 <title>RDF Dataset Canonicalization</title>
 <script class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
+<script src="common/common.js" class="remove" defer></script>
 <script class="remove" src="common/biblio.js"></script>
 <script class="remove">
 //<![CDATA[
@@ -734,9 +735,130 @@
     <section id="hash-1d-quads-exampkes" class="informative">
       <h3>Examples</h3>
 
-      <p class="ednote">
-        Add some examples where the algorithm results are unique or not.
-      </p>
+      <aside id="ex-hash-simple-mentions"
+            class="example"
+            title="Hash simple mentions">
+        <p>This example illustrates hashing quads containing
+          blank nodes where hashing the statements mentioning
+          those blank nodes generates unique results.</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            :test :A _:b0 .
+            :test :B _:b1 .
+            _:b0 :next _:b2 .
+            _:b1 :next _:b2 .
+          -->
+        </pre>
+
+        <p>The algorithm will be called twice, with each blank node (`_:b0` and `_:b1`).
+          Running the algorithm with the reference node `_:b0` results in the
+          following quads, after replacing blank nodes:</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            :test :A _:a .
+            _:a :next _:z .
+          -->
+        </pre>
+
+        <p>These are then serialized to N-Quads, concatenated and hashed resulting in
+          `6e841f6652ff189fce3c9b774ff55b49f43633c29ff75020d8b9c15581be980686b09b85cf9a3d2b9a9d07b2cccac1b2e11e72d5d3f57d4db8fbc1deb346ce72`.</p>
+
+        <p>The algorithm is run a second time with the reference node `_:b1` resulting
+          in the following quads:</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            :test :B _:a .
+            _:a :next _:z .
+          -->
+        </pre>
+
+        <p>These are then serialized to N-Quads, concatenated and hashed resulting in
+          `c48c96f011c21e46a071482c67aaba5ec88b9ca08e22c8fcb9048bd635f71780`.</p>
+
+        <p>Thus the generated hashes each reference just a single blank node,
+          allowing the canonicalization algorithm to use only the
+          Hash First Degree Quads algorithm.</p>
+      </aside>
+
+      <aside id="ex-hash-multiple-mentions"
+            class="example"
+            title="Hash multiple mentions">
+        <p>This example illustrates hashing quads containing
+          blank nodes where hashing the statements mentioning
+          those blank nodes overlapping results.</p>
+
+        <figure id="fig-hash-multiple-mentions" style="text-align:center">
+          <!-- Source for this file is at https://docs.google.com/drawings/d/1HWpz8S-PNaWi02-utF62HAMd_0b-AF_tHNSRRUQILbU/edit?usp=sharing -->
+          <object data="hash-multiple-mentions.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-hash-multiple-mentions-alt">
+            <p id="fig-hash-multiple-mentions-alt">
+              The image represents the graph described in
+              the following code block.</p>
+          </object>
+          <figcaption>An illustration of a graph with multiple mentions.<br/>
+            Image available in
+            <a href="hash-multiple-mentions.svg" title="SVG image of a Hash multiple mentions">
+              <abbr title="Scalable Vector Graphics">SVG</abbr>
+            </a>.</figcaption>
+        </figure>
+          
+        <pre id="ex-hash-multiple-metions-input" data-transform="updateExample">
+          <!--
+            :p :q _:b0 .
+            :p :q _:b1 .
+            _:b0 :p _:b2 .
+            _:b1 :p _:b3 .
+            _:b2 :r _:b3 .
+          -->
+        </pre>
+
+        <p>The algorithm will be called four times, with each blank node
+          (`_:b0`, `_:b1`, `_:b2`, and `_:b3`).
+          Running the algorithm with the reference node `_:b0` results in the
+          following quads, after replacing blank nodes:</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            :p :q _:a .
+            _:a :p _:z .
+          -->
+        </pre>
+
+        <p>Which hashes to: `f63613c4d0e08679d22af8643c68b984a0710818344d3e8d964ad95264dd1457`.</p>
+
+        <p>Note that using reference node `_:b1` results in the same quads.</p>
+
+        <p>Using the reference node `_:b2` results in the following quads:</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            _:z :p _:a .
+            _:a :r _:z .
+          -->
+        </pre>
+
+        <p>Which hashes to: `4bec7a7d5041738cd7773e462031da1fb5c253168dfee051b550bbbc4597ac74`.</p>
+
+        <p>Lastly, using the reference node `_:b3` results in the following quads:</p>
+
+        <pre data-transform="updateExample">
+          <!--
+            _:z :r _:a .
+            _:z :p _:a .
+          -->
+        </pre>
+
+        <p>Which hashes to: `c6cdd608d741bd5c4920c0a12fef35ff2c2e2265216fa1e4c003eeffa76730bf`.</p>
+
+        <p>The hashes for `_:b2` and `_:b3` are unique, but `_:b0`,
+          and `_:b1` share a common hash,
+          which will require the use of the
+          <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
+          as it is necessary to consider quads further removed from the mentions
+          to determine a unique hash.</p>
+      </aside>
     </section>
 
     <section id="hash-1d-quads-algorithm">
