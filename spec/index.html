@@ -688,14 +688,14 @@
   <section id="hash-1d-quads" class="algorithm">
     <h2>Hash First Degree Quads</h2>
 
-    <p>This algorithm calculates a <a>hash</a> a given <a>blank node</a>
+    <p>This algorithm calculates a <a>hash</a> for a given <a>blank node</a>
       across the <a>quads</a> in a <a>dataset</a> in which that blank node
       is a component.
-      If this hash uniquely identifies that blank node,
+      If the hash uniquely identifies that blank node,
       no further examination is necessary.
       Otherwise, a hash will be created for the blank node using
       the algorithm in <a href="#hash-nd-quads" class="sectionRef"></a>
-      in <a href="#canon-algorithm" class="sectionRef"></a>.</p>
+      invoked via <a href="#canon-algorithm" class="sectionRef"></a>.</p>
 
     <p class="issue" data-number="23">The result of this algorithm for a
       particular blank node will always be the same. This is only true
