@@ -83,7 +83,7 @@
 //]]>
 </script>
 <style>
-  .highlight { font-weight: bold; color: #0a3; }
+  .hl-bold { font-weight: bold; color: #0a3; }
   .comment { color: #999; }
   table, thead, tr, td { padding: 5px; border-width: 1px; border-spacing: 0px; border-style: solid; border-collapse: collapse; }
   .algorithm ol {
@@ -973,9 +973,17 @@
   <section id="hash-nd-quads" class="algorithm">
     <h2>Hash N-Degree Quads</h2>
 
-    <p class="ednote">The relationship and difference between this algorithm
-      and the hash first degree quads algorithm should be better explained.
-      There may also be better names for the two algorithms.</p>
+    <p>This algorithm calculates a <a>hash</a> for a given <a>blank node</a>
+      across the <a>quads</a> in a <a>dataset</a> in which that blank node
+      is a component for which the hash does not uniquely identify that blank node.
+      This is done by expanding the search from quads directly referencing that
+      blank node (the <a>mention set</a>), to those quads
+      which contain nodes which are also components of quads in the mention set,
+      called the <a>gossip path</a>.
+      This process proceeds in every greater degrees of indirection until
+      a unique hash is obtained.</p>
+
+    <p class="ednote">There may also be better names for the two algorithms.</p>
 
     <p class="ednote">The 'path' terminology could also be changed to better
       indicate what a path is (a particular deterministic serialization for
