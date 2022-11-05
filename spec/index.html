@@ -735,32 +735,32 @@
     <section id="hash-1d-quads-exampkes" class="informative">
       <h3>Examples</h3>
 
-      <aside id="ex-hash-simple-mentions"
+      <aside id="ex-unique-hashes"
             class="example"
-            title="Hash simple mentions">
+            title="Unique hashes">
         <p>This example illustrates hashing quads containing
           blank nodes where hashing the statements mentioning
           those blank nodes generates unique results.</p>
 
-        <figure id="fig-hash-simple-mentions" style="text-align:center">
+        <figure id="fig-unique-hashes" style="text-align:center">
           <!-- Source for this file is at https://docs.google.com/drawings/d/1LQ6fp4a35lrEOKRMD20gcncUkoitX0eW8QI_U2mQnAs/edit?usp=sharing -->
-          <object data="hash-simple-mentions.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-hash-simple-mentions-alt">
-            <p id="fig-hash-simple-mentions-alt">
+          <object data="unique-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
+            <p id="fig-unique-hashes-alt">
               The image represents the graph described in
-              <a href="#ex-hash-simple-mentions-input">
+              <a href="#ex-unique-hashes-input">
                 the following code block
               </a>.</p>
           </object>
-          <figcaption>An illustration of a graph with simple mentions.<br/>
+          <figcaption>An illustration of a graph resulting in unique hashes.<br/>
             Image available in
-            <a href="hash-simple-mentions.svg" title="SVG image of a Hash simple mentions">
+            <a href="unique-hashes.svg" title="SVG image of a unique hashes">
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
 
-        <pre id="ex-hash-simple-mentions-input"
+        <pre id="ex-unique-hashes-input"
              data-transform="updateExample"
-             title="Graph with blank nodes having simple mentions">
+             title="Graph with blank nodes resulting in unique hashes">
           <!--
             :p :q _:b0 .
             :p :r _:b1 .
@@ -801,32 +801,32 @@
           Hash First Degree Quads algorithm.</p>
       </aside>
 
-      <aside id="ex-hash-multiple-mentions"
+      <aside id="ex-shared-hashes"
             class="example"
-            title="Hash multiple mentions">
+            title="Shared hashes">
         <p>This example illustrates hashing quads containing
           blank nodes where hashing the statements mentioning
-          those blank nodes overlapping results.</p>
+          those blank nodes have overlapping results.</p>
 
-        <figure id="fig-hash-multiple-mentions" style="text-align:center">
+        <figure id="fig-shared-hashes" style="text-align:center">
           <!-- Source for this file is at https://docs.google.com/drawings/d/1HWpz8S-PNaWi02-utF62HAMd_0b-AF_tHNSRRUQILbU/edit?usp=sharing -->
-          <object data="hash-multiple-mentions.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-hash-multiple-mentions-alt">
-            <p id="fig-hash-multiple-mentions-alt">
+          <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-shared-hashes-alt">
+            <p id="fig-shared-hashes-alt">
               The image represents the graph described in
-              <a href="#ex-hash-multiple-mentions-input">
+              <a href="#ex-shared-hashes-input">
                 the following code block
               </a>.</p>
           </object>
-          <figcaption>An illustration of a graph with multiple mentions.<br/>
+          <figcaption>An illustration of a graph resulting in shared hashes.<br/>
             Image available in
-            <a href="hash-multiple-mentions.svg" title="SVG image of a Hash multiple mentions">
+            <a href="shared-hashes.svg" title="SVG image of a graph resulting in shared hashes">
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
           
-        <pre id="ex-hash-multiple-mentions-input"
+        <pre id="ex-shared-hashes-input"
              data-transform="updateExample"
-             title="Graph with blank nodes having multiple mentions">
+             title="Graph with blank nodes resulting in shared hashes">
           <!--
             :p :q _:b0 .
             :p :q _:b1 .
@@ -850,7 +850,8 @@
 
         <p>Which hashes to: `3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36`.</p>
 
-        <p>Note that using reference node `_:b1` results in the same quads.</p>
+        <p>Note that using reference node `_:b1` results in the same quads,
+          and thus results in the same hash.</p>
 
         <p>Using the reference node `_:b2` results in the following quads:</p>
 
@@ -878,7 +879,7 @@
           and `_:b1` share a common hash,
           which will require the use of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
-          as it is necessary to consider quads further removed from the mentions
+          as it is necessary to consider quads further removed from the direct mentions
           to determine a unique hash.</p>
       </aside>
     </section>
