@@ -780,7 +780,8 @@
           -->
         </pre>
 
-        <p>These are then serialized to N-Quads, concatenated and hashed resulting in
+        <p>These are then serialized to N-Quads, concatenated and hashed
+          using the <a>hash algorithm</a> (SHA-256) resulting in
           `21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a`.</p>
 
         <p>The algorithm is run a second time with the reference node `_:b1` resulting
@@ -793,7 +794,7 @@
           -->
         </pre>
 
-        <p>These are then serialized to N-Quads, concatenated and hashed resulting in
+        <p>These are then serialized to N-Quads, concatenated and hashed as before resulting in
           `6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473`.</p>
 
         <p>Thus the generated hashes each reference just a single blank node,
