@@ -7,7 +7,7 @@ The test manifests and entries are built automatically from
 where each row defines a combination of Validation tests for the same
 _action_ and implicit files.
 Tests may be contributed via pull request to
-[https://github.com/w3c-ccg/rdf-canon](https://github.com/w3c-ccg/rdf-canon)
+[https://github.com/w3c/rdf-canon](https://github.com/w3c/rdf-canon)
 with suitable changes to the
 [manifest.csv](manifest.csv) and necessary _action_ and _result_ files. 
 
