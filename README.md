@@ -1,8 +1,8 @@
 
-# Specification 'rch-rdc'
+# Specification 'rdf-canon'
 
-This is the repository for rch-rdc, the **_RDF Dataset Canonicalization_** deliverable of the [RCH working group](https://www.w3.org/groups/wg/rch). 
-The editors’ draft of the specification can also be [read directly](https://w3c.github.io/rch-rdc/spec/).
+This is the repository for rdf-canon, the **_RDF Dataset Canonicalization_** deliverable of the [RCH working group](https://www.w3.org/groups/wg/rch). 
+The editors’ draft of the specification can also be [read directly](https://w3c.github.io/rdf-canon/spec/).
 
 ## Contributing to the Repository
 
