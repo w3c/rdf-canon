@@ -70,7 +70,7 @@ class Manifest
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "mf": "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#",
       "mq": "http://www.w3.org/2001/sw/DataAccess/tests/test-query#",
-      "rdfn": "https://w3c.github.io/rch-rdc/tests/vocab#",
+      "rdfn": "https://w3c.github.io/rdf-canon/tests/vocab#",
       "rdft": "http://www.w3.org/ns/rdftest#",
       "id": "@id",
       "type": "@type",
@@ -142,7 +142,7 @@ class Manifest
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix mf:   <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 @prefix rdft: <http://www.w3.org/ns/rdftest#> .
-@prefix rdfn: <http://w3c.github.io/rch-rdc/tests/vocab#> .
+@prefix rdfn: <http://w3c.github.io/rdf-canon/tests/vocab#> .
 
 <manifest-#{variant}>  a mf:Manifest ;
 )
