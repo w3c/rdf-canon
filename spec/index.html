@@ -364,15 +364,13 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
-      <dt><dfn data-lt="code point order|code point ordered">Unicode point order</dfn></dt>
+      <dt><dfn data-lt="code point order|code point ordered">Unicode code point order</dfn></dt>
       <dd>This refers to determining the order of two Unicode strings (`A` and `B`),
-        using a
+        using <a data-cite="XPATH-FUNCTIONS#codepoint-collation">Unicode Codepoint Collation</a>,
+        as defined in [[XPATH-FUNCTIONS]],
+        which defines a
         <a href="https://en.wikipedia.org/wiki/Total_order">total ordering</a>
-        of [[UNICODE]] comparing code points.
-        This is equivalent to
-        using <br/><code><a data-cite="XPATH-FUNCTIONS#func-compare">fn:compare</a>(A, B, "http://www.w3.org/2005/xpath-functions/collation/codepoint")</code>,
-        as defined in [[XPATH-FUNCTIONS]].
-        <div class="issue" data-number="18"></div>
+        of <a>strings</a> comparing code points.
       </dd>
       <dt><dfn data-lt="mention">mention set</dfn></dt>
       <dd>The set of all <a>quads</a> in a <a>dataset</a>
@@ -509,13 +507,13 @@
           Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
         <li id="ca-hl-3"><strong>Canonically label unique nodes</strong>.
           Assign canonical identifiers via <a href="#issue-identifier" class="sectionRef"></a>,
-          in <a>Unicode point order</a>, to each blank node whose first degree hash is unique.</li>
+          in <a>Unicode code point order</a>, to each blank node whose first degree hash is unique.</li>
         <li id="ca-hl-4"><strong>Compute N-degree hashes for non-unique nodes</strong>.
-          For each repeated first degree hash (proceeding in <a>Unicode point order</a>),
+          For each repeated first degree hash (proceeding in <a>Unicode code point order</a>),
           compute the N-degree hash via <a href="#hash-nd-quads" class="sectionRef"></a>
           of every unlabeled blank node that corresponds to the given repeated hash.</li>
         <li id="ca-hl-5"><strong>Canonically label remaining nodes</strong>.
-          In <a>Unicode point order</a> of the N-degree hashes,
+          In <a>Unicode code point order</a> of the N-degree hashes,
           issue canonical identifiers to each corresponding blank node using
           <a href="#issue-identifier" class="sectionRef"></a>.
           If more than one node produces the same N-degree hash,
@@ -913,7 +911,7 @@
             </li>
           </ol>
         </li>
-        <li id="h1d-4">Sort <a>nquads</a> in <a>Unicode point order</a>.</li>
+        <li id="h1d-4">Sort <a>nquads</a> in <a>Unicode code point order</a>.</li>
         <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted,
           joined <a>nquads</a> through the
           <a>hash algorithm</a>.</li>
