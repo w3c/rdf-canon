@@ -59,8 +59,8 @@ class Manifest
 
   def test_class(test, variant)
     case variant.to_sym
-    when :urgna2012 then "rdfn:Urgna2012EvalTest"
-    when :urdna2015 then "rdfn:Urdna2015EvalTest"
+    when :urgna2012 then "rdfc:Urgna2012EvalTest"
+    when :urdna2015 then "rdfc:Urdna2015EvalTest"
     end
   end
 
@@ -70,7 +70,7 @@ class Manifest
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "mf": "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#",
       "mq": "http://www.w3.org/2001/sw/DataAccess/tests/test-query#",
-      "rdfn": "https://w3c.github.io/rdf-canon/tests/vocab#",
+      "rdfc": "https://w3c.github.io/rdf-canon/tests/vocab#",
       "rdft": "http://www.w3.org/ns/rdftest#",
       "id": "@id",
       "type": "@type",
@@ -135,14 +135,14 @@ class Manifest
 ## 3. http://www.w3.org/2004/10/27-testcases
 ##
 ## Test types
-## * rdfn:Urdna2015EvalTest  - Canonicalization using URDNA2015
+## * rdfc:Urdna2015EvalTest  - Canonicalization using URDNA2015
 
 @prefix : <manifest-#{variant}#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix mf:   <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix rdfc: <https://w3c.github.io/rdf-canon/tests/vocab#> .
 @prefix rdft: <http://www.w3.org/ns/rdftest#> .
-@prefix rdfn: <https://w3c.github.io/rdf-canon/tests/vocab#> .
 
 <manifest-#{variant}>  a mf:Manifest ;
 )
