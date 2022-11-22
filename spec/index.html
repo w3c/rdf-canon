@@ -443,11 +443,10 @@
       <dd>A counter that is appended to the <a>identifier prefix</a> to
         create an <a>blank node identifier</a>. It is initialized to
         <code>0</code>.</dd>
-      <dt><dfn>issued identifiers list</dfn></dt>
-      <dd>A list that tracks previously issued identifiers in the order in
-        which they were issued. It also tracks the existing identifier that
-        triggered the issuance, to prevent issuing more than one new identifier
-        per existing identifier, and to allow <a>blank nodes</a> to
+      <dt><dfn>issued identifiers map</dfn></dt>
+      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates existing identifiers to issued identifiers,
+        to prevent issuance of more than one new identifier per existing identifier,
+        and to allow <a>blank nodes</a> to
         be reassigned identifiers some time after issuance.</dd>
     </dl>
   </section>
@@ -657,14 +656,16 @@
         <var>issued identifier</var>. The steps of the algorithm are:</p>
 
       <ol>
-        <li id="iia-1">If there is already an issued identifier for
-          <var>existing identifier</var> in <a>issued identifiers list</a> of <var>I</var>,
+        <li id="iia-1">If there is a
+          <a data-cite="INFRA#map-entryå">map entry</a> for <var>existing identifier</var> in
+          <a>issued identifiers map</a> of <var>I</var>,
           return it.</li>
         <li id="iia-2">Generate <var>issued identifier</var> by concatenating
           <a>identifier prefix</a> with the string value of
           <a>identifier counter</a>.</li>
-        <li id="iia-3">Append an item to <a>issued identifiers list</a> that maps
-          <var>existing identifier</var> to <var>issued identifier</var>.</li>
+        <li id="iia-3">Add a <a data-cite="INFRA#map-entry">entry</a>
+          mapping <var>existing identifier</var> to <var>issued identifier</var>
+          to the <a>issued identifiers map</a> of <var>I</var>.</li>
         <li id="iia-4">Increment <a>identifier counter</a>.</li>
         <li id="iia-5">Return <var>issued identifier</var>.</li>
       </ol>
