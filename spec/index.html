@@ -444,7 +444,7 @@
         create an <a>blank node identifier</a>. It is initialized to
         <code>0</code>.</dd>
       <dt><dfn>issued identifiers map</dfn></dt>
-      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates existing identifiers to issued identifiers,
+      <dd>An <a data-cite="INFRA#ordered-map">ordered map</a> that relates existing identifiers to issued identifiers,
         to prevent issuance of more than one new identifier per existing identifier,
         and to allow <a>blank nodes</a> to
         be reassigned identifiers some time after issuance.</dd>
@@ -657,7 +657,7 @@
 
       <ol>
         <li id="iia-1">If there is a
-          <a data-cite="INFRA#map-entryå">map entry</a> for <var>existing identifier</var> in
+          <a data-cite="INFRA#map-entry">map entry</a> for <var>existing identifier</var> in
           <a>issued identifiers map</a> of <var>I</var>,
           return it.</li>
         <li id="iia-2">Generate <var>issued identifier</var> by concatenating
