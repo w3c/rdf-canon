@@ -1320,20 +1320,20 @@
 <section class="appendix informative" id="changes-from-fpwd">
   <h2>Changes since the First Public Working Draft of 24 November 2022</h2>
   <ul>
-    <li class="issue" data-number="23">
+    <li>
       <a href="#hash-1d-quads" class="sectionRef"></a>
       was simplified to remove the `simple` flag,
       which was unused in existing implementations.
-      The design of the algorithm was to use the
+      The original design of the algorithm was to use the
       assigned canonical <a>blank node identifier</a>,
       if available, instead of `_:a` or `_:z`,
       similar to how it is used in
       the related hash algorithm, but this text never made it into the spec
       before implementations moved forward.
-      Therefore, the hashes here
-      never change, making the loop based on the `simple`
-      flag that calls this algorithm unnecessary; it needs to only run
-      once.
+      Therefore, the hashes never change,
+      making the loop based on the `simple`
+      flag that calls this algorithm unnecessary.
+      See <a href="https://github.com/w3c/rdf-canon/issues/23">Issue 23</a> for the discussion.
     </li>
   </ul>
 </section>
