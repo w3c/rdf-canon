@@ -398,11 +398,11 @@
 
     <dl>
       <dt><dfn>blank node to quads map</dfn></dt>
-      <dd>A data structure that maps a <a>blank node identifier</a> to
+      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>blank node identifier</a> to
         the <a>quads</a> in which they appear in the
         <a>input dataset</a>.</dd>
       <dt><dfn>hash to blank nodes map</dfn></dt>
-      <dd>A data structure that maps a <a>hash</a> to a list of
+      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>hash</a> to a list of
         <a>blank node identifiers</a>.</dd>
       <dt><dfn>canonical issuer</dfn></dt>
       <dd>An <a>identifier issuer</a>, initialized with the
@@ -531,9 +531,10 @@
         <li id="ca-2">For every <a>quad</a> <var>Q</var> in <a>input dataset</a>:
           <ol>
             <li id="ca-2-1">For each <a>blank node</a> that is a component of <var>Q</var>,
-              add a reference to the <var>Q</var> using the
-              <a>blank node identifier</a> in the
-              <a>blank node to quads map</a>,
+              add a reference to the <var>Q</var> from the
+              <a data-cite="INFRA#map-entry">map entry</a> for the
+              <a>blank node identifier</a> <var>identifier</var>
+              in the <a>blank node to quads map</a>,
               creating a new entry if necessary.
               <div class="issue" data-number="15">
                 It seems that <var>Q</var> must be normalized,
@@ -545,7 +546,7 @@
           </ol>
         </li>
         <li id="ca-3">Create a list of non-normalized <a>blank node identifiers</a>
-          <var>non-normalized identifiers</var> and populate it using the keys
+          <var>non-normalized identifiers</var> and populate it using the <a data-cite="INFRA#map-key">keys</a>
           from the <a>blank node to quads map</a>.</li>
         <li id="ca-4">For each <a>blank node identifier</a> <var>n</var> in <var>non-normalized identifiers</var>:
           <ol>
@@ -557,7 +558,8 @@
               creating a new entry if necessary.</li>
           </ol>
         </li>
-        <li id="ca-5">For each <var>hash</var> to <var>identifier list</var> mapping in
+        <li id="ca-5">For each <var>hash</var> to <var>identifier list</var>
+          <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
           <ol>
             <li id="ca-5-1">If <var>identifier list</var> has more than one entry,
@@ -570,12 +572,13 @@
               canonical replacement identifier for <var>identifier</var>.</li>
             <li id="ca-5-3">Remove <var>identifier</var> from
               <var>non-normalized identifiers</var>.</li>
-            <li id="ca-5-4">Remove <var>hash</var> from the
+            <li id="ca-5-4">Remove the <a data-cite="INFRA#map-entry">map entry</a> for <var>hash</var> from the
               <a>hash to blank nodes map</a>.</li>
           </ol>
         </li>
         </li>
-        <li id="ca-6">For each <var>hash</var> to <var>identifier list</var> mapping in
+        <li id="ca-6">For each <var>hash</var> to <var>identifier list</var>
+          <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by
           <var>hash</var>:
           <ol>
@@ -862,7 +865,8 @@
       <ol>
         <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty list. It will be
           used to store quads in [[N-Quads]] format.</li>
-        <li id="h1d-2">Get the list of <a>quads</a> <var>quads</var> associated with the
+        <li id="h1d-2">Get the list of <a>quads</a> <var>quads</var>
+          from the <a data-cite="INFRA#map-entry">map entry</a> for
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
         <li id="h1d-3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
@@ -1128,8 +1132,9 @@
         <li id="hndq-1">Create a <var>hash to related blank nodes map</var> for storing
           hashes that identify related <a>blank nodes</a>.</li>
         <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
-          in the <a>blank node to quads map</a> for the key
-          <var>identifier</var>.</li>
+          from the <a data-cite="INFRA#map-entry">map entry</a>
+          for <var>identifier</var>
+          in the <a>blank node to quads map</a>.</li>
         <li id="hndq-3">For each <var>quad</var> in <var>quads</var>:
           <ol>
             <li id="hndq-3-1">For each <var>component</var> in <var>quad</var>, where <var>component</var>
