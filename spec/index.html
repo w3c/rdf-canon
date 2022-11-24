@@ -474,14 +474,16 @@
 
   <section id="canon-algorithm" class="algorithm">
     <h2>Canonicalization Algorithm</h2>
-  <p class="ednote">At the time of writing, there are several open issues that will determine important details of the canonicalization algorithm.</p>
-        <div class="issue" data-number="4"></div>
-        <div class="issue" data-number="6"></div>
-        <div class="issue" data-number="7"></div>
-        <div class="issue" data-number="8"></div>
-        <div class="issue" data-number="10"></div>
-        <div class="issue" data-number="11"></div>
-
+      <p class="ednote">At the time of writing, there are several open issues that will determine important details of the canonicalization algorithm.</p>
+      <div class="issue" data-number="4"></div>
+      <div class="issue" data-number="6"></div>
+      <div class="issue" data-number="7"></div>
+      <div class="issue" data-number="8"></div>
+      <div class="issue" data-number="10"></div>
+      <div class="issue" data-number="11"></div>
+      <div class="issue" data-number="15"></div>
+      <div class="issue" data-number="16"></div>
+      <div class="issue" data-number="34"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>normalized dataset</a>. This algorithm will assign
@@ -759,29 +761,47 @@
           Running the algorithm with the reference node `_:b0` results in the
           following quads, after replacing blank nodes:</p>
 
-        <pre data-transform="updateExample">
+        <pre id="ex-unique-hashes-b0-quads" data-transform="updateExample">
           <!--
             :p :q _:a .
             _:a :s :u .
           -->
         </pre>
 
-        <p>These are then serialized to <a>canonical n-quads form</a>, concatenated and hashed
+        <p>These are then serialized to <a>canonical n-quads form</a>:
+          <code id="ex-unique-hashes-b0-quads-c14n"
+            data-result-for="ex-unique-hashes-b0-quads"
+            data-xform="to-c14n-quads"
+          >'&lt;http://example.com/#p&gt; &lt;http://example.com/#q&gt; _:a .\n_:a &lt;http://example.com/#s&gt; &lt;http://example.com/#u&gt; .\n'</code>,
+          concatenated and hashed
           using the <a>hash algorithm</a> (SHA-256) resulting in
-          `21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a`.</p>
+          <code id="ex-unique-hashes-b0-quads-hash"
+            data-result-for="ex-unique-hashes-b0-quads"
+            data-xform="to-sha256"
+          >'21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a'</code>.
+        </p>
 
         <p>The algorithm is run a second time with the reference node `_:b1` resulting
           in the following quads:</p>
 
-        <pre data-transform="updateExample">
+        <pre id="ex-unique-hashes-b1-quads" data-transform="updateExample">
           <!--
             :p :r _:a .
             _:a :t :u .
           -->
         </pre>
 
-        <p>These are then serialized to <a>canonical n-quads form</a>, concatenated and hashed as before resulting in
-          `6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473`.</p>
+        <p>These are then serialized to <a>canonical n-quads form</a>:
+          <code id="ex-unique-hashes-b1-quads-c14n"
+            data-result-for="ex-unique-hashes-b1-quads"
+            data-xform="to-c14n-quads"
+          >'&lt;http://example.com/#p&gt; &lt;http://example.com/#r&gt; _:a .\n_:a &lt;http://example.com/#t&gt; &lt;http://example.com/#u&gt; .\n'</code>,
+          concatenated and hashed as before resulting in
+          <code id="ex-unique-hashes-b1-quads-hash"
+            data-result-for="ex-unique-hashes-b1-quads"
+            data-xform="to-sha256"
+          >6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473</code>.
+        </p>
 
         <p>Thus the generated hashes each reference just a single blank node,
           allowing the canonicalization algorithm to use only the
@@ -828,39 +848,54 @@
           Running the algorithm with the reference node `_:b0` results in the
           following quads, after replacing blank nodes:</p>
 
-        <pre data-transform="updateExample">
+        <pre id="ex-shared-hashes-b0-quads" data-transform="updateExample">
           <!--
             :p :q _:a .
             _:a :p _:z .
           -->
         </pre>
 
-        <p>Which hashes to: `3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36`.</p>
+        <p>Which hashes to:
+          <code id="ex-shared-hashes-b0-quads-hash"
+            data-result-for="ex-shared-hashes-b0-quads"
+            data-xform="to-sha256"
+          >3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36</code>.
+        </p>
 
         <p>Note that using reference node `_:b1` results in the same quads,
           and thus results in the same hash.</p>
 
         <p>Using the reference node `_:b2` results in the following quads:</p>
 
-        <pre data-transform="updateExample">
+        <pre id="ex-shared-hashes-b2-quads" data-transform="updateExample">
           <!--
             _:z :p _:a .
             _:a :r _:z .
           -->
         </pre>
 
-        <p>Which hashes to: `15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659`.</p>
+        <p>Which hashes to:
+          <code id="ex-shared-hashes-b2-quads-hash"
+            data-result-for="ex-shared-hashes-b2-quads"
+            data-xform="to-sha256"
+          >15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659</code>.
+        </p>
 
         <p>Lastly, using the reference node `_:b3` results in the following quads:</p>
 
-        <pre data-transform="updateExample">
+        <pre id="ex-shared-hashes-b3-quads" data-transform="updateExample">
           <!--
             _:z :r _:a .
             _:z :p _:a .
           -->
         </pre>
 
-        <p>Which hashes to: `3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36`.</p>
+        <p>Which hashes to:
+          <code id="ex-shared-hashes-b3-quads-hash"
+            data-result-for="ex-shared-hashes-b3-quads"
+            data-xform="to-sha256"
+          >7e790a99273eed1dc57e43205d37ce232252c85b26ca4a6ff74ff3b5aea7bccd</code>.
+        </p>
 
         <p>The hashes for `_:b2` and `_:b3` are unique, but `_:b0`,
           and `_:b1` share a common hash,
@@ -910,8 +945,8 @@
           </ol>
         </li>
         <li id="h1d-4">Sort <a>nquads</a> in <a>Unicode code point order</a>.</li>
-        <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted,
-          joined <a>nquads</a> through the
+        <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted
+          and concatenated <a>nquads</a> through the
           <a>hash algorithm</a>.</li>
       </ol>
     </section>
