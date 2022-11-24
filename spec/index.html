@@ -358,6 +358,21 @@
       <dt><dfn>normalized dataset</dfn></dt>
       <dd>The immutable, abstract <a>RDF dataset</a> and set of normalized
         <a>blank node identifiers</a> that are produced as output by the algorithm. A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a> where all nodes are labeled, and <a>blank nodes</a> are labeled with <a>blank node identifiers</a> consistent with running this algorithm on a base <a>RDF dataset</a>. A concrete serialization of an <a>normalized dataset</a> MUST label all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
+      <dt><dfn data-lt="canonical n-quads">canonical n-quads form</dfn></dt>
+      <dd>
+        The canonicalized representation of a quad is based on
+        <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
+        defined in [[N-Triples]].
+        A represent a <a>graph name</a> in the same manner as a <a>subject</a>,
+        if present, and each quad is terminated with a single new line character (`U+000A`).
+        <div class="ednote">
+          At present, there is no existing definition for a canonicalized [[N-Quads]] form.
+          There is a definition for
+          <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
+          in [[N-Triples]], which defines the form of a single triple,
+          without the terminating <a data-cite="N-Triples#grammar-production-EOL">EOL</a>.
+        </div>
+      </dd>
       <dt><dfn>identifier issuer</dfn></dt>
       <dd>An identifier issuer is used to issue new <a>blank node identifier</a>. It
         maintains a
@@ -694,7 +709,7 @@
         Nodes with unique first degree hashes have unique first degree information.</p>
 
       <p>For consistency, <a>blank node identifiers</a> used in <var>Q<sub>n</sub></var>
-        are replaced with placeholders in an [[N-Quads]] serialization of that quad.
+        are replaced with placeholders in a <a>canonical n-quads</a> serialization of that quad.
         Every blank node component is replaced with either `_:a` or `_:z`,
         depending on if that component is <var>n</var> or not.</p>
 
@@ -751,7 +766,7 @@
           -->
         </pre>
 
-        <p>These are then serialized to N-Quads, concatenated and hashed
+        <p>These are then serialized to <a>canonical n-quads form</a>, concatenated and hashed
           using the <a>hash algorithm</a> (SHA-256) resulting in
           `21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a`.</p>
 
@@ -765,7 +780,7 @@
           -->
         </pre>
 
-        <p>These are then serialized to N-Quads, concatenated and hashed as before resulting in
+        <p>These are then serialized to <a>canonical n-quads form</a>, concatenated and hashed as before resulting in
           `6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473`.</p>
 
         <p>Thus the generated hashes each reference just a single blank node,
@@ -864,14 +879,14 @@
 
       <ol>
         <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty <a data-cite="INFRA#list">list</a>.
-          It will be used to store quads in [[N-Quads]] format.</li>
+          It will be used to store quads in <a>canonical n-quads form</a>.</li>
         <li id="h1d-2">Get the <a data-cite="INFRA#list">list</a> of <a>quads</a> <var>quads</var>
           from the <a data-cite="INFRA#map-entry">map entry</a> for
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
         <li id="h1d-3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
           <ol>
-            <li id="h1d-3-1">Serialize the <a>quad</a> in [[N-Quads]] format with the
+            <li id="h1d-3-1">Serialize the <a>quad</a> in <a>canonical n-quads form</a> with the
               following special rule:
               <ol>
                 <li id="h1d-3-1-1">If any component in <var>quad</var> is an
@@ -1131,7 +1146,8 @@
       <ol>
         <li id="hndq-1">Create a <var>hash to related blank nodes map</var> for storing
           hashes that identify related <a>blank nodes</a>.</li>
-        <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
+        <li id="hndq-2">Get a reference, <var>quads</var>,
+          to the <a data-cite="INFRA#list">list</a> of <a>quads</a>
           from the <a data-cite="INFRA#map-entry">map entry</a>
           for <var>identifier</var>
           in the <a>blank node to quads map</a>.</li>
