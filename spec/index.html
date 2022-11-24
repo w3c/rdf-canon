@@ -402,7 +402,8 @@
         the <a>quads</a> in which they appear in the
         <a>input dataset</a>.</dd>
       <dt><dfn>hash to blank nodes map</dfn></dt>
-      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>hash</a> to a list of
+      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>hash</a> to a
+        <a data-cite="INFRA#list">list</a> of
         <a>blank node identifiers</a>.</dd>
       <dt><dfn>canonical issuer</dfn></dt>
       <dd>An <a>identifier issuer</a>, initialized with the
@@ -545,7 +546,7 @@
             </li>
           </ol>
         </li>
-        <li id="ca-3">Create a list of non-normalized <a>blank node identifiers</a>
+        <li id="ca-3">Create a <a data-cite="INFRA#list">list</a> of non-normalized <a>blank node identifiers</a>
           <var>non-normalized identifiers</var> and populate it using the <a data-cite="INFRA#map-key">keys</a>
           from the <a>blank node to quads map</a>.</li>
         <li id="ca-4">For each <a>blank node identifier</a> <var>n</var> in <var>non-normalized identifiers</var>:
@@ -862,9 +863,9 @@
         <dfn>reference blank node identifier</dfn> as inputs.</p>
 
       <ol>
-        <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty list. It will be
-          used to store quads in [[N-Quads]] format.</li>
-        <li id="h1d-2">Get the list of <a>quads</a> <var>quads</var>
+        <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty <a data-cite="INFRA#list">list</a>.
+          It will be used to store quads in [[N-Quads]] format.</li>
+        <li id="h1d-2">Get the <a data-cite="INFRA#list">list</a> of <a>quads</a> <var>quads</var>
           from the <a data-cite="INFRA#map-entry">map entry</a> for
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
