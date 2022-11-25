@@ -1205,14 +1205,23 @@
         to help generate it.</p>
 
       <ol>
-        <li id="hndq-1">Create a <var>hash to related blank nodes map</var> for storing
-          hashes that identify related <a>blank nodes</a>.</li>
-        <li id="hndq-2">Get a reference, <var>quads</var>,
-          to the <a data-cite="INFRA#list">list</a> of <a>quads</a>
+        <li id="hndq-1">Create a new <a data-cite="INFRA#ordered-map">map</a> <var>H<sub>n</sub></var>
+          for relating hashes to related <a>blank nodes</a>.</li>
+        <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
           from the <a data-cite="INFRA#map-entry">map entry</a>
           for <var>identifier</var>
-          in the <a>blank node to quads map</a>.</li>
+          in the <a>blank node to quads map</a>.
+          <details>
+            <summary>Explaination</summary>
+            <p><var>quads</var> is the <a>mention set</a> of <var>identifier</var>.</p>
+          </details>
+        </li>
         <li id="hndq-3">For each <var>quad</var> in <var>quads</var>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This loop calculates the related hash <var>H<sub>n</sub></var>
+              for other blank nodes within the <a>mention set</a> of <var>identifier</var>.</p>
+          </details>
           <ol>
             <li id="hndq-3-1">For each <var>component</var> in <var>quad</var>, where <var>component</var>
               is the <a>subject</a>, <a>object</a>, or
@@ -1231,7 +1240,7 @@
                   <a>graph name</a>, respectively.</li>
                 <li id="hndq-3-1-2">Add a mapping of <var>hash</var> to the
                   <a>blank node identifier</a> for <var>component</var>
-                  to <var>hash to related blank nodes map</var>, adding an entry
+                  to <var>H<sub>n</sub></var>, adding an entry
                   as necessary.</li>
               </ol>
             </li>
@@ -1239,20 +1248,33 @@
         </li>
         <li id="hndq-4">Create an empty string, <var>data to hash</var>.</li>
         <li id="hndq-5">For each <var>related hash</var> to <var>blank node list</var> mapping in
-          <var>hash to related blank nodes map</var>, <a>code point ordered</a>
+          <var>H<sub>n</sub></var>, <a>code point ordered</a>
           by <var>related hash</var>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This loop explores the <a>gossip paths</a> for each
+              blank node related to <var>identifier</var>
+              finding the shortest such path (<var>chosen path</var>).
+              Each path is represented by the concatenation of the
+              identifiers for each related blank node
+              – either the issued identifier,
+              or a temporary identifier created using a copy of <var>issuer</var>.
+              Those for which temporary identifiers were issued are later
+              recursed over using this algorithm.
+            </p>
+          </details>
           <ol>
             <li id="hndq-5-1">Append the <var>related hash</var> to the <var>data to hash</var>.</li>
             <li id="hndq-5-2">Create a <a>string</a> <var>chosen path</var>.</li>
             <li id="hndq-5-3">Create an unset <var>chosen issuer</var> variable.</li>
-            <li id="hndq-5-4">For each <var>permutation</var> of <var>blank node list</var>:
+            <li id="hndq-5-4">For each <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> <var>p</var> of <var>blank node list</var>:
               <ol>
                 <li id="hndq-5-4-1">Create a copy of <var>issuer</var>, <var>issuer copy</var>.</li>
                 <li id="hndq-5-4-2">Create a <a>string</a> <var>path</var>.</li>
                 <li id="hndq-5-4-3">Create a <var>recursion list</var>, to store
                   <a>blank node identifiers</a> that must be
                   recursively processed by this algorithm.</li>
-                <li id="hndq-5-4-4">For each <var>related</var> in <var>permutation</var>:
+                <li id="hndq-5-4-4">For each <var>related</var> in <var>p</var>:
                   <ol>
                     <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
                       <var>related</var>, append it to <var>path</var>.</li>
@@ -1260,7 +1282,15 @@
                       <ol>
                         <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
                           an identifier for <var>related</var>, append
-                          <var>related</var> to <var>recursion list</var>.</li>
+                          <var>related</var> to <var>recursion list</var>.
+                          <details>
+                            <summary>Explanation</summary>
+                            <p>Temporarily labeled nodes have labels recorded
+                              in <var>issuer copy</var>,
+                              which is later used to recursively call this algorithm,
+                              so that eventually all nodes are given canonical identifiers.</p>
+                          </details>
+                        </li>
                         <li id="hndq-5-4-4-2-2">Use the
                           <a href="#issue-identifier">Issue Identifier algorithm</a>,
                           passing <var>issuer copy</var> and <var>related</var> and
@@ -1272,11 +1302,23 @@
                       of <var>chosen path</var> and <var>path</var> is
                       greater than <var>chosen path</var> when
                       considering <a>code point order</a>,
-                      then skip to the next <var>permutation</var>.
+                      then skip to the next <var>p</var>.
+                      <details>
+                        <summary>Explanation</summary>
+                        <p>If <var>path</var> is already longer than
+                          the prospective <var>chosen path</var>,
+                          we can terminate this iteration early.</p>
+                      </details>
                     </li>
                   </ol>
                 </li>
                 <li id="hndq-5-4-5">For each <var>related</var> in <var>recursion list</var>:
+                  <details>
+                    <summary>Explanation</summary>
+                    <p>The propective <var>path</var> is extended with
+                      the hash resulting from recursively calling this algorithm
+                      on each related blank node issued a temporary label.</p>
+                  </details>
                   <ol>
                     <li id="hndq-5-4-5-1">Set <var>result</var> to the result of recursively executing
                       the
@@ -1295,7 +1337,7 @@
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is
                       greater than <var>chosen path</var> when considering <a>code point order</a>,
-                      then skip to the next <var>permutation</var>.</li>
+                      then skip to the next <var>p</var>.</li>
                   </ol>
                 </li>
                 <li id="hndq-5-4-6">If <var>chosen path</var> is empty or <var>path</var> is
@@ -1361,7 +1403,7 @@
       the related blank node was an <a>object</a>. Since <a>URGNA2012</a> only normalized
       graphs, not datasets, there was no use of the <a>graph name</a> position.</li>
     <li>In <a href="#hash-nd-quads" class="sectionRef"></a>, building the
-      <var>hash to related blank nodes map</var> was done as follows:
+      <var>H<sub>n</sub></var> was done as follows:
       <ol>
         <li id="urgna-1">For each <var>quad</var> in <var>quads</var>:
           <ol>
@@ -1385,7 +1427,7 @@
             <li id="urgna-1-4">Add a mapping of <var>hash</var> to the
               <a>blank node identifier</a> for the component
               that matched (<a>subject</a> or <a>object</a>) to
-              <var>hash to related blank nodes map</var>, adding an entry
+              <var>H<sub>n</sub></var>, adding an entry
               as necessary.</li>
           </ol>
         </li>
