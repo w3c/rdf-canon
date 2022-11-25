@@ -653,19 +653,27 @@
 
   <section id="issue-identifier" class="algorithm">
     <h2>Issue Identifier Algorithm</h2>
-    <!--section id="issue-identifier-overview" class="informative">
+
+    <p>This algorithm issues a new <a>blank node identifier</a> for
+      a given existing <a>blank node identifier</a>. It also updates
+      state information that tracks the order in which new
+      <a>blank node identifiers</a> were issued.</p>
+
+    <section id="issue-identifier-overview">
       <h3>Overview</h3>
-    </section-->
+
+      <p>The algorithm maintains an <a>issued identifiers map</a> to
+        relate an existing <a>blank node identifier</a> from the <a>input dataset</a>
+        to a new <a>blank node identifier</a> using a given <a>identifier prefix</a>
+        (`_:c14n`) with new identifiers issued by appending an incrementing number.
+        For example, when called for a blank node identifier such as `_:a`,
+        it might result in a issued identifier of `_:c14n1`.</p>
+    </section>
 
     <section id="issue-identifier-algorithm">
       <h3>Algorithm</h3>
 
-      <p>This algorithm issues a new <a>blank node identifier</a> for
-        a given existing <a>blank node identifier</a>. It also updates
-        state information that tracks the order in which new
-        <a>blank node identifiers</a> were issued.</p>
-
-      <p>This algorithm takes an <a>identifier issuer</a> <var>I</var> and an
+      <p>The algorithm takes an <a>identifier issuer</a> <var>I</var> and an
         <var>existing identifier</var> as inputs. The output is a new
         <var>issued identifier</var>. The steps of the algorithm are:</p>
 
@@ -955,12 +963,30 @@
   <section id="hash-related-blank-node" class="algorithm">
     <h2>Hash Related Blank Node</h2>
 
+    <p>This algorithm generates a <a>hash</a> for some
+      <a>blank node</a> component of a <a>quad</a>,
+      considering its position within that quad.
+      This is used as part of the
+      <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
+      to characterize the blank nodes related to some particullar blank node
+      within their <a>mention sets</a>.
+    </p>
+
     <section id="hash-related-bn-overview" class="informative">
       <h3>Overview</h3>
 
-      <p class="ednote">The text from the Arnold/Longley paper
-        is a bit opaque here; recasting this in simpler terms
-        would be more useful for the target audience.</p>
+      <p>An <em>identifier</em> for a <a>blank node</a> <var>related</var>
+        which is a component of some <a>quad</a> is used along
+        with information describing its positon within the quad is used to create
+        a representation of that blank node within the quad,
+        which is then hashed.
+        The <em>identifier</em> is the result of the
+        <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
+        for <var>related</var>, which is calculated if not previously issued.
+    </section>
+
+    <section id="hash-relate-bn-examples" class="informative">
+      <h3>Examples</h3>
     </section>
 
     <section id="hash-related-algorithm">
