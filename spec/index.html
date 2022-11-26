@@ -1004,6 +1004,23 @@
 
     <section id="hash-relate-bn-examples" class="informative">
       <h3>Examples</h3>
+
+      <aside id="hash-related-ex1"
+            class="example"
+            title="With assigned canonical identifier">
+        <p>This example illustrates generating the related hash
+          for a blank node component of a quad, there the component
+          is in the <a>object</a> position and has already had
+          an assigned canonical identifier.</p>
+
+        <p>Given the predicate `:p`, and canonical blank node `_:c14n0`,
+          an <var>input</var>
+          is created as `o&lt;http://example.com/#p&gt:_c14n0`,
+          which hashes to `bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e`.</p>
+
+        <p>If such an identifier had not yet been established,
+          it would instead use the reults of the
+          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
     </section>
 
     <section id="hash-related-algorithm">
