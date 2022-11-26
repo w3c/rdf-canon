@@ -71,7 +71,17 @@
 <style>
   .hl-bold { font-weight: bold; color: #0a3; }
   .comment { color: #999; }
-  table, thead, tr, td { padding: 5px; border-width: 1px; border-spacing: 0px; border-style: solid; border-collapse: collapse; }
+  table, thead, tr, td {
+    padding: 5px;
+    border-width: 1px;
+    border-spacing: 0px;
+    border-style: solid;
+    border-collapse: collapse;
+  }
+  table.hash-related {
+    caption-side: bottom;
+    width: 100%;
+  }
   .algorithm ol {
     counter-reset: numsection;
     list-style-type: none;
@@ -565,7 +575,11 @@
         </li>
         <li id="ca-3">Create a <a data-cite="INFRA#list">list</a> of non-normalized <a>blank node identifiers</a>
           <var>non-normalized identifiers</var> and populate it using the <a data-cite="INFRA#map-key">keys</a>
-          from the <a>blank node to quads map</a>.</li>
+          from the <a>blank node to quads map</a>.
+          <div class="ednote">It doesn't seem that <var>non-normalized identifiers</var>
+            is really used effectively.
+            It might be usseful in <a href="#ca-6">Step 6</a>.</div>
+        </li>
         <li id="ca-4">For each <a>blank node identifier</a> <var>n</var> in <var>non-normalized identifiers</var>:
           <ol>
             <li id="ca-4-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
@@ -618,7 +632,10 @@
                   to <var>n</var>.</li>
                 <li id="ca-6-2-4">Run the
                   <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
-                  passing <var>temporary issuer</var>, and append the
+                  passing the <a>canonicalization state</a>,
+                  <var>n</var> for <var>identifier</var>, and
+                  <var>temporary issuer</var>,
+                  appending the
                   result to the <var>hash path list</var>.</li>
               </ol>
             </li>
