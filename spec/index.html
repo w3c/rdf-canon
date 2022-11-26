@@ -1198,6 +1198,225 @@
       <p class="ednote">
         Add some examples ranging from simple to complicated and resource consuming.
       </p>
+
+      <aside id="ex-nd-shared-hashes"
+            class="example"
+            title="Shared hashes">
+
+        <p>This example revisits <a href="#ex-shared-hashes"></a>
+          to illustrate the operation of the
+          <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>
+          on the blank nodes (`_:b0` and `_:b1`) which resulted in a shared result from the
+          <a href="#hash-1d-quads-algorithm">Hash First Degree Quads Algorithm</a>.
+          The other blank nodes (`_:b2` and `_:b3`) had unique
+          hashes when processed by the
+          <a href="#hash-1d-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
+          so that canonical identifiers have already been issued,
+          as recorded in the <a>identifier issuer</a> instance.</p>
+
+        <table id="ex-nd-shared-table-input-canon-mapping-b0"
+               class="hash-related numbered">
+          <caption>Original to Canonical blank node labels for `_:b0`</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+          </tbody>
+        </table>
+
+        <figure id="fig-nd-shared-hashes" style="text-align:center">
+          <!-- Source for this file is at https://docs.google.com/drawings/d/1HWpz8S-PNaWi02-utF62HAMd_0b-AF_tHNSRRUQILbU -->
+          <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-nd-shared-hashes-alt">
+            <p id="fig-nd-shared-hashes-alt">
+              The image represents the graph described in
+              <a href="#ex-nd-shared-hashes-input">
+                the following code block
+              </a>.</p>
+          </object>
+          <figcaption>An illustration of a graph resulting in shared hashes.<br/>
+            Image available in
+            <a href="shared-hashes.svg" title="SVG image of a graph resulting in shared hashes">
+              <abbr title="Scalable Vector Graphics">SVG</abbr>
+            </a>.</figcaption>
+        </figure>
+          
+        <pre id="ex-nd-shared-hashes-input"
+             data-transform="updateExample"
+             title="Graph with blank nodes resulting in shared hashes">
+          <!--
+            :p :q ****_:b0**** .
+            :p :q ****_:b1**** .
+            ****_:b0**** :p _:b2 .
+            ****_:b1**** :p _:b3 .
+            _:b2 :r _:b3 .
+          -->
+        </pre>
+
+        <p>The algorithm will be called twice, with each blank node
+           which did not result in a unique hash
+          from the <a href="#hash-1d-quads-algorithm">Hash First Degree Quads Algorithm</a>
+          (`_:b0` and `_:b1`).
+          The <a data-cite="INFRA#map-entry">map entry</a> for `_:b0` in the <a>blank node to quads map</a> results in the
+          following quads:</p>
+
+        <pre id="ex-nd-shared-hashes-b0-quads" data-transform="updateExample">
+          <!--
+            :p :q _:b0 .
+            _:b0 :p _:b2 .
+          -->
+        </pre>
+
+        <p><a href="#hndq-3">Step 3</a> interates over each of these quads
+          to find <a>blank node</a> <var>components</var>
+          to populate <var>H<sub>n</sub>
+          with the result of running the
+          <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
+          using the <var>position</var> of that <var>component</var> within the quad.</p>
+
+        <table id="ex-nd-shared-table-related-hash-b0"
+               class="hash-related numbered">
+          <caption>Hash for `_:b2`  related to `_:b0`</caption>
+          <thead><tr>
+            <th><var>related</var></th>
+            <th><var>quad</var></th>
+            <th><var>position</var></th>
+            <th><var>hash</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b2`</td>
+              <td>`_:b0 :p _:b2 .`</td>
+              <td>`o`</td>
+              <td>
+                <!-- canonical identifer _:b2 is _:c14n0 -->
+                <!-- hash "o<http://example.com/#p>_c14n0"-->
+                <code>bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>which results in the following <var>H<sub>n</sub>:</p>
+
+        <table id="ex-nd-shared-table-bn-list-b0"
+               class="hash-related numbered">
+          <caption>Blank node list for hash</caption>
+          <thead><tr>
+            <th><var>related hash</var></th>
+            <th><var>blank node list</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><code>bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e</code></td>
+              <td>`[ _:b2 ]`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#hndq-5">Step 5</a> iterates over each <var>related hash</var>
+          which is a key in <var>H<sub>n</sub>,
+          which can have one or more related blank nodes,
+          which determines the shortest <a>gossip path</a> between
+          the two nodes (`_:b0` and `_:b2`).
+          In this case, the hash maps to just `_:b2`,
+          for which a canonical identifier has already been chosen (`_:c14n0`),
+          so there is a single permutation
+          resulting in one candiate path.
+          The resulting <var>chosen path</var> is `_:c14n0`.</p>
+
+        <p>The string <var>data to hash</var> is composed
+          of the single <var>related hash</var> and the <var>chosen path</var>:
+          `00e6a7a00375f5072ce6a589d4c7d9fa8833c9f57aaa4f1cb1c84d240e716e3a_:c14n0`,
+          which hashes to
+          `454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`,
+          which, along with the <a>identifier issuer</a> used to traverse
+          these paths, is the result of the algorithm.</p>
+
+        <p>The algorithm will is called again for `_:b1`.</p>
+
+        <table id="ex-nd-shared-table-input-canon-mapping-b1"
+               class="hash-related numbered">
+          <caption>Original to Canonical blank node labels for `_:b1`</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+          </tbody>
+        </table>
+
+        <p>The <a data-cite="INFRA#map-entry">map entry</a> for `_:b1` in the <a>blank node to quads map</a> results in the
+          following quads:</p>
+
+        <pre id="ex-nd-shared-hashes-b1-quads" data-transform="updateExample">
+          <!--
+            :p :q _:b1 .
+            _:b1 :p _:b3 .
+          -->
+        </pre>
+
+        <p><a href="#hndq-3">Step 3</a> again calculates <a>blank node</a> <var>components</var>
+          using
+          <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>.</p>
+
+        <table id="ex-nd-shared-table-related-hash-b1"
+               class="hash-related numbered">
+          <caption>Hash for `_:b3`  related to `_:b1`</caption>
+          <thead><tr>
+            <th><var>related</var></th>
+            <th><var>quad</var></th>
+            <th><var>position</var></th>
+            <th><var>hash</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b3`</td>
+              <td>`_:b1 :p _:b3 .`</td>
+              <td>`o`</td>
+              <td>
+                <!-- canonical identifer _:b3 is _:c14n1 -->
+                <!-- hash "o<http://example.com/#p>_c14n1"-->
+                <code>af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>which results in the following <var>H<sub>n</sub>:</p>
+
+        <table id="ex-nd-shared-table-bn-list-b1"
+               class="hash-related numbered">
+          <caption>Blank node list for hash</caption>
+          <thead><tr>
+            <th><var>related hash</var></th>
+            <th><var>blank node list</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><code>af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246</code></td>
+              <td>`[ _:b3 ]`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#hndq-5">Step 5</a>
+          runs in essentially the same manner, mapping just `_:b3`
+          having the canonical identifier `_:c14n1`,
+          so there is again a single permutation
+          resulting in one candiate path.
+          The resulting <var>chosen path</var> is `_:c14n1`.</p>
+
+        <p>The string <var>data to hash</var> is composed
+          of the single <var>related hash</var> and the <var>chosen path</var>:
+          `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246_:c14n1`,
+          which hashes to
+          `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`.</p>
+      </aside>
     </section>
 
     <section id="hash-nd-quads-algorithm">
@@ -1270,8 +1489,12 @@
           <details>
             <summary>Explanation</summary>
             <p>This loop explores the <a>gossip paths</a> for each
-              blank node related to <var>identifier</var>
+              blank node related sharing a common hash to <var>identifier</var>
               finding the shortest such path (<var>chosen path</var>).
+              This determines how canonical identifiers for
+              otherwise commonly hashed blank nodes are chosen.
+            </p>
+            <p>
               Each path is represented by the concatenation of the
               identifiers for each related blank node
               – either the issued identifier,
@@ -1294,7 +1517,8 @@
                 <li id="hndq-5-4-4">For each <var>related</var> in <var>p</var>:
                   <ol>
                     <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
-                      <var>related</var>, append it to <var>path</var>.</li>
+                      <var>related</var> by <var>issuer</var>,
+                      append it to <var>path</var>.</li>
                     <li id="hndq-5-4-4-2">Otherwise:
                       <ol>
                         <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
