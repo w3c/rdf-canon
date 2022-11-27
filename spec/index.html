@@ -683,7 +683,7 @@
         relate an existing <a>blank node identifier</a> from the <a>input dataset</a>
         to a new <a>blank node identifier</a> using a given <a>identifier prefix</a>
         (`_:c14n`) with new identifiers issued by appending an incrementing number.
-        For example, when called for a blank node identifier such as `_:a`,
+        For example, when called for a blank node identifier such as `_:b3`,
         it might result in a issued identifier of `_:c14n1`.</p>
     </section>
 
@@ -985,16 +985,16 @@
       considering its position within that quad.
       This is used as part of the
       <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
-      to characterize the blank nodes related to some particullar blank node
+      to characterize the blank nodes related to some particular blank node
       within their <a>mention sets</a>.
     </p>
 
     <section id="hash-related-bn-overview" class="informative">
       <h3>Overview</h3>
 
-      <p>An <em>identifier</em> for a <a>blank node</a> <var>related</var>
-        which is a component of some <a>quad</a> is used along
-        with information describing its positon within the quad is used to create
+      <p>An <em>identifier</em> for a <a>blank node</a>, <var>related</var>,
+        which is a component of some <a>quad</a>, is used along
+        with information describing its position within the quad to create
         a representation of that blank node within the quad,
         which is then hashed.
         The <em>identifier</em> is the result of the
@@ -1287,7 +1287,7 @@
           -->
         </pre>
 
-        <p><a href="#hndq-3">Step 3</a> interates over each of these quads
+        <p><a href="#hndq-3">Step 3</a> iterates over each of these quads
           to find <a>blank node</a> <var>components</var>
           to populate <var>H<sub>n</sub>
           with the result of running the
@@ -1352,7 +1352,7 @@
           which, along with the <a>identifier issuer</a> used to traverse
           these paths, is the result of the algorithm.</p>
 
-        <p>The algorithm will is called again for `_:b1`.</p>
+        <p>The algorithm is called again for `_:b1`.</p>
 
         <table id="ex-nd-shared-table-input-canon-mapping-b1"
                class="hash-related numbered">
@@ -1425,7 +1425,7 @@
           runs in essentially the same manner, mapping just `_:b3`
           having the canonical identifier `_:c14n1`,
           so there is again a single permutation
-          resulting in one candiate path.
+          resulting in one candidate path.
           The resulting <var>chosen path</var> is `_:c14n1`.</p>
 
         <p>The string <var>data to hash</var> is composed
