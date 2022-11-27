@@ -12,7 +12,7 @@ jobs:
     name: Build and Validate Spec
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     # Validate via ReSpec
     # See https://github.com/w3c/spec-prod/blob/main/docs/examples.md
