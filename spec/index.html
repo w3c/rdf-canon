@@ -438,7 +438,7 @@
           Mapping all <a>blank nodes</a> to use this
           identifier spec means that an <a>RDF dataset</a> composed of two
           different <a>RDF graphs</a> will use different
-          identifiers then that for the graphs taken independently. This may
+          identifiers than that for the graphs taken independently. This may
           happen anyway, due to <a
           href="https://en.wikipedia.org/wiki/Automorphism">automorphisms</a>,
           or overlapping statements, but an identifier based on the resulting
@@ -573,64 +573,56 @@
             </li>
           </ol>
         </li>
-        <li id="ca-3">Create a <a data-cite="INFRA#list">list</a> of non-normalized <a>blank node identifiers</a>
-          <var>non-normalized identifiers</var> and populate it using the <a data-cite="INFRA#map-key">keys</a>
-          from the <a>blank node to quads map</a>.
-          <div class="ednote">It doesn't seem that <var>non-normalized identifiers</var>
-            is really used effectively.
-            It might be usseful in <a href="#ca-6">Step 6</a>.</div>
-        </li>
-        <li id="ca-4">For each <a>blank node identifier</a> <var>n</var> in <var>non-normalized identifiers</var>:
+        <li id="ca-3">For each <a data-cite="INFRA#map-key">key</a> <var>n</var>
+          in the <a>blank node to quads map</a>:
           <ol>
-            <li id="ca-4-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
+            <li id="ca-3-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
               for <var>n</var> according to the
               <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</li>
-            <li id="ca-4-2">Add <var>h<sub>f</sub>(n)</var> and <var>n</var> to
+            <li id="ca-3-2">Add <var>h<sub>f</sub>(n)</var> and <var>n</var> to
               <a>hash to blank nodes map</a>, including repetitions,
               creating a new entry if necessary.</li>
           </ol>
         </li>
-        <li id="ca-5">For each <var>hash</var> to <var>identifier list</var>
+        <li id="ca-4">For each <var>hash</var> to <var>identifier list</var>
           <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
           <ol>
-            <li id="ca-5-1">If <var>identifier list</var> has more than one entry,
+            <li id="ca-4-1">If <var>identifier list</var> has more than one entry,
               continue to the next mapping.</li>
-            <li id="ca-5-2">Use the
+            <li id="ca-4-2">Use the
               <a href="#issue-identifier">Issue Identifier algorithm</a>,
               passing <a>canonical issuer</a> and the
               single <a>blank node identifier</a>, <var>identifier</var> in
               <var>identifier list</var> to issue a
               canonical replacement identifier for <var>identifier</var>.</li>
-            <li id="ca-5-3">Remove <var>identifier</var> from
-              <var>non-normalized identifiers</var>.</li>
-            <li id="ca-5-4">Remove the <a data-cite="INFRA#map-entry">map entry</a> for <var>hash</var> from the
+            <li id="ca-4-3">Remove the <a data-cite="INFRA#map-entry">map entry</a> for <var>hash</var> from the
               <a>hash to blank nodes map</a>.</li>
           </ol>
         </li>
-        <li id="ca-6">For each <var>hash</var> to <var>identifier list</var>
+        <li id="ca-5">For each <var>hash</var> to <var>identifier list</var>
           <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by
           <var>hash</var>:
           <ol>
-            <li id="ca-6-1">Create <var>hash path list</var> where each item will be a result
+            <li id="ca-5-1">Create <var>hash path list</var> where each item will be a result
               of running the
               <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.</li>
-            <li id="ca-6-2">For each <a>blank node identifier</a>
+            <li id="ca-5-2">For each <a>blank node identifier</a>
               <var>n</var> in <var>identifier list</var>:
               <ol>
-                <li id="ca-6-2-1">If a canonical identifier has already been issued for
+                <li id="ca-5-2-1">If a canonical identifier has already been issued for
                   <var>n</var>, continue to the next
                   <a>blank node identifier</a>.</li>
-                <li id="ca-6-2-2">Create <var>temporary issuer</var>, an
+                <li id="ca-5-2-2">Create <var>temporary issuer</var>, an
                   <a>identifier issuer</a> initialized with the prefix
                   <code>_:b</code>.</li>
-                <li id="ca-6-2-3">Use the
+                <li id="ca-5-2-3">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <var>temporary issuer</var> and <var>n</var>, to
                   issue a new temporary <a>blank node identifier</a> <var>b<sub>n</sub></var>
                   to <var>n</var>.</li>
-                <li id="ca-6-2-4">Run the
+                <li id="ca-5-2-4">Run the
                   <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                   passing the <a>canonicalization state</a>,
                   <var>n</var> for <var>identifier</var>, and
@@ -639,10 +631,10 @@
                   result to the <var>hash path list</var>.</li>
               </ol>
             </li>
-            <li id="ca-6-3">For each <var>result</var> in the <var>hash path list</var>,
+            <li id="ca-5-3">For each <var>result</var> in the <var>hash path list</var>,
               <a>code point ordered</a> by the <var>hash</var> in <var>result</var>:
               <ol>
-                <li id="ca-6-3-1">For each <a>blank node identifier</a>,
+                <li id="ca-5-3-1">For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
                   identifier by <var>identifier issuer</var> in <var>result</var>, issue
                   a canonical identifier, in the same order, using the
@@ -1065,8 +1057,6 @@
       called the <a>gossip path</a>.
       This process proceeds in every greater degrees of indirection until
       a unique hash is obtained.</p>
-
-    <p class="ednote">There may also be better names for the two algorithms.</p>
 
     <p class="ednote">The 'path' terminology could also be changed to better
       indicate what a path is (a particular deterministic serialization for
