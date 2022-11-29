@@ -579,7 +579,7 @@
         <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (`_:b0` and `_:b1`).
           to populate <a>blank node to quads map</a>:</p>
 
-        <table id="ex-ca-bn-quads-map-unique"
+        <table id="ex-ca-unique-bn-quads-map"
                class="hash-related numbered">
           <caption>Blank node to quads map for unique hashes</caption>
           <thead><tr>
@@ -602,7 +602,7 @@
           hash for each blank node, which is explored further
           in <a href="#ex-unique-hashes"></a>:</p>
 
-        <table id="ex-ca-1d-hashes-unique"
+        <table id="ex-ca-unique-1d-hashes"
                class="hash-related numbered">
           <caption>Hash to blank nodes map for unique hashes</caption>
           <thead><tr>
@@ -624,7 +624,7 @@
         <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
           blank node which has a unique hash:</p>
 
-        <table id="ex-ca-1d-labels-unique"
+        <table id="ex-ca-unique-1d-labels"
                class="hash-related numbered">
           <caption>Canonical labels for unique hashes</caption>
           <thead><tr>
@@ -650,7 +650,7 @@
           the normalized dataset by replacing blank node identifiers in the original
           input with their canonical identifiers:</p>
 
-        <pre id="ex-ca-normalized dataset" data-transform="updateExample">
+        <pre id="ex-ca-unique-normalized-dataset" data-transform="updateExample">
           <!--
             :p :q _:c14n0 .
             :p :r _:c14n1 .
@@ -699,7 +699,7 @@
           (`_:b0`, `_:b1`, `_:b2`, and `_:b3`)
           to populate <a>blank node to quads map</a>:</p>
 
-        <table id="ex-ca-bn-quads-map-shared"
+        <table id="ex-ca-shared-bn-quads-map"
                class="hash-related numbered">
           <caption>Blank node to quads map for shared hashes</caption>
           <thead><tr>
@@ -731,7 +731,7 @@
           in <a href="#ex-shared-hashes"></a>
           (note that the hashes for `_:b0` and `_:b1` are shared):</p>
 
-        <table id="ex-ca-1d-hashes-shared"
+        <table id="ex-ca-shared-1d-hash-to-bn"
                class="hash-related numbered">
           <caption>Hash to blank nodes map shared hashes</caption>
           <thead><tr>
@@ -757,9 +757,9 @@
         <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
           blank node which has a unique hash:</p>
 
-        <table id="ex-ca-1d-hashes"
+        <table id="ex-ca-shared-canon-ids"
                class="hash-related numbered">
-          <caption>First degree hashes for shared hashes</caption>
+          <caption>Canonical identifiers for shared hashes</caption>
           <thead><tr>
             <th><var>label</var></th>
             <th><var>canonical identifier</var></th>
@@ -783,14 +783,15 @@
           <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
           for each of these blank nodes:</p>
 
-        <pre id="ex-ca-nd-hashes">
+        <pre id="ex-ca-shared-nd-hashes">
           454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22,
           767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada
         </pre>
 
         <p>After <a href="#ca-5-2">step 5.2</a>,
           the <var>temporary issuer</var> has the following mappings:</p>
-        <table id="ex-nd-shared-table-input-canon-mapping-after"
+
+        <table id="ex-ca-shared-table-temp-mapping-after"
                class="hash-related numbered">
           <caption>Temporary issuer mappings for shared hashs</caption>
           <thead><tr>
@@ -808,11 +809,10 @@
         <p><a href="#ca-5-3">Step 5.3</a> creates
           the canonical identifiers for the temporary identifiers:</p>
 
-
         <p>After <a href="#ca-5-2">step 5.2</a>,
           the <var>temporary issuer</var> has the following mappings:</p>
 
-        <table id="ex-nd-shared-table-input-canon-mapping-after"
+        <table id="ex-nd-shared-table-canon-mapping-after"
                class="hash-related numbered">
           <caption>Canonical mappings for shared hashs</caption>
           <thead><tr>
@@ -831,7 +831,7 @@
           the normalized dataset by replacing blank node identifiers in the original
           input with their canonical identifiers:</p>
 
-        <pre id="ex-ca-normalized dataset" data-transform="updateExample">
+        <pre id="ex-ca-normalized-shared-dataset" data-transform="updateExample">
           <!--
             :p :q _:c14n2 .
             :p :q _:c14n3 .
@@ -1345,12 +1345,13 @@
 
         <p>Given the predicate `:p`, and canonical blank node `_:c14n0`,
           an <var>input</var>
-          is created as `o&lt;http://example.com/#p&gt:_c14n0`,
+          is created as `o&lt;http://example.com/#p&gt;_c14n0`,
           which hashes to `bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e`.</p>
 
         <p>If such an identifier had not yet been established,
           it would instead use the results of the
           <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
+      </aside>
     </section>
 
     <section id="hash-related-algorithm">
@@ -1643,7 +1644,7 @@
           </tbody>
         </table>
 
-        <p>which results in the following <var>H<sub>n</sub>:</p>
+        <p>which results in the following <var>H<sub>n</sub></var>:</p>
 
         <table id="ex-nd-shared-table-bn-list-b0"
                class="hash-related numbered">
@@ -1767,7 +1768,7 @@
         <p>The ending state of the <a>identifier issuer</a> is the following,
           which is returned along with the hash:</p>
 
-        <table id="ex-nd-shared-table-input-canon-mapping-after"
+        <table id="ex-nd-shared-table-temp-mapping-after"
                class="hash-related numbered">
           <caption>Original to canonical blank node labels after end</caption>
           <thead><tr>
