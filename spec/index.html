@@ -500,9 +500,6 @@
       deterministic identifiers to any <a>blank nodes</a> in the
       <a>input dataset</a>.</p>
 
-    <p class="ednote">Documenting the algorithm is a WIP, various steps will
-      become more detailed in time.</p>
-
     <section id="canon-algo-overview" class="informative">
       <h3>Overview</h3>
 
@@ -543,6 +540,309 @@
       </ol>
     </section>
 
+    <section id="canon-algo-exampkes" class="informative">
+      <h3>Examples</h3>
+
+      <aside id="ex-ca-unique-hashes"
+            class="example"
+            title="Unique hashes">
+        <p>This example illustrates the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
+          where all blank nodes have unique first-degree hashes.</p>
+
+        <figure id="fig-ca-unique-hashes" style="text-align:center">
+          <!-- Source for this file is at https://docs.google.com/drawings/d/1LQ6fp4a35lrEOKRMD20gcncUkoitX0eW8QI_U2mQnAs -->
+          <object data="unique-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
+            <p id="fig-ca-unique-hashes-alt">
+              The image represents the graph described in
+              <a href="#ex-ca-unique-hashes-input">
+                the following code block
+              </a>.</p>
+          </object>
+          <figcaption>An illustration of a graph resulting in unique hashes.<br/>
+            Image available in
+            <a href="unique-hashes.svg" title="SVG image of a unique hashes">
+              <abbr title="Scalable Vector Graphics">SVG</abbr>
+            </a>.</figcaption>
+        </figure>
+
+        <pre id="ex-ca-unique-hashes-input"
+             data-transform="updateExample"
+             title="Graph with blank nodes resulting in unique hashes">
+          <!--
+            :p :q _:b0 .
+            :p :r _:b1 .
+            _:b0 :s :u .
+            _:b1 :t :u .
+          -->
+        </pre>
+
+        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (`_:b0` and `_:b1`).
+          to populate <a>blank node to quads map</a>:</p>
+
+        <table id="ex-ca-bn-quads-map-unique"
+               class="hash-related numbered">
+          <caption>Blank node to quads map for unique hashes</caption>
+          <thead><tr>
+            <th><var>label</var></th>
+            <th><var>Q</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b0`</td>
+              <td>`:p :q _:b0 .`<br/>``_:b0 :s :u .`</td>
+            </tr>
+            <tr>
+              <td>`_:b1`</td>
+              <td>`:p :r _:b1 .`<br/>`_:b1 :t :u .`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-3">Step 3</a> generates the first-degree
+          hash for each blank node, which is explored further
+          in <a href="#ex-unique-hashes"></a>:</p>
+
+        <table id="ex-ca-1d-hashes-unique"
+               class="hash-related numbered">
+          <caption>Hash to blank nodes map for unique hashes</caption>
+          <thead><tr>
+            <th><var>hash</var></th>
+            <th><var>label(s)</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a`</td>
+              <td>`_:b0`</td>
+            </tr>
+            <tr>
+              <td>`6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473`</td>
+              <td>`_:b1`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
+          blank node which has a unique hash:</p>
+
+        <table id="ex-ca-1d-labels-unique"
+               class="hash-related numbered">
+          <caption>Canonical labels for unique hashes</caption>
+          <thead><tr>
+            <th><var>label</var></th>
+            <th><var>canonical identifier</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b0`</td>
+              <td>`_:c14n0`</td>
+            </tr>
+            <tr>
+              <td>`_:b1`</td>
+              <td>`_:c14n1`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-5">Step 5</a> has no effect,
+          as there are no remaining blank nodes without canonical identifiers.</p>
+
+        <p><a href="#ca-6">Step 6</a> generates
+          the normalized dataset by replacing blank node identifiers in the original
+          input with their canonical identifiers:</p>
+
+        <pre id="ex-ca-normalized dataset" data-transform="updateExample">
+          <!--
+            :p :q _:c14n0 .
+            :p :r _:c14n1 .
+            _:c14n0 :s :u .
+            _:c14n1 :t :u .
+          -->
+        </pre>
+      </aside>
+
+      <aside id="ex-ca-shared-hashes"
+            class="example"
+            title="Shared hashes">
+        <p>This example illustrates the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
+          where hashing the statements mentioning
+          those blank nodes have overlapping results.</p>
+
+        <figure id="fig-ca-shared-hashes" style="text-align:center">
+          <!-- Source for this file is at https://docs.google.com/drawings/d/1LQ6fp4a35lrEOKRMD20gcncUkoitX0eW8QI_U2mQnAs -->
+          <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
+            <p id="fig-ca-shared-hashes-alt">
+              The image represents the graph described in
+              <a href="#ex-ca-shared-hashes-input">
+                the following code block
+              </a>.</p>
+          </object>
+          <figcaption>An illustration of a graph resulting in shared hashes.<br/>
+            Image available in
+            <a href="shared-hashes.svg" title="SVG image of a shared hashes">
+              <abbr title="Scalable Vector Graphics">SVG</abbr>
+            </a>.</figcaption>
+        </figure>
+
+        <pre id="ex-ca-shared-hashes-input"
+             data-transform="updateExample"
+             title="Graph with blank nodes resulting in shared hashes">
+          <!--
+            :p :q _:b0 .
+            :p :q _:b1 .
+            _:b0 :p _:b2 .
+            _:b1 :p _:b3 .
+            _:b2 :r _:b3 .
+          -->
+        </pre>
+
+        <p><a href="#ca-2">Step 2</a> is called four times, with each blank node
+          (`_:b0`, `_:b1`, `_:b2`, and `_:b3`)
+          to populate <a>blank node to quads map</a>:</p>
+
+        <table id="ex-ca-bn-quads-map-shared"
+               class="hash-related numbered">
+          <caption>Blank node to quads map for shared hashes</caption>
+          <thead><tr>
+            <th><var>label</var></th>
+            <th><var>Q</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b0`</td>
+              <td>`:p :q _:b0 .`<br/>``_:b0 :p _:b2 .`</td>
+            </tr>
+            <tr>
+              <td>`_:b1`</td>
+              <td>`:p :q _:b1 .`<br/>`_:b1 :p _:b3 .`</td>
+            </tr>
+            <tr>
+              <td>`_:b2`</td>
+              <td>`_:b0 :p _:b2 .`<br/>`_:b2 :r _:b3 .`</td>
+            </tr>
+            <tr>
+              <td>`_:b3`</td>
+              <td>`_:b1 :p _:b3 .`<br/>`_:b2 :r _:b3 .`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-3">Step 3</a> generates the first-degree
+          hash for each blank node, which is explored further
+          in <a href="#ex-shared-hashes"></a>
+          (note that the hashes for `_:b0` and `_:b1` are shared):</p>
+
+        <table id="ex-ca-1d-hashes-shared"
+               class="hash-related numbered">
+          <caption>Hash to blank nodes map shared hashes</caption>
+          <thead><tr>
+            <th><var>hash</var></th>
+            <th><var>label(s)</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36`</td>
+              <td>`_:b0`, `_:b1`</td>
+            </tr>
+            <tr>
+              <td>`15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659`</td>
+              <td>`_:b2`</td>
+            </tr>
+            <tr>
+              <td>`7e790a99273eed1dc57e43205d37ce232252c85b26ca4a6ff74ff3b5aea7bccd`</td>
+              <td>`_:b3`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
+          blank node which has a unique hash:</p>
+
+        <table id="ex-ca-1d-hashes"
+               class="hash-related numbered">
+          <caption>First degree hashes for shared hashes</caption>
+          <thead><tr>
+            <th><var>label</var></th>
+            <th><var>canonical identifier</var></th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>`_:b2`</td>
+              <td>`_:c14n1`</td>
+            </tr>
+            <tr>
+              <td>`_:b3`</td>
+              <td>`_:c14n0`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-5">Step 5</a> Is run on `_:b0` and `_:b1`, which share
+          the same hash, as explored in <a href="#ex-shared-hashes"></a>
+          to create the <var>hash path list</var>
+          composed of the hash result from
+          <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
+          for each of these blank nodes:</p>
+
+        <pre id="ex-ca-nd-hashes">
+          `454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`,
+          `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`
+        </pre>
+
+        <p>After <a href="#ca-5-2">step 5.2</a>,
+          the <var>temporary issuer</var> has the following mappings:</p>
+        <table id="ex-nd-shared-table-input-canon-mapping-after"
+               class="hash-related numbered">
+          <caption>Temporary issuer mappings for shared hashs</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b1`</td><td>`_:b1` (temporary)</td></tr>
+            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-5-3">Step 5.3</a> creates
+          the canonical identifiers for the temporary identifiers:</p>
+
+
+        <p>After <a href="#ca-5-2">step 5.2</a>,
+          the <var>temporary issuer</var> has the following mappings:</p>
+
+        <table id="ex-nd-shared-table-input-canon-mapping-after"
+               class="hash-related numbered">
+          <caption>Canonical mappings for shared hashs</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:b0`</td><td>`_:c14n2`</td></tr>
+            <tr><td>`_:b1`</td><td>`_:c14n3`</td></tr>
+            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+          </tbody>
+        </table>
+
+        <p><a href="#ca-6">Step 6</a> generates
+          the normalized dataset by replacing blank node identifiers in the original
+          input with their canonical identifiers:</p>
+
+        <pre id="ex-ca-normalized dataset" data-transform="updateExample">
+          <!--
+            :p :q _:c14n2 .
+            :p :q _:c14n3 .
+            _:c14n0 :r _:c14n1 .
+            _:c14n2 :p _:c14n1 .
+            _:c14n3 :p _:c14n0 .
+          -->
+        </pre>
+      </aside>
+    </section>
+
     <section id="canon-algo-algo">
       <h3>Algorithm</h3>
 
@@ -559,7 +859,7 @@
         <li id="ca-2">For every <a>quad</a> <var>Q</var> in <a>input dataset</a>:
           <ol>
             <li id="ca-2-1">For each <a>blank node</a> that is a component of <var>Q</var>,
-              add a reference to the <var>Q</var> from the
+              add a reference to <var>Q</var> from the
               <a data-cite="INFRA#map-entry">map entry</a> for the
               <a>blank node identifier</a> <var>identifier</var>
               in the <a>blank node to quads map</a>,
@@ -575,6 +875,12 @@
         </li>
         <li id="ca-3">For each <a data-cite="INFRA#map-key">key</a> <var>n</var>
           in the <a>blank node to quads map</a>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This step creates a hash for every blank node in the input document.
+              Some blank nodes will lead to a unique hash,
+              while other blank nodes may share a common hash.</p>
+          </details>
           <ol>
             <li id="ca-3-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
               for <var>n</var> according to the
@@ -587,6 +893,11 @@
         <li id="ca-4">For each <var>hash</var> to <var>identifier list</var>
           <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This step establishes the canonical label for blank nodes having
+              a unique hash, which are recorded in the <a>canonical issuer</a>.</p>
+          </details>
           <ol>
             <li id="ca-4-1">If <var>identifier list</var> has more than one entry,
               continue to the next mapping.</li>
@@ -604,10 +915,25 @@
           <a data-cite="INFRA#map-entry">map entry</a> in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by
           <var>hash</var>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This step establishes the canonical label for blank nodes having
+              a shared hash.
+              This is done by creating unique blank node lables for all
+              blank nodes traversed by the <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
+              running through each blank node without a canonical label in the order
+              of the hashes established in the previous step.</p>
+          </details>
           <ol>
             <li id="ca-5-1">Create <var>hash path list</var> where each item will be a result
               of running the
-              <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.</li>
+              <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.
+              <details>
+                <summary>Explanation</summary>
+                <p>This list establishes an order for those blank nodes
+                  sharing a common first-degree hash.</p>
+              </details>
+            </li>
             <li id="ca-5-2">For each <a>blank node identifier</a>
               <var>n</var> in <var>identifier list</var>:
               <ol>
@@ -633,6 +959,12 @@
             </li>
             <li id="ca-5-3">For each <var>result</var> in the <var>hash path list</var>,
               <a>code point ordered</a> by the <var>hash</var> in <var>result</var>:
+              <details>
+                <summary>Explanation</summary>
+                <p>The previous step created temporary identifiers for the
+                  blank nodes shaing a common hash,
+                  which is now used to generate their canonical identifiers.</p>
+              </details>
               <ol>
                 <li id="ca-5-3-1">For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
@@ -645,17 +977,23 @@
             </li>
           </ol>
         </li>
-        <li id="ca-7">For each <a>quad</a>, <var>q</var>, in <a>input dataset</a>:
+        <li id="ca-6">For each <a>quad</a>, <var>q</var>, in <a>input dataset</a>:
+          <details>
+            <summary>Explanation</summary>
+            <p>This step populates the <a>normalized dataset</a> with quads
+              substituting the original blank node identiers,
+              with the newly established canonical blank node identifiers.</p>
+          </details>
           <ol>
-            <li id="ca-7-1">Create a copy, <var>quad copy</var>, of <var>q</var> and replace any
+            <li id="ca-6-1">Create a copy, <var>quad copy</var>, of <var>q</var> and replace any
               existing <a>blank node identifier</a> <var>n</var> using the
               canonical identifiers previously issued
               by <a>canonical issuer</a>.</li>
-            <li id="ca-7-2">Add <var>quad copy</var> to the
+            <li id="ca-6-2">Add <var>quad copy</var> to the
               <a>normalized dataset</a>.</li>
           </ol>
         </li>
-        <li id="ca-8">Return the <a>normalized dataset</a>.</li>
+        <li id="ca-7">Return the <a>normalized dataset</a>.</li>
       </ol>
     </section>
   </section>
@@ -795,7 +1133,7 @@
           <code id="ex-unique-hashes-b0-quads-hash"
             data-result-for="ex-unique-hashes-b0-quads"
             data-xform="to-sha256"
-          >'21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a'</code>.
+          >21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a</code>.
         </p>
 
         <p>The algorithm is run a second time with the reference node `_:b1` resulting
@@ -1223,13 +1561,12 @@
 
         <table id="ex-nd-shared-table-input-canon-mapping-b0"
                class="hash-related numbered">
-          <caption>Original to Canonical blank node labels for `_:b0`</caption>
+          <caption>Original to canonical blank node labels for `_:b0`</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
             <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
             <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
           </tbody>
@@ -1340,19 +1677,22 @@
           which hashes to
           `454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`,
           which, along with the <a>identifier issuer</a> used to traverse
-          these paths, is the result of the algorithm.</p>
+          these paths, is the result of the algorithm:</p>
 
-        <p>The algorithm is called again for `_:b1`.</p>
+        <p>The algorithm is called again for `_:b1`.
+          Note that the <a>identifier issuer</a> has already
+          issued a temporary blank nodee label for `_:b0`,
+          which is re-used when calling the algorithm on `_:b1`</p>
 
         <table id="ex-nd-shared-table-input-canon-mapping-b1"
                class="hash-related numbered">
-          <caption>Original to Canonical blank node labels for `_:b1`</caption>
+          <caption>Original to canonical blank node labels for `_:b1`</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
             <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
             <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
           </tbody>
@@ -1423,6 +1763,24 @@
           `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246_:c14n1`,
           which hashes to
           `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`.</p>
+
+        <p>The ending state of the <a>identifier issuer</a> is the following,
+          which is returned along with the hash:</p>
+
+        <table id="ex-nd-shared-table-input-canon-mapping-after"
+               class="hash-related numbered">
+          <caption>Original to canonical blank node labels after end</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b1`</td><td>`_:b1` (temporary)</td></tr>
+            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+          </tbody>
+        </table>
       </aside>
     </section>
 
