@@ -589,7 +589,7 @@
           <tbody>
             <tr>
               <td>`_:b0`</td>
-              <td>`:p :q _:b0 .`<br/>``_:b0 :s :u .`</td>
+              <td>`:p :q _:b0 .`<br/>`_:b0 :s :u .`</td>
             </tr>
             <tr>
               <td>`_:b1`</td>
@@ -709,7 +709,7 @@
           <tbody>
             <tr>
               <td>`_:b0`</td>
-              <td>`:p :q _:b0 .`<br/>``_:b0 :p _:b2 .`</td>
+              <td>`:p :q _:b0 .`<br/>`_:b0 :p _:b2 .`</td>
             </tr>
             <tr>
               <td>`_:b1`</td>
@@ -784,8 +784,8 @@
           for each of these blank nodes:</p>
 
         <pre id="ex-ca-nd-hashes">
-          `454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`,
-          `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`
+          454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22,
+          767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada
         </pre>
 
         <p>After <a href="#ca-5-2">step 5.2</a>,
@@ -919,7 +919,7 @@
             <summary>Explanation</summary>
             <p>This step establishes the canonical label for blank nodes having
               a shared hash.
-              This is done by creating unique blank node lables for all
+              This is done by creating unique blank node labels for all
               blank nodes traversed by the <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
               running through each blank node without a canonical label in the order
               of the hashes established in the previous step.</p>
@@ -962,7 +962,7 @@
               <details>
                 <summary>Explanation</summary>
                 <p>The previous step created temporary identifiers for the
-                  blank nodes shaing a common hash,
+                  blank nodes sharing a common hash,
                   which is now used to generate their canonical identifiers.</p>
               </details>
               <ol>
@@ -1349,7 +1349,7 @@
           which hashes to `bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e`.</p>
 
         <p>If such an identifier had not yet been established,
-          it would instead use the reults of the
+          it would instead use the results of the
           <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
     </section>
 
@@ -1616,7 +1616,7 @@
 
         <p><a href="#hndq-3">Step 3</a> iterates over each of these quads
           to find <a>blank node</a> <var>components</var>
-          to populate <var>H<sub>n</sub>
+          to populate <var>H<sub>n</sub></var>
           with the result of running the
           <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
           using the <var>position</var> of that <var>component</var> within the quad.</p>
@@ -1661,7 +1661,7 @@
         </table>
 
         <p><a href="#hndq-5">Step 5</a> iterates over each <var>related hash</var>
-          which is a key in <var>H<sub>n</sub>,
+          which is a key in <var>H<sub>n</sub></var>,
           which can have one or more related blank nodes,
           which determines the shortest <a>gossip path</a> between
           the two nodes (`_:b0` and `_:b2`).
@@ -1734,7 +1734,7 @@
           </tbody>
         </table>
 
-        <p>which results in the following <var>H<sub>n</sub>:</p>
+        <p>which results in the following <var>H<sub>n</sub></var>:</p>
 
         <table id="ex-nd-shared-table-bn-list-b1"
                class="hash-related numbered">
@@ -1813,7 +1813,7 @@
           for <var>identifier</var>
           in the <a>blank node to quads map</a>.
           <details>
-            <summary>Explaination</summary>
+            <summary>Explanation</summary>
             <p><var>quads</var> is the <a>mention set</a> of <var>identifier</var>.</p>
           </details>
         </li>
