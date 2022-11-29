@@ -310,7 +310,9 @@
       with <code>_:</code> that is used as an identifier for an
       <a>blank node</a>. <a>Blank node identifiers</a>
       are typically implementation-specific local identifiers; this document
-      specifies an algorithm for deterministically specifying them.</dd>
+      specifies an algorithm for deterministically specifying them.
+      A blank node not given an explicit identier is called an "unlabeled blank node."
+      Additionally, blank nodes may be explicitly labeled with an identifier.</dd>
   </dl>
 </section>
 
@@ -583,7 +585,7 @@
                class="hash-related numbered">
           <caption>Blank node to quads map for unique hashes</caption>
           <thead><tr>
-            <th><var>label</var></th>
+            <th><var>identifier</var></th>
             <th><var>Q</var></th>
           </tr></thead>
           <tbody>
@@ -703,7 +705,7 @@
                class="hash-related numbered">
           <caption>Blank node to quads map for shared hashes</caption>
           <thead><tr>
-            <th><var>label</var></th>
+            <th><var>identifier</var></th>
             <th><var>Q</var></th>
           </tr></thead>
           <tbody>
@@ -736,7 +738,7 @@
           <caption>Hash to blank nodes map shared hashes</caption>
           <thead><tr>
             <th><var>hash</var></th>
-            <th><var>label(s)</var></th>
+            <th><var>identifier(s)</var></th>
           </tr></thead>
           <tbody>
             <tr>
@@ -761,7 +763,7 @@
                class="hash-related numbered">
           <caption>Canonical identifiers for shared hashes</caption>
           <thead><tr>
-            <th><var>label</var></th>
+            <th><var>identifier</var></th>
             <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
@@ -895,7 +897,7 @@
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
           <details>
             <summary>Explanation</summary>
-            <p>This step establishes the canonical label for blank nodes having
+            <p>This step establishes the canonical identifier for blank nodes having
               a unique hash, which are recorded in the <a>canonical issuer</a>.</p>
           </details>
           <ol>
@@ -917,11 +919,11 @@
           <var>hash</var>:
           <details>
             <summary>Explanation</summary>
-            <p>This step establishes the canonical label for blank nodes having
+            <p>This step establishes the canonical identifier for blank nodes having
               a shared hash.
-              This is done by creating unique blank node labels for all
+              This is done by creating unique blank node identifiers for all
               blank nodes traversed by the <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
-              running through each blank node without a canonical label in the order
+              running through each blank node without a canonical identifier in the order
               of the hashes established in the previous step.</p>
           </details>
           <ol>
@@ -1343,10 +1345,10 @@
           is in the <a>object</a> position and has already had
           an assigned canonical identifier.</p>
 
-        <p>Given the predicate `:p`, and canonical blank node `_:c14n0`,
+        <p>Given the predicate `:p`, and and assigned canonical blank node identifier `_:c14n0`,
           an <var>input</var>
-          is created as `o&lt;http://example.com/#p&gt;_c14n0`,
-          which hashes to `bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e`.</p>
+          is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
+          which hashes to `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa`.</p>
 
         <p>If such an identifier had not yet been established,
           it would instead use the results of the
@@ -1432,14 +1434,14 @@
         the algorithm traverses and encodes all possible paths of incident
         mentions emanating from <var>n</var>, called <a>gossip paths</a>,
         that reach every unlabeled blank node connected to <var>n</var>.
-        Each unlabeled blank node is assigned a temporary label
+        Each unlabeled blank node is assigned a temporary identifier
         in the order in which it is reached in the
         gossip path being explored.
         The mentions that are traversed to reach
         connected blank nodes are encoded in these paths via related hashes.
         This provides a deterministic way to order all paths coming from <var>n</var> that
         reach all blank nodes connected to n without relying on input blank
-        node labels.</p>
+        node identifiers.</p>
   
       <p>This algorithm works in concert with the main canonicalization algorithm
         to produce a unique, deterministic identifier for a particular blank
@@ -1449,7 +1451,7 @@
         node through any other adjacent blank nodes.</p>
 
       <p>Ultimately, the algorithm selects a shortest <a>gossip path</a>,
-        distributing canonical labels to the unlabeled blank nodes
+        distributing canonical identifiers to the unlabeled blank nodes
         in the order in which they appear in this path.
         The hash of this encoded shortest path,
         called the N-degree hash of <var>n</var>,
@@ -1482,24 +1484,24 @@
           Given the related hash <var>x</var> in <var>H<sub>n</sub></var>,
           record <var>x</var> in the data to hash <var>D<sub>n</sub></var>.
           Determine whether each blank node reachable via the <a>mention</a> with related hash <var>x</var>
-          has already received a label.
+          has already received an identifier.
           <ol>
-            <li id="ndh-hl-s2-1"><strong>Record the labels of labeled nodes</strong>.
-              If a blank node already has a label,
-              record its label in <var>D<sub>n</sub></var> once for every
+            <li id="ndh-hl-s2-1"><strong>Record the identifiers of labeled nodes</strong>.
+              If a blank node already has an identifier,
+              record its identifier in <var>D<sub>n</sub></var> once for every
               <a>mention</a> with related hash <var>x</var>.
               Skip to the next related hash in <var>H<sub>n</sub></var>
               and repeat <a href="#ndh-hl-s2">step 2</a>.</li>
-            <li id="ndh-hl-s2-2"><strong>Distribute and record temporary labels to unlabeled nodes</strong>.
+            <li id="ndh-hl-s2-2"><strong>Distribute and record temporary identifiers to unlabeled nodes</strong>.
               For each unlabeled blank node,
-              assign it a temporary label according to the order in which it is reached in the gossip path,
-              recording its given label in <var>D<sub>n</sub></var> (including repetitions).
+              assign it a temporary identifier according to the order in which it is reached in the gossip path,
+              recording its given identifier in <var>D<sub>n</sub></var> (including repetitions).
               Add each unlabeled node to the recursion list <var>R<sub>n</sub>(x)</var>
               in this same order (omitting repetitions).</li>
             <li id="ndh-hl-s2-3"><strong>Recurse on newly labeled nodes</strong>.
               For each <var>n<sub>i</sub></var> in <var>R<sub>n</sub>(x)</var>
               <ol>
-                <li id="ndh-hl-s2-3-1">Record its label in <var>D<sub>n</sub></var></li>
+                <li id="ndh-hl-s2-3-1">Record its identifier in <var>D<sub>n</sub></var></li>
                 <li id="ndh-hl-s2-3-2">Append &lt; <var>r(i)</var> > to <var>D<sub>n</sub></var>
                   where <var>r(i)</var> is the data to hash that results from returning to
                   <a href="#ndh-hl-s1">step 1</a>,
@@ -1512,7 +1514,7 @@
           Hash <var>D<sub>n</sub></var> to return the <em>N</em>-degree hash of <var>n</var>,
           namely <var>h<sub>N</sub>(n)</var>.
           Return the updated issuer <var>I<sub>n</sub></var>
-          that has now distributed temporary labels to all unlabeled blank nodes connected to <var>n</var>.</li>
+          that has now distributed temporary identifiers to all unlabeled blank nodes connected to <var>n</var>.</li>
       </ol>
 
       <p>As described above in <a href="#ndh-hl-s2-3">step 2.3</a>,
@@ -1562,7 +1564,7 @@
 
         <table id="ex-nd-shared-table-input-canon-mapping-b0"
                class="hash-related numbered">
-          <caption>Original to canonical blank node labels for `_:b0`</caption>
+          <caption>Original to canonical blank node identifiers for `_:b0`</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
@@ -1638,8 +1640,8 @@
               <td>`o`</td>
               <td>
                 <!-- canonical identifer _:b2 is _:c14n0 -->
-                <!-- hash "o<http://example.com/#p>_c14n0"-->
-                <code>bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e</code></td>
+                <!-- hash "o<http://example.com/#p>_:c14n0"-->
+                <code>29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa</code></td>
             </tr>
           </tbody>
         </table>
@@ -1655,7 +1657,7 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td><code>bf6431b1112bf1874e44107bfa9169d1213c0a5c35daca0bc62ab72d96214e9e</code></td>
+              <td><code>29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa</code></td>
               <td>`[ _:b2 ]`</td>
             </tr>
           </tbody>
@@ -1687,13 +1689,13 @@
 
         <table id="ex-nd-shared-table-input-canon-mapping-b1"
                class="hash-related numbered">
-          <caption>Original to canonical blank node labels for `_:b1`</caption>
+          <caption>Original to canonical blank node identifiers for `_:b1`</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+            <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
             <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
             <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
           </tbody>
@@ -1729,7 +1731,7 @@
               <td>`o`</td>
               <td>
                 <!-- canonical identifer _:b3 is _:c14n1 -->
-                <!-- hash "o<http://example.com/#p>_c14n1"-->
+                <!-- hash "o<http://example.com/#p>_:c14n1"-->
                 <code>af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246</code></td>
             </tr>
           </tbody>
@@ -1770,7 +1772,7 @@
 
         <table id="ex-nd-shared-table-temp-mapping-after"
                class="hash-related numbered">
-          <caption>Original to canonical blank node labels after end</caption>
+          <caption>Original to canonical blank node identifiers after end</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
@@ -1892,7 +1894,7 @@
                           <var>related</var> to <var>recursion list</var>.
                           <details>
                             <summary>Explanation</summary>
-                            <p>Temporarily labeled nodes have labels recorded
+                            <p>Temporarily labeled nodes have identifiers recorded
                               in <var>issuer copy</var>,
                               which is later used to recursively call this algorithm,
                               so that eventually all nodes are given canonical identifiers.</p>
@@ -1924,7 +1926,7 @@
                     <summary>Explanation</summary>
                     <p>The propective <var>path</var> is extended with
                       the hash resulting from recursively calling this algorithm
-                      on each related blank node issued a temporary label.</p>
+                      on each related blank node issued a temporary identifier.</p>
                   </details>
                   <ol>
                     <li id="hndq-5-4-5-1">Set <var>result</var> to the result of recursively executing
