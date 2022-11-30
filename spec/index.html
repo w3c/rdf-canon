@@ -542,7 +542,7 @@
       </ol>
     </section>
 
-    <section id="canon-algo-exampkes" class="informative">
+    <section id="canon-algo-examples" class="informative">
       <h3>Examples</h3>
 
       <aside id="ex-ca-unique-hashes"
@@ -602,7 +602,7 @@
 
         <p><a href="#ca-3">Step 3</a> generates the first-degree
           hash for each blank node, which is explored further
-          in <a href="#ex-unique-hashes"></a>:</p>
+          in <a href="#ex-1d-unique-hashes"></a>:</p>
 
         <table id="ex-ca-unique-1d-hashes"
                class="hash-related numbered">
@@ -730,7 +730,7 @@
 
         <p><a href="#ca-3">Step 3</a> generates the first-degree
           hash for each blank node, which is explored further
-          in <a href="#ex-shared-hashes"></a>
+          in <a href="#ex-1d-shared-hashes"></a>
           (note that the hashes for `_:e0` and `_:e1` are shared):</p>
 
         <table id="ex-ca-shared-1d-hash-to-bn"
@@ -783,16 +783,17 @@
           and use separate instances of a <var>temporary issuer</var>,
           (as explored in <a href="#ex-nd-shared-hashes"></a>)
           to create the <var>hash path list</var>
-          composed of the hash result from
+          composed of the hash result
+          and temporary identifier mappings from
           <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
           for each of these blank nodes:</p>
 
-        <table id="ex-ca-shared-result-b0"
+        <table id="ex-ca-shared-result-e0"
                class="hash-related numbered">
           <caption>Result for `_:e0`</caption>
           <tbody>
             <tr>
-              <td><var>identifier issuer mappings</var></td>
+              <td><var>temporary issuer</var> mappings</td>
               <td>
                 <table class="hash-related">
                   <thead><tr>
@@ -800,26 +801,24 @@
                     <th><var>canonical</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`_:e0`</td><td>`_:b0` (temporary)</td></tr>
-                    <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
-                    <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
+                    <tr><td>`_:e0`</td><td>`_:b0`</td></tr>
                   </tbody>
                 </table>
               </td>
             </tr>
             <tr>
               <td><var>hash</var></td>
-              <td>`454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`</td>
+              <td>`fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`</td>
             </tr>
           </tbody>
         </table>
 
-        <table id="ex-ca-shared-result-b1"
+        <table id="ex-ca-shared-result-e1"
                class="hash-related numbered">
           <caption>Result for `_:e1`</caption>
           <tbody>
             <tr>
-              <td><var>identifier issuer mappings</var></td>
+              <td><var>temporary issuer</var> mappings</td>
               <td>
                 <table class="hash-related">
                   <thead><tr>
@@ -827,16 +826,14 @@
                     <th><var>canonical</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`_:e1`</td><td>`_:b0` (temporary)</td></tr>
-                    <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
-                    <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
+                    <tr><td>`_:e1`</td><td>`_:b0`</td></tr>
                   </tbody>
                 </table>
               </td>
             </tr>
             <tr>
               <td><var>hash</var></td>
-              <td>`767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`</td>
+              <td>`2c0b377baf86f6c18fed4b0df6741290066e73c932861749b172d1e5560f5045`</td>
             </tr>
           </tbody>
         </table>
@@ -856,8 +853,8 @@
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:e0`</td><td>`_:c14n2`</td></tr>
-            <tr><td>`_:e1`</td><td>`_:c14n3`</td></tr>
+            <tr><td>`_:e0`</td><td>`_:c14n3`</td></tr>
+            <tr><td>`_:e1`</td><td>`_:c14n2`</td></tr>
             <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
             <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
           </tbody>
@@ -872,8 +869,8 @@
             :p :q _:c14n2 .
             :p :q _:c14n3 .
             _:c14n0 :r _:c14n1 .
-            _:c14n2 :p _:c14n0 .
-            _:c14n3 :p _:c14n1 .
+            _:c14n2 :p _:c14n1 .
+            _:c14n3 :p _:c14n0 .
           -->
         </pre>
       </aside>
@@ -1122,10 +1119,10 @@
         This hash is the first degree hash of <var>n</var>, <var>h<sub>f</sub>(n)</var>.</p>
     </section>
 
-    <section id="hash-1d-quads-exampkes" class="informative">
+    <section id="hash-1d-quads-examples" class="informative">
       <h3>Examples</h3>
 
-      <aside id="ex-unique-hashes"
+      <aside id="ex-1d-unique-hashes"
             class="example"
             title="Unique hashes">
         <p>This example illustrates hashing quads containing
@@ -1137,7 +1134,7 @@
           <object data="unique-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
             <p id="fig-unique-hashes-alt">
               The image represents the graph described in
-              <a href="#ex-unique-hashes-input">
+              <a href="#ex-1d-unique-hashes-input">
                 the following code block
               </a>.</p>
           </object>
@@ -1148,7 +1145,7 @@
             </a>.</figcaption>
         </figure>
 
-        <pre id="ex-unique-hashes-input"
+        <pre id="ex-1d-unique-hashes-input"
              data-transform="updateExample"
              title="Graph with blank nodes resulting in unique hashes">
           <!--
@@ -1163,7 +1160,7 @@
           Running the algorithm with the reference node `_:e0` results in the
           following quads, after replacing blank nodes:</p>
 
-        <pre id="ex-unique-hashes-b0-quads" data-transform="updateExample">
+        <pre id="ex-1d-unique-hashes-e0-quads" data-transform="updateExample">
           <!--
             :p :q _:a .
             _:a :s :u .
@@ -1171,14 +1168,14 @@
         </pre>
 
         <p>These are then serialized to <a>canonical n-quads form</a>:
-          <code id="ex-unique-hashes-b0-quads-c14n"
-            data-result-for="ex-unique-hashes-b0-quads"
+          <code id="ex-1d-unique-hashes-e0-quads-c14n"
+            data-result-for="ex-1d-unique-hashes-e0-quads"
             data-xform="to-c14n-quads"
           >'&lt;http://example.com/#p&gt; &lt;http://example.com/#q&gt; _:a .\n_:a &lt;http://example.com/#s&gt; &lt;http://example.com/#u&gt; .\n'</code>,
           concatenated and hashed
           using the <a>hash algorithm</a> (SHA-256) resulting in
-          <code id="ex-unique-hashes-b0-quads-hash"
-            data-result-for="ex-unique-hashes-b0-quads"
+          <code id="ex-1d-unique-hashes-e0-quads-hash"
+            data-result-for="ex-1d-unique-hashes-e0-quads"
             data-xform="to-sha256"
           >21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a</code>.
         </p>
@@ -1186,7 +1183,7 @@
         <p>The algorithm is run a second time with the reference node `_:e1` resulting
           in the following quads:</p>
 
-        <pre id="ex-unique-hashes-b1-quads" data-transform="updateExample">
+        <pre id="ex-1d-unique-hashes-e1-quads" data-transform="updateExample">
           <!--
             :p :r _:a .
             _:a :t :u .
@@ -1194,13 +1191,13 @@
         </pre>
 
         <p>These are then serialized to <a>canonical n-quads form</a>:
-          <code id="ex-unique-hashes-b1-quads-c14n"
-            data-result-for="ex-unique-hashes-b1-quads"
+          <code id="ex-1d-unique-hashes-e1-quads-c14n"
+            data-result-for="ex-1d-unique-hashes-e1-quads"
             data-xform="to-c14n-quads"
           >'&lt;http://example.com/#p&gt; &lt;http://example.com/#r&gt; _:a .\n_:a &lt;http://example.com/#t&gt; &lt;http://example.com/#u&gt; .\n'</code>,
           concatenated and hashed as before resulting in
-          <code id="ex-unique-hashes-b1-quads-hash"
-            data-result-for="ex-unique-hashes-b1-quads"
+          <code id="ex-1d-unique-hashes-e1-quads-hash"
+            data-result-for="ex-1d-unique-hashes-e1-quads"
             data-xform="to-sha256"
           >6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473</code>.
         </p>
@@ -1210,7 +1207,7 @@
           Hash First Degree Quads algorithm.</p>
       </aside>
 
-      <aside id="ex-shared-hashes"
+      <aside id="ex-1d-shared-hashes"
             class="example"
             title="Shared hashes">
         <p>This example illustrates hashing quads containing
@@ -1222,7 +1219,7 @@
           <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-shared-hashes-alt">
             <p id="fig-shared-hashes-alt">
               The image represents the graph described in
-              <a href="#ex-shared-hashes-input">
+              <a href="#ex-1d-shared-hashes-input">
                 the following code block
               </a>.</p>
           </object>
@@ -1233,7 +1230,7 @@
             </a>.</figcaption>
         </figure>
           
-        <pre id="ex-shared-hashes-input"
+        <pre id="ex-1d-shared-hashes-input"
              data-transform="updateExample"
              title="Graph with blank nodes resulting in shared hashes">
           <!--
@@ -1250,7 +1247,7 @@
           Running the algorithm with the reference node `_:e0` results in the
           following quads, after replacing blank nodes:</p>
 
-        <pre id="ex-shared-hashes-b0-quads" data-transform="updateExample">
+        <pre id="ex-1d-shared-hashes-e0-quads" data-transform="updateExample">
           <!--
             :p :q _:a .
             _:a :p _:z .
@@ -1258,8 +1255,8 @@
         </pre>
 
         <p>Which hashes to:
-          <code id="ex-shared-hashes-b0-quads-hash"
-            data-result-for="ex-shared-hashes-b0-quads"
+          <code id="ex-1d-shared-hashes-e0-quads-hash"
+            data-result-for="ex-1d-shared-hashes-e0-quads"
             data-xform="to-sha256"
           >3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36</code>.
         </p>
@@ -1269,7 +1266,7 @@
 
         <p>Using the reference node `_:e2` results in the following quads:</p>
 
-        <pre id="ex-shared-hashes-b2-quads" data-transform="updateExample">
+        <pre id="ex-1d-shared-hashes-e2-quads" data-transform="updateExample">
           <!--
             _:z :p _:a .
             _:a :r _:z .
@@ -1277,24 +1274,24 @@
         </pre>
 
         <p>Which hashes to:
-          <code id="ex-shared-hashes-b2-quads-hash"
-            data-result-for="ex-shared-hashes-b2-quads"
+          <code id="ex-1d-shared-hashes-e2-quads-hash"
+            data-result-for="ex-1d-shared-hashes-e2-quads"
             data-xform="to-sha256"
           >15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659</code>.
         </p>
 
         <p>Lastly, using the reference node `_:e3` results in the following quads:</p>
 
-        <pre id="ex-shared-hashes-b3-quads" data-transform="updateExample">
+        <pre id="ex-1d-shared-hashes-e3-quads" data-transform="updateExample">
           <!--
-            _:z :r _:a .
             _:z :p _:a .
+            _:z :r _:a .
           -->
         </pre>
 
         <p>Which hashes to:
-          <code id="ex-shared-hashes-b3-quads-hash"
-            data-result-for="ex-shared-hashes-b3-quads"
+          <code id="ex-1d-shared-hashes-e3-quads-hash"
+            data-result-for="ex-1d-shared-hashes-e3-quads"
             data-xform="to-sha256"
           >7e790a99273eed1dc57e43205d37ce232252c85b26ca4a6ff74ff3b5aea7bccd</code>.
         </p>
@@ -1388,7 +1385,7 @@
         <p>This example illustrates generating the related hash
           for a blank node component of a quad, there the component
           is in the <a>object</a> position and has already had
-          an assigned canonical identifier.</p>
+          an assigned canonical identifier from the <a>canonical issuer</a>.</p>
 
         <p>Given the predicate `:p`,
           <var>related</var> <a>blank node identifier</a> `_:e0`
@@ -1587,7 +1584,7 @@
         which the algorithm recurses.</p>
     </section>
 
-    <section id="hash-nd-quads-exampkes" class="informative">
+    <section id="hash-nd-quads-examples" class="informative">
       <h3>Examples</h3>
 
       <p class="ednote">
@@ -1598,7 +1595,7 @@
             class="example"
             title="Shared hashes">
 
-        <p>This example revisits <a href="#ex-shared-hashes"></a>
+        <p>This example revisits <a href="#ex-ca-shared-hashes"></a>
           to illustrate the operation of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>
           on the blank nodes (`_:e0` and `_:e1`) which resulted in a shared result from the
@@ -1609,9 +1606,9 @@
           so that canonical identifiers have already been issued,
           as recorded in the <a>identifier issuer</a> instance.</p>
 
-        <table id="ex-nd-shared-table-input-canon-mapping-b0"
+        <table id="ex-nd-shared-table-input-canon-mapping"
                class="hash-related numbered">
-          <caption>Original to canonical blank node identifiers for `_:e0`</caption>
+          <caption>Established canonical identifiers from <a>canonical issuer</a></caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
@@ -1657,12 +1654,26 @@
           The <a data-cite="INFRA#map-entry">map entry</a> for `_:e0` in the <a>blank node to quads map</a> results in the
           following quads:</p>
 
-        <pre id="ex-nd-shared-hashes-b0-quads" data-transform="updateExample">
+        <pre id="ex-nd-shared-hashes-e0-quads" data-transform="updateExample">
           <!--
             :p :q _:e0 .
             _:e0 :p _:e2 .
           -->
         </pre>
+
+        <p>When called, the <var>temporary issuer</var> has the following mappings:</p>
+
+        <table id="ex-nd-shared-table-input-temporary-mapping-e0"
+               class="hash-related numbered">
+          <caption>Initial mappings in <var>temporary issuer</var> for `_:e0`</caption>
+          <thead><tr>
+            <th><var>original</var></th>
+            <th><var>canonical</var></th>
+          </tr></thead>
+          <tbody>
+            <tr><td>`_:e0`</td><td>`_:b0`</td></tr>
+          </tbody>
+        </table>
 
         <p><a href="#hndq-3">Step 3</a> iterates over each of these quads
           to find <a>blank node</a> <var>components</var>
@@ -1671,7 +1682,7 @@
           <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
           using the <var>position</var> of that <var>component</var> within the quad.</p>
 
-        <table id="ex-nd-shared-table-related-hash-b0"
+        <table id="ex-nd-shared-table-related-hash-e0"
                class="hash-related numbered">
           <caption>Hash for `_:e2`  related to `_:e0`</caption>
           <thead><tr>
@@ -1695,7 +1706,7 @@
 
         <p>which results in the following <var>H<sub>n</sub></var>:</p>
 
-        <table id="ex-nd-shared-table-bn-list-b0"
+        <table id="ex-nd-shared-table-bn-list-e0"
                class="hash-related numbered">
           <caption>Blank node list for hash</caption>
           <thead><tr>
@@ -1723,18 +1734,18 @@
 
         <p>The string <var>data to hash</var> is composed
           of the single <var>related hash</var> and the <var>chosen path</var>:
-          `00e6a7a00375f5072ce6a589d4c7d9fa8833c9f57aaa4f1cb1c84d240e716e3a_:c14n0`,
+          `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa_:c14n0`,
           which hashes to
-          `454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`,
-          which, along with the <a>identifier issuer</a> used to traverse
+          `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
+          which, along with the <var>temporary</var> used to traverse
           these paths, is the result of the algorithm:</p>
 
-        <table id="ex-nd-shared-result-b0"
+        <table id="ex-nd-shared-result-e0"
                class="hash-related numbered">
           <caption>Result for `_:e0`</caption>
           <tbody>
             <tr>
-              <td><var>identifier issuer mappings</var></td>
+              <td><var>temporary issuer</var> mappings</td>
               <td>
                 <table class="hash-related">
                   <thead><tr>
@@ -1742,39 +1753,35 @@
                     <th><var>canonical</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`_:e0`</td><td>`_:b0` (temporary)</td></tr>
-                    <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
-                    <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
+                    <tr><td>`_:e0`</td><td>`_:b0`</td></tr>
                   </tbody>
                 </table>
               </td>
             </tr>
             <tr>
               <td><var>hash</var></td>
-              <td>`454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`</td>
+              <td>`fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`</td>
             </tr>
           </tbody>
         </table>
 
         <p>The algorithm is called again for `_:e1`.</p>
 
-        <table id="ex-nd-shared-table-input-canon-mapping-b1"
+        <table id="ex-nd-shared-table-input-temporary-mapping-e1"
                class="hash-related numbered">
-          <caption>Original to canonical blank node identifiers for `_:e1`</caption>
+          <caption>Initial mappings in <var>temporary issuer</var> for `_:e1`</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
-            <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
+            <tr><td>`_:e1`</td><td>`_:b0`</td></tr>
           </tbody>
-        </table>
 
         <p>The <a data-cite="INFRA#map-entry">map entry</a> for `_:e1` in the <a>blank node to quads map</a> results in the
           following quads:</p>
 
-        <pre id="ex-nd-shared-hashes-b1-quads" data-transform="updateExample">
+        <pre id="ex-nd-shared-hashes-e1-quads" data-transform="updateExample">
           <!--
             :p :q _:e1 .
             _:e1 :p _:e3 .
@@ -1785,7 +1792,7 @@
           using
           <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>.</p>
 
-        <table id="ex-nd-shared-table-related-hash-b1"
+        <table id="ex-nd-shared-table-related-hash-e1"
                class="hash-related numbered">
           <caption>Hash for `_:e3`  related to `_:e1`</caption>
           <thead><tr>
@@ -1802,14 +1809,14 @@
               <td>
                 <!-- canonical identifer _:e3 is _:c14n1 -->
                 <!-- hash "o<http://example.com/#p>_:c14n1"-->
-                <code>af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246</code></td>
+                <code>b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216</code></td>
             </tr>
           </tbody>
         </table>
 
         <p>which results in the following <var>H<sub>n</sub></var>:</p>
 
-        <table id="ex-nd-shared-table-bn-list-b1"
+        <table id="ex-nd-shared-table-bn-list-e1"
                class="hash-related numbered">
           <caption>Blank node list for hash</caption>
           <thead><tr>
@@ -1818,7 +1825,7 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td><code>af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246</code></td>
+              <td><code>b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216</code></td>
               <td>`[ _:e3 ]`</td>
             </tr>
           </tbody>
@@ -1839,18 +1846,18 @@
 
         <p>The string <var>data to hash</var> is composed
           of the single <var>related hash</var> and the <var>chosen path</var>:
-          `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246_:c14n1`,
+          `b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216_:c14n1`,
           which hashes to
-          `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`,
+          `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
           which, along with the <a>identifier issuer</a> used to traverse
           these paths, is the result of the algorithm:</p>
 
-        <table id="ex-nd-shared-result-b1"
+        <table id="ex-nd-shared-result-e1"
                class="hash-related numbered">
           <caption>Result for `_:e1`</caption>
           <tbody>
             <tr>
-              <td><var>identifier issuer mappings</var></td>
+              <td><var>temporary issuer</var> mappings</td>
               <td>
                 <table class="hash-related">
                   <thead><tr>
@@ -1858,16 +1865,14 @@
                     <th><var>canonical</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`_:e1`</td><td>`_:b0` (temporary)</td></tr>
-                    <tr><td>`_:e2`</td><td>`_:c14n0`</td></tr>
-                    <tr><td>`_:e3`</td><td>`_:c14n1`</td></tr>
+                    <tr><td>`_:e1`</td><td>`_:b0`</td></tr>
                   </tbody>
                 </table>
               </td>
             </tr>
             <tr>
               <td><var>hash</var></td>
-              <td>`767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`</td>
+              <td>`2c0b377baf86f6c18fed4b0df6741290066e73c932861749b172d1e5560f5045`</td>
             </tr>
           </tbody>
         </table>
