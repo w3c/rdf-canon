@@ -1371,9 +1371,15 @@
         with information describing its position within the quad to create
         a representation of that blank node within the quad,
         which is then hashed.
-        The <em>identifier</em> is the result of the
-        <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
-        for <var>related</var>, which is calculated if not previously issued.
+        The identifier is first found from the following:
+      </p>
+      <ol>
+        <li>An issued identifer from <a>canonical issuer</a> in the <a>canonicalization state</a>,</li>
+        <li>An issued identifer from <var>issuer</var>, or</li>
+        <li>the result of the
+          <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
+          for <var>related</var>.</li>
+      </ol>
     </section>
 
     <section id="hash-related-bn-examples" class="informative">
@@ -1388,7 +1394,7 @@
           an assigned canonical identifier from the <a>canonical issuer</a>.</p>
 
         <p>Given the predicate `:p`,
-          <var>related</var> <a>blank node identifier</a> `_:e0`
+          <var>related</var> <a>blank node identifier</a> `_:e2`
           (already assigned the canonical <a>blank node identifier</a> `_:c14n0`),
           an <var>input</var>
           is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
@@ -1417,6 +1423,17 @@
           necessary, the result of the
           <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
           passing <var>related</var>.
+          <details>
+            <summary>Explanation</summary>
+            <p>If a canonical identifier was already issued for <var>related</var>,
+              it will be in the <a>canonical issuer</a> contained within
+              <a>canonicalization state</a>.
+              Otherwise, the temporary <var>issuer</var> instance may already
+              have a mapping for <var>related</var>.
+              Lastly, if no identifier, canonical or temporary, has already been issued,
+              a new identifier is created using the
+              <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
+          </details>
         </li>
         <li id="hrbn-2">Initialize a <a>string</a> <var>input</var> to the value of
           <var>position</var>.</li>
@@ -1777,6 +1794,7 @@
           <tbody>
             <tr><td>`_:e1`</td><td>`_:b0`</td></tr>
           </tbody>
+        </table>
 
         <p>The <a data-cite="INFRA#map-entry">map entry</a> for `_:e1` in the <a>blank node to quads map</a> results in the
           following quads:</p>
@@ -1929,7 +1947,7 @@
                   <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                   passing the <a>blank node identifier</a> for
                   <var>component</var> as <var>related</var>, <var>quad</var>,
-                  <var>path identifier issuer</var> as <var>issuer</var>, and
+                  <var>issuer</var>, and
                   <var>position</var> as either <code>s</code>, <code>o</code>, or
                   <code>g</code> based on whether <var>component</var> is a
                   <a>subject</a>, <a>object</a>,
@@ -2121,7 +2139,7 @@
                 <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                 passing the <a>blank node identifier</a> for
                 <a>subject</a> as <var>related</var>, <var>quad</var>,
-                <var>path identifier issuer</var> as <var>issuer</var>, and
+                <var>issuer</var>, and
                 <code>p</code> as <var>position</var>.
             </li>
             <li id="urgna-1-2">Otherwise, if <var>quad</var>'s <a>object</a> is a <a>blank node</a> that does
@@ -2129,7 +2147,7 @@
                 <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                 passing the <a>blank node identifier</a> for
                 <a>object</a> as <var>related</var>, <var>quad</var>,
-                <var>path identifier issuer</var> as <var>issuer</var>, and
+                <var>issuer</var>, and
                 <code>r</code> as <var>position</var>.
             </li>
             <li id="urgna-1-3">Otherwise, continue to the next quad.</li>
