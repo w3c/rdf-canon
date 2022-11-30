@@ -769,19 +769,19 @@
           <tbody>
             <tr>
               <td>`_:b2`</td>
-              <td>`_:c14n1`</td>
+              <td>`_:c14n0`</td>
             </tr>
             <tr>
               <td>`_:b3`</td>
-              <td>`_:c14n0`</td>
+              <td>`_:c14n1`</td>
             </tr>
           </tbody>
         </table>
 
-        <p><a href="#ca-5">Step 5</a> Is run on `_:b0` and `_:b1`, separately,
+        <p><a href="#ca-5">Step 5</a> is run on `_:b0` and `_:b1`, separately,
           which share the same hash,
           and use separate instances of a <var>temporary issuer</var>,
-          (as explored in <a href="#ex-shared-hashes"></a>)
+          (as explored in <a href="#ex-nd-shared-hashes"></a>)
           to create the <var>hash path list</var>
           composed of the hash result from
           <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
@@ -846,7 +846,7 @@
           established in the previous step
           running in order of the <var>hash</var> component from each result.
           This updates the <a>canonical issuer</a> with the following
-          mappings</p>
+          mappings:</p>
 
         <table id="ex-ca-shared-canon-identifiers"
                class="hash-related numbered">
@@ -872,8 +872,8 @@
             :p :q _:c14n2 .
             :p :q _:c14n3 .
             _:c14n0 :r _:c14n1 .
-            _:c14n2 :p _:c14n1 .
-            _:c14n3 :p _:c14n0 .
+            _:c14n2 :p _:c14n0 .
+            _:c14n3 :p _:c14n1 .
           -->
         </pre>
       </aside>
