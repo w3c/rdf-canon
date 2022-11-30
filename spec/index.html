@@ -778,45 +778,79 @@
           </tbody>
         </table>
 
-        <p><a href="#ca-5">Step 5</a> Is run on `_:b0` and `_:b1`, which share
-          the same hash, as explored in <a href="#ex-shared-hashes"></a>
+        <p><a href="#ca-5">Step 5</a> Is run on `_:b0` and `_:b1`, separately,
+          which share the same hash,
+          and use separate instances of a <var>temporary issuer</var>,
+          (as explored in <a href="#ex-shared-hashes"></a>)
           to create the <var>hash path list</var>
           composed of the hash result from
           <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
           for each of these blank nodes:</p>
 
-        <pre id="ex-ca-shared-nd-hashes">
-          454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22,
-          767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada
-        </pre>
-
-        <p>After <a href="#ca-5-2">step 5.2</a>,
-          the <var>temporary issuer</var> has the following mappings:</p>
-
-        <table id="ex-ca-shared-table-temp-mapping-after"
+        <table id="ex-ca-shared-result-b0"
                class="hash-related numbered">
-          <caption>Temporary issuer mappings for shared hashs</caption>
-          <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
-          </tr></thead>
+          <caption>Result for `_:b0`</caption>
           <tbody>
-            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
-            <tr><td>`_:b1`</td><td>`_:b1` (temporary)</td></tr>
-            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
-            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+            <tr>
+              <td><var>identifier issuer mappings</var></td>
+              <td>
+                <table class="hash-related">
+                  <thead><tr>
+                    <th><var>original</var></th>
+                    <th><var>canonical</var></th>
+                  </tr></thead>
+                  <tbody>
+                    <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+                    <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+                    <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><var>hash</var></td>
+              <td>`454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="ex-ca-shared-result-b1"
+               class="hash-related numbered">
+          <caption>Result for `_:b1`</caption>
+          <tbody>
+            <tr>
+              <td><var>identifier issuer mappings</var></td>
+              <td>
+                <table class="hash-related">
+                  <thead><tr>
+                    <th><var>original</var></th>
+                    <th><var>canonical</var></th>
+                  </tr></thead>
+                  <tbody>
+                    <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
+                    <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+                    <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><var>hash</var></td>
+              <td>`767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`</td>
+            </tr>
           </tbody>
         </table>
 
         <p><a href="#ca-5-3">Step 5.3</a> creates
-          the canonical identifiers for the temporary identifiers:</p>
+          the canonical identifiers for the temporary identifiers
+          established in the previous step
+          running in order of the <var>hash</var> component from each result.
+          This updates the <a>canonical issuer</a> with the following
+          mappings</p>
 
-        <p>After <a href="#ca-5-2">step 5.2</a>,
-          the <var>temporary issuer</var> has the following mappings:</p>
-
-        <table id="ex-nd-shared-table-canon-mapping-after"
+        <table id="ex-ca-shared-canon-identifiers"
                class="hash-related numbered">
-          <caption>Canonical mappings for shared hashs</caption>
+          <caption>Original to canonical blank node identifiers</caption>
           <thead><tr>
             <th><var>original</var></th>
             <th><var>canonical</var></th>
@@ -964,7 +998,7 @@
               <details>
                 <summary>Explanation</summary>
                 <p>The previous step created temporary identifiers for the
-                  blank nodes sharing a common hash,
+                  blank nodes sharing a common first degree hash,
                   which is now used to generate their canonical identifiers.</p>
               </details>
               <ol>
@@ -975,6 +1009,17 @@
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <a>canonical issuer</a> and
                   <var>existing identifier</var>.
+                  <p class="ednote">
+                    An additional explanation)
+                    should be added, because there is an unusual thing is happening here.
+                    The explanation in <a href="#ca-5-3">5.3</a>)
+                    says "temporary identifiers for the blank nodes sharing a common first degree hash".
+                    The reader would expect then issuing a canonical id for that blank node in some manner,
+                    and that is it.
+                    However, <a href="#ca-5-3-1">5.3.1</a>) actually assigns several canonical ids:
+                    the text says that one has to go through each identifier that is in the issuer.
+                    That situation should get focus and explanation on this level.
+                  </p>
               </ol>
             </li>
           </ol>
@@ -1334,7 +1379,7 @@
         for <var>related</var>, which is calculated if not previously issued.
     </section>
 
-    <section id="hash-relate-bn-examples" class="informative">
+    <section id="hash-related-bn-examples" class="informative">
       <h3>Examples</h3>
 
       <aside id="hash-related-ex1"
@@ -1345,7 +1390,9 @@
           is in the <a>object</a> position and has already had
           an assigned canonical identifier.</p>
 
-        <p>Given the predicate `:p`, and and assigned canonical blank node identifier `_:c14n0`,
+        <p>Given the predicate `:p`,
+          <var>related</var> <a>blank node identifier</a> `_:b0`
+          (already assigned the canonical <a>blank node identifier</a> `_:c14n0`),
           an <var>input</var>
           is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
           which hashes to `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa`.</p>
@@ -1682,10 +1729,34 @@
           which, along with the <a>identifier issuer</a> used to traverse
           these paths, is the result of the algorithm:</p>
 
-        <p>The algorithm is called again for `_:b1`.
-          Note that the <a>identifier issuer</a> has already
-          issued a temporary blank nodee label for `_:b0`,
-          which is re-used when calling the algorithm on `_:b1`</p>
+        <table id="ex-nd-shared-result-b0"
+               class="hash-related numbered">
+          <caption>Result for `_:b0`</caption>
+          <tbody>
+            <tr>
+              <td><var>identifier issuer mappings</var></td>
+              <td>
+                <table class="hash-related">
+                  <thead><tr>
+                    <th><var>original</var></th>
+                    <th><var>canonical</var></th>
+                  </tr></thead>
+                  <tbody>
+                    <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
+                    <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+                    <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><var>hash</var></td>
+              <td>`454a61ea7cae7ec114bfb183c56ffe37a60b7b62317b754ce1fed3d324c4eb22`</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>The algorithm is called again for `_:b1`.</p>
 
         <table id="ex-nd-shared-table-input-canon-mapping-b1"
                class="hash-related numbered">
@@ -1695,7 +1766,6 @@
             <th><var>canonical</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
             <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
             <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
           </tbody>
@@ -1767,21 +1837,38 @@
           which hashes to
           `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`.</p>
 
-        <p>The ending state of the <a>identifier issuer</a> is the following,
-          which is returned along with the hash:</p>
+        <p>The string <var>data to hash</var> is composed
+          of the single <var>related hash</var> and the <var>chosen path</var>:
+          `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246_:c14n1`,
+          which hashes to
+          `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`,
+          which, along with the <a>identifier issuer</a> used to traverse
+          these paths, is the result of the algorithm:</p>
 
-        <table id="ex-nd-shared-table-temp-mapping-after"
+        <table id="ex-nd-shared-result-b1"
                class="hash-related numbered">
-          <caption>Original to canonical blank node identifiers after end</caption>
-          <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
-          </tr></thead>
+          <caption>Result for `_:b1`</caption>
           <tbody>
-            <tr><td>`_:b0`</td><td>`_:b0` (temporary)</td></tr>
-            <tr><td>`_:b1`</td><td>`_:b1` (temporary)</td></tr>
-            <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
-            <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+            <tr>
+              <td><var>identifier issuer mappings</var></td>
+              <td>
+                <table class="hash-related">
+                  <thead><tr>
+                    <th><var>original</var></th>
+                    <th><var>canonical</var></th>
+                  </tr></thead>
+                  <tbody>
+                    <tr><td>`_:b1`</td><td>`_:b0` (temporary)</td></tr>
+                    <tr><td>`_:b2`</td><td>`_:c14n0`</td></tr>
+                    <tr><td>`_:b3`</td><td>`_:c14n1`</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><var>hash</var></td>
+              <td>`767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`</td>
+            </tr>
           </tbody>
         </table>
       </aside>
