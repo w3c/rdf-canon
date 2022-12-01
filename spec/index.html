@@ -63,9 +63,10 @@
     // name of the 
     group: "rch",
     testSuiteURI: "https://w3c.github.io/rdf-canon/tests/",
-    xref: ["rdf11-concepts", "rdf11-mt"],
+    xref: ["rdf11-concepts", "infra"],
     doJsonLd:     true,
-    wgPublicList: "public-rch-wg"
+    wgPublicList: "public-rch-wg",
+    lint: { "informative-dfn": false }
   };
 //]]>
 </script>
@@ -271,30 +272,6 @@
       A string is a sequence of zero or more Unicode characters.</dd>
     <dt><code>true</code> and <code>false</code></dt><dd>
       Values that are used to express one of two possible boolean states.</dd>
-    <dt><dfn data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
-    <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
-      defined in [[RFC3987]].</dd>
-    <dt><dfn data-lt="subject|subjects">subject</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-subject">subject</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="predicate|predicates">predicate</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-predicate">predicate</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="object|objects">object</dfn></dt>
-    <dd>An <a data-cite="RDF11-CONCEPTS#dfn-object">object</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-rdf-triple">triple</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
-    <dd>An <a data-cite="RDF11-CONCEPTS#dfn-rdf-graph">RDF graph</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="graph name|graph names">graph name</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-graph-name">graph name</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn>default graph</dfn></dt>
-    <dd>The <a data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
     <dt><dfn data-lt="quad|quads">quad</dfn></dt>
     <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
       This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
@@ -303,13 +280,13 @@
       as specified by [[!RDF11-CONCEPTS]].
       For the purposes of this specification, an <a>RDF dataset</a>
       is considered to be a set of <a>quads</a></dd>
-    <dt><dfn data-lt="blank node|blank nodes">blank node</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</a>
+    <dt><dfn data-cite="RDF11-CONCEPTS">blank node</dfn></dt>
+    <dd>A <a>blank node</a>
       as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
       neither an <a>IRI</a>, nor a
-      <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>.</dd>
-    <dt><dfn data-lt="blank node identifier|blank node identifiers">blank node identifier</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</a>
+      <a>literal</a>.</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS">blank node identifier</dfn></dt>
+    <dd>A <a>blank node identifier</a>
       as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
       with <code>_:</code> that is used as an identifier for an
       <a>blank node</a>. <a>Blank node identifiers</a>
@@ -429,12 +406,12 @@
 
     <dl>
       <dt><dfn>blank node to quads map</dfn></dt>
-      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>blank node identifier</a> to
+      <dd>A <a>map</a> that relates a <a>blank node identifier</a> to
         the <a>quads</a> in which they appear in the
         <a>input dataset</a>.</dd>
       <dt><dfn>hash to blank nodes map</dfn></dt>
-      <dd>A <a data-cite="INFRA#ordered-map">map</a> that relates a <a>hash</a> to a
-        <a data-cite="INFRA#list">list</a> of
+      <dd>A <a>map</a> that relates a <a>hash</a> to a
+        <a>list</a> of
         <a>blank node identifiers</a>.</dd>
       <dt><dfn>canonical issuer</dfn></dt>
       <dd>An <a>identifier issuer</a>, initialized with the
@@ -481,7 +458,7 @@
         create an <a>blank node identifier</a>. It is initialized to
         <code>0</code>.</dd>
       <dt><dfn>issued identifiers map</dfn></dt>
-      <dd>An <a data-cite="INFRA#ordered-map">ordered map</a> that relates existing identifiers to issued identifiers,
+      <dd>An <a>ordered map</a> that relates existing identifiers to issued identifiers,
         to prevent issuance of more than one new identifier per existing identifier,
         and to allow <a>blank nodes</a> to
         be reassigned identifiers some time after issuance.</dd>
@@ -514,7 +491,7 @@
         In URDNA2015, an RDF dataset <var>D</var>
         is represented as a set of <a>quads</a> of the form `&lt; s, p, o, g >`
         where the graph component `g` is empty if and only if the
-        <a>triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
+        <a data-lt="RDF triple">triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
         This algorithm considers an RDF dataset to be a set of quads.
         Two RDF datasets are considered to be isomorphic (i.e., the same modulo blank nodes),
         if and only if they return the same canonically labeled list of quads
@@ -898,7 +875,7 @@
           <ol>
             <li id="ca-2-1">For each <a>blank node</a> that is a component of <var>Q</var>,
               add a reference to <var>Q</var> from the
-              <a data-cite="INFRA#map-entry">map entry</a> for the
+              [= map/entry | map entry =] for the
               <a>blank node identifier</a> <var>identifier</var>
               in the <a>blank node to quads map</a>,
               creating a new entry if necessary.
@@ -923,7 +900,7 @@
             </li>
           </ol>
         </li>
-        <li id="ca-3">For each <a data-cite="INFRA#map-key">key</a> <var>n</var>
+        <li id="ca-3">For each [= map/key =] <var>n</var>
           in the <a>blank node to quads map</a>:
           <details>
             <summary>Explanation</summary>
@@ -941,7 +918,7 @@
           </ol>
         </li>
         <li id="ca-4">For each <var>hash</var> to <var>identifier list</var>
-          <a data-cite="INFRA#map-entry">map entry</a> in
+          [= map/entry | map entry =] in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
           <details>
             <summary>Explanation</summary>
@@ -957,12 +934,12 @@
               single <a>blank node identifier</a>, <var>identifier</var> in
               <var>identifier list</var> to issue a
               canonical replacement identifier for <var>identifier</var>.</li>
-            <li id="ca-4-3">Remove the <a data-cite="INFRA#map-entry">map entry</a> for <var>hash</var> from the
+            <li id="ca-4-3">Remove the [= map/entry | map entry =] for <var>hash</var> from the
               <a>hash to blank nodes map</a>.</li>
           </ol>
         </li>
         <li id="ca-5">For each <var>hash</var> to <var>identifier list</var>
-          <a data-cite="INFRA#map-entry">map entry</a> in
+          [= map/entry | map entry =] in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by
           <var>hash</var>:
           <details>
@@ -1096,13 +1073,13 @@
 
       <ol>
         <li id="iia-1">If there is a
-          <a data-cite="INFRA#map-entry">map entry</a> for <var>existing identifier</var> in
+          [= map/entry | map entry =] for <var>existing identifier</var> in
           <a>issued identifiers map</a> of <var>I</var>,
           return it.</li>
         <li id="iia-2">Generate <var>issued identifier</var> by concatenating
           <a>identifier prefix</a> with the string value of
           <a>identifier counter</a>.</li>
-        <li id="iia-3">Add an <a data-cite="INFRA#map-entry">entry</a>
+        <li id="iia-3">Add an [= map/entry =]
           mapping <var>existing identifier</var> to <var>issued identifier</var>
           to the <a>issued identifiers map</a> of <var>I</var>.</li>
         <li id="iia-4">Increment <a>identifier counter</a>.</li>
@@ -1338,10 +1315,10 @@
         <dfn>reference blank node identifier</dfn> as inputs.</p>
 
       <ol>
-        <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty <a data-cite="INFRA#list">list</a>.
+        <li id="h1d-1">Initialize <dfn>nquads</dfn> to an empty <a>list</a>.
           It will be used to store quads in <a>canonical n-quads form</a>.</li>
-        <li id="h1d-2">Get the <a data-cite="INFRA#list">list</a> of <a>quads</a> <var>quads</var>
-          from the <a data-cite="INFRA#map-entry">map entry</a> for
+        <li id="h1d-2">Get the <a>list</a> of <a>quads</a> <var>quads</var>
+          from the [= map/entry | map entry =] for
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
         <li id="h1d-3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
@@ -1941,10 +1918,10 @@
         to help generate it.</p>
 
       <ol>
-        <li id="hndq-1">Create a new <a data-cite="INFRA#ordered-map">map</a> <var>H<sub>n</sub></var>
+        <li id="hndq-1">Create a new <a>map</a> <var>H<sub>n</sub></var>
           for relating hashes to related <a>blank nodes</a>.</li>
         <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
-          from the <a data-cite="INFRA#map-entry">map entry</a>
+          from the [= map/entry | map entry =]
           for <var>identifier</var>
           in the <a>blank node to quads map</a>.
           <details>
@@ -2184,6 +2161,8 @@
     </li>
   </ul>
 </section>
+
+<section id="index"></section>
 
 <section class="appendix informative" id="changes-from-fpwd">
   <h2>Changes since the First Public Working Draft of 24 November 2022</h2>
