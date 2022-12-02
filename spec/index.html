@@ -1048,7 +1048,9 @@
     <p>This algorithm issues a new <a>blank node identifier</a> for
       a given existing <a>blank node identifier</a>. It also updates
       state information that tracks the order in which new
-      <a>blank node identifiers</a> were issued.</p>
+      <a>blank node identifiers</a> were issued. The order of issuance is
+      important for canonically labeling blank nodes that are isomorphic
+      to others in the dataset.</p>
 
     <section id="issue-identifier-overview">
       <h3>Overview</h3>
@@ -1374,8 +1376,8 @@
         The identifier is first found from the following:
       </p>
       <ol>
-        <li>An issued identifer from <a>canonical issuer</a> in the <a>canonicalization state</a>,</li>
-        <li>An issued identifer from <var>issuer</var>, or</li>
+        <li>An issued identifier from <a>canonical issuer</a> in the <a>canonicalization state</a>,</li>
+        <li>An issued identifier from <var>issuer</var>, or</li>
         <li>the result of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads algorithm</a>
           for <var>related</var>.</li>
@@ -1389,7 +1391,7 @@
             class="example"
             title="With assigned canonical identifier">
         <p>This example illustrates generating the related hash
-          for a blank node component of a quad, there the component
+          for a blank node component of a quad, where the component
           is in the <a>object</a> position and has already had
           an assigned canonical identifier from the <a>canonical issuer</a>.</p>
 
