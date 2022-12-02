@@ -498,7 +498,9 @@
       <div class="issue" data-number="11"></div>
       <div class="issue" data-number="15"></div>
       <div class="issue" data-number="16"></div>
-      <div class="issue" data-number="34"></div>
+      <div class="issue" data-number="38"></div>
+      <div class="issue" data-number="41"></div>
+      <div class="issue" data-number="46"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>normalized dataset</a>. This algorithm will assign
@@ -1004,22 +1006,29 @@
               <ol>
                 <li id="ca-5-3-1">For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
-                  identifier by <var>identifier issuer</var> in <var>result</var>, issue
-                  a canonical identifier, in the same order, using the
-                  <a href="#issue-identifier">Issue Identifier algorithm</a>,
-                  passing <a>canonical issuer</a> and
-                  <var>existing identifier</var>.
-                  <p class="ednote">
-                    An additional explanation
-                    should be added, because an unusual thing is happening here.
-                    The explanation in <a href="#ca-5-3">5.3</a>)
-                    says "temporary identifiers for the blank nodes sharing a common first degree hash".
-                    The reader would expect then issuing a canonical id for that blank node in some manner,
-                    and that is it.
-                    However, <a href="#ca-5-3-1">5.3.1</a>) actually assigns several canonical ids:
-                    the text says that one has to go through each identifier that is in the issuer.
-                    That situation should get focus and explanation on this level.
-                  </p>
+                  identifier by <var>identifier issuer</var> in <var>result</var>,
+                  issue a canonical identifier,
+                  in the same order,
+                  using the <a href="#issue-identifier">Issue Identifier algorithm</a>,
+                  passing <a>canonical issuer</a> and <var>existing identifier</var>.
+                  <details>
+                    <summary>Explanation</summary>
+                    <p>In <a href="#ca-5-2">Step 5.2</a>,
+                      <var>hash path list</var> was created with an ordered
+                      set of results.
+                      Each result contained a <var>temporary issuer</var>
+                      which recorded temporary identifiers associated with
+                      a particular <a>blank node identifier</a> in
+                      <var>identifier list</var>.
+                      This step processes each returned <var>temporary issuer</var>,
+                      in order, and allocates canonical identifiers
+                      to the temporary identifier mappings contained
+                      within each <var>temporary issuer</var>,
+                      creating a full order on the remaining blank nodes
+                      with unissued canonical identifiers.
+                    </p>
+                  </details>
+                </li>
               </ol>
             </li>
           </ol>
