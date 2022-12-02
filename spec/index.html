@@ -1754,7 +1754,7 @@
           `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa_:c14n0`,
           which hashes to
           `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
-          which, along with the <var>temporary</var> used to traverse
+          which, along with the <var>temporary issuer</var> used to traverse
           these paths, is the result of the algorithm:</p>
 
         <table id="ex-nd-shared-result-e0"
@@ -1867,7 +1867,7 @@
           `b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216_:c14n1`,
           which hashes to
           `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
-          which, along with the <a>identifier issuer</a> used to traverse
+          which, along with the <var>temporary issuer</var> used to traverse
           these paths, is the result of the algorithm:</p>
 
         <table id="ex-nd-shared-result-e1"
@@ -1967,7 +1967,7 @@
           <details>
             <summary>Explanation</summary>
             <p>This loop explores the <a>gossip paths</a> for each
-              blank node related sharing a common hash to <var>identifier</var>
+              related blank node sharing a common hash to <var>identifier</var>
               finding the shortest such path (<var>chosen path</var>).
               This determines how canonical identifiers for
               otherwise commonly hashed blank nodes are chosen.
