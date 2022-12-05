@@ -497,7 +497,6 @@
       <div class="issue" data-number="8"></div>
       <div class="issue" data-number="10"></div>
       <div class="issue" data-number="11"></div>
-      <div class="issue" data-number="15"></div>
       <div class="issue" data-number="16"></div>
       <div class="issue" data-number="38"></div>
       <div class="issue" data-number="41"></div>
@@ -903,12 +902,24 @@
               <a>blank node identifier</a> <var>identifier</var>
               in the <a>blank node to quads map</a>,
               creating a new entry if necessary.
-              <div class="issue" data-number="15">
-                It seems that <var>Q</var> must be normalized,
-                so that literals with different syntactic representations
-                but the same semantic representations are merged,
-                and that two graphs differing in the syntactic representation
-                of a literal will produce the same set of blank node identifiers.</div>
+              <details>
+                <summary>Explanation</summary>
+                <p>This establishes the <a>blank node to quads map</a>,
+                  relating each <a>blank node</a> with the set of <a>quads</a>
+                  for which it is a component.</p>
+                <p class="note">
+                  <a data-cite="RDF11-CONCEPTS#dfn-literal">Literal</a> components of
+                  <a>quads</a> are not subject to any normalization.
+                  As noted in
+                  <a data-cite="RDF11-CONCEPTS#section-Graph-Literal">Section 3.3</a>
+                  of [[RDF11-CONCEPTS]],
+                  <a data-cite="RDF11-CONCEPTS#dfn-literal-term-equality">literal term equality</a>
+                  is based on the
+                  <a data-cite="RDF11-CONCEPTS#dfn-lexical-form">lexical form</a>,
+                  rather than the <a data-cite="RDF11-CONCEPTS#dfn-literal-value">literal value</a>,
+                  so two literals `01` and `1` are treated as distinct resources.
+                </p>
+              </details>
             </li>
           </ol>
         </li>
@@ -1351,10 +1362,6 @@
                   </ol>
                 </li>
               </ol>
-              <p class="issue" data-number="15">
-                Note potential need to normalize literals to their
-                canonical representation here as well,
-                if not done on the original <a>input dataset</a>.</p>
             </li>
           </ol>
         </li>
@@ -2201,6 +2208,15 @@
       be a citation from [[N-Quads]], when it is updated.
       <a>Canonical n-quads form</a> is used in <a href="#hash-1d-quads" class="sectionRef"></a>.
     </li>
+
+    <li>Removed issue marker for
+      <a href="https://github.com/w3c/rdf-canon/issues/15">Issue 15</a>
+      in <a href="#canon-algorithm" class="sectionRef"></a>,
+      adding a note that
+      <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>
+      components of <a>quads</a> are not normalized,
+      as two literals with different syntactic representations
+      remain distinct resources.</li>
   </ul>
 </section>
 
