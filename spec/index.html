@@ -381,7 +381,7 @@
         A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a>
         where all nodes are labeled, and <a>blank nodes</a> are labeled with canonical <a>blank node identifiers</a>
         consistent with running this algorithm on a base <a>RDF dataset</a>.
-        A concrete serialization of an <a>normalized dataset</a> MUST label
+        A concrete serialization of a <a>normalized dataset</a> MUST label
         all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
       <dt><dfn data-lt="canonical n-quads">canonical n-quads form</dfn></dt>
       <dd>
@@ -813,7 +813,7 @@
                 <table class="hash-related">
                   <thead><tr>
                     <th><var>blank node</var></th>
-                    <th><var>temporary identfier</var></th>
+                    <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
                     <tr><td>`e0`</td><td>`b0`</td></tr>
@@ -2254,7 +2254,7 @@
       and two literals with different syntactic representations
       remain distinct resources.</li>
 
-    <li>Changed the way Blank Node identifers are described
+    <li>Changed the way Blank Node identifiers are described
       (see <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a>),
       generally omitting the leading `_:` which is a serialization artifact.
       This is still required in the algorithms, but the distinction
