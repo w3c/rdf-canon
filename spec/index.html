@@ -1425,7 +1425,7 @@
           <var>related</var> <a>blank node identifier</a> `e2`
           (already assigned the canonical <a>blank node identifier</a> `c14n0`),
           an <var>input</var>
-          is created as `o&lt;http://example.com/#p&gt;c14n0`,
+          is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
           which hashes to `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa`.</p>
 
         <p>If such an identifier had not yet been established,
@@ -1468,7 +1468,16 @@
         <li id="hrbn-3">If <var>position</var> is not <code>g</code>, append
           <code>&lt;</code>, the value of the <a>predicate</a> in
           <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
-        <li id="hrbn-4">Append <var>identifier</var> to <var>input</var>.</li>
+        <li id="hrbn-4">Append the string <code>_:</code>, followed by <var>identifier</var>, to <var>input</var>.
+          <details>
+            <summary>Explanation</summary>
+            <p>This resulting string is used to generate a hash; in this respect, it is similar to 
+              the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which 
+              uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the 
+              <a>nquad</a> representation of <var>identifier</var> is used in this step, hence the 
+              appearance of the <code>_:</code> string.</p>
+          </details>        
+        </li>
         <li id="hrbn-5">Return the <a>hash</a> that results from passing <var>input</var>
           through the <a>hash algorithm</a>.</li>
       </ol>
@@ -1775,11 +1784,11 @@
           for which a canonical identifier has already been chosen (`c14n0`),
           so there is a single permutation
           resulting in one candidate path.
-          The resulting <var>chosen path</var> is `c14n0`.</p>
+          The resulting <var>chosen path</var> is `_:c14n0`.</p>
 
         <p>The string <var>data to hash</var> is composed
           of the single <var>related hash</var> and the <var>chosen path</var>:
-          `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fac14n0`,
+          `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa_:c14n0`,
           which hashes to
           `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
           which, along with the <var>temporary issuer</var> used to traverse
@@ -1882,17 +1891,17 @@
           having the canonical identifier `c14n1`,
           so there is again a single permutation
           resulting in one candidate path.
-          The resulting <var>chosen path</var> is `c14n1`.</p>
+          The resulting <var>chosen path</var> is `_:c14n1`.</p>
 
         <p>The string <var>data to hash</var> is composed
           of the single <var>related hash</var> and the <var>chosen path</var>:
-          `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246c14n1`,
+          `af54b9512b1ef069205e8e41bc5a96e86a108b0389caa5029f2c3fd0bc465246_:c14n1`,
           which hashes to
           `767a5e66f509221f45003a16c12a89d4d9675cfa51ffa80459b63606bdfc2ada`.</p>
 
         <p>The string <var>data to hash</var> is composed
           of the single <var>related hash</var> and the <var>chosen path</var>:
-          `b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216c14n1`,
+          `b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216_:c14n1`,
           which hashes to
           `fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`,
           which, along with the <var>temporary issuer</var> used to traverse
@@ -2023,8 +2032,8 @@
                 <li id="hndq-5-4-4">For each <var>related</var> in <var>p</var>:
                   <ol>
                     <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
-                      <var>related</var> by <var>issuer</var>,
-                      append it to <var>path</var>.</li>
+                      <var>related</var> by <var>issuer</var>, append the string <code>_:</code>, followed by 
+                      <var>related</var>, to <var>path</var>.</li>
                     <li id="hndq-5-4-4-2">Otherwise:
                       <ol>
                         <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
@@ -2040,8 +2049,8 @@
                         </li>
                         <li id="hndq-5-4-4-2-2">Use the
                           <a href="#issue-identifier">Issue Identifier algorithm</a>,
-                          passing <var>issuer copy</var> and <var>related</var> and
-                          append the result to <var>path</var>.</li>
+                          passing <var>issuer copy</var> and <var>related</var>, and
+                          append the string <code>_:</code>, followed by the result, to <var>path</var>.</li>
                       </ol>
                     </li>
                     <li id="hndq-5-4-4-3">If <var>chosen path</var> is not empty and the length
@@ -2059,7 +2068,15 @@
                       </details>
                     </li>
                   </ol>
-                </li>
+                  <details>
+                    <summary>Explanation</summary>
+                    <p><var>path</var> is used to generate a hash at a later step; in this respect, it is similar to 
+                      the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which 
+                      uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the 
+                      <a>nquad</a> representation of blank node identifiers is used in these steps, hence the 
+                      usage of the <code>_:</code> string.</p>
+                  </details>        
+            </li>
                 <li id="hndq-5-4-5">For each <var>related</var> in <var>recursion list</var>:
                   <details>
                     <summary>Explanation</summary>
@@ -2075,8 +2092,8 @@
                       <var>issuer copy</var> for <var>path identifier issuer</var>.</li>
                     <li id="hndq-5-4-5-2">Use the
                       <a href="#issue-identifier">Issue Identifier algorithm</a>,
-                      passing <var>issuer copy</var> and <var>related</var> and
-                      append the result to <var>path</var>.</li>
+                      passing <var>issuer copy</var> and <var>related</var>; append the string <code>_:</code>, followed by
+                      the result, to <var>path</var>.</li>
                     <li id="hndq-5-4-5-3">Append <code>&lt;</code>, the <a>hash</a> in
                       <var>result</var>, and <code>&gt;</code> to <var>path</var>.</li>
                     <li id="hndq-5-4-5-4">Set <var>issuer copy</var> to the
@@ -2200,7 +2217,7 @@
       The algorithm, and the examples, have been changed to systematically
       use the `xyz` format for blank node identifiers, instead of
       `_:xyz`. See <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a> 
-      for the discussion
+      for the discussion.
     </li>
     <li>
       <a href="#hash-1d-quads" class="sectionRef"></a>
