@@ -315,9 +315,7 @@
       with <code>_:</code> that is used as an identifier for a
       <a>blank node</a>. <a>Blank node identifiers</a>
       are typically implementation-specific local identifiers; this document
-      specifies an algorithm for deterministically specifying them.
-      A blank node not given an explicit identifier is called an "unlabeled blank node."
-      Additionally, blank nodes may be explicitly labeled with an identifier.</dd>
+      specifies an algorithm for deterministically specifying them.</dd>
     <dd>
       Concrete syntaxes, like [[Turtle]] or [[N-Quads]], prepend blank node identifiers with the <code>_:</code> string
       to differentiate them from other nodes in the graph. This affects the 
@@ -379,7 +377,12 @@
         the algorithm.</dd>
       <dt><dfn>normalized dataset</dfn></dt>
       <dd>The immutable, abstract <a>RDF dataset</a> and set of normalized
-        <a>blank node identifiers</a> that are produced as output by the algorithm. A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a> where all nodes are labeled, and <a>blank nodes</a> are labeled with <a>blank node identifiers</a> consistent with running this algorithm on a base <a>RDF dataset</a>. A concrete serialization of an <a>normalized dataset</a> MUST label all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
+        <a>blank node identifiers</a> that are produced as output by the algorithm.
+        A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a>
+        where all nodes are labeled, and <a>blank nodes</a> are labeled with canonical <a>blank node identifiers</a>
+        consistent with running this algorithm on a base <a>RDF dataset</a>.
+        A concrete serialization of an <a>normalized dataset</a> MUST label
+        all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
       <dt><dfn data-lt="canonical n-quads">canonical n-quads form</dfn></dt>
       <dd>
         The canonicalized representation of a quad is based on
@@ -506,7 +509,6 @@
       <div class="issue" data-number="16"></div>
       <div class="issue" data-number="38"></div>
       <div class="issue" data-number="41"></div>
-      <div class="issue" data-number="46"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>normalized dataset</a>. This algorithm will assign
@@ -516,7 +518,8 @@
     <section id="canon-algo-overview" class="informative">
       <h3>Overview</h3>
 
-      <p><a>URDNA2015</a> canonically labels an <a>RDF dataset</a>.
+      <p><a>URDNA2015</a> canonically labels an <a>RDF dataset</a>
+        by assigning each <a>blank node</a> a canonical identifier.
         In URDNA2015, an RDF dataset <var>D</var>
         is represented as a set of <a>quads</a> of the form `&lt; s, p, o, g >`
         where the graph component `g` is empty if and only if the
@@ -589,14 +592,15 @@
           -->
         </pre>
 
-        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (`e0` and `e1`).
+        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (`e0` and `e1`)
+          in the <a>input dataset</a>
           to populate <a>blank node to quads map</a>:</p>
 
         <table id="ex-ca-unique-bn-quads-map"
                class="hash-related numbered">
           <caption>Blank node to quads map for unique hashes</caption>
           <thead><tr>
-            <th><var>identifier</var></th>
+            <th><var>blank node</var></th>
             <th><var>Q</var></th>
           </tr></thead>
           <tbody>
@@ -620,7 +624,7 @@
           <caption>Hash to blank nodes map for unique hashes</caption>
           <thead><tr>
             <th><var>hash</var></th>
-            <th><var>label(s)</var></th>
+            <th><var>blank node(s)</var></th>
           </tr></thead>
           <tbody>
             <tr>
@@ -637,11 +641,11 @@
         <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
           blank node which has a unique hash:</p>
 
-        <table id="ex-ca-unique-1d-labels"
+        <table id="ex-ca-unique-1d-identifiers"
                class="hash-related numbered">
-          <caption>Canonical labels for unique hashes</caption>
+          <caption>Canonical identifiers for blank nodes with unique hashes</caption>
           <thead><tr>
-            <th><var>label</var></th>
+            <th><var>blank node</var></th>
             <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
@@ -716,7 +720,7 @@
                class="hash-related numbered">
           <caption>Blank node to quads map for shared hashes</caption>
           <thead><tr>
-            <th><var>identifier</var></th>
+            <th><var>blank node</var></th>
             <th><var>Q</var></th>
           </tr></thead>
           <tbody>
@@ -749,7 +753,7 @@
           <caption>Hash to blank nodes map shared hashes</caption>
           <thead><tr>
             <th><var>hash</var></th>
-            <th><var>identifier(s)</var></th>
+            <th><var>blank node(s)</var></th>
           </tr></thead>
           <tbody>
             <tr>
@@ -772,9 +776,9 @@
 
         <table id="ex-ca-shared-canon-ids"
                class="hash-related numbered">
-          <caption>Canonical identifiers for shared hashes</caption>
+          <caption>Canonical identifiers for blank nodes with shared hashes</caption>
           <thead><tr>
-            <th><var>identifier</var></th>
+            <th><var>blank node</var></th>
             <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
@@ -808,8 +812,8 @@
               <td>
                 <table class="hash-related">
                   <thead><tr>
-                    <th><var>original</var></th>
-                    <th><var>canonical</var></th>
+                    <th><var>blank node</var></th>
+                    <th><var>temporary identfier</var></th>
                   </tr></thead>
                   <tbody>
                     <tr><td>`e0`</td><td>`b0`</td></tr>
@@ -833,8 +837,8 @@
               <td>
                 <table class="hash-related">
                   <thead><tr>
-                    <th><var>original</var></th>
-                    <th><var>canonical</var></th>
+                    <th><var>blank node</var></th>
+                    <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
                     <tr><td>`e1`</td><td>`b0`</td></tr>
@@ -858,10 +862,10 @@
 
         <table id="ex-ca-shared-canon-identifiers"
                class="hash-related numbered">
-          <caption>Original to canonical blank node identifiers</caption>
+          <caption>Blank node to canonical identifiers</caption>
           <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
+            <th><var>blank node</var></th>
+            <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
             <tr><td>`e0`</td><td>`c14n3`</td></tr>
@@ -1422,7 +1426,7 @@
           an assigned canonical identifier from the <a>canonical issuer</a>.</p>
 
         <p>Given the predicate `:p`,
-          <var>related</var> <a>blank node identifier</a> `e2`
+          <var>related</var> <a>blank node</a> `e2`
           (already assigned the canonical <a>blank node identifier</a> `c14n0`),
           an <var>input</var>
           is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
@@ -1577,7 +1581,8 @@
         <li id="ndh-hl-s1"><strong>Compute related hashes</strong>.
           Compute the related hash <var>H<sub>n</sub></var> set for <var>n</var>,
           i.e., all first degree <a>mentions</a> between <var>n</var> and another blank node.
-          Note that this includes both labeled and unlabeled blank nodes.</li>
+          Note that this includes both unlabeled blank nodes and those
+          already issued a canonical identifier (labeled blank nodes).</li>
         <li id="ndh-hl-s2"><strong>Explore mentions</strong>.
           Given the related hash <var>x</var> in <var>H<sub>n</sub></var>,
           record <var>x</var> in the data to hash <var>D<sub>n</sub></var>.
@@ -1664,8 +1669,8 @@
                class="hash-related numbered">
           <caption>Established canonical identifiers from <a>canonical issuer</a></caption>
           <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
+            <th><var>blank node</var></th>
+            <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
             <tr><td>`e2`</td><td>`c14n0`</td></tr>
@@ -1721,8 +1726,8 @@
                class="hash-related numbered">
           <caption>Initial mappings in <var>temporary issuer</var> for `e0`</caption>
           <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
+            <th><var>blank node</var></th>
+            <th><var>temporary identifier</var></th>
           </tr></thead>
           <tbody>
             <tr><td>`e0`</td><td>`b0`</td></tr>
@@ -1803,8 +1808,8 @@
               <td>
                 <table class="hash-related">
                   <thead><tr>
-                    <th><var>original</var></th>
-                    <th><var>canonical</var></th>
+                    <th><var>blank node</var></th>
+                    <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
                     <tr><td>`e0`</td><td>`b0`</td></tr>
@@ -1825,8 +1830,8 @@
                class="hash-related numbered">
           <caption>Initial mappings in <var>temporary issuer</var> for `e1`</caption>
           <thead><tr>
-            <th><var>original</var></th>
-            <th><var>canonical</var></th>
+            <th><var>blank node</var></th>
+            <th><var>temporary identifier</var></th>
           </tr></thead>
           <tbody>
             <tr><td>`e1`</td><td>`b0`</td></tr>
@@ -1916,8 +1921,8 @@
               <td>
                 <table class="hash-related">
                   <thead><tr>
-                    <th><var>original</var></th>
-                    <th><var>canonical</var></th>
+                    <th><var>blank node</var></th>
+                    <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
                     <tr><td>`e1`</td><td>`b0`</td></tr>
@@ -2248,6 +2253,13 @@
       components of <a>quads</a> are not normalized,
       and two literals with different syntactic representations
       remain distinct resources.</li>
+
+    <li>Changed the way Blank Node identifers are described
+      (see <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a>),
+      generally omitting the leading `_:` which is a serialization artifact.
+      This is still required in the algorithms, but the distinction
+      between what is an identifier, and the serialzation form
+      is clarified.</li>
   </ul>
 </section>
 
