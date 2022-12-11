@@ -592,7 +592,7 @@
           -->
         </pre>
 
-        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (`e0` and `e1`)
+        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (<code><em>e0</em></code> and <code><em>e1</em></code>)
           in the <a>input dataset</a>
           to populate <a>blank node to quads map</a>:</p>
 
@@ -605,12 +605,12 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e0`</td>
-              <td>`:p :q e0 .`<br/>`e0 :s :u .`</td>
+              <td><code><em>e0</em></code></td>
+              <td><code>:p :q <em>e0</em> .</code><br/><code><em>e0</em> :s :u .</code></td>
             </tr>
             <tr>
-              <td>`e1`</td>
-              <td>`:p :r e1 .`<br/>`e1 :t :u .`</td>
+              <td><code><em>e1</em></code></td>
+              <td><code>:p :r <em>e1</em> .</code><br/><code><em>e1</em> :t :u .</code></td>
             </tr>
           </tbody>
         </table>
@@ -629,11 +629,11 @@
           <tbody>
             <tr>
               <td>`21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a`</td>
-              <td>`e0`</td>
+              <td><code><em>e0</em></code></td>
             </tr>
             <tr>
               <td>`6fa0b9bdb376852b5743ff39ca4cbf7ea14d34966b2828478fbf222e7c764473`</td>
-              <td>`e1`</td>
+              <td><code><em>e1</em></code></td>
             </tr>
           </tbody>
         </table>
@@ -650,12 +650,12 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e0`</td>
-              <td>`c14n0`</td>
+              <td><code><em>e0</em></code></td>
+              <td><code><em>c14n0</em></code></td>
             </tr>
             <tr>
-              <td>`e1`</td>
-              <td>`c14n1`</td>
+              <td><code><em>e1</em></code></td>
+              <td><code><em>c14n1</em></code></td>
             </tr>
           </tbody>
         </table>
@@ -713,7 +713,7 @@
         </pre>
 
         <p><a href="#ca-2">Step 2</a> is called four times, with each blank node
-          (`e0`, `e1`, `e2`, and `e3`)
+          (<code><em>e0</em></code>, <code><em>e1</em></code>, <code><em>e2</em></code>, and <code><em>e3</em></code>)
           to populate <a>blank node to quads map</a>:</p>
 
         <table id="ex-ca-shared-bn-quads-map"
@@ -725,20 +725,20 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e0`</td>
-              <td>`:p :q e0 .`<br/>`e0 :p e2 .`</td>
+              <td><code><em>e0</em></code></td>
+              <td><code>:p :q <em>e0</em> .</code><br/><code><em>e0</em> :p <em>e2</em> .</code></td>
             </tr>
             <tr>
-              <td>`e1`</td>
-              <td>`:p :q e1 .`<br/>`e1 :p e3 .`</td>
+              <td><code><em>e1</em></code></td>
+              <td><code>:p :q <em>e1</em> .</code><br/><code><em>e1</em> :p <em>e3</em> .</code></td>
             </tr>
             <tr>
-              <td>`e2`</td>
-              <td>`e0 :p e2 .`<br/>`e2 :r e3 .`</td>
+              <td><code><em>e2</em></code></td>
+              <td><code><em>e0</em> :p <em>e2</em> .</code><br/><code><em>e2</em> :r <em>e3</em> .</code></td>
             </tr>
             <tr>
-              <td>`e3`</td>
-              <td>`e1 :p e3 .`<br/>`e2 :r e3 .`</td>
+              <td><code><em>e3</em></code></td>
+              <td><code><em>e1</em> :p <em>e3</em> .</code><br/><code><em>e2</em> :r <em>e3</em> .</code></td>
             </tr>
           </tbody>
         </table>
@@ -746,7 +746,7 @@
         <p><a href="#ca-3">Step 3</a> generates the first-degree
           hash for each blank node, which is explored further
           in <a href="#ex-1d-shared-hashes"></a>
-          (note that the hashes for `e0` and `e1` are shared):</p>
+          (note that the hashes for <code><em>e0</em></code> and <code><em>e1</em></code> are shared):</p>
 
         <table id="ex-ca-shared-1d-hash-to-bn"
                class="hash-related numbered">
@@ -758,15 +758,15 @@
           <tbody>
             <tr>
               <td>`3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36`</td>
-              <td>`e0`, `e1`</td>
+              <td><code><em>e0</em></code>, <code><em>e1</em></code></td>
             </tr>
             <tr>
               <td>`15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659`</td>
-              <td>`e2`</td>
+              <td><code><em>e2</em></code></td>
             </tr>
             <tr>
               <td>`7e790a99273eed1dc57e43205d37ce232252c85b26ca4a6ff74ff3b5aea7bccd`</td>
-              <td>`e3`</td>
+              <td><code><em>e3</em></code></td>
             </tr>
           </tbody>
         </table>
@@ -783,17 +783,17 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e2`</td>
-              <td>`c14n0`</td>
+              <td><code><em>e2</em></code></td>
+              <td><code><em>c14n0</em></code></td>
             </tr>
             <tr>
-              <td>`e3`</td>
-              <td>`c14n1`</td>
+              <td><code><em>e3</em></code></td>
+              <td><code><em>c14n1</em></code></td>
             </tr>
           </tbody>
         </table>
 
-        <p><a href="#ca-5">Step 5</a> is run on `e0` and `e1`, separately,
+        <p><a href="#ca-5">Step 5</a> is run on <code><em>e0</em></code> and <code><em>e1</em></code>, separately,
           which share the same hash,
           and use separate instances of a <var>temporary issuer</var>,
           (as explored in <a href="#ex-nd-shared-hashes"></a>)
@@ -805,7 +805,7 @@
 
         <table id="ex-ca-shared-result-e0"
                class="hash-related numbered">
-          <caption>Result for `e0`</caption>
+          <caption>Result for <code><em>e0</em></code></caption>
           <tbody>
             <tr>
               <td><var>temporary issuer</var> mappings</td>
@@ -816,7 +816,7 @@
                     <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`e0`</td><td>`b0`</td></tr>
+                    <tr><td><code><em>e0</em></code></td><td><code><em>b0</em></code></td></tr>
                   </tbody>
                 </table>
               </td>
@@ -830,7 +830,7 @@
 
         <table id="ex-ca-shared-result-e1"
                class="hash-related numbered">
-          <caption>Result for `e1`</caption>
+          <caption>Result for <code><em>e1</em></code></caption>
           <tbody>
             <tr>
               <td><var>temporary issuer</var> mappings</td>
@@ -841,7 +841,7 @@
                     <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`e1`</td><td>`b0`</td></tr>
+                    <tr><td><code><em>e1</em></code></td><td><code><em>b0</em></code></td></tr>
                   </tbody>
                 </table>
               </td>
@@ -868,10 +868,10 @@
             <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`e0`</td><td>`c14n3`</td></tr>
-            <tr><td>`e1`</td><td>`c14n2`</td></tr>
-            <tr><td>`e2`</td><td>`c14n0`</td></tr>
-            <tr><td>`e3`</td><td>`c14n1`</td></tr>
+            <tr><td><code><em>e0</em></code></td><td><code><em>c14n3</em></code></td></tr>
+            <tr><td><code><em>e1</em></code></td><td><code><em>c14n2</em></code></td></tr>
+            <tr><td><code><em>e2</em></code></td><td><code><em>c14n0</em></code></td></tr>
+            <tr><td><code><em>e3</em></code></td><td><code><em>c14n1</em></code></td></tr>
           </tbody>
         </table>
 
@@ -1092,9 +1092,9 @@
       <p>The algorithm maintains an <a>issued identifiers map</a> to
         relate an existing <a>blank node identifier</a> from the <a>input dataset</a>
         to a new <a>blank node identifier</a> using a given <a>identifier prefix</a>
-        (`c14n`) with new identifiers issued by appending an incrementing number.
-        For example, when called for a blank node identifier such as `e3`,
-        it might result in a issued identifier of `c14n1`.</p>
+        (<code><em>c14n</em></code>) with new identifiers issued by appending an incrementing number.
+        For example, when called for a blank node identifier such as <code><em>e3</em></code>,
+        it might result in a issued identifier of <code><em>c14n1</em></code>.</p>
     </section>
 
     <section id="issue-identifier-algorithm">
@@ -1147,7 +1147,7 @@
 
       <p>For consistency, <a>blank node identifiers</a> used in <var>Q<sub>n</sub></var>
         are replaced with placeholders in a <a>canonical n-quads</a> serialization of that quad.
-        Every blank node component is replaced with either `a` or `z`,
+        Every blank node component is replaced with either <code><em>a</em></code> or <code><em>z</em></code>,
         depending on if that component is <var>n</var> or not.</p>
 
       <p>The resulting serialized quads are then <a>code point ordered</a>,
@@ -1192,8 +1192,8 @@
           -->
         </pre>
 
-        <p>The algorithm will be called twice, with each blank node (`e0` and `e1`).
-          Running the algorithm with the reference node `e0` results in the
+        <p>The algorithm will be called twice, with each blank node (<code><em>e0</em></code> and <code><em>e1</em></code>).
+          Running the algorithm with the reference node <code><em>e0</em></code> results in the
           following quads, after replacing blank nodes:</p>
 
         <pre id="ex-1d-unique-hashes-e0-quads" data-transform="updateExample">
@@ -1216,7 +1216,7 @@
           >21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a</code>.
         </p>
 
-        <p>The algorithm is run a second time with the reference node `e1` resulting
+        <p>The algorithm is run a second time with the reference node <code><em>e1</em></code> resulting
           in the following quads:</p>
 
         <pre id="ex-1d-unique-hashes-e1-quads" data-transform="updateExample">
@@ -1279,8 +1279,8 @@
         </pre>
 
         <p>The algorithm will be called four times, with each blank node
-          (`e0`, `e1`, `e2`, and `e3`).
-          Running the algorithm with the reference node `e0` results in the
+          (<code><em>e0</em></code>, <code><em>e1</em></code>, <code><em>e2</em></code>, and <code><em>e3</em></code>).
+          Running the algorithm with the reference node <code><em>e0</em></code> results in the
           following quads, after replacing blank nodes:</p>
 
         <pre id="ex-1d-shared-hashes-e0-quads" data-transform="updateExample">
@@ -1297,10 +1297,10 @@
           >3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36</code>.
         </p>
 
-        <p>Note that using reference node `e1` results in the same quads,
+        <p>Note that using reference node <code><em>e1</em></code> results in the same quads,
           and thus results in the same hash.</p>
 
-        <p>Using the reference node `e2` results in the following quads:</p>
+        <p>Using the reference node <code><em>e2</em></code> results in the following quads:</p>
 
         <pre id="ex-1d-shared-hashes-e2-quads" data-transform="updateExample">
           <!--
@@ -1316,7 +1316,7 @@
           >15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659</code>.
         </p>
 
-        <p>Lastly, using the reference node `e3` results in the following quads:</p>
+        <p>Lastly, using the reference node <code><em>e3</em></code> results in the following quads:</p>
 
         <pre id="ex-1d-shared-hashes-e3-quads" data-transform="updateExample">
           <!--
@@ -1332,8 +1332,8 @@
           >7e790a99273eed1dc57e43205d37ce232252c85b26ca4a6ff74ff3b5aea7bccd</code>.
         </p>
 
-        <p>The hashes for `e2` and `e3` are unique, but `e0`,
-          and `e1` share a common hash,
+        <p>The hashes for <code><em>e2</em></code> and <code><em>e3</em></code> are unique, but <code><em>e0</em></code>,
+          and <code><em>e1</em></code> share a common hash,
           which will require the use of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
           as it is necessary to consider quads further removed from the direct mentions
@@ -1426,8 +1426,8 @@
           an assigned canonical identifier from the <a>canonical issuer</a>.</p>
 
         <p>Given the predicate `:p`,
-          <var>related</var> <a>blank node</a> `e2`
-          (already assigned the canonical <a>blank node identifier</a> `c14n0`),
+          <var>related</var> <a>blank node</a> <code><em>e2</em></code>
+          (already assigned the canonical <a>blank node identifier</a> <code><em>c14n0</em></code>),
           an <var>input</var>
           is created as `o&lt;http://example.com/#p&gt;_:c14n0`,
           which hashes to `29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa`.</p>
@@ -1657,9 +1657,9 @@
         <p>This example revisits <a href="#ex-ca-shared-hashes"></a>
           to illustrate the operation of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>
-          on the blank nodes (`e0` and `e1`) which resulted in a shared result from the
+          on the blank nodes (<code><em>e0</em></code> and <code><em>e1</em></code>) which resulted in a shared result from the
           <a href="#hash-1d-quads-algorithm">Hash First Degree Quads Algorithm</a>.
-          The other blank nodes (`e2` and `e3`) had unique
+          The other blank nodes (<code><em>e2</em></code> and <code><em>e3</em></code>) had unique
           hashes when processed by the
           <a href="#hash-1d-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
           so that canonical identifiers have already been issued,
@@ -1673,8 +1673,8 @@
             <th><var>canonical identifier</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`e2`</td><td>`c14n0`</td></tr>
-            <tr><td>`e3`</td><td>`c14n1`</td></tr>
+            <tr><td><code><em>e2</em></code></td><td><code><em>c14n0</em></code></td></tr>
+            <tr><td><code><em>e3</em></code></td><td><code><em>c14n1</em></code></td></tr>
           </tbody>
         </table>
 
@@ -1709,8 +1709,8 @@
         <p>The algorithm will be called twice, with each blank node
            which did not result in a unique hash
           from the <a href="#hash-1d-quads-algorithm">Hash First Degree Quads Algorithm</a>
-          (`e0` and `e1`).
-          The <a data-cite="INFRA#map-entry">map entry</a> for `e0` in the <a>blank node to quads map</a> results in the
+          (<code><em>e0</em></code> and <code><em>e1</em></code>).
+          The <a data-cite="INFRA#map-entry">map entry</a> for <code><em>e0</em></code> in the <a>blank node to quads map</a> results in the
           following quads:</p>
 
         <pre id="ex-nd-shared-hashes-e0-quads" data-transform="updateExample">
@@ -1724,13 +1724,13 @@
 
         <table id="ex-nd-shared-table-input-temporary-mapping-e0"
                class="hash-related numbered">
-          <caption>Initial mappings in <var>temporary issuer</var> for `e0`</caption>
+          <caption>Initial mappings in <var>temporary issuer</var> for <code><em>e0</em></code></caption>
           <thead><tr>
             <th><var>blank node</var></th>
             <th><var>temporary identifier</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`e0`</td><td>`b0`</td></tr>
+            <tr><td><code><em>e0</em></code></td><td><code><em>b0</em></code></td></tr>
           </tbody>
         </table>
 
@@ -1743,7 +1743,7 @@
 
         <table id="ex-nd-shared-table-related-hash-e0"
                class="hash-related numbered">
-          <caption>Hash for `e2`  related to `e0`</caption>
+          <caption>Hash for <code><em>e2</em></code>  related to <code><em>e0</em></code></caption>
           <thead><tr>
             <th><var>related</var></th>
             <th><var>quad</var></th>
@@ -1752,7 +1752,7 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e2`</td>
+              <td><code><em>e2</em></code></td>
               <td>`e0&nbsp;:p&nbsp;e2&nbsp;.`</td>
               <td>`o`</td>
               <td>
@@ -1775,7 +1775,7 @@
           <tbody>
             <tr>
               <td><code>29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa</code></td>
-              <td>`[ e2 ]`</td>
+              <td><code>[ <em>e2</em> ]</code></td>
             </tr>
           </tbody>
         </table>
@@ -1784,9 +1784,9 @@
           which is a key in <var>H<sub>n</sub></var>,
           which can have one or more related blank nodes,
           which determines the shortest <a>gossip path</a> between
-          the two nodes (`e0` and `e2`).
-          In this case, the hash maps to just `e2`,
-          for which a canonical identifier has already been chosen (`c14n0`),
+          the two nodes (<code><em>e0</em></code> and <code><em>e2</em></code>).
+          In this case, the hash maps to just <code><em>e2</em></code>,
+          for which a canonical identifier has already been chosen (<code><em>c14n0</em></code>),
           so there is a single permutation
           resulting in one candidate path.
           The resulting <var>chosen path</var> is `_:c14n0`.</p>
@@ -1801,7 +1801,7 @@
 
         <table id="ex-nd-shared-result-e0"
                class="hash-related numbered">
-          <caption>Result for `e0`</caption>
+          <caption>Result for <code><em>e0</em></code></caption>
           <tbody>
             <tr>
               <td><var>temporary issuer</var> mappings</td>
@@ -1812,7 +1812,7 @@
                     <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`e0`</td><td>`b0`</td></tr>
+                    <tr><td><code><em>e0</em></code></td><td><code><em>b0</em></code></td></tr>
                   </tbody>
                 </table>
               </td>
@@ -1824,21 +1824,21 @@
           </tbody>
         </table>
 
-        <p>The algorithm is called again for `e1`.</p>
+        <p>The algorithm is called again for <code><em>e1</em></code>.</p>
 
         <table id="ex-nd-shared-table-input-temporary-mapping-e1"
                class="hash-related numbered">
-          <caption>Initial mappings in <var>temporary issuer</var> for `e1`</caption>
+          <caption>Initial mappings in <var>temporary issuer</var> for <code><em>e1</em></code></caption>
           <thead><tr>
             <th><var>blank node</var></th>
             <th><var>temporary identifier</var></th>
           </tr></thead>
           <tbody>
-            <tr><td>`e1`</td><td>`b0`</td></tr>
+            <tr><td><code><em>e1</em></code></td><td><code><em>b0</em></code></td></tr>
           </tbody>
         </table>
 
-        <p>The <a data-cite="INFRA#map-entry">map entry</a> for `e1` in the <a>blank node to quads map</a> results in the
+        <p>The <a data-cite="INFRA#map-entry">map entry</a> for <code><em>e1</em></code> in the <a>blank node to quads map</a> results in the
           following quads:</p>
 
         <pre id="ex-nd-shared-hashes-e1-quads" data-transform="updateExample">
@@ -1854,7 +1854,7 @@
 
         <table id="ex-nd-shared-table-related-hash-e1"
                class="hash-related numbered">
-          <caption>Hash for `e3`  related to `e1`</caption>
+          <caption>Hash for <code><em>e3</em></code>  related to <code><em>e1</em></code></caption>
           <thead><tr>
             <th><var>related</var></th>
             <th><var>quad</var></th>
@@ -1863,7 +1863,7 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td>`e3`</td>
+              <td><code><em>e3</em></code></td>
               <td>`e1&nbsp;:p&nbsp;e3&nbsp;.`</td>
               <td>`o`</td>
               <td>
@@ -1886,14 +1886,14 @@
           <tbody>
             <tr>
               <td><code>b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216</code></td>
-              <td>`[ e3 ]`</td>
+              <td><code>[ <em>e3</em> ]</code></td>
             </tr>
           </tbody>
         </table>
 
         <p><a href="#hndq-5">Step 5</a>
-          runs in essentially the same manner, mapping just `e3`
-          having the canonical identifier `c14n1`,
+          runs in essentially the same manner, mapping just <code><em>e3</em></code>
+          having the canonical identifier <code><em>c14n1</em></code>,
           so there is again a single permutation
           resulting in one candidate path.
           The resulting <var>chosen path</var> is `_:c14n1`.</p>
@@ -1914,7 +1914,7 @@
 
         <table id="ex-nd-shared-result-e1"
                class="hash-related numbered">
-          <caption>Result for `e1`</caption>
+          <caption>Result for <code><em>e1</em></code></caption>
           <tbody>
             <tr>
               <td><var>temporary issuer</var> mappings</td>
@@ -1925,7 +1925,7 @@
                     <th><var>temporary identifier</var></th>
                   </tr></thead>
                   <tbody>
-                    <tr><td>`e1`</td><td>`b0`</td></tr>
+                    <tr><td><code><em>e1</em></code></td><td><code><em>b0</em></code></td></tr>
                   </tbody>
                 </table>
               </td>
@@ -2220,7 +2220,7 @@
   <ul>
     <li>
       The algorithm, and the examples, have been changed to systematically
-      use the `xyz` format for blank node identifiers, instead of
+      use the <code><em>xyz</em></code> format for blank node identifiers, instead of
       `_:xyz`. See <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a> 
       for the discussion.
     </li>
