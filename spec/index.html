@@ -268,24 +268,48 @@
   <h2>Terminology</h2>
 
   <dl>
-    <dt><dfn>string</dfn></dt><dd>
+    <dt><dfn data-cite="INFRA#string">string</dfn></dt><dd>
       A string is a sequence of zero or more Unicode characters.</dd>
     <dt><code>true</code> and <code>false</code></dt><dd>
       Values that are used to express one of two possible boolean states.</dd>
-    <dt><dfn data-lt="quad|quads">quad</dfn></dt>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-iri" data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
+    <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
+      defined in [[RFC3987]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-subject" data-lt="subject|subjects">subject</dfn></dt>
+    <dd>A <a>subject</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-predicate" data-lt="predicate|predicates">predicate</dfn></dt>
+    <dd>A <a>predicate</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-object" data-lt="object|objects">object</dfn></dt>
+    <dd>An <a>object</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-triple" data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
+    <dd>A <a>triple</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-graph" data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
+    <dd>An <a>RDF graph</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-graph-name" data-lt="graph name|graph names">graph name</dfn></dt>
+    <dd>A <a>graph name</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</dfn></dt>
+    <dd>The <a>default graph</a>
+      as specified by [[!RDF11-CONCEPTS]].</dd>
+    <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt> <!-- TODO: should be defined in N-Quads -->
     <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
       This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
-    <dt><dfn data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
-    <dd>A <a data-cite="RDF11-CONCEPTS#dfn-rdf-dataset">dataset</a>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-dataset" data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
+    <dd>A <a>dataset</a>
       as specified by [[!RDF11-CONCEPTS]].
       For the purposes of this specification, an <a>RDF dataset</a>
       is considered to be a set of <a>quads</a></dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS">blank node</dfn></dt>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</dfn></dt>
     <dd>A <a>blank node</a>
       as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
       neither an <a>IRI</a>, nor a
       <a>literal</a>.</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS">blank node identifier</dfn></dt>
+    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier" data-cite="RDF11-CONCEPTS">blank node identifier</dfn></dt>
     <dd>A <a>blank node identifier</a>
       as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
       with <code>_:</code> that is used as an identifier for an
@@ -374,9 +398,9 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
-      <dt><dfn data-lt="code point order|code point ordered">Unicode code point order</dfn></dt>
+      <dt><dfn data-cite="XPATH-FUNCTIONS#codepoint-collation" data-lt="code point order|code point ordered">Unicode code point order</dfn></dt>
       <dd>This refers to determining the order of two Unicode strings (`A` and `B`),
-        using <a data-cite="XPATH-FUNCTIONS#codepoint-collation">Unicode Codepoint Collation</a>,
+        using <a>Unicode Codepoint Collation</a>,
         as defined in [[XPATH-FUNCTIONS]],
         which defines a
         <a href="https://en.wikipedia.org/wiki/Total_order">total ordering</a>
