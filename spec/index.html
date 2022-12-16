@@ -2038,7 +2038,14 @@
                   <ol>
                     <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
                       <var>related</var> by <a>canonical issuer</a>, append the string <code>_:</code>, followed by 
-                      <var>related</var>, to <var>path</var>.</li>
+                      the canonical identifier for <var>related</var>, to <var>path</var>.
+                      <details><summary>Explanation</summary>
+                        <p>A canonical identifier may have been generated before calling this algorithm,
+                            if it was issued from an earlier call to <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.
+                            There is no reason to recurse and apply the algorithm to any related blank node that has already been assigned a canonical identifier.
+                             Furthermore, using the canonical identifier also further distinguishes it from any temporary identifier, allowing for even greater efficiency in finding the chosen path.</p>
+                      </details>
+                    </li>
                     <li id="hndq-5-4-4-2">Otherwise:
                       <ol>
                         <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
