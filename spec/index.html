@@ -1434,7 +1434,8 @@
 
         <p>If such an identifier had not yet been established,
           it would instead use the results of the
-          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
+          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
+          without the leading `_:`.</p>
       </aside>
     </section>
 
@@ -1449,30 +1450,36 @@
         <a>string</a> <var>position</var> as inputs.</p>
 
       <ol>
-        <li id="hrbn-1">Set the <var>identifier</var> to use for <var>related</var>, preferring
-          first the canonical identifier for <var>related</var> if issued, second
-          the identifier issued by <var>issuer</var> if issued, and last, if
-          necessary, the result of the
-          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
-          passing <var>related</var>.
+        <li id="hrbn-1">Initialize a <a>string</a> <var>input</var> to the value of
+          <var>position</var>.</li>
+        <li id="hrbn-2">If <var>position</var> is not <code>g</code>, append
+          <code>&lt;</code>, the value of the <a>predicate</a> in
+          <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
+        <li id="hrbn-3">If there is a canonical identifier for <var>related</var>,
+          or an identifier issued by <var>issuer</var>,
+          append the string `_:`, followed by the that identifier to <var>input</var>.
           <details>
             <summary>Explanation</summary>
             <p>If a canonical identifier was already issued for <var>related</var>,
               it will be in the <a>canonical issuer</a> contained within
               <a>canonicalization state</a>.
               Otherwise, the temporary <var>issuer</var> instance may already
-              have a mapping for <var>related</var>.
-              Lastly, if no identifier, canonical or temporary, has already been issued,
+              have a mapping for <var>related</var>.</p>
+          </details>
+        </li>
+        <li id="hrbn-4">Otherwise,
+          append the result of the
+          <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
+          passing <var>related</var> to <var>input</var>.
+          <details>
+            <summary>Explanation</summary>
+            <p>If no identifier, canonical or temporary, has already been issued,
               a new identifier is created using the
               <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
           </details>
         </li>
-        <li id="hrbn-2">Initialize a <a>string</a> <var>input</var> to the value of
-          <var>position</var>.</li>
-        <li id="hrbn-3">If <var>position</var> is not <code>g</code>, append
-          <code>&lt;</code>, the value of the <a>predicate</a> in
-          <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
-        <li id="hrbn-4">Append the string <code>_:</code>, followed by <var>identifier</var>, to <var>input</var>.
+        <li id="hrbn-5">Return the <a>hash</a> that results from passing <var>input</var>
+          through the <a>hash algorithm</a>.
           <details>
             <summary>Explanation</summary>
             <p>This resulting string is used to generate a hash; in this respect, it is similar to 
@@ -1482,8 +1489,6 @@
               appearance of the <code>_:</code> string.</p>
           </details>        
         </li>
-        <li id="hrbn-5">Return the <a>hash</a> that results from passing <var>input</var>
-          through the <a>hash algorithm</a>.</li>
       </ol>
     </section>
   </section>
