@@ -1459,7 +1459,9 @@
           <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
         <li id="hrbn-3">If there is a canonical identifier for <var>related</var>,
           or an identifier issued by <var>issuer</var>,
-          append the string `_:`, followed by the that identifier to <var>input</var>.
+          append the string `_:`, followed by that identifier (using the canonical
+          identifier if present, otherwise the one issued by <var>issuer</var>) to
+          <var>input</var>.
           <details>
             <summary>Explanation</summary>
             <p>If a canonical identifier was already issued for <var>related</var>,
