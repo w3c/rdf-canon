@@ -31,6 +31,41 @@
   <dt>[<a href="">reference</a>]</dt><dd>
     A document reference (normative or informative) is enclosed in square brackets
     and links to the references section.</dd>
+  <dt><span class="details"><span class="summary">Explanation</span></span></dt><dd>
+    An expandable area to find a more details non-normative explanation of a
+    particular algorithmic step.
+    <details>
+      <summary>Explanation</summary>
+      <p>This area would provide more information about the step involved.</p>
+    </details>
+  </dd>
+  <dt><span class="details"><span class="summary">Logging</span></span></dt><dd>
+    An expandable area to find suggestions for implementations to log
+    information about processing,
+    which may be useful in comparing with other implementations,
+    or with logs provided with each test case.
+    <details>
+      <summary>Logging</summary>
+      <p>For example, the following output snippet might
+        describe the operation of an implementation using the [[?YAML]] format.</p>
+      <pre class="logging yaml" data-transform="updateExample">
+        <!--
+        ca:
+          ca2:
+            bn_to_quads:
+              e0:
+                - _:e0 <http://example.com/#p1> _:e1 .
+              e1:
+                ...
+          ca3:
+          - identifier: e0
+            h1dq:
+              nquads:
+                - _:a <http://example.com/#p1> _:z .
+        -->
+      </pre>
+    </details>
+  </dd>
 </dl>
 
 <p class="note">Notes are in light green boxes with a green left border and with a "Note" header in green.
