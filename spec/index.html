@@ -700,7 +700,7 @@
 
         <figure id="fig-ca-shared-hashes" style="text-align:center">
           <!-- Source for this file is at https://docs.google.com/drawings/d/1HWpz8S-PNaWi02-utF62HAMd_0b-AF_tHNSRRUQILbU -->
-          <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
+          <object data="shared-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-ca-shared-hashes-alt">
             <p id="fig-ca-shared-hashes-alt">
               The image represents the graph described in
               <a href="#ex-ca-shared-hashes-input">
@@ -709,7 +709,7 @@
           </object>
           <figcaption>An illustration of a graph resulting in shared hashes.<br/>
             Image available in
-            <a href="shared-hashes.svg" title="SVG image of a shared hashes">
+            <a href="shared-hashes.svg" title="SVG image of shared hashes">
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
@@ -1835,10 +1835,6 @@
     <section id="hash-nd-quads-examples" class="informative">
       <h3>Examples</h3>
 
-      <p class="ednote">
-        Add some examples ranging from simple to complicated and resource consuming.
-      </p>
-
       <aside id="ex-nd-shared-hashes"
             class="example"
             title="Shared hashes">
@@ -2573,7 +2569,45 @@
 
 <section id="examples" class="informative">
   <h2>Examples</h2>
-  <p class="ednote">TBD</p>
+
+  <section id="duplicate-paths-ex">
+    <h3>Duplicate Paths</h3>
+
+    <p>This example illustrates a more complicated example where the same paths
+      through blank nodes are duplicated in a graph, but use different
+      <a>blank node identifiers</a>.</p>
+
+    <figure id="fig-duplicate-paths" style="text-align:center">
+      <!-- Source for this file is at https://docs.google.com/drawings/d/1QOiQWw2RgX4aqRi82NcGQsnQQApPcfo0394-VinBFNA -->
+      <object data="duplicate-paths.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-duplicate-paths-alt">
+        <p id="fig-duplicate-paths-alt">
+          The image represents the graph described in
+          <a href="#ex-duplicate-paths-input">
+            the following code block
+          </a>.</p>
+      </object>
+      <figcaption>An illustration of a graph with duplicated paths.<br/>
+        Image available in
+        <a href="duplicate-paths.svg" title="SVG image of duplicated paths">
+          <abbr title="Scalable Vector Graphics">SVG</abbr>
+        </a>.</figcaption>
+    </figure>
+
+    <pre id="ex-duplicate-paths-input"
+         data-transform="updateExample"
+         title="Graph with duplicated paths">
+      <!--
+      _:e0 <http://example.org/vocab#p1> _:e1 .
+      _:e1 <http://example.org/vocab#p2> "Foo" .
+      _:e2 <http://example.org/vocab#p1> _:e3 .
+      _:e3 <http://example.org/vocab#p2> "Foo" .
+      -->
+    </pre>
+
+    <p>The execution trace is illustrated by rendering the resulting log as HTML.</p>
+
+    <div data-include="duplicate-paths.html"></div>
+  </section>
 </section>
 
 <section id="urgna2021" class="appendix informative algorithm">
