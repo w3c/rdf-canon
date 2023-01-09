@@ -542,25 +542,25 @@ pre.logging	{
         First, we give a high level summary of URDNA2015.</p>
 
       <ol>
-        <li id="ca-hl-1"><strong>Initialization</strong>.
+        <li id="ca-hl.1"><strong>Initialization</strong>.
           Initialize the state needed for the rest of the algorithm
           using <a href="#canon-state" class="sectionRef"></a>.</li>
-        <li id="ca-hl-2"><strong>Compute first degree hashes</strong>.
+        <li id="ca-hl.2"><strong>Compute first degree hashes</strong>.
           Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
-        <li id="ca-hl-3"><strong>Canonically label unique nodes</strong>.
+        <li id="ca-hl.3"><strong>Canonically label unique nodes</strong>.
           Assign canonical identifiers via <a href="#issue-identifier" class="sectionRef"></a>,
           in <a>Unicode code point order</a>, to each blank node whose first degree hash is unique.</li>
-        <li id="ca-hl-4"><strong>Compute N-degree hashes for non-unique nodes</strong>.
+        <li id="ca-hl.4"><strong>Compute N-degree hashes for non-unique nodes</strong>.
           For each repeated first degree hash (proceeding in <a>Unicode code point order</a>),
           compute the N-degree hash via <a href="#hash-nd-quads" class="sectionRef"></a>
           of every unlabeled blank node that corresponds to the given repeated hash.</li>
-        <li id="ca-hl-5"><strong>Canonically label remaining nodes</strong>.
+        <li id="ca-hl.5"><strong>Canonically label remaining nodes</strong>.
           In <a>Unicode code point order</a> of the N-degree hashes,
           issue canonical identifiers to each corresponding blank node using
           <a href="#issue-identifier" class="sectionRef"></a>.
           If more than one node produces the same N-degree hash,
           the order in which these nodes receive a canonical identifier does not matter.</li>
-        <li id="ca-hl-6"><strong>Finish</strong>. Return the normalized dataset.</li>
+        <li id="ca-hl.6"><strong>Finish</strong>. Return the normalized dataset.</li>
       </ol>
     </section>
 
@@ -600,7 +600,7 @@ pre.logging	{
           -->
         </pre>
 
-        <p><a href="#ca-2">Step 2</a> is called twice, with each blank node (<code><em>e0</em></code> and <code><em>e1</em></code>)
+        <p><a href="#ca.2">Step 2</a> is called twice, with each blank node (<code><em>e0</em></code> and <code><em>e1</em></code>)
           in the <a>input dataset</a>
           to populate <a>blank node to quads map</a>:</p>
 
@@ -623,7 +623,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-3">Step 3</a> generates the first-degree
+        <p><a href="#ca.3">Step 3</a> generates the first-degree
           hash for each blank node, which is explored further
           in <a href="#ex-1d-unique-hashes"></a>:</p>
 
@@ -646,7 +646,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
+        <p><a href="#ca.4">Step 4</a> creates canonical identifiers for each
           blank node which has a unique hash:</p>
 
         <table id="ex-ca-unique-1d-identifiers"
@@ -668,10 +668,10 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-5">Step 5</a> has no effect,
+        <p><a href="#ca.5">Step 5</a> has no effect,
           as there are no remaining blank nodes without canonical identifiers.</p>
 
-        <p><a href="#ca-6">Step 6</a> generates
+        <p><a href="#ca.6">Step 6</a> generates
           the normalized dataset by replacing blank node identifiers in the original
           input with their canonical identifiers:</p>
 
@@ -720,7 +720,7 @@ pre.logging	{
           -->
         </pre>
 
-        <p><a href="#ca-2">Step 2</a> is called four times, with each blank node
+        <p><a href="#ca.2">Step 2</a> is called four times, with each blank node
           (<code><em>e0</em></code>, <code><em>e1</em></code>, <code><em>e2</em></code>, and <code><em>e3</em></code>)
           to populate <a>blank node to quads map</a>:</p>
 
@@ -751,7 +751,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-3">Step 3</a> generates the first-degree
+        <p><a href="#ca.3">Step 3</a> generates the first-degree
           hash for each blank node, which is explored further
           in <a href="#ex-1d-shared-hashes"></a>
           (note that the hashes for <code><em>e0</em></code> and <code><em>e1</em></code> are shared):</p>
@@ -779,7 +779,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-4">Step 4</a> creates canonical identifiers for each
+        <p><a href="#ca.4">Step 4</a> creates canonical identifiers for each
           blank node which has a unique hash:</p>
 
         <table id="ex-ca-shared-canon-ids"
@@ -801,7 +801,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-5">Step 5</a> is run on <code><em>e0</em></code> and <code><em>e1</em></code>, separately,
+        <p><a href="#ca.5">Step 5</a> is run on <code><em>e0</em></code> and <code><em>e1</em></code>, separately,
           which share the same hash,
           and use separate instances of a <var>temporary issuer</var>,
           (as explored in <a href="#ex-nd-shared-hashes"></a>)
@@ -861,7 +861,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-5-3">Step 5.3</a> creates
+        <p><a href="#ca.5.3">Step 5.3</a> creates
           the canonical identifiers for the temporary identifiers
           established in the previous step
           running in order of the <var>hash</var> component from each result.
@@ -883,7 +883,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#ca-6">Step 6</a> generates
+        <p><a href="#ca.6">Step 6</a> generates
           the normalized dataset by replacing blank node identifiers in the original
           input with their canonical identifiers:</p>
 
@@ -902,8 +902,8 @@ pre.logging	{
     <section id="canon-algo-algo">
       <h3>Algorithm</h3>
 
-      <ol>
-        <li id="ca-1">Create the <a>canonicalization state</a>.
+      <ol id="ca">
+        <li id="ca.1">Create the <a>canonicalization state</a>.
           <details>
             <summary>Explanation</summary>
             <p>This has the effect of initializing the
@@ -912,9 +912,9 @@ pre.logging	{
               as well as instantiating a new <a>canonical issuer</a>.</p>
           </details>
         </li>
-        <li id="ca-2">For every <a>quad</a> <var>Q</var> in <a>input dataset</a>:
+        <li id="ca.2">For every <a>quad</a> <var>Q</var> in <a>input dataset</a>:
           <ol>
-            <li id="ca-2-1">For each <a>blank node</a> that is a component of <var>Q</var>,
+            <li id="ca.2.1">For each <a>blank node</a> that is a component of <var>Q</var>,
               add a reference to <var>Q</var> from the
               [= map/entry | map entry =] for the
               <a>blank node identifier</a> <var>identifier</var>
@@ -960,7 +960,7 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="ca-3">For each [= map/key =] <var>n</var>
+        <li id="ca.3">For each [= map/key =] <var>n</var>
           in the <a>blank node to quads map</a>:
           <details>
             <summary>Explanation</summary>
@@ -969,10 +969,10 @@ pre.logging	{
               while other blank nodes may share a common hash.</p>
           </details>
           <ol>
-            <li id="ca-3-1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
+            <li id="ca.3.1">Create a <a>hash</a>, <var>h<sub>f</sub>(n)</var>,
               for <var>n</var> according to the
               <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</li>
-            <li id="ca-3-2">Add <var>h<sub>f</sub>(n)</var> and <var>n</var> to
+            <li id="ca.3.2">Add <var>h<sub>f</sub>(n)</var> and <var>n</var> to
               <a>hash to blank nodes map</a>, including repetitions,
               creating a new entry if necessary.</li>
           </ol>
@@ -1002,7 +1002,7 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="ca-4">For each <var>hash</var> to <var>identifier list</var>
+        <li id="ca.4">For each <var>hash</var> to <var>identifier list</var>
           [= map/entry | map entry =] in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by <var>hash</var>:
           <details>
@@ -1011,15 +1011,15 @@ pre.logging	{
               a unique hash, which are recorded in the <a>canonical issuer</a>.</p>
           </details>
           <ol>
-            <li id="ca-4-1">If <var>identifier list</var> has more than one entry,
+            <li id="ca.4.1">If <var>identifier list</var> has more than one entry,
               continue to the next mapping.</li>
-            <li id="ca-4-2">Use the
+            <li id="ca.4.2">Use the
               <a href="#issue-identifier">Issue Identifier algorithm</a>,
               passing <a>canonical issuer</a> and the
               single <a>blank node identifier</a>, <var>identifier</var> in
               <var>identifier list</var> to issue a
               canonical replacement identifier for <var>identifier</var>.</li>
-            <li id="ca-4-3">Remove the [= map/entry | map entry =] for <var>hash</var> from the
+            <li id="ca.4.3">Remove the [= map/entry | map entry =] for <var>hash</var> from the
               <a>hash to blank nodes map</a>.</li>
           </ol>
           <details>
@@ -1042,7 +1042,7 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="ca-5">For each <var>hash</var> to <var>identifier list</var>
+        <li id="ca.5">For each <var>hash</var> to <var>identifier list</var>
           [= map/entry | map entry =] in
           <a>hash to blank nodes map</a>, <a>code point ordered</a> by
           <var>hash</var>:
@@ -1072,7 +1072,7 @@ pre.logging	{
             </pre>
           </details>
           <ol>
-            <li id="ca-5-1">Create <var>hash path list</var> where each item will be a result
+            <li id="ca.5.1">Create <var>hash path list</var> where each item will be a result
               of running the
               <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>.
               <details>
@@ -1081,21 +1081,21 @@ pre.logging	{
                   sharing a common first-degree hash.</p>
               </details>
             </li>
-            <li id="ca-5-2">For each <a>blank node identifier</a>
+            <li id="ca.5.2">For each <a>blank node identifier</a>
               <var>n</var> in <var>identifier list</var>:
               <ol>
-                <li id="ca-5-2-1">If a canonical identifier has already been issued for
+                <li id="ca.5.2.1">If a canonical identifier has already been issued for
                   <var>n</var>, continue to the next
                   <a>blank node identifier</a>.</li>
-                <li id="ca-5-2-2">Create <var>temporary issuer</var>, an
+                <li id="ca.5.2.2">Create <var>temporary issuer</var>, an
                   <a>identifier issuer</a> initialized with the prefix
                   <code>b</code>.</li>
-                <li id="ca-5-2-3">Use the
+                <li id="ca.5.2.3">Use the
                   <a href="#issue-identifier">Issue Identifier algorithm</a>,
                   passing <var>temporary issuer</var> and <var>n</var>, to
                   issue a new temporary <a>blank node identifier</a> <var>b<sub>n</sub></var>
                   to <var>n</var>.</li>
-                <li id="ca-5-2-4">Run the
+                <li id="ca.5.2.4">Run the
                   <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                   passing the <a>canonicalization state</a>,
                   <var>n</var> for <var>identifier</var>, and
@@ -1125,7 +1125,7 @@ pre.logging	{
                 </li>
               </ol>
             </li>
-            <li id="ca-5-3">For each <var>result</var> in the <var>hash path list</var>,
+            <li id="ca.5.3">For each <var>result</var> in the <var>hash path list</var>,
               <a>code point ordered</a> by the <var>hash</var> in <var>result</var>:
               <details>
                 <summary>Explanation</summary>
@@ -1134,7 +1134,7 @@ pre.logging	{
                   which is now used to generate their canonical identifiers.</p>
               </details>
               <ol>
-                <li id="ca-5-3-1">For each <a>blank node identifier</a>,
+                <li id="ca.5.3.1">For each <a>blank node identifier</a>,
                   <var>existing identifier</var>, that was issued a temporary
                   identifier by <var>identifier issuer</var> in <var>result</var>,
                   issue a canonical identifier,
@@ -1143,7 +1143,7 @@ pre.logging	{
                   passing <a>canonical issuer</a> and <var>existing identifier</var>.
                   <details>
                     <summary>Explanation</summary>
-                    <p>In <a href="#ca-5-2">Step 5.2</a>,
+                    <p>In <a href="#ca.5.2">Step 5.2</a>,
                       <var>hash path list</var> was created with an ordered
                       set of results.
                       Each result contained a <var>temporary issuer</var>
@@ -1190,7 +1190,7 @@ pre.logging	{
             </li>
           </ol>
         </li>
-        <li id="ca-6">For each <a>quad</a>, <var>q</var>, in <a>input dataset</a>:
+        <li id="ca.6">For each <a>quad</a>, <var>q</var>, in <a>input dataset</a>:
           <details>
             <summary>Explanation</summary>
             <p>This step populates the <a>normalized dataset</a> with quads
@@ -1198,11 +1198,11 @@ pre.logging	{
               with the newly established canonical blank node identifiers.</p>
           </details>
           <ol>
-            <li id="ca-6-1">Create a copy, <var>quad copy</var>, of <var>q</var> and replace any
+            <li id="ca.6.1">Create a copy, <var>quad copy</var>, of <var>q</var> and replace any
               existing <a>blank node identifier</a> <var>n</var> using the
               canonical identifiers previously issued
               by <a>canonical issuer</a>.</li>
-            <li id="ca-6-2">Add <var>quad copy</var> to the
+            <li id="ca.6.2">Add <var>quad copy</var> to the
               <a>normalized dataset</a>.</li>
           </ol>
           <details>
@@ -1218,7 +1218,7 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="ca-7">Return the <a>normalized dataset</a>.</li>
+        <li id="ca.7">Return the <a>normalized dataset</a>.</li>
       </ol>
     </section>
   </section>
@@ -1494,23 +1494,23 @@ pre.logging	{
       <p>This algorithm takes the <a>canonicalization state</a> and a
         <dfn>reference blank node identifier</dfn> as inputs.</p>
 
-      <ol>
-        <li id="h1d-1">Initialize <dfn class="no-export">nquads</dfn> to an empty <a>list</a>.
+      <ol id="h1dq">
+        <li id="h1dq.1">Initialize <dfn class="no-export">nquads</dfn> to an empty <a>list</a>.
           It will be used to store quads in <a>canonical n-quads form</a>.</li>
-        <li id="h1d-2">Get the <a>list</a> of <a>quads</a> <var>quads</var>
+        <li id="h1dq.2">Get the <a>list</a> of <a>quads</a> <var>quads</var>
           from the [= map/entry | map entry =] for
           <a>reference blank node identifier</a> in the
           <a>blank node to quads map</a>.</li>
-        <li id="h1d-3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
+        <li id="h1dq.3">For each <a>quad</a> <var>quad</var> in <var>quads</var>:
           <ol>
-            <li id="h1d-3-1">Serialize the <a>quad</a> in <a>canonical n-quads form</a> with the
+            <li id="h1dq.3.1">Serialize the <a>quad</a> in <a>canonical n-quads form</a> with the
               following special rule:
               <ol>
-                <li id="h1d-3-1-1">If any component in <var>quad</var> is an
+                <li id="h1dq.3.1.1">If any component in <var>quad</var> is an
                   <a>blank node</a>, then serialize it using a
                   special identifier as follows:
                   <ol>
-                    <li id="h1d-3-1-1-1">If the <a>blank node</a>'s existing
+                    <li id="h1dq.3.1.1.1">If the <a>blank node</a>'s existing
                     <a>blank node identifier</a> matches the
                     <a>reference blank node identifier</a> then use the
                     <a>blank node identifier</a> <code>a</code>,
@@ -1522,8 +1522,8 @@ pre.logging	{
             </li>
           </ol>
         </li>
-        <li id="h1d-4">Sort <a>nquads</a> in <a>Unicode code point order</a>.</li>
-        <li id="h1d-5">Return the <a>hash</a> that results from passing the sorted
+        <li id="h1dq.4">Sort <a>nquads</a> in <a>Unicode code point order</a>.</li>
+        <li id="h1dq.5">Return the <a>hash</a> that results from passing the sorted
           and concatenated <a>nquads</a> through the
           <a>hash algorithm</a>.
           <details>
@@ -1611,13 +1611,13 @@ pre.logging	{
         <a>identifier issuer</a>, <var>issuer</var>, and a
         <a>string</a> <var>position</var> as inputs.</p>
 
-      <ol>
-        <li id="hrbn-1">Initialize a <a>string</a> <var>input</var> to the value of
+      <ol id="hrbn">
+        <li id="hrbn.1">Initialize a <a>string</a> <var>input</var> to the value of
           <var>position</var>.</li>
-        <li id="hrbn-2">If <var>position</var> is not <code>g</code>, append
+        <li id="hrbn.2">If <var>position</var> is not <code>g</code>, append
           <code>&lt;</code>, the value of the <a>predicate</a> in
           <var>quad</var>, and <code>&gt;</code> to <var>input</var>.</li>
-        <li id="hrbn-3">If there is a canonical identifier for <var>related</var>,
+        <li id="hrbn.3">If there is a canonical identifier for <var>related</var>,
           or an identifier issued by <var>issuer</var>,
           append the string `_:`, followed by that identifier (using the canonical
           identifier if present, otherwise the one issued by <var>issuer</var>) to
@@ -1631,7 +1631,7 @@ pre.logging	{
               have a mapping for <var>related</var>.</p>
           </details>
         </li>
-        <li id="hrbn-4">Otherwise,
+        <li id="hrbn.4">Otherwise,
           append the result of the
           <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>,
           passing <var>related</var> to <var>input</var>.
@@ -1642,7 +1642,7 @@ pre.logging	{
               <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
           </details>
         </li>
-        <li id="hrbn-5">Return the <a>hash</a> that results from passing <var>input</var>
+        <li id="hrbn.5">Return the <a>hash</a> that results from passing <var>input</var>
           through the <a>hash algorithm</a>.
           <details>
             <summary>Explanation</summary>
@@ -1917,7 +1917,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#hndq-3">Step 3</a> iterates over each of these quads
+        <p><a href="#hndq.3">Step 3</a> iterates over each of these quads
           to find <a>blank node</a> <var>components</var>
           to populate <var>H<sub>n</sub></var>
           with the result of running the
@@ -1963,7 +1963,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#hndq-5">Step 5</a> iterates over each <var>related hash</var>
+        <p><a href="#hndq.5">Step 5</a> iterates over each <var>related hash</var>
           which is a key in <var>H<sub>n</sub></var>,
           which can have one or more related blank nodes,
           which determines the shortest <a>gossip path</a> between
@@ -2031,7 +2031,7 @@ pre.logging	{
           -->
         </pre>
 
-        <p><a href="#hndq-3">Step 3</a> again calculates <a>blank node</a> <var>components</var>
+        <p><a href="#hndq.3">Step 3</a> again calculates <a>blank node</a> <var>components</var>
           using
           <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>.</p>
 
@@ -2074,7 +2074,7 @@ pre.logging	{
           </tbody>
         </table>
 
-        <p><a href="#hndq-5">Step 5</a>
+        <p><a href="#hndq.5">Step 5</a>
           runs in essentially the same manner, mapping just <code><em>e3</em></code>
           having the canonical identifier <code><em>c14n1</em></code>,
           so there is again a single permutation
@@ -2156,10 +2156,10 @@ pre.logging	{
         </pre>
       </details>
 
-      <ol>
-        <li id="hndq-1">Create a new <a>map</a> <var>H<sub>n</sub></var>
+      <ol id="hndq">
+        <li id="hndq.1">Create a new <a>map</a> <var>H<sub>n</sub></var>
           for relating hashes to related <a>blank nodes</a>.</li>
-        <li id="hndq-2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
+        <li id="hndq.2">Get a reference, <var>quads</var>, to the list of <a>quads</a>
           from the [= map/entry | map entry =]
           for <var>identifier</var>
           in the <a>blank node to quads map</a>.
@@ -2186,20 +2186,20 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="hndq-3">For each <var>quad</var> in <var>quads</var>:
+        <li id="hndq.3">For each <var>quad</var> in <var>quads</var>:
           <details>
             <summary>Explanation</summary>
             <p>This loop calculates the related hash <var>H<sub>n</sub></var>
               for other blank nodes within the <a>mention set</a> of <var>identifier</var>.</p>
           </details>
           <ol>
-            <li id="hndq-3-1">For each <var>component</var> in <var>quad</var>, where <var>component</var>
+            <li id="hndq.3.1">For each <var>component</var> in <var>quad</var>, where <var>component</var>
               is the <a>subject</a>, <a>object</a>, or
               <a>graph name</a>, and it is a
               <a>blank node</a> that is not identified by
               <var>identifier</var>:
               <ol>
-                <li id="hndq-3-1-1">Set <var>hash</var> to the result of the
+                <li id="hndq.3.1.1">Set <var>hash</var> to the result of the
                   <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>,
                   passing the <a>blank node identifier</a> for
                   <var>component</var> as <var>related</var>, <var>quad</var>,
@@ -2208,7 +2208,7 @@ pre.logging	{
                   <code>g</code> based on whether <var>component</var> is a
                   <a>subject</a>, <a>object</a>,
                   <a>graph name</a>, respectively.</li>
-                <li id="hndq-3-1-2">Add a mapping of <var>hash</var> to the
+                <li id="hndq.3.1.2">Add a mapping of <var>hash</var> to the
                   <a>blank node identifier</a> for <var>component</var>
                   to <var>H<sub>n</sub></var>, adding an entry
                   as necessary.</li>
@@ -2254,8 +2254,8 @@ pre.logging	{
             </pre>
           </details>
         </li>
-        <li id="hndq-4">Create an empty string, <var>data to hash</var>.</li>
-        <li id="hndq-5">For each <var>related hash</var> to <var>blank node list</var> mapping in
+        <li id="hndq.4">Create an empty string, <var>data to hash</var>.</li>
+        <li id="hndq.5">For each <var>related hash</var> to <var>blank node list</var> mapping in
           <var>H<sub>n</sub></var>, <a>code point ordered</a>
           by <var>related hash</var>:
           <details>
@@ -2294,10 +2294,10 @@ pre.logging	{
             </pre>
           </details>
           <ol>
-            <li id="hndq-5-1">Append the <var>related hash</var> to the <var>data to hash</var>.</li>
-            <li id="hndq-5-2">Create a <a>string</a> <var>chosen path</var>.</li>
-            <li id="hndq-5-3">Create an unset <var>chosen issuer</var> variable.</li>
-            <li id="hndq-5-4">For each <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> <var>p</var> of <var>blank node list</var>:
+            <li id="hndq.5.1">Append the <var>related hash</var> to the <var>data to hash</var>.</li>
+            <li id="hndq.5.2">Create a <a>string</a> <var>chosen path</var>.</li>
+            <li id="hndq.5.3">Create an unset <var>chosen issuer</var> variable.</li>
+            <li id="hndq.5.4">For each <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> <var>p</var> of <var>blank node list</var>:
               <details>
                 <summary>Logging</summary>
                 <p>Log each <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> <var>p</var>.</p>
@@ -2318,14 +2318,14 @@ pre.logging	{
                 </pre>
               </details>
               <ol>
-                <li id="hndq-5-4-1">Create a copy of <var>issuer</var>, <var>issuer copy</var>.</li>
-                <li id="hndq-5-4-2">Create a <a>string</a> <var>path</var>.</li>
-                <li id="hndq-5-4-3">Create a <var>recursion list</var>, to store
+                <li id="hndq.5.4.1">Create a copy of <var>issuer</var>, <var>issuer copy</var>.</li>
+                <li id="hndq.5.4.2">Create a <a>string</a> <var>path</var>.</li>
+                <li id="hndq.5.4.3">Create a <var>recursion list</var>, to store
                   <a>blank node identifiers</a> that must be
                   recursively processed by this algorithm.</li>
-                <li id="hndq-5-4-4">For each <var>related</var> in <var>p</var>:
+                <li id="hndq.5.4.4">For each <var>related</var> in <var>p</var>:
                   <ol>
-                    <li id="hndq-5-4-4-1">If a canonical identifier has been issued for
+                    <li id="hndq.5.4.4.1">If a canonical identifier has been issued for
                       <var>related</var> by <a>canonical issuer</a>, append the string <code>_:</code>, followed by 
                       the canonical identifier for <var>related</var>, to <var>path</var>.
                       <details><summary>Explanation</summary>
@@ -2335,9 +2335,9 @@ pre.logging	{
                              Furthermore, using the canonical identifier also further distinguishes it from any temporary identifier, allowing for even greater efficiency in finding the chosen path.</p>
                       </details>
                     </li>
-                    <li id="hndq-5-4-4-2">Otherwise:
+                    <li id="hndq.5.4.4.2">Otherwise:
                       <ol>
-                        <li id="hndq-5-4-4-2-1">If <i>issuer copy</i> has not issued
+                        <li id="hndq.5.4.4.2.1">If <i>issuer copy</i> has not issued
                           an identifier for <var>related</var>, append
                           <var>related</var> to <var>recursion list</var>.
                           <details>
@@ -2348,13 +2348,13 @@ pre.logging	{
                               so that eventually all nodes are given canonical identifiers.</p>
                           </details>
                         </li>
-                        <li id="hndq-5-4-4-2-2">Use the
+                        <li id="hndq.5.4.4.2.2">Use the
                           <a href="#issue-identifier">Issue Identifier algorithm</a>,
                           passing <var>issuer copy</var> and <var>related</var>, and
                           append the string <code>_:</code>, followed by the result, to <var>path</var>.</li>
                       </ol>
                     </li>
-                    <li id="hndq-5-4-4-3">If <var>chosen path</var> is not empty and the length
+                    <li id="hndq.5.4.4.3">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is
                       greater than <var>chosen path</var> when
@@ -2400,7 +2400,7 @@ pre.logging	{
                     </pre>
                   </details>
                 </li>
-                <li id="hndq-5-4-5">For each <var>related</var> in <var>recursion list</var>:
+                <li id="hndq.5.4.5">For each <var>related</var> in <var>recursion list</var>:
                   <details>
                     <summary>Explanation</summary>
                     <p>The propective <var>path</var> is extended with
@@ -2431,7 +2431,7 @@ pre.logging	{
                     </pre>
                   </details>
                   <ol>
-                    <li id="hndq-5-4-5-1">Set <var>result</var> to the result of recursively executing
+                    <li id="hndq.5.4.5.1">Set <var>result</var> to the result of recursively executing
                       the <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>,
                       passing the <a>canonicalization state</a>,
                       <var>related</var> for <var>identifier</var>, and
@@ -2466,15 +2466,15 @@ pre.logging	{
                         </pre>
                       </details>
                     </li>
-                    <li id="hndq-5-4-5-2">Use the
+                    <li id="hndq.5.4.5.2">Use the
                       <a href="#issue-identifier">Issue Identifier algorithm</a>,
                       passing <var>issuer copy</var> and <var>related</var>; append the string <code>_:</code>, followed by
                       the result, to <var>path</var>.</li>
-                    <li id="hndq-5-4-5-3">Append <code>&lt;</code>, the <a>hash</a> in
+                    <li id="hndq.5.4.5.3">Append <code>&lt;</code>, the <a>hash</a> in
                       <var>result</var>, and <code>&gt;</code> to <var>path</var>.</li>
-                    <li id="hndq-5-4-5-4">Set <var>issuer copy</var> to the
+                    <li id="hndq.5.4.5.4">Set <var>issuer copy</var> to the
                       <a>identifier issuer</a> in result.</li>
-                    <li id="hndq-5-4-5-5">If <var>chosen path</var> is not empty and the length
+                    <li id="hndq.5.4.5.5">If <var>chosen path</var> is not empty and the length
                       of <var>path</var> is greater than or equal to the length
                       of <var>chosen path</var> and <var>path</var> is
                       greater than <var>chosen path</var> when considering <a>code point order</a>,
@@ -2488,15 +2488,15 @@ pre.logging	{
                     </li>
                   </ol>
                 </li>
-                <li id="hndq-5-4-6">If <var>chosen path</var> is empty or <var>path</var> is
+                <li id="hndq.5.4.6">If <var>chosen path</var> is empty or <var>path</var> is
                   less than <var>chosen path</var> when considering <a>code point order</a>,
                   set <var>chosen path</var> to <var>path</var> and <var>chosen issuer</var>
                   to <var>issuer copy</var>.
                 </li>
               </ol>
             </li>
-            <li id="hndq-5-5">Append <var>chosen path</var> to <var>data to hash</var>.</li>
-            <li id="hndq-5-6">Replace <var>issuer</var>, by reference, with
+            <li id="hndq.5.5">Append <var>chosen path</var> to <var>data to hash</var>.</li>
+            <li id="hndq.5.6">Replace <var>issuer</var>, by reference, with
               <var>chosen issuer</var>.
               <details>
                 <summary>Logging</summary>
@@ -2522,7 +2522,7 @@ pre.logging	{
             </li>
           </ol>
         </li>
-        <li id="hndq-6">Return <var>issuer</var> and the <a>hash</a> that results from
+        <li id="hndq.6">Return <var>issuer</var> and the <a>hash</a> that results from
           passing <var>data to hash</var> through the
           <a>hash algorithm</a>.
           <details>
