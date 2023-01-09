@@ -110,11 +110,17 @@
   }
   summary, .details > .summary {font-size: small; }
 
-pre.logging	{
-  border: thin solid #88AA88;
-  background-color: #E8F0E8;
-  margin: 1em 4em 1em 0em ;
-}
+  pre.logging	{
+    border: thin solid #88AA88;
+    background-color: #E8F0E8;
+    margin: 1em 4em 1em 0em ;
+  }
+  table.log ul { padding: 0; margin: 0; }
+  table.log td { text-align: left; vertical-align: top;}
+  table.log td.ca.c0 { display: none; }
+  table.log td.bn_to_quads.c0 { display: none; }
+  table.log td.identifier.c1 { font-style: italic; }
+  table.log li { list-style: none; }
 </style>
 </head>
 
@@ -575,7 +581,7 @@ pre.logging	{
 
         <figure id="fig-ca-unique-hashes" style="text-align:center">
           <!-- Source for this file is at https://docs.google.com/drawings/d/1LQ6fp4a35lrEOKRMD20gcncUkoitX0eW8QI_U2mQnAs -->
-          <object data="unique-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-unique-hashes-alt">
+          <object data="unique-hashes.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-ca-unique-hashes-alt">
             <p id="fig-ca-unique-hashes-alt">
               The image represents the graph described in
               <a href="#ex-ca-unique-hashes-input">
@@ -584,7 +590,7 @@ pre.logging	{
           </object>
           <figcaption>An illustration of a graph resulting in unique hashes.<br/>
             Image available in
-            <a href="unique-hashes.svg" title="SVG image of a unique hashes">
+            <a href="unique-hashes.svg" title="SVG image of unique hashes">
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
@@ -1323,7 +1329,7 @@ pre.logging	{
           </object>
           <figcaption>An illustration of a graph resulting in unique hashes.<br/>
             Image available in
-            <a href="unique-hashes.svg" title="SVG image of a unique hashes">
+            <a href="unique-hashes.svg" title="SVG image of unique hashes">
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
