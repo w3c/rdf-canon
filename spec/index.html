@@ -1120,7 +1120,7 @@
                           - hash: 3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36
                             identifier_list: [ "e0", "e1"]
                             ca5.2:
-                            - hdnq:
+                            - hndq:
                                 identifier: e0
                                 issuer: {e0: b0}
                                 ####...####
@@ -2150,7 +2150,7 @@
         <pre class="logging yaml" data-transform="updateExample">
           <!--
             # Inputs for the Hash N-Degree Quads algorithm for double circle example
-            hdnq:
+            hndq:
               identifier: e0
               issuer: {e0: b0}
               ####...####
@@ -2175,7 +2175,7 @@
             <pre class="logging yaml" data-transform="updateExample">
               <!--
                 # Inputs for the Hash N-Degree Quads algorithm for duplicate example
-                hdnq:
+                hndq:
                   identifier: e0
                   issuer: {e0: b0}
                   hndq2:
@@ -2225,7 +2225,7 @@
             <pre class="logging yaml" data-transform="updateExample">
               <!--
                 # Step 3 of Hash N-Degree Quads using double circle example
-                hdnq:
+                hndq:
                   identifier: e0
                   issuer: {e0: b0}
                   ####...####
@@ -2284,7 +2284,7 @@
             <pre class="logging yaml" data-transform="updateExample">
               <!--
                 # Log related hash and data to hash in each iteration of step 5 for double circle example.
-                hdnq:
+                hndq:
                   identifier: e0
                   issuer: {e0: b0}
                   ####...####
@@ -2306,7 +2306,7 @@
                 <pre class="logging yaml" data-transform="updateExample">
                   <!--
                     # Log each permutation of step 5.4 using double circle example.
-                    hdnq:
+                    hndq:
                       identifier: e0
                       issuer: {e0: b0}
                       ####...####
@@ -2385,7 +2385,7 @@
                     <pre class="logging yaml" data-transform="updateExample">
                       <!--
                         # Log related and path of step 5.4.4 using double circle example.
-                        hdnq:
+                        hndq:
                           identifier: e0
                           issuer: {e0: b0}
                           ####...####
@@ -2415,7 +2415,7 @@
                     <pre class="logging yaml" data-transform="updateExample">
                       <!--
                         # Log recursion list and path of step 5.4.5 using double circle example.
-                        hdnq:
+                        hndq:
                           identifier: e0
                           issuer: {e0: b0}
                           ####...####
@@ -2445,7 +2445,7 @@
                         <pre class="logging yaml" data-transform="updateExample">
                           <!--
                             # Log related and recursive logs of step 5.4.5.1 using double circle example.
-                            hdnq:
+                            hndq:
                               identifier: e0
                               issuer: {e0: b0}
                               ####...####
@@ -2460,7 +2460,7 @@
                                     path: "_:b1"
                                     hndq5.4.5.1:
                                     - related: e0
-                                      hdnq:
+                                      hndq:
                                         identifier: e0
                                         ####...####
                               ####...####
@@ -2506,7 +2506,7 @@
                 <pre class="logging yaml" data-transform="updateExample">
                   <!--
                     # Log chosen path and data to hash logs of step 5.6 using double circle example.
-                    hdnq:
+                    hndq:
                       identifier: e0
                       issuer: {e0: b0}
                       ####...####
@@ -2534,7 +2534,7 @@
             <pre class="logging yaml" data-transform="updateExample">
               <!--
                 # Log issuer and resulting hash of step 6 using double circle example.
-                hdnq:
+                hndq:
                   identifier: e0
                   issuer: {e0: b0}
                   ####...####
@@ -2597,16 +2597,358 @@
          data-transform="updateExample"
          title="Graph with duplicated paths">
       <!--
-      _:e0 <http://example.org/vocab#p1> _:e1 .
-      _:e1 <http://example.org/vocab#p2> "Foo" .
-      _:e2 <http://example.org/vocab#p1> _:e3 .
-      _:e3 <http://example.org/vocab#p2> "Foo" .
+      _:e0 :p1 _:e1 .
+      _:e1 :p2 "Foo" .
+      _:e2 :p1 _:e3 .
+      _:e3 :p2 "Foo" .
       -->
     </pre>
 
-    <p>The execution trace is illustrated by rendering the resulting log as HTML.</p>
+    <p>The following is a summary of the more detailed execution log
+      found <a href="duplicate-paths.yaml">here</a>.</p>
 
-    <div data-include="duplicate-paths.html"></div>
+    <aside id="ex-duplicate-paths"
+          class="example"
+          title="Duplicate Paths">
+
+      <p><a href="#ca.2">Step 2</a> of the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
+        is called four times, with each blank node
+        (<code><em>e0</em></code>, <code><em>e1</em></code>, <code><em>e2</em></code>, and <code><em>e3</em></code>)
+        to populate <a>blank node to quads map</a>:</p>
+
+      <table id="ex-duplicate-paths-quads-map"
+             class="hash-related numbered">
+        <caption>Blank node to quads map for duplicate paths</caption>
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>Q</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e0</em></code></td>
+            <td>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;.</code><br>
+            </td>
+          </tr>
+          <tr>
+            <td><code><em>e1</em></code></td>
+            <td>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Foo"&nbsp;.</code><br>
+            </td>
+          </tr>
+          <tr>
+            <td><code><em>e2</em></code></td>
+            <td>
+              <code><em>_:e2</em>&nbsp;:p1&nbsp;<em>_:e3</em>&nbsp;.</code><br>
+            </td>
+          </tr>
+          <tr>
+            <td><code><em>e3</em></code></td>
+            <td>
+              <code><em>_:e2</em>&nbsp;:p1&nbsp;<em>_:e3</em>&nbsp;.</code><br>
+              <code><em>_:e3</em>&nbsp;:p2&nbsp;"Foo"&nbsp;.</code><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.3">Step 3</a> generates the first-degree
+        hash for each blank node.</p>
+
+      <p>For <code><em>e0</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquad <code>_:a&nbsp;:p1&nbsp;_:z&nbsp;.</code> to calculate the hash
+        `24da9a4406b4e66dffa10ad3d4d6dddc388fbf193bb124e865158ef419893957`.</p>
+
+      <p>For <code><em>e1</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquads <code>_:z&nbsp;:p1&nbsp;_:a&nbsp;.</code> and <code>_:a&nbsp;:p2&nbsp;"Foo"&nbsp;.</code>
+        to calculate the hash
+        `a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a`.</p>
+
+      <p>For <code><em>e2</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquad <code>_:a&nbsp;:p1&nbsp;_:z&nbsp;.</code>
+        to calculate the hash
+        `24da9a4406b4e66dffa10ad3d4d6dddc388fbf193bb124e865158ef419893957`.</p>
+
+      <p>For <code><em>e3</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquads <code>_:z&nbsp;:p1&nbsp;_:a&nbsp;.</code> and <code>_:a&nbsp;:p2&nbsp;"Foo"&nbsp;.</code>
+        to calculate the hash
+        `a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a`.</p>
+
+      <table id="ex-duplicate-paths-ca.3"
+             class="hash-related numbered">
+        <caption>Hash to blank nodes map shared hashes</caption>
+        <thead><tr>
+          <th><var>hash</var></th>
+          <th><var>blank node(s)</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>`24da9a4406b4e66dffa10ad3d4d6dddc388fbf193bb124e865158ef419893957`</td>
+            <td><code><em>e0</em></code> and <code><em>e2</em></code></td>
+          </tr>
+          <tr>
+            <td>`a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a`</td>
+            <td><code><em>e1</em> and <em>e3</em></code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.4">Step 4</a> would create canonical identifiers for each
+        blank node which has a unique hash, but no blank node has a unique hash.</p>
+
+      <p><a href="#ca.5">Step 5</a> is run on <code><em>e0</em></code>, <code><em>e1</em></code>, <code><em>e2</em></code>, and <code><em>e3</em></code>, separately,
+        which share hash values.
+        each use separate instances of a <var>temporary issuer</var>,
+        to create the <var>hash path list</var>
+        composed of the hash result
+        and temporary identifier mappings from
+        <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a>
+        for each of these blank nodes/</p>
+
+      <p>The <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a> is first
+        called for hash `24da9a4406b4e66dffa10ad3d4d6dddc388fbf193bb124e865158ef419893957`
+        and blank node <code><em>e0</em></code> related to
+        the nquad <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;.</code>.</p>
+
+      <table id="ex-duplicate-paths-hndq-e0-issuer">
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>temporary identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><code><em>e0</em></code></td><td><code><em>b0</em></code></td></tr>
+        </tbody>
+      </table>
+
+      <p><a href="#hndq.3">Step 3</a> calls the <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
+        for each position in this quad:</p>
+
+      <table id="ex-duplicate-paths-table-related-hash-e0"
+             class="hash-related numbered">
+        <caption>Hash for <code><em>e2</em></code>  related to <code><em>e0</em></code></caption>
+        <thead><tr>
+          <th><var>related</var></th>
+          <th><var>quads</var></th>
+          <th><var>position</var></th>
+          <th><var>hash</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e3</em></code></td>
+            <td><code><em>z</em> :p1 <em>a</em> .</code><br/><code><em>a</em> :p2 "Foo" .</code></td>
+            <td>`o`</td>
+            <td>
+              <code><abbr title="a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a">a994e40b57...2d33a8583a</abbr></code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>which results in the following <var>H<sub>n</sub></var>:</p>
+
+      <table id="ex-duplicate-paths-bn-list-e0"
+             class="hash-related numbered">
+        <caption>Blank node list for hash</caption>
+        <thead><tr>
+          <th><var>related hash</var></th>
+          <th><var>blank node list</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code>a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a</code></td>
+            <td><code>[ <em>e3</em> ]</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#hndq.5">Step 5</a> iterates over each <var>related hash</var>
+        which is a key in <var>H<sub>n</sub></var>,
+        which can have one or more related blank nodes.</p>
+
+      <p>At <a href="#hndq.5.4.5">Step 5.4.5</a>, the |recursion list| is <code>[ <em>e3</em> ]</code>,
+        so the <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a> is
+        called recursively resulting in the following:</p>
+
+      <table id="ex-nd-duplicate-paths-result-e2-e3"
+             class="hash-related numbered">
+        <caption>Result for <code><em>e3</em></code></caption>
+        <tbody>
+          <tr>
+            <td><var>temporary issuer</var> mappings</td>
+            <td>
+              <table class="hash-related">
+                <thead><tr>
+                  <th><var>original identifier</var></th>
+                  <th><var>temporary identifier</var></th>
+                </tr></thead>
+                <tbody>
+                  <tr><td><code><em>e2</em></code></td><td><code><em>b0</em></code></td></tr>
+                  <tr><td><code><em>e3</em></code></td><td><code><em>b1</em></code></td></tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><var>hash</var></td>
+            <td>`c484f98e6cbf9e21f287433c8b1caa7f1486fd61d84ab220a494bf8184751b8c`</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Back in <a href="#hndq.5.4.5.4">step 5.4.5.4</a>, the |path| and |issuer copy| are:
+        `_:b1_:b1&lt;c484f98e6cbf9e21f287433c8b1caa7f1486fd61d84ab220a494bf8184751b8c&gt;`
+        and <code>{<em>e2</em>: <em>b0</em>, <em>e3</em>: <em>b1</em>}</code>.</p>
+
+      <p>This results in the |chosen path| `_:b1_:b1&lt;c484f98e6cbf9e21f287433c8b1caa7f1486fd61d84ab220a494bf8184751b8c&gt;`
+        and |data to hash| `3d96946f27fc34a78e8d067135a1cb1b77083aebc4b2c6cbdc536f067242686c_:b1_:b1&lt;c484f98e6cbf9e21f287433c8b1caa7f1486fd61d84ab220a494bf8184751b8c&gt;`
+
+      <table id="ex-nd-duplicate-paths-result-e0"
+             class="hash-related numbered">
+        <caption>Result for <code><em>e2</em></code></caption>
+        <tbody>
+          <tr>
+            <td><var>temporary issuer</var> mappings</td>
+            <td>
+              <table class="hash-related">
+                <thead><tr>
+                  <th><var>original identifier</var></th>
+                  <th><var>temporary identifier</var></th>
+                </tr></thead>
+                <tbody>
+                  <tr><td><code><em>e2</em></code></td><td><code><em>b0</em></code></td></tr>
+                  <tr><td><code><em>e3</em></code></td><td><code><em>b1</em></code></td></tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><var>hash</var></td>
+            <td>`39d609fcd8236b74c70744f492cd2baaf0a55765b380ff9e0811ce23e2f409d7`</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The <a href="#hash-nd-quads">Hash N-Degree Quads algorithm</a> is next
+        called for the same hash `24da9a4406b4e66dffa10ad3d4d6dddc388fbf193bb124e865158ef419893957`
+        but this time with blank node <code><em>e2</em></code> related to
+        the nquad <code><em>_:e2</em>&nbsp;:p1&nbsp;<em>_:e3</em>&nbsp;.</code>.</p>
+
+      <table id="ex-duplicate-paths-hndq-e2-issuer">
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>temporary identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><code><em>e2</em></code></td><td><code><em>b0</em></code></td></tr>
+        </tbody>
+      </table>
+
+      <p><a href="#hndq.3">Step 3</a> calls the <a href="#hash-related-blank-node">Hash Related Blank Node algorithm</a>
+        for each position in this quad:</p>
+
+      <table id="ex-duplicate-paths-table-related-hash-e2"
+             class="hash-related numbered">
+        <caption>Hash for <code><em>e2</em></code> related to <code><em>e0</em></code></caption>
+        <thead><tr>
+          <th><var>related</var></th>
+          <th><var>quads</var></th>
+          <th><var>position</var></th>
+          <th><var>hash</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e3</em></code></td>
+            <td><code><em>z</em> :p1 <em>a</em> .</code><br/><code><em>a</em> :p2 "Foo" .</code></td>
+            <td>`o`</td>
+            <td>
+              <code><abbr title="3d96946f27fc34a78e8d067135a1cb1b77083aebc4b2c6cbdc536f067242686c_:b1_:b1&lt;c484f98e6cbf9e21f287433c8b1caa7f1486fd61d84ab220a494bf8184751b8c&gt;">3d96946f27...184751b8c&gt;</abbr></code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>which results in the following <var>H<sub>n</sub></var>:</p>
+
+      <table id="ex-duplicate-paths-bn-list-e2"
+             class="hash-related numbered">
+        <caption>Blank node list for hash</caption>
+        <thead><tr>
+          <th><var>related hash</var></th>
+          <th><var>blank node list</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code>3d96946f27fc34a78e8d067135a1cb1b77083aebc4b2c6cbdc536f067242686c</code></td>
+            <td><code>[ <em>e3</em> ]</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#hndq.5">Step 5</a> iterates over each <var>related hash</var>
+        which is a key in <var>H<sub>n</sub></var>,
+        which can have one or more related blank nodes.</p>
+
+      <table id="ex-nd-duplicate-paths-result-e0"
+             class="hash-related numbered">
+        <caption>Result for <code><em>e0</em></code></caption>
+        <tbody>
+          <tr>
+            <td><var>temporary issuer</var> mappings</td>
+            <td>
+              <table class="hash-related">
+                <thead><tr>
+                  <th><var>original identifier</var></th>
+                  <th><var>temporary identifier</var></th>
+                </tr></thead>
+                <tbody>
+                  <tr><td><code><em>e0</em></code></td><td><code><em>b0</em></code></td></tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><var>hash</var></td>
+            <td>`fbc300de5afafd97a4b9ee1e72b57754dcdcb7ebb724789ac6a94a5b82a48d30`</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.5.3">Step 5.3</a> back in the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
+        creates canonical identifiers for the temporary identifiers just issued:</p>
+
+      <table id="ex-duplicate-paths-ca.5.3-e0-canon">
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>canonical identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><code><em>e0</em></code></td><td><code><em>c14n0</em></code></td></tr>
+          <tr><td><code><em>e1</em></code></td><td><code><em>c14n1</em></code></td></tr>
+          <tr><td><code><em>e2</em></code></td><td><code><em>c14n2</em></code></td></tr>
+          <tr><td><code><em>e3</em></code></td><td><code><em>c14n3</em></code></td></tr>
+        </tbody>
+      </table>
+
+      <p>Next, back in <a href="#ca.5.1">step 5.1</a>,
+        now using hash `a994e40b576809985bc0f389308cd9d552fd7c89d028c163848a6b2d33a8583a`,
+        canonical identifiers have already been created for the
+        two blank nodes <code><em>e1</em></code> and <code><em>e3</em></code>,
+        so no further processing is necessary.</p>
+
+      <p><a href="#ca.6">Step 6</a> ends with the canonical issuers containing the following mappings:</p>
+
+      <table id="ex-duplicate-paths-ca.5.6">
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>canonical identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><code><em>e0</em></code></td><td><code><em>c14n0</em></code></td></tr>
+          <tr><td><code><em>e1</em></code></td><td><code><em>c14n1</em></code></td></tr>
+          <tr><td><code><em>e2</em></code></td><td><code><em>c14n2</em></code></td></tr>
+          <tr><td><code><em>e3</em></code></td><td><code><em>c14n3</em></code></td></tr>
+        </tbody>
+      </table>
+    </aside>
   </section>
 </section>
 
