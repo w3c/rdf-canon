@@ -1,4 +1,4 @@
-run manifest-urdna2015#test022ca:
+ca:
   log point: Entering the canonicalization function (4.5.3).
   ca.2:
     log point: Extract quads for each bnode (4.5.3 (2)).
