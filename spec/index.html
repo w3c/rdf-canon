@@ -279,61 +279,127 @@
 <section id="terminology" class="normative">
   <h2>Terminology</h2>
 
-  <dl>
-    <dt><dfn data-cite="INFRA#string">string</dfn></dt><dd>
-      A string is a sequence of zero or more Unicode characters.</dd>
-    <dt><code>true</code> and <code>false</code></dt><dd>
-      Values that are used to express one of two possible boolean states.</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-iri" data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
-    <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
-      defined in [[RFC3987]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-subject" data-lt="subject|subjects">subject</dfn></dt>
-    <dd>A <a>subject</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-predicate" data-lt="predicate|predicates">predicate</dfn></dt>
-    <dd>A <a>predicate</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-object" data-lt="object|objects">object</dfn></dt>
-    <dd>An <a>object</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-triple" data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
-    <dd>A <a>triple</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-graph" data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
-    <dd>An <a>RDF graph</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-graph-name" data-lt="graph name|graph names">graph name</dfn></dt>
-    <dd>A <a>graph name</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</dfn></dt>
-    <dd>The <a>default graph</a>
-      as specified by [[!RDF11-CONCEPTS]].</dd>
-    <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt> <!-- TODO: should be defined in N-Quads -->
-    <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
-      This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-dataset" data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
-    <dd>A <a>dataset</a>
-      as specified by [[!RDF11-CONCEPTS]].
-      For the purposes of this specification, an <a>RDF dataset</a>
-      is considered to be a set of <a>quads</a></dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</dfn></dt>
-    <dd>A <a>blank node</a>
-      as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
-      neither an <a>IRI</a>, nor a
-      <a>literal</a>.</dd>
-    <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</dfn></dt>
-    <dd>A <a>blank node identifier</a>
-      as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
-      with <code>_:</code> that is used as an identifier for a
-      <a>blank node</a>. <a>Blank node identifiers</a>
-      are typically implementation-specific local identifiers; this document
-      specifies an algorithm for deterministically specifying them.</dd>
-    <dd>
-      Concrete syntaxes, like [[Turtle]] or [[N-Quads]], prepend blank node identifiers with the <code>_:</code> string
-      to differentiate them from other nodes in the graph. This affects the 
-      canonicalization algorithm, which is based on calculating a hash over the representations of <a>quads</a> in this format.
-    </dd>
-  </dl>
+  <section id="canon-terms">
+    <h3>Terms defined by this specification</h3>
+    <dl data-sort="ascending">
+      <dt><dfn data-lt="input dataset|input datasets">input dataset</dfn></dt>
+      <dd>The abstract <a>RDF dataset</a> that is provided as input to
+        the algorithm.</dd>
+      <dt><dfn>normalized dataset</dfn></dt>
+      <dd>The immutable, abstract <a>RDF dataset</a> and set of normalized
+        <a>blank node identifiers</a> that are produced as output by the algorithm.
+        A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a>
+        where all nodes are labeled, and <a>blank nodes</a> are labeled with canonical <a>blank node identifiers</a>
+        consistent with running this algorithm on a base <a>RDF dataset</a>.
+        A concrete serialization of a <a>normalized dataset</a> MUST label
+        all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
+      <dt><dfn>identifier issuer</dfn></dt>
+      <dd>An identifier issuer is used to issue new <a>blank node identifier</a>. It
+        maintains a
+        <a href="#bn-issuer-state">blank node identifier issuer state</a>.</dd>
+      <dt><dfn>hash</dfn></dt>
+      <dd>The lowercase, hexadecimal representation of a message digest.</dd>
+      <dt><dfn>hash algorithm</dfn></dt>
+      <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
+      <dt><dfn data-lt="mention">mention set</dfn></dt>
+      <dd>The set of all <a>quads</a> in a <a>dataset</a>
+        that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
+        denoted <var>Q<sub>n</sub></var>.</dd>
+      <dt><dfn>gossip path</dfn></dt>
+      <dd>The gossip path between two <a>blank nodes</a> contained within
+        <a>quads</a> in a <a>dataset</a>, where the path is a sequence
+        of nodes and quads such that the first quad includes
+        the starting node as an component, and the last quad includes
+        the ending node as an component with each quad in the path
+        containing both the preceding and following nodes.</dd>
+    </dl>
+  </section>
+
+  <section id="terms-reference">
+    <h3>Terms defined by cited specifications</h3>
+    <dl data-sort="ascending">
+      <dt><dfn data-cite="INFRA#string">string</dfn></dt><dd>
+        A string is a sequence of zero or more Unicode characters.</dd>
+      <dt><code>true</code> and <code>false</code></dt><dd>
+        Values that are used to express one of two possible <a data-cite="INFRA#boolean">boolean</a> states.</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-iri" data-lt="internationalized resource identifier|iri|iris"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn></dt>
+      <dd>An <a>IRI</a> (Internationalized Resource Identifier) is a string that conforms to the syntax
+        defined in [[RFC3987]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-subject" data-lt="subject|subjects">subject</dfn></dt>
+      <dd>A <a>subject</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-predicate" data-lt="predicate|predicates">predicate</dfn></dt>
+      <dd>A <a>predicate</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-object" data-lt="object|objects">object</dfn></dt>
+      <dd>An <a>object</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-triple" data-lt="rdf triple|rdf triples|triple|triples">RDF triple</dfn></dt>
+      <dd>A <a>triple</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-graph" data-lt="rdf graph|rdf graphs|graph|graphs">RDF graph</dfn></dt>
+      <dd>An <a>RDF graph</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-graph-name" data-lt="graph name|graph names">graph name</dfn></dt>
+      <dd>A <a>graph name</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</dfn></dt>
+      <dd>The <a>default graph</a>
+        as specified by [[!RDF11-CONCEPTS]].</dd>
+      <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
+      <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
+        This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.
+        <div class="issue" data-number="62">
+          Should be defined in RDF Concepts.
+        </div>
+      </dd>
+      <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
+      <dd>
+        The canonicalized representation of a quad is based on
+        <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
+        defined in [[N-Triples]].
+        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a> in the same manner as a <a>subject</a>,
+        if present, and each quad is terminated with a single new line character (`U+000A`).
+        <div class="issue" data-number="62">
+          At present, there is no existing definition for a canonicalized [[N-Quads]] form.
+          There is a definition for
+          <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
+          in [[N-Triples]], which defines the form of a single triple,
+          without the terminating <a data-cite="N-Triples#grammar-production-EOL">EOL</a>.
+        </div>
+      </dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-dataset" data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
+      <dd>A <a>dataset</a>
+        as specified by [[!RDF11-CONCEPTS]].
+        For the purposes of this specification, an <a>RDF dataset</a>
+        is considered to be a set of <a>quads</a></dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node">blank node</dfn></dt>
+      <dd>A <a>blank node</a>
+        as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
+        neither an <a>IRI</a>, nor a
+        <a>literal</a>.</dd>
+      <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</dfn></dt>
+      <dd>A <a>blank node identifier</a>
+        as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
+        with <code>_:</code> that is used as an identifier for a
+        <a>blank node</a>. <a>Blank node identifiers</a>
+        are typically implementation-specific local identifiers; this document
+        specifies an algorithm for deterministically specifying them.</dd>
+      <dd>
+        Concrete syntaxes, like [[Turtle]] or [[N-Quads]], prepend blank node identifiers with the <code>_:</code> string
+        to differentiate them from other nodes in the graph. This affects the 
+        canonicalization algorithm, which is based on calculating a hash over the representations of <a>quads</a> in this format.
+      </dd>
+      <dt><dfn data-cite="XPATH-FUNCTIONS#codepoint-collation" data-lt="code point order|code point ordered|unicode codepoint collation">Unicode code point order</dfn></dt>
+      <dd>This refers to determining the order of two Unicode strings (`A` and `B`),
+        using <a>Unicode Codepoint Collation</a>,
+        as defined in [[XPATH-FUNCTIONS]],
+        which defines a
+        <a href="https://en.wikipedia.org/wiki/Total_order">total ordering</a>
+        of <a>strings</a> comparing code points.
+      </dd>
+    </dl>
+  </section>
 </section>
 
 <section id="canonicalization">
@@ -379,65 +445,6 @@
       hexidecimal representation of the result of passing <var>s</var>
       through a cryptographic hash function.
       URDNA2015 uses the SHA-256 hash algorithm.</p>
-  </section>
-
-  <section id="canon-terms">
-    <h2>Canonicalization Algorithm Terms</h2>
-    <dl>
-      <dt><dfn data-lt="input dataset|input datasets">input dataset</dfn></dt>
-      <dd>The abstract <a>RDF dataset</a> that is provided as input to
-        the algorithm.</dd>
-      <dt><dfn>normalized dataset</dfn></dt>
-      <dd>The immutable, abstract <a>RDF dataset</a> and set of normalized
-        <a>blank node identifiers</a> that are produced as output by the algorithm.
-        A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a>
-        where all nodes are labeled, and <a>blank nodes</a> are labeled with canonical <a>blank node identifiers</a>
-        consistent with running this algorithm on a base <a>RDF dataset</a>.
-        A concrete serialization of a <a>normalized dataset</a> MUST label
-        all <a>blank nodes</a> using these stable <a>blank node identifiers</a>.</dd>
-      <dt><dfn data-lt="canonical n-quads">canonical n-quads form</dfn></dt>
-      <dd>
-        The canonicalized representation of a quad is based on
-        <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
-        defined in [[N-Triples]].
-        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a> in the same manner as a <a>subject</a>,
-        if present, and each quad is terminated with a single new line character (`U+000A`).
-        <div class="ednote">
-          At present, there is no existing definition for a canonicalized [[N-Quads]] form.
-          There is a definition for
-          <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
-          in [[N-Triples]], which defines the form of a single triple,
-          without the terminating <a data-cite="N-Triples#grammar-production-EOL">EOL</a>.
-        </div>
-      </dd>
-      <dt><dfn>identifier issuer</dfn></dt>
-      <dd>An identifier issuer is used to issue new <a>blank node identifier</a>. It
-        maintains a
-        <a href="#bn-issuer-state">blank node identifier issuer state</a>.</dd>
-      <dt><dfn>hash</dfn></dt>
-      <dd>The lowercase, hexadecimal representation of a message digest.</dd>
-      <dt><dfn>hash algorithm</dfn></dt>
-      <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
-      <dt><dfn data-cite="XPATH-FUNCTIONS#codepoint-collation" data-lt="code point order|code point ordered|unicode codepoint collation">Unicode code point order</dfn></dt>
-      <dd>This refers to determining the order of two Unicode strings (`A` and `B`),
-        using <a>Unicode Codepoint Collation</a>,
-        as defined in [[XPATH-FUNCTIONS]],
-        which defines a
-        <a href="https://en.wikipedia.org/wiki/Total_order">total ordering</a>
-        of <a>strings</a> comparing code points.
-      </dd>
-      <dt><dfn data-lt="mention">mention set</dfn></dt>
-      <dd>The set of all <a>quads</a> in a <a>dataset</a>
-        that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
-        denoted <var>Q<sub>n</sub></var>.</dd>
-      <dt><dfn>gossip path</dfn></dt>
-      <dd>The gossip path between two <a>blank nodes</a> contained within
-        <a>quads</a> in a <a>dataset</a>, where the path is a sequence
-        of nodes and quads such that the first quad includes
-        the starting node as an component, and the last quad includes
-        the ending node as an component with each quad in the path
-        containing both the preceding and following nodes.</dd>
-    </dl>
   </section>
 
   <section id="canon-state">
@@ -953,9 +960,9 @@
               <!--
                 # Blank node to quads map for unique hashes example
                 ca:
-                  log point: Entering the canonicalization function (4.5.3).
+                  log point: Entering the canonicalization function (4.4.3).
                   ca.2:
-                    log point: Extract quads for each bnode (4.5.3 (2)).
+                    log point: Extract quads for each bnode (4.4.3 (2)).
                     Bnode to quads:
                       e0:
                         - <http://example.com/#p> <http://example.com/#q> _:e0 .
@@ -993,18 +1000,18 @@
                 ca:
                   ####...####
                   ca.3:
-                    log point: Calculated first degree hashes (4.5.3 (3)).
+                    log point: Calculated first degree hashes (4.4.3 (3)).
                     with:
                       - identifier: e0
                         h1dq:
-                          log point: Hash First Degree Quads function (4.7.3).
+                          log point: Hash First Degree Quads function (4.6.3).
                           nquads:
                             - <http://example.com/#p> <http://example.com/#q> _:a .
                             - _:a <http://example.com/#s> <http://example.com/#u> .
                           hash: 21d1dd5ba21f3dee9d76c0c00c260fa6f5d5d65315099e553026f4828d0dc77a
                       - identifier: e1
                         h1dq:
-                          log point: Hash First Degree Quads function (4.7.3).
+                          log point: Hash First Degree Quads function (4.6.3).
                           nquads:
                             - <http://example.com/#p> <http://example.com/#r> _:a .
                             - _:a <http://example.com/#t> <http://example.com/#u> .
@@ -1043,7 +1050,7 @@
                 ca:
                   ####...####
                   ca.4:
-                    log point: Create canonical replacements for hashes mapping to a single node (4.5.3 (4)).
+                    log point: Create canonical replacements for hashes mapping to a single node (4.4.3 (4)).
                     with:
                       - identifier: e2
                         hash: 15973d39de079913dac841ac4fa8c4781c0febfba5e83e5c6e250869587f8659
@@ -1078,7 +1085,7 @@
                 ca:
                   ####...####
                   ca.5:
-                    log point: Calculate hashes for identifiers with shared hashes (4.5.3 (5)).
+                    log point: Calculate hashes for identifiers with shared hashes (4.4.3 (5)).
                     with:
                       - hash: 3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36
                         identifier list: [ "e0", "e1"]
@@ -1127,16 +1134,16 @@
                         ca:
                           ####...####
                           ca.5:
-                            log point: Calculate hashes for identifiers with shared hashes (4.5.3 (5)).
+                            log point: Calculate hashes for identifiers with shared hashes (4.4.3 (5)).
                             with:
                               - hash: 3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36
                                 identifier list: [ "e0", "e1"]
                                 ca.5.2:
-                                  log point: Calculate hashes for identifiers with shared hashes (4.5.3 (5.2)).
+                                  log point: Calculate hashes for identifiers with shared hashes (4.4.3 (5.2)).
                                   with:
                                     - identifier: e0
                                       hndq:
-                                        log point: Hash N-Degree Quads function (4.9.3).
+                                        log point: Hash N-Degree Quads function (4.8.3).
                                         identifier: e0
                                         issuer: {e0: b0}
                                         ####...####
@@ -1193,13 +1200,13 @@
                     ca:
                       ####...####
                       ca.5:
-                        log point: Calculate hashes for identifiers with shared hashes (4.5.3 (5)).
+                        log point: Calculate hashes for identifiers with shared hashes (4.4.3 (5)).
                         with:
                           - hash: 3b26142829b8887d011d779079a243bd61ab53c3990d550320a17b59ade6ba36
                             identifier list: [ "e0", "e1"]
                             ####...####
                             ca.5.3:
-                              log point: Canonical identifiers for temporary identifiers (4.5.3 (5.3)).
+                              log point: Canonical identifiers for temporary identifiers (4.4.3 (5.3)).
                               issuer:
                                   - blank node: e1
                                     canonical identifier: c14n2
@@ -1236,7 +1243,7 @@
                 ca:
                   ####...####
                   ca.6:
-                    log point: Replace original with canonical labels (4.5.3 (6)).
+                    log point: Replace original with canonical labels (4.4.3 (6)).
                     canonical issuer: {e2: c14n0, e3: c14n1, e1: c14n2, e0: c14n3}
               -->
             </pre>
@@ -1557,7 +1564,7 @@
               <!--
                 # Inputs and hash result for the Hash First Degree Hash algorithm for unique hashes example
                 h1dq:
-                  log point: Hash First Degree Quads function (4.7.3).
+                  log point: Hash First Degree Quads function (4.6.3).
                   nquads:
                     - <http://example.com/#p> <http://example.com/#q> _:a .
                     - _:a <http://example.com/#s> <http://example.com/#u> .
@@ -1684,7 +1691,7 @@
               <!--
                 # Inputs and hash result for the Hash Related Blank algorithm for shared hashes example
                 hndq3.1:
-                  log point: Hash related bnode component (4.9.3 (3.1))
+                  log point: Hash related bnode component (4.8.3 (3.1))
                   with:
                     - position: o
                       related: e2
@@ -2172,7 +2179,7 @@
           <!--
             # Inputs for the Hash N-Degree Quads algorithm for double circle example
             hndq:
-              log point: Hash N-Degree Quads function (4.9.3).
+              log point: Hash N-Degree Quads function (4.8.3).
               identifier: e0
               issuer: {e0: b0}
               ####...####
@@ -2199,10 +2206,10 @@
                 # Inputs for the Hash N-Degree Quads algorithm for double circle example
                 hndq:
                   identifier: e0
-                  log point: Hash N-Degree Quads function (4.9.3).
+                  log point: Hash N-Degree Quads function (4.8.3).
                   issuer: {e0: b0}
                   hndq.2:
-                    log point: Quads for identifier (4.9.3 (2)).
+                    log point: Quads for identifier (4.8.3 (2)).
                     quads:
                     - _:e0 <http://example.org/vocab#next> _:e1 .
                     - _:e0 <http://example.org/vocab#prev> _:e1 .
@@ -2252,20 +2259,20 @@
                 # Step 3 of Hash N-Degree Quads using double circle example
                 hndq:
                   identifier: e0
-                  log point: Hash N-Degree Quads function (4.9.3).
+                  log point: Hash N-Degree Quads function (4.8.3).
                   issuer: {e0: b0}
                   ####...####
                 hndq.3:
-                  log point: Hash N-Degree Quads function (4.9.3 (3)).
+                  log point: Hash N-Degree Quads function (4.8.3 (3)).
                   with:
                     - quad: _:e0 <http://example.org/vocab#next> _:e1 .
                       hndq.3.1:
-                        log point: Hash related bnode component (4.9.3 (3.1))
+                        log point: Hash related bnode component (4.8.3 (3.1))
                         with:
                           - position: o
                             related: e1
                             h1dq:
-                              log point: Hash First Degree Quads function (4.7.3).
+                              log point: Hash First Degree Quads function (4.6.3).
                               nquads:
                                 - _:z <http://example.org/vocab#next> _:a .
                                 - _:z <http://example.org/vocab#prev> _:a .
@@ -2319,12 +2326,12 @@
               <!--
                 # Log related hash and data to hash in each iteration of step 5 for double circle example.
                 hndq:
-                  log point: Hash N-Degree Quads function (4.9.3).
+                  log point: Hash N-Degree Quads function (4.8.3).
                   identifier: e0
                   issuer: {e0: b0}
                   ####...####
                   hndq.5:
-                    log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                    log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                     with:
                     - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                       data_to_hash: ""
@@ -2344,17 +2351,17 @@
                   <!--
                     # Log each permutation of step 5.4 using double circle example.
                     hndq:
-                      log point: Hash N-Degree Quads function (4.9.3).
+                      log point: Hash N-Degree Quads function (4.8.3).
                       identifier: e0
                       issuer: {e0: b0}
                       ####...####
                       hndq.5:
-                        log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                        log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                         with:
                         - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                           data_to_hash: ""
                           hndq.5.4:
-                            log point: Hash N-Degree Quads function (4.9.3 (5.4)), entering loop.
+                            log point: Hash N-Degree Quads function (4.8.3 (5.4)), entering loop.
                             with:
                             - perm: [ "e1"]
                               ####...####
@@ -2428,21 +2435,21 @@
                       <!--
                         # Log related and path of step 5.4.4 using double circle example.
                         hndq:
-                          log point: Hash N-Degree Quads function (4.9.3).
+                          log point: Hash N-Degree Quads function (4.8.3).
                           identifier: e0
                           issuer: {e0: b0}
                           ####...####
                           hndq.5:
-                            log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                            log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                             with:
                             - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                               data_to_hash: ""
                               hndq.5.4:
-                                log point: Hash N-Degree Quads function (4.9.3 (5.4)), entering loop.
+                                log point: Hash N-Degree Quads function (4.8.3 (5.4)), entering loop.
                                 with:
                                 - perm: [ "e1"]
                                   hndq.5.4.4:
-                                    log point: Hash N-Degree Quads function (4.9.3 (5.4.4)), entering loop.
+                                    log point: Hash N-Degree Quads function (4.8.3 (5.4.4)), entering loop.
                                     with:
                                       - related: e1
                                         path: ""
@@ -2465,22 +2472,22 @@
                       <!--
                         # Log related and path of step 5.4.5 using double circle example.
                         hndq:
-                          log point: Hash N-Degree Quads function (4.9.3).
+                          log point: Hash N-Degree Quads function (4.8.3).
                           identifier: e0
                           issuer: {e0: b0}
                           ####...####
                           hndq.5:
-                            log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                            log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                             with:
                             - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                               data_to_hash: ""
                               hndq.5.4:
-                                log point: Hash N-Degree Quads function (4.9.3 (5.4)), entering loop.
+                                log point: Hash N-Degree Quads function (4.8.3 (5.4)), entering loop.
                                 with:
                                 - perm: [ "e1"]
                                   ####...####
                                   hndq.5.4.5:
-                                    log point: Hash N-Degree Quads function (4.9.3 (5.4.5)), before possible recursion.
+                                    log point: Hash N-Degree Quads function (4.8.3 (5.4.5)), before possible recursion.
                                     recursion list: [ "e1"]
                                     path: "_:b1"
                                   ####...####
@@ -2501,22 +2508,22 @@
                           <!--
                           # Log related and path of step 5.4.5.1 using double circle example.
                           hndq:
-                            log point: Hash N-Degree Quads function (4.9.3).
+                            log point: Hash N-Degree Quads function (4.8.3).
                             identifier: e0
                             issuer: {e0: b0}
                             ####...####
                             hndq.5:
-                              log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                              log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                               with:
                               - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                                 data_to_hash: ""
                                 hndq.5.4:
-                                  log point: Hash N-Degree Quads function (4.9.3 (5.4)), entering loop.
+                                  log point: Hash N-Degree Quads function (4.8.3 (5.4)), entering loop.
                                   with:
                                   - perm: [ "e1"]
                                     ####...####
                                     hndq.5.4.5:
-                                      log point: Hash N-Degree Quads function (4.9.3 (5.4.5)), before possible recursion.
+                                      log point: Hash N-Degree Quads function (4.8.3 (5.4.5)), before possible recursion.
                                       recursion list: [ "e1"]
                                       path: "_:b1"
                                       with:
@@ -2564,18 +2571,18 @@
                   <!--
                     # Log chosen path and data to hash logs of step 5.5 using double circle example.
                     hndq:
-                      log point: Hash N-Degree Quads function (4.9.3).
+                      log point: Hash N-Degree Quads function (4.8.3).
                       identifier: e0
                       issuer: {e0: b0}
                       ####...####
                       hndq.5:
-                        log point: Hash N-Degree Quads function (4.9.3 (5)), entering loop.
+                        log point: Hash N-Degree Quads function (4.8.3 (5)), entering loop.
                         with:
                         - related_hash: 1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d
                           data_to_hash: ""
                           ####...####
                           hndq.5.5:
-                            log point: Hash N-Degree Quads function (4.9.3 (5.5). End of current loop with Hn hashes.
+                            log point: Hash N-Degree Quads function (4.8.3 (5.5). End of current loop with Hn hashes.
                             chosen path: "_:b1_:b1<1ae899f76e760eb7caf6656437aaef845b50887aff7baeb3531add85ec02ed35>"
                             data to hash: "1e4e55ba02b8b0b527c32e2343fbcfee2e2bd9c1972c67cc01f85fabde7bc42d_:b1_:b1<1ae899f76e760eb7caf6656437aaef845b50887aff7baeb3531add85ec02ed35>"
                           ####...####
@@ -2597,12 +2604,12 @@
               <!--
                 # Log issuer and resulting hash of step 6 using double circle example.
                 hndq:
-                  log point: Hash N-Degree Quads function (4.9.3).
+                  log point: Hash N-Degree Quads function (4.8.3).
                   identifier: e0
                   issuer: {e0: b0}
                   ####...####
                   hndq.6:
-                    log point: Leaving Hash N-Degree Quads function (4.9.3).
+                    log point: Leaving Hash N-Degree Quads function (4.8.3).
                     hash: e332b4b59e1c4794ee72a4df0f63723326ffb6d6a5c0d0cb4d2dd8d8d5ebf5a4
                     issuer: {e0: b0, e1: b1}
               -->
