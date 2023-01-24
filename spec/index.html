@@ -286,7 +286,7 @@
       <dd>The abstract <a>RDF dataset</a> that is provided as input to
         the algorithm.</dd>
       <dt><dfn>normalized dataset</dfn></dt>
-      <dd>The immutable, abstract <a>RDF dataset</a> and set of normalized
+      <dd>The immutable, abstract <a>RDF dataset</a> and a set of normalized
         <a>blank node identifiers</a> that are produced as output by the algorithm.
         A <a>normalized dataset</a> is a restriction on an <a>RDF dataset</a>
         where all nodes are labeled, and <a>blank nodes</a> are labeled with canonical <a>blank node identifiers</a>
@@ -301,9 +301,14 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
-      <dt><dfn data-lt="mention">mention set</dfn></dt>
+      <dt><dfn>mention</dfn></dt>
+      <dd>
+        A node is mentioned in a <a>quad</a>
+        if it is a component of that quad,
+        as a <a>subject</a>, <a>predicate</a>, <a>object</a>, or <a>graph name</a>.</dd>
+      <dt><dfn>mention set</dfn></dt>
       <dd>The set of all <a>quads</a> in a <a>dataset</a>
-        that mention a node <var>n</var> is called its <a>mention set</a> of <var>n</var>,
+        that <a>mention</a> a node <var>n</var> is called the <a>mention set</a> of <var>n</var>,
         denoted <var>Q<sub>n</sub></var>.</dd>
       <dt><dfn>gossip path</dfn></dt>
       <dd>The gossip path between two <a>blank nodes</a> contained within
@@ -440,7 +445,7 @@
       node’s first degree information via its first degree hash. </p>
 
     <p>Hashes are computed from the information of each blank node.
-      These hashes encode the mentions incident to each blank node.
+      These hashes encode the <a>mentions</a> incident to each blank node.
       The <a>hash</a> of a string <var>s</var>, is the lower-case,
       hexidecimal representation of the result of passing <var>s</var>
       through a cryptographic hash function.
@@ -702,7 +707,7 @@
             class="example"
             title="Shared hashes">
         <p>This example illustrates the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
-          where hashing the statements mentioning
+          where hashing the statements <a data-lt="mention">mentioning</a>
           those blank nodes have overlapping results.</p>
 
         <figure id="fig-ca-shared-hashes" style="text-align:center">
@@ -1340,7 +1345,7 @@
             class="example"
             title="Unique hashes">
         <p>This example illustrates hashing quads containing
-          blank nodes where hashing the statements mentioning
+          blank nodes where hashing the statements <a data-lt="mention">mentioning</a>
           those blank nodes generates unique results.</p>
 
         <figure id="fig-unique-hashes" style="text-align:center">
@@ -1425,7 +1430,7 @@
             class="example"
             title="Shared hashes">
         <p>This example illustrates hashing quads containing
-          blank nodes where hashing the statements mentioning
+          blank nodes where hashing the statements <a data-lt="mention">mentioning</a>
           those blank nodes have overlapping results.</p>
 
         <figure id="fig-shared-hashes" style="text-align:center">
@@ -1514,7 +1519,7 @@
           and <code><em>e1</em></code> share a common hash,
           which will require the use of the
           <a href="#hash-nd-quads-algorithm">Hash N-Degree Quads Algorithm</a>,
-          as it is necessary to consider quads further removed from the direct mentions
+          as it is necessary to consider quads further removed from the direct <a>mentions</a>
           to determine a unique hash.</p>
       </aside>
     </section>
@@ -1751,7 +1756,7 @@
 
       <p>To consider all transitive information,
         the algorithm traverses and encodes all possible paths of incident
-        mentions emanating from <var>n</var>, called <a>gossip paths</a>,
+        <a>mentions</a> emanating from <var>n</var>, called <a>gossip paths</a>,
         that reach every unlabeled blank node connected to <var>n</var>.
         Each unlabeled blank node is assigned a temporary identifier
         in the order in which it is reached in the
