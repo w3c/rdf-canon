@@ -1,0 +1,15 @@
+task default: [ "manifests.nt", "earl.ttl", "earl.html" ]
+
+desc "Create concatenated test manifests"
+file "manifests.nt" do
+  require 'rdf'
+  require 'json/ld'
+  require 'rdf/ntriples'
+  require 'rdf/turtle'
+  graph = RDF::Graph.load(
+    File.expand_path("../../tests/manifest-urdna2015.ttl", __FILE__),
+    base_uri: "https://w3c.github.io/rdf-canon/tests/",
+    unique_bnodes: true)
+  puts "write"
+  RDF::NTriples::Writer.open("manifests.nt", unique_bnodes: true, validate: false) {|w| w << graph}
+end

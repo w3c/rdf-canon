@@ -1,0 +1,17 @@
+---
+:format: :json
+:manifest: manifests.nt
+:bibRef: ! '[[rdf-canon]]'
+:name: RDF Dataset Canonicalization 1.0
+:query: |
+  PREFIX mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+  SELECT ?uri ?testAction ?manUri
+  WHERE {
+    ?uri mf:action ?testAction .
+    OPTIONAL {
+      ?manUri a mf:Manifest; mf:entries ?lh .
+      ?lh rdf:first ?uri .
+    }
+  }
