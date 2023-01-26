@@ -4,7 +4,7 @@ test subjects claiming JSON-LD processor conformance.
 
 The consolidated report is saved to `index.html` generated
 using the
-[earl-report Ruby gem](https://rubygems.org/gems/earl-report).
+[`earl-report` Ruby gem](https://rubygems.org/gems/earl-report).
 Run it as follows:
 
 ```sh
