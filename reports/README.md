@@ -16,31 +16,63 @@ $ earl-report --json --format html --template template.haml -o index.html earl.j
 ```
 
 
-<h2>Instructions for submitting implementation reports</h2>
+## Instructions for submitting implementation reports
 
-<p>Reports should be submitted in Turtle format to
+Reports should be submitted in Turtle format to
   <a href="mailto:public-rch-wg@w3.org">Public RCH WG</a> or via a Pull
-  Request to the <a href="https://github.com/w3c/rdf-canon/pulls">w3c/rdf-canon</a>.</p>
+  Request to the <a href="https://github.com/w3c/rdf-canon/pulls">w3c/rdf-canon</a>.
 
-<p>Tests should be run using the test manifests defined in the
-  <a href="#test-manifests">Test Manifests</a> Section.</p>
+Tests should be run using the test manifests defined in the
+  <a href="#test-manifests">Test Manifests</a> Section.
 
-<p>Include an <code>earl:Assertion</code> for each test, referencing the test
+Include an <code>earl:Assertion</code> for each test, referencing the test
   resource from the associated manifest and the test subject being
-  reported upon. See the example below:</p>
+  reported upon. See the example below:
 
-<pre><code>  [ a earl:Assertion;&#x000A;    earl:assertedBy &lt;--your-developer-identifier--&gt;;&#x000A;    earl:subject &lt;--your-software-identifier--&gt;;&#x000A;    earl:test &lt;--uri-of-test-from-manifest&gt;;&#x000A;    earl:result [&#x000A;      a earl:TestResult;&#x000A;      earl:outcome earl:passed;&#x000A;      dc:date &quot;2023-01-25T10:18:04-08:00&quot;^^xsd:dateTime];&#x000A;    earl:mode earl:automatic ] .&#x000A;</code></pre>
+```
+[ a earl:Assertion;
+    earl:assertedBy &lt;--your-developer-identifier--&gt;
+    earl:subject <--your-software-identifier-->;
+    earl:test <--uri-of-test-from-manifest>;
+    earl:result [
+      a earl:TestResult;
+        earl:outcome earl:passed;
+        dc:date "2023-01-25T10:18:04-08:00"^^xsd:dateTime];
+    earl:mode earl:automatic ] .
+```
 
-<p>The Test Subject should be defined as a <code>doap:Project</code>, including the name,
-  homepage and developer(s) of the software (see <a href="https://github.com/edumbill/doap/wiki">DOAP</a>). Optionally, including the
-  project description and programming language. An example test subject description is the following:</p>
+The Test Subject should be defined as a <code>doap:Project</code>, including the name,
+  homepage and developer(s) of the software
+  (see <a href="https://github.com/edumbill/doap/wiki">DOAP</a>).
+  Optionally, including the
+  project description and programming language. An example test subject description is the following:
 
-<pre><code>  &lt;&gt; foaf:primaryTopic &lt;--your-software-identifier--&gt; ;&#x000A;    dc:issued &quot;2016-12-26T10:18:04-08:00&quot;^^xsd:dateTime ;&#x000A;    foaf:maker &lt;--your-developer-identifier--&gt; .&#x000A;&#x000A;  &lt;--your-software-identifier--&gt; a doap:Project, earl:TestSubject, earl:Software ;&#x000A;    doap:name          &quot;My Cool RDF Canonicalizer&quot; ;&#x000A;    doap:release [&#x000A;      doap:name     &quot;--short name wih version number--&quot;;&#x000A;      doap:revision &quot;--Software version number--&quot; ;&#x000A;      doap:created  &quot;2020-02-19&quot;^^xsd:date;&#x000A;    ] ;&#x000A;    doap:developer     &lt;--your-developer-identifier--&gt; ;&#x000A;    doap:homepage      &lt;--your-software-homepace--&gt; ;&#x000A;    doap:description   &quot;--your-project-description--&quot;@en ;&#x000A;    doap:programming-language &quot;--your-implementation-language--&quot; .&#x000A;</code></pre>
+```
+<> foaf:primaryTopic <--your-software-identifier--> ;
+  dc:issued "2016-12-26T10:18:04-08:00"^^xsd:dateTime ;
+  foaf:maker <--your-developer-identifier--> .
 
-<p>The software developer, either an organization or one or more individuals SHOULD be
+<--your-software-identifier--> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name          "My Cool RDF Canonicalizer" ;
+  doap:release [
+    doap:name     "--short name wih version number--";
+    doap:revision "--Software version number--" ;
+    doap:created  "2020-02-19"^^xsd:date;
+  ] ;
+  doap:developer     <--your-developer-identifier--> ;
+  doap:homepage      <--your-software-homepace--> ;
+  doap:description   "--your-project-description--"@en ;
+  doap:programming-language "--your-implementation-language--" .
+```
+
+The software developer, either an organization or one or more individuals SHOULD be
   referenced from <code>doap:developer</code> using <a href="http://xmlns.com/foaf/spec">FOAF</a>. For example:</p>
 
-<pre><code>  &lt;--your-developer-identifier--&gt; a foaf:Person, earl:Assertor;&#x000A;    foaf:name &quot;--My Name--&quot;;&#x000A;    foaf:homepage &lt;--my homepage--&gt; .&#x000A;</code></pre>
+```
+<--your-developer-identifier--> a foaf:Person, earl:Assertor;
+  foaf:name "--My Name--";
+  foaf:homepage <--my homepage--> .
+```
 
 ## Template files:
 
@@ -50,12 +82,22 @@ $ earl-report --json --format html --template template.haml -o index.html earl.j
 
 * `Rakefile` – Builds `manifest.ttl` from the test suite. (could also add tasks to build `earl.jsonld`, `earl.ttl`, and `index.html`)
 
+Running the rake task and earl-report requires the installation of Ruby, and the following gems:
+
+* 'rdf-turtle'
+* 'json-ld'
+* 'haml'
+* 'kramdown'
+
 ## Generated files:
 
 * `earl.jsonld` – JSON-LD representation of the consolidated EARL submissions build by earl-report as described above.
 * `earl.ttl` – Turtle version of consolidated report, build from `earl.jsonld` by earl-report, as described above.
 * `index.html` – The processed implementation report, built by earl-report using `earl.jsonld`, as described above.
+* `manifest.nt` – Local cache of the test-suite manifest files, updated via `rake manifest.nt`.
 
 ## Submission files:
 
 Any files (other than `earl.ttl`) ending in `.ttl` are taken as individual EARL reports of test-suite conformance. For example `ruby-earl.ttl` is the report for [Ruby RDF::Normalize](https://github.com/ruby-rdf/rdf-normalize).
+
+As described above, each submission should have DOAP, FOAF, and individual Assertion elements.
