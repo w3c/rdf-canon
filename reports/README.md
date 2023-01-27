@@ -29,7 +29,7 @@ Include an `earl:Assertion` for each test, referencing the test
   resource from the associated manifest and the test subject being
   reported upon. See the example below:
 
-```
+```turtle
 [ a               earl:Assertion ;
   earl:assertedBy <--your-developer-identifier--> ;
   earl:subject    <--your-software-identifier--> ;
@@ -48,7 +48,7 @@ The Test Subject should be defined as a `doap:Project`, including the name,
   and optionally including the
   project description and programming language. An example test subject description is the following:
 
-```
+```turtle
 <> foaf:primaryTopic        <--your-software-identifier--> ;
    dc:issued                "2016-12-26T10:18:04-08:00"^^xsd:dateTime ;
    foaf:maker               <--your-developer-identifier--> .
@@ -71,7 +71,7 @@ The Test Subject should be defined as a `doap:Project`, including the name,
 The software developer, either an organization or one or more individuals SHOULD be
   referenced from <code>doap:developer</code> using <a href="http://xmlns.com/foaf/spec">FOAF</a>. For example:</p>
 
-```
+```turtle
 <--your-developer-identifier--> 
    a             foaf:Person , 
                  earl:Assertor ;
