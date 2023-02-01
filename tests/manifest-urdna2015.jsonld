@@ -217,7 +217,7 @@
     {
       "id": "manifest-urdna2015#test024",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (1-2-3)",
+      "name": "blank node - double circle of 3 (0-1-2)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test024-in.nq",
@@ -226,7 +226,7 @@
     {
       "id": "manifest-urdna2015#test025",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (1-3-2)",
+      "name": "blank node - double circle of 3 (0-2-1)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test025-in.nq",
@@ -235,7 +235,7 @@
     {
       "id": "manifest-urdna2015#test026",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (2-1-3)",
+      "name": "blank node - double circle of 3 (1-0-2)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test026-in.nq",
@@ -244,7 +244,7 @@
     {
       "id": "manifest-urdna2015#test027",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (2-3-1)",
+      "name": "blank node - double circle of 3 (1-2-0)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test027-in.nq",
@@ -253,7 +253,7 @@
     {
       "id": "manifest-urdna2015#test028",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (3-2-1)",
+      "name": "blank node - double circle of 3 (2-1-0)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test028-in.nq",
@@ -262,7 +262,7 @@
     {
       "id": "manifest-urdna2015#test029",
       "type": "rdfc:Urdna2015EvalTest",
-      "name": "blank node - double circle of 3 (3-1-2)",
+      "name": "blank node - double circle of 3 (2-0-1)",
       "comment": null,
       "approval": "rdft:Proposed",
       "action": "urdna2015/test029-in.nq",
