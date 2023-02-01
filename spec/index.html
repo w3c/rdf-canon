@@ -60,7 +60,7 @@
         companyURL: "https://digitalbazaar.com/" }
     ],
 
-    // name of the 
+    // name of the
     group: "rch",
     testSuiteURI: "https://w3c.github.io/rdf-canon/tests/",
     xref: ["rdf11-concepts", "infra"],
@@ -392,7 +392,7 @@
         specifies an algorithm for deterministically specifying them.</dd>
       <dd>
         Concrete syntaxes, like [[Turtle]] or [[N-Quads]], prepend blank node identifiers with the <code>_:</code> string
-        to differentiate them from other nodes in the graph. This affects the 
+        to differentiate them from other nodes in the graph. This affects the
         canonicalization algorithm, which is based on calculating a hash over the representations of <a>quads</a> in this format.
       </dd>
       <dt><dfn data-cite="XPATH-FUNCTIONS#codepoint-collation" data-lt="code point order|code point ordered|unicode codepoint collation">Unicode code point order</dfn></dt>
@@ -1448,7 +1448,7 @@
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
-          
+
         <pre id="ex-1d-shared-hashes-input"
              data-transform="updateExample"
              title="Graph with blank nodes resulting in shared hashes">
@@ -1683,12 +1683,12 @@
           through the <a>hash algorithm</a>.
           <details>
             <summary>Explanation</summary>
-            <p>This resulting string is used to generate a hash; in this respect, it is similar to 
-              the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which 
-              uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the 
-              <a>nquad</a> representation of <var>identifier</var> is used in this step, hence the 
+            <p>This resulting string is used to generate a hash; in this respect, it is similar to
+              the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which
+              uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the
+              <a>nquad</a> representation of <var>identifier</var> is used in this step, hence the
               appearance of the <code>_:</code> string.</p>
-          </details>        
+          </details>
           <details>
             <summary>Logging</summary>
             <p>Log the inputs and result of running this algorithm.</p>
@@ -1766,7 +1766,7 @@
         This provides a deterministic way to order all paths coming from <var>n</var> that
         reach all blank nodes connected to n without relying on input blank
         node identifiers.</p>
-  
+
       <p>This algorithm works in concert with the main canonicalization algorithm
         to produce a unique, deterministic identifier for a particular blank
         node. This <a>hash</a> incorporates all of the information that
@@ -1911,7 +1911,7 @@
               <abbr title="Scalable Vector Graphics">SVG</abbr>
             </a>.</figcaption>
         </figure>
-          
+
         <pre id="ex-nd-shared-hashes-input"
              data-transform="updateExample"
              title="Graph with blank nodes resulting in shared hashes">
@@ -2382,7 +2382,7 @@
                 <li id="hndq.5.4.4">For each <var>related</var> in <var>p</var>:
                   <ol>
                     <li id="hndq.5.4.4.1">If a canonical identifier has been issued for
-                      <var>related</var> by <a>canonical issuer</a>, append the string <code>_:</code>, followed by 
+                      <var>related</var> by <a>canonical issuer</a>, append the string <code>_:</code>, followed by
                       the canonical identifier for <var>related</var>, to <var>path</var>.
                       <details><summary>Explanation</summary>
                         <p>A canonical identifier may have been generated before calling this algorithm,
@@ -2427,12 +2427,12 @@
                   </ol>
                   <details>
                     <summary>Explanation</summary>
-                    <p><var>path</var> is used to generate a hash at a later step; in this respect, it is similar to 
-                      the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which 
-                      uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the 
-                      <a>nquad</a> representation of blank node identifiers is used in these steps, hence the 
+                    <p><var>path</var> is used to generate a hash at a later step; in this respect, it is similar to
+                      the <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> which
+                      uses the serialization of <a>quads</a> in <a>nquads</a> for hashing. For the sake of consistency, the
+                      <a>nquad</a> representation of blank node identifiers is used in these steps, hence the
                       usage of the <code>_:</code> string.</p>
-                  </details>        
+                  </details>
                   <details>
                     <summary>Logging</summary>
                     <p>Log <var>related</var> and <var>path</var>.</p>
@@ -2629,13 +2629,25 @@
 <section id="privacy-considerations">
   <h2>Privacy Considerations</h2>
 
-  <p class="ednote">TBD</p>
+  <section>
+    <h3>Selective Disclosure Schemes</h3>
+
+    <p class="issue" title="Dataset structure might reveal information">
+Add text that warns implementers using this specification in selective
+disclosure schemes that graph structure might reveal information about the
+entity disclosing the information. For example, knowing that a blank node
+contains two triples vs. five triples might reveal that the entity that
+is disclosing the information is a part of a subclass of a population,
+which might be enough to identify them beyond what the discloser intended to
+disclose.
+    </p>
+  </section>
+
 </section>
 
 <section id="security-considerations">
   <h2>Security Considerations</h2>
 
-  <p class="ednote">TBD</p>
 </section>
 
 <section id="use-cases" class="informative">
@@ -3131,7 +3143,7 @@
     <li>
       The algorithm, and the examples, have been changed to systematically
       use the <code><em>xyz</em></code> format for blank node identifiers, instead of
-      `_:xyz`. See <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a> 
+      `_:xyz`. See <a href="https://github.com/w3c/rdf-canon/issues/46">Issue 46</a>
       for the discussion.
     </li>
     <li>
