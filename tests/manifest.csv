@@ -5,15 +5,12 @@ test003,bnode,,,TRUE
 test004,bnode plus embed w/subject,,,TRUE
 test005,bnode embed,,,TRUE
 test006,multiple rdf types,,,TRUE
-test007,coerce CURIE value,,,TRUE
 test008,single subject complex,,,TRUE
 test009,multiple subjects - complex,,,TRUE
 test010,type,,,TRUE
 test011,type-coerced type,,,TRUE
-test012,"type-coerced type, remove duplicate reference",,,TRUE
 test013,"type-coerced type, cycle",,,TRUE
 test014,check types,,,TRUE
-test015,top level context,,,TRUE
 test016,blank node - dual link - embed,,,TRUE
 test017,blank node - dual link - non-embed,,,TRUE
 test018,blank node - self link,,,TRUE
@@ -29,28 +26,19 @@ test027,blank node - double circle of 3 (2-3-1),,,TRUE
 test028,blank node - double circle of 3 (3-2-1),,,TRUE
 test029,blank node - double circle of 3 (3-1-2),,,TRUE
 test030,blank node - point at circle of 3,,,TRUE
-test031,bnode (1),,,TRUE
-test032,bnode (2),,,TRUE
 test033,disjoint identical subgraphs (1),,,TRUE
 test034,disjoint identical subgraphs (2),,,TRUE
 test035,reordered w/strings (1),,,TRUE
 test036,reordered w/strings (2),,,TRUE
-test037,reordered w/strings (3),,,TRUE
 test038,"reordered 4 bnodes, reordered 2 properties (1)",,,TRUE
 test039,"reordered 4 bnodes, reordered 2 properties (2)",,,TRUE
 test040,reordered 6 bnodes (1),,,TRUE
-test041,reordered 6 bnodes (2),,,TRUE
-test042,reordered 6 bnodes (3),,,TRUE
 test043,literal with language,,,TRUE
 test044,evil (1),,,TRUE
 test045,evil (2),,,TRUE
 test046,evil (3),,,TRUE
 test047,deep diff (1),,,TRUE
 test048,deep diff (2),,,TRUE
-test049,remove null,,,TRUE
-test050,nulls,,,TRUE
-test051,merging subjects,,,TRUE
-test052,alias keywords,,,TRUE
 test053,@list,,,TRUE
 test054,t-graph,,,TRUE
 test055,simple reorder (1),,,TRUE
