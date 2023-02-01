@@ -19,12 +19,12 @@ test020,blank node - diamond,,,TRUE
 test021,blank node - circle of 2,,,TRUE
 test022,blank node - double circle of 2,,,TRUE
 test023,blank node - circle of 3,,,TRUE
-test024,blank node - double circle of 3 (1-2-3),,,TRUE
-test025,blank node - double circle of 3 (1-3-2),,,TRUE
-test026,blank node - double circle of 3 (2-1-3),,,TRUE
-test027,blank node - double circle of 3 (2-3-1),,,TRUE
-test028,blank node - double circle of 3 (3-2-1),,,TRUE
-test029,blank node - double circle of 3 (3-1-2),,,TRUE
+test024,blank node - double circle of 3 (0-1-2),,,TRUE
+test025,blank node - double circle of 3 (0-2-1),,,TRUE
+test026,blank node - double circle of 3 (1-0-2),,,TRUE
+test027,blank node - double circle of 3 (1-2-0),,,TRUE
+test028,blank node - double circle of 3 (2-1-0),,,TRUE
+test029,blank node - double circle of 3 (2-0-1),,,TRUE
 test030,blank node - point at circle of 3,,,TRUE
 test033,disjoint identical subgraphs (1),,,TRUE
 test034,disjoint identical subgraphs (2),,,TRUE
