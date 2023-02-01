@@ -50,3 +50,9 @@ test060,n-quads escaping,,,TRUE
 test061,same literal value with multiple languages,,,TRUE
 test062,same literal value with multiple datatypes,,,TRUE
 test063,blank node - diamond (with _:b),"This duplicates #test020, but uses _:b as a blank node prefix",,TRUE
+test064,"blank node - double circle of 3 (0-1-2, reversed)",,,TRUE
+test065,"blank node - double circle of 3 (0-2-1, reversed)",,,TRUE
+test066,"blank node - double circle of 3 (1-0-2, reversed)",,,TRUE
+test067,"blank node - double circle of 3 (1-2-0, reversed)",,,TRUE
+test068,"blank node - double circle of 3 (2-1-0, reversed)",,,TRUE
+test069,"blank node - double circle of 3 (2-0-1, reversed)",,,TRUE
