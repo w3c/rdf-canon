@@ -492,6 +492,60 @@
       "approval": "rdft:Proposed",
       "action": "urdna2015/test063-in.nq",
       "result": "urdna2015/test063-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test064",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (0-1-2, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test064-in.nq",
+      "result": "urdna2015/test064-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test065",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (0-2-1, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test065-in.nq",
+      "result": "urdna2015/test065-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test066",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (1-0-2, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test066-in.nq",
+      "result": "urdna2015/test066-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test067",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (1-2-0, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test067-in.nq",
+      "result": "urdna2015/test067-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test068",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (2-1-0, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test068-in.nq",
+      "result": "urdna2015/test068-urdna2015.nq"
+    },
+    {
+      "id": "manifest-urdna2015#test069",
+      "type": "rdfc:Urdna2015EvalTest",
+      "name": "blank node - double circle of 3 (2-0-1, reversed)",
+      "comment": null,
+      "approval": "rdft:Proposed",
+      "action": "urdna2015/test069-in.nq",
+      "result": "urdna2015/test069-urdna2015.nq"
     }
   ]
 }

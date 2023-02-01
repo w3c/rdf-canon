@@ -22,12 +22,13 @@
   rdfs:label "RDF Dataset Canonicalization (URDNA2015)";
   rdfs:comment "Tests the 2015 version of RDF Dataset Canonicalization.";
   mf:entries (
-    :test001 :test002 :test003 :test004 :test005 :test006 :test008 :test009 :test010 :test011
-    :test013 :test014 :test016 :test017 :test018 :test019 :test020 :test021 :test022 :test023
-    :test024 :test025 :test026 :test027 :test028 :test029 :test030 :test033 :test034 :test035
-    :test036 :test038 :test039 :test040 :test043 :test044 :test045 :test046 :test047 :test048
-    :test053 :test054 :test055 :test056 :test057 :test058 :test059 :test060 :test061 :test062
-    :test063
+    :test001 :test002 :test003 :test004 :test005 :test006 :test007 :test008 :test009 :test010
+    :test011 :test012 :test013 :test014 :test015 :test016 :test017 :test018 :test019 :test020
+    :test021 :test022 :test023 :test024 :test025 :test026 :test027 :test028 :test029 :test030
+    :test031 :test032 :test033 :test034 :test035 :test036 :test037 :test038 :test039 :test040
+    :test041 :test042 :test043 :test044 :test045 :test046 :test047 :test048 :test049 :test050
+    :test051 :test052 :test053 :test054 :test055 :test056 :test057 :test058 :test059 :test060
+    :test061 :test062 :test063 :test064 :test065 :test066 :test067 :test068 :test069
   ) .
 
 :test001 a rdfc:Urdna2015EvalTest;
@@ -72,6 +73,13 @@
   mf:result <urdna2015/test006-urdna2015.nq>;
   .
 
+:test007 a rdfc:Urdna2015EvalTest;
+  mf:name "coerce CURIE value";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test007-in.nq>;
+  mf:result <urdna2015/test007-urdna2015.nq>;
+  .
+
 :test008 a rdfc:Urdna2015EvalTest;
   mf:name "single subject complex";
   rdft:approval rdft:Proposed;
@@ -100,6 +108,13 @@
   mf:result <urdna2015/test011-urdna2015.nq>;
   .
 
+:test012 a rdfc:Urdna2015EvalTest;
+  mf:name "type-coerced type, remove duplicate reference";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test012-in.nq>;
+  mf:result <urdna2015/test012-urdna2015.nq>;
+  .
+
 :test013 a rdfc:Urdna2015EvalTest;
   mf:name "type-coerced type, cycle";
   rdft:approval rdft:Proposed;
@@ -112,6 +127,13 @@
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test014-in.nq>;
   mf:result <urdna2015/test014-urdna2015.nq>;
+  .
+
+:test015 a rdfc:Urdna2015EvalTest;
+  mf:name "top level context";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test015-in.nq>;
+  mf:result <urdna2015/test015-urdna2015.nq>;
   .
 
 :test016 a rdfc:Urdna2015EvalTest;
@@ -171,42 +193,42 @@
   .
 
 :test024 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (0-1-2)";
+  mf:name "blank node - double circle of 3 (1-2-3)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test024-in.nq>;
   mf:result <urdna2015/test024-urdna2015.nq>;
   .
 
 :test025 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (0-2-1)";
+  mf:name "blank node - double circle of 3 (1-3-2)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test025-in.nq>;
   mf:result <urdna2015/test025-urdna2015.nq>;
   .
 
 :test026 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (1-0-2)";
+  mf:name "blank node - double circle of 3 (2-1-3)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test026-in.nq>;
   mf:result <urdna2015/test026-urdna2015.nq>;
   .
 
 :test027 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (1-2-0)";
+  mf:name "blank node - double circle of 3 (2-3-1)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test027-in.nq>;
   mf:result <urdna2015/test027-urdna2015.nq>;
   .
 
 :test028 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (2-1-0)";
+  mf:name "blank node - double circle of 3 (3-2-1)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test028-in.nq>;
   mf:result <urdna2015/test028-urdna2015.nq>;
   .
 
 :test029 a rdfc:Urdna2015EvalTest;
-  mf:name "blank node - double circle of 3 (2-0-1)";
+  mf:name "blank node - double circle of 3 (3-1-2)";
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test029-in.nq>;
   mf:result <urdna2015/test029-urdna2015.nq>;
@@ -217,6 +239,20 @@
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test030-in.nq>;
   mf:result <urdna2015/test030-urdna2015.nq>;
+  .
+
+:test031 a rdfc:Urdna2015EvalTest;
+  mf:name "bnode (1)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test031-in.nq>;
+  mf:result <urdna2015/test031-urdna2015.nq>;
+  .
+
+:test032 a rdfc:Urdna2015EvalTest;
+  mf:name "bnode (2)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test032-in.nq>;
+  mf:result <urdna2015/test032-urdna2015.nq>;
   .
 
 :test033 a rdfc:Urdna2015EvalTest;
@@ -247,6 +283,13 @@
   mf:result <urdna2015/test036-urdna2015.nq>;
   .
 
+:test037 a rdfc:Urdna2015EvalTest;
+  mf:name "reordered w/strings (3)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test037-in.nq>;
+  mf:result <urdna2015/test037-urdna2015.nq>;
+  .
+
 :test038 a rdfc:Urdna2015EvalTest;
   mf:name "reordered 4 bnodes, reordered 2 properties (1)";
   rdft:approval rdft:Proposed;
@@ -266,6 +309,20 @@
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test040-in.nq>;
   mf:result <urdna2015/test040-urdna2015.nq>;
+  .
+
+:test041 a rdfc:Urdna2015EvalTest;
+  mf:name "reordered 6 bnodes (2)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test041-in.nq>;
+  mf:result <urdna2015/test041-urdna2015.nq>;
+  .
+
+:test042 a rdfc:Urdna2015EvalTest;
+  mf:name "reordered 6 bnodes (3)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test042-in.nq>;
+  mf:result <urdna2015/test042-urdna2015.nq>;
   .
 
 :test043 a rdfc:Urdna2015EvalTest;
@@ -308,6 +365,34 @@
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test048-in.nq>;
   mf:result <urdna2015/test048-urdna2015.nq>;
+  .
+
+:test049 a rdfc:Urdna2015EvalTest;
+  mf:name "remove null";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test049-in.nq>;
+  mf:result <urdna2015/test049-urdna2015.nq>;
+  .
+
+:test050 a rdfc:Urdna2015EvalTest;
+  mf:name "nulls";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test050-in.nq>;
+  mf:result <urdna2015/test050-urdna2015.nq>;
+  .
+
+:test051 a rdfc:Urdna2015EvalTest;
+  mf:name "merging subjects";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test051-in.nq>;
+  mf:result <urdna2015/test051-urdna2015.nq>;
+  .
+
+:test052 a rdfc:Urdna2015EvalTest;
+  mf:name "alias keywords";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test052-in.nq>;
+  mf:result <urdna2015/test052-urdna2015.nq>;
   .
 
 :test053 a rdfc:Urdna2015EvalTest;
@@ -386,4 +471,46 @@
   rdft:approval rdft:Proposed;
   mf:action <urdna2015/test063-in.nq>;
   mf:result <urdna2015/test063-urdna2015.nq>;
+  .
+
+:test064 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (0-1-2, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test064-in.nq>;
+  mf:result <urdna2015/test064-urdna2015.nq>;
+  .
+
+:test065 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (0-2-1, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test065-in.nq>;
+  mf:result <urdna2015/test065-urdna2015.nq>;
+  .
+
+:test066 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (1-0-2, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test066-in.nq>;
+  mf:result <urdna2015/test066-urdna2015.nq>;
+  .
+
+:test067 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (1-2-0, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test067-in.nq>;
+  mf:result <urdna2015/test067-urdna2015.nq>;
+  .
+
+:test068 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (2-1-0, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test068-in.nq>;
+  mf:result <urdna2015/test068-urdna2015.nq>;
+  .
+
+:test069 a rdfc:Urdna2015EvalTest;
+  mf:name "blank node - double circle of 3 (2-0-1, reversed)";
+  rdft:approval rdft:Proposed;
+  mf:action <urdna2015/test069-in.nq>;
+  mf:result <urdna2015/test069-urdna2015.nq>;
   .
