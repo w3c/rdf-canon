@@ -2652,13 +2652,31 @@ disclose.
     <h3>Dataset Poisoning</h3>
 
     <p class="issue" title="Attackers can construct poison Datasets">
-Add test that warns that attackers can construct Datasets which are known to
+Add text that warns that attackers can construct Datasets which are known to
 take large amounts of compute time. The algorithm has a mechanism to detect
 and prevent this sort of abuse, but implementers need to ensure that they
 think holistically about their system such as what happens if they don't have
 rate limiting on a service exposed to the Internet and they are the subject of
 a DDoS. Default mechanisms that prevent excessive use of compute when an
 attacker sends a poisoned Dataset might be different from system to system.
+    </p>
+  </section>
+
+
+  <section>
+    <h3>Formal Verification Incomplete</h3>
+
+    <p class="issue" title="Formal verification of algorithm is incomplete">
+Add text that warns implementers that, while the algorithm has a mathematical
+proof associated with it that has had peer review, and while a W3C WG
+has reviewed the algorithms and that there are multiple interoperable
+implementations, that a formal proof using a system such as Coq isn't available
+at this time. We are highly confident of the correctness of the algorithm,
+but we will not be able to say with 100% certainty that it is correct until
+we have a formal, machine-based verification of the proof. Any system that
+utilizes this canonicalization mechanism should have a backup canonicalization
+mechanism, such as JCS, ready in the event that an unrecoverable flaw is found
+in this algorithm.
     </p>
   </section>
 
