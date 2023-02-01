@@ -63,7 +63,7 @@
     // name of the 
     group: "rch",
     testSuiteURI: "https://w3c.github.io/rdf-canon/tests/",
-    xref: ["rdf11-concepts", "infra"],
+    xref: ["infra"],
     doJsonLd:     true,
     wgPublicList: "public-rch-wg",
     lint: { "informative-dfn": false }
@@ -194,7 +194,7 @@
       <li>Determining if one serialization is isomorphic to another.</li>
       <li>Digital signing of graphs (datasets) independent of serialization or format.</li>
       <li>Comparing two graphs (datasets) to find differences.</li>
-      <li>Communicating change sets when remotely updating an <a>RDF source</a>.</li>
+      <li>Communicating change sets when remotely updating an <a data-cite="RDF11-CONCEPTS#dfn-rdf-source">RDF source</a>.</li>
     </ul>
     <p>A canonicalization algorithm is necessary, but not necessarily sufficient, to handle many of these use cases. The use of <a>blank nodes</a> in RDF graphs and datasets has a long history and creates inevitable complexities. Blank nodes are used for different purposes:</p>
     <ul>
@@ -220,7 +220,7 @@
 
     <p>RDF does have a provision for allowing blank nodes
       to be published in an externally identifiable way through the use of
-      <a>Skolem IRIs</a>,
+      <a data-cite="RDF11-CONCEPTS#dfn-skolem-iri">Skolem IRIs</a>,
       which allow a given RDF store to replace the use of blank nodes
       in a concrete syntax with <a>IRIs</a>,
       which then serve to repeatably identify that blank node within that particular RDF store;
@@ -383,7 +383,7 @@
       <dd>A <a>blank node</a>
         as specified by [[!RDF11-CONCEPTS]]. In short, it is a node in a graph that is
         neither an <a>IRI</a>, nor a
-        <a>literal</a>.</dd>
+        <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>.</dd>
       <dt><dfn data-cite="RDF11-CONCEPTS#dfn-blank-node-identifier">blank node identifier</dfn></dt>
       <dd>A <a>blank node identifier</a>
         as specified by [[!RDF11-CONCEPTS]]. In short, it is a <a>string</a> that begins
@@ -945,15 +945,15 @@
                   relating each <a>blank node</a> with the set of <a>quads</a>
                   of which it is a component.</p>
                 <p class="note">
-                  <a>Literal</a> components of
+                  <a data-cite="RDF11-CONCEPTS#dfn-literal">Literal</a> components of
                   <a>quads</a> are not subject to any normalization.
                   As noted in
                   <a data-cite="RDF11-CONCEPTS#section-Graph-Literal">Section 3.3</a>
                   of [[RDF11-CONCEPTS]],
-                  <a>literal term equality</a>
+                  <a data-cite="RDF11-CONCEPTS#dfn-term-equal">literal term equality</a>
                   is based on the
-                  <a>lexical form</a>,
-                  rather than the <a>literal value</a>,
+                  <a data-cite="RDF11-CONCEPTS#dfn-lexical-form">lexical form</a>,
+                  rather than the <a data-cite="RDF11-CONCEPTS#dfn-literal-value">literal value</a>,
                   so two literals `"01"^^xs:integer` and `"1"^^xs:integer` are treated as distinct resources.
                 </p>
               </details>
@@ -3160,7 +3160,7 @@
       <a href="https://github.com/w3c/rdf-canon/issues/15">Issue 15</a>
       in <a href="#canon-algorithm" class="sectionRef"></a>,
       adding a note that
-      <a>literal</a>
+      <a data-cite="RDF11-CONCEPTS#dfn-literal">literal</a>
       components of <a>quads</a> are not normalized,
       and two literals with different syntactic representations
       remain distinct resources.</li>
