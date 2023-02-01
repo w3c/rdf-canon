@@ -2638,7 +2638,7 @@ disclosure schemes that graph structure might reveal information about the
 entity disclosing the information. For example, knowing that a blank node
 contains two triples vs. five triples might reveal that the entity that
 is disclosing the information is a part of a subclass of a population,
-which might be enough to identify them beyond what the discloser intended to
+which might be enough to disclose information beyond what the discloser intended to
 disclose.
     </p>
   </section>
@@ -2651,14 +2651,14 @@ disclose.
   <section>
     <h3>Dataset Poisoning</h3>
 
-    <p class="issue" title="Attackers can construct poison Datasets">
-Add text that warns that attackers can construct Datasets which are known to
-take large amounts of compute time. The algorithm has a mechanism to detect
+    <p class="issue" title="Attackers can construct poison datasets">
+Add text that warns that attackers can construct datasets which are known to
+take large amounts of compute time to canonize. The algorithm has a mechanism to detect
 and prevent this sort of abuse, but implementers need to ensure that they
 think holistically about their system such as what happens if they don't have
 rate limiting on a service exposed to the Internet and they are the subject of
 a DDoS. Default mechanisms that prevent excessive use of compute when an
-attacker sends a poisoned Dataset might be different from system to system.
+attacker sends a poisoned dataset might be different from system to system.
     </p>
   </section>
 
@@ -2675,8 +2675,8 @@ at this time. We are highly confident of the correctness of the algorithm,
 but we will not be able to say with 100% certainty that it is correct until
 we have a formal, machine-based verification of the proof. Any system that
 utilizes this canonicalization mechanism should have a backup canonicalization
-mechanism, such as JCS, ready in the event that an unrecoverable flaw is found
-in this algorithm.
+mechanism, such as JCS, or employ other mitigations, such as schema-based
+validation, ready in the event that an unrecoverable flaw is found in this algorithm.
     </p>
   </section>
 
