@@ -89,15 +89,6 @@
       "result": "urdna2015/test006-urdna2015.nq"
     },
     {
-      "id": "manifest-urdna2015#test007",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "coerce CURIE value",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test007-in.nq",
-      "result": "urdna2015/test007-urdna2015.nq"
-    },
-    {
       "id": "manifest-urdna2015#test008",
       "type": "rdfc:Urdna2015EvalTest",
       "name": "single subject complex",
@@ -134,15 +125,6 @@
       "result": "urdna2015/test011-urdna2015.nq"
     },
     {
-      "id": "manifest-urdna2015#test012",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "type-coerced type, remove duplicate reference",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test012-in.nq",
-      "result": "urdna2015/test012-urdna2015.nq"
-    },
-    {
       "id": "manifest-urdna2015#test013",
       "type": "rdfc:Urdna2015EvalTest",
       "name": "type-coerced type, cycle",
@@ -159,15 +141,6 @@
       "approval": "rdft:Proposed",
       "action": "urdna2015/test014-in.nq",
       "result": "urdna2015/test014-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test015",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "top level context",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test015-in.nq",
-      "result": "urdna2015/test015-urdna2015.nq"
     },
     {
       "id": "manifest-urdna2015#test016",
@@ -305,24 +278,6 @@
       "result": "urdna2015/test030-urdna2015.nq"
     },
     {
-      "id": "manifest-urdna2015#test031",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "bnode (1)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test031-in.nq",
-      "result": "urdna2015/test031-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test032",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "bnode (2)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test032-in.nq",
-      "result": "urdna2015/test032-urdna2015.nq"
-    },
-    {
       "id": "manifest-urdna2015#test033",
       "type": "rdfc:Urdna2015EvalTest",
       "name": "disjoint identical subgraphs (1)",
@@ -359,15 +314,6 @@
       "result": "urdna2015/test036-urdna2015.nq"
     },
     {
-      "id": "manifest-urdna2015#test037",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "reordered w/strings (3)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test037-in.nq",
-      "result": "urdna2015/test037-urdna2015.nq"
-    },
-    {
       "id": "manifest-urdna2015#test038",
       "type": "rdfc:Urdna2015EvalTest",
       "name": "reordered 4 bnodes, reordered 2 properties (1)",
@@ -393,24 +339,6 @@
       "approval": "rdft:Proposed",
       "action": "urdna2015/test040-in.nq",
       "result": "urdna2015/test040-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test041",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "reordered 6 bnodes (2)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test041-in.nq",
-      "result": "urdna2015/test041-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test042",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "reordered 6 bnodes (3)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test042-in.nq",
-      "result": "urdna2015/test042-urdna2015.nq"
     },
     {
       "id": "manifest-urdna2015#test043",
@@ -465,42 +393,6 @@
       "approval": "rdft:Proposed",
       "action": "urdna2015/test048-in.nq",
       "result": "urdna2015/test048-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test049",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "remove null",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test049-in.nq",
-      "result": "urdna2015/test049-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test050",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "nulls",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test050-in.nq",
-      "result": "urdna2015/test050-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test051",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "merging subjects",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test051-in.nq",
-      "result": "urdna2015/test051-urdna2015.nq"
-    },
-    {
-      "id": "manifest-urdna2015#test052",
-      "type": "rdfc:Urdna2015EvalTest",
-      "name": "alias keywords",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "urdna2015/test052-in.nq",
-      "result": "urdna2015/test052-urdna2015.nq"
     },
     {
       "id": "manifest-urdna2015#test053",
