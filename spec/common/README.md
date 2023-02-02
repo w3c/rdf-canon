@@ -1,6 +1,6 @@
 # Common files for RDF Dataset Canonicalization
 
-This repository is meant to be used as a submodule in multiple repository holding WG specifications.
+This repository is meant to be used as a submodule in multiple repositories holding WG specifications.
 
 ## Retrieving group participants
 
