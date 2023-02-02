@@ -1,10 +1,10 @@
 // Retrieve the list of users for a working group as a sentence.
 // APIKEY and GROUP can be specified via either enironment variable or argument
 // usage:
-//   APIKEY=<apikey> GROUP=wg/rdf-star node participants.js
+//   APIKEY=<apikey> GROUP=wg/rch node participants.js
 // or
 //   node participants.js <apikey> wg/rch
-// group defaults to wg/rdf-star
+// group defaults to wg/rch
 
 
 const https = require('https');
