@@ -4,6 +4,7 @@
 <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
 <link href='earl.jsonld' rel='alternate' />
 <link href='https://www.w3.org/StyleSheets/TR/base' rel='stylesheet' />
+<link href='rdfjs-c14n-report.ttl' rel='related' />
 <link href='ruby-earl.ttl' rel='related' />
 <title>
 RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
@@ -89,8 +90,8 @@ RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
 EARL results from the RDF Dataset Canonicalization and Hash 1.0 Test Suite
 </h2>
 <h2 id='w3c-document-28-october-2015'>
-<time class='dt-published' datetime='2023-01-25' property='dc:issued'>
-25 January 2023
+<time class='dt-published' datetime='2023-02-11' property='dc:issued'>
+11 February 2023
 </time>
 </h2>
 <dl>
@@ -194,6 +195,13 @@ Test Subjects
 <ul class='toc'>
 <li class='tocline'>
 <span class='secno'>A.1</span>
+<a class='tocxref' href='#subj_rdfjs_c14n_TypeScript'>
+rdfjs-c14n
+ (TypeScript)
+</a>
+</li>
+<li class='tocline'>
+<span class='secno'>A.2</span>
 <a class='tocxref' href='#subj_Ruby_RDF_Normalize_Ruby'>
 Ruby RDF::Normalize
  (Ruby)
@@ -281,6 +289,13 @@ Test Manifests
 Test
 </th>
 <th>
+<a href='#subj_rdfjs_c14n_TypeScript'>
+rdfjs-c14n
+<br />
+(TypeScript)
+</a>
+</th>
+<th>
 <a href='#subj_Ruby_RDF_Normalize_Ruby'>
 Ruby RDF::Normalize
 <br />
@@ -295,10 +310,16 @@ Ruby RDF::Normalize
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002'>Test test002: duplicate property iri values</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -311,10 +332,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004'>Test test004: bnode plus embed w/subject</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -327,6 +354,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -334,11 +364,6 @@ PASS
 </td>
 <td class='PASS'>
 PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test007'>Test test007: coerce CURIE value</a>
 </td>
 <td class='PASS'>
 PASS
@@ -351,10 +376,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009'>Test test009: multiple subjects - complex</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -367,6 +398,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -374,11 +408,6 @@ PASS
 </td>
 <td class='PASS'>
 PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test012'>Test test012: type-coerced type, remove duplicate reference</a>
 </td>
 <td class='PASS'>
 PASS
@@ -391,6 +420,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -398,11 +430,6 @@ PASS
 </td>
 <td class='PASS'>
 PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test015'>Test test015: top level context</a>
 </td>
 <td class='PASS'>
 PASS
@@ -415,10 +442,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017'>Test test017: blank node - dual link - non-embed</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -431,10 +464,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019'>Test test019: blank node - disjoint self links</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -447,10 +486,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021'>Test test021: blank node - circle of 2</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -463,6 +508,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -471,10 +519,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024'>Test test024: blank node - double circle of 3 (1-2-3)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024'>Test test024: blank node - double circle of 3 (0-1-2)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -482,7 +536,10 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025'>Test test025: blank node - double circle of 3 (1-3-2)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025'>Test test025: blank node - double circle of 3 (0-2-1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -490,7 +547,10 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026'>Test test026: blank node - double circle of 3 (2-1-3)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026'>Test test026: blank node - double circle of 3 (1-0-2)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -498,7 +558,10 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027'>Test test027: blank node - double circle of 3 (2-3-1)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027'>Test test027: blank node - double circle of 3 (1-2-0)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -506,7 +569,10 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028'>Test test028: blank node - double circle of 3 (3-2-1)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028'>Test test028: blank node - double circle of 3 (2-1-0)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -514,7 +580,10 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029'>Test test029: blank node - double circle of 3 (3-1-2)</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029'>Test test029: blank node - double circle of 3 (2-0-1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -527,19 +596,6 @@ PASS
 <td class='PASS'>
 PASS
 </td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test031'>Test test031: bnode (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test032'>Test test032: bnode (2)</a>
-</td>
 <td class='PASS'>
 PASS
 </td>
@@ -547,6 +603,9 @@ PASS
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033'>Test test033: disjoint identical subgraphs (1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -559,10 +618,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035'>Test test035: reordered w/strings (1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -575,11 +640,6 @@ PASS
 <td class='PASS'>
 PASS
 </td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test037'>Test test037: reordered w/strings (3)</a>
-</td>
 <td class='PASS'>
 PASS
 </td>
@@ -587,6 +647,9 @@ PASS
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038'>Test test038: reordered 4 bnodes, reordered 2 properties (1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -599,6 +662,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -606,19 +672,6 @@ PASS
 </td>
 <td class='PASS'>
 PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test041'>Test test041: reordered 6 bnodes (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test042'>Test test042: reordered 6 bnodes (3)</a>
 </td>
 <td class='PASS'>
 PASS
@@ -631,10 +684,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044'>Test test044: evil (1)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -647,10 +706,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046'>Test test046: evil (3)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -663,6 +728,9 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
@@ -670,35 +738,6 @@ PASS
 </td>
 <td class='PASS'>
 PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test049'>Test test049: remove null</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test050'>Test test050: nulls</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test051'>Test test051: merging subjects</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test052'>Test test052: alias keywords</a>
 </td>
 <td class='PASS'>
 PASS
@@ -711,10 +750,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054'>Test test054: t-graph</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -727,10 +772,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056'>Test test056: simple reorder (2)</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -743,10 +794,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058'>Test test058: unnamed graph with blank node objects</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -759,10 +816,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060'>Test test060: n-quads escaping</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -775,10 +838,16 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='normative'>
 <td>
 <a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062'>Test test062: same literal value with multiple datatypes</a>
+</td>
+<td class='PASS'>
+PASS
 </td>
 <td class='PASS'>
 PASS
@@ -791,10 +860,82 @@ PASS
 <td class='PASS'>
 PASS
 </td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064'>Test test064: blank node - double circle of 3 (0-1-2, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065'>Test test065: blank node - double circle of 3 (0-2-1, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066'>Test test066: blank node - double circle of 3 (1-0-2, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067'>Test test067: blank node - double circle of 3 (1-2-0, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068'>Test test068: blank node - double circle of 3 (2-1-0, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069'>Test test069: blank node - double circle of 3 (2-0-1, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
 </tr>
 <tr class='summary'>
 <td>
-Percentage passed out of 63 Tests
+Percentage passed out of 57 Tests
+</td>
+<td class='passed-all'>
+100.0%
 </td>
 <td class='passed-all'>
 100.0%
@@ -812,8 +953,58 @@ Test Subjects
 This report was tested using the following test subjects:
 </p>
 <dl>
-<dt id='subj_Ruby_RDF_Normalize_Ruby'>
+<dt id='subj_rdfjs_c14n_TypeScript'>
 <span class='secno'>A.1</span>
+<a href='https://iherman.github.io/rdfjs-c14n/'>
+<span about='https://iherman.github.io/rdfjs-c14n/' property='doap:name'>rdfjs-c14n</span>
+</a>
+</dt>
+<dd>
+<dl>
+<dt>Description</dt>
+<dd lang='en' property='doap:description'>Implementation in Typescript of the RDF Canonicalization Algorithm URDNA2015, relying on the RDF/JS interfaces</dd>
+<dt>Release</dt>
+<dd property='doap:release'><span property='doap:revision'>1.0.4</span></dd>
+<dt>Programming Language</dt>
+<dd property='doap:programming-language'>TypeScript</dd>
+<dt>Home Page</dt>
+<dd>
+<a href='https://iherman.github.io/rdfjs-c14n/' property='doap:homepage'>
+https://iherman.github.io/rdfjs-c14n/
+</a>
+</dd>
+<dt>Developer</dt>
+<dd rel='doap:developer'>
+<div>
+<a href='https://www.ivan-herman.net/foaf#me'>
+<span property='foaf:name'>Ivan Herman</span>
+</a>
+<a href='https://www.ivan-herman.net/' property='foaf:homepage'>
+https://www.ivan-herman.net/
+</a>
+</div>
+</dd>
+<dt>
+Test Suite Compliance
+</dt>
+<dd>
+<table class='report'>
+<tbody>
+<tr>
+<td>
+
+</td>
+<td class='passed-all'>
+57/57 (100.0%)
+</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</dd>
+<dt id='subj_Ruby_RDF_Normalize_Ruby'>
+<span class='secno'>A.2</span>
 <a href='https://rubygems.org/gems/rdf-normalize'>
 <span about='https://rubygems.org/gems/rdf-normalize' property='doap:name'>Ruby RDF::Normalize</span>
 </a>
@@ -854,7 +1045,7 @@ Test Suite Compliance
 
 </td>
 <td class='passed-all'>
-63/63 (100.0%)
+57/57 (100.0%)
 </td>
 </tr>
 </tbody>
@@ -873,6 +1064,9 @@ Individual Test Results
 Individual test results used to construct this report are available here:
 </p>
 <ul>
+<li>
+<a class='source' href='rdfjs-c14n-report.ttl'>rdfjs-c14n-report.ttl</a>
+</li>
 <li>
 <a class='source' href='ruby-earl.ttl'>ruby-earl.ttl</a>
 </li>

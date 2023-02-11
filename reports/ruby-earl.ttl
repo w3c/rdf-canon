@@ -34,7 +34,7 @@
   doap:created "2022-11-27"^^xsd:date;
 ] .
 <> foaf:primaryTopic <https://rubygems.org/gems/rdf-normalize> ;
-  dc:issued "2023-01-25T15:03:17-08:00"^^xsd:dateTime ;
+  dc:issued "2023-02-11T14:57:03-08:00"^^xsd:dateTime ;
   foaf:maker <https://greggkellogg.net/foaf#me> .
 
 <https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor;
@@ -49,7 +49,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -59,7 +59,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -69,7 +69,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -79,7 +79,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -89,7 +89,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -99,17 +99,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test007>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -119,7 +109,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -129,7 +119,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -139,7 +129,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -149,17 +139,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test012>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -169,7 +149,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -179,17 +159,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test015>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -199,7 +169,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -209,7 +179,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -219,7 +189,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -229,7 +199,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -239,7 +209,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -249,7 +219,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -259,7 +229,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -269,7 +239,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -279,7 +249,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -289,7 +259,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -299,7 +269,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -309,7 +279,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -319,7 +289,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -329,7 +299,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -339,27 +309,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test031>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test032>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -369,7 +319,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -379,7 +329,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -389,7 +339,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -399,17 +349,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test037>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -419,7 +359,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -429,7 +369,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -439,27 +379,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test041>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test042>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -469,7 +389,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -479,7 +399,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -489,7 +409,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -499,7 +419,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -509,7 +429,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -519,47 +439,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test049>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test050>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test051>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test052>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -569,7 +449,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -579,7 +459,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -589,7 +469,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -599,7 +479,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -609,7 +489,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -619,7 +499,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -629,7 +509,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -639,7 +519,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -649,7 +529,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -659,7 +539,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -669,5 +549,65 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-01-25T15:03:17-08:00"^^xsd:dateTime];
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <https://greggkellogg.net/foaf#me>;
+  earl:subject <https://rubygems.org/gems/rdf-normalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2023-02-11T14:57:03-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
