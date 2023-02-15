@@ -29,8 +29,8 @@ jobs:
           (cd reports; rake)
       - name: setup git config
         run: |
-          git config user.name "Report generation bot"
-          git config user.email "<>"
+          git config --global user.name "Report generation bot"
+          git config --global user.email "<>"
           git checkout -b $branch
       - name: commit the changes
         run: |
