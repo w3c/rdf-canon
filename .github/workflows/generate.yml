@@ -29,12 +29,11 @@ jobs:
           (cd reports; rake)
       - name: setup git config
         run: |
-          git config --global user.name "Report generation bot"
-          git config --global user.email "<>"
-          git checkout -b $branch
-      - name: commit the changes
-        run: |
           msg="Automated report generation"
+          branch="${{ github.base_ref }}-auto"
+          git config user.name "Report generation bot"
+          git config user.email "<>"
+          git checkout -b $branch
           git add tests/index.html
           git add tests/manifest*
           git add reports/index.html
