@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1
