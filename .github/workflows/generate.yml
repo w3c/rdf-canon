@@ -1,0 +1,44 @@
+name: Automatic Report and Test Manifest Generation
+on:
+  push:
+    branches: [main]
+    paths: ["reports/**", "tests/**"]
+  pull_request:
+    branches: [ main ]
+    paths: ["reports/**", "tests/**"]
+
+jobs:
+  build:
+    name: Generate Reports using Ruby
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - uses: ruby/setup-ruby@v1
+      - name: Install dependencies
+        run: |
+          bundle install
+      - name: Generate Test Manifests
+        run: |
+          bundle exec tests/mk_manifest.rb
+      - name: Generate Report
+        run: |
+          (cd reports; rake)
+      - name: setup git config
+        run: |
+          git config user.name "Report generation bot"
+          git config user.email "<>"
+          git checkout -b $branch
+      - name: commit the changes
+        run: |
+          msg="Automated report generation"
+          git add tests/index.html
+          git add tests/manifest*
+          git add reports/index.html
+          git add reports/earl.*
+          git commit -am "$msg"
+          git push --set-upstream origin $branch
+          gh pr create -t "$msg" -b "$msg"
+          gh pr merge $branch --auto --merge
+

@@ -1,0 +1,92 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    amazing_print (1.4.0)
+    builder (3.2.4)
+    connection_pool (2.3.0)
+    csv (3.2.6)
+    earl-report (0.8.0)
+      haml (~> 5.2)
+      json-ld (~> 3.2)
+      kramdown (~> 2.3)
+      rdf (~> 3.2)
+      rdf-ordered-repo (~> 3.2)
+      rdf-turtle (~> 3.2)
+      rdf-vocab (~> 3.2)
+      sparql (~> 3.2)
+    ebnf (2.3.1)
+      amazing_print (~> 1.4)
+      htmlentities (~> 4.3)
+      rdf (~> 3.2)
+      scanf (~> 1.0)
+      sxp (~> 1.2)
+      unicode-types (~> 1.7)
+    getoptlong (0.2.0)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
+    htmlentities (4.3.4)
+    json-canonicalization (0.3.1)
+    json-ld (3.2.3)
+      htmlentities (~> 4.3)
+      json-canonicalization (~> 0.3)
+      link_header (~> 0.0, >= 0.0.8)
+      multi_json (~> 1.15)
+      rack (~> 2.2)
+      rdf (~> 3.2, >= 3.2.9)
+    kramdown (2.4.0)
+      rexml
+    link_header (0.0.8)
+    logger (1.5.3)
+    matrix (0.4.2)
+    multi_json (1.15.0)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
+    rack (2.2.6.2)
+    rake (13.0.6)
+    rdf (3.2.9)
+      link_header (~> 0.0, >= 0.0.8)
+    rdf-aggregate-repo (3.2.1)
+      rdf (~> 3.2)
+    rdf-ordered-repo (3.2.1)
+      rdf (~> 3.2, >= 3.2.1)
+    rdf-turtle (3.2.1)
+      ebnf (~> 2.3)
+      rdf (~> 3.2)
+    rdf-vocab (3.2.3)
+      rdf (~> 3.2, >= 3.2.4)
+    rdf-xsd (3.2.1)
+      rdf (~> 3.2)
+      rexml (~> 3.2)
+    rexml (3.2.5)
+    scanf (1.0.0)
+    sparql (3.2.5)
+      builder (~> 3.2)
+      ebnf (~> 2.2, >= 2.3.1)
+      logger (~> 1.5)
+      rdf (~> 3.2, >= 3.2.8)
+      rdf-aggregate-repo (~> 3.2)
+      rdf-xsd (~> 3.2)
+      sparql-client (~> 3.2, >= 3.2.1)
+      sxp (~> 1.2, >= 1.2.2)
+    sparql-client (3.2.1)
+      net-http-persistent (~> 4.0, >= 4.0.1)
+      rdf (~> 3.2, >= 3.2.6)
+    sxp (1.2.3)
+      matrix (~> 0.4)
+      rdf (~> 3.2)
+    temple (0.10.0)
+    tilt (2.0.11)
+    unicode-types (1.8.0)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  csv
+  earl-report
+  getoptlong
+  rake
+
+BUNDLED WITH
+   2.4.6
