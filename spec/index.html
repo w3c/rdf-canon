@@ -552,9 +552,10 @@
         where the graph component `g` is empty if and only if the
         <a data-lt="RDF triple">triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
         This algorithm considers an RDF dataset to be a set of quads.
-        Two RDF datasets are considered to be isomorphic (i.e., the same modulo blank nodes),
-        if and only if they return the same canonically labeled list of quads
-        via <a>URDNA2015</a>.</p>
+        It is expected that, for two RDF datasets,
+        <a>URDNA2015</a> returns the same canonically labeled list of quads
+        if and only if the two datasets are isomorphic (i.e., the same modulo blank nodes).
+      </p>
 
       <p><a>URDNA2015</a> consists of several sub-algorithms.
         These sub-algorithms are introduced in the following sub-sections.
