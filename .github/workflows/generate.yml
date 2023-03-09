@@ -19,27 +19,15 @@ jobs:
         with:
           ruby-version: 3.1
       - name: Install dependencies
-        run: |
-          bundle install
+        run:  bundle install
       - name: Generate Test Manifests
-        run: |
-          bundle exec tests/mk_manifest.rb
+        run:  bundle exec tests/mk_manifest.rb
       - name: Generate Report
-        run: |
-          (cd reports; rake)
-      - name: setup git config
-        run: |
-          msg="Automated report generation"
-          branch="${{ github.base_ref }}-auto"
-          git config user.name "Report generation bot"
-          git config user.email "<>"
-          git checkout -b $branch
-          git add tests/index.html
-          git add tests/manifest*
-          git add reports/index.html
-          git add reports/earl.*
-          git commit -am "$msg"
-          git push --set-upstream origin $branch
-          gh pr create -t "$msg" -b "$msg"
-          gh pr merge $branch --auto --merge
+        run:  (cd reports; rake)
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated report generation
+          commit_user_name: Report generation bot
+          commit_user_email: <>
 
