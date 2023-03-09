@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1
@@ -24,7 +22,6 @@ jobs:
         run:  bundle exec tests/mk_manifest.rb
       - name: Generate Report
         run:  (cd reports; rake)
-      # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automated report generation
