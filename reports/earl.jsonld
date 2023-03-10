@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-01-26"
+        "@value": "2023-03-09"
       },
       "revision": "0.8.0"
     },
@@ -236,27 +236,27 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test001-urdna2015.nq",
           "assertions": [
             {
-              "@id": "_:b113",
+              "@id": "_:b1",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b114",
+                "@id": "_:b2",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b228",
+              "@id": "_:b116",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b229",
+                "@id": "_:b117",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2589,27 +2589,27 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test069-urdna2015.nq",
           "assertions": [
             {
-              "@id": "_:b1",
+              "@id": "_:b113",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b2",
+                "@id": "_:b114",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b116",
+              "@id": "_:b228",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b117",
+                "@id": "_:b229",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
