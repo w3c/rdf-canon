@@ -3,7 +3,7 @@
 #
 # Generating vocab.jsonld is equivalent to running the following:
 #
-#    jsonld --compact --context vocab_context.jsonld --input-format ttl vocab.ttl  -o vocab.jsonld
+#    rdf serialize -o vocab.jsonld --output-format jsonld --context vocab_context.jsonld vocab.ttl
 require 'linkeddata'
 require 'haml'
 require 'active_support'

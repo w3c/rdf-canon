@@ -4,17 +4,15 @@ test subjects claiming JSON-LD processor conformance.
 
 The consolidated report is saved to `index.html` generated
 using the
-[`earl-report` Ruby gem](https://rubygems.org/gems/earl-report).
+[`earl-report` Ruby gem](https://rubygems.org/gems/earl-report) via the Rakefile.
+
+The [earl.ttl](earl.ttl), [earl.jsonld](earl.jsonld), [manifest.nt](manifest.nt), and [index.html](index.html) files are built automatically via a GitHub Action when files change in this directory, and should not be edited directly.
+
 Run it as follows:
 
 ```sh
-$ gem install earl-report
-$ rm -f manifests.nt && rake manifests.nt
-$ earl-report --format json -o earl.jsonld *.ttl
-$ earl-report --json --format ttl -o earl.ttl earl.jsonld
-$ earl-report --json --format html --template template.haml -o index.html earl.jsonld
+$ rake
 ```
-
 
 ## Instructions for submitting implementation reports
 

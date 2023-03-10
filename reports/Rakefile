@@ -1,7 +1,7 @@
-task default: [ "manifests.nt", "earl.ttl", "earl.html" ]
+task default: [ "manifests.nt", "earl.jsonld", "earl.ttl", "index.html" ]
 
 desc "Create concatenated test manifests"
-file "manifests.nt" do
+file "manifests.nt" => File.expand_path("../../tests/manifest-urdna2015.ttl", __FILE__) do
   require 'rdf'
   require 'json/ld'
   require 'rdf/ntriples'
@@ -12,4 +12,19 @@ file "manifests.nt" do
     unique_bnodes: true)
   puts "write"
   RDF::NTriples::Writer.open("manifests.nt", unique_bnodes: true, validate: false) {|w| w << graph}
+end
+
+desc "Build JSON-LD"
+file "earl.jsonld" => (Dir.glob("*.ttl").unshift("manifests.nt") - %w(earl.ttl)) do
+  %x{earl-report --format json -o earl.jsonld *.ttl}
+end
+
+desc "Build Turtle"
+file "earl.ttl" => "earl.jsonld" do
+  %x{earl-report --json --format ttl -o earl.ttl earl.jsonld}
+end
+
+desc "Build HTML"
+file "index.html" => "earl.jsonld" do
+  %x{earl-report --json --format html --template template.haml -o index.html earl.jsonld}
 end

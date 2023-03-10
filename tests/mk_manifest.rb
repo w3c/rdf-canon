@@ -111,14 +111,16 @@ class Manifest
 
   def to_html
     # Create vocab.html using vocab_template.haml and compacted vocabulary
-    template = File.read("template.haml")
+    template = File.read(File.expand_path("../template.haml", __FILE__))
     manifests = TITLE.keys.inject({}) do |memo, v|
-      memo["manifest-#{v}"] = ::JSON.load(File.read("manifest-#{v}.jsonld"))
+      json_man = File.expand_path("../manifest-#{v}.jsonld", __FILE__)
+      memo["manifest-#{v}"] = ::JSON.load(File.read(json_man))
       memo
     end
 
+    json_man = File.expand_path("../manifest.jsonld", __FILE__)
     Haml::Engine.new(template, :format => :html5).render(self,
-      man: ::JSON.load(File.read("manifest.jsonld")),
+      man: ::JSON.load(File.read(json_man)),
       manifests: manifests
     )
   end
@@ -133,6 +135,8 @@ class Manifest
 ## 1. http://www.w3.org/Consortium/Legal/2008/04-testsuite-license
 ## 2. http://www.w3.org/Consortium/Legal/2008/03-bsd-license
 ## 3. http://www.w3.org/2004/10/27-testcases
+##
+## This file is generated automatciallly from manifest.csv, and should not be edited directly.
 ##
 ## Test types
 ## * rdfc:Urdna2015EvalTest  - Canonicalization using URDNA2015
@@ -221,12 +225,15 @@ if options[:format] || options[:variant]
 else
   Manifest::TITLE.keys.each do |variant|
     %w(jsonld ttl).each do |format|
-      File.open("manifest-#{variant}.#{format}", "w") do |output|
+      man = File.expand_path("../manifest-#{variant}.#{format}", __FILE__)
+      File.open(man, "w") do |output|
         output.puts(vocab.send("to_#{format}".to_sym, variant))
       end
     end
   end
-  File.open("index.html", "w") do |output|
+  
+  index  = File.expand_path("../.html", __FILE__)
+  File.open(index, "w") do |output|
     output.puts(vocab.to_html)
   end
 end
