@@ -2627,6 +2627,41 @@
   </section>
 </section>
 
+<section id="serialization">
+  <h2>Serialization</h2>
+
+  <p>This section describes the process of creating a serialized [[N-Quads]] representation
+    of a <a>normalized dataset</a>.</p>
+
+  <p>The <dfn class="lint-ignore">serialized canonical form</dfn> of a <a>normalized dataset</a>
+    is an <a data-cite="N-QUADS#n-quads-document">N-Quads document</a>
+    created by concatentaing each <a>quad</a> from the <a>normalized dataset</a>
+    represented in <a>canonical n-quads form</a>
+    and ordered in <a>code point order</a>.
+    The resulting document document has a media type of `application/n-quads`,
+    as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
+    of [[N-QUADS]].</p>
+
+  <aside id="ex-ser-unique-hashes"
+        class="example"
+        title="Canonical N-Quads representation of Unique Hashes">
+
+    <p>This example illustrates the result of serializing
+      the normalized dataset described in <a href="#ex-ca-unique-hashes"></a>.</p>
+
+    <pre id="ex-ser-unique-hashes-result"
+         data-transform="updateExample"
+         title="Canonical N-Quads representation of Unique Hashes">
+    <!--
+      <http://example.com/p> <http://example.com/q> _:c14n0 .
+      <http://example.com/p> <http://example.com/r> _:c14n1 .
+      _:c14n0 <http://example.com/s> <http://example.com/u> .
+      _:c14n1 <http://example.com/t> <http://example.com/u> .
+    -->
+    </pre>
+  </aside>
+</section>
+
 <section id="privacy-considerations">
   <h2>Privacy Considerations</h2>
 
@@ -2663,6 +2698,12 @@ attacker sends a poisoned dataset might be different from system to system.
     </p>
   </section>
 
+
+  <section id="iana">
+    <h2>IANA Considerations</h2>
+
+    <p class="ednote">TODO</p>
+  </section>
 
   <section>
     <h3>Formal Verification Incomplete</h3>
