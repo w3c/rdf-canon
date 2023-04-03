@@ -6,6 +6,7 @@ require 'csv'
 require 'json'
 require 'haml'
 require 'fileutils'
+require 'htmlbeautifier'
 
 class Manifest
   JSON_STATE = JSON::State.new(
@@ -119,10 +120,11 @@ class Manifest
     end
 
     json_man = File.expand_path("../manifest.jsonld", __FILE__)
-    Haml::Engine.new(template, :format => :html5).render(self,
+    rendered = Haml::Engine.new(template, :format => :html5).render(self,
       man: ::JSON.load(File.read(json_man)),
       manifests: manifests
     )
+    HtmlBeautifier.beautify(rendered)
   end
 
   def to_ttl(variant)
@@ -232,7 +234,7 @@ else
     end
   end
   
-  index  = File.expand_path("../.html", __FILE__)
+  index  = File.expand_path("../index.html", __FILE__)
   File.open(index, "w") do |output|
     output.puts(vocab.to_html)
   end

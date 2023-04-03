@@ -1,9 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    amazing_print (1.4.0)
     builder (3.2.4)
-    connection_pool (2.3.0)
+    connection_pool (2.4.0)
     csv (3.2.6)
     earl-report (0.8.0)
       haml (~> 5.2)
@@ -14,17 +13,17 @@ GEM
       rdf-turtle (~> 3.2)
       rdf-vocab (~> 3.2)
       sparql (~> 3.2)
-    ebnf (2.3.1)
-      amazing_print (~> 1.4)
+    ebnf (2.3.2)
       htmlentities (~> 4.3)
       rdf (~> 3.2)
       scanf (~> 1.0)
       sxp (~> 1.2)
-      unicode-types (~> 1.7)
+      unicode-types (~> 1.8)
     getoptlong (0.2.0)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
+    htmlbeautifier (1.4.2)
     htmlentities (4.3.4)
     json-canonicalization (0.3.1)
     json-ld (3.2.3)
@@ -40,9 +39,9 @@ GEM
     logger (1.5.3)
     matrix (0.4.2)
     multi_json (1.15.0)
-    net-http-persistent (4.0.1)
+    net-http-persistent (4.0.2)
       connection_pool (~> 2.2)
-    rack (2.2.6.2)
+    rack (2.2.6.4)
     rake (13.0.6)
     rdf (3.2.9)
       link_header (~> 0.0, >= 0.0.8)
@@ -76,7 +75,7 @@ GEM
       matrix (~> 0.4)
       rdf (~> 3.2)
     temple (0.10.0)
-    tilt (2.0.11)
+    tilt (2.1.0)
     unicode-types (1.8.0)
 
 PLATFORMS
@@ -87,6 +86,7 @@ DEPENDENCIES
   csv
   earl-report
   getoptlong
+  htmlbeautifier (~> 1.4)
   rake
 
 RUBY VERSION
