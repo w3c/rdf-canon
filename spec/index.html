@@ -2635,9 +2635,10 @@
 
   <p>The <dfn class="lint-ignore">serialized canonical form</dfn> of a <a>normalized dataset</a>
     is an <a data-cite="N-QUADS#n-quads-document">N-Quads document</a>
-    created by concatentaing each <a>quad</a> from the <a>normalized dataset</a>
-    represented in <a>canonical n-quads form</a>
-    and ordered in <a>code point order</a>.
+    created by representing each <a>quad</a> from the <a>normalized dataset</a>
+    in <a>canonical n-quads form</a>,
+    sorting them into <a>code point order</a>,
+    and concatenating them.
     The resulting document document has a media type of `application/n-quads`,
     as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
     of [[N-QUADS]].</p>
