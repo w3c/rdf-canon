@@ -2627,6 +2627,48 @@
   </section>
 </section>
 
+<section id="serialization">
+  <h2>Serialization</h2>
+
+  <p>This section describes the process of creating a serialized [[N-Quads]] representation
+    of a <a>normalized dataset</a>.</p>
+
+  <p>The <dfn class="lint-ignore">serialized canonical form</dfn> of a <a>normalized dataset</a>
+    is an <a data-cite="N-QUADS#n-quads-document">N-Quads document</a>
+    created by representing each <a>quad</a> from the <a>normalized dataset</a>
+    in <a>canonical n-quads form</a>,
+    sorting them into <a>code point order</a>,
+    and concatenating them.
+    The resulting document has a media type of `application/n-quads`,
+    as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
+    of [[N-QUADS]].</p>
+
+  <p>When serializing quads in <a>canonical n-quads form</a>
+    components which are <a>blank nodes</a> MUST be serialized using the
+    canonical label associated with the <a>blank node</a> in the <a>normalized dataset</a>.</p>
+
+  <aside id="ex-ser-unique-hashes"
+        class="example"
+        title="Canonical N-Quads representation of Unique Hashes">
+
+    <p>This example illustrates the result of serializing
+      the normalized dataset described in <a href="#ex-ca-unique-hashes"></a>.</p>
+
+    <pre id="ex-ser-unique-hashes-result"
+         class="nohighlight"
+         data-transform="updateExample"
+         title="Canonical N-Quads representation of Unique Hashes">
+    <!--
+      <http://example.com/p> <http://example.com/q> _:c14n0 .
+      <http://example.com/p> <http://example.com/r> _:c14n1 .
+      _:c14n0 <http://example.com/s> <http://example.com/u> .
+      _:c14n1 <http://example.com/t> <http://example.com/u> .
+      
+    -->
+    </pre>
+  </aside>
+</section>
+
 <section id="privacy-considerations">
   <h2>Privacy Considerations</h2>
 
@@ -2663,6 +2705,12 @@ attacker sends a poisoned dataset might be different from system to system.
     </p>
   </section>
 
+
+  <section id="iana">
+    <h2>IANA Considerations</h2>
+
+    <p class="ednote">TODO</p>
+  </section>
 
   <section>
     <h3>Formal Verification Incomplete</h3>
