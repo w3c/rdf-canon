@@ -2638,14 +2638,15 @@
     created by representing each <a>quad</a> from the <a>normalized dataset</a>
     in <a>canonical n-quads form</a>,
     sorting them into <a>code point order</a>,
-    and concatenating them.
+    and concatenating them with TODO separators.
+    <p class="ednote">TODO separators</p>
     The resulting document has a media type of `application/n-quads`,
     as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
     of [[N-QUADS]].</p>
 
-  <p>When serializing quads in <a>canonical n-quads form</a>
+  <p>When serializing quads in <a>canonical n-quads form</a>,
     components which are <a>blank nodes</a> MUST be serialized using the
-    canonical label associated with the <a>blank node</a> in the <a>normalized dataset</a>.</p>
+    canonical label associated with each <a>blank node</a> in the <a>normalized dataset</a>.</p>
 
   <aside id="ex-ser-unique-hashes"
         class="example"
