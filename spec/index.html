@@ -148,7 +148,7 @@
     for further discussion.</p>
 </section>
 
-<section id="introduction">
+<section id="introduction" class="informative">
   <h2>Introduction</h2>
 
   <p>When data scientists discuss canonicalization,
@@ -216,7 +216,7 @@
       RDF store
       implementations may use stable identifiers and may choose to make them portable).
       See <a data-cite="RDF11-CONCEPTS#section-blank-nodes">Blank Nodes</a>
-      in [[!RDF11-CONCEPTS]] for more information.</p>
+      in [[RDF11-CONCEPTS]] for more information.</p>
 
     <p>RDF does have a provision for allowing blank nodes
       to be published in an externally identifiable way through the use of
@@ -263,7 +263,7 @@
     </ul>
 
     <p>To understand the basics in this specification you must be familiar with
-      basic RDF concepts [[!RDF11-CONCEPTS]]. A working knowledge of
+      basic RDF concepts [[RDF11-CONCEPTS]]. A working knowledge of
       <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a> and
       <a href="https://en.wikipedia.org/wiki/Graph_isomorphism">graph isomorphism</a>
       is also recommended.</p>
@@ -2638,14 +2638,15 @@
     created by representing each <a>quad</a> from the <a>normalized dataset</a>
     in <a>canonical n-quads form</a>,
     sorting them into <a>code point order</a>,
-    and concatenating them.
+    and concatenating them. (Note that each canonical N-Quads statement ends with a new line, 
+    so no additional separators are needed in the concatenation.)
     The resulting document has a media type of `application/n-quads`,
     as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
     of [[N-QUADS]].</p>
 
-  <p>When serializing quads in <a>canonical n-quads form</a>
+  <p>When serializing quads in <a>canonical n-quads form</a>,
     components which are <a>blank nodes</a> MUST be serialized using the
-    canonical label associated with the <a>blank node</a> in the <a>normalized dataset</a>.</p>
+    canonical label associated with each <a>blank node</a> in the <a>normalized dataset</a>.</p>
 
   <aside id="ex-ser-unique-hashes"
         class="example"
@@ -2669,7 +2670,7 @@
   </aside>
 </section>
 
-<section id="privacy-considerations">
+<section id="privacy-considerations" class="informative">
   <h2>Privacy Considerations</h2>
 
   <section>
@@ -2688,7 +2689,7 @@ disclose.
 
 </section>
 
-<section id="security-considerations">
+<section id="security-considerations" class="informative">
   <h2>Security Considerations</h2>
 
   <section>
