@@ -1,4 +1,3 @@
-<_:s⁰> <_:p⁰> <_:o⁰> <_:g⁰> .
 <urn:ex:s:000:s\u20701> <urn:ex:000:p\u2070> <urn:ex:000:o\u2070> <urn:ex:000:g\u2070> .
 <urn:ex:s:000:s⁰2> <urn:ex:000:p⁰> <urn:ex:000:o⁰> <urn:ex:000:g⁰> .
 <urn:ex:s:001> <urn:ex:000:empty> "" .
@@ -20,19 +19,15 @@
 <urn:ex:s:001> <urn:ex:016> "∞" .
 <urn:ex:s:001> <urn:ex:017> <urn:ex:\u0065\u0078> .
 <urn:ex:s:001> <urn:ex:018> <urn:ex:\u221e> .
-<urn:ex:s:001> <urn:ex:019> <urn:ex:\u0020> .
-<urn:ex:s:002:\u0000> <urn:ex:020:\u0001> <urn:ex:\u0002> .
-<urn:ex:s:002:\u0061> <urn:ex:021:\u0062> <urn:ex:\u0063> .
+<urn:ex:s:001> <urn:ex:019> <urn:ex:\u002b> .
+<urn:ex:s:003> <urn:ex:020> <urn:ex:\u00a0> .
+<urn:ex:s:003> <urn:ex:021> "\uf600"^^<urn:ex:\u1f43> .
 <urn:ex:s:003> <urn:ex:022> "d"^^<urn:ex:\u0064\u0074> .
-<urn:ex:s:003> <urn:ex:023> "d"^^<urn:ex:\u0001> .
-<urn:ex:s:003> <urn:ex:024> <urn:ex:\u003e> .
-<urn:ex:s:003> <urn:ex:025> <urn:ex:\U0000003e> .
+<urn:ex:s:003> <urn:ex:023> "d"^^<urn:ex:\u0064> .
 <urn:ex:s:003> <urn:ex:026> "\U0001F303" .
 <urn:ex:s:003> <urn:ex:027> "🌃" .
 <urn:ex:s:003> <urn:ex:028> <urn:ex:\U0001F303> .
 <urn:ex:s:004> <urn:ex:029> "o" <urn:ex:\u221e> .
-<urn:ex:s:004> <urn:ex:030> "o" <_:∞> .
-<urn:ex:s:004> <urn:ex:031> "o" <_:\u221e> .
-<urn:ex:s:004> <urn:ex:032> "o" <_:\u0001> .
+<urn:ex:s:004> <urn:ex:030> "o" <urn:ex:∞> .
+<urn:ex:s:004> <urn:ex:031> "o" <urn:ex:\u221e> .
 <urn:ex:s:004> <urn:ex:033> "\u0009\u0020<>\"{}|^`\\" .
-<urn:ex:s:004> <urn:ex:034> <\u0000\u0020\u003c\u003e\u0022\u007b\u007d\u007c\u005e\u0060\u005c> .
