@@ -330,8 +330,8 @@
       <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
       <dd>
         The canonicalized representation of a quad is defined in <a href="#canonical-quads" class="sectionRef"></a>.
-        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a> in the same manner as a <a>subject</a>,
-        if present, and each quad is terminated with a single new line character (`U+000A`).
+        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a>, if present, in the same manner as 
+        a <a>subject</a>, and each quad is terminated with a single new line character (`U+000A`).
       </dd>
       <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
       <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
@@ -3187,7 +3187,7 @@ validation, ready in the event that an unrecoverable flaw is found in this algor
       <code>predicate</code>, 
       <code>object</code>,
       and <code>graphLabel</code>,
-      any of which MUST be a single space (<code>U+0020</code>).</li>
+      each of which MUST be a single space (<code>U+0020</code>).</li>
     <li><a data-cite="RDF11-CONCEPTS#dfn-literal">Literals</a> with the
       datatype <code>http://www.w3.org/2001/XMLSchema#string</code>
       MUST NOT use the datatype IRI part of the <a data-cite="N-QUADS#grammar-production-literal">literal</a>,
