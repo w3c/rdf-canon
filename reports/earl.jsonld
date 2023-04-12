@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-04"
+        "@value": "2023-04-12"
       },
       "revision": "0.8.0"
     },
