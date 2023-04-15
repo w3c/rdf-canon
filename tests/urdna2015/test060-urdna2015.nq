@@ -24,10 +24,19 @@
 <urn:ex:s:003> <urn:ex:021> ""^^<urn:ex:ὃ> .
 <urn:ex:s:003> <urn:ex:022> "d"^^<urn:ex:dt> .
 <urn:ex:s:003> <urn:ex:023> "d"^^<urn:ex:d> .
-<urn:ex:s:003> <urn:ex:026> "🌃" .
-<urn:ex:s:003> <urn:ex:027> "🌃" .
-<urn:ex:s:003> <urn:ex:028> <urn:ex:🌃> .
-<urn:ex:s:004> <urn:ex:029> "o" <urn:ex:∞> .
-<urn:ex:s:004> <urn:ex:030> "o" <urn:ex:∞> .
-<urn:ex:s:004> <urn:ex:031> "o" <urn:ex:∞> .
-<urn:ex:s:004> <urn:ex:033> "\t <>\"{}|^`\\" .
+<urn:ex:s:004> <urn:ex:024> "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F" .
+<urn:ex:s:004> <urn:ex:025> "\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F" .
+<urn:ex:s:004> <urn:ex:026> " !\"#$%&'()*+,-./" .
+<urn:ex:s:004> <urn:ex:027> "0123456789:;<=>?" .
+<urn:ex:s:004> <urn:ex:028> "@ABCDEFGHIJKLMNO" .
+<urn:ex:s:004> <urn:ex:029> "PQRSTUVWXYZ[\\]^_" .
+<urn:ex:s:004> <urn:ex:030> "`abcdefghijklmno" .
+<urn:ex:s:004> <urn:ex:031> "pqrstuvwxyz{|}~\u007F" .
+<urn:ex:s:004> <urn:ex:032> "" .
+<urn:ex:s:004> <urn:ex:033> "🌃" .
+<urn:ex:s:004> <urn:ex:034> "🌃" .
+<urn:ex:s:005> <urn:ex:035> <urn:ex:🌃> .
+<urn:ex:s:006> <urn:ex:036> "o" <urn:ex:∞> .
+<urn:ex:s:006> <urn:ex:037> "o" <urn:ex:∞> .
+<urn:ex:s:006> <urn:ex:038> "o" <urn:ex:∞> .
+<urn:ex:s:006> <urn:ex:039> "\t <>\"{}|^`\\" .
