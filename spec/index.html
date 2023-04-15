@@ -147,7 +147,7 @@
     and <span class="issue" data-number="10">Issue 10: C14N choice criteria</span>
     for further discussion.</p>
 
-  <p>At the time of publication, [[RDF11-CONCEPTS]] is the most recent recomendation
+  <p>At the time of publication, [[RDF11-CONCEPTS]] is the most recent recommendation
     defining <a>RDF datasets</a> and [[N-QUADS]],
     however work on an updated specification
     is ongoing within the <a href="https://www.w3.org/groups/wg/rdf-star">W3C RDF-star Working Group</a>.
@@ -3164,7 +3164,7 @@ validation, ready in the event that an unrecoverable flaw is found in this algor
 
   <p>This section defines a canonical form of N-Quads which has
     a completely specified layout.
-    The grammar for the language is the same.</p>
+    The grammar for the language remains unchanged.</p>
 
   <p>Canonical N-Quads updates and extends
     <a data-cite="N-TRIPLES#canonical-ntriples">Canonical N-Triples</a> in [[N-TRIPLES]]
@@ -3194,7 +3194,7 @@ validation, ready in the event that an unrecoverable flaw is found in this algor
       and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>.
     </li>
     <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only uppercase letters (<code>[A-F]</code>).</li>
-    <li>Within <a href="#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>,
+    <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>,
       the characters
       <code>U+0008</code> (<code title="BACKSPACE"><sub>BS</sub></code>),
       <code>U+0009</code> (<code title="HORIZONTAL TAB"><sub>HT</sub></code>),
@@ -3203,11 +3203,11 @@ validation, ready in the event that an unrecoverable flaw is found in this algor
       <code>U+000D</code>  (<code title="CARRIAGE RETURN"><sub>CR</sub></code>),
       <code>U+0022</code> (<code title="DOUBLE QUOTE">&quot;</code>), and
       <code>U+005C</code> (<code title="BACKSLASH">\</code>)
-      MUST be encoded using <code><a href="#grammar-production-ECHAR">ECHAR</a></code>.
+      MUST be encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.
       Characters in the range from <code>U+0000</code> to <code>U+001F</code>
       and <code>U+007F</code>  (<code title="delete"><sub>DEL</sub></code>)
-      that are not represented using <code><a href="#grammar-production-ECHAR">ECHAR</a></code>
-      MUST be represented by <code><a href="#grammar-production-UCHAR">UCHAR</a></code>.
+      that are not represented using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>
+      MUST be represented by <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>.
       All other characters MUST be represented by their native [[UNICODE]] representation.</li>
     <li>The token <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>U+000A</code>.</li>
     <li>The final <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
