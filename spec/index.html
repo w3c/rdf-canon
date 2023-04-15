@@ -146,6 +146,15 @@
     See <span class="issue" data-number="6">Issue 6: Compare the two algorithms, and decide on basis for our work</span>
     and <span class="issue" data-number="10">Issue 10: C14N choice criteria</span>
     for further discussion.</p>
+
+  <p>At the time of publication, [[RDF11-CONCEPTS]] is the most recent recommendation
+    defining <a>RDF datasets</a> and [[N-QUADS]],
+    however work on an updated specification
+    is ongoing within the <a href="https://www.w3.org/groups/wg/rdf-star">W3C RDF-star Working Group</a>.
+    Some dependencies from relevant updated specifications are provided
+    normatively in this specification with the expectation
+    that a future update to this specification will replace those with normative
+    references to updated RDF specifications.</p>
 </section>
 
 <section id="introduction" class="informative">
@@ -318,6 +327,16 @@
         the starting node as an component, and the last quad includes
         the ending node as an component with each quad in the path
         containing both the preceding and following nodes.</dd>
+      <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
+      <dd>
+        The canonicalized representation of a quad is defined in <a href="#canonical-quads" class="sectionRef"></a>.
+        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a>, if present, in the same manner as 
+        a <a>subject</a>, and each quad is terminated with a single new line character (`U+000A`).
+      </dd>
+      <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
+      <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
+        This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.
+      </dd>
     </dl>
   </section>
 
@@ -352,28 +371,6 @@
       <dt><dfn data-cite="RDF11-CONCEPTS#dfn-default-graph">default graph</dfn></dt>
       <dd>The <a>default graph</a>
         as specified by [[!RDF11-CONCEPTS]].</dd>
-      <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
-      <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
-        This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.
-        <div class="issue" data-number="62">
-          Should be defined in RDF Concepts.
-        </div>
-      </dd>
-      <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
-      <dd>
-        The canonicalized representation of a quad is based on
-        <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
-        defined in [[N-Triples]].
-        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a> in the same manner as a <a>subject</a>,
-        if present, and each quad is terminated with a single new line character (`U+000A`).
-        <div class="issue" data-number="62">
-          At present, there is no existing definition for a canonicalized [[N-Quads]] form.
-          There is a definition for
-          <a data-cite="N-Triples#canonical-ntriples">canonical N-Triples</a>
-          in [[N-Triples]], which defines the form of a single triple,
-          without the terminating <a data-cite="N-Triples#grammar-production-EOL">EOL</a>.
-        </div>
-      </dd>
       <dt><dfn data-cite="RDF11-CONCEPTS#dfn-rdf-dataset" data-lt="rdf dataset|rdf datasets|dataset|datasets">RDF dataset</dfn></dt>
       <dd>A <a>dataset</a>
         as specified by [[!RDF11-CONCEPTS]].
@@ -527,15 +524,15 @@
 
     <p class="ednote">At the time of writing, there are several open issues that will determine important details of the canonicalization algorithm.</p>
     <div class="issue" data-number="4"></div>
-    <div class="issue" data-number="6"></div>
     <div class="issue" data-number="7"></div>
     <div class="issue" data-number="8"></div>
     <div class="issue" data-number="10"></div>
     <div class="issue" data-number="11"></div>
     <div class="issue" data-number="16"></div>
-    <div class="issue" data-number="38"></div>
-    <div class="issue" data-number="41"></div>
-    <div class="issue" data-number="42"></div>
+    <div class="issue" data-number="84"></div>
+    <div class="issue" data-number="87"></div>
+    <div class="issue" data-number="88"></div>
+    <div class="issue" data-number="89"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>normalized dataset</a>. This algorithm will assign
@@ -3160,6 +3157,61 @@ validation, ready in the event that an unrecoverable flaw is found in this algor
       pathways through the algorithm</p>
 
   </section>
+</section>
+
+<section id="canonical-quads" class="appendix">
+  <h2>A Canonical form of N-Quads</h2>
+
+  <p>This section defines a canonical form of N-Quads which has
+    a completely specified layout.
+    The grammar for the language remains unchanged.</p>
+
+  <p>Canonical N-Quads updates and extends
+    <a data-cite="N-TRIPLES#canonical-ntriples">Canonical N-Triples</a> in [[N-TRIPLES]]
+    to include <code><a data-cite="N-QUADS#grammar-production-graphLabel">graphLabel</a></code>.</p>
+
+  <p>While the N-Quads syntax [[N-QUADS]] allows choices for the representation and layout of RDF data,
+    the canonical form of N-Quads provides a unique syntactic representation of any quad.
+    Each code point
+    can be represented by only one of
+    <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>,
+    <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>,
+    or unencoded character,
+    where the relevant production allows for a choice in representation.
+    Each quad is represented entirely on a single line with specified white space.</p>
+
+  <p>Canonical N-Quads has the following additional constraints on layout:</p>
+  <ul>
+    <li>White space MUST NOT be used except after
+      <code>subject</code>,
+      <code>predicate</code>, 
+      <code>object</code>,
+      and <code>graphLabel</code>,
+      each of which MUST be a single space (<code>U+0020</code>).</li>
+    <li><a data-cite="RDF11-CONCEPTS#dfn-literal">Literals</a> with the
+      datatype <code>http://www.w3.org/2001/XMLSchema#string</code>
+      MUST NOT use the datatype IRI part of the <a data-cite="N-QUADS#grammar-production-literal">literal</a>,
+      and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>.
+    </li>
+    <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only uppercase letters (<code>[A-F]</code>).</li>
+    <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>,
+      the characters
+      <code>U+0008</code> (<code title="BACKSPACE"><sub>BS</sub></code>),
+      <code>U+0009</code> (<code title="HORIZONTAL TAB"><sub>HT</sub></code>),
+      <code>U+000A</code> (<code title="LINE FEED"><sub>LF</sub></code>),
+      <code>U+000C</code> (<code title="FORM FEED"><sub>FF</sub></code>),
+      <code>U+000D</code>  (<code title="CARRIAGE RETURN"><sub>CR</sub></code>),
+      <code>U+0022</code> (<code title="DOUBLE QUOTE">&quot;</code>), and
+      <code>U+005C</code> (<code title="BACKSLASH">\</code>)
+      MUST be encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.
+      Characters in the range from <code>U+0000</code> to <code>U+001F</code>
+      and <code>U+007F</code>  (<code title="delete"><sub>DEL</sub></code>)
+      that are not represented using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>
+      MUST be represented by <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>.
+      All other characters MUST be represented by their native [[UNICODE]] representation.</li>
+    <li>The token <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>U+000A</code>.</li>
+    <li>The final <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
+  </ul>  
 </section>
 
 <section id="urgna2021" class="appendix informative algorithm">
