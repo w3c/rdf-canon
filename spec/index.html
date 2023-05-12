@@ -2706,7 +2706,7 @@ disclose.
       <p>For example, let us assume we have the following dataset to be signed. (Note: this person is fictitious, prepared
         only to make this example work.)</p>
 
-      <pre id="ex-pc-leakage-labeling-original-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-labeling-original-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           # original dataset
           _:b0 <http://schema.org/address> _:b1 .
@@ -2722,7 +2722,7 @@ disclose.
       <p>Using <a href="#canon-algorithm" class="sectionRef">, we can obtain the <a>serialized canonical form</a> of the
           <a>normalized dataset</a>, where all the blank nodes are serialized using the canonical labels.</p>
 
-      <pre id="ex-pc-leakage-labeling-normalized-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-labeling-normalized-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           # normalized dataset
           _:c14n0 <http://schema.org/addressCountry> "United States" .
@@ -2742,7 +2742,7 @@ disclose.
       <p>Let us say that the holder wants to show her attributes except for `gender` to a verifier. Then the holder should
         disclose the following partial dataset. (Note: proofs omitted here for brevity)</p>
 
-      <pre id="ex-pc-leakage-labeling-disclosed-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-labeling-disclosed-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           # disclosed dataset
           _:c14n0 <http://schema.org/addressCountry> "United States" .
@@ -2768,7 +2768,7 @@ disclose.
       
       <p>The following example shows that `gender` = `Male` yields different canonical labeling.</p>
 
-      <pre id="ex-pc-leakage-labeling-hypothetical-normalized-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-labeling-hypothetical-normalized-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           # hypothetical normalized dataset
           _:c14n0 <http://schema.org/address> _:c14n1 .
@@ -2784,7 +2784,7 @@ disclose.
       <p>So the verifier should have obtained the following dataset if `gender` had the value `Male`, which differs from the
         revealed dataset. Therefore, the verifier can conclude that the `gender` is `Female`.</p>
 
-      <pre id="ex-pc-leakage-labeling-hypothetical-disclosed-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-labeling-hypothetical-disclosed-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           # hypothetical disclosed dataset
           _:c14n0 <http://schema.org/address> _:c14n1 .
@@ -2816,7 +2816,7 @@ disclose.
       
       <p>Let us assume that the holder has the following signed dataset, sorted in the canonical (code-point) order.</p>
 
-      <pre id="ex-pc-leakage-sorting-signed-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-sorting-signed-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           :a <http://schema.org/children> "Albert" .
           :a <http://schema.org/children> "Alice" .
@@ -2828,7 +2828,7 @@ disclose.
       <p>If the holder wants to hide the statement for their second child for any reason, the disclosed dataset now looks like
         this:</p>
 
-      <pre id="ex-pc-leakage-sorting-disclosed-dataset" data-transform="updateExample">
+      <pre id="ex-pc-leakage-sorting-disclosed-dataset" class="nohighlight" data-transform="updateExample">
         <!--
           :a <http://schema.org/children> "Albert" .
           ########### 2nd statement is unrevealed ##########
@@ -2864,7 +2864,7 @@ disclose.
     <p>For example, let us assume that an employee of the small company "example.com" shows its employee ID dataset without
       their name like this:</p>
 
-    <pre id="ex-pc-unlinkability-disclosed-dataset" data-transform="updateExample">
+    <pre id="ex-pc-unlinkability-disclosed-dataset" class="nohighlight" data-transform="updateExample">
       <!--
         # disclosed dataset
         ########### 1st statement is unrevealed ##########
@@ -2882,7 +2882,7 @@ disclose.
     <p>The verifier can always trace this person without knowing their name if this company has only three employees with
       the following employee ID datasets.</p>
 
-    <pre id="ex-pc-unlinkability-normalized-dataset-1" data-transform="updateExample">
+    <pre id="ex-pc-unlinkability-normalized-dataset-1" class="nohighlight" data-transform="updateExample">
       <!--
         # normalized dataset 1
         _:c14n0 <http://schema.org/address> _:c14n1 .
@@ -2897,7 +2897,7 @@ disclose.
       -->
     </pre>
 
-    <pre id="ex-pc-unlinkability-normalized-dataset-2" data-transform="updateExample">
+    <pre id="ex-pc-unlinkability-normalized-dataset-2" class="nohighlight" data-transform="updateExample">
       <!--
         # normalized dataset 2
         _:c14n0 <http://schema.org/address> _:c14n1 .
@@ -2912,7 +2912,7 @@ disclose.
       -->
     </pre>
 
-    <pre id="ex-pc-unlinkability-normalized-dataset-3" data-transform="updateExample">
+    <pre id="ex-pc-unlinkability-normalized-dataset-3" class="nohighlight" data-transform="updateExample">
       <!--
         # normalized dataset 3
         _:c14n0 <http://schema.org/name> "Johnny Smith" .
