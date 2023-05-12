@@ -2674,8 +2674,12 @@
 <section id="privacy-considerations" class="informative">
   <h2>Privacy Considerations</h2>
 
-  <section>
-    <h3>Selective Disclosure Schemes</h3>
+  <p>Privacy considerations here are primarily worth discussing when the canonicalization scheme is used for
+    privacy-respecting signed RDF dataset and are likely acceptable for other use cases. One of the former examples is a
+    verifiable credential with selective disclosure.</p>
+
+  <section id="privacy-considerations-leakage">
+    <h3>Data Leakage in Selective Disclosure Schemes</h3>
 
     <p class="issue" data-number="70" title="Dataset structure might reveal information">
 Add text that warns implementers using this specification in selective
@@ -2686,8 +2690,249 @@ is disclosing the information is a part of a subclass of a population,
 which might be enough to disclose information beyond what the discloser intended to
 disclose.
     </p>
+
+    <p>Selective disclosure is the ability for someone to share only some of the statements from a signed dataset, without
+      harming the ability of the recipient to verify the authenticity of those selected statements.</p>
+    
+    <p>The output of the canonicalization algorithm described in this specification, may leak partial
+      information about undisclosed statements and help the adversary correlate the original and disclosed datasets.</p>
+    
+    <section id="privacy-considerations-leakage-labeling">
+      <h4>Possible Leakage via Canonical Labeling</h4>
+    
+      <p>If a dataset contains at least two blank nodes, the canonical labeling can be exploited to guess the undisclosed
+        quad in the dataset.</p>
+      
+      <p>For example, let us assume we have the following dataset to be signed. (Note: this person is fictitious, prepared
+        only to make this example work.)</p>
+
+      <pre id="ex-pc-leakage-labeling-original-dataset" data-transform="updateExample">
+        <!--
+          # original dataset
+          _:b0 <http://schema.org/address> _:b1 .
+          _:b0 <http://schema.org/familyName> "Jarrett" .
+          _:b0 <http://schema.org/gender> "Female" .  # gender === Female
+          _:b0 <http://schema.org/givenName> "Ali" .
+          _:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+          _:b1 <http://schema.org/addressCountry> "United States" .
+          _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+        -->
+      </pre>
+
+      <p>Using <a href="#canon-algorithm" class="sectionRef">, we can obtain the <a>serialized canonical form</a> of the
+          <a>normalized dataset</a>, where all the blank nodes are serialized using the canonical labels.</p>
+
+      <pre id="ex-pc-leakage-labeling-normalized-dataset" data-transform="updateExample">
+        <!--
+          # normalized dataset
+          _:c14n0 <http://schema.org/addressCountry> "United States" .
+          _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+          _:c14n1 <http://schema.org/address> _:c14n0 .
+          _:c14n1 <http://schema.org/familyName> "Jarrett" .
+          _:c14n1 <http://schema.org/gender> "Female" .  # gender === Female
+          _:c14n1 <http://schema.org/givenName> "Ali" .
+          _:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+        -->
+      </pre>
+
+      <p>The signer can generate a signature for the dataset by first hashing each statement and then signing them
+        using a multi-message digital signature scheme like BBS+. The resulting dataset with signature is passed to the
+        holder, who can control whether or not to disclose each statement while maintaining their verifiability.</p>
+      
+      <p>Let us say that the holder wants to show her attributes except for `gender` to a verifier. Then the holder should
+        disclose the following partial dataset. (Note: proofs omitted here for brevity)</p>
+
+      <pre id="ex-pc-leakage-labeling-disclosed-dataset" data-transform="updateExample">
+        <!--
+          # disclosed dataset
+          _:c14n0 <http://schema.org/addressCountry> "United States" .
+          _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+          _:c14n1 <http://schema.org/address> _:c14n0 .
+          _:c14n1 <http://schema.org/familyName> "Jarrett" .
+          ########### 5th statement is unrevealed ##########
+          _:c14n1 <http://schema.org/givenName> "Ali" .
+          _:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+        -->
+      </pre>
+
+      <p>However, in this example, anyone can guess the unrevealed statement by exploiting the canonical labels and order.</p>
+      
+      <p>Since the dataset was sorted in the canonical order, we can get to know that the hidden statement must start with
+        `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess that the hidden predicate is
+        `&lt;http://schema.org/gender&gt;` with high probability. Alternatively, we can assume that the guesser already has
+        such knowledge via the public credential schema.</p>
+      
+      <p>Then, if the canonical labeling produces different results depending on the gender value, we can use it to deduce the
+        gender value. In fact, this example produces different results depending on whether the gender is `Female` or `Male`.
+        (Note: ignored the other types of gender just for brevity)</p>
+      
+      <p>The following example shows that `gender` = `Male` yields different canonical labeling.</p>
+
+      <pre id="ex-pc-leakage-labeling-hypothetical-normalized-dataset" data-transform="updateExample">
+        <!--
+          # hypothetical normalized dataset
+          _:c14n0 <http://schema.org/address> _:c14n1 .
+          _:c14n0 <http://schema.org/familyName> "Jarrett" .
+          _:c14n0 <http://schema.org/gender> "Male" .  # gender === Male
+          _:c14n0 <http://schema.org/givenName> "Ali" .
+          _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+          _:c14n1 <http://schema.org/addressCountry> "United States" .
+          _:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+        -->
+      </pre>
+
+      <p>So the verifier should have obtained the following dataset if `gender` had the value `Male`, which differs from the
+        revealed dataset. Therefore, the verifier can conclude that the `gender` is `Female`.</p>
+
+      <pre id="ex-pc-leakage-labeling-hypothetical-disclosed-dataset" data-transform="updateExample">
+        <!--
+          # hypothetical disclosed dataset
+          _:c14n0 <http://schema.org/address> _:c14n1 .
+          _:c14n0 <http://schema.org/familyName> "Jarrett" .
+          ########### 3rd statement is unrevealed ##########
+          _:c14n0 <http://schema.org/givenName> "Ali" .
+          _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+          _:c14n1 <http://schema.org/addressCountry> "United States" .
+          _:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+        -->
+      </pre>
+
+      <p>Note that we can use the same approach to guess non-boolean values if the range of possible values is still a
+        reasonable (small) size for a guesser to try all the possibilities.</p>
+
+      <p>By making the canonicalization process private, we can prevent a brute-forcing attacker from trying to see the
+        labeling change by trying multiple possible attribute values.
+        For example, we can use a HMAC instead of a hash function in the canonicalization algorithm. Alternatively, we can add
+        a secret random nonce (always undisclosed) into the dataset.
+        Note that these workarounds force dataset issuers and holders to manage shared secrets securely.
+        We also note that these workarounds adversely affect the unlinkability described below because canonical labeling now
+        varies depending on the secret shared by the issuer and the holder, which will help correlate them.</p>
+    </section>
+    
+    <section id="privacy-considerations-leakage-sorting">
+      <h4>Possible Leakage via Canonical Sorting</h4>
+
+      <p>The canonical order can leak unrevealed information even without canonical labelings.</p>
+      
+      <p>Let us assume that the holder has the following signed dataset, sorted in the canonical (code-point) order.</p>
+
+      <pre id="ex-pc-leakage-sorting-signed-dataset" data-transform="updateExample">
+        <!--
+          :a <http://schema.org/children> "Albert" .
+          :a <http://schema.org/children> "Alice" .
+          :a <http://schema.org/children> "Allie" .
+          :a <http://schema.org/name> "John Smith" .
+        -->
+      </pre>
+
+      <p>If the holder wants to hide the statement for their second child for any reason, the disclosed dataset now looks like
+        this:</p>
+
+      <pre id="ex-pc-leakage-sorting-disclosed-dataset" data-transform="updateExample">
+        <!--
+          :a <http://schema.org/children> "Albert" .
+          ########### 2nd statement is unrevealed ##########
+          :a <http://schema.org/children> "Allie" .
+          :a <http://schema.org/name> "John Smith" .
+        -->
+      </pre>
+
+      <p>Knowing that these statements are sorted in the canonical order, we can guess that the hidden statement must start
+        with `:a &lt;http://schema.org/children&gt; "Al`, which leaks the subject (`:a`), predicate
+        (`&lt;http://schema.org/children&gt;`) and the first two letters of the object (`"Al"`) in the hidden statement.</p>
+      
+      <p>To avoid this leakage, the dataset issuer can randomly shuffle the normalized statements before signing and issuing
+        them to the holder, preventing others from guessing undisclosed information from the canonical order.
+        However, similar to the workarounds mentioned above, this workaround also adversely affects unlinkability. This is
+        because there are $n!$ different permutations for shuffling $n$ statements, and whichever one is used will help
+        correlate the dataset.</p>
+    </section>
   </section>
 
+  <section id="privacy-considerations-leakage">
+    <h3>Unlinkability</h3>
+
+    <p>Unlinkability ensures that no correlatable data are used in a signed dataset while still providing some level of
+      trust, the sufficiency of which must be determined by each verifier. </p>
+
+    <p>While canonical sorting works better for unlinkability, canonical labeling can be exploited to break it.
+      The total number of canonical labelings for a dataset with $n$ blank nodes is $n!$, which is not controllable by the
+      issuer.
+      It means that the herd constructed as a result of selective disclosure will be split into $n!$ pieces due to the
+      canonical labeling, which reduces unlinkability.</p>
+
+    <p>For example, let us assume that an employee of the small company "example.com" shows its employee ID dataset without
+      their name like this:</p>
+
+    <pre id="ex-pc-unlinkability-disclosed-dataset" data-transform="updateExample">
+      <!--
+        # disclosed dataset
+        ########### 1st statement is unrevealed ##########
+        _:c14n0 <http://schema.org/worksFor> _:c14n1 .
+        _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+        _:c14n1 <http://schema.org/address> _:c14n2 .
+        _:c14n1 <http://schema.org/geo> _:c14n3 .
+        _:c14n1 <http://schema.org/name> "example.com" .
+        _:c14n2 <http://schema.org/addressCountry> "United States" .
+        _:c14n3 <http://schema.org/latitude> "0.0" .
+        _:c14n3 <http://schema.org/longitude> "0.0" .
+      -->
+    </pre>
+    
+    <p>The verifier can always trace this person without knowing their name if this company has only three employees with
+      the following employee ID datasets.</p>
+
+    <pre id="ex-pc-unlinkability-normalized-dataset-1" data-transform="updateExample">
+      <!--
+        # normalized dataset 1
+        _:c14n0 <http://schema.org/address> _:c14n1 .
+        _:c14n0 <http://schema.org/geo> _:c14n3 .
+        _:c14n0 <http://schema.org/name> "example.com" .
+        _:c14n1 <http://schema.org/addressCountry> "United States" .
+        _:c14n2 <http://schema.org/name> "Jayden Doe" .
+        _:c14n2 <http://schema.org/worksFor> _:c14n0 .
+        _:c14n2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+        _:c14n3 <http://schema.org/latitude> "0.0" .
+        _:c14n3 <http://schema.org/longitude> "0.0" .
+      -->
+    </pre>
+
+    <pre id="ex-pc-unlinkability-normalized-dataset-2" data-transform="updateExample">
+      <!--
+        # normalized dataset 2
+        _:c14n0 <http://schema.org/address> _:c14n1 .
+        _:c14n0 <http://schema.org/geo> _:c14n2 .
+        _:c14n0 <http://schema.org/name> "example.com" .
+        _:c14n1 <http://schema.org/addressCountry> "United States" .
+        _:c14n2 <http://schema.org/latitude> "0.0" .
+        _:c14n2 <http://schema.org/longitude> "0.0" .
+        _:c14n3 <http://schema.org/name> "Morgan Doe" .
+        _:c14n3 <http://schema.org/worksFor> _:c14n0 .
+        _:c14n3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+      -->
+    </pre>
+
+    <pre id="ex-pc-unlinkability-normalized-dataset-3" data-transform="updateExample">
+      <!--
+        # normalized dataset 3
+        _:c14n0 <http://schema.org/name> "Johnny Smith" .
+        _:c14n0 <http://schema.org/worksFor> _:c14n1 .
+        _:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+        _:c14n1 <http://schema.org/address> _:c14n2 .
+        _:c14n1 <http://schema.org/geo> _:c14n3 .
+        _:c14n1 <http://schema.org/name> "example.com" .
+        _:c14n2 <http://schema.org/addressCountry> "United States" .
+        _:c14n3 <http://schema.org/latitude> "0.0" .
+        _:c14n3 <http://schema.org/longitude> "0.0" .
+      -->
+    </pre>
+
+    <p>The canonicalization in this example produces different labelings for these three employees, which helps anyone to
+      correlate their activities even if they do not reveal their names in the dataset.</p>
+
+    <p>By determining some "template" for each anonymous set (or herd) and fixing the canonical labeling and canonical order
+      used in the anonymous set, we can achieve a certain unlinkability.</p>
+  </section>
 </section>
 
 <section id="security-considerations" class="informative">
