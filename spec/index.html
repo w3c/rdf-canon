@@ -2674,9 +2674,12 @@
 <section id="privacy-considerations" class="informative">
   <h2>Privacy Considerations</h2>
 
-  <p>Privacy considerations here are primarily worth discussing when the canonicalization scheme is used for
-    privacy-respecting signed RDF dataset and are likely acceptable for other use cases. One of the former examples is a
-    verifiable credential with selective disclosure.</p>
+  <p>In general, RDF datasets are used for representing and conveying arbitrary information,
+    which may include personally identifiable information which may be used for correlating
+    other with data and disclose arbitrary information.
+    After canonicalizing a dataset, even if some information is removed,
+    it may be possible for a third party to infer omitted data.
+    Applications should consider the potential for exposing personally identifiable information when constructing and conveying datasets.</p>
 
   <section id="privacy-considerations-leakage">
     <h3>Data Leakage in Selective Disclosure Schemes</h3>
@@ -2703,8 +2706,8 @@ disclose.
       <p>If a dataset contains at least two blank nodes, the canonical labeling can be exploited to guess the undisclosed
         quad in the dataset.</p>
       
-      <p>For example, let us assume we have the following dataset to be signed. (Note: this person is fictitious, prepared
-        only to make this example work.)</p>
+      <p>For example, let us assume we have the following dataset to be signed,
+        describing the fictitious person, "Ali Jarret".</p>
 
       <pre id="ex-pc-leakage-labeling-original-dataset" class="example" data-transform="updateExample" title="Original Dataset">
         <!--
@@ -2719,7 +2722,7 @@ disclose.
       </pre>
 
       <p>Using <a href="#canon-algorithm" class="sectionRef"></a>, we can obtain the <a>serialized canonical form</a> of the
-          <a>normalized dataset</a>, where all the blank nodes are serialized using the canonical labels.</p>
+          <a>normalized dataset</a>, where all the blank nodes are serialized using the canonical identifiers.</p>
 
       <pre id="ex-pc-leakage-labeling-normalized-dataset" class="example" data-transform="updateExample" title="Normalized Dataset">
         <!--
@@ -2737,7 +2740,7 @@ disclose.
         using a multi-message digital signature scheme like BBS+. The resulting dataset with signature is passed to the
         holder, who can control whether or not to disclose each statement while maintaining their verifiability.</p>
       
-      <p>Let us say that the holder wants to show her attributes except for `gender` to a verifier. Then the holder should
+      <p>Let us say that the holder wants to show their attributes except for `gender` to a verifier. Then the holder should
         disclose the following partial dataset. (Note: proofs omitted here for brevity)</p>
 
       <pre id="ex-pc-leakage-labeling-disclosed-dataset" class="example" data-transform="updateExample" title="Disclosed Dataset">
@@ -2752,7 +2755,7 @@ disclose.
         -->
       </pre>
 
-      <p>However, in this example, anyone can guess the unrevealed statement by exploiting the canonical labels and order.</p>
+      <p>However, in this example, anyone can guess the unrevealed statement by exploiting the canonical identifiers and order.</p>
       
       <p>Since the dataset was sorted in the canonical order, we can get to know that the hidden statement must start with
         `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess that the hidden predicate is
