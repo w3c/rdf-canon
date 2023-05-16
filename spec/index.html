@@ -2675,7 +2675,7 @@
   <h2>Privacy Considerations</h2>
 
   <p>In general, RDF datasets are used for representing and conveying arbitrary information,
-    which may include personally identifiable information which may be used for correlating
+    which may include personally identifiable information that may be used for correlating
     other with data and disclose arbitrary information.
     After canonicalizing a dataset, even if some information is removed,
     it may be possible for a third party to infer omitted data.
@@ -2697,7 +2697,7 @@ disclose.
     <p>Selective disclosure is the ability for someone to share only some of the statements from a signed dataset, without
       harming the ability of the recipient to verify the authenticity of those selected statements.</p>
     
-    <p>The output of the canonicalization algorithm described in this specification, may leak partial
+    <p>The output of the canonicalization algorithm, described in this specification, may leak partial
       information about undisclosed statements and help the adversary correlate the original and disclosed datasets.</p>
     
     <section id="privacy-considerations-leakage-labeling">
@@ -2741,7 +2741,7 @@ disclose.
         holder, who can control whether or not to disclose each statement while maintaining their verifiability.</p>
       
       <p>Let us say that the holder wants to show their attributes except for `gender` to a verifier. Then the holder should
-        disclose the following partial dataset. (Note: proofs omitted here for brevity)</p>
+        disclose the following partial dataset. </p>
 
       <pre id="ex-pc-leakage-labeling-disclosed-dataset" class="example" data-transform="updateExample" title="Disclosed Dataset">
         <!--          
@@ -2758,13 +2758,13 @@ disclose.
       <p>However, in this example, anyone can guess the unrevealed statement by exploiting the canonical identifiers and order.</p>
       
       <p>Since the dataset was sorted in the canonical order, we can get to know that the hidden statement must start with
-        `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess that the hidden predicate is
-        `&lt;http://schema.org/gender&gt;` with high probability. Alternatively, we can assume that the guesser already has
+        `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess that the hidden predicate is, with high probability,
+        `&lt;http://schema.org/gender&gt;` . Alternatively, we can assume that the guesser already has
         such knowledge via the public credential schema.</p>
       
       <p>Then, if the canonical labeling produces different results depending on the gender value, we can use it to deduce the
-        gender value. In fact, this example produces different results depending on whether the gender is `Female` or `Male`.
-        (Note: ignored the other types of gender just for brevity)</p>
+        gender value. Indeed, this example produces different results depending on whether the gender is `Female` or `Male`.
+        (Note: ignored the other types of gender for the sake of the example.)</p>
       
       <p>The following example shows that `gender` = `Male` yields different canonical labeling.</p>
 
@@ -2795,8 +2795,8 @@ disclose.
         -->
       </pre>
 
-      <p>Note that we can use the same approach to guess non-boolean values if the range of possible values is still a
-        reasonable (small) size for a guesser to try all the possibilities.</p>
+      <p>Note that we can use the same approach to guess non-boolean values if the range of possible values is still of a
+        reasonably small size for to try all the possibilities.</p>
 
       <p>By making the canonicalization process private, we can prevent a brute-forcing attacker from trying to see the
         labeling change by trying multiple possible attribute values.
@@ -2804,7 +2804,7 @@ disclose.
         a secret random nonce (always undisclosed) into the dataset.
         Note that these workarounds force dataset issuers and holders to manage shared secrets securely.
         We also note that these workarounds adversely affect the unlinkability described below because canonical labeling now
-        varies depending on the secret shared by the issuer and the holder, which will help correlate them.</p>
+        varies depending on the secret shared by the issuer and the holder, which may help to correlate them.</p>
     </section>
     
     <section id="privacy-considerations-leakage-sorting">
@@ -2842,7 +2842,7 @@ disclose.
       <p>To avoid this leakage, the dataset issuer can randomly shuffle the normalized statements before signing and issuing
         them to the holder, preventing others from guessing undisclosed information from the canonical order.
         However, similar to the workarounds mentioned above, this workaround also adversely affects unlinkability. This is
-        because there are $n!$ different permutations for shuffling $n$ statements, and whichever one is used will help
+        because there are `n!` different permutations for shuffling `n` statements, and whichever one is used will help
         correlate the dataset.</p>
     </section>
   </section>
@@ -2854,9 +2854,9 @@ disclose.
       trust, the sufficiency of which must be determined by each verifier. </p>
 
     <p>While canonical sorting works better for unlinkability, canonical labeling can be exploited to break it.
-      The total number of canonical labelings for a dataset with $n$ blank nodes is $n!$, which is not controllable by the
+      The total number of canonical labelings for a dataset with `n` blank nodes is `n!`, which is not controllable by the
       issuer.
-      It means that the herd constructed as a result of selective disclosure will be split into $n!$ pieces due to the
+      It means that the herd constructed as a result of selective disclosure will be split into `n!` pieces due to the
       canonical labeling, which reduces unlinkability.</p>
 
     <p>For example, let us assume that an employee of the small company "example.com" shows its employee ID dataset without
@@ -2931,7 +2931,7 @@ disclose.
       correlate their activities even if they do not reveal their names in the dataset.</p>
 
     <p>By determining some "template" for each anonymous set (or herd) and fixing the canonical labeling and canonical order
-      used in the anonymous set, we can achieve a certain unlinkability.</p>
+      used in the anonymous set, we can achieve a certain level of unlinkability.</p>
   </section>
 </section>
 
