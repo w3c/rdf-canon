@@ -2758,7 +2758,7 @@ disclose.
       <p>However, in this example, anyone can guess the unrevealed statement by exploiting the canonical identifiers and order.</p>
       
       <p>Since the dataset was sorted in the canonical order, we can get to know that the hidden statement must start with
-        `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess that the hidden predicate is, with high probability,
+        `_:c14n1 &lt;http://schema.org/[f-g]`, which helps us guess with high probability that the hidden predicate is
         `&lt;http://schema.org/gender&gt;` . Alternatively, we can assume that the guesser already has
         such knowledge via the public credential schema.</p>
       
@@ -2796,7 +2796,7 @@ disclose.
       </pre>
 
       <p>Note that we can use the same approach to guess non-boolean values if the range of possible values is still of a
-        reasonably small size for to try all the possibilities.</p>
+        reasonably small size, allowing us to try all possibilities.</p>
 
       <p>By making the canonicalization process private, we can prevent a brute-forcing attacker from trying to see the
         labeling change by trying multiple possible attribute values.
