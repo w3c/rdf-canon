@@ -244,8 +244,7 @@
       <a>blank node identifiers</a> repeatably for different serializations
       possibly using individualized <a>blank node identifiers</a>
       of the same RDF graph (dataset) by grounding each <a>blank node</a>
-      through the nodes to which it is connected,
-      essentially creating <em>Skolem <a>blank node identifiers</a></em>.
+      through the nodes to which it is connected.
       As a result, a graph signature can be obtained by hashing a canonical serialization
       of the resulting <a>normalized dataset</a>,
       allowing for the isomorphism and digital signing use cases.
@@ -257,7 +256,6 @@
       If any information which would change the generated blank node identifier,
       a resulting diff might indicate a greater set of changes than actually exists.
       Additionally, if the starting dataset is an N-Quads document,
-      which may be based on a previously canonicalized dataset,
       it may be possible to correlate the original blank node identifiers
       used within that N-Quads document with those issued in the
       <a>normalized dataset</a>.</p>
@@ -323,8 +321,11 @@
         to the blank node identiers used within the N-Quads document,
         otherwise, identifiers are assigned arbitrarily for
         each blank node in the input dataset not previously identified.
-        <div class="note">Some implementations may retain blank node identifiers
-          in the parsed dataset.</div>
+        <div class="note">Implementations or environments might deal with blank
+        node identifiers more directly, for example, some implementations might
+        retain blank node identifiers in the parsed or abstract dataset. Implementations
+        are expected to reuse these to enable usable mappings between input blank node
+        identifiers and output blank node identifiers outside of the algorithm.</div>
       </dd>
       <dt><dfn>normalized dataset</dfn></dt>
       <dd>A <a>normalized dataset</a> is the combination of an <a>RDF dataset</a>
@@ -958,7 +959,7 @@
           parse that document into an dataset,
           retaining any blank node identifiers used within that document
           in the <a>input blank node identifier map</a>,
-          otherise arbitrary identifiers are assigned for each
+          otherwise arbitrary identifiers are assigned for each
           blank node.
           <details>
             <summary>Explanation</summary>
@@ -967,7 +968,7 @@
               and the <a>hash to blank nodes map</a>,
               as well as instantiating a new <a>canonical issuer</a>.</p>
             <p>After this algorithm completes,
-              the <a>input blank node identifier map</a> state,
+              the <a>input blank node identifier map</a> state
               may be used to correlate blank node identifiers
               used in the <a>input dataset</a> to those used
               in the <a>normalized dataset</a>.</p>
