@@ -1312,9 +1312,17 @@
         </li>
         <li id="ca.7">Return the <a>serialized canonical form</a>
           of the <a>normalized dataset</a>.
-          Alternatively, return the <a>normalized dataset</a> itself,
-          which includes the <a>input blank node identifier map</a>,
-          and <a>canonical issuer</a>.
+          Upon request, alternatively (or additionally) return the
+          <a>normalized dataset</a> itself, which includes the
+          <a>input blank node identifier map</a>, and
+          <a>canonical issuer</a>.
+          <p class="note">Technically speaking, one implementation
+          might return a <a>normalized dataset</a> that maps
+          particular blank nodes to different identifiers than another
+          implementation, however, this only occurs when there are
+          isomorphisms in the dataset such that a canonically serialized
+          expression of the dataset would appear the same from either
+          implementation.</p>
           <details>
             <summary>Explanation</summary>
             <p>The <a>serialized canonical form</a> is an N-Quads
