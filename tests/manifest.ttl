@@ -17,5 +17,5 @@
 
 <>  a mf:Manifest ;
     rdfs:label "RDF Dataset Canonicalization Test Cases" ;
-    rdfs:comment "Includes manifests for different application profiles."
+    rdfs:comment "Includes manifests for different application profiles." ;
     mf:include (<manifest-urdna2015>).
