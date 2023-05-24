@@ -2787,31 +2787,29 @@ disclose.
   <section>
     <h3>Dataset Poisoning</h3>
 
-    <p class="issue" data-number="70" title="Attackers can construct poison datasets">
-Add text that warns that attackers can construct datasets which are known to
-take large amounts of compute time to canonize. The algorithm has a mechanism to detect
-and prevent this sort of abuse, but implementers need to ensure that they
-think holistically about their system such as what happens if they don't have
-rate limiting on a service exposed to the Internet and they are the subject of
-a DDoS. Default mechanisms that prevent excessive use of compute when an
-attacker sends a poisoned dataset might be different from system to system.
+    <p>The canonicalization algorithm examines every difference in the
+      information connected to blank nodes in order to ensure that each will
+      properly receive its own canonical identifier. This process can be
+      exploited by attackers to construct datasets which are known to take
+      large amounts of compute time to canonize, but that do not express
+      useful information or express it using unnecessary complexity.
+      Implementers of the algorithm are expected to add mitigations that will,
+      by default, abort canonizing problematic inputs.
     </p>
-  </section>
-
-  <section>
-    <h3>Formal Verification Incomplete</h3>
-
-    <p class="issue" data-number="70" title="Formal verification of algorithm is incomplete">
-Add text that warns implementers that, while the algorithm has a mathematical
-proof associated with it that has had peer review, and while a W3C WG
-has reviewed the algorithms and that there are multiple interoperable
-implementations, that a formal proof using a system such as Coq isn't available
-at this time. We are highly confident of the correctness of the algorithm,
-but we will not be able to say with 100% certainty that it is correct until
-we have a formal, machine-based verification of the proof. Any system that
-utilizes this canonicalization mechanism should have a backup canonicalization
-mechanism, such as JCS, or other mitigations, such as schema-based
-validation, ready in the event that an unrecoverable flaw is found in this algorithm.
+    <p>Suggested mitigations include, but are not limited to:
+      <ul>
+        <li>providing a configurable timeout with a default value applicable to
+          an implementation's common use, and / or
+        <li>providing a configurable limit on the number of iterations of steps
+          performed in the algorithm, particularly recursive steps.
+      <ul>
+    </p>
+    <p>Additionally, software that uses implementations of the algorithm can
+      employ best-practice schema validation to reject data that does not meet
+      application requirements, thereby preventing useless poison datasets from
+      being processed. However, such mitigations are application specific and
+      not directly applicable to implementers of the canonicalization algorithm
+      itself.
     </p>
   </section>
 
