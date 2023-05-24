@@ -153,9 +153,33 @@
   },
   "assertions": [
     "rdfjs-c14n-report.ttl",
-    "ruby-earl.ttl"
+    "ruby-earl.ttl",
+    "rust-sophia-urdna2015.ttl"
   ],
   "testSubjects": [
+    {
+      "@id": "https://github.com/pchampin/sophia_rs",
+      "@type": [
+        "doap:Project",
+        "TestSubject",
+        "Software"
+      ],
+      "name": "Sophia",
+      "developer": [
+        {
+          "@id": "http://champin.net/#pa",
+          "@type": "foaf:Person",
+          "foaf:name": "Pierre-Antoine Champin"
+        }
+      ],
+      "homepage": "https://github.com/pchampin/sophia_rs",
+      "doapDesc": "A Rust toolkit for RDF and Linked Data.",
+      "language": "Rust",
+      "release": {
+        "@id": "https://crates.io/crates/sophia/0.8.0-alpha.1",
+        "revision": "0.8.0-alpha.1"
+      }
+    },
     {
       "@id": "https://iherman.github.io/rdfjs-c14n/",
       "@type": [
@@ -236,6 +260,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test001-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b230",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001",
+              "result": {
+                "@id": "_:b231",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b1",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -277,6 +313,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test002-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test002-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b232",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002",
+              "result": {
+                "@id": "_:b233",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b3",
               "@type": "Assertion",
@@ -320,6 +368,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test003-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b234",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003",
+              "result": {
+                "@id": "_:b235",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b5",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -361,6 +421,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test004-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test004-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b236",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004",
+              "result": {
+                "@id": "_:b237",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b7",
               "@type": "Assertion",
@@ -404,6 +476,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test005-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b238",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005",
+              "result": {
+                "@id": "_:b239",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b9",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -445,6 +529,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test006-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test006-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b240",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006",
+              "result": {
+                "@id": "_:b241",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b11",
               "@type": "Assertion",
@@ -488,6 +584,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test008-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b242",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008",
+              "result": {
+                "@id": "_:b243",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b13",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -529,6 +637,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test009-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test009-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b244",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009",
+              "result": {
+                "@id": "_:b245",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b15",
               "@type": "Assertion",
@@ -572,6 +692,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test010-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b246",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010",
+              "result": {
+                "@id": "_:b247",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b17",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -613,6 +745,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test011-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test011-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b248",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011",
+              "result": {
+                "@id": "_:b249",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b19",
               "@type": "Assertion",
@@ -656,6 +800,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test013-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b250",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013",
+              "result": {
+                "@id": "_:b251",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b21",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -697,6 +853,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test014-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test014-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b252",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014",
+              "result": {
+                "@id": "_:b253",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b23",
               "@type": "Assertion",
@@ -740,6 +908,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test016-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b254",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016",
+              "result": {
+                "@id": "_:b255",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b25",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -781,6 +961,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test017-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test017-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b256",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017",
+              "result": {
+                "@id": "_:b257",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b27",
               "@type": "Assertion",
@@ -824,6 +1016,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test018-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b258",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018",
+              "result": {
+                "@id": "_:b259",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b29",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -865,6 +1069,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test019-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test019-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b260",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019",
+              "result": {
+                "@id": "_:b261",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b31",
               "@type": "Assertion",
@@ -908,6 +1124,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test020-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b262",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020",
+              "result": {
+                "@id": "_:b263",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b33",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -949,6 +1177,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test021-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test021-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b264",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021",
+              "result": {
+                "@id": "_:b265",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b35",
               "@type": "Assertion",
@@ -992,6 +1232,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test022-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b266",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022",
+              "result": {
+                "@id": "_:b267",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b37",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1033,6 +1285,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test023-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test023-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b268",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023",
+              "result": {
+                "@id": "_:b269",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b39",
               "@type": "Assertion",
@@ -1076,6 +1340,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test024-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b270",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024",
+              "result": {
+                "@id": "_:b271",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b41",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1117,6 +1393,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test025-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test025-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b272",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025",
+              "result": {
+                "@id": "_:b273",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b43",
               "@type": "Assertion",
@@ -1160,6 +1448,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test026-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b274",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026",
+              "result": {
+                "@id": "_:b275",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b45",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1201,6 +1501,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test027-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test027-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b276",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027",
+              "result": {
+                "@id": "_:b277",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b47",
               "@type": "Assertion",
@@ -1244,6 +1556,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test028-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b278",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028",
+              "result": {
+                "@id": "_:b279",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b49",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1285,6 +1609,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test029-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test029-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b280",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029",
+              "result": {
+                "@id": "_:b281",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b51",
               "@type": "Assertion",
@@ -1328,6 +1664,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test030-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b282",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030",
+              "result": {
+                "@id": "_:b283",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b53",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1369,6 +1717,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test033-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test033-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b284",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033",
+              "result": {
+                "@id": "_:b285",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b55",
               "@type": "Assertion",
@@ -1412,6 +1772,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test034-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b286",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034",
+              "result": {
+                "@id": "_:b287",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b57",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1453,6 +1825,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test035-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test035-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b288",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035",
+              "result": {
+                "@id": "_:b289",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b59",
               "@type": "Assertion",
@@ -1496,6 +1880,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test036-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b290",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036",
+              "result": {
+                "@id": "_:b291",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b61",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1537,6 +1933,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test038-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test038-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b292",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038",
+              "result": {
+                "@id": "_:b293",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b63",
               "@type": "Assertion",
@@ -1580,6 +1988,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test039-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b294",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039",
+              "result": {
+                "@id": "_:b295",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b65",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1621,6 +2041,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test040-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test040-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b296",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040",
+              "result": {
+                "@id": "_:b297",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b67",
               "@type": "Assertion",
@@ -1664,6 +2096,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test043-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b298",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043",
+              "result": {
+                "@id": "_:b299",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b69",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1705,6 +2149,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test044-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test044-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b300",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044",
+              "result": {
+                "@id": "_:b301",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b71",
               "@type": "Assertion",
@@ -1748,6 +2204,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test045-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b302",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045",
+              "result": {
+                "@id": "_:b303",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b73",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1789,6 +2257,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test046-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test046-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b304",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046",
+              "result": {
+                "@id": "_:b305",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b75",
               "@type": "Assertion",
@@ -1832,6 +2312,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test047-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b306",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047",
+              "result": {
+                "@id": "_:b307",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b77",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1873,6 +2365,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test048-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test048-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b308",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048",
+              "result": {
+                "@id": "_:b309",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b79",
               "@type": "Assertion",
@@ -1916,6 +2420,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test053-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b310",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053",
+              "result": {
+                "@id": "_:b311",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b81",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -1957,6 +2473,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test054-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test054-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b312",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054",
+              "result": {
+                "@id": "_:b313",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b83",
               "@type": "Assertion",
@@ -2000,6 +2528,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test055-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b314",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055",
+              "result": {
+                "@id": "_:b315",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b85",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2041,6 +2581,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test056-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test056-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b316",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056",
+              "result": {
+                "@id": "_:b317",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b87",
               "@type": "Assertion",
@@ -2084,6 +2636,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test057-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b318",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057",
+              "result": {
+                "@id": "_:b319",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b89",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2125,6 +2689,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test058-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test058-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b320",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058",
+              "result": {
+                "@id": "_:b321",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b91",
               "@type": "Assertion",
@@ -2168,6 +2744,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test059-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b322",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059",
+              "result": {
+                "@id": "_:b323",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b93",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2209,6 +2797,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test060-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test060-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b324",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060",
+              "result": {
+                "@id": "_:b325",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b95",
               "@type": "Assertion",
@@ -2252,6 +2852,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test061-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b326",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061",
+              "result": {
+                "@id": "_:b327",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b97",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2293,6 +2905,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test062-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test062-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b328",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062",
+              "result": {
+                "@id": "_:b329",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b99",
               "@type": "Assertion",
@@ -2337,6 +2961,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test063-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b330",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063",
+              "result": {
+                "@id": "_:b331",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b101",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2378,6 +3014,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test064-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test064-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b332",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064",
+              "result": {
+                "@id": "_:b333",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b103",
               "@type": "Assertion",
@@ -2421,6 +3069,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test065-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b334",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065",
+              "result": {
+                "@id": "_:b335",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b105",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2462,6 +3122,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test066-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test066-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b336",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066",
+              "result": {
+                "@id": "_:b337",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b107",
               "@type": "Assertion",
@@ -2505,6 +3177,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test067-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b338",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067",
+              "result": {
+                "@id": "_:b339",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b109",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2547,6 +3231,18 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test068-urdna2015.nq",
           "assertions": [
             {
+              "@id": "_:b340",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068",
+              "result": {
+                "@id": "_:b341",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
               "@id": "_:b111",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
@@ -2588,6 +3284,18 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/urdna2015/test069-in.nq",
           "testResult": "https://w3c.github.io/rdf-canon/tests/urdna2015/test069-urdna2015.nq",
           "assertions": [
+            {
+              "@id": "_:b342",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069",
+              "result": {
+                "@id": "_:b343",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
             {
               "@id": "_:b113",
               "@type": "Assertion",

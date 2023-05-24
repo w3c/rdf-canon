@@ -12,8 +12,10 @@
   dc:bibliographicCitation "[[rdf-canon]]" ;
   earl:generatedBy <https://rubygems.org/gems/earl-report> ;
   mf:report earl:rdfjs-c14n-report.ttl,
-    earl:ruby-earl.ttl ;
-  earl:testSubjects <https://iherman.github.io/rdfjs-c14n/>,
+    earl:ruby-earl.ttl,
+    earl:rust-sophia-urdna2015.ttl ;
+  earl:testSubjects <https://github.com/pchampin/sophia_rs>,
+    <https://iherman.github.io/rdfjs-c14n/>,
     <https://rubygems.org/gems/rdf-normalize> ;
   mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015>) .
 
@@ -87,6 +89,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -110,6 +120,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -137,6 +155,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -160,6 +186,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -187,6 +221,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -210,6 +252,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -237,6 +287,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -260,6 +318,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -287,6 +353,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -310,6 +384,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -337,6 +419,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -360,6 +450,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -387,6 +485,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -410,6 +516,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -437,6 +551,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -460,6 +582,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -487,6 +617,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -510,6 +648,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -537,6 +683,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -560,6 +714,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -587,6 +749,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -610,6 +780,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -637,6 +815,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -660,6 +846,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -687,6 +881,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -710,6 +912,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -737,6 +947,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -760,6 +978,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -787,6 +1013,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -810,6 +1044,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -837,6 +1079,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -860,6 +1110,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -887,6 +1145,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -910,6 +1176,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -937,6 +1211,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -960,6 +1242,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -987,6 +1277,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1010,6 +1308,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1037,6 +1343,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1060,6 +1374,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1087,6 +1409,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1110,6 +1440,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1137,6 +1475,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1160,6 +1506,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1187,6 +1541,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1210,6 +1572,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1237,6 +1607,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1260,6 +1638,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1287,6 +1673,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1310,6 +1704,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1338,6 +1740,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1361,6 +1771,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1388,6 +1806,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1411,6 +1837,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1438,6 +1872,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1461,6 +1903,14 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-urdna2015.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
@@ -1488,6 +1938,14 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1504,6 +1962,17 @@
     ] ;
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
+
+<https://github.com/pchampin/sophia_rs> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name "Sophia" ;
+  doap:developer <http://champin.net/#pa> ;
+  doap:homepage <https://github.com/pchampin/sophia_rs> ;
+  doap:description "A Rust toolkit for RDF and Linked Data."@en ;
+  doap:programming-language "Rust" ;
+  doap:release [doap:revision "0.8.0-alpha.1"] .
+
+<http://champin.net/#pa> a foaf:Person ;
+  foaf:name "Pierre-Antoine Champin" .
 
 <https://iherman.github.io/rdfjs-c14n/> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "rdfjs-c14n" ;

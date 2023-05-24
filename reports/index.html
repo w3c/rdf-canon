@@ -7,6 +7,7 @@
 <link href='https://www.w3.org/StyleSheets/TR/base' rel='stylesheet' />
 <link href='rdfjs-c14n-report.ttl' rel='related' />
 <link href='ruby-earl.ttl' rel='related' />
+<link href='rust-sophia-urdna2015.ttl' rel='related' />
 <title>
 RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
 </title>
@@ -196,13 +197,20 @@ Test Subjects
 <ul class='toc'>
 <li class='tocline'>
 <span class='secno'>A.1</span>
+<a class='tocxref' href='#subj_Sophia_Rust'>
+Sophia
+ (Rust)
+</a>
+</li>
+<li class='tocline'>
+<span class='secno'>A.2</span>
 <a class='tocxref' href='#subj_rdfjs_c14n_TypeScript'>
 rdfjs-c14n
  (TypeScript)
 </a>
 </li>
 <li class='tocline'>
-<span class='secno'>A.2</span>
+<span class='secno'>A.3</span>
 <a class='tocxref' href='#subj_Ruby_RDF_Normalize_Ruby'>
 Ruby RDF::Normalize
  (Ruby)
@@ -958,8 +966,47 @@ Test Subjects
 This report was tested using the following test subjects:
 </p>
 <dl>
-<dt id='subj_rdfjs_c14n_TypeScript'>
+<dt id='subj_Sophia_Rust'>
 <span class='secno'>A.1</span>
+<a href='https://github.com/pchampin/sophia_rs'>
+<span about='https://github.com/pchampin/sophia_rs' property='doap:name'>Sophia</span>
+</a>
+</dt>
+<dd>
+<dl>
+<dt>Description</dt>
+<dd lang='en' property='doap:description'>A Rust toolkit for RDF and Linked Data.</dd>
+<dt>Release</dt>
+<dd property='doap:release'><span property='doap:revision'>0.8.0-alpha.1</span></dd>
+<dt>Programming Language</dt>
+<dd property='doap:programming-language'>Rust</dd>
+<dt>Home Page</dt>
+<dd>
+<a href='https://github.com/pchampin/sophia_rs' property='doap:homepage'>
+https://github.com/pchampin/sophia_rs
+</a>
+</dd>
+<dt>Developer</dt>
+<dd rel='doap:developer'>
+<div>
+<a href='http://champin.net/#pa'>
+<span property='foaf:name'>Pierre-Antoine Champin</span>
+</a>
+</div>
+</dd>
+<dt>
+Test Suite Compliance
+</dt>
+<dd>
+<table class='report'>
+<tbody>
+</tbody>
+</table>
+</dd>
+</dl>
+</dd>
+<dt id='subj_rdfjs_c14n_TypeScript'>
+<span class='secno'>A.2</span>
 <a href='https://iherman.github.io/rdfjs-c14n/'>
 <span about='https://iherman.github.io/rdfjs-c14n/' property='doap:name'>rdfjs-c14n</span>
 </a>
@@ -1009,7 +1056,7 @@ Test Suite Compliance
 </dl>
 </dd>
 <dt id='subj_Ruby_RDF_Normalize_Ruby'>
-<span class='secno'>A.2</span>
+<span class='secno'>A.3</span>
 <a href='https://rubygems.org/gems/rdf-normalize'>
 <span about='https://rubygems.org/gems/rdf-normalize' property='doap:name'>Ruby RDF::Normalize</span>
 </a>
@@ -1074,6 +1121,9 @@ Individual test results used to construct this report are available here:
 </li>
 <li>
 <a class='source' href='ruby-earl.ttl'>ruby-earl.ttl</a>
+</li>
+<li>
+<a class='source' href='rust-sophia-urdna2015.ttl'>rust-sophia-urdna2015.ttl</a>
 </li>
 </ul>
 </section>
