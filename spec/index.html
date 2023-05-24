@@ -2756,9 +2756,6 @@
 <section id="privacy-considerations" class="informative">
   <h2>Privacy Considerations</h2>
 
-  <section>
-    <h3>Selective Disclosure Schemes</h3>
-
     <p class="issue" data-number="70" title="Dataset structure might reveal information">
 Add text that warns implementers using this specification in selective
 disclosure schemes that graph structure might reveal information about the
@@ -2768,8 +2765,20 @@ is disclosing the information is a part of a subclass of a population,
 which might be enough to disclose information beyond what the discloser intended to
 disclose.
     </p>
-  </section>
 
+    <p>The nature of the canonicalization algorithm inherently correlates its output,
+      i.e., the canonical labels and the sorted order of quads, with the input dataset.
+      This could pose issues, particularly when dealing with datasets containing personal information.
+      For example, even if certain information is removed from the canonicalized dataset
+      for some privacy-respecting reason, there remains the possibility that a third party
+      could infer the omitted data by analyzing the canonicalized dataset.
+      If it is necessary to decouple the canonicalization algorithm's input and output,
+      some suitable post-processing methods for the output of the canonicalization should be performed.
+      This specification has been designed to help make additional processing easier, but
+      other specifications that build on top of this one are responsible for providing any
+      specific details.
+      See the Data Integrity specification for more details about such post-processing methods.
+    </p>
 </section>
 
 <section id="security-considerations" class="informative">
