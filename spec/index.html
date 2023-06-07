@@ -136,7 +136,7 @@
 </section>
 
 <section id="sotd">
-  <p>This document describes the <a>URDNA2015</a> algorithm for canonicalizing
+  <p>This document describes the <a>RDFC-1.0</a> algorithm for canonicalizing
     RDF datasets, which was the input from the
     <a href="https://www.w3.org/community/credentials/">W3C Credentials Community Group</a>
     published as [[CCG-RDC-FINAL]].
@@ -193,8 +193,12 @@
   <p>This document outlines an algorithm for generating a canonical
     serialization of an <a>RDF dataset</a> given an <a>RDF dataset</a> as input.
     The algorithm is called the
-    <strong>Universal RDF Dataset Canonicalization Algorithm 2015</strong> or
-    <a>URDNA2015</a>.</p>
+    <strong>RDF Canonicalization Algorithm version 1.0</strong> or
+    <a>RDFC-1.0</a>.</p>
+
+  <p class="note">See <a href="#urdna2015" class="sectionRef"></a>
+    for a comparison with the version of the algorithm published
+    in [[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]].</p>
 
   <section id="intro-uses">
     <h2>Uses of Dataset Canonicalization</h2>
@@ -347,7 +351,7 @@
       <dt><dfn>hash</dfn></dt>
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
-      <dd>The hash algorithm used by <a>URDNA2015</a>, namely, SHA-256.</dd>
+      <dd>The hash algorithm used by <a>RDFC-1.0</a>, namely, SHA-256.</dd>
       <dt><dfn>mention</dfn></dt>
       <dd>
         A node is mentioned in a <a>quad</a>
@@ -462,8 +466,8 @@
 
   <p>In time, there may be more than one canonicalization algorithm and,
     therefore, for identification purposes, this algorithm is named the
-    "Universal RDF Dataset Canonicalization Algorithm 2015"
-    (<abbr title="Universal RDF Dataset Canonicalization Algorithm 2015"><dfn class="export">URDNA2015</dfn></abbr>).</p>
+    "RDF Canonicalization Algorithm version 1.0"
+    (<abbr title="RDF Canonicalization Algorithm version 1.0"><dfn class="export">RDFC-1.0</dfn></abbr>).</p>
 
   <p class="ednote">This statement is overly prescriptive and does not include normative language.
     This spec should describe the theoretical basis for graph canonicalization and describe
@@ -472,7 +476,7 @@
   <section id="canon-overview" class="informative">
     <h3>Overview</h3>
 
-    <p>To determine a canonical labeling, <a>URDNA2015</a> considers the
+    <p>To determine a canonical labeling, <a>RDFC-1.0</a> considers the
       information connected to each blank node.
       Nodes with unique first degree information can immediately be issued a canonical identifier
       via the <a href="#issue-identifier">Issue Identifier algorithm</a>.
@@ -487,7 +491,7 @@
       The <a>hash</a> of a string <var>s</var>, is the lower-case,
       hexadecimal representation of the result of passing <var>s</var>
       through a cryptographic hash function.
-      URDNA2015 uses the SHA-256 hash algorithm.</p>
+      <a>RDFC-1.0</a> uses the SHA-256 hash algorithm.</p>
   </section>
 
   <section id="canon-state">
@@ -580,20 +584,20 @@
     <section id="canon-algo-overview" class="informative">
       <h3>Overview</h3>
 
-      <p><a>URDNA2015</a> canonically labels an <a>RDF dataset</a>
+      <p><a>RDFC-1.0</a> canonically labels an <a>RDF dataset</a>
         by assigning each <a>blank node</a> a canonical identifier.
-        In URDNA2015, an RDF dataset <var>D</var>
+        In RDFC-1.0, an RDF dataset <var>D</var>
         is represented as a set of <a>quads</a> of the form `&lt; s, p, o, g >`
         where the graph component `g` is empty if and only if the
         <a data-lt="RDF triple">triple</a> `&lt; s, p, o >` is in the <a>default graph</a>.
         It is expected that, for two RDF datasets,
-        <a>URDNA2015</a> returns the same canonically labeled list of quads
+        <a>RDFC-1.0</a> returns the same canonically labeled list of quads
         if and only if the two datasets are isomorphic (i.e., the same modulo blank node identifiers).
       </p>
 
-      <p><a>URDNA2015</a> consists of several sub-algorithms.
+      <p><a>RDFC-1.0</a> consists of several sub-algorithms.
         These sub-algorithms are introduced in the following sub-sections.
-        First, we give a high level summary of URDNA2015.</p>
+        First, we give a high level summary of RDFC-1.0.</p>
 
       <ol>
         <li id="ca-hl.1"><strong>Initialization</strong>.
@@ -2796,14 +2800,14 @@ disclose.
       Implementers of the algorithm are expected to add mitigations that will,
       by default, abort canonicalizing problematic inputs.
     </p>
-    <p>Suggested mitigations include, but are not limited to:
-      <ul>
-        <li>providing a configurable timeout with a default value applicable to
-          an implementation's common use</li>
-        <li>providing a configurable limit on the number of iterations of steps
-          performed in the algorithm, particularly recursive steps</li>
-      </ul>
-    </p>
+    <p>Suggested mitigations include, but are not limited to:</p>
+    <ul>
+      <li>providing a configurable timeout with a default value applicable to
+        an implementation's common use</li>
+      <li>providing a configurable limit on the number of iterations of steps
+        performed in the algorithm, particularly recursive steps</li>
+    </ul>
+
     <p>Additionally, software that uses implementations of the algorithm can
       employ best-practice schema validation to reject data that does not meet
       application requirements, thereby preventing useless poison datasets from
@@ -3298,6 +3302,20 @@ disclose.
     <li>The token <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>U+000A</code>.</li>
     <li>The final <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
   </ul>  
+</section>
+
+<section id="urdna2015" class="appendix informative">
+  <h2>URDNA2015</h2>
+
+  <p>[[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]] describes essentially the same algorithm
+    as <a>RDFC-1.0</a> and generally implementations implementing URDNA2015
+    should be compatibile with this specification.
+    The minor change is in the <a>canonical n-quads form</a> where
+    some control characters were previously represented without escaping.
+    The version of the algorithm defined in <a href="#canonical-quads" class="sectionRef"></a>
+    clarifies the representation of <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a> and the characters
+    within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>
+    that are encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.</p>
 </section>
 
 <section id="urgna2021" class="appendix informative algorithm">
