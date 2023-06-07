@@ -587,7 +587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
    rdfs:isDefinedBy <http://champin.net/>;
    foaf:made <https://github.com/pchampin/sophia_rs>;
    foaf:mbox <mailto:pierre-antoine@w3.org>;
-   foaf:name "Pierre-Antoine Champin" ;
+   foaf:name "Pierre-Antoine Champin";
 .
 
 <https://crates.io/crates/sophia/0.8.0-alpha.1>
@@ -618,6 +618,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
    doap:name "Sophia";
    doap:programming-language "Rust";
    doap:shortdesc "A Rust toolkit for RDF and Linked Data."@en;
-   foaf:maker <http://champin.net/#pa> ;
+   foaf:maker <http://champin.net/#pa>;
    doap:release <https://crates.io/crates/sophia/0.8.0-alpha.1>;
 .
