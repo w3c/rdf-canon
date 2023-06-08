@@ -193,7 +193,7 @@
   <p>This document outlines an algorithm for generating a canonical
     serialization of an <a>RDF dataset</a> given an <a>RDF dataset</a> as input.
     The algorithm is called the
-    <strong>RDF Canonicalization Algorithm version 1.0</strong> or
+    <strong>RDF Canonicalization algorithm version 1.0</strong> or
     <a>RDFC-1.0</a>.</p>
 
   <p class="note">See <a href="#urdna2015" class="sectionRef"></a>
@@ -466,8 +466,8 @@
 
   <p>In time, there may be more than one canonicalization algorithm and,
     therefore, for identification purposes, this algorithm is named the
-    "RDF Canonicalization Algorithm version 1.0"
-    (<abbr title="RDF Canonicalization Algorithm version 1.0"><dfn class="export">RDFC-1.0</dfn></abbr>).</p>
+    "RDF Canonicalization algorithm version 1.0"
+    (<abbr title="RDF Canonicalization algorithm version 1.0"><dfn class="export">RDFC-1.0</dfn></abbr>).</p>
 
   <p class="ednote">This statement is overly prescriptive and does not include normative language.
     This spec should describe the theoretical basis for graph canonicalization and describe
@@ -3307,8 +3307,11 @@ disclose.
 <section id="urdna2015" class="appendix informative">
   <h2>URDNA2015</h2>
 
-  <p>[[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]] describes essentially the same algorithm
-    as <a>RDFC-1.0</a> and generally implementations implementing URDNA2015
+  <p>[[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]] describes
+    "Universal RDF Dataset Normalization Algorithm 2015"
+    (<abbr title="Universal RDF Dataset Normalization Algorithm 2015"><dfn class="export">URDNA2015</dfn></abbr>),
+    essentially the same algorithm    
+    as <a>RDFC-1.0</a>, and generally implementations implementing URDNA2015
     should be compatibile with this specification.
     The minor change is in the <a>canonical n-quads form</a> where
     some control characters were previously represented without escaping.
@@ -3318,7 +3321,7 @@ disclose.
     that are encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.</p>
 </section>
 
-<section id="urgna2021" class="appendix informative algorithm">
+<section id="urgna2012" class="appendix informative algorithm">
   <h2>URGNA2012</h2>
   <p>A previous version of this algorithm has light deployment. For purposes of identification,
     the algorithm is called the
