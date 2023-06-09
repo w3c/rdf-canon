@@ -264,19 +264,6 @@
       used within that N-Quads document with those issued in the
       <a>normalized dataset</a>.</p>
 
-    <div class="ednote">
-      <p>Add descriptions for relevant historical discussions and prior art:</p>
-      <dl>
-        <dt>[[DesignIssues-Diff]]</dt>
-        <dd>TimBL's design note on problems with Diff.</dd>
-        <dt>[[eswc2014Kasten]]</dt>
-        <dd>A Framework for Iterative Signing of Graph Data on the Web.</dd>
-        <dt>[[Hogan-Canonical-RDF]]</dt>
-        <dd>Aiden Hogan's paper on canonicalizing RDF</dd>
-        <dt>[[HPL-2003-142]]</dt>
-        <dd>Jeremy J. Carroll's paper on signing RDF graphs.</dd>
-      </dl>
-    </div>
     <div class="issue" data-number="19"></div>
   </section>
 
@@ -469,9 +456,7 @@
     "RDF Canonicalization algorithm version 1.0"
     (<abbr title="RDF Canonicalization algorithm version 1.0"><dfn class="export">RDFC-1.0</dfn></abbr>).</p>
 
-  <p class="ednote">This statement is overly prescriptive and does not include normative language.
-    This spec should describe the theoretical basis for graph canonicalization and describe
-    behavior using normative statements. The explicit algorithms should follow as an informative appendix.</p>
+  <p class="issue" data-number="112"></p>
 
   <section id="canon-overview" class="informative">
     <h3>Overview</h3>
@@ -515,7 +500,7 @@
       <dd>An <a>identifier issuer</a>, initialized with the
         prefix <code>c14n</code>, for issuing canonical
         <a>blank node identifiers</a>.
-        <div class="ednote">
+        <div class="note">
           Mapping all <a>blank nodes</a> to use this
           identifier spec means that an <a>RDF dataset</a> composed of two
           different <a>RDF graphs</a> will issue different
@@ -566,15 +551,8 @@
     <h2>Canonicalization Algorithm</h2>
 
     <p class="ednote">At the time of writing, there are several open issues that will determine important details of the canonicalization algorithm.</p>
-    <div class="issue" data-number="7"></div>
-    <div class="issue" data-number="8"></div>
     <div class="issue" data-number="10"></div>
-    <div class="issue" data-number="11"></div>
-    <div class="issue" data-number="16"></div>
-    <div class="issue" data-number="84"></div>
-    <div class="issue" data-number="87"></div>
-    <div class="issue" data-number="88"></div>
-    <div class="issue" data-number="89"></div>
+    <div class="issue" data-number="98"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>normalized dataset</a>. This algorithm will assign
@@ -1810,9 +1788,7 @@
       This process proceeds in every greater degrees of indirection until
       a unique hash is obtained.</p>
 
-    <p class="ednote">The 'path' terminology could also be changed to better
-      indicate what a path is (a particular deterministic serialization for
-      a subgraph/subdataset of nodes without globally-unique identifiers).</p>
+    <p class="issue" data-number="113"></p>
 
     <section id="hash-nd-quads-overview" class="informative">
       <h3>Overview</h3>
@@ -2246,16 +2222,6 @@
 
     <section id="hash-nd-quads-algorithm">
       <h3>Algorithm</h3>
-
-      <div class="issue" data-number="16">
-        An additional input to this algorithm should be added that
-        allows it to be optionally skipped and throw an error if any
-        equivalent related hashes were produced that must be permuted
-        during step 5.4.4. For practical uses of the algorithm, this step
-        should never be encountered and could be turned off, disabling
-        canonizing datasets that include a need to run it as a security
-        measure.
-      </div>
 
       <p>The inputs to this algorithm are the <a>canonicalization state</a>,
         the <var>identifier</var> for the <a>blank node</a> to
@@ -2821,7 +2787,7 @@ disclose.
 
 <section id="use-cases" class="informative">
   <h2>Use Cases</h2>
-  <p class="ednote">TBD</p>
+  <p class="issue" data-number="110"></p>
 </section>
 
 <section id="examples" class="informative">
@@ -3440,7 +3406,7 @@ disclose.
 
   <p data-include="common/participants.html"></p>
 
-  <p class="ednote">Acknowledge CCG members.</p>
+  <p class="issue" data-number="114"></p>
 </section>
 
 </body>
