@@ -42,11 +42,11 @@
       "rdfs:comment": "All RDF Dataset Canonicalization tests have an input file referenced using `mf:action` and a result file referenced using `mf:result`. Results are compared as text where the result of running the test is serialized to canonical N-Quads, lexicographically-sorted."
     },
     {
-      "@id": "rdfc:Urdna2015EvalTest",
+      "@id": "rdfc:RDFC10EvalTest",
       "@type": "rdfs:Class",
-      "rdfs:label": "URDNA2015 Evaluation Test",
+      "rdfs:label": "RDFC-1.0 Evaluation Test",
       "rdfs:subClassOf": "rdfc:Test",
-      "rdfs:comment": "Canonicalization performed using the URDNA2015 algorithm."
+      "rdfs:comment": "Canonicalization performed using the RDFC-1.0 algorithm."
     }
   ]
 }
