@@ -17,86 +17,87 @@
   earl:testSubjects <https://github.com/pchampin/sophia_rs>,
     <https://iherman.github.io/rdfjs-c14n/>,
     <https://rubygems.org/gems/rdf-normalize> ;
-  mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015>) .
+  mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10>) .
 
 # Manifests
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015> a mf:Manifest, earl:Report ;
-  rdfs:label "RDF Dataset Canonicalization (URDNA2015)" ;
-  rdfs:comment "Tests the 2015 version of RDF Dataset Canonicalization." ;
-  mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068>
-    <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069>) .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10> a mf:Manifest, earl:Report ;
+  rdfs:label "RDF Dataset Canonicalization (RDFC-1.0)" ;
+  rdfs:comment "Tests the 1.0 version of RDF Dataset Canonicalization." ;
+  mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069>) .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple id" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test001-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test001-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test001-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -105,7 +106,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -114,22 +115,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "duplicate property iri values" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -138,7 +140,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -147,22 +149,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "bnode" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test003-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test003-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -171,7 +174,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -180,22 +183,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "bnode plus embed w/subject" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -204,7 +208,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -213,22 +217,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "bnode embed" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test005-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test005-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -237,7 +242,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -246,22 +251,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "multiple rdf types" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test006-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test006-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -270,7 +276,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -279,22 +285,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "single subject complex" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test008-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test008-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -303,7 +310,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -312,22 +319,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "multiple subjects - complex" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test009-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test009-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -336,7 +344,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -345,22 +353,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "type" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test010-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test010-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -369,7 +378,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -378,22 +387,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "type-coerced type" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test011-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test011-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -402,7 +412,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -411,22 +421,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "type-coerced type, cycle" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test013-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test013-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -435,7 +446,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -444,22 +455,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "check types" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test014-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test014-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -468,7 +480,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -477,22 +489,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - dual link - embed" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test016-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test016-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -501,7 +514,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -510,22 +523,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - dual link - non-embed" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -534,7 +548,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -543,22 +557,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - self link" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test018-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test018-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -567,7 +582,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -576,22 +591,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - disjoint self links" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -600,7 +616,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -609,22 +625,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - diamond" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test020-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test020-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -633,7 +650,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -642,22 +659,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - circle of 2" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test021-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test021-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -666,7 +684,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -675,22 +693,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 2" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test022-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test022-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -699,7 +718,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -708,22 +727,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - circle of 3" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test023-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test023-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -732,7 +752,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -741,22 +761,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (0-1-2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test024-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test024-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -765,7 +786,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -774,22 +795,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (0-2-1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test025-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test025-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -798,7 +820,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -807,22 +829,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (1-0-2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test026-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test026-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -831,7 +854,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -840,22 +863,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (1-2-0)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test027-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test027-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -864,7 +888,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -873,22 +897,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (2-1-0)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test028-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test028-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -897,7 +922,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -906,22 +931,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (2-0-1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test029-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test029-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -930,7 +956,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -939,22 +965,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - point at circle of 3" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test030-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test030-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -963,7 +990,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -972,22 +999,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "disjoint identical subgraphs (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -996,7 +1024,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1005,22 +1033,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "disjoint identical subgraphs (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test034-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test034-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test034-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test034-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1029,7 +1058,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1038,22 +1067,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "reordered w/strings (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1062,7 +1092,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1071,22 +1101,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "reordered w/strings (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test036-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test036-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test036-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test036-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1095,7 +1126,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1104,22 +1135,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "reordered 4 bnodes, reordered 2 properties (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1128,7 +1160,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1137,22 +1169,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "reordered 4 bnodes, reordered 2 properties (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test039-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test039-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test039-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test039-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1161,7 +1194,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1170,22 +1203,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "reordered 6 bnodes (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test040-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test040-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1194,7 +1228,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1203,22 +1237,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "literal with language" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test043-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test043-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1227,7 +1262,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1236,22 +1271,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "evil (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test044-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test044-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1260,7 +1296,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1269,22 +1305,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "evil (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test045-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test045-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1293,7 +1330,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1302,22 +1339,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "evil (3)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test046-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test046-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1326,7 +1364,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1335,22 +1373,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "deep diff (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test047-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test047-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1359,7 +1398,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1368,22 +1407,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "deep diff (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1392,7 +1432,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1401,22 +1441,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "@list" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test053-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test053-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1425,7 +1466,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1434,22 +1475,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "t-graph" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test054-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test054-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1458,7 +1500,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1467,22 +1509,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple reorder (1)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test055-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test055-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1491,7 +1534,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1500,22 +1543,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple reorder (2)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1524,7 +1568,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1533,22 +1577,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "unnamed graph" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test057-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test057-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1557,7 +1602,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1566,22 +1611,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "unnamed graph with blank node objects" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1590,7 +1636,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1599,22 +1645,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "n-quads parsing" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test059-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test059-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test059-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test059-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1623,7 +1670,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1632,22 +1679,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "n-quads escaping" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1656,7 +1704,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1665,22 +1713,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "same literal value with multiple languages" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test061-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test061-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test061-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test061-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1689,7 +1738,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1698,22 +1747,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "same literal value with multiple datatypes" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1722,7 +1772,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1731,23 +1781,24 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - diamond (with _:b)" ;
   rdfs:comment "This duplicates #test020, but uses _:b as a blank node prefix" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test063-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test063-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1756,7 +1807,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1765,22 +1816,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (0-1-2, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test064-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test064-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1789,7 +1841,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1798,22 +1850,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (0-2-1, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test065-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test065-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1822,7 +1875,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1831,22 +1884,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (1-0-2, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test066-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test066-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1855,7 +1909,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1864,22 +1918,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (1-2-0, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test067-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test067-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1888,7 +1943,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1897,22 +1952,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (2-1-0, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test068-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test068-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1921,7 +1977,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1930,22 +1986,23 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> a <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest>, earl:TestCriterion, earl:TestCase ;
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "blank node - double circle of 3 (2-0-1, reversed)" ;
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
-  mf:action <https://w3c.github.io/rdf-canon/tests/urdna2015/test069-in.nq> ;
-  mf:result <https://w3c.github.io/rdf-canon/tests/urdna2015/test069-urdna2015.nq> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-rdfc10.nq> ;
   earl:assertions [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> ;
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1954,7 +2011,7 @@
     earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
-    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
@@ -1978,7 +2035,7 @@
   doap:name "rdfjs-c14n" ;
   doap:developer <https://www.ivan-herman.net/foaf#me> ;
   doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
-  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm URDNA2015, relying on the RDF/JS interfaces"@en ;
+  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, relying on the RDF/JS interfaces"@en ;
   doap:programming-language "TypeScript" ;
   doap:release [doap:revision "1.0.4"] .
 
@@ -2012,5 +2069,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-06-07"^^xsd:date;
+  doap:created "2023-01-27"^^xsd:date;
   doap:revision "0.8.0" .

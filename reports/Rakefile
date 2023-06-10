@@ -1,13 +1,13 @@
 task default: [ "manifests.nt", "earl.jsonld", "earl.ttl", "index.html" ]
 
 desc "Create concatenated test manifests"
-file "manifests.nt" => File.expand_path("../../tests/manifest-urdna2015.ttl", __FILE__) do
+file "manifests.nt" => File.expand_path("../../tests/manifest-rdfc10.ttl", __FILE__) do
   require 'rdf'
   require 'json/ld'
   require 'rdf/ntriples'
   require 'rdf/turtle'
   graph = RDF::Graph.load(
-    File.expand_path("../../tests/manifest-urdna2015.ttl", __FILE__),
+    File.expand_path("../../tests/manifest-rdfc10.ttl", __FILE__),
     base_uri: "https://w3c.github.io/rdf-canon/tests/",
     unique_bnodes: true)
   puts "write"

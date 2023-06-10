@@ -45,7 +45,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -55,7 +55,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -65,7 +65,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -75,7 +75,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -85,7 +85,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -95,7 +95,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -105,7 +105,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -115,7 +115,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -125,7 +125,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -135,7 +135,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -145,7 +145,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -155,7 +155,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -165,7 +165,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -175,7 +175,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -185,7 +185,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -195,7 +195,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -205,7 +205,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -215,7 +215,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -225,7 +225,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -235,7 +235,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -245,7 +245,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -255,7 +255,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -265,7 +265,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -275,7 +275,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -285,7 +285,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -295,7 +295,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -305,7 +305,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -315,7 +315,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -325,7 +325,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -335,7 +335,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -345,7 +345,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -355,7 +355,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -365,7 +365,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -375,7 +375,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -385,7 +385,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -395,7 +395,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -405,7 +405,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -415,7 +415,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -425,7 +425,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -435,7 +435,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -445,7 +445,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -455,7 +455,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -465,7 +465,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -475,7 +475,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -485,7 +485,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -495,7 +495,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -505,7 +505,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -515,7 +515,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -525,7 +525,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -535,7 +535,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -545,7 +545,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -555,7 +555,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -565,7 +565,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -575,7 +575,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -585,7 +585,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -595,7 +595,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -605,7 +605,7 @@
 [ a earl:Assertion;
   earl:assertedBy <https://greggkellogg.net/foaf#me>;
   earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
