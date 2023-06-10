@@ -1,4 +1,4 @@
-test,name,comment,approval,urdna2015
+test,name,comment,approval,rdfc10
 test001,simple id,,,TRUE
 test002,duplicate property iri values,,,TRUE
 test003,bnode,,,TRUE

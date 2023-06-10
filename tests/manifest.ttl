@@ -8,7 +8,7 @@
 ## 3. http://www.w3.org/2004/10/27-testcases
 ##
 ## Test types
-## * rdfc:Urdna2015EvalTest  - Canonicalization using URDNA2015
+## * rdfc:RDFC10EvalTest  - Canonicalization using RDFC-1.0
 
 @prefix : <#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,4 +18,4 @@
 <>  a mf:Manifest ;
     rdfs:label "RDF Dataset Canonicalization Test Cases" ;
     rdfs:comment "Includes manifests for different application profiles." ;
-    mf:include (<manifest-urdna2015>).
+    mf:include (<manifest-rdfc10>).

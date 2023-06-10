@@ -50,7 +50,7 @@
     %h1{property: "rdfs:label"}<= man['label']
     %p{property: "rdfs:comment"}<= man['comment']
     :markdown
-      This page describes RDF Dataset Canonicalization tests for the URDNA2015 profile. These tests are also described in [JSON-LD](manifest.jsonld) and [Turtle](manifest.ttl) formats for convenience. The manifest vocabulary is described in the [RDF Dataset Canonicalization Test Vocabulary](vocab.html) ([JSON-LD](vocab.jsonld), [Turtle](vocab.ttl)) and is based on the [RDF Test Vocabulary](http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/).
+      This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in [JSON-LD](manifest.jsonld) and [Turtle](manifest.ttl) formats for convenience. The manifest vocabulary is described in the [RDF Dataset Canonicalization Test Vocabulary](vocab.html) ([JSON-LD](vocab.jsonld), [Turtle](vocab.ttl)) and is based on the [RDF Test Vocabulary](http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/).
 
       A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the [Credentials Community Group repository](https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests).
 
@@ -104,8 +104,8 @@
         %p
           - if id =~/urgna2012/
             Instructions specific to running URGNA2012 tests.
-          - elsif id =~ /urdna2015/
-            Instructions specific to running URDNA2015 tests.
+          - elsif id =~ /rdfc10/
+            Instructions specific to running RDFC-1.0 tests.
         %dl.test-description
           - man['entries'].each do |test|
             %dt{id: test['id']}

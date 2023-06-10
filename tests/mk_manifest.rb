@@ -19,14 +19,14 @@ class Manifest
 
   TITLE = {
     #urgna2012: "RDF Graph Normalization (URGNA2012)",
-    urdna2015: "RDF Dataset Canonicalization (URDNA2015)",
+    rdfc10: "RDF Dataset Canonicalization (RDFC-1.0)",
   }
   DESCRIPTION = {
     #urgna2012: "Tests the 2012 version of RDF Graph Normalization.",
-    urdna2015: "Tests the 2015 version of RDF Dataset Canonicalization."
+    rdfc10: "Tests the 1.0 version of RDF Dataset Canonicalization."
   }
 
-  Test = Struct.new(:id, :name, :comment, :approval, :action, :urgna2012, :urdna2015)
+  Test = Struct.new(:id, :name, :comment, :approval, :action, :urgna2012, :rdfc10)
 
   attr_accessor :tests
 
@@ -42,16 +42,16 @@ class Manifest
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
       urgna2012 = "urgna2012/#{entry[:test]}-urgna2012.nq" if entry[:urgna2012] == "TRUE"
-      urdna2015 = "urdna2015/#{entry[:test]}-urdna2015.nq" if entry[:urdna2015] == "TRUE"
+      rdfc10 = "rdfc10/#{entry[:test]}-rdfc10.nq" if entry[:rdfc10] == "TRUE"
       Test.new(entry[:test], entry[:name], entry[:comment], entry[:approval],
-               "urdna2015/#{entry[:test]}-in.nq", urgna2012, urdna2015)
+               "rdfc10/#{entry[:test]}-in.nq", urgna2012, rdfc10)
     end
   end
 
   # Create files referenced in the manifest
   def create_files
     tests.each do |test|
-      files = [test.action, test.urgna2012, test.urdna2015].compact
+      files = [test.action, test.urgna2012, test.rdfc10].compact
       files.compact.select {|f| !File.exist?(f)}.each do |f|
         File.open(f, "w") {|io| io.puts( f.end_with?('.json') ? "{}" : "")}
       end
@@ -61,7 +61,7 @@ class Manifest
   def test_class(test, variant)
     case variant.to_sym
     when :urgna2012 then "rdfc:Urgna2012EvalTest"
-    when :urdna2015 then "rdfc:Urdna2015EvalTest"
+    when :rdfc10 then "rdfc:RDFC10EvalTest"
     end
   end
 
@@ -141,7 +141,7 @@ class Manifest
 ## This file is generated automatciallly from manifest.csv, and should not be edited directly.
 ##
 ## Test types
-## * rdfc:Urdna2015EvalTest  - Canonicalization using URDNA2015
+## * rdfc:RDFC10EvalTest  - Canonicalization using RDFC-1.0
 
 @prefix : <manifest-#{variant}#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
