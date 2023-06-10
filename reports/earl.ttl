@@ -2049,7 +2049,7 @@
   doap:homepage <https://github.com/ruby-rdf/rdf-normalize> ;
   doap:description "RDF::Normalize performs Dataset Canonicalization for RDF.rb."@en ;
   doap:programming-language "Ruby" ;
-  doap:release [doap:revision "0.5.1"] .
+  doap:release [doap:revision "0.6.0"] .
 
 <https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor ;
   foaf:name "Gregg Kellogg" ;
