@@ -1,404 +1,404 @@
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#Manifest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015> <http://www.w3.org/2000/01/rdf-schema#label> "RDF Dataset Canonicalization (URDNA2015)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015> <http://www.w3.org/2000/01/rdf-schema#comment> "Tests the 2015 version of RDF Dataset Canonicalization." .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#entries> _:g5680 .
-_:g5680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#Manifest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10> <http://www.w3.org/2000/01/rdf-schema#label> "RDF Dataset Canonicalization (RDFC-1.0)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10> <http://www.w3.org/2000/01/rdf-schema#comment> "Tests the 1.0 version of RDF Dataset Canonicalization." .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#entries> _:g5680 .
+_:g5680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> .
 _:g5680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5660 .
-_:g5660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> .
+_:g5660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> .
 _:g5660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5640 .
-_:g5640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> .
+_:g5640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> .
 _:g5640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5620 .
-_:g5620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> .
+_:g5620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> .
 _:g5620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5600 .
-_:g5600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> .
+_:g5600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> .
 _:g5600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5580 .
-_:g5580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> .
+_:g5580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> .
 _:g5580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5560 .
-_:g5560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> .
+_:g5560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> .
 _:g5560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5540 .
-_:g5540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> .
+_:g5540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> .
 _:g5540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5520 .
-_:g5520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> .
+_:g5520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> .
 _:g5520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5500 .
-_:g5500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> .
+_:g5500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> .
 _:g5500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5480 .
-_:g5480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> .
+_:g5480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> .
 _:g5480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5460 .
-_:g5460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> .
+_:g5460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> .
 _:g5460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5440 .
-_:g5440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> .
+_:g5440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> .
 _:g5440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5420 .
-_:g5420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> .
+_:g5420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> .
 _:g5420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5400 .
-_:g5400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> .
+_:g5400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> .
 _:g5400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5380 .
-_:g5380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> .
+_:g5380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> .
 _:g5380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5360 .
-_:g5360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> .
+_:g5360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> .
 _:g5360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5340 .
-_:g5340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> .
+_:g5340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> .
 _:g5340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5320 .
-_:g5320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> .
+_:g5320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> .
 _:g5320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5300 .
-_:g5300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> .
+_:g5300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> .
 _:g5300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5280 .
-_:g5280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> .
+_:g5280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> .
 _:g5280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5260 .
-_:g5260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> .
+_:g5260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> .
 _:g5260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5240 .
-_:g5240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> .
+_:g5240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> .
 _:g5240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5220 .
-_:g5220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> .
+_:g5220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> .
 _:g5220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5200 .
-_:g5200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> .
+_:g5200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> .
 _:g5200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5180 .
-_:g5180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> .
+_:g5180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> .
 _:g5180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5160 .
-_:g5160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> .
+_:g5160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> .
 _:g5160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5140 .
-_:g5140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> .
+_:g5140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> .
 _:g5140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5120 .
-_:g5120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> .
+_:g5120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> .
 _:g5120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5100 .
-_:g5100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> .
+_:g5100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> .
 _:g5100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5080 .
-_:g5080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> .
+_:g5080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> .
 _:g5080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5060 .
-_:g5060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> .
+_:g5060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> .
 _:g5060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5040 .
-_:g5040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> .
+_:g5040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> .
 _:g5040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5020 .
-_:g5020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> .
+_:g5020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> .
 _:g5020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g5000 .
-_:g5000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> .
+_:g5000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> .
 _:g5000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4980 .
-_:g4980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> .
+_:g4980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> .
 _:g4980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4960 .
-_:g4960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> .
+_:g4960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> .
 _:g4960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4940 .
-_:g4940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> .
+_:g4940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> .
 _:g4940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4920 .
-_:g4920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> .
+_:g4920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> .
 _:g4920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4900 .
-_:g4900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> .
+_:g4900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> .
 _:g4900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4880 .
-_:g4880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> .
+_:g4880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> .
 _:g4880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4860 .
-_:g4860 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> .
+_:g4860 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> .
 _:g4860 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4840 .
-_:g4840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> .
+_:g4840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> .
 _:g4840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4820 .
-_:g4820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> .
+_:g4820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> .
 _:g4820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4800 .
-_:g4800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> .
+_:g4800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> .
 _:g4800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4780 .
-_:g4780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> .
+_:g4780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> .
 _:g4780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4760 .
-_:g4760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> .
+_:g4760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> .
 _:g4760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4740 .
-_:g4740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> .
+_:g4740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> .
 _:g4740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4720 .
-_:g4720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> .
+_:g4720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> .
 _:g4720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4700 .
-_:g4700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> .
+_:g4700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> .
 _:g4700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4680 .
-_:g4680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> .
+_:g4680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> .
 _:g4680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4660 .
-_:g4660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> .
+_:g4660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> .
 _:g4660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4640 .
-_:g4640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> .
+_:g4640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> .
 _:g4640 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4620 .
-_:g4620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> .
+_:g4620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> .
 _:g4620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4600 .
-_:g4600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> .
+_:g4600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> .
 _:g4600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4580 .
-_:g4580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> .
+_:g4580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> .
 _:g4580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:g4560 .
-_:g4560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> .
+_:g4560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> .
 _:g4560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple id" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test001-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test001-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "duplicate property iri values" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test002-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test003-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test003-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode plus embed w/subject" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test004-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode embed" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test005-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test005-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "multiple rdf types" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test006-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "single subject complex" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test008-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test008-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "multiple subjects - complex" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test009-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test010-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test010-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type-coerced type" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test011-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type-coerced type, cycle" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test013-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test013-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "check types" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test014-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - dual link - embed" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test016-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test016-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - dual link - non-embed" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test017-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - self link" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test018-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test018-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - disjoint self links" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test019-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test020-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test020-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - circle of 2" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test021-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 2" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test022-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test022-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - circle of 3" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test023-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-1-2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test024-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test024-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-2-1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test025-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-0-2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test026-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test026-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-2-0)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test027-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-1-0)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test028-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test028-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-0-1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test029-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - point at circle of 3" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test030-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test030-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "disjoint identical subgraphs (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test033-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "disjoint identical subgraphs (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test034-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test034-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered w/strings (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test035-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered w/strings (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test036-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test036-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 4 bnodes, reordered 2 properties (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test038-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 4 bnodes, reordered 2 properties (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test039-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test039-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 6 bnodes (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test040-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "literal with language" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test043-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test043-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test044-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test045-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test045-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (3)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test046-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "deep diff (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test047-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test047-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "deep diff (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test048-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "@list" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test053-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test053-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "t-graph" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test054-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple reorder (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test055-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test055-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple reorder (2)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test056-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "unnamed graph" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test057-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test057-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "unnamed graph with blank node objects" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test058-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "n-quads parsing" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test059-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test059-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "n-quads escaping" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test060-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "same literal value with multiple languages" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test061-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test061-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "same literal value with multiple datatypes" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test062-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond (with _:b)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/2000/01/rdf-schema#comment> "This duplicates #test020, but uses _:b as a blank node prefix" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test063-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test063-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-1-2, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test064-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-2-1, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test065-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test065-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-0-2, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test066-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-2-0, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test067-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test067-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-1-0, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test068-urdna2015.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#Urdna2015EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-0-1, reversed)" .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/urdna2015/test069-in.nq> .
-<https://w3c.github.io/rdf-canon/tests/manifest-urdna2015#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/urdna2015/test069-urdna2015.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple id" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test001-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "duplicate property iri values" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode plus embed w/subject" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "bnode embed" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "multiple rdf types" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test006-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test006-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "single subject complex" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "multiple subjects - complex" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test009-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test009-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type-coerced type" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test011-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test011-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "type-coerced type, cycle" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "check types" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test014-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test014-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - dual link - embed" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - dual link - non-embed" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - self link" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - disjoint self links" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - circle of 2" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test021-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test021-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 2" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - circle of 3" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test023-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test023-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-1-2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-2-1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test025-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test025-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-0-2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-2-0)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test027-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test027-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-1-0)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-0-1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test029-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test029-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - point at circle of 3" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "disjoint identical subgraphs (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "disjoint identical subgraphs (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test034-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test034-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered w/strings (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered w/strings (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test036-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test036-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 4 bnodes, reordered 2 properties (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 4 bnodes, reordered 2 properties (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test039-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test039-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "reordered 6 bnodes (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test040-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test040-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "literal with language" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test044-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test044-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "evil (3)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test046-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test046-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "deep diff (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "deep diff (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "@list" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "t-graph" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test054-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test054-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple reorder (1)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "simple reorder (2)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "unnamed graph" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "unnamed graph with blank node objects" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "n-quads parsing" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test059-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test059-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "n-quads escaping" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "same literal value with multiple languages" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test061-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test061-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "same literal value with multiple datatypes" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond (with _:b)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/2000/01/rdf-schema#comment> "This duplicates #test020, but uses _:b as a blank node prefix" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-1-2, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test064-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test064-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (0-2-1, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-0-2, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test066-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test066-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (1-2-0, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-1-0, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test068-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test068-rdfc10.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - double circle of 3 (2-0-1, reversed)" .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-in.nq> .
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-rdfc10.nq> .

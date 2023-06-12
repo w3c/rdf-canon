@@ -13,5 +13,5 @@
   "type": "mf:Manifest",
   "label": "RDF Dataset Canonicalization Test Cases",
   "comment": "Includes manifests for different application profiles.",
-  "include": ["manifest-urdna2015"]
+  "include": ["manifest-rdfc10"]
 }

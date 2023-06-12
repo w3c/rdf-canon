@@ -1,5 +1,6 @@
 ## General instructions for running the RDF Dataset Canonicalization Test suites
-FIXME
+
+* Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.
 
 ## Contributing Tests
 The test manifests and entries are built automatically from
@@ -11,7 +12,7 @@ Tests may be contributed via pull request to
 with suitable changes to the
 [manifest.csv](manifest.csv) and necessary _action_ and _result_ files. 
 
-The [manifest-urdna2015.ttl](manifest-urdna2015.ttl), [manifest-urdna2015.jsonld](manifest-urdna2015.jsonld), and [index.html](index.html) files are built automatically via a GitHub Action when files change in this directory, and should not be edited directly.
+The [manifest-rdfc10.ttl](manifest-rdfc10.ttl), [manifest-rdfc10.jsonld](manifest-rdfc10.jsonld), and [index.html](index.html) files are built automatically via a GitHub Action when files change in this directory, and should not be edited directly.
 
 The [vocab.html](vocab.html) and [vocab.jsonld](vocab.jsonld) files are built using [mk_vocab.rb](mk_vocab.rb) and are not build automatically by GitHub PR, as they change infrequently.
 
