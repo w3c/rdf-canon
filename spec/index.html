@@ -299,15 +299,15 @@
     consistent with the algorithms defined in this specification.</p>
 
   <p>The algorithms in this specification should be considered normative,
-    as to consistently reproduce the same canonical identifiers,
+    because to consistently reproduce the same canonical identifiers,
     implementations MUST strictly conform to the steps outlined in these algorithms.</p>
 
-  <p class="note">Implementers can partially check their level of conformance to
+  <p class="note">Implementers can partially check their level of conformance with
     this specification by successfully passing the test cases of the
     <a href="https://w3c.github.io/rdf-canon/tests/">RDF Dataset Canonicalization test suite</a>.
     Note, however, that passing all the tests in the test
     suite does not imply complete conformance to this specification. It only implies
-    that the implementation conforms to aspects tested by the test suite.</p>
+    that the implementation conforms to the aspects tested by the test suite.</p>
 </section>
 
 <section id="terminology" class="normative">
@@ -384,12 +384,12 @@
       <dd>A <a>canonicalization function</a> maps <a>RDF datasets</a>
         into <a data-cite="RDF11-CONCEPTS#dfn-isomorphic">isomorphic datasets</a>.
         Two datasets produce the same canonical result if and only if they are <a data-cite="RDF11-CONCEPTS#dfn-isomorphic">isomorphic</a>.
-        The <a>RDFC-1.0</a> algorithm implements a <a>canonicalization function</a>,
-        although some datasets may be constructed to prevent this algorithm from
-        terminating (see <a href="#dataset-poisoning" class="sectionRef"></a>).
-        In this case the algorithm can be considered to be
-        a <dfn class="export">canonicalization partial function</dfn>.
-        For two datasets to be isomorphic, they both must have equivalent defined
+        The <a>RDFC-1.0</a> algorithm implements a <a>canonicalization function</a>.
+        Some datasets may be constructed to prevent this algorithm from
+        terminating (see <a href="#dataset-poisoning" class="sectionRef"></a>),
+        in which case the algorithm can be considered to be
+        a <dfn class="export">partial canonicalization function</dfn>.
+        For two datasets to be isomorphic, they must have equivalent defined
         results.
       </dd>
     </dl>
