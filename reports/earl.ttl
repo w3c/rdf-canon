@@ -2035,9 +2035,9 @@
   doap:name "rdfjs-c14n" ;
   doap:developer <https://www.ivan-herman.net/foaf#me> ;
   doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
-  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, relying on the RDF/JS interfaces"@en ;
+  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces"@en ;
   doap:programming-language "TypeScript" ;
-  doap:release [doap:revision "1.0.4"] .
+  doap:release [doap:revision "2.0.0"] .
 
 <https://www.ivan-herman.net/foaf#me> a foaf:Person, earl:Assertor ;
   foaf:name "Ivan Herman" ;
@@ -2069,5 +2069,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-06-12"^^xsd:date;
+  doap:created "2023-06-14"^^xsd:date;
   doap:revision "0.8.0" .

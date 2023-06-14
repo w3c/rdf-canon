@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-06-12"
+        "@value": "2023-06-14"
       },
       "revision": "0.8.0"
     },
@@ -200,11 +200,11 @@
         }
       ],
       "homepage": "https://iherman.github.io/rdfjs-c14n/",
-      "doapDesc": "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, relying on the RDF/JS interfaces",
+      "doapDesc": "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces",
       "language": "TypeScript",
       "release": {
         "@id": "_:b0",
-        "revision": "1.0.4"
+        "revision": "2.0.0"
       }
     },
     {
