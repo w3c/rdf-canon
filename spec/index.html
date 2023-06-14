@@ -298,7 +298,7 @@
     the <a>canonical n-quads form</a> of an <a>input dataset</a>
     consistent with the algorithms defined in this specification.</p>
 
-  <p>The algorithms in this specification should be considered normative,
+  <p>The algorithms in this specification are normative,
     because to consistently reproduce the same canonical identifiers,
     implementations MUST strictly conform to the steps outlined in these algorithms.</p>
 
@@ -382,7 +382,7 @@
       </dd>
       <dt><dfn class="export">canonicalization function</dfn></dt>
       <dd>A <a>canonicalization function</a> maps <a>RDF datasets</a>
-        into <a data-cite="RDF11-CONCEPTS#dfn-dataset-isomorphism">isomorphic datasets</a>.
+        into <a data-cite="RDF11-CONCEPTS#dfn-dataset-isomorphism">isomorphic datasets</a> [[!RDF11-CONCEPTS]].
         Two datasets produce the same canonical result if and only if they are <a data-cite="RDF11-CONCEPTS#dfn-dataset-isomorphism">isomorphic</a>.
         The <a>RDFC-1.0</a> algorithm implements a <a>canonicalization function</a>.
         Some datasets may be constructed to prevent this algorithm from
@@ -390,8 +390,7 @@
         in a reasonable amount of time,
         in which case the algorithm can be considered to be
         a <dfn class="export">partial canonicalization function</dfn>.
-        For two datasets to be isomorphic, they must have equivalent defined
-        results.
+        
       </dd>
     </dl>
   </section>
