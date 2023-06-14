@@ -293,7 +293,22 @@
   </section>
 </section>
 
-<section id="conformance"></section>
+<section id="conformance">
+  <p>A conforming processor is a system which can generate
+    the <a>canonical n-quads form</a> of an <a>input dataset</a>
+    consistent with the algorithms defined in this specification.</p>
+
+  <p>The algorithms in this specification are normative,
+    because to consistently reproduce the same canonical identifiers,
+    implementations MUST strictly conform to the steps outlined in these algorithms.</p>
+
+  <p class="note">Implementers can partially check their level of conformance with
+    this specification by successfully passing the test cases of the
+    <a href="https://w3c.github.io/rdf-canon/tests/">RDF Dataset Canonicalization test suite</a>.
+    Note, however, that passing all the tests in the test
+    suite does not imply complete conformance to this specification. It only implies
+    that the implementation conforms to the aspects tested by the test suite.</p>
+</section>
 
 <section id="terminology" class="normative">
   <h2>Terminology</h2>
@@ -364,6 +379,17 @@
       <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
       <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
         This is a generalization of an <a>RDF triple</a> along with a <a>graph name</a>.
+      </dd>
+      <dt><dfn class="export">canonicalization function</dfn></dt>
+      <dd>A <a>canonicalization function</a> maps <a>RDF datasets</a>
+        into <a data-cite="RDF11-CONCEPTS#dfn-dataset-isomorphism">isomorphic datasets</a> [[!RDF11-CONCEPTS]].
+        Two datasets produce the same canonical result if and only if they are <a data-cite="RDF11-CONCEPTS#dfn-dataset-isomorphism">isomorphic</a>.
+        The <a>RDFC-1.0</a> algorithm implements a <a>canonicalization function</a>.
+        Some datasets may be constructed to prevent this algorithm from
+        terminating in a reasonable amount of time (see <a href="#dataset-poisoning" class="sectionRef"></a>),
+        in which case the algorithm can be considered to be
+        a <dfn class="export">partial canonicalization function</dfn>.
+        
       </dd>
     </dl>
   </section>
@@ -456,8 +482,6 @@
     "RDF Canonicalization algorithm version 1.0"
     (<abbr title="RDF Canonicalization algorithm version 1.0"><dfn class="export">RDFC-1.0</dfn></abbr>).</p>
 
-  <p class="issue" data-number="112"></p>
-
   <section id="canon-overview" class="informative">
     <h3>Overview</h3>
 
@@ -498,7 +522,7 @@
         <a>blank node identifiers</a>.</dd>
       <dt><dfn>canonical issuer</dfn></dt>
       <dd>An <a>identifier issuer</a>, initialized with the
-        prefix <code>c14n</code>, for issuing canonical
+        prefix <code>c14n</code> (short for canonicalization), for issuing canonical
         <a>blank node identifiers</a>.
         <div class="note">
           Mapping all <a>blank nodes</a> to use this
@@ -2754,7 +2778,7 @@ disclose.
 <section id="security-considerations" class="informative">
   <h2>Security Considerations</h2>
 
-  <section>
+  <section id="dataset-poisoning" class="informative">
     <h3>Dataset Poisoning</h3>
 
     <p>The canonicalization algorithm examines every difference in the
