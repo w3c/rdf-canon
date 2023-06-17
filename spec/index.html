@@ -340,7 +340,7 @@
             the <a>input dataset</a>,</li>
           <li>the <a>input blank node identifier map</a> —
             mapping <a>blank nodes</a> in the input dataset to <a>blank node identifiers</a>, and</li>
-          <li>the <a>canonical issuer</a> —
+          <li>the <a>issued identifiers map</a> from the <a>canonical issuer</a> —
             mapping identifiers in the input dataset to canonical identifiers</li>
         </ul>
         A concrete serialization of a <a>canonicalized dataset</a> MUST label
@@ -609,7 +609,7 @@
           (which remains immutable)
           the <a>input blank node identifier map</a>
           (retaining blank node identifiers from the input if possible, otherwise assigning them arbitrarily);
-          the <a>canonical issuer</a> is added upon completion of the algorithm.</li>
+          the <a>issued identifiers map</a> from the <a>canonical issuer</a> is added upon completion of the algorithm.</li>
         <li id="ca-hl.2"><strong>Compute first degree hashes</strong>.
           Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
         <li id="ca-hl.3"><strong>Canonically label unique nodes</strong>.
@@ -628,7 +628,7 @@
         <li id="ca-hl.6"><strong>Finish</strong>.
           Return the <a>serialized canonical form</a> of the <a>canonicalized dataset</a>.
           Alternatively, return the <a>canonicalized dataset</a> containing
-          the <a>input blank node identifier map</a> and <a>canonical issuer</a>.</li>
+          the <a>input blank node identifier map</a> and <a>issued identifiers map</a>.</li>
       </ol>
     </section>
 
@@ -1292,13 +1292,15 @@
             </li>
           </ol>
         </li>
-        <li id="ca.6">Add the <a>canonical issuer</a> to the
+        <li id="ca.6">Add the <a>issued identifiers map</a>
+          from the <a>canonical issuer</a> to the
           <a>canonicalized dataset</a>.
           <details>
             <summary>Explanation</summary>
-            <p>This step adds the <a>canonical issuer</a> to the
+            <p>This step adds the <a>issued identifiers map</a>
+              from the <a>canonical issuer</a> to the
               <a>canonicalized dataset</a>, the [= map/key | keys =] in the
-              <a>canonical issuer</a> with the [= map/entry | map entries =] of the
+              <a>issued identifiers map</a> are [= map/entry | map entries =] in the
               <a>input blank node identifier map</a>.</p>
           </details>
           <details>
@@ -1306,12 +1308,12 @@
             <p>Log the state of the <a>canonical issuer</a> at the completion of the algorithm.</p>
             <pre class="logging yaml" data-transform="updateExample">
               <!--
-                # Canonical issuer state after step 5 for shared hashes example
+                # Canonical issuer state after step 6 for shared hashes example
                 ca:
                   ####...####
                   ca.6:
-                    log point: Replace original with canonical labels (4.4.3 (6)).
-                    canonical issuer: {e2: c14n0, e3: c14n1, e1: c14n2, e0: c14n3}
+                    log point: Issued identifiers map (4.4.3 (6)).
+                    issued identifiers map: {e2: c14n0, e3: c14n1, e1: c14n2, e0: c14n3}
               -->
             </pre>
           </details>
@@ -3417,7 +3419,10 @@ disclose.
     <li>Changed the name of the algorithm from URDNA2015 to <a>RDFC-1.0</a>.</li>
 
     <li>Changed the term <strong>normalized dataset</strong> to
-      <a>canonicalized dataset</a>.</li>
+      <a>canonicalized dataset</a>,
+      which is composed of the <a>input dataset</a>,
+      <a>input blank node identifier map</a>, and
+      <a>issued identifiers map</a>.</li>
   </ul>
 </section>
 
