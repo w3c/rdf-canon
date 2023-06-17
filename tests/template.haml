@@ -6,7 +6,7 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
     %link{rel: "stylesheet", type: "text/css", href: "https://www.w3.org/StyleSheets/TR/base"}
     :css
-      body: {bacground-image: none;}
+      body {background-image: none;}
       dl.test-detail, dl.test-options {
         padding: 0.5em;
       }
@@ -108,8 +108,8 @@
             Instructions specific to running RDFC-1.0 tests.
         %dl.test-description
           - man['entries'].each do |test|
-            %dt{id: test['id']}
-              %a.testlink{href: "##{test['id']}"}
+            %dt{id: CGI.escape(test['id'])}
+              %a.testlink{href: "##{CGI.escape(test['id'])}"}
                 = "#{test['id']}:"
               %span{about: test['id'], property: "mf:name"}<~test['name']
             %dd{property: "mf:entry", inlist: true, resource: test['id'], typeof: test['type']}
