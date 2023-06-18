@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-06-14"
+        "@value": "2023-06-18"
       },
       "revision": "0.8.0"
     },
@@ -3378,6 +3378,218 @@
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "dataset - isomorphic default and iri named",
+          "rdfs:comment": "Isomorphic graphs in default and IRI named graph",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10.nq",
+          "assertions": [
+            {
+              "@id": "_:b348",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070",
+              "result": {
+                "@id": "_:b349",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b344",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070",
+              "result": {
+                "@id": "_:b345",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b346",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070",
+              "result": {
+                "@id": "_:b347",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "dataset - isomorphic default and node named",
+          "rdfs:comment": "Isomorphic graphs in default and blank node named graph",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10.nq",
+          "assertions": [
+            {
+              "@id": "_:b354",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071",
+              "result": {
+                "@id": "_:b355",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b350",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071",
+              "result": {
+                "@id": "_:b351",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b352",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071",
+              "result": {
+                "@id": "_:b353",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "dataset - shared blank nodes",
+          "rdfs:comment": "Blank nodes shared in default and named graph",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10.nq",
+          "assertions": [
+            {
+              "@id": "_:b360",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072",
+              "result": {
+                "@id": "_:b361",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b356",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072",
+              "result": {
+                "@id": "_:b357",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b358",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072",
+              "result": {
+                "@id": "_:b359",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "dataset - referencing graph name",
+          "rdfs:comment": "Default graph with blank node shared with graph name",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10.nq",
+          "assertions": [
+            {
+              "@id": "_:b366",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073",
+              "result": {
+                "@id": "_:b367",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b362",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073",
+              "result": {
+                "@id": "_:b363",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b364",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073",
+              "result": {
+                "@id": "_:b365",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
             }
           ]
         }

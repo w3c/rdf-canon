@@ -29,7 +29,8 @@
     :test024 :test025 :test026 :test027 :test028 :test029 :test030 :test033 :test034 :test035
     :test036 :test038 :test039 :test040 :test043 :test044 :test045 :test046 :test047 :test048
     :test053 :test054 :test055 :test056 :test057 :test058 :test059 :test060 :test061 :test062
-    :test063 :test064 :test065 :test066 :test067 :test068 :test069
+    :test063 :test064 :test065 :test066 :test067 :test068 :test069 :test070 :test071 :test072
+    :test073
   ) .
 
 :test001 a rdfc:RDFC10EvalTest;
@@ -430,4 +431,36 @@
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test069-in.nq>;
   mf:result <rdfc10/test069-rdfc10.nq>;
+  .
+
+:test070 a rdfc:RDFC10EvalTest;
+  mf:name "dataset - isomorphic default and iri named";
+  rdfs:comment "Isomorphic graphs in default and IRI named graph";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test070-in.nq>;
+  mf:result <rdfc10/test070-rdfc10.nq>;
+  .
+
+:test071 a rdfc:RDFC10EvalTest;
+  mf:name "dataset - isomorphic default and node named";
+  rdfs:comment "Isomorphic graphs in default and blank node named graph";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test071-in.nq>;
+  mf:result <rdfc10/test071-rdfc10.nq>;
+  .
+
+:test072 a rdfc:RDFC10EvalTest;
+  mf:name "dataset - shared blank nodes";
+  rdfs:comment "Blank nodes shared in default and named graph";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test072-in.nq>;
+  mf:result <rdfc10/test072-rdfc10.nq>;
+  .
+
+:test073 a rdfc:RDFC10EvalTest;
+  mf:name "dataset - referencing graph name";
+  rdfs:comment "Default graph with blank node shared with graph name";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test073-in.nq>;
+  mf:result <rdfc10/test073-rdfc10.nq>;
   .
