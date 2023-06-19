@@ -178,7 +178,7 @@
     way, it requires canonicalization to achieve the aforementioned goals
     and any others that may arise via serendipity.</p>
 
-  <p>Most <a>RDF datasets</a> can be normalized fairly quickly, in terms
+  <p>Most <a>RDF datasets</a> can be canonicalized fairly quickly, in terms
     of algorithmic time complexity. However, those that contain nodes that do
     not have globally unique identifiers pose a greater challenge. Normalizing
     these datasets presents the <dfn>graph isomorphism</dfn> problem, a
@@ -250,7 +250,7 @@
       of the same RDF graph (dataset) by grounding each <a>blank node</a>
       through the nodes to which it is connected.
       As a result, a graph signature can be obtained by hashing a canonical serialization
-      of the resulting <a>normalized dataset</a>,
+      of the resulting <a>canonicalized dataset</a>,
       allowing for the isomorphism and digital signing use cases.
       As blank node identifiers can be stable even with other changes to a graph (dataset),
       in some cases it is possible to compute the difference between two graphs (datasets),
@@ -262,7 +262,7 @@
       Additionally, if the starting dataset is an N-Quads document,
       it may be possible to correlate the original blank node identifiers
       used within that N-Quads document with those issued in the
-      <a>normalized dataset</a>.</p>
+      <a>canonicalized dataset</a>.</p>
 
     <div class="issue" data-number="19"></div>
   </section>
@@ -333,17 +333,17 @@
         are expected to reuse these to enable usable mappings between input blank node
         identifiers and output blank node identifiers outside of the algorithm.</div>
       </dd>
-      <dt><dfn>normalized dataset</dfn></dt>
-      <dd>A <a>normalized dataset</a> is the combination of the following:
+      <dt><dfn>canonicalized dataset</dfn></dt>
+      <dd>A <a>canonicalized dataset</a> is the combination of the following:
         <ul>
           <li>an <a>RDF dataset</a> —
             the <a>input dataset</a>,</li>
           <li>the <a>input blank node identifier map</a> —
             mapping <a>blank nodes</a> in the input dataset to <a>blank node identifiers</a>, and</li>
-          <li>the <a>canonical issuer</a> —
+          <li>the <a>issued identifiers map</a> from the <a>canonical issuer</a> —
             mapping identifiers in the input dataset to canonical identifiers</li>
         </ul>
-        A concrete serialization of a <a>normalized dataset</a> MUST label
+        A concrete serialization of a <a>canonicalized dataset</a> MUST label
         all <a>blank nodes</a> using the canonical <a>blank node identifiers</a>.
       </dd>
       <dt><dfn>identifier issuer</dfn></dt>
@@ -474,7 +474,7 @@
     globally-unique identifiers must be issued deterministic identifiers.</p>
 
   <p class="note">
-    This specification defines a <a>normalized dataset</a> to include stable identifiers for blank nodes,
+    This specification defines a <a>canonicalized dataset</a> to include stable identifiers for blank nodes,
     practical uses of which will always generate a canonical serialization of such a dataset.</p>
 
   <p>In time, there may be more than one canonicalization algorithm and,
@@ -579,7 +579,7 @@
     <div class="issue" data-number="98"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
-      into a <a>normalized dataset</a>. This algorithm will assign
+      into a <a>canonicalized dataset</a>. This algorithm will assign
       deterministic identifiers to any <a>blank nodes</a> in the
       <a>input dataset</a>.</p>
 
@@ -605,11 +605,11 @@
         <li id="ca-hl.1"><strong>Initialization</strong>.
           Initialize the state needed for the rest of the algorithm
           using <a href="#canon-state" class="sectionRef"></a>.
-          Also initialize the <a>normalized dataset</a> using the <a>input dataset</a>
+          Also initialize the <a>canonicalized dataset</a> using the <a>input dataset</a>
           (which remains immutable)
           the <a>input blank node identifier map</a>
           (retaining blank node identifiers from the input if possible, otherwise assigning them arbitrarily);
-          the <a>canonical issuer</a> is added upon completion of the algorithm.</li>
+          the <a>issued identifiers map</a> from the <a>canonical issuer</a> is added upon completion of the algorithm.</li>
         <li id="ca-hl.2"><strong>Compute first degree hashes</strong>.
           Compute the first degree hash for each blank node in the dataset using <a href="#hash-1d-quads" class="sectionRef"></a>.</li>
         <li id="ca-hl.3"><strong>Canonically label unique nodes</strong>.
@@ -626,9 +626,9 @@
           If more than one node produces the same N-degree hash,
           the order in which these nodes receive a canonical identifier does not matter.</li>
         <li id="ca-hl.6"><strong>Finish</strong>.
-          Return the <a>serialized canonical form</a> of the <a>normalized dataset</a>.
-          Alternatively, return the <a>normalized dataset</a> containing
-          the <a>input blank node identifier map</a> and <a>canonical issuer</a>.</li>
+          Return the <a>serialized canonical form</a> of the <a>canonicalized dataset</a>.
+          Alternatively, return the <a>canonicalized dataset</a> containing
+          the <a>input blank node identifier map</a> and <a>issued identifiers map</a>.</li>
       </ol>
     </section>
 
@@ -740,10 +740,10 @@
           as there are no remaining blank nodes without canonical identifiers.</p>
 
         <p><a href="#ca.6">Step 6</a> generates
-          the normalized dataset by mapping blank node identifiers in the input dataset
+          the canonicalized dataset by mapping blank node identifiers in the input dataset
           with canonical identifiers:</p>
 
-        <pre id="ex-ca-unique-normalized-dataset" data-transform="updateExample">
+        <pre id="ex-ca-unique-canonicalized-dataset" data-transform="updateExample">
           <!--
             :p :q _:c14n0 .
             :p :r _:c14n1 .
@@ -952,13 +952,13 @@
         </table>
 
         <p><a href="#ca.6">Step 6</a> updates
-          the <a>normalized dataset</a>
+          the <a>canonicalized dataset</a>
           with the <a>canonical issuer</a>,
           containing an <a>issued identifiers map</a>
           mapping blank node identifers from the input dataset
           to their canonical identifiers:</p>
 
-        <pre id="ex-ca-normalized-shared-dataset" data-transform="updateExample">
+        <pre id="ex-ca-canonicalized-shared-dataset" data-transform="updateExample">
           <!--
             :p :q _:c14n2 .
             :p :q _:c14n3 .
@@ -976,7 +976,7 @@
       <ol id="ca">
         <li id="ca.1">Create the <a>canonicalization state</a>.
           If the <a>input dataset</a> is an N-Quads document,
-          parse that document into a dataset in the <a>normalized dataset</a>,
+          parse that document into a dataset in the <a>canonicalized dataset</a>,
           retaining any blank node identifiers used within that document
           in the <a>input blank node identifier map</a>;
           otherwise arbitrary identifiers are assigned for each
@@ -1292,13 +1292,15 @@
             </li>
           </ol>
         </li>
-        <li id="ca.6">Add the <a>canonical issuer</a> to the
-          <a>normalized dataset</a>.
+        <li id="ca.6">Add the <a>issued identifiers map</a>
+          from the <a>canonical issuer</a> to the
+          <a>canonicalized dataset</a>.
           <details>
             <summary>Explanation</summary>
-            <p>This step adds the <a>canonical issuer</a> to the
-              <a>normalized dataset</a>, the [= map/key | keys =] in the
-              <a>canonical issuer</a> with the [= map/entry | map entries =] of the
+            <p>This step adds the <a>issued identifiers map</a>
+              from the <a>canonical issuer</a> to the
+              <a>canonicalized dataset</a>, the [= map/key | keys =] in the
+              <a>issued identifiers map</a> are [= map/entry | map entries =] in the
               <a>input blank node identifier map</a>.</p>
           </details>
           <details>
@@ -1306,24 +1308,24 @@
             <p>Log the state of the <a>canonical issuer</a> at the completion of the algorithm.</p>
             <pre class="logging yaml" data-transform="updateExample">
               <!--
-                # Canonical issuer state after step 5 for shared hashes example
+                # Canonical issuer state after step 6 for shared hashes example
                 ca:
                   ####...####
                   ca.6:
-                    log point: Replace original with canonical labels (4.4.3 (6)).
-                    canonical issuer: {e2: c14n0, e3: c14n1, e1: c14n2, e0: c14n3}
+                    log point: Issued identifiers map (4.4.3 (6)).
+                    issued identifiers map: {e2: c14n0, e3: c14n1, e1: c14n2, e0: c14n3}
               -->
             </pre>
           </details>
         </li>
         <li id="ca.7">Return the <a>serialized canonical form</a>
-          of the <a>normalized dataset</a>.
+          of the <a>canonicalized dataset</a>.
           Upon request, alternatively (or additionally) return the
-          <a>normalized dataset</a> itself, which includes the
+          <a>canonicalized dataset</a> itself, which includes the
           <a>input blank node identifier map</a>, and
-          <a>canonical issuer</a>.
+          <a>issued identifiers map</a> from the <a>canonical issuer</a>.
           <p class="note">Technically speaking, one implementation
-          might return a <a>normalized dataset</a> that maps
+          might return a <a>canonicalized dataset</a> that maps
           particular blank nodes to different identifiers than another
           implementation, however, this only occurs when there are
           isomorphisms in the dataset such that a canonically serialized
@@ -1334,7 +1336,7 @@
             <p>The <a>serialized canonical form</a> is an N-Quads
               document where the blank node identifiers are taken
               from the canonical identifiers associated with each blank node.</p>
-            <p>The <a>normalized dataset</a> is composed of the original
+            <p>The <a>canonicalized dataset</a> is composed of the original
               <a>input dataset</a>, the <a>input blank node identifier map</a>,
               containing identifiers for each blank node in the <a>input dataset</a>,
               and the <a>canonical issuer</a>,
@@ -2707,11 +2709,11 @@
   <h2>Serialization</h2>
 
   <p>This section describes the process of creating a serialized [[N-Quads]] representation
-    of a <a>normalized dataset</a>.</p>
+    of a <a>canonicalized dataset</a>.</p>
 
-  <p>The <dfn>serialized canonical form</dfn> of a <a>normalized dataset</a>
+  <p>The <dfn>serialized canonical form</dfn> of a <a>canonicalized dataset</a>
     is an N-Quads document [[N-QUADS]]
-    created by representing each <a>quad</a> from the <a>normalized dataset</a>
+    created by representing each <a>quad</a> from the <a>canonicalized dataset</a>
     in <a>canonical n-quads form</a>,
     sorting them into <a>code point order</a>,
     and concatenating them. (Note that each canonical N-Quads statement ends with a new line, 
@@ -2723,14 +2725,15 @@
   <p>When serializing quads in <a>canonical n-quads form</a>,
     components which are <a>blank nodes</a> MUST be serialized using the
     canonical label associated with each <a>blank node</a>
-    from the <a>map</a> component of the <a>normalized dataset</a>.</p>
+    from the <a>issued identifiers map</a> component of the
+    <a>canonicalized dataset</a>.</p>
 
   <aside id="ex-ser-unique-hashes"
         class="example"
         title="Canonical N-Quads representation of Unique Hashes">
 
     <p>This example illustrates the result of serializing
-      the normalized dataset described in <a href="#ex-ca-unique-hashes"></a>.</p>
+      the <a>canonicalized dataset</a> described in <a href="#ex-ca-unique-hashes"></a>.</p>
 
     <pre id="ex-ser-unique-hashes-result"
          class="nohighlight"
@@ -2763,7 +2766,7 @@ disclose.
     <p>The nature of the canonicalization algorithm inherently correlates its output,
       i.e., the canonical labels and the sorted order of quads, with the input dataset.
       This could pose issues, particularly when dealing with datasets containing personal information.
-      For example, even if certain information is removed from the canonicalized dataset
+      For example, even if certain information is removed from the <a>canonicalized dataset</a>
       for some privacy-respecting reason, there remains the possibility that a third party
       could infer the omitted data by analyzing the canonicalized dataset.
       If it is necessary to decouple the canonicalization algorithm's input and output,
@@ -3181,7 +3184,7 @@ disclose.
         two blank nodes <code><em>e1</em></code> and <code><em>e3</em></code>,
         so no further processing is necessary.</p>
 
-      <p><a href="#ca.6">Step 6</a> ends with the canonical issuers containing the following mappings:</p>
+      <p><a href="#ca.6">Step 6</a> ends with the issued identifiers map containing the following mappings:</p>
 
       <table id="ex-duplicate-paths-ca.5.6">
         <thead><tr>
@@ -3330,7 +3333,7 @@ disclose.
       was instead modeled as a <var>direction</var> parameter, where it could have
       the value <code>p</code>, for property, when the related blank node was a
       <a>subject</a> and the value <code>r</code>, for reverse or reference, when
-      the related blank node was an <a>object</a>. Since <a>URGNA2012</a> only normalized
+      the related blank node was an <a>object</a>. Since <a>URGNA2012</a> only canonicalized
       graphs, not datasets, there was no use of the <a>graph name</a> position.</li>
     <li>In <a href="#hash-nd-quads" class="sectionRef"></a>, building the
       <var>H<sub>n</sub></var> was done as follows:
@@ -3415,6 +3418,12 @@ disclose.
       is clarified.</li>
 
     <li>Changed the name of the algorithm from URDNA2015 to <a>RDFC-1.0</a>.</li>
+
+    <li>Changed the term <strong>normalized dataset</strong> to
+      <a>canonicalized dataset</a>,
+      which is composed of the <a>input dataset</a>,
+      <a>input blank node identifier map</a>, and
+      <a>issued identifiers map</a>.</li>
   </ul>
 </section>
 
