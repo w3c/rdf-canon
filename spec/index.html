@@ -3307,7 +3307,7 @@ disclose.
               <code><em>_:e1</em>&nbsp;:p2&nbsp;"Foo"&nbsp;.</code><br>
               <code><em>_:e1</em>&nbsp;:p3&nbsp;<em>_:g0</em>&nbsp;.</code><br>
               <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;<em>_:g0</em>&nbsp;.</code><br>
-              <code><em>_:e0</em>&nbsp;:p2&nbsp;;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
             </td>
           </tr>
           <tr>
@@ -3315,7 +3315,7 @@ disclose.
             <td>
               <code><em>_:e1</em>&nbsp;:p3&nbsp;<em>_:g0</em>&nbsp;.</code><br>
               <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;<em>_:g0</em>&nbsp;.</code><br>
-              <code><em>_:e0</em>&nbsp;:p2&nbsp;;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
             </td>
           </tr>
         </tbody>
@@ -3368,8 +3368,31 @@ disclose.
         </tbody>
       </table>
 
-      <p><a href="#ca.4">Step 4</a> would create canonical identifiers for each
-        blank node which has a unique hash, but no blank node has a unique hash.</p>
+      <p><a href="#ca.4">Step 4</a> creates canonical identifiers for each
+        blank node which has a unique hash:</p>
+        
+      <table id="ex-dataset-bn-graph-ca.4"
+             class="hash-related numbered">
+        <caption>Canonical identifiers for dataset with blank node named graph</caption>
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>canonical identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e0</em></code></td>
+            <td><code><em>c14n0</em></code></td>
+          </tr>
+          <tr>
+            <td><code><em>e1</em></code></td>
+            <td><code><em>c14n1</em></code></td>
+          </tr>
+          <tr>
+            <td><code><em>g0</em></code></td>
+            <td><code><em>c14n2</em></code></td>
+          </tr>
+        </tbody>
+      </table>
 
       <p><a href="#ca.5">Step 5</a> has no effect,
         as there are no remaining blank nodes without canonical identifiers.</p>
