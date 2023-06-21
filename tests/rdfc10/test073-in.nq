@@ -5,5 +5,3 @@
 <http://example.org/test> <http://example.org/vocab#A> _:e0  _:g1 .
 <http://example.org/test> <http://example.org/vocab#B> _:e0 _:g1 .
 <http://example.org/test> <http://example.org/vocab#embed> _:e0 _:g1 .
-
-
