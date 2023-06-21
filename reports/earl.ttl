@@ -79,7 +79,11 @@
     <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066>
     <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067>
     <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068>
-    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069>) .
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072>
+    <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073>) .
 
 <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple id" ;
@@ -2020,6 +2024,134 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "dataset - isomorphic default and iri named" ;
+  rdfs:comment "Isomorphic graphs in default and IRI named graph" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test070-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test070> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "dataset - isomorphic default and node named" ;
+  rdfs:comment "Isomorphic graphs in default and blank node named graph" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test071-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test071> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "dataset - shared blank nodes" ;
+  rdfs:comment "Blank nodes shared in default and named graph" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test072-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test072> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "dataset - referencing graph name" ;
+  rdfs:comment "Default graph with blank node shared with graph name" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test073-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test073> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
 <https://github.com/pchampin/sophia_rs> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "Sophia" ;
   doap:developer <http://champin.net/#pa> ;
@@ -2069,5 +2201,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-06-14"^^xsd:date;
+  doap:created "2023-06-21"^^xsd:date;
   doap:revision "0.8.0" .

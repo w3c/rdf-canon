@@ -546,6 +546,42 @@
       "approval": "rdft:Proposed",
       "action": "rdfc10/test069-in.nq",
       "result": "rdfc10/test069-rdfc10.nq"
+    },
+    {
+      "id": "manifest-rdfc10#test070",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "dataset - isomorphic default and iri named",
+      "comment": "Isomorphic graphs in default and IRI named graph",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test070-in.nq",
+      "result": "rdfc10/test070-rdfc10.nq"
+    },
+    {
+      "id": "manifest-rdfc10#test071",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "dataset - isomorphic default and node named",
+      "comment": "Isomorphic graphs in default and blank node named graph",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test071-in.nq",
+      "result": "rdfc10/test071-rdfc10.nq"
+    },
+    {
+      "id": "manifest-rdfc10#test072",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "dataset - shared blank nodes",
+      "comment": "Blank nodes shared in default and named graph",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test072-in.nq",
+      "result": "rdfc10/test072-rdfc10.nq"
+    },
+    {
+      "id": "manifest-rdfc10#test073",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "dataset - referencing graph name",
+      "comment": "Default graph with blank node shared with graph name",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test073-in.nq",
+      "result": "rdfc10/test073-rdfc10.nq"
     }
   ]
 }

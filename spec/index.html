@@ -3240,6 +3240,181 @@ disclose.
       pathways through the algorithm</p>
 
   </section>
+
+  <section id="dataset-bn-graph-ex">
+    <h3>Dataset with Blank Node Named Graph</h3>
+
+    <p>This example illustrates an example of a <a>dataset</a>,
+      where one graph is named using a <a>blank node</a>,
+      which is also the object of a triple in the <a>default graph</a>.</p>
+
+    <figure id="fig-dataset-bn-graph" style="text-align:center">
+      <!-- Source for this file is at https://docs.google.com/drawings/d/1g668zXf7ZgfByDeK6vW-uO6MvzpBCz7I0NtGd9xZao4 -->
+      <object data="dataset-bn-graph.svg" style="width: 75%" type="image/svg+xml" aria-describedby="fig-dataset-bn-graph-alt">
+        <p id="fig-dataset-bn-graph-alt">
+          The image represents the dataset described in
+          <a href="#ex-dataset-bn-graph-input">
+            the following code block
+          </a>.</p>
+      </object>
+      <figcaption>An illustration of a dataset containg a graph named with a blank node.<br/>
+        Image available in
+        <a href="dataset-bn-graph.svg" title="SVG image of dataset containg a graph named with a blank node">
+          <abbr title="Scalable Vector Graphics">SVG</abbr>
+        </a>.</figcaption>
+    </figure>
+
+    <pre id="ex-dataset-bn-graph-input"
+         data-transform="updateExample"
+         title="Graph with duplicated paths">
+      <!--
+      _:e0 :p1 _:e1 .
+      _:e1 :p2 "Foo" .
+      _:e1 :p3 _:g0 .
+      _:e0 :p1 _:e1 _:g0 .
+      _:e1 :p2 "Bar" _:g0 .
+      -->
+    </pre>
+
+    <p>The following is a summary of the more detailed execution log
+      found <a href="dataset-bn-graph.yml">here</a>.</p>
+
+    <aside id="ex-dataset-bn-graph"
+          class="example"
+          title="Dataset Blank Node Graph">
+
+      <p><a href="#ca.2">Step 2</a> of the <a href="#canon-algo-algo">Canonicalization Algorithm</a>
+        is called three times, with each blank node
+        (<code><em>e0</em></code>, <code><em>e1</em></code>, and <code><em>g0</em></code>)
+        to populate <a>blank node to quads map</a>:</p>
+
+      <table id="ex-dataset-bn-graph-quads-map"
+             class="hash-related numbered">
+        <caption>Blank node to quads map for dataset with blank node named graph</caption>
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>Q</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e0</em></code></td>
+            <td>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;.</code><br>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+            </td>
+          </tr>
+          <tr>
+            <td><code><em>e1</em></code></td>
+            <td>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Foo"&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p3&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+            </td>
+          </tr>
+          <tr>
+            <td><code><em>g0</em></code></td>
+            <td>
+              <code><em>_:e1</em>&nbsp;:p3&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e0</em>&nbsp;:p1&nbsp;<em>_:e1</em>&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+              <code><em>_:e1</em>&nbsp;:p2&nbsp;"Bar"&nbsp;<em>_:g0</em>&nbsp;.</code><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.3">Step 3</a> generates the first-degree
+        hash for each blank node.</p>
+
+      <p>For <code><em>e0</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquads <code>_:a&nbsp;:p1&nbsp;_:z&nbsp;.</code> and
+        <code>_:a&nbsp;:p1&nbsp;_:z&nbsp;_:z&nbsp;.</code>to calculate the hash
+        `39fa92e7a9ea0b32e3e08aedebc1cbbcd9ba9945a18f2594677598fcfb517345`.</p>
+
+      <p>For <code><em>e1</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquads <code>_:z&nbsp;:p1&nbsp;_:a&nbsp;.</code>,
+        <code>_:a&nbsp;:p2&nbsp;"Foo"&nbsp;.</code>,
+        <code>_:a&nbsp;:p3&nbsp;_:z&nbsp;.</code>,
+        <code>_:z&nbsp;:p1&nbsp;_:a&nbsp;_:z&nbsp;.</code>, and
+        <code>_:a&nbsp;:p2&nbsp;"Bar"&nbsp;_:z&nbsp;.</code>
+        to calculate the hash
+        `5274652aa97d22f9f2998d1837ffaf9ad820fb813574adc4a403f105021e48bf`.</p>
+
+      <p>For <code><em>g0</em></code>, the <a href="#h1dq">Hash First Degree Quads algorithm</a>
+        uses the nquads <code>_:z&nbsp;:p3&nbsp;_:a&nbsp;.</code>,
+        <code>_:z&nbsp;:p1&nbsp;_:z&nbsp;_:a&nbsp;.</code>, and
+        <code>_:z&nbsp;:p2&nbsp;"Bar"&nbsp;_:a&nbsp;.</code>
+        to calculate the hash
+        `efb0096125247801199082c6f213cda5377d8ddac20a83eaf6c7d88335c12bf4`.</p>
+
+      <table id="ex-dataset-bn-graph-ca.3"
+             class="hash-related numbered">
+        <caption>Hash to blank nodes map shared hashes</caption>
+        <thead><tr>
+          <th><var>hash</var></th>
+          <th><var>blank node(s)</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>`39fa92e7a9ea0b32e3e08aedebc1cbbcd9ba9945a18f2594677598fcfb517345`</td>
+            <td><code><em>e0</em></code></td>
+          </tr>
+          <tr>
+            <td>`5274652aa97d22f9f2998d1837ffaf9ad820fb813574adc4a403f105021e48bf`</td>
+            <td><code><em>e1</em></code></td>
+          </tr>
+          <tr>
+            <td>`efb0096125247801199082c6f213cda5377d8ddac20a83eaf6c7d88335c12bf4`</td>
+            <td><code><em>g0</em></code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.4">Step 4</a> creates canonical identifiers for each
+        blank node which has a unique hash:</p>
+        
+      <table id="ex-dataset-bn-graph-ca.4"
+             class="hash-related numbered">
+        <caption>Canonical identifiers for dataset with blank node named graph</caption>
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>canonical identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><code><em>e0</em></code></td>
+            <td><code><em>c14n0</em></code></td>
+          </tr>
+          <tr>
+            <td><code><em>e1</em></code></td>
+            <td><code><em>c14n1</em></code></td>
+          </tr>
+          <tr>
+            <td><code><em>g0</em></code></td>
+            <td><code><em>c14n2</em></code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#ca.5">Step 5</a> has no effect,
+        as there are no remaining blank nodes without canonical identifiers.</p>
+
+      <p><a href="#ca.6">Step 6</a> ends with the canonical issuers containing the following mappings:</p>
+
+      <table id="ex-dataset-bn-graph-ca.5.6">
+        <thead><tr>
+          <th><var>blank node</var></th>
+          <th><var>canonical identifier</var></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><code><em>e0</em></code></td><td><code><em>c14n0</em></code></td></tr>
+          <tr><td><code><em>e1</em></code></td><td><code><em>c14n1</em></code></td></tr>
+          <tr><td><code><em>g0</em></code></td><td><code><em>c14n2</em></code></td></tr>
+        </tbody>
+      </table>
+    </aside>
+  </section>
 </section>
 
 <section id="canonical-quads" class="appendix">

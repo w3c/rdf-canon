@@ -306,7 +306,8 @@
               - normative = option.fetch('https://w3c.github.io/json-ld-api/tests/vocab#normative', {"@value" => "true"})['@value'] == 'true'
               %tr{class: normative ? 'normative' : 'non-normative'}
                 %td
-                  %a{href: test['@id']}<
+                  - test_href = test['@id'].sub(%r{/manifest-(\w+)#}, '#manifest-\1%23')
+                  %a{href: test_href}<
                     = "Test #{test['@id'].split("#").last}: #{CGI.escapeHTML test['title'].to_s}"
                   - other = []
                   - if option['https://w3c.github.io/json-ld-api/tests/vocab#specVersion'] == 'json-ld-1.1'
