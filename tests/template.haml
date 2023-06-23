@@ -104,8 +104,21 @@
         %p
           - if id =~/urgna2012/
             Instructions specific to running URGNA2012 tests.
+          - elsif id =~ /rdfc10map/
+            The result file is in the JSON format with keys representing
+            the blank node identifiers from the test input,
+            and values representing the associated canonical identifier
+            from the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+            created as an alternate result
+            from [Step 7](https://www.w3.org/TR/rdf-canon/#ca.7) of the
+            [RDFC1.0 Canonicalization Algorithm](https://www.w3.org/TR/rdf-canon/#canon-algo-algo).
+            The test passes if the value of the resulting
+            [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+            matches the corresponding test result.
           - elsif id =~ /rdfc10/
-            Instructions specific to running RDFC-1.0 tests.
+            The result file is in the N-Quads format.
+            The test passes if the result compares identically as the
+            expected result as text files.
         %dl.test-description
           - man['entries'].each do |test|
             %dt{id: CGI.escape(test['id'])}

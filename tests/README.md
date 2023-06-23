@@ -1,6 +1,22 @@
 ## General instructions for running the RDF Dataset Canonicalization Test suites
 
-* Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.
+### Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.
+
+The result file is in the N-Quads format.
+The test passes if the result compares identically as the expected result as text files.
+
+### Tests for RDFC-1.0 Issued Identifiers Map.
+
+The result file is in the JSON format with keys representing
+the blank node identifiers from the test input,
+and values representing the associated canonical identifier
+from the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+created as an alternate result
+from [Step 7](https://www.w3.org/TR/rdf-canon/#ca.7) of the
+[RDFC1.0 Canonicalization Algorithm](https://www.w3.org/TR/rdf-canon/#canon-algo-algo).
+The test passes if the value of the resulting
+[issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+matches the corresponding test result.
 
 ## Contributing Tests
 The test manifests and entries are built automatically from

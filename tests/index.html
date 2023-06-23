@@ -56,9 +56,9 @@
     <p property='rdfs:comment'>Includes manifests for different application profiles.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
-    <h2 id="general-instructions-for-running-the-rdf-dataset-canonicalization-test-suites">General instructions for running the RDF Dataset Canonicalization Test suites</h2>
+    <h2>General instructions for running the RDF Dataset Canonicalization Test suites</h2>
     <p>FIXME</p>
-    <h2 id="contributing-tests">Contributing Tests</h2>
+    <h2>Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
       where each row defines a combination of Validation tests for the same
@@ -66,17 +66,17 @@
       Tests may be contributed via pull request to
       <a href="https://github.com/w3c/rdf-canon">https://github.com/w3c/rdf-canon</a>
       with suitable changes to the
-      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files.</p>
-    <h2 id="distribution">Distribution</h2>
+      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files. </p>
+    <h2>Distribution</h2>
     <p>Distributed under both the
       <a href="http://www.w3.org/Consortium/Legal/2008/04-testsuite-license">W3C Test Suite License</a>
       and the
       <a href="http://www.w3.org/Consortium/Legal/2008/03-bsd-license">W3C 3-clause BSD License</a>.
       To contribute to a W3C Test Suite, see the
       <a href="http://www.w3.org/2004/10/27-testcases">policies and contribution forms</a>.</p>
-    <h2 id="disclaimer">Disclaimer</h2>
+    <h2>Disclaimer</h2>
     <p>UNDER BOTH MUTUALLY EXCLUSIVE LICENSES, THIS DOCUMENT AND ALL DOCUMENTS,
-      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED "AS IS,"
+      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED &quot;AS IS,&quot;
       AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES,
       EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
       WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
@@ -95,13 +95,19 @@
           <a href='#manifest-rdfc10'>RDF Dataset Canonicalization (RDFC-1.0)</a>
           – 61 entries
         </li>
+        <li>
+          <a href='#manifest-rdfc10map'>RDF Dataset Canonicalization (RDFC-1.0) Identifer Map</a>
+          – 61 entries
+        </li>
       </ol>
     </section>
     <section id='manifest-rdfc10' inlist property='mf:entry' resource='manifest-rdfc10' typeof='mf:Manifest'>
       <h2>RDF Dataset Canonicalization (RDFC-1.0) (61 entries)</h2>
       <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization.</p>
       <p>
-        Instructions specific to running RDFC-1.0 tests.
+        The result file is in the N-Quads format.
+        The test passes if the result compares identically as the
+        expected result as text files.
       </p>
       <dl class='test-description'>
         <dt id='manifest-rdfc10%23test001'>
@@ -1570,6 +1576,1493 @@
             <dt>result</dt>
             <dd>
               <a href='rdfc10/test073-rdfc10.nq' property='mf:result'>rdfc10/test073-rdfc10.nq</a>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+    </section>
+    <section id='manifest-rdfc10map' inlist property='mf:entry' resource='manifest-rdfc10map' typeof='mf:Manifest'>
+      <h2>RDF Dataset Canonicalization (RDFC-1.0) Identifer Map (61 entries)</h2>
+      <p property='rdfs:comment'>Tests the issued identifier map results for the RDF-1.0 algorithm</p>
+      <p>
+        The result file is in the JSON format with keys representing
+        the blank node identifiers from the test input,
+        and values representing the associated canonical identifier
+        from the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+        created as an alternate result
+        from [Step 7](https://www.w3.org/TR/rdf-canon/#ca.7) of the
+        [RDFC1.0 Canonicalization Algorithm](https://www.w3.org/TR/rdf-canon/#canon-algo-algo).
+        The test passes if the value of the resulting
+        [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+        matches the corresponding test result.
+      </p>
+      <dl class='test-description'>
+        <dt id='manifest-rdfc10map%23test001'>
+          <a class='testlink' href='#manifest-rdfc10map%23test001'>
+            manifest-rdfc10map#test001:
+          </a>
+          <span about='manifest-rdfc10map#test001' property='mf:name'>simple id</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test001' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test001-in.nq' property='mf:action'>rdfc10/test001-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test001-rdfc10map.json' property='mf:result'>rdfc10/test001-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test002'>
+          <a class='testlink' href='#manifest-rdfc10map%23test002'>
+            manifest-rdfc10map#test002:
+          </a>
+          <span about='manifest-rdfc10map#test002' property='mf:name'>duplicate property iri values</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test002' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test002-in.nq' property='mf:action'>rdfc10/test002-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test002-rdfc10map.json' property='mf:result'>rdfc10/test002-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test003'>
+          <a class='testlink' href='#manifest-rdfc10map%23test003'>
+            manifest-rdfc10map#test003:
+          </a>
+          <span about='manifest-rdfc10map#test003' property='mf:name'>bnode</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test003' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test003-in.nq' property='mf:action'>rdfc10/test003-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test003-rdfc10map.json' property='mf:result'>rdfc10/test003-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test004'>
+          <a class='testlink' href='#manifest-rdfc10map%23test004'>
+            manifest-rdfc10map#test004:
+          </a>
+          <span about='manifest-rdfc10map#test004' property='mf:name'>bnode plus embed w/subject</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test004' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test004-in.nq' property='mf:action'>rdfc10/test004-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test004-rdfc10map.json' property='mf:result'>rdfc10/test004-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test005'>
+          <a class='testlink' href='#manifest-rdfc10map%23test005'>
+            manifest-rdfc10map#test005:
+          </a>
+          <span about='manifest-rdfc10map#test005' property='mf:name'>bnode embed</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test005' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test005-in.nq' property='mf:action'>rdfc10/test005-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test005-rdfc10map.json' property='mf:result'>rdfc10/test005-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test006'>
+          <a class='testlink' href='#manifest-rdfc10map%23test006'>
+            manifest-rdfc10map#test006:
+          </a>
+          <span about='manifest-rdfc10map#test006' property='mf:name'>multiple rdf types</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test006' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test006-in.nq' property='mf:action'>rdfc10/test006-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test006-rdfc10map.json' property='mf:result'>rdfc10/test006-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test008'>
+          <a class='testlink' href='#manifest-rdfc10map%23test008'>
+            manifest-rdfc10map#test008:
+          </a>
+          <span about='manifest-rdfc10map#test008' property='mf:name'>single subject complex</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test008' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test008-in.nq' property='mf:action'>rdfc10/test008-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test008-rdfc10map.json' property='mf:result'>rdfc10/test008-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test009'>
+          <a class='testlink' href='#manifest-rdfc10map%23test009'>
+            manifest-rdfc10map#test009:
+          </a>
+          <span about='manifest-rdfc10map#test009' property='mf:name'>multiple subjects - complex</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test009' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test009-in.nq' property='mf:action'>rdfc10/test009-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test009-rdfc10map.json' property='mf:result'>rdfc10/test009-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test010'>
+          <a class='testlink' href='#manifest-rdfc10map%23test010'>
+            manifest-rdfc10map#test010:
+          </a>
+          <span about='manifest-rdfc10map#test010' property='mf:name'>type</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test010' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test010-in.nq' property='mf:action'>rdfc10/test010-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test010-rdfc10map.json' property='mf:result'>rdfc10/test010-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test011'>
+          <a class='testlink' href='#manifest-rdfc10map%23test011'>
+            manifest-rdfc10map#test011:
+          </a>
+          <span about='manifest-rdfc10map#test011' property='mf:name'>type-coerced type</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test011' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test011-in.nq' property='mf:action'>rdfc10/test011-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test011-rdfc10map.json' property='mf:result'>rdfc10/test011-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test013'>
+          <a class='testlink' href='#manifest-rdfc10map%23test013'>
+            manifest-rdfc10map#test013:
+          </a>
+          <span about='manifest-rdfc10map#test013' property='mf:name'>type-coerced type, cycle</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test013' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test013-in.nq' property='mf:action'>rdfc10/test013-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test013-rdfc10map.json' property='mf:result'>rdfc10/test013-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test014'>
+          <a class='testlink' href='#manifest-rdfc10map%23test014'>
+            manifest-rdfc10map#test014:
+          </a>
+          <span about='manifest-rdfc10map#test014' property='mf:name'>check types</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test014' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test014-in.nq' property='mf:action'>rdfc10/test014-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test014-rdfc10map.json' property='mf:result'>rdfc10/test014-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test016'>
+          <a class='testlink' href='#manifest-rdfc10map%23test016'>
+            manifest-rdfc10map#test016:
+          </a>
+          <span about='manifest-rdfc10map#test016' property='mf:name'>blank node - dual link - embed</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test016' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test016-in.nq' property='mf:action'>rdfc10/test016-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test016-rdfc10map.json' property='mf:result'>rdfc10/test016-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test017'>
+          <a class='testlink' href='#manifest-rdfc10map%23test017'>
+            manifest-rdfc10map#test017:
+          </a>
+          <span about='manifest-rdfc10map#test017' property='mf:name'>blank node - dual link - non-embed</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test017' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test017-in.nq' property='mf:action'>rdfc10/test017-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test017-rdfc10map.json' property='mf:result'>rdfc10/test017-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test018'>
+          <a class='testlink' href='#manifest-rdfc10map%23test018'>
+            manifest-rdfc10map#test018:
+          </a>
+          <span about='manifest-rdfc10map#test018' property='mf:name'>blank node - self link</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test018' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test018-in.nq' property='mf:action'>rdfc10/test018-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test018-rdfc10map.json' property='mf:result'>rdfc10/test018-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test019'>
+          <a class='testlink' href='#manifest-rdfc10map%23test019'>
+            manifest-rdfc10map#test019:
+          </a>
+          <span about='manifest-rdfc10map#test019' property='mf:name'>blank node - disjoint self links</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test019' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test019-in.nq' property='mf:action'>rdfc10/test019-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test019-rdfc10map.json' property='mf:result'>rdfc10/test019-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test020'>
+          <a class='testlink' href='#manifest-rdfc10map%23test020'>
+            manifest-rdfc10map#test020:
+          </a>
+          <span about='manifest-rdfc10map#test020' property='mf:name'>blank node - diamond</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test020' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test020-in.nq' property='mf:action'>rdfc10/test020-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test020-rdfc10map.json' property='mf:result'>rdfc10/test020-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test021'>
+          <a class='testlink' href='#manifest-rdfc10map%23test021'>
+            manifest-rdfc10map#test021:
+          </a>
+          <span about='manifest-rdfc10map#test021' property='mf:name'>blank node - circle of 2</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test021' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test021-in.nq' property='mf:action'>rdfc10/test021-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test021-rdfc10map.json' property='mf:result'>rdfc10/test021-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test022'>
+          <a class='testlink' href='#manifest-rdfc10map%23test022'>
+            manifest-rdfc10map#test022:
+          </a>
+          <span about='manifest-rdfc10map#test022' property='mf:name'>blank node - double circle of 2</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test022' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test022-in.nq' property='mf:action'>rdfc10/test022-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test022-rdfc10map.json' property='mf:result'>rdfc10/test022-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test023'>
+          <a class='testlink' href='#manifest-rdfc10map%23test023'>
+            manifest-rdfc10map#test023:
+          </a>
+          <span about='manifest-rdfc10map#test023' property='mf:name'>blank node - circle of 3</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test023' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test023-in.nq' property='mf:action'>rdfc10/test023-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test023-rdfc10map.json' property='mf:result'>rdfc10/test023-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test024'>
+          <a class='testlink' href='#manifest-rdfc10map%23test024'>
+            manifest-rdfc10map#test024:
+          </a>
+          <span about='manifest-rdfc10map#test024' property='mf:name'>blank node - double circle of 3 (0-1-2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test024' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test024-in.nq' property='mf:action'>rdfc10/test024-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test024-rdfc10map.json' property='mf:result'>rdfc10/test024-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test025'>
+          <a class='testlink' href='#manifest-rdfc10map%23test025'>
+            manifest-rdfc10map#test025:
+          </a>
+          <span about='manifest-rdfc10map#test025' property='mf:name'>blank node - double circle of 3 (0-2-1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test025' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test025-in.nq' property='mf:action'>rdfc10/test025-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test025-rdfc10map.json' property='mf:result'>rdfc10/test025-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test026'>
+          <a class='testlink' href='#manifest-rdfc10map%23test026'>
+            manifest-rdfc10map#test026:
+          </a>
+          <span about='manifest-rdfc10map#test026' property='mf:name'>blank node - double circle of 3 (1-0-2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test026' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test026-in.nq' property='mf:action'>rdfc10/test026-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test026-rdfc10map.json' property='mf:result'>rdfc10/test026-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test027'>
+          <a class='testlink' href='#manifest-rdfc10map%23test027'>
+            manifest-rdfc10map#test027:
+          </a>
+          <span about='manifest-rdfc10map#test027' property='mf:name'>blank node - double circle of 3 (1-2-0)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test027' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test027-in.nq' property='mf:action'>rdfc10/test027-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test027-rdfc10map.json' property='mf:result'>rdfc10/test027-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test028'>
+          <a class='testlink' href='#manifest-rdfc10map%23test028'>
+            manifest-rdfc10map#test028:
+          </a>
+          <span about='manifest-rdfc10map#test028' property='mf:name'>blank node - double circle of 3 (2-1-0)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test028' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test028-in.nq' property='mf:action'>rdfc10/test028-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test028-rdfc10map.json' property='mf:result'>rdfc10/test028-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test029'>
+          <a class='testlink' href='#manifest-rdfc10map%23test029'>
+            manifest-rdfc10map#test029:
+          </a>
+          <span about='manifest-rdfc10map#test029' property='mf:name'>blank node - double circle of 3 (2-0-1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test029' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test029-in.nq' property='mf:action'>rdfc10/test029-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test029-rdfc10map.json' property='mf:result'>rdfc10/test029-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test030'>
+          <a class='testlink' href='#manifest-rdfc10map%23test030'>
+            manifest-rdfc10map#test030:
+          </a>
+          <span about='manifest-rdfc10map#test030' property='mf:name'>blank node - point at circle of 3</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test030' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test030-in.nq' property='mf:action'>rdfc10/test030-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test030-rdfc10map.json' property='mf:result'>rdfc10/test030-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test033'>
+          <a class='testlink' href='#manifest-rdfc10map%23test033'>
+            manifest-rdfc10map#test033:
+          </a>
+          <span about='manifest-rdfc10map#test033' property='mf:name'>disjoint identical subgraphs (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test033' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test033-in.nq' property='mf:action'>rdfc10/test033-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test033-rdfc10map.json' property='mf:result'>rdfc10/test033-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test034'>
+          <a class='testlink' href='#manifest-rdfc10map%23test034'>
+            manifest-rdfc10map#test034:
+          </a>
+          <span about='manifest-rdfc10map#test034' property='mf:name'>disjoint identical subgraphs (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test034' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test034-in.nq' property='mf:action'>rdfc10/test034-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test034-rdfc10map.json' property='mf:result'>rdfc10/test034-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test035'>
+          <a class='testlink' href='#manifest-rdfc10map%23test035'>
+            manifest-rdfc10map#test035:
+          </a>
+          <span about='manifest-rdfc10map#test035' property='mf:name'>reordered w/strings (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test035' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test035-in.nq' property='mf:action'>rdfc10/test035-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test035-rdfc10map.json' property='mf:result'>rdfc10/test035-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test036'>
+          <a class='testlink' href='#manifest-rdfc10map%23test036'>
+            manifest-rdfc10map#test036:
+          </a>
+          <span about='manifest-rdfc10map#test036' property='mf:name'>reordered w/strings (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test036' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test036-in.nq' property='mf:action'>rdfc10/test036-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test036-rdfc10map.json' property='mf:result'>rdfc10/test036-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test038'>
+          <a class='testlink' href='#manifest-rdfc10map%23test038'>
+            manifest-rdfc10map#test038:
+          </a>
+          <span about='manifest-rdfc10map#test038' property='mf:name'>reordered 4 bnodes, reordered 2 properties (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test038' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test038-in.nq' property='mf:action'>rdfc10/test038-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test038-rdfc10map.json' property='mf:result'>rdfc10/test038-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test039'>
+          <a class='testlink' href='#manifest-rdfc10map%23test039'>
+            manifest-rdfc10map#test039:
+          </a>
+          <span about='manifest-rdfc10map#test039' property='mf:name'>reordered 4 bnodes, reordered 2 properties (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test039' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test039-in.nq' property='mf:action'>rdfc10/test039-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test039-rdfc10map.json' property='mf:result'>rdfc10/test039-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test040'>
+          <a class='testlink' href='#manifest-rdfc10map%23test040'>
+            manifest-rdfc10map#test040:
+          </a>
+          <span about='manifest-rdfc10map#test040' property='mf:name'>reordered 6 bnodes (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test040' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test040-in.nq' property='mf:action'>rdfc10/test040-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test040-rdfc10map.json' property='mf:result'>rdfc10/test040-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test043'>
+          <a class='testlink' href='#manifest-rdfc10map%23test043'>
+            manifest-rdfc10map#test043:
+          </a>
+          <span about='manifest-rdfc10map#test043' property='mf:name'>literal with language</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test043' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test043-in.nq' property='mf:action'>rdfc10/test043-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test043-rdfc10map.json' property='mf:result'>rdfc10/test043-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test044'>
+          <a class='testlink' href='#manifest-rdfc10map%23test044'>
+            manifest-rdfc10map#test044:
+          </a>
+          <span about='manifest-rdfc10map#test044' property='mf:name'>evil (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test044' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test044-in.nq' property='mf:action'>rdfc10/test044-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test044-rdfc10map.json' property='mf:result'>rdfc10/test044-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test045'>
+          <a class='testlink' href='#manifest-rdfc10map%23test045'>
+            manifest-rdfc10map#test045:
+          </a>
+          <span about='manifest-rdfc10map#test045' property='mf:name'>evil (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test045' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test045-in.nq' property='mf:action'>rdfc10/test045-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test045-rdfc10map.json' property='mf:result'>rdfc10/test045-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test046'>
+          <a class='testlink' href='#manifest-rdfc10map%23test046'>
+            manifest-rdfc10map#test046:
+          </a>
+          <span about='manifest-rdfc10map#test046' property='mf:name'>evil (3)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test046' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test046-in.nq' property='mf:action'>rdfc10/test046-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test046-rdfc10map.json' property='mf:result'>rdfc10/test046-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test047'>
+          <a class='testlink' href='#manifest-rdfc10map%23test047'>
+            manifest-rdfc10map#test047:
+          </a>
+          <span about='manifest-rdfc10map#test047' property='mf:name'>deep diff (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test047' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test047-in.nq' property='mf:action'>rdfc10/test047-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test047-rdfc10map.json' property='mf:result'>rdfc10/test047-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test048'>
+          <a class='testlink' href='#manifest-rdfc10map%23test048'>
+            manifest-rdfc10map#test048:
+          </a>
+          <span about='manifest-rdfc10map#test048' property='mf:name'>deep diff (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test048' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test048-in.nq' property='mf:action'>rdfc10/test048-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test048-rdfc10map.json' property='mf:result'>rdfc10/test048-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test053'>
+          <a class='testlink' href='#manifest-rdfc10map%23test053'>
+            manifest-rdfc10map#test053:
+          </a>
+          <span about='manifest-rdfc10map#test053' property='mf:name'>@list</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test053' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test053-in.nq' property='mf:action'>rdfc10/test053-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test053-rdfc10map.json' property='mf:result'>rdfc10/test053-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test054'>
+          <a class='testlink' href='#manifest-rdfc10map%23test054'>
+            manifest-rdfc10map#test054:
+          </a>
+          <span about='manifest-rdfc10map#test054' property='mf:name'>t-graph</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test054' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test054-in.nq' property='mf:action'>rdfc10/test054-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test054-rdfc10map.json' property='mf:result'>rdfc10/test054-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test055'>
+          <a class='testlink' href='#manifest-rdfc10map%23test055'>
+            manifest-rdfc10map#test055:
+          </a>
+          <span about='manifest-rdfc10map#test055' property='mf:name'>simple reorder (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test055' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test055-in.nq' property='mf:action'>rdfc10/test055-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test055-rdfc10map.json' property='mf:result'>rdfc10/test055-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test056'>
+          <a class='testlink' href='#manifest-rdfc10map%23test056'>
+            manifest-rdfc10map#test056:
+          </a>
+          <span about='manifest-rdfc10map#test056' property='mf:name'>simple reorder (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test056' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test056-in.nq' property='mf:action'>rdfc10/test056-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test056-rdfc10map.json' property='mf:result'>rdfc10/test056-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test057'>
+          <a class='testlink' href='#manifest-rdfc10map%23test057'>
+            manifest-rdfc10map#test057:
+          </a>
+          <span about='manifest-rdfc10map#test057' property='mf:name'>unnamed graph</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test057' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test057-in.nq' property='mf:action'>rdfc10/test057-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test057-rdfc10map.json' property='mf:result'>rdfc10/test057-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test058'>
+          <a class='testlink' href='#manifest-rdfc10map%23test058'>
+            manifest-rdfc10map#test058:
+          </a>
+          <span about='manifest-rdfc10map#test058' property='mf:name'>unnamed graph with blank node objects</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test058' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test058-in.nq' property='mf:action'>rdfc10/test058-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test058-rdfc10map.json' property='mf:result'>rdfc10/test058-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test059'>
+          <a class='testlink' href='#manifest-rdfc10map%23test059'>
+            manifest-rdfc10map#test059:
+          </a>
+          <span about='manifest-rdfc10map#test059' property='mf:name'>n-quads parsing</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test059' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test059-in.nq' property='mf:action'>rdfc10/test059-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test059-rdfc10map.json' property='mf:result'>rdfc10/test059-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test060'>
+          <a class='testlink' href='#manifest-rdfc10map%23test060'>
+            manifest-rdfc10map#test060:
+          </a>
+          <span about='manifest-rdfc10map#test060' property='mf:name'>n-quads escaping</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test060' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test060-in.nq' property='mf:action'>rdfc10/test060-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test060-rdfc10map.json' property='mf:result'>rdfc10/test060-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test061'>
+          <a class='testlink' href='#manifest-rdfc10map%23test061'>
+            manifest-rdfc10map#test061:
+          </a>
+          <span about='manifest-rdfc10map#test061' property='mf:name'>same literal value with multiple languages</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test061' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test061-in.nq' property='mf:action'>rdfc10/test061-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test061-rdfc10map.json' property='mf:result'>rdfc10/test061-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test062'>
+          <a class='testlink' href='#manifest-rdfc10map%23test062'>
+            manifest-rdfc10map#test062:
+          </a>
+          <span about='manifest-rdfc10map#test062' property='mf:name'>same literal value with multiple datatypes</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test062' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test062-in.nq' property='mf:action'>rdfc10/test062-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test062-rdfc10map.json' property='mf:result'>rdfc10/test062-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test063'>
+          <a class='testlink' href='#manifest-rdfc10map%23test063'>
+            manifest-rdfc10map#test063:
+          </a>
+          <span about='manifest-rdfc10map#test063' property='mf:name'>blank node - diamond (with _:b)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test063' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>This duplicates #test020, but uses _:b as a blank node prefix</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test063-in.nq' property='mf:action'>rdfc10/test063-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test063-rdfc10map.json' property='mf:result'>rdfc10/test063-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test064'>
+          <a class='testlink' href='#manifest-rdfc10map%23test064'>
+            manifest-rdfc10map#test064:
+          </a>
+          <span about='manifest-rdfc10map#test064' property='mf:name'>blank node - double circle of 3 (0-1-2, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test064' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test064-in.nq' property='mf:action'>rdfc10/test064-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test064-rdfc10map.json' property='mf:result'>rdfc10/test064-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test065'>
+          <a class='testlink' href='#manifest-rdfc10map%23test065'>
+            manifest-rdfc10map#test065:
+          </a>
+          <span about='manifest-rdfc10map#test065' property='mf:name'>blank node - double circle of 3 (0-2-1, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test065' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test065-in.nq' property='mf:action'>rdfc10/test065-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test065-rdfc10map.json' property='mf:result'>rdfc10/test065-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test066'>
+          <a class='testlink' href='#manifest-rdfc10map%23test066'>
+            manifest-rdfc10map#test066:
+          </a>
+          <span about='manifest-rdfc10map#test066' property='mf:name'>blank node - double circle of 3 (1-0-2, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test066' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test066-in.nq' property='mf:action'>rdfc10/test066-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test066-rdfc10map.json' property='mf:result'>rdfc10/test066-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test067'>
+          <a class='testlink' href='#manifest-rdfc10map%23test067'>
+            manifest-rdfc10map#test067:
+          </a>
+          <span about='manifest-rdfc10map#test067' property='mf:name'>blank node - double circle of 3 (1-2-0, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test067' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test067-in.nq' property='mf:action'>rdfc10/test067-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test067-rdfc10map.json' property='mf:result'>rdfc10/test067-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test068'>
+          <a class='testlink' href='#manifest-rdfc10map%23test068'>
+            manifest-rdfc10map#test068:
+          </a>
+          <span about='manifest-rdfc10map#test068' property='mf:name'>blank node - double circle of 3 (2-1-0, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test068' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test068-in.nq' property='mf:action'>rdfc10/test068-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test068-rdfc10map.json' property='mf:result'>rdfc10/test068-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test069'>
+          <a class='testlink' href='#manifest-rdfc10map%23test069'>
+            manifest-rdfc10map#test069:
+          </a>
+          <span about='manifest-rdfc10map#test069' property='mf:name'>blank node - double circle of 3 (2-0-1, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test069' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test069-in.nq' property='mf:action'>rdfc10/test069-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test069-rdfc10map.json' property='mf:result'>rdfc10/test069-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test070'>
+          <a class='testlink' href='#manifest-rdfc10map%23test070'>
+            manifest-rdfc10map#test070:
+          </a>
+          <span about='manifest-rdfc10map#test070' property='mf:name'>dataset - isomorphic default and iri named</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test070' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Isomorphic graphs in default and IRI named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test070-in.nq' property='mf:action'>rdfc10/test070-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test070-rdfc10map.json' property='mf:result'>rdfc10/test070-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test071'>
+          <a class='testlink' href='#manifest-rdfc10map%23test071'>
+            manifest-rdfc10map#test071:
+          </a>
+          <span about='manifest-rdfc10map#test071' property='mf:name'>dataset - isomorphic default and node named</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test071' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Isomorphic graphs in default and blank node named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test071-in.nq' property='mf:action'>rdfc10/test071-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test071-rdfc10map.json' property='mf:result'>rdfc10/test071-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test072'>
+          <a class='testlink' href='#manifest-rdfc10map%23test072'>
+            manifest-rdfc10map#test072:
+          </a>
+          <span about='manifest-rdfc10map#test072' property='mf:name'>dataset - shared blank nodes</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test072' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Blank nodes shared in default and named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test072-in.nq' property='mf:action'>rdfc10/test072-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test072-rdfc10map.json' property='mf:result'>rdfc10/test072-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='manifest-rdfc10map%23test073'>
+          <a class='testlink' href='#manifest-rdfc10map%23test073'>
+            manifest-rdfc10map#test073:
+          </a>
+          <span about='manifest-rdfc10map#test073' property='mf:name'>dataset - referencing graph name</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='manifest-rdfc10map#test073' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Default graph with blank node shared with graph name</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test073-in.nq' property='mf:action'>rdfc10/test073-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test073-rdfc10map.json' property='mf:result'>rdfc10/test073-rdfc10map.json</a>
             </dd>
           </dl>
         </dd>

@@ -43,3 +43,10 @@
   rdfs:comment """
     Canonicalization performed using the RDFC-1.0 algorithm.
   """ .
+
+:RDFC10MapTest a rdfs:Class;
+  rdfs:label "RDFC-1.0 Issued Identifiers Test";
+  rdfs:subClassOf :Test;
+  rdfs:comment """
+    The result is a map of input blank node identifiers to their associated canonical identifiers.
+  """ .

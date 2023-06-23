@@ -20,13 +20,15 @@ class Manifest
   TITLE = {
     #urgna2012: "RDF Graph Normalization (URGNA2012)",
     rdfc10: "RDF Dataset Canonicalization (RDFC-1.0)",
+    rdfc10map: "RDF Dataset Canonicalization (RDFC-1.0) Identifer Map",
   }
   DESCRIPTION = {
     #urgna2012: "Tests the 2012 version of RDF Graph Normalization.",
-    rdfc10: "Tests the 1.0 version of RDF Dataset Canonicalization."
+    rdfc10: "Tests the 1.0 version of RDF Dataset Canonicalization.",
+    rdfc10map: "Tests the issued identifier map results for the RDF-1.0 algorithm",
   }
 
-  Test = Struct.new(:id, :name, :comment, :approval, :action, :urgna2012, :rdfc10)
+  Test = Struct.new(:id, :name, :comment, :approval, :action, :urgna2012, :rdfc10, :rdfc10map)
 
   attr_accessor :tests
 
@@ -43,15 +45,16 @@ class Manifest
 
       urgna2012 = "urgna2012/#{entry[:test]}-urgna2012.nq" if entry[:urgna2012] == "TRUE"
       rdfc10 = "rdfc10/#{entry[:test]}-rdfc10.nq" if entry[:rdfc10] == "TRUE"
+      rdfc10map = "rdfc10/#{entry[:test]}-rdfc10map.json" if entry[:rdfc10map] == "TRUE"
       Test.new(entry[:test], entry[:name], entry[:comment], entry[:approval],
-               "rdfc10/#{entry[:test]}-in.nq", urgna2012, rdfc10)
+               "rdfc10/#{entry[:test]}-in.nq", urgna2012, rdfc10, rdfc10map)
     end
   end
 
   # Create files referenced in the manifest
   def create_files
     tests.each do |test|
-      files = [test.action, test.urgna2012, test.rdfc10].compact
+      files = [test.action, test.urgna2012, test.rdfc10, test.rdfc10map].compact
       files.compact.select {|f| !File.exist?(f)}.each do |f|
         File.open(f, "w") {|io| io.puts( f.end_with?('.json') ? "{}" : "")}
       end
@@ -62,6 +65,7 @@ class Manifest
     case variant.to_sym
     when :urgna2012 then "rdfc:Urgna2012EvalTest"
     when :rdfc10 then "rdfc:RDFC10EvalTest"
+    when :rdfc10map then "rdfc:RDFC10MapTest"
     end
   end
 
@@ -141,7 +145,8 @@ class Manifest
 ## This file is generated automatciallly from manifest.csv, and should not be edited directly.
 ##
 ## Test types
-## * rdfc:RDFC10EvalTest  - Canonicalization using RDFC-1.0
+## * rdfc:RDFC10EvalTest – Canonicalization using RDFC-1.0
+## * rdfc:RDFC10MapTest  – RDFC-1.0 Issued Identifiers Test
 
 @prefix : <manifest-#{variant}#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -184,7 +189,7 @@ OPT_ARGS = [
   ["--output", "-o",  GetoptLong::REQUIRED_ARGUMENT,"Output to the specified file path"],
   ["--quiet",         GetoptLong::NO_ARGUMENT,      "Supress most output other than progress indicators"],
   ["--touch",         GetoptLong::NO_ARGUMENT,      "Create referenced files and directories if missing"],
-  ["--variant",       GetoptLong::REQUIRED_ARGUMENT,"Test variant, 'rdf' or 'json'"],
+  ["--variant",       GetoptLong::REQUIRED_ARGUMENT,"Test variant, 'rdfc10' or 'rdfc10map'"],
   ["--help", "-?",    GetoptLong::NO_ARGUMENT,      "This message"]
 ]
 def usage
