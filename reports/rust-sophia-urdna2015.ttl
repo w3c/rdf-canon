@@ -15,7 +15,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "simple id";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test001>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -25,7 +25,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "duplicate property iri values";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test002>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -35,7 +35,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "bnode";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test003>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -45,7 +45,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "bnode plus embed w/subject";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test004>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -55,7 +55,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "bnode embed";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test005>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -65,7 +65,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "multiple rdf types";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test006>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -75,7 +75,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "single subject complex";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test008>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -85,7 +85,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "multiple subjects - complex";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test009>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -95,7 +95,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "type";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test010>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -105,7 +105,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "type-coerced type";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test011>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -115,7 +115,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "type-coerced type, cycle";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test013>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -125,7 +125,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "check types";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test014>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -135,7 +135,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - dual link - embed";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test016>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -145,7 +145,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - dual link - non-embed";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test017>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -155,7 +155,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - self link";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test018>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -165,7 +165,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - disjoint self links";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test019>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -175,7 +175,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - diamond";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test020>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -185,7 +185,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - circle of 2";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test021>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -195,7 +195,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 2";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test022>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -205,7 +205,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - circle of 3";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test023>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -215,7 +215,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (0-1-2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test024>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -225,7 +225,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (0-2-1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test025>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -235,7 +235,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (1-0-2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test026>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -245,7 +245,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (1-2-0)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test027>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -255,7 +255,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (2-1-0)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test028>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -265,7 +265,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (2-0-1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test029>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -275,7 +275,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - point at circle of 3";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test030>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -285,7 +285,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "disjoint identical subgraphs (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test033>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -295,7 +295,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "disjoint identical subgraphs (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test034>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -305,7 +305,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "reordered w/strings (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test035>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -315,7 +315,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "reordered w/strings (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test036>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -325,7 +325,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "reordered 4 bnodes, reordered 2 properties (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test038>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -335,7 +335,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "reordered 4 bnodes, reordered 2 properties (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test039>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -345,7 +345,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "reordered 6 bnodes (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test040>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -355,7 +355,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "literal with language";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test043>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -365,7 +365,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "evil (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test044>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -375,7 +375,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "evil (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test045>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -385,7 +385,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "evil (3)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test046>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -395,7 +395,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "deep diff (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test047>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -405,7 +405,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "deep diff (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test048>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -415,7 +415,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "@list";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test053>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -425,7 +425,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "t-graph";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test054>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -435,7 +435,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "simple reorder (1)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test055>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -445,7 +445,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "simple reorder (2)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test056>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -455,7 +455,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "unnamed graph";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test057>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -465,7 +465,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "unnamed graph with blank node objects";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test058>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -475,7 +475,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "n-quads parsing";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test059>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -485,7 +485,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "n-quads escaping";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test060>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -495,7 +495,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "same literal value with multiple languages";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test061>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -505,7 +505,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "same literal value with multiple datatypes";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test062>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -515,7 +515,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - diamond (with _:b)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test063>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -525,7 +525,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (0-1-2, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test064>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -535,7 +535,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (0-2-1, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test065>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -545,7 +545,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (1-0-2, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test066>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -555,7 +555,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (1-2-0, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test067>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -565,7 +565,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (2-1-0, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test068>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c>.
 
 [] a earl:Assertion;
   earl:assertedBy <http://champin.net/#pa>;
@@ -575,7 +575,7 @@ PREFIX earl: <http://www.w3.org/ns/earl#>
       dct:title "blank node - double circle of 3 (2-0-1, reversed)";
       earl:outcome earl:passed];
   earl:subject <https://github.com/pchampin/sophia_rs>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest-rdfc10#test069>.
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c>.
 
 # manually added:
 

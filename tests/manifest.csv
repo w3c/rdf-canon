@@ -1,6 +1,6 @@
 test,name,comment,approval,rdfc10,rdfc10map
-test001,simple id,,,TRUE,TRUE
-test002,duplicate property iri values,,,TRUE,TRUE
+test001,simple id,,,TRUE,
+test002,duplicate property iri values,,,TRUE,
 test003,bnode,,,TRUE,TRUE
 test004,bnode plus embed w/subject,,,TRUE,TRUE
 test005,bnode embed,,,TRUE,TRUE
@@ -62,4 +62,3 @@ test072,dataset - shared blank nodes,Blank nodes shared in default and named gra
 test073,dataset - referencing graph name,Default graph with blank node shared with graph name,,TRUE,TRUE
 test074,poison - Clique Graph,A Clique of blank node resources all inter-related.,,,
 test075,poison - Miyazaki Graph,,,,
-test076,,,,,
