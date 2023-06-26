@@ -26,20 +26,16 @@
   rdfs:comment "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.";
   mf:entries (
     :test001c :test002c :test003c :test003m :test004c :test004m :test005c :test005m
-    :test006c :test006m :test008c :test008m :test009c :test009m :test010c :test010m
-    :test011c :test011m :test013c :test013m :test014c :test014m :test016c :test016m
-    :test017c :test017m :test018c :test018m :test019c :test019m :test020c :test020m
-    :test021c :test021m :test022c :test022m :test023c :test023m :test024c :test024m
-    :test025c :test025m :test026c :test026m :test027c :test027m :test028c :test028m
-    :test029c :test029m :test030c :test030m :test033c :test033m :test034c :test034m
-    :test035c :test035m :test036c :test036m :test038c :test038m :test039c :test039m
-    :test040c :test040m :test043c :test043m :test044c :test044m :test045c :test045m
-    :test046c :test046m :test047c :test047m :test048c :test048m :test053c :test053m
-    :test054c :test054m :test055c :test055m :test056c :test056m :test057c :test057m
-    :test058c :test058m :test059c :test059m :test060c :test060m :test061c :test061m
-    :test062c :test062m :test063c :test063m :test064c :test064m :test065c :test065m
-    :test066c :test066m :test067c :test067m :test068c :test068m :test069c :test069m
-    :test070c :test070m :test071c :test071m :test072c :test072m :test073c :test073m
+    :test006c :test008c :test009c :test010c :test011c :test013c :test014c :test016c
+    :test016m :test017c :test017m :test018c :test018m :test019c :test020c :test020m
+    :test021c :test022c :test023c :test024c :test025c :test026c :test027c :test028c
+    :test029c :test030c :test030m :test033c :test034c :test035c :test036c :test038c
+    :test039c :test040c :test043c :test044c :test045c :test046c :test047c :test047m
+    :test048c :test048m :test053c :test053m :test054c :test055c :test055m :test056c
+    :test056m :test057c :test057m :test058c :test058m :test059c :test060c :test060m
+    :test061c :test062c :test063c :test063m :test064c :test065c :test066c :test067c
+    :test068c :test069c :test070c :test070m :test071c :test071m :test072c :test072m
+    :test073c :test073m
   ) .
 
 :test001c a rdfc:RDFC10EvalTest;
@@ -105,25 +101,11 @@
   mf:result <rdfc10/test006-rdfc10.nq>;
   .
 
-:test006m a rdfc:RDFC10MapTest;
-  mf:name "multiple rdf types (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test006-in.nq>;
-  mf:result <rdfc10/test006-rdfc10map.json>;
-  .
-
 :test008c a rdfc:RDFC10EvalTest;
   mf:name "single subject complex";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test008-in.nq>;
   mf:result <rdfc10/test008-rdfc10.nq>;
-  .
-
-:test008m a rdfc:RDFC10MapTest;
-  mf:name "single subject complex (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test008-in.nq>;
-  mf:result <rdfc10/test008-rdfc10map.json>;
   .
 
 :test009c a rdfc:RDFC10EvalTest;
@@ -133,25 +115,11 @@
   mf:result <rdfc10/test009-rdfc10.nq>;
   .
 
-:test009m a rdfc:RDFC10MapTest;
-  mf:name "multiple subjects - complex (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test009-in.nq>;
-  mf:result <rdfc10/test009-rdfc10map.json>;
-  .
-
 :test010c a rdfc:RDFC10EvalTest;
   mf:name "type";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test010-in.nq>;
   mf:result <rdfc10/test010-rdfc10.nq>;
-  .
-
-:test010m a rdfc:RDFC10MapTest;
-  mf:name "type (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test010-in.nq>;
-  mf:result <rdfc10/test010-rdfc10map.json>;
   .
 
 :test011c a rdfc:RDFC10EvalTest;
@@ -161,13 +129,6 @@
   mf:result <rdfc10/test011-rdfc10.nq>;
   .
 
-:test011m a rdfc:RDFC10MapTest;
-  mf:name "type-coerced type (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test011-in.nq>;
-  mf:result <rdfc10/test011-rdfc10map.json>;
-  .
-
 :test013c a rdfc:RDFC10EvalTest;
   mf:name "type-coerced type, cycle";
   rdft:approval rdft:Proposed;
@@ -175,25 +136,11 @@
   mf:result <rdfc10/test013-rdfc10.nq>;
   .
 
-:test013m a rdfc:RDFC10MapTest;
-  mf:name "type-coerced type, cycle (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test013-in.nq>;
-  mf:result <rdfc10/test013-rdfc10map.json>;
-  .
-
 :test014c a rdfc:RDFC10EvalTest;
   mf:name "check types";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test014-in.nq>;
   mf:result <rdfc10/test014-rdfc10.nq>;
-  .
-
-:test014m a rdfc:RDFC10MapTest;
-  mf:name "check types (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test014-in.nq>;
-  mf:result <rdfc10/test014-rdfc10map.json>;
   .
 
 :test016c a rdfc:RDFC10EvalTest;
@@ -245,13 +192,6 @@
   mf:result <rdfc10/test019-rdfc10.nq>;
   .
 
-:test019m a rdfc:RDFC10MapTest;
-  mf:name "blank node - disjoint self links (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test019-in.nq>;
-  mf:result <rdfc10/test019-rdfc10map.json>;
-  .
-
 :test020c a rdfc:RDFC10EvalTest;
   mf:name "blank node - diamond";
   rdft:approval rdft:Proposed;
@@ -273,25 +213,11 @@
   mf:result <rdfc10/test021-rdfc10.nq>;
   .
 
-:test021m a rdfc:RDFC10MapTest;
-  mf:name "blank node - circle of 2 (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test021-in.nq>;
-  mf:result <rdfc10/test021-rdfc10map.json>;
-  .
-
 :test022c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 2";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test022-in.nq>;
   mf:result <rdfc10/test022-rdfc10.nq>;
-  .
-
-:test022m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 2 (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test022-in.nq>;
-  mf:result <rdfc10/test022-rdfc10map.json>;
   .
 
 :test023c a rdfc:RDFC10EvalTest;
@@ -301,25 +227,11 @@
   mf:result <rdfc10/test023-rdfc10.nq>;
   .
 
-:test023m a rdfc:RDFC10MapTest;
-  mf:name "blank node - circle of 3 (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test023-in.nq>;
-  mf:result <rdfc10/test023-rdfc10map.json>;
-  .
-
 :test024c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-1-2)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test024-in.nq>;
   mf:result <rdfc10/test024-rdfc10.nq>;
-  .
-
-:test024m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (0-1-2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test024-in.nq>;
-  mf:result <rdfc10/test024-rdfc10map.json>;
   .
 
 :test025c a rdfc:RDFC10EvalTest;
@@ -329,25 +241,11 @@
   mf:result <rdfc10/test025-rdfc10.nq>;
   .
 
-:test025m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (0-2-1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test025-in.nq>;
-  mf:result <rdfc10/test025-rdfc10map.json>;
-  .
-
 :test026c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-0-2)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test026-in.nq>;
   mf:result <rdfc10/test026-rdfc10.nq>;
-  .
-
-:test026m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (1-0-2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test026-in.nq>;
-  mf:result <rdfc10/test026-rdfc10map.json>;
   .
 
 :test027c a rdfc:RDFC10EvalTest;
@@ -357,13 +255,6 @@
   mf:result <rdfc10/test027-rdfc10.nq>;
   .
 
-:test027m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (1-2-0) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test027-in.nq>;
-  mf:result <rdfc10/test027-rdfc10map.json>;
-  .
-
 :test028c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-1-0)";
   rdft:approval rdft:Proposed;
@@ -371,25 +262,11 @@
   mf:result <rdfc10/test028-rdfc10.nq>;
   .
 
-:test028m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (2-1-0) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test028-in.nq>;
-  mf:result <rdfc10/test028-rdfc10map.json>;
-  .
-
 :test029c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-0-1)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test029-in.nq>;
   mf:result <rdfc10/test029-rdfc10.nq>;
-  .
-
-:test029m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (2-0-1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test029-in.nq>;
-  mf:result <rdfc10/test029-rdfc10map.json>;
   .
 
 :test030c a rdfc:RDFC10EvalTest;
@@ -413,25 +290,11 @@
   mf:result <rdfc10/test033-rdfc10.nq>;
   .
 
-:test033m a rdfc:RDFC10MapTest;
-  mf:name "disjoint identical subgraphs (1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test033-in.nq>;
-  mf:result <rdfc10/test033-rdfc10map.json>;
-  .
-
 :test034c a rdfc:RDFC10EvalTest;
   mf:name "disjoint identical subgraphs (2)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test034-in.nq>;
   mf:result <rdfc10/test034-rdfc10.nq>;
-  .
-
-:test034m a rdfc:RDFC10MapTest;
-  mf:name "disjoint identical subgraphs (2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test034-in.nq>;
-  mf:result <rdfc10/test034-rdfc10map.json>;
   .
 
 :test035c a rdfc:RDFC10EvalTest;
@@ -441,25 +304,11 @@
   mf:result <rdfc10/test035-rdfc10.nq>;
   .
 
-:test035m a rdfc:RDFC10MapTest;
-  mf:name "reordered w/strings (1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test035-in.nq>;
-  mf:result <rdfc10/test035-rdfc10map.json>;
-  .
-
 :test036c a rdfc:RDFC10EvalTest;
   mf:name "reordered w/strings (2)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test036-in.nq>;
   mf:result <rdfc10/test036-rdfc10.nq>;
-  .
-
-:test036m a rdfc:RDFC10MapTest;
-  mf:name "reordered w/strings (2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test036-in.nq>;
-  mf:result <rdfc10/test036-rdfc10map.json>;
   .
 
 :test038c a rdfc:RDFC10EvalTest;
@@ -469,25 +318,11 @@
   mf:result <rdfc10/test038-rdfc10.nq>;
   .
 
-:test038m a rdfc:RDFC10MapTest;
-  mf:name "reordered 4 bnodes, reordered 2 properties (1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test038-in.nq>;
-  mf:result <rdfc10/test038-rdfc10map.json>;
-  .
-
 :test039c a rdfc:RDFC10EvalTest;
   mf:name "reordered 4 bnodes, reordered 2 properties (2)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test039-in.nq>;
   mf:result <rdfc10/test039-rdfc10.nq>;
-  .
-
-:test039m a rdfc:RDFC10MapTest;
-  mf:name "reordered 4 bnodes, reordered 2 properties (2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test039-in.nq>;
-  mf:result <rdfc10/test039-rdfc10map.json>;
   .
 
 :test040c a rdfc:RDFC10EvalTest;
@@ -497,25 +332,11 @@
   mf:result <rdfc10/test040-rdfc10.nq>;
   .
 
-:test040m a rdfc:RDFC10MapTest;
-  mf:name "reordered 6 bnodes (1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test040-in.nq>;
-  mf:result <rdfc10/test040-rdfc10map.json>;
-  .
-
 :test043c a rdfc:RDFC10EvalTest;
   mf:name "literal with language";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test043-in.nq>;
   mf:result <rdfc10/test043-rdfc10.nq>;
-  .
-
-:test043m a rdfc:RDFC10MapTest;
-  mf:name "literal with language (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test043-in.nq>;
-  mf:result <rdfc10/test043-rdfc10map.json>;
   .
 
 :test044c a rdfc:RDFC10EvalTest;
@@ -525,13 +346,6 @@
   mf:result <rdfc10/test044-rdfc10.nq>;
   .
 
-:test044m a rdfc:RDFC10MapTest;
-  mf:name "evil (1) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test044-in.nq>;
-  mf:result <rdfc10/test044-rdfc10map.json>;
-  .
-
 :test045c a rdfc:RDFC10EvalTest;
   mf:name "evil (2)";
   rdft:approval rdft:Proposed;
@@ -539,25 +353,11 @@
   mf:result <rdfc10/test045-rdfc10.nq>;
   .
 
-:test045m a rdfc:RDFC10MapTest;
-  mf:name "evil (2) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test045-in.nq>;
-  mf:result <rdfc10/test045-rdfc10map.json>;
-  .
-
 :test046c a rdfc:RDFC10EvalTest;
   mf:name "evil (3)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test046-in.nq>;
   mf:result <rdfc10/test046-rdfc10.nq>;
-  .
-
-:test046m a rdfc:RDFC10MapTest;
-  mf:name "evil (3) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test046-in.nq>;
-  mf:result <rdfc10/test046-rdfc10map.json>;
   .
 
 :test047c a rdfc:RDFC10EvalTest;
@@ -607,13 +407,6 @@
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test054-in.nq>;
   mf:result <rdfc10/test054-rdfc10.nq>;
-  .
-
-:test054m a rdfc:RDFC10MapTest;
-  mf:name "t-graph (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test054-in.nq>;
-  mf:result <rdfc10/test054-rdfc10map.json>;
   .
 
 :test055c a rdfc:RDFC10EvalTest;
@@ -679,13 +472,6 @@
   mf:result <rdfc10/test059-rdfc10.nq>;
   .
 
-:test059m a rdfc:RDFC10MapTest;
-  mf:name "n-quads parsing (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test059-in.nq>;
-  mf:result <rdfc10/test059-rdfc10map.json>;
-  .
-
 :test060c a rdfc:RDFC10EvalTest;
   mf:name "n-quads escaping";
   rdft:approval rdft:Proposed;
@@ -707,25 +493,11 @@
   mf:result <rdfc10/test061-rdfc10.nq>;
   .
 
-:test061m a rdfc:RDFC10MapTest;
-  mf:name "same literal value with multiple languages (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test061-in.nq>;
-  mf:result <rdfc10/test061-rdfc10map.json>;
-  .
-
 :test062c a rdfc:RDFC10EvalTest;
   mf:name "same literal value with multiple datatypes";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test062-in.nq>;
   mf:result <rdfc10/test062-rdfc10.nq>;
-  .
-
-:test062m a rdfc:RDFC10MapTest;
-  mf:name "same literal value with multiple datatypes (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test062-in.nq>;
-  mf:result <rdfc10/test062-rdfc10map.json>;
   .
 
 :test063c a rdfc:RDFC10EvalTest;
@@ -751,25 +523,11 @@
   mf:result <rdfc10/test064-rdfc10.nq>;
   .
 
-:test064m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (0-1-2, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test064-in.nq>;
-  mf:result <rdfc10/test064-rdfc10map.json>;
-  .
-
 :test065c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-2-1, reversed)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test065-in.nq>;
   mf:result <rdfc10/test065-rdfc10.nq>;
-  .
-
-:test065m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (0-2-1, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test065-in.nq>;
-  mf:result <rdfc10/test065-rdfc10map.json>;
   .
 
 :test066c a rdfc:RDFC10EvalTest;
@@ -779,25 +537,11 @@
   mf:result <rdfc10/test066-rdfc10.nq>;
   .
 
-:test066m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (1-0-2, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test066-in.nq>;
-  mf:result <rdfc10/test066-rdfc10map.json>;
-  .
-
 :test067c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-2-0, reversed)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test067-in.nq>;
   mf:result <rdfc10/test067-rdfc10.nq>;
-  .
-
-:test067m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (1-2-0, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test067-in.nq>;
-  mf:result <rdfc10/test067-rdfc10map.json>;
   .
 
 :test068c a rdfc:RDFC10EvalTest;
@@ -807,25 +551,11 @@
   mf:result <rdfc10/test068-rdfc10.nq>;
   .
 
-:test068m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (2-1-0, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test068-in.nq>;
-  mf:result <rdfc10/test068-rdfc10map.json>;
-  .
-
 :test069c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-0-1, reversed)";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test069-in.nq>;
   mf:result <rdfc10/test069-rdfc10.nq>;
-  .
-
-:test069m a rdfc:RDFC10MapTest;
-  mf:name "blank node - double circle of 3 (2-0-1, reversed) (map test)";
-  rdft:approval rdft:Proposed;
-  mf:action <rdfc10/test069-in.nq>;
-  mf:result <rdfc10/test069-rdfc10map.json>;
   .
 
 :test070c a rdfc:RDFC10EvalTest;
