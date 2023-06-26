@@ -104,7 +104,8 @@
     <https://w3c.github.io/rdf-canon/tests/manifest#test072c>
     <https://w3c.github.io/rdf-canon/tests/manifest#test072m>
     <https://w3c.github.io/rdf-canon/tests/manifest#test073c>
-    <https://w3c.github.io/rdf-canon/tests/manifest#test073m>) .
+    <https://w3c.github.io/rdf-canon/tests/manifest#test073m>
+    <https://w3c.github.io/rdf-canon/tests/manifest#test074c>) .
 
 <https://w3c.github.io/rdf-canon/tests/manifest#test001c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple id" ;
@@ -2846,6 +2847,38 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://greggkellogg.net/foaf#me> ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest#test074c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10NegativeEvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "poison - Clique Graph (negative test)" ;
+  rdfs:comment "A 10-node Clique of blank node resources all inter-related." ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test074-in.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;

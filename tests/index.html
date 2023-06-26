@@ -60,6 +60,10 @@
     <h3 id="tests-for-rdfc-10-take-input-files-specified-as-n-quads-and-generate-canonical-n-quads-output-as-required-by-the-rdfc-10-algorithm">Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
     <p>The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.</p>
+    <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
+      <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.
+      The maximum number of calls that should be allowed for running these tests is forty times the total number of blank nodes
+      in the input dataset.</p>
     <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
     <p>The result file is in the JSON format with keys representing
       the blank node identifiers from the test input,
@@ -103,7 +107,7 @@
       OR THE PERFORMANCE OR IMPLEMENTATION OF THE CONTENTS THEREOF.</p>
     <section>
       <h2>
-        RDF Dataset Canonicalization (RDFC-1.0) (82 entries)
+        RDF Dataset Canonicalization (RDFC-1.0) (83 entries)
       </h2>
       <dl class='test-description'>
         <dt id='test001c'>
@@ -2081,6 +2085,27 @@
             <dt>result</dt>
             <dd>
               <a href='rdfc10/test073-rdfc10map.json' property='mf:result'>rdfc10/test073-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test074c'>
+          <a class='testlink' href='#test074c'>
+            test074c:
+          </a>
+          <span about='#test074c' property='mf:name'>poison - Clique Graph (negative test)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test074c' typeof='rdfc:RDFC10NegativeEvalTest'>
+          <div property='rdfs:comment'>
+            <p>A 10-node Clique of blank node resources all inter-related.</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10NegativeEvalTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test074-in.nq' property='mf:action'>rdfc10/test074-in.nq</a>
             </dd>
           </dl>
         </dd>

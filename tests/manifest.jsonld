@@ -772,6 +772,15 @@
       "approval": "rdft:Proposed",
       "action": "rdfc10/test073-in.nq",
       "result": "rdfc10/test073-rdfc10map.json"
+    },
+    {
+      "id": "#test074c",
+      "type": "rdfc:RDFC10NegativeEvalTest",
+      "name": "poison - Clique Graph (negative test)",
+      "comment": "A 10-node Clique of blank node resources all inter-related.",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test074-in.nq",
+      "result": null
     }
   ]
 }
