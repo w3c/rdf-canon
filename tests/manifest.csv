@@ -60,4 +60,4 @@ test070,dataset - isomorphic default and iri named,Isomorphic graphs in default 
 test071,dataset - isomorphic default and node named,Isomorphic graphs in default and blank node named graph,,TRUE,TRUE
 test072,dataset - shared blank nodes,Blank nodes shared in default and named graph,,TRUE,TRUE
 test073,dataset - referencing graph name,Default graph with blank node shared with graph name,,TRUE,TRUE
-test074,poison - Clique Graph,A Clique of blank node resources all inter-related.,,,
+test074,poison - Clique Graph,A 10-node Clique of blank node resources all inter-related.,,RDFC10NegativeEvalTest,FALSE

@@ -61,6 +61,11 @@
       The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.
 
+      For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
+      [Hash N-Degree Quads](https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm).
+      The maximum number of calls that should be allowed for running these tests is forty times the total number of blank nodes
+      in the input dataset.
+
       ### Tests for RDFC-1.0 Issued Identifiers Map.
 
       The result file is in the JSON format with keys representing

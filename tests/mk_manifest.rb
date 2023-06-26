@@ -27,8 +27,26 @@ class Manifest
 
     def type(variant)
       case variant
-      when :rdfc10 then "rdfc:RDFC10EvalTest"
-      when :rdfc10map then "rdfc:RDFC10MapTest"
+      when :rdfc10
+        case self.rdfc10
+        when 'FALSE' then nil
+        when 'TRUE' then 'rdfc:RDFC10EvalTest'
+        else "rdfc:#{self.rdfc10}"
+        end
+      when :rdfc10map
+        case self.rdfc10map
+        when 'FALSE' then nil
+        when 'TRUE' then 'rdfc:RDFC10MapTest'
+        else "rdfc:#{self.rdfc10}"
+        end
+      end
+    end
+
+    def result(variant)
+      return nil if self.send(variant) == 'FALSE'
+      case variant
+      when :rdfc10    then "rdfc10/#{self.id}-rdfc10.nq" unless self.send(variant).to_s.match?(/negative/i)
+      when :rdfc10map then "rdfc10/#{self.id}-rdfc10map.json"
       end
     end
   end
@@ -46,10 +64,10 @@ class Manifest
       # Create entry as object indexed by symbolized column name
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
-      rdfc10 = "rdfc10/#{entry[:test]}-rdfc10.nq" if entry[:rdfc10] == "TRUE"
-      rdfc10map = "rdfc10/#{entry[:test]}-rdfc10map.json" if entry[:rdfc10map] == "TRUE"
       Test.new(entry[:test], entry[:name], entry[:comment], entry[:approval],
-               "rdfc10/#{entry[:test]}-in.nq", rdfc10, rdfc10map)
+               "rdfc10/#{entry[:test]}-in.nq",
+               entry[:rdfc10],
+               entry[:rdfc10map])
     end
   end
 
@@ -94,11 +112,14 @@ class Manifest
 
     tests.each do |test|
       %I{rdfc10 rdfc10map}.each do |variant|
-        next if test.send(variant).to_s.empty?
+        next if test.send(variant) == 'FALSE'
         name = test.name +
-        case variant
-        when :rdfc10map then " (map test)"
-        else ""
+        if variant == :rdfc10map
+          ' (map test)'
+        elsif test.type(variant).to_s.match?(/negative/i)
+          ' (negative test)'
+        else
+          ''
         end
 
         manifest["entries"] << {
@@ -108,7 +129,7 @@ class Manifest
           "comment" => test.comment,
           "approval" => (test.approval ? "rdft:#{test.approval}" : "rdft:Proposed"),
           "action" => test.action,
-          "result" => test.send(variant.to_sym)
+          "result" => test.result(variant)
         }
       end
     end
@@ -170,13 +191,16 @@ class Manifest
 
     tests.each do |test|
       %I(rdfc10 rdfc10map).
-        reject {|v| test.send(v).to_s.empty?}.
+        select {|v| test.send(v) != 'FALSE'}.
         map do |variant|
         
         name = test.name + 
-        case variant
-        when :rdfc10map then " (map test)"
-        else ""
+        if variant == :rdfc10map
+          ' (map test)'
+        elsif test.type(variant).to_s.match?(/negative/i)
+          ' (negative test)'
+        else
+          ''
         end
 
         output << "" # separator
@@ -185,7 +209,7 @@ class Manifest
         output << %(  rdfs:comment "#{test.comment}";) if test.comment
         output << %(  rdft:approval #{(test.approval ? "rdft:#{test.approval}" : "rdft:Proposed")};)
         output << %(  mf:action <#{test.action}>;)
-        output << %(  mf:result <#{test.send(variant)}>;)
+        output << %(  mf:result <#{test.result(variant)}>;) if test.result(variant)
         output << %(  .)
       end
     end

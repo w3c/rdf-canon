@@ -50,3 +50,10 @@
   rdfs:comment """
     The result is a map of input blank node identifiers to their associated canonical identifiers.
   """ .
+
+:RDFC10NegativeEvalTest a rdfs:Class;
+  rdfs:label "RDFC-1.0 Negative Evaluation Test";
+  rdfs:subClassOf :Test;
+  rdfs:comment """
+    An attempt to canonicalize a poison dataset should result in an error.
+  """ .
