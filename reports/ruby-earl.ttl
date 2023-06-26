@@ -34,7 +34,7 @@
   doap:created "2023-06-10"^^xsd:date;
 ] .
 <> foaf:primaryTopic <https://rubygems.org/gems/rdf-normalize> ;
-  dc:issued "2023-06-25T16:43:37-07:00"^^xsd:dateTime ;
+  dc:issued "2023-06-26T14:05:41-07:00"^^xsd:dateTime ;
   foaf:maker <https://greggkellogg.net/foaf#me> .
 
 <https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor;
@@ -49,7 +49,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -59,7 +59,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -69,7 +69,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -79,7 +79,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -89,7 +89,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -99,7 +99,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -109,7 +109,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -119,7 +119,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -129,17 +129,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -149,17 +139,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -169,17 +149,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -189,17 +159,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -209,17 +169,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -229,17 +179,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -249,17 +189,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -269,7 +199,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -279,7 +209,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -289,7 +219,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -299,7 +229,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -309,7 +239,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -319,7 +249,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -329,17 +259,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -349,7 +269,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -359,7 +279,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -369,17 +289,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -389,17 +299,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -409,17 +309,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -429,17 +319,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -449,17 +329,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -469,17 +339,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -489,17 +349,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -509,17 +359,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -529,17 +369,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -549,7 +379,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -559,7 +389,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -569,17 +399,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -589,17 +409,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -609,17 +419,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -629,17 +429,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -649,17 +439,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -669,17 +449,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -689,17 +459,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -709,17 +469,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -729,17 +479,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -749,17 +489,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -769,17 +499,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -789,7 +509,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -799,7 +519,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -809,7 +529,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -819,7 +539,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -829,7 +549,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -839,7 +559,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -849,17 +569,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -869,7 +579,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -879,7 +589,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -889,7 +599,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -899,7 +609,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -909,7 +619,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -919,7 +629,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -929,7 +639,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -939,7 +649,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -949,17 +659,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -969,7 +669,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -979,7 +679,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -989,17 +689,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1009,17 +699,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1029,7 +709,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1039,7 +719,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1049,17 +729,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1069,17 +739,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1089,17 +749,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1109,17 +759,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1129,17 +769,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1149,17 +779,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <https://greggkellogg.net/foaf#me>;
-  earl:subject <https://rubygems.org/gems/rdf-normalize>;
-  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069m>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1169,7 +789,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1179,7 +799,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1189,7 +809,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1199,7 +819,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1209,7 +829,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1219,7 +839,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1229,7 +849,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1239,5 +859,5 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2023-06-25T16:43:37-07:00"^^xsd:dateTime];
+    dc:date "2023-06-26T14:05:41-07:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
