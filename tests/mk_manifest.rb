@@ -20,7 +20,7 @@ class Manifest
   TITLE = "RDF Dataset Canonicalization (RDFC-1.0)"
   DESCRIPTION = "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps."
 
-  Test = Struct.new(:id, :name, :comment, :approval, :action, :rdfc10, :rdfc10map) do
+  Test = Struct.new(:id, :name, :comment, :poison, :approval, :action, :rdfc10, :rdfc10map) do
     def anchor(variant)
       %(#{self.id}#{variant == :rdfc10 ? "c" : "m"})
     end
@@ -64,7 +64,7 @@ class Manifest
       # Create entry as object indexed by symbolized column name
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
-      Test.new(entry[:test], entry[:name], entry[:comment], entry[:approval],
+      Test.new(entry[:test], entry[:name], entry[:comment], entry[:poison], entry[:approval],
                "rdfc10/#{entry[:test]}-in.nq",
                entry[:rdfc10],
                entry[:rdfc10map])
@@ -98,6 +98,7 @@ class Manifest
       "entries": {"@id": "mf:entries", "@type": "@id", "@container": "@list"},
       "label": "rdfs:label",
       "name": "mf:name",
+      "poisonFactor": {"@id": "rdfc:poisonFactor"},
       "result": {"@id": "mf:result", "@type": "@id"}
     })
 
@@ -122,15 +123,19 @@ class Manifest
           ''
         end
 
-        manifest["entries"] << {
+        man = {
           "id" => "##{test.anchor(variant)}",
           "type" => test.type(variant),
           "name" => name,
           "comment" => test.comment,
+          "poisonFactor" => test.poison.to_i,
           "approval" => (test.approval ? "rdft:#{test.approval}" : "rdft:Proposed"),
           "action" => test.action,
           "result" => test.result(variant)
         }
+        man.delete('poisonFactor') unless man['poisonFactor']
+        man.delete('result') unless man['result']
+        manifest["entries"] << man
       end
     end
 
@@ -207,6 +212,7 @@ class Manifest
         output << ":#{test.anchor(variant)} a #{test.type(variant)};"
         output << %(  mf:name "#{name}";)
         output << %(  rdfs:comment "#{test.comment}";) if test.comment
+        output << %(  rdfc:poisonFactor #{test.poison};) if test.poison
         output << %(  rdft:approval #{(test.approval ? "rdft:#{test.approval}" : "rdft:Proposed")};)
         output << %(  mf:action <#{test.action}>;)
         output << %(  mf:result <#{test.result(variant)}>;) if test.result(variant)

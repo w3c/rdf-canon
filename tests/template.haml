@@ -131,6 +131,9 @@
               %dd<~test['type']
               %dt="approval"
               %dd{property: "mf:approval", resource: test['approval']}<~test['approval']
+              - if test['poisonFactor']
+                %dt="poisonFactor"
+                %dd=test['poisonFactor']
               - if test['action']
                 %dt="action"
                 %dd
