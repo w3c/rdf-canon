@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-06-26"
+        "@value": "2023-06-27"
       },
       "revision": "0.8.0"
     },
@@ -253,6 +253,10 @@
             "TestCase"
           ],
           "title": "simple id",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -260,14 +264,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b282",
+              "@id": "_:b280",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b283",
+                "@id": "_:b281",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -308,6 +312,10 @@
             "TestCase"
           ],
           "title": "duplicate property iri values",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -315,14 +323,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test002-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b284",
+              "@id": "_:b282",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b285",
+                "@id": "_:b283",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -363,6 +371,10 @@
             "TestCase"
           ],
           "title": "bnode",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -370,14 +382,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b286",
+              "@id": "_:b284",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b287",
+                "@id": "_:b285",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -418,6 +430,10 @@
             "TestCase"
           ],
           "title": "bnode (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -425,24 +441,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b398",
+              "@id": "_:b396",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
               "result": {
-                "@id": "_:b399",
+                "@id": "_:b397",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b396",
+              "@id": "_:b394",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
               "result": {
-                "@id": "_:b397",
+                "@id": "_:b395",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -471,6 +487,10 @@
             "TestCase"
           ],
           "title": "bnode plus embed w/subject",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -478,14 +498,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b288",
+              "@id": "_:b286",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b289",
+                "@id": "_:b287",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -526,6 +546,10 @@
             "TestCase"
           ],
           "title": "bnode plus embed w/subject (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -533,24 +557,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b402",
+              "@id": "_:b400",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
               "result": {
-                "@id": "_:b403",
+                "@id": "_:b401",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b400",
+              "@id": "_:b398",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
               "result": {
-                "@id": "_:b401",
+                "@id": "_:b399",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -579,6 +603,10 @@
             "TestCase"
           ],
           "title": "bnode embed",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -586,14 +614,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b290",
+              "@id": "_:b288",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b291",
+                "@id": "_:b289",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -634,6 +662,10 @@
             "TestCase"
           ],
           "title": "bnode embed (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -641,24 +673,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b406",
+              "@id": "_:b404",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
               "result": {
-                "@id": "_:b407",
+                "@id": "_:b405",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b404",
+              "@id": "_:b402",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
               "result": {
-                "@id": "_:b405",
+                "@id": "_:b403",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -687,6 +719,10 @@
             "TestCase"
           ],
           "title": "multiple rdf types",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -694,14 +730,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test006-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b292",
+              "@id": "_:b290",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b293",
+                "@id": "_:b291",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -742,6 +778,10 @@
             "TestCase"
           ],
           "title": "single subject complex",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -749,14 +789,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test008-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b294",
+              "@id": "_:b292",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b295",
+                "@id": "_:b293",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -797,6 +837,10 @@
             "TestCase"
           ],
           "title": "multiple subjects - complex",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -804,14 +848,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test009-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b296",
+              "@id": "_:b294",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b297",
+                "@id": "_:b295",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -852,6 +896,10 @@
             "TestCase"
           ],
           "title": "type",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -859,14 +907,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test010-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b298",
+              "@id": "_:b296",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b299",
+                "@id": "_:b297",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -907,6 +955,10 @@
             "TestCase"
           ],
           "title": "type-coerced type",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -914,14 +966,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test011-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b300",
+              "@id": "_:b298",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b301",
+                "@id": "_:b299",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -962,6 +1014,10 @@
             "TestCase"
           ],
           "title": "type-coerced type, cycle",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -969,14 +1025,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test013-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b302",
+              "@id": "_:b300",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b303",
+                "@id": "_:b301",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1017,6 +1073,10 @@
             "TestCase"
           ],
           "title": "check types",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1024,14 +1084,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test014-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b304",
+              "@id": "_:b302",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b305",
+                "@id": "_:b303",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1072,6 +1132,10 @@
             "TestCase"
           ],
           "title": "blank node - dual link - embed",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1079,14 +1143,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b306",
+              "@id": "_:b304",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b307",
+                "@id": "_:b305",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1127,6 +1191,10 @@
             "TestCase"
           ],
           "title": "blank node - dual link - embed (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1134,24 +1202,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b410",
+              "@id": "_:b408",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
               "result": {
-                "@id": "_:b411",
+                "@id": "_:b409",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b408",
+              "@id": "_:b406",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
               "result": {
-                "@id": "_:b409",
+                "@id": "_:b407",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1180,6 +1248,10 @@
             "TestCase"
           ],
           "title": "blank node - dual link - non-embed",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1187,14 +1259,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b308",
+              "@id": "_:b306",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b309",
+                "@id": "_:b307",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1235,6 +1307,10 @@
             "TestCase"
           ],
           "title": "blank node - dual link - non-embed (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1242,24 +1318,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b414",
+              "@id": "_:b412",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
               "result": {
-                "@id": "_:b415",
+                "@id": "_:b413",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b412",
+              "@id": "_:b410",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
               "result": {
-                "@id": "_:b413",
+                "@id": "_:b411",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1288,6 +1364,10 @@
             "TestCase"
           ],
           "title": "blank node - self link",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1295,14 +1375,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b310",
+              "@id": "_:b308",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b311",
+                "@id": "_:b309",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1343,6 +1423,10 @@
             "TestCase"
           ],
           "title": "blank node - self link (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1350,24 +1434,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b418",
+              "@id": "_:b416",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
               "result": {
-                "@id": "_:b419",
+                "@id": "_:b417",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b416",
+              "@id": "_:b414",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
               "result": {
-                "@id": "_:b417",
+                "@id": "_:b415",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1396,6 +1480,10 @@
             "TestCase"
           ],
           "title": "blank node - disjoint self links",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1403,14 +1491,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test019-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b312",
+              "@id": "_:b310",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b313",
+                "@id": "_:b311",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1451,6 +1539,10 @@
             "TestCase"
           ],
           "title": "blank node - diamond",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1458,14 +1550,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b314",
+              "@id": "_:b312",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b315",
+                "@id": "_:b313",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1506,6 +1598,10 @@
             "TestCase"
           ],
           "title": "blank node - diamond (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1513,24 +1609,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b422",
+              "@id": "_:b420",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
               "result": {
-                "@id": "_:b423",
+                "@id": "_:b421",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b420",
+              "@id": "_:b418",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
               "result": {
-                "@id": "_:b421",
+                "@id": "_:b419",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1559,6 +1655,10 @@
             "TestCase"
           ],
           "title": "blank node - circle of 2",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "2"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1566,14 +1666,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test021-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b316",
+              "@id": "_:b314",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b317",
+                "@id": "_:b315",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1614,6 +1714,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 2",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "2"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1621,14 +1725,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test022-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b318",
+              "@id": "_:b316",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b319",
+                "@id": "_:b317",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1669,6 +1773,10 @@
             "TestCase"
           ],
           "title": "blank node - circle of 3",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1676,14 +1784,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test023-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b320",
+              "@id": "_:b318",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b321",
+                "@id": "_:b319",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1724,6 +1832,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-1-2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1731,14 +1843,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test024-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b322",
+              "@id": "_:b320",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b323",
+                "@id": "_:b321",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1779,6 +1891,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-2-1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1786,14 +1902,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test025-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b324",
+              "@id": "_:b322",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b325",
+                "@id": "_:b323",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1834,6 +1950,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-0-2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1841,14 +1961,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test026-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b326",
+              "@id": "_:b324",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b327",
+                "@id": "_:b325",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1889,6 +2009,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-2-0)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1896,14 +2020,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test027-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b328",
+              "@id": "_:b326",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b329",
+                "@id": "_:b327",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1944,6 +2068,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-1-0)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1951,14 +2079,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test028-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b330",
+              "@id": "_:b328",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b331",
+                "@id": "_:b329",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1999,6 +2127,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-0-1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2006,14 +2138,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test029-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b332",
+              "@id": "_:b330",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b333",
+                "@id": "_:b331",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2054,6 +2186,10 @@
             "TestCase"
           ],
           "title": "blank node - point at circle of 3",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2061,14 +2197,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b334",
+              "@id": "_:b332",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b335",
+                "@id": "_:b333",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2109,6 +2245,10 @@
             "TestCase"
           ],
           "title": "blank node - point at circle of 3 (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2116,24 +2256,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b426",
+              "@id": "_:b424",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
               "result": {
-                "@id": "_:b427",
+                "@id": "_:b425",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b424",
+              "@id": "_:b422",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
               "result": {
-                "@id": "_:b425",
+                "@id": "_:b423",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -2162,6 +2302,10 @@
             "TestCase"
           ],
           "title": "disjoint identical subgraphs (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2169,14 +2313,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test033-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b336",
+              "@id": "_:b334",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b337",
+                "@id": "_:b335",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2217,6 +2361,10 @@
             "TestCase"
           ],
           "title": "disjoint identical subgraphs (2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2224,14 +2372,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test034-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b338",
+              "@id": "_:b336",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b339",
+                "@id": "_:b337",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2272,6 +2420,10 @@
             "TestCase"
           ],
           "title": "reordered w/strings (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2279,14 +2431,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test035-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b340",
+              "@id": "_:b338",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b341",
+                "@id": "_:b339",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2327,6 +2479,10 @@
             "TestCase"
           ],
           "title": "reordered w/strings (2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2334,14 +2490,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test036-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b342",
+              "@id": "_:b340",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b343",
+                "@id": "_:b341",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2382,6 +2538,10 @@
             "TestCase"
           ],
           "title": "reordered 4 bnodes, reordered 2 properties (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2389,14 +2549,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test038-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b344",
+              "@id": "_:b342",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b345",
+                "@id": "_:b343",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2437,6 +2597,10 @@
             "TestCase"
           ],
           "title": "reordered 4 bnodes, reordered 2 properties (2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2444,14 +2608,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test039-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b346",
+              "@id": "_:b344",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b347",
+                "@id": "_:b345",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2492,6 +2656,10 @@
             "TestCase"
           ],
           "title": "reordered 6 bnodes (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2499,14 +2667,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test040-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b348",
+              "@id": "_:b346",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b349",
+                "@id": "_:b347",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2547,6 +2715,10 @@
             "TestCase"
           ],
           "title": "literal with language",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2554,14 +2726,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test043-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b350",
+              "@id": "_:b348",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b351",
+                "@id": "_:b349",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2601,7 +2773,12 @@
             "TestCriterion",
             "TestCase"
           ],
-          "title": "evil (1)",
+          "title": "poison – evil (1)",
+          "rdfs:comment": "A poison graph which is computable given defined limits.",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "39"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2609,14 +2786,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test044-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b352",
+              "@id": "_:b350",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b353",
+                "@id": "_:b351",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2656,7 +2833,12 @@
             "TestCriterion",
             "TestCase"
           ],
-          "title": "evil (2)",
+          "title": "poison – evil (2)",
+          "rdfs:comment": "A poison graph which is computable given defined limits.",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "39"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2664,14 +2846,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test045-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b354",
+              "@id": "_:b352",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b355",
+                "@id": "_:b353",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2711,7 +2893,12 @@
             "TestCriterion",
             "TestCase"
           ],
-          "title": "evil (3)",
+          "title": "poison – evil (3)",
+          "rdfs:comment": "A poison graph which is computable given defined limits.",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "39"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2719,14 +2906,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test046-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b356",
+              "@id": "_:b354",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b357",
+                "@id": "_:b355",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2767,6 +2954,10 @@
             "TestCase"
           ],
           "title": "deep diff (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2774,14 +2965,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b358",
+              "@id": "_:b356",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b359",
+                "@id": "_:b357",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2822,6 +3013,10 @@
             "TestCase"
           ],
           "title": "deep diff (1) (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2829,24 +3024,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b430",
+              "@id": "_:b428",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
               "result": {
-                "@id": "_:b431",
+                "@id": "_:b429",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b428",
+              "@id": "_:b426",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
               "result": {
-                "@id": "_:b429",
+                "@id": "_:b427",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -2875,6 +3070,10 @@
             "TestCase"
           ],
           "title": "deep diff (2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2882,14 +3081,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b360",
+              "@id": "_:b358",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b361",
+                "@id": "_:b359",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2930,6 +3129,10 @@
             "TestCase"
           ],
           "title": "deep diff (2) (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2937,24 +3140,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b434",
+              "@id": "_:b432",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
               "result": {
-                "@id": "_:b435",
+                "@id": "_:b433",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b432",
+              "@id": "_:b430",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
               "result": {
-                "@id": "_:b433",
+                "@id": "_:b431",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -2983,6 +3186,10 @@
             "TestCase"
           ],
           "title": "@list",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2990,14 +3197,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b362",
+              "@id": "_:b360",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b363",
+                "@id": "_:b361",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3038,6 +3245,10 @@
             "TestCase"
           ],
           "title": "@list (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3045,24 +3256,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b438",
+              "@id": "_:b436",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
               "result": {
-                "@id": "_:b439",
+                "@id": "_:b437",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b436",
+              "@id": "_:b434",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
               "result": {
-                "@id": "_:b437",
+                "@id": "_:b435",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3091,6 +3302,10 @@
             "TestCase"
           ],
           "title": "t-graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3098,14 +3313,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test054-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b364",
+              "@id": "_:b362",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b365",
+                "@id": "_:b363",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3146,6 +3361,10 @@
             "TestCase"
           ],
           "title": "simple reorder (1)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3153,14 +3372,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b366",
+              "@id": "_:b364",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b367",
+                "@id": "_:b365",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3201,6 +3420,10 @@
             "TestCase"
           ],
           "title": "simple reorder (1) (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3208,24 +3431,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b442",
+              "@id": "_:b440",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
               "result": {
-                "@id": "_:b443",
+                "@id": "_:b441",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b440",
+              "@id": "_:b438",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
               "result": {
-                "@id": "_:b441",
+                "@id": "_:b439",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3254,6 +3477,10 @@
             "TestCase"
           ],
           "title": "simple reorder (2)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3261,14 +3488,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b368",
+              "@id": "_:b366",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b369",
+                "@id": "_:b367",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3309,6 +3536,10 @@
             "TestCase"
           ],
           "title": "simple reorder (2) (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3316,24 +3547,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b446",
+              "@id": "_:b444",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
               "result": {
-                "@id": "_:b447",
+                "@id": "_:b445",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b444",
+              "@id": "_:b442",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
               "result": {
-                "@id": "_:b445",
+                "@id": "_:b443",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3362,6 +3593,10 @@
             "TestCase"
           ],
           "title": "unnamed graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3369,14 +3604,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b370",
+              "@id": "_:b368",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b371",
+                "@id": "_:b369",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3417,6 +3652,10 @@
             "TestCase"
           ],
           "title": "unnamed graph (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3424,24 +3663,24 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b450",
+              "@id": "_:b448",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
               "result": {
-                "@id": "_:b451",
+                "@id": "_:b449",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b448",
+              "@id": "_:b446",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
               "result": {
-                "@id": "_:b449",
+                "@id": "_:b447",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3470,6 +3709,10 @@
             "TestCase"
           ],
           "title": "unnamed graph with blank node objects",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3477,14 +3720,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test058-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b372",
+              "@id": "_:b370",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b373",
+                "@id": "_:b371",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3518,59 +3761,6 @@
           ]
         },
         {
-          "@id": "https://w3c.github.io/rdf-canon/tests/manifest#test058m",
-          "@type": [
-            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest",
-            "TestCriterion",
-            "TestCase"
-          ],
-          "title": "unnamed graph with blank node objects (map test)",
-          "http://www.w3.org/ns/rdftest#approval": {
-            "@id": "http://www.w3.org/ns/rdftest#Proposed"
-          },
-          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test058-in.nq",
-          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test058-rdfc10map.json",
-          "assertions": [
-            {
-              "@id": "_:b454",
-              "@type": "Assertion",
-              "subject": "https://github.com/pchampin/sophia_rs",
-              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058m",
-              "result": {
-                "@id": "_:b455",
-                "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
-            },
-            {
-              "@id": "_:b452",
-              "@type": "Assertion",
-              "subject": "https://iherman.github.io/rdfjs-c14n/",
-              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058m",
-              "result": {
-                "@id": "_:b453",
-                "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
-            },
-            {
-              "@id": "_:b236",
-              "@type": "Assertion",
-              "subject": "https://rubygems.org/gems/rdf-normalize",
-              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058m",
-              "assertedBy": "https://greggkellogg.net/foaf#me",
-              "mode": "earl:automatic",
-              "result": {
-                "@id": "_:b237",
-                "@type": "TestResult",
-                "outcome": "earl:passed"
-              }
-            }
-          ]
-        },
-        {
           "@id": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
           "@type": [
             "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
@@ -3578,6 +3768,10 @@
             "TestCase"
           ],
           "title": "n-quads parsing",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3585,14 +3779,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test059-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b374",
+              "@id": "_:b372",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b375",
+                "@id": "_:b373",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3611,14 +3805,14 @@
               }
             },
             {
-              "@id": "_:b238",
+              "@id": "_:b236",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b239",
+                "@id": "_:b237",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3633,6 +3827,10 @@
             "TestCase"
           ],
           "title": "n-quads escaping",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3640,14 +3838,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b376",
+              "@id": "_:b374",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b377",
+                "@id": "_:b375",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3666,14 +3864,14 @@
               }
             },
             {
-              "@id": "_:b240",
+              "@id": "_:b238",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b241",
+                "@id": "_:b239",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3688,6 +3886,10 @@
             "TestCase"
           ],
           "title": "n-quads escaping (map test)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3695,38 +3897,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b458",
+              "@id": "_:b452",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "result": {
-                "@id": "_:b459",
+                "@id": "_:b453",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b456",
+              "@id": "_:b450",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "result": {
-                "@id": "_:b457",
+                "@id": "_:b451",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b242",
+              "@id": "_:b240",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b243",
+                "@id": "_:b241",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3741,6 +3943,10 @@
             "TestCase"
           ],
           "title": "same literal value with multiple languages",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3748,14 +3954,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test061-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b378",
+              "@id": "_:b376",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b379",
+                "@id": "_:b377",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3774,14 +3980,14 @@
               }
             },
             {
-              "@id": "_:b244",
+              "@id": "_:b242",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b245",
+                "@id": "_:b243",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3796,6 +4002,10 @@
             "TestCase"
           ],
           "title": "same literal value with multiple datatypes",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3803,14 +4013,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test062-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b380",
+              "@id": "_:b378",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b381",
+                "@id": "_:b379",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3829,14 +4039,14 @@
               }
             },
             {
-              "@id": "_:b246",
+              "@id": "_:b244",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b247",
+                "@id": "_:b245",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3852,6 +4062,10 @@
           ],
           "title": "blank node - diamond (with _:b)",
           "rdfs:comment": "This duplicates #test020, but uses _:b as a blank node prefix",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3859,14 +4073,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b382",
+              "@id": "_:b380",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b383",
+                "@id": "_:b381",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3885,14 +4099,14 @@
               }
             },
             {
-              "@id": "_:b248",
+              "@id": "_:b246",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b249",
+                "@id": "_:b247",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3908,6 +4122,10 @@
           ],
           "title": "blank node - diamond (with _:b) (map test)",
           "rdfs:comment": "This duplicates #test020, but uses _:b as a blank node prefix",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3915,38 +4133,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b462",
+              "@id": "_:b456",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "result": {
-                "@id": "_:b463",
+                "@id": "_:b457",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b460",
+              "@id": "_:b454",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "result": {
-                "@id": "_:b461",
+                "@id": "_:b455",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b250",
+              "@id": "_:b248",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b251",
+                "@id": "_:b249",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3961,6 +4179,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-1-2, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3968,14 +4190,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test064-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b384",
+              "@id": "_:b382",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b385",
+                "@id": "_:b383",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3994,14 +4216,14 @@
               }
             },
             {
-              "@id": "_:b252",
+              "@id": "_:b250",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b253",
+                "@id": "_:b251",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4016,6 +4238,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-2-1, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4023,14 +4249,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test065-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b386",
+              "@id": "_:b384",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b387",
+                "@id": "_:b385",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4049,14 +4275,14 @@
               }
             },
             {
-              "@id": "_:b254",
+              "@id": "_:b252",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b255",
+                "@id": "_:b253",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4071,6 +4297,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-0-2, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4078,14 +4308,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test066-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b388",
+              "@id": "_:b386",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b389",
+                "@id": "_:b387",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4104,14 +4334,14 @@
               }
             },
             {
-              "@id": "_:b256",
+              "@id": "_:b254",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b257",
+                "@id": "_:b255",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4126,6 +4356,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-2-0, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4133,14 +4367,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test067-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b390",
+              "@id": "_:b388",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b391",
+                "@id": "_:b389",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4159,14 +4393,14 @@
               }
             },
             {
-              "@id": "_:b258",
+              "@id": "_:b256",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b259",
+                "@id": "_:b257",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4181,6 +4415,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-1-0, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4188,14 +4426,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test068-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b392",
+              "@id": "_:b390",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b393",
+                "@id": "_:b391",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4214,14 +4452,14 @@
               }
             },
             {
-              "@id": "_:b260",
+              "@id": "_:b258",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b261",
+                "@id": "_:b259",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4236,6 +4474,10 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-0-1, reversed)",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "3"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4243,14 +4485,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test069-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b394",
+              "@id": "_:b392",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b395",
+                "@id": "_:b393",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4269,14 +4511,14 @@
               }
             },
             {
-              "@id": "_:b262",
+              "@id": "_:b260",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b263",
+                "@id": "_:b261",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4292,6 +4534,10 @@
           ],
           "title": "dataset - isomorphic default and iri named",
           "rdfs:comment": "Isomorphic graphs in default and IRI named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4299,38 +4545,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b466",
+              "@id": "_:b460",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "result": {
-                "@id": "_:b467",
+                "@id": "_:b461",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b464",
+              "@id": "_:b458",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "result": {
-                "@id": "_:b465",
+                "@id": "_:b459",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b264",
+              "@id": "_:b262",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b265",
+                "@id": "_:b263",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4346,6 +4592,10 @@
           ],
           "title": "dataset - isomorphic default and iri named (map test)",
           "rdfs:comment": "Isomorphic graphs in default and IRI named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4353,38 +4603,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b470",
+              "@id": "_:b464",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "result": {
-                "@id": "_:b471",
+                "@id": "_:b465",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b468",
+              "@id": "_:b462",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "result": {
-                "@id": "_:b469",
+                "@id": "_:b463",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b266",
+              "@id": "_:b264",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b267",
+                "@id": "_:b265",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4400,6 +4650,10 @@
           ],
           "title": "dataset - isomorphic default and node named",
           "rdfs:comment": "Isomorphic graphs in default and blank node named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4407,38 +4661,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b474",
+              "@id": "_:b468",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "result": {
-                "@id": "_:b475",
+                "@id": "_:b469",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b472",
+              "@id": "_:b466",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "result": {
-                "@id": "_:b473",
+                "@id": "_:b467",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b268",
+              "@id": "_:b266",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b269",
+                "@id": "_:b267",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4454,6 +4708,10 @@
           ],
           "title": "dataset - isomorphic default and node named (map test)",
           "rdfs:comment": "Isomorphic graphs in default and blank node named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4461,38 +4719,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b478",
+              "@id": "_:b472",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "result": {
-                "@id": "_:b479",
+                "@id": "_:b473",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b476",
+              "@id": "_:b470",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "result": {
-                "@id": "_:b477",
+                "@id": "_:b471",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b270",
+              "@id": "_:b268",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b271",
+                "@id": "_:b269",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4508,6 +4766,10 @@
           ],
           "title": "dataset - shared blank nodes",
           "rdfs:comment": "Blank nodes shared in default and named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4515,38 +4777,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b482",
+              "@id": "_:b476",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "result": {
-                "@id": "_:b483",
+                "@id": "_:b477",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b480",
+              "@id": "_:b474",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "result": {
-                "@id": "_:b481",
+                "@id": "_:b475",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b272",
+              "@id": "_:b270",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b273",
+                "@id": "_:b271",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4562,6 +4824,10 @@
           ],
           "title": "dataset - shared blank nodes (map test)",
           "rdfs:comment": "Blank nodes shared in default and named graph",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4569,38 +4835,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b486",
+              "@id": "_:b480",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "result": {
-                "@id": "_:b487",
+                "@id": "_:b481",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b484",
+              "@id": "_:b478",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "result": {
-                "@id": "_:b485",
+                "@id": "_:b479",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b274",
+              "@id": "_:b272",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b275",
+                "@id": "_:b273",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4616,6 +4882,10 @@
           ],
           "title": "dataset - referencing graph name",
           "rdfs:comment": "Default graph with blank node shared with graph name",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4623,38 +4893,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b490",
+              "@id": "_:b484",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "result": {
-                "@id": "_:b491",
+                "@id": "_:b485",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b488",
+              "@id": "_:b482",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "result": {
-                "@id": "_:b489",
+                "@id": "_:b483",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b276",
+              "@id": "_:b274",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b277",
+                "@id": "_:b275",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4670,6 +4940,10 @@
           ],
           "title": "dataset - referencing graph name (map test)",
           "rdfs:comment": "Default graph with blank node shared with graph name",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "0"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4677,38 +4951,38 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b494",
+              "@id": "_:b488",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "result": {
-                "@id": "_:b495",
+                "@id": "_:b489",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b492",
+              "@id": "_:b486",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "result": {
-                "@id": "_:b493",
+                "@id": "_:b487",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b278",
+              "@id": "_:b276",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b279",
+                "@id": "_:b277",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4724,44 +4998,48 @@
           ],
           "title": "poison - Clique Graph (negative test)",
           "rdfs:comment": "A 10-node Clique of blank node resources all inter-related.",
+          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "40"
+          },
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
           "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test074-in.nq",
           "assertions": [
             {
-              "@id": "_:b498",
+              "@id": "_:b492",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "result": {
-                "@id": "_:b499",
+                "@id": "_:b493",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b496",
+              "@id": "_:b490",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "result": {
-                "@id": "_:b497",
+                "@id": "_:b491",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b280",
+              "@id": "_:b278",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b281",
+                "@id": "_:b279",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }

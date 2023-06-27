@@ -25,6 +25,9 @@
     },
     "label": "rdfs:label",
     "name": "mf:name",
+    "poisonFactor": {
+      "@id": "rdfc:poisonFactor"
+    },
     "result": {
       "@id": "mf:result",
       "@type": "@id"
@@ -40,6 +43,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "simple id",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test001-in.nq",
       "result": "rdfc10/test001-rdfc10.nq"
@@ -49,6 +53,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "duplicate property iri values",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test002-in.nq",
       "result": "rdfc10/test002-rdfc10.nq"
@@ -58,6 +63,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "bnode",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test003-in.nq",
       "result": "rdfc10/test003-rdfc10.nq"
@@ -67,6 +73,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "bnode (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test003-in.nq",
       "result": "rdfc10/test003-rdfc10map.json"
@@ -76,6 +83,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "bnode plus embed w/subject",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test004-in.nq",
       "result": "rdfc10/test004-rdfc10.nq"
@@ -85,6 +93,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "bnode plus embed w/subject (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test004-in.nq",
       "result": "rdfc10/test004-rdfc10map.json"
@@ -94,6 +103,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "bnode embed",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test005-in.nq",
       "result": "rdfc10/test005-rdfc10.nq"
@@ -103,6 +113,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "bnode embed (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test005-in.nq",
       "result": "rdfc10/test005-rdfc10map.json"
@@ -112,6 +123,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "multiple rdf types",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test006-in.nq",
       "result": "rdfc10/test006-rdfc10.nq"
@@ -121,6 +133,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "single subject complex",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test008-in.nq",
       "result": "rdfc10/test008-rdfc10.nq"
@@ -130,6 +143,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "multiple subjects - complex",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test009-in.nq",
       "result": "rdfc10/test009-rdfc10.nq"
@@ -139,6 +153,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "type",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test010-in.nq",
       "result": "rdfc10/test010-rdfc10.nq"
@@ -148,6 +163,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "type-coerced type",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test011-in.nq",
       "result": "rdfc10/test011-rdfc10.nq"
@@ -157,6 +173,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "type-coerced type, cycle",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test013-in.nq",
       "result": "rdfc10/test013-rdfc10.nq"
@@ -166,6 +183,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "check types",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test014-in.nq",
       "result": "rdfc10/test014-rdfc10.nq"
@@ -175,6 +193,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - dual link - embed",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test016-in.nq",
       "result": "rdfc10/test016-rdfc10.nq"
@@ -184,6 +203,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - dual link - embed (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test016-in.nq",
       "result": "rdfc10/test016-rdfc10map.json"
@@ -193,6 +213,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - dual link - non-embed",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test017-in.nq",
       "result": "rdfc10/test017-rdfc10.nq"
@@ -202,6 +223,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - dual link - non-embed (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test017-in.nq",
       "result": "rdfc10/test017-rdfc10map.json"
@@ -211,6 +233,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - self link",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test018-in.nq",
       "result": "rdfc10/test018-rdfc10.nq"
@@ -220,6 +243,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - self link (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test018-in.nq",
       "result": "rdfc10/test018-rdfc10map.json"
@@ -229,6 +253,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - disjoint self links",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test019-in.nq",
       "result": "rdfc10/test019-rdfc10.nq"
@@ -238,6 +263,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - diamond",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test020-in.nq",
       "result": "rdfc10/test020-rdfc10.nq"
@@ -247,6 +273,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - diamond (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test020-in.nq",
       "result": "rdfc10/test020-rdfc10map.json"
@@ -256,6 +283,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - circle of 2",
       "comment": null,
+      "poisonFactor": 2,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test021-in.nq",
       "result": "rdfc10/test021-rdfc10.nq"
@@ -265,6 +293,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 2",
       "comment": null,
+      "poisonFactor": 2,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test022-in.nq",
       "result": "rdfc10/test022-rdfc10.nq"
@@ -274,6 +303,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - circle of 3",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test023-in.nq",
       "result": "rdfc10/test023-rdfc10.nq"
@@ -283,6 +313,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (0-1-2)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test024-in.nq",
       "result": "rdfc10/test024-rdfc10.nq"
@@ -292,6 +323,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (0-2-1)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test025-in.nq",
       "result": "rdfc10/test025-rdfc10.nq"
@@ -301,6 +333,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (1-0-2)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test026-in.nq",
       "result": "rdfc10/test026-rdfc10.nq"
@@ -310,6 +343,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (1-2-0)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test027-in.nq",
       "result": "rdfc10/test027-rdfc10.nq"
@@ -319,6 +353,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (2-1-0)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test028-in.nq",
       "result": "rdfc10/test028-rdfc10.nq"
@@ -328,6 +363,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (2-0-1)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test029-in.nq",
       "result": "rdfc10/test029-rdfc10.nq"
@@ -337,6 +373,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - point at circle of 3",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test030-in.nq",
       "result": "rdfc10/test030-rdfc10.nq"
@@ -346,6 +383,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - point at circle of 3 (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test030-in.nq",
       "result": "rdfc10/test030-rdfc10map.json"
@@ -355,6 +393,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "disjoint identical subgraphs (1)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test033-in.nq",
       "result": "rdfc10/test033-rdfc10.nq"
@@ -364,6 +403,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "disjoint identical subgraphs (2)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test034-in.nq",
       "result": "rdfc10/test034-rdfc10.nq"
@@ -373,6 +413,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "reordered w/strings (1)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test035-in.nq",
       "result": "rdfc10/test035-rdfc10.nq"
@@ -382,6 +423,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "reordered w/strings (2)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test036-in.nq",
       "result": "rdfc10/test036-rdfc10.nq"
@@ -391,6 +433,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "reordered 4 bnodes, reordered 2 properties (1)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test038-in.nq",
       "result": "rdfc10/test038-rdfc10.nq"
@@ -400,6 +443,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "reordered 4 bnodes, reordered 2 properties (2)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test039-in.nq",
       "result": "rdfc10/test039-rdfc10.nq"
@@ -409,6 +453,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "reordered 6 bnodes (1)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test040-in.nq",
       "result": "rdfc10/test040-rdfc10.nq"
@@ -418,6 +463,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "literal with language",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test043-in.nq",
       "result": "rdfc10/test043-rdfc10.nq"
@@ -425,8 +471,9 @@
     {
       "id": "#test044c",
       "type": "rdfc:RDFC10EvalTest",
-      "name": "evil (1)",
-      "comment": null,
+      "name": "poison – evil (1)",
+      "comment": "A poison graph which is computable given defined limits.",
+      "poisonFactor": 39,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test044-in.nq",
       "result": "rdfc10/test044-rdfc10.nq"
@@ -434,8 +481,9 @@
     {
       "id": "#test045c",
       "type": "rdfc:RDFC10EvalTest",
-      "name": "evil (2)",
-      "comment": null,
+      "name": "poison – evil (2)",
+      "comment": "A poison graph which is computable given defined limits.",
+      "poisonFactor": 39,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test045-in.nq",
       "result": "rdfc10/test045-rdfc10.nq"
@@ -443,8 +491,9 @@
     {
       "id": "#test046c",
       "type": "rdfc:RDFC10EvalTest",
-      "name": "evil (3)",
-      "comment": null,
+      "name": "poison – evil (3)",
+      "comment": "A poison graph which is computable given defined limits.",
+      "poisonFactor": 39,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test046-in.nq",
       "result": "rdfc10/test046-rdfc10.nq"
@@ -454,6 +503,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "deep diff (1)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test047-in.nq",
       "result": "rdfc10/test047-rdfc10.nq"
@@ -463,6 +513,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "deep diff (1) (map test)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test047-in.nq",
       "result": "rdfc10/test047-rdfc10map.json"
@@ -472,6 +523,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "deep diff (2)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test048-in.nq",
       "result": "rdfc10/test048-rdfc10.nq"
@@ -481,6 +533,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "deep diff (2) (map test)",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test048-in.nq",
       "result": "rdfc10/test048-rdfc10map.json"
@@ -490,6 +543,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "@list",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test053-in.nq",
       "result": "rdfc10/test053-rdfc10.nq"
@@ -499,6 +553,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "@list (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test053-in.nq",
       "result": "rdfc10/test053-rdfc10map.json"
@@ -508,6 +563,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "t-graph",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test054-in.nq",
       "result": "rdfc10/test054-rdfc10.nq"
@@ -517,6 +573,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "simple reorder (1)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test055-in.nq",
       "result": "rdfc10/test055-rdfc10.nq"
@@ -526,6 +583,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "simple reorder (1) (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test055-in.nq",
       "result": "rdfc10/test055-rdfc10map.json"
@@ -535,6 +593,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "simple reorder (2)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test056-in.nq",
       "result": "rdfc10/test056-rdfc10.nq"
@@ -544,6 +603,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "simple reorder (2) (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test056-in.nq",
       "result": "rdfc10/test056-rdfc10map.json"
@@ -553,6 +613,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "unnamed graph",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test057-in.nq",
       "result": "rdfc10/test057-rdfc10.nq"
@@ -562,6 +623,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "unnamed graph (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test057-in.nq",
       "result": "rdfc10/test057-rdfc10map.json"
@@ -571,24 +633,17 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "unnamed graph with blank node objects",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test058-in.nq",
       "result": "rdfc10/test058-rdfc10.nq"
-    },
-    {
-      "id": "#test058m",
-      "type": "rdfc:RDFC10MapTest",
-      "name": "unnamed graph with blank node objects (map test)",
-      "comment": null,
-      "approval": "rdft:Proposed",
-      "action": "rdfc10/test058-in.nq",
-      "result": "rdfc10/test058-rdfc10map.json"
     },
     {
       "id": "#test059c",
       "type": "rdfc:RDFC10EvalTest",
       "name": "n-quads parsing",
       "comment": null,
+      "poisonFactor": 1,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test059-in.nq",
       "result": "rdfc10/test059-rdfc10.nq"
@@ -598,6 +653,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "n-quads escaping",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test060-in.nq",
       "result": "rdfc10/test060-rdfc10.nq"
@@ -607,6 +663,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "n-quads escaping (map test)",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test060-in.nq",
       "result": "rdfc10/test060-rdfc10map.json"
@@ -616,6 +673,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "same literal value with multiple languages",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test061-in.nq",
       "result": "rdfc10/test061-rdfc10.nq"
@@ -625,6 +683,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "same literal value with multiple datatypes",
       "comment": null,
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test062-in.nq",
       "result": "rdfc10/test062-rdfc10.nq"
@@ -634,6 +693,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - diamond (with _:b)",
       "comment": "This duplicates #test020, but uses _:b as a blank node prefix",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test063-in.nq",
       "result": "rdfc10/test063-rdfc10.nq"
@@ -643,6 +703,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "blank node - diamond (with _:b) (map test)",
       "comment": "This duplicates #test020, but uses _:b as a blank node prefix",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test063-in.nq",
       "result": "rdfc10/test063-rdfc10map.json"
@@ -652,6 +713,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (0-1-2, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test064-in.nq",
       "result": "rdfc10/test064-rdfc10.nq"
@@ -661,6 +723,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (0-2-1, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test065-in.nq",
       "result": "rdfc10/test065-rdfc10.nq"
@@ -670,6 +733,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (1-0-2, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test066-in.nq",
       "result": "rdfc10/test066-rdfc10.nq"
@@ -679,6 +743,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (1-2-0, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test067-in.nq",
       "result": "rdfc10/test067-rdfc10.nq"
@@ -688,6 +753,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (2-1-0, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test068-in.nq",
       "result": "rdfc10/test068-rdfc10.nq"
@@ -697,6 +763,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "blank node - double circle of 3 (2-0-1, reversed)",
       "comment": null,
+      "poisonFactor": 3,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test069-in.nq",
       "result": "rdfc10/test069-rdfc10.nq"
@@ -706,6 +773,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "dataset - isomorphic default and iri named",
       "comment": "Isomorphic graphs in default and IRI named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test070-in.nq",
       "result": "rdfc10/test070-rdfc10.nq"
@@ -715,6 +783,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "dataset - isomorphic default and iri named (map test)",
       "comment": "Isomorphic graphs in default and IRI named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test070-in.nq",
       "result": "rdfc10/test070-rdfc10map.json"
@@ -724,6 +793,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "dataset - isomorphic default and node named",
       "comment": "Isomorphic graphs in default and blank node named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test071-in.nq",
       "result": "rdfc10/test071-rdfc10.nq"
@@ -733,6 +803,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "dataset - isomorphic default and node named (map test)",
       "comment": "Isomorphic graphs in default and blank node named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test071-in.nq",
       "result": "rdfc10/test071-rdfc10map.json"
@@ -742,6 +813,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "dataset - shared blank nodes",
       "comment": "Blank nodes shared in default and named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test072-in.nq",
       "result": "rdfc10/test072-rdfc10.nq"
@@ -751,6 +823,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "dataset - shared blank nodes (map test)",
       "comment": "Blank nodes shared in default and named graph",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test072-in.nq",
       "result": "rdfc10/test072-rdfc10map.json"
@@ -760,6 +833,7 @@
       "type": "rdfc:RDFC10EvalTest",
       "name": "dataset - referencing graph name",
       "comment": "Default graph with blank node shared with graph name",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test073-in.nq",
       "result": "rdfc10/test073-rdfc10.nq"
@@ -769,6 +843,7 @@
       "type": "rdfc:RDFC10MapTest",
       "name": "dataset - referencing graph name (map test)",
       "comment": "Default graph with blank node shared with graph name",
+      "poisonFactor": 0,
       "approval": "rdft:Proposed",
       "action": "rdfc10/test073-in.nq",
       "result": "rdfc10/test073-rdfc10map.json"
@@ -778,9 +853,9 @@
       "type": "rdfc:RDFC10NegativeEvalTest",
       "name": "poison - Clique Graph (negative test)",
       "comment": "A 10-node Clique of blank node resources all inter-related.",
+      "poisonFactor": 40,
       "approval": "rdft:Proposed",
-      "action": "rdfc10/test074-in.nq",
-      "result": null
+      "action": "rdfc10/test074-in.nq"
     }
   ]
 }
