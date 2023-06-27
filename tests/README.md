@@ -23,6 +23,10 @@ The test passes if the value of the resulting
 [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
 matches the corresponding test result.
 
+Additionally, the keys of the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+must exactly match the values of the [input blank node identifier map](https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map).
+Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.
+
 ## Contributing Tests
 The test manifests and entries are built automatically from
 [manifest.csv](manifest.csv) using [mk_manifest.rb](mk_manifest.rb),
