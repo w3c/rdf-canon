@@ -43,17 +43,32 @@
     },
     {
       "@id": "rdfc:RDFC10EvalTest",
-      "@type": "rdfs:Class",
+      "@type": "rdfc:Test",
       "rdfs:label": "RDFC-1.0 Evaluation Test",
       "rdfs:subClassOf": "rdfc:Test",
       "rdfs:comment": "Canonicalization performed using the RDFC-1.0 algorithm."
     },
     {
       "@id": "rdfc:RDFC10MapTest",
-      "@type": "rdfs:Class",
+      "@type": "rdfc:Test",
       "rdfs:label": "RDFC-1.0 Issued Identifiers Test",
       "rdfs:subClassOf": "rdfc:Test",
       "rdfs:comment": "The result is a map of input blank node identifiers to their associated canonical identifiers."
+    },
+    {
+      "@id": "rdfc:RDFC10NegativeEvalTest",
+      "@type": "rdfc:Test",
+      "rdfs:label": "RDFC-1.0 Negative Evaluation Test",
+      "rdfs:subClassOf": "rdfc:Test",
+      "rdfs:comment": "An attempt to canonicalize a poison dataset should result in an error."
+    },
+    {
+      "@id": "rdfc:poisonFactor",
+      "@type": "rdf:Property",
+      "rdfs:label": "Poison dataset.",
+      "rdfs:comment": "The input is considered a type of poison graph, but may be computable. The value is an integer reflecting the degree of computational complexity.",
+      "rdfs:domain": "rdfc:Test",
+      "rdfs:range": "xsd:integer"
     }
   ]
 }

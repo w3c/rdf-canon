@@ -42,7 +42,7 @@ The vocabulary is published by the <a href="https://www.w3.org/community/credent
 <section>
 <h3 id='classes'>Classes</h3>
 <dl>
-<dt about='rdfc:RDFC10EvalTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10EvalTest</dt>
+<dt about='rdfc:RDFC10EvalTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10EvalTest</dt>
 <dd about='rdfc:RDFC10EvalTest'>
 <em property='rdfs:label'>RDFC-1.0 Evaluation Test</em>
 <span property='rdfs:comment'><p>Canonicalization performed using the RDFC-1.0 algorithm.</p>
@@ -54,10 +54,22 @@ subClassOf:
 <code property='rdfs:subClassOf' resource='rdfc:Test'>rdfc:Test</code>
 </div>
 </dd>
-<dt about='rdfc:RDFC10MapTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10MapTest</dt>
+<dt about='rdfc:RDFC10MapTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10MapTest</dt>
 <dd about='rdfc:RDFC10MapTest'>
 <em property='rdfs:label'>RDFC-1.0 Issued Identifiers Test</em>
 <span property='rdfs:comment'><p>The result is a map of input blank node identifiers to their associated canonical identifiers.</p>
+</span>
+<div>
+<strong>
+subClassOf:
+</strong>
+<code property='rdfs:subClassOf' resource='rdfc:Test'>rdfc:Test</code>
+</div>
+</dd>
+<dt about='rdfc:RDFC10NegativeEvalTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10NegativeEvalTest</dt>
+<dd about='rdfc:RDFC10NegativeEvalTest'>
+<em property='rdfs:label'>RDFC-1.0 Negative Evaluation Test</em>
+<span property='rdfs:comment'><p>An attempt to canonicalize a poison dataset should result in an error.</p>
 </span>
 <div>
 <strong>
@@ -90,6 +102,24 @@ subClassOf:
 <section>
 <h3 id='properties'>Properties</h3>
 <dl>
+<dt about='rdfc:poisonFactor' property='rdfs:label' typeof='rdf:Property'>rdfc:poisonFactor</dt>
+<dd about='rdfc:poisonFactor'>
+<em property='rdfs:label'>Poison dataset.</em>
+<span property='rdfs:comment'><p>The input is considered a type of poison graph, but may be computable. The value is an integer reflecting the degree of computational complexity.</p>
+</span>
+<div>
+<strong>
+domain:
+</strong>
+<code property='rdfs:domain' resource='rdfc:Test'>rdfc:Test</code>
+</div>
+<div>
+<strong>
+range:
+</strong>
+<code property='rdfs:range' resource='xsd:integer'>xsd:integer</code>
+</div>
+</dd>
 </dl>
 </section>
 </section>
