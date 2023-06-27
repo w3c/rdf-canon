@@ -75,6 +75,9 @@
       The test passes if the value of the resulting
       <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
       matches the corresponding test result.</p>
+    <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
+      must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
+      Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
     <h2 id="contributing-tests">Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
