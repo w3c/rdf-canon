@@ -369,11 +369,13 @@
         of nodes and quads such that the first quad includes
         the starting node as an component, and the last quad includes
         the ending node as an component with each quad in the path
-        containing both the preceding and following nodes.</dd>
+        containing both the preceding and following nodes. Gossip paths are
+        encoded and operated on in the <a>RDFC-1.0</a> algorithm as
+        strings.</dd>
       <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
       <dd>
         The canonicalized representation of a quad is defined in <a href="#canonical-quads" class="sectionRef"></a>.
-        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a>, if present, in the same manner as 
+        A quad in <a>canonical n-quads form</a> represents a <a>graph name</a>, if present, in the same manner as
         a <a>subject</a>, and each quad is terminated with a single new line character (`U+000A`).
       </dd>
       <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
@@ -1863,9 +1865,10 @@
         this by creating deterministic paths that emanate out from the blank
         node through any other adjacent blank nodes.</p>
 
-      <p>Ultimately, the algorithm selects a shortest <a>gossip path</a>,
-        distributing canonical identifiers to the unlabeled blank nodes
-        in the order in which they appear in this path.
+      <p>Ultimately, the algorithm selects a shortest <a>gossip path</a>
+        (based on its encoding as a string), distributing canonical
+        identifiers to the unlabeled blank nodes in the order in which they
+        appear in this path.
         The hash of this encoded shortest path,
         called the N-degree hash of <var>n</var>,
         distinguishes <var>n</var> from other blank nodes in the dataset.</p>
