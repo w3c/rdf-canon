@@ -182,13 +182,12 @@
     of algorithmic time complexity. However, those that contain nodes that do
     not have globally unique identifiers pose a greater challenge. Normalizing
     these datasets presents the <dfn>graph isomorphism</dfn> problem, a
-    problem that is believed to be difficult to solve quickly. More formally,
-    it is believed to be an NP-Intermediate problem, that is, neither known to
-    be solvable in polynomial time nor NP-complete. Fortunately, existing real
-    world data is rarely modeled in a way that manifests this problem and new
-    data can be modeled to avoid it. In fact, software systems can detect a
-    problematic dataset and may choose to assume it's an attempted denial of
-    service attack, rather than a real input, and abort.</p>
+    problem that is believed to be difficult to solve quickly in the worst
+    case. Fortunately, existing real world data is rarely, if ever, modeled in
+    a way that manifests as the worst case and new data can be modeled to avoid
+    it. In fact, software systems that detect a problematic dataset can choose
+    to assume it's an attempted denial of service attack, rather than a
+    real input, and abort.</p>
 
   <p>This document outlines an algorithm for generating a canonical
     serialization of an <a>RDF dataset</a> given an <a>RDF dataset</a> as input.
