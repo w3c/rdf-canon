@@ -364,14 +364,14 @@
         that <a>mention</a> a node <var>n</var> is called the <a>mention set</a> of <var>n</var>,
         denoted <var>Q<sub>n</sub></var>.</dd>
       <dt><dfn>gossip path</dfn></dt>
-      <dd>The gossip path between two <a>blank nodes</a> contained within
-        <a>quads</a> in a <a>dataset</a>, where the path is a sequence
-        of nodes and quads such that the first quad includes
-        the starting node as an component, and the last quad includes
-        the ending node as an component with each quad in the path
-        containing both the preceding and following nodes. Gossip paths are
-        encoded and operated on in the <a>RDFC-1.0</a> algorithm as
-        strings.</dd>
+      <dd>A particular enumeration of every incident <a>mention</a> emanating
+        from a blank node, recursively including transitively related
+        <a>mentions</a> until any named node or canonically labeled blank node
+        is reached. Gossip paths are encoded and operated on in the
+        <a>RDFC-1.0</a> algorithm as strings (see
+        <a href="#hash-nd-quads" class="sectionRef"></a> for more information
+        on the construction of gossip paths).
+      </dd>
       <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
       <dd>
         The canonicalized representation of a quad is defined in <a href="#canonical-quads" class="sectionRef"></a>.
