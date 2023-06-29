@@ -366,8 +366,9 @@
       <dt><dfn>gossip path</dfn></dt>
       <dd>A particular enumeration of every incident <a>mention</a> emanating
         from a blank node, recursively including transitively related
-        <a>mentions</a> until any named node or canonically labeled blank node
-        is reached. Gossip paths are encoded and operated on in the
+        <a>mentions</a> until any named node or blank node already labeled with
+        using the <a>identifier issuer</a> associated with the gossip path is
+        reached. Gossip paths are encoded and operated on in the
         <a>RDFC-1.0</a> algorithm as strings (see
         <a href="#hash-nd-quads" class="sectionRef"></a> for more information
         on the construction of gossip paths).
