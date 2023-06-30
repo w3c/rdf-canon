@@ -63,12 +63,12 @@
       "rdfs:comment": "An attempt to canonicalize a poison dataset should result in an error."
     },
     {
-      "@id": "rdfc:poisonFactor",
+      "@id": "rdfc:computationalComplexity",
       "@type": "rdf:Property",
       "rdfs:label": "Poison dataset.",
-      "rdfs:comment": "The input is considered a type of poison graph, but may be computable. The value is an integer reflecting the degree of computational complexity.",
+      "rdfs:comment": "The input can be canonicalized with representation of relative computational complexity: \"low\", \"medium\", or \"high\". Inputs with high computational complexity are likely poison datasets.",
       "rdfs:domain": "rdfc:Test",
-      "rdfs:range": "xsd:integer"
+      "rdfs:range": "xsd:string"
     }
   ]
 }

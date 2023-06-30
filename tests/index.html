@@ -56,15 +56,15 @@
     <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
-    <h2 id="general-instructions-for-running-the-rdf-dataset-canonicalization-test-suites">General instructions for running the RDF Dataset Canonicalization Test suites</h2>
-    <h3 id="tests-for-rdfc-10-take-input-files-specified-as-n-quads-and-generate-canonical-n-quads-output-as-required-by-the-rdfc-10-algorithm">Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
+    <h2>General instructions for running the RDF Dataset Canonicalization Test suites</h2>
+    <h3>Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
     <p>The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.</p>
     <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
       <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.
       The maximum number of calls that should be allowed for running these tests is forty times the total number of blank nodes
       in the input dataset.</p>
-    <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
+    <h3>Tests for RDFC-1.0 Issued Identifiers Map.</h3>
     <p>The result file is in the JSON format with keys representing
       the blank node identifiers from the test input,
       and values representing the associated canonical identifier
@@ -78,7 +78,7 @@
     <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
       must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
       Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
-    <h2 id="contributing-tests">Contributing Tests</h2>
+    <h2>Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
       where each row defines a combination of Validation tests for the same
@@ -86,17 +86,17 @@
       Tests may be contributed via pull request to
       <a href="https://github.com/w3c/rdf-canon">https://github.com/w3c/rdf-canon</a>
       with suitable changes to the
-      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files.</p>
-    <h2 id="distribution">Distribution</h2>
+      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files. </p>
+    <h2>Distribution</h2>
     <p>Distributed under both the
       <a href="http://www.w3.org/Consortium/Legal/2008/04-testsuite-license">W3C Test Suite License</a>
       and the
       <a href="http://www.w3.org/Consortium/Legal/2008/03-bsd-license">W3C 3-clause BSD License</a>.
       To contribute to a W3C Test Suite, see the
       <a href="http://www.w3.org/2004/10/27-testcases">policies and contribution forms</a>.</p>
-    <h2 id="disclaimer">Disclaimer</h2>
+    <h2>Disclaimer</h2>
     <p>UNDER BOTH MUTUALLY EXCLUSIVE LICENSES, THIS DOCUMENT AND ALL DOCUMENTS,
-      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED "AS IS,"
+      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED &quot;AS IS,&quot;
       AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES,
       EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
       WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
@@ -127,8 +127,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test001-in.nq' property='mf:action'>rdfc10/test001-in.nq</a>
@@ -153,8 +153,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test002-in.nq' property='mf:action'>rdfc10/test002-in.nq</a>
@@ -179,8 +179,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test003-in.nq' property='mf:action'>rdfc10/test003-in.nq</a>
@@ -205,8 +205,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test003-in.nq' property='mf:action'>rdfc10/test003-in.nq</a>
@@ -231,8 +231,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test004-in.nq' property='mf:action'>rdfc10/test004-in.nq</a>
@@ -257,8 +257,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test004-in.nq' property='mf:action'>rdfc10/test004-in.nq</a>
@@ -283,8 +283,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test005-in.nq' property='mf:action'>rdfc10/test005-in.nq</a>
@@ -309,8 +309,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test005-in.nq' property='mf:action'>rdfc10/test005-in.nq</a>
@@ -335,8 +335,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test006-in.nq' property='mf:action'>rdfc10/test006-in.nq</a>
@@ -361,8 +361,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test008-in.nq' property='mf:action'>rdfc10/test008-in.nq</a>
@@ -387,8 +387,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test009-in.nq' property='mf:action'>rdfc10/test009-in.nq</a>
@@ -413,8 +413,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test010-in.nq' property='mf:action'>rdfc10/test010-in.nq</a>
@@ -439,8 +439,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test011-in.nq' property='mf:action'>rdfc10/test011-in.nq</a>
@@ -465,8 +465,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test013-in.nq' property='mf:action'>rdfc10/test013-in.nq</a>
@@ -491,8 +491,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test014-in.nq' property='mf:action'>rdfc10/test014-in.nq</a>
@@ -517,8 +517,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test016-in.nq' property='mf:action'>rdfc10/test016-in.nq</a>
@@ -543,8 +543,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test016-in.nq' property='mf:action'>rdfc10/test016-in.nq</a>
@@ -569,8 +569,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test017-in.nq' property='mf:action'>rdfc10/test017-in.nq</a>
@@ -595,8 +595,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test017-in.nq' property='mf:action'>rdfc10/test017-in.nq</a>
@@ -621,8 +621,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test018-in.nq' property='mf:action'>rdfc10/test018-in.nq</a>
@@ -647,8 +647,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test018-in.nq' property='mf:action'>rdfc10/test018-in.nq</a>
@@ -673,8 +673,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test019-in.nq' property='mf:action'>rdfc10/test019-in.nq</a>
@@ -699,8 +699,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test020-in.nq' property='mf:action'>rdfc10/test020-in.nq</a>
@@ -725,8 +725,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test020-in.nq' property='mf:action'>rdfc10/test020-in.nq</a>
@@ -751,8 +751,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>2</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test021-in.nq' property='mf:action'>rdfc10/test021-in.nq</a>
@@ -777,8 +777,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>2</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test022-in.nq' property='mf:action'>rdfc10/test022-in.nq</a>
@@ -803,8 +803,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test023-in.nq' property='mf:action'>rdfc10/test023-in.nq</a>
@@ -829,8 +829,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test024-in.nq' property='mf:action'>rdfc10/test024-in.nq</a>
@@ -855,8 +855,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test025-in.nq' property='mf:action'>rdfc10/test025-in.nq</a>
@@ -881,8 +881,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test026-in.nq' property='mf:action'>rdfc10/test026-in.nq</a>
@@ -907,8 +907,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test027-in.nq' property='mf:action'>rdfc10/test027-in.nq</a>
@@ -933,8 +933,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test028-in.nq' property='mf:action'>rdfc10/test028-in.nq</a>
@@ -959,8 +959,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test029-in.nq' property='mf:action'>rdfc10/test029-in.nq</a>
@@ -985,8 +985,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test030-in.nq' property='mf:action'>rdfc10/test030-in.nq</a>
@@ -1011,8 +1011,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test030-in.nq' property='mf:action'>rdfc10/test030-in.nq</a>
@@ -1037,8 +1037,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test033-in.nq' property='mf:action'>rdfc10/test033-in.nq</a>
@@ -1063,8 +1063,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test034-in.nq' property='mf:action'>rdfc10/test034-in.nq</a>
@@ -1089,8 +1089,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test035-in.nq' property='mf:action'>rdfc10/test035-in.nq</a>
@@ -1115,8 +1115,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test036-in.nq' property='mf:action'>rdfc10/test036-in.nq</a>
@@ -1141,8 +1141,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test038-in.nq' property='mf:action'>rdfc10/test038-in.nq</a>
@@ -1167,8 +1167,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test039-in.nq' property='mf:action'>rdfc10/test039-in.nq</a>
@@ -1193,8 +1193,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test040-in.nq' property='mf:action'>rdfc10/test040-in.nq</a>
@@ -1219,8 +1219,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test043-in.nq' property='mf:action'>rdfc10/test043-in.nq</a>
@@ -1246,8 +1246,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>39</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test044-in.nq' property='mf:action'>rdfc10/test044-in.nq</a>
@@ -1273,8 +1273,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>39</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test045-in.nq' property='mf:action'>rdfc10/test045-in.nq</a>
@@ -1300,8 +1300,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>39</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test046-in.nq' property='mf:action'>rdfc10/test046-in.nq</a>
@@ -1326,8 +1326,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test047-in.nq' property='mf:action'>rdfc10/test047-in.nq</a>
@@ -1352,8 +1352,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test047-in.nq' property='mf:action'>rdfc10/test047-in.nq</a>
@@ -1378,8 +1378,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test048-in.nq' property='mf:action'>rdfc10/test048-in.nq</a>
@@ -1404,8 +1404,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test048-in.nq' property='mf:action'>rdfc10/test048-in.nq</a>
@@ -1430,8 +1430,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test053-in.nq' property='mf:action'>rdfc10/test053-in.nq</a>
@@ -1456,8 +1456,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test053-in.nq' property='mf:action'>rdfc10/test053-in.nq</a>
@@ -1482,8 +1482,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test054-in.nq' property='mf:action'>rdfc10/test054-in.nq</a>
@@ -1508,8 +1508,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test055-in.nq' property='mf:action'>rdfc10/test055-in.nq</a>
@@ -1534,8 +1534,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test055-in.nq' property='mf:action'>rdfc10/test055-in.nq</a>
@@ -1560,8 +1560,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test056-in.nq' property='mf:action'>rdfc10/test056-in.nq</a>
@@ -1586,8 +1586,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test056-in.nq' property='mf:action'>rdfc10/test056-in.nq</a>
@@ -1612,8 +1612,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test057-in.nq' property='mf:action'>rdfc10/test057-in.nq</a>
@@ -1638,8 +1638,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test057-in.nq' property='mf:action'>rdfc10/test057-in.nq</a>
@@ -1664,8 +1664,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test058-in.nq' property='mf:action'>rdfc10/test058-in.nq</a>
@@ -1690,8 +1690,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>1</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test059-in.nq' property='mf:action'>rdfc10/test059-in.nq</a>
@@ -1716,8 +1716,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test060-in.nq' property='mf:action'>rdfc10/test060-in.nq</a>
@@ -1742,8 +1742,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test060-in.nq' property='mf:action'>rdfc10/test060-in.nq</a>
@@ -1768,8 +1768,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test061-in.nq' property='mf:action'>rdfc10/test061-in.nq</a>
@@ -1794,8 +1794,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test062-in.nq' property='mf:action'>rdfc10/test062-in.nq</a>
@@ -1821,8 +1821,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test063-in.nq' property='mf:action'>rdfc10/test063-in.nq</a>
@@ -1848,8 +1848,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test063-in.nq' property='mf:action'>rdfc10/test063-in.nq</a>
@@ -1874,8 +1874,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test064-in.nq' property='mf:action'>rdfc10/test064-in.nq</a>
@@ -1900,8 +1900,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test065-in.nq' property='mf:action'>rdfc10/test065-in.nq</a>
@@ -1926,8 +1926,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test066-in.nq' property='mf:action'>rdfc10/test066-in.nq</a>
@@ -1952,8 +1952,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test067-in.nq' property='mf:action'>rdfc10/test067-in.nq</a>
@@ -1978,8 +1978,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test068-in.nq' property='mf:action'>rdfc10/test068-in.nq</a>
@@ -2004,8 +2004,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>3</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test069-in.nq' property='mf:action'>rdfc10/test069-in.nq</a>
@@ -2031,8 +2031,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test070-in.nq' property='mf:action'>rdfc10/test070-in.nq</a>
@@ -2058,8 +2058,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test070-in.nq' property='mf:action'>rdfc10/test070-in.nq</a>
@@ -2085,8 +2085,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test071-in.nq' property='mf:action'>rdfc10/test071-in.nq</a>
@@ -2112,8 +2112,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test071-in.nq' property='mf:action'>rdfc10/test071-in.nq</a>
@@ -2139,8 +2139,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test072-in.nq' property='mf:action'>rdfc10/test072-in.nq</a>
@@ -2166,8 +2166,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test072-in.nq' property='mf:action'>rdfc10/test072-in.nq</a>
@@ -2193,8 +2193,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test073-in.nq' property='mf:action'>rdfc10/test073-in.nq</a>
@@ -2220,8 +2220,8 @@
             <dd>rdfc:RDFC10MapTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>0</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test073-in.nq' property='mf:action'>rdfc10/test073-in.nq</a>
@@ -2247,8 +2247,8 @@
             <dd>rdfc:RDFC10NegativeEvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
-            <dt>poisonFactor</dt>
-            <dd>40</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test074-in.nq' property='mf:action'>rdfc10/test074-in.nq</a>

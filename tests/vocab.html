@@ -102,10 +102,10 @@ subClassOf:
 <section>
 <h3 id='properties'>Properties</h3>
 <dl>
-<dt about='rdfc:poisonFactor' property='rdfs:label' typeof='rdf:Property'>rdfc:poisonFactor</dt>
-<dd about='rdfc:poisonFactor'>
+<dt about='rdfc:computationalComplexity' property='rdfs:label' typeof='rdf:Property'>rdfc:computationalComplexity</dt>
+<dd about='rdfc:computationalComplexity'>
 <em property='rdfs:label'>Poison dataset.</em>
-<span property='rdfs:comment'><p>The input is considered a type of poison graph, but may be computable. The value is an integer reflecting the degree of computational complexity.</p>
+<span property='rdfs:comment'><p>The input can be canonicalized with representation of relative computational complexity: &quot;low&quot;, &quot;medium&quot;, or &quot;high&quot;. Inputs with high computational complexity are likely poison datasets.</p>
 </span>
 <div>
 <strong>
@@ -117,7 +117,7 @@ domain:
 <strong>
 range:
 </strong>
-<code property='rdfs:range' resource='xsd:integer'>xsd:integer</code>
+<code property='rdfs:range' resource='xsd:string'>xsd:string</code>
 </div>
 </dd>
 </dl>

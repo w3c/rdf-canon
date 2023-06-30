@@ -20,7 +20,7 @@ class Manifest
   TITLE = "RDF Dataset Canonicalization (RDFC-1.0)"
   DESCRIPTION = "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps."
 
-  Test = Struct.new(:id, :name, :comment, :poison, :approval, :action, :rdfc10, :rdfc10map) do
+  Test = Struct.new(:id, :name, :comment, :complexity, :approval, :action, :rdfc10, :rdfc10map) do
     def anchor(variant)
       %(#{self.id}#{variant == :rdfc10 ? "c" : "m"})
     end
@@ -49,6 +49,14 @@ class Manifest
       when :rdfc10map then "rdfc10/#{self.id}-rdfc10map.json"
       end
     end
+
+    def computational_complexity
+      case self.complexity.to_i
+      when 0 then 'low'
+      when 1..10 then 'medium'
+      else 'high'
+      end
+    end
   end
 
   attr_accessor :tests
@@ -64,7 +72,7 @@ class Manifest
       # Create entry as object indexed by symbolized column name
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
-      Test.new(entry[:test], entry[:name], entry[:comment], entry[:poison], entry[:approval],
+      Test.new(entry[:test], entry[:name], entry[:comment], entry[:complexity], entry[:approval],
                "rdfc10/#{entry[:test]}-in.nq",
                entry[:rdfc10],
                entry[:rdfc10map])
@@ -98,7 +106,7 @@ class Manifest
       "entries": {"@id": "mf:entries", "@type": "@id", "@container": "@list"},
       "label": "rdfs:label",
       "name": "mf:name",
-      "poisonFactor": {"@id": "rdfc:poisonFactor"},
+      "computationalComplexity": "rdfc:computationalComplexity",
       "result": {"@id": "mf:result", "@type": "@id"}
     })
 
@@ -112,7 +120,7 @@ class Manifest
     }
 
     tests.each do |test|
-      %I{rdfc10 rdfc10map}.each do |variant|
+      %i{rdfc10 rdfc10map}.each do |variant|
         next if test.send(variant) == 'FALSE'
         name = test.name +
         if variant == :rdfc10map
@@ -123,19 +131,18 @@ class Manifest
           ''
         end
 
-        man = {
+        entry = {
           "id" => "##{test.anchor(variant)}",
           "type" => test.type(variant),
           "name" => name,
           "comment" => test.comment,
-          "poisonFactor" => test.poison.to_i,
+          "computationalComplexity" => test.computational_complexity,
           "approval" => (test.approval ? "rdft:#{test.approval}" : "rdft:Proposed"),
           "action" => test.action,
           "result" => test.result(variant)
         }
-        man.delete('poisonFactor') unless man['poisonFactor']
-        man.delete('result') unless man['result']
-        manifest["entries"] << man
+        entry.delete('result') unless entry['result']
+        manifest["entries"] << entry
       end
     end
 
@@ -212,7 +219,7 @@ class Manifest
         output << ":#{test.anchor(variant)} a #{test.type(variant)};"
         output << %(  mf:name "#{name}";)
         output << %(  rdfs:comment "#{test.comment}";) if test.comment
-        output << %(  rdfc:poisonFactor #{test.poison};) if test.poison
+        output << %(  rdfc:computationalComplexity "#{test.computational_complexity}";)
         output << %(  rdft:approval #{(test.approval ? "rdft:#{test.approval}" : "rdft:Proposed")};)
         output << %(  mf:action <#{test.action}>;)
         output << %(  mf:result <#{test.result(variant)}>;) if test.result(variant)

@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-06-27"
+        "@value": "2023-01-27"
       },
       "revision": "0.8.0"
     },
@@ -253,10 +253,7 @@
             "TestCase"
           ],
           "title": "simple id",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -264,40 +261,40 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b280",
+              "@id": "_:b392",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b281",
+                "@id": "_:b393",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b1",
+              "@id": "_:b113",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b2",
+                "@id": "_:b114",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b116",
+              "@id": "_:b278",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b117",
+                "@id": "_:b279",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -312,10 +309,7 @@
             "TestCase"
           ],
           "title": "duplicate property iri values",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -371,10 +365,7 @@
             "TestCase"
           ],
           "title": "bnode",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -430,10 +421,7 @@
             "TestCase"
           ],
           "title": "bnode (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -487,10 +475,7 @@
             "TestCase"
           ],
           "title": "bnode plus embed w/subject",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -546,10 +531,7 @@
             "TestCase"
           ],
           "title": "bnode plus embed w/subject (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -603,10 +585,7 @@
             "TestCase"
           ],
           "title": "bnode embed",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -662,10 +641,7 @@
             "TestCase"
           ],
           "title": "bnode embed (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -719,10 +695,7 @@
             "TestCase"
           ],
           "title": "multiple rdf types",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -778,10 +751,7 @@
             "TestCase"
           ],
           "title": "single subject complex",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -837,10 +807,7 @@
             "TestCase"
           ],
           "title": "multiple subjects - complex",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -896,10 +863,7 @@
             "TestCase"
           ],
           "title": "type",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -955,10 +919,7 @@
             "TestCase"
           ],
           "title": "type-coerced type",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1014,10 +975,7 @@
             "TestCase"
           ],
           "title": "type-coerced type, cycle",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1073,10 +1031,7 @@
             "TestCase"
           ],
           "title": "check types",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1132,10 +1087,7 @@
             "TestCase"
           ],
           "title": "blank node - dual link - embed",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1191,10 +1143,7 @@
             "TestCase"
           ],
           "title": "blank node - dual link - embed (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1248,10 +1197,7 @@
             "TestCase"
           ],
           "title": "blank node - dual link - non-embed",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1307,10 +1253,7 @@
             "TestCase"
           ],
           "title": "blank node - dual link - non-embed (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1364,10 +1307,7 @@
             "TestCase"
           ],
           "title": "blank node - self link",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1423,10 +1363,7 @@
             "TestCase"
           ],
           "title": "blank node - self link (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1480,10 +1417,7 @@
             "TestCase"
           ],
           "title": "blank node - disjoint self links",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1539,10 +1473,7 @@
             "TestCase"
           ],
           "title": "blank node - diamond",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1598,10 +1529,7 @@
             "TestCase"
           ],
           "title": "blank node - diamond (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1655,10 +1583,7 @@
             "TestCase"
           ],
           "title": "blank node - circle of 2",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "2"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1714,10 +1639,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 2",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "2"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1773,10 +1695,7 @@
             "TestCase"
           ],
           "title": "blank node - circle of 3",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1832,10 +1751,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-1-2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1891,10 +1807,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-2-1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -1950,10 +1863,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-0-2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2009,10 +1919,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-2-0)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2068,10 +1975,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-1-0)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2127,10 +2031,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-0-1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2186,10 +2087,7 @@
             "TestCase"
           ],
           "title": "blank node - point at circle of 3",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2245,10 +2143,7 @@
             "TestCase"
           ],
           "title": "blank node - point at circle of 3 (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2302,10 +2197,7 @@
             "TestCase"
           ],
           "title": "disjoint identical subgraphs (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2361,10 +2253,7 @@
             "TestCase"
           ],
           "title": "disjoint identical subgraphs (2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2420,10 +2309,7 @@
             "TestCase"
           ],
           "title": "reordered w/strings (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2479,10 +2365,7 @@
             "TestCase"
           ],
           "title": "reordered w/strings (2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2538,10 +2421,7 @@
             "TestCase"
           ],
           "title": "reordered 4 bnodes, reordered 2 properties (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2597,10 +2477,7 @@
             "TestCase"
           ],
           "title": "reordered 4 bnodes, reordered 2 properties (2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2656,10 +2533,7 @@
             "TestCase"
           ],
           "title": "reordered 6 bnodes (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2715,10 +2589,7 @@
             "TestCase"
           ],
           "title": "literal with language",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2775,10 +2646,7 @@
           ],
           "title": "poison – evil (1)",
           "rdfs:comment": "A poison graph which is computable given defined limits.",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "39"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2835,10 +2703,7 @@
           ],
           "title": "poison – evil (2)",
           "rdfs:comment": "A poison graph which is computable given defined limits.",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "39"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2895,10 +2760,7 @@
           ],
           "title": "poison – evil (3)",
           "rdfs:comment": "A poison graph which is computable given defined limits.",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "39"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -2954,10 +2816,7 @@
             "TestCase"
           ],
           "title": "deep diff (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3013,10 +2872,7 @@
             "TestCase"
           ],
           "title": "deep diff (1) (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3070,10 +2926,7 @@
             "TestCase"
           ],
           "title": "deep diff (2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3129,10 +2982,7 @@
             "TestCase"
           ],
           "title": "deep diff (2) (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3186,10 +3036,7 @@
             "TestCase"
           ],
           "title": "@list",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3245,10 +3092,7 @@
             "TestCase"
           ],
           "title": "@list (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3302,10 +3146,7 @@
             "TestCase"
           ],
           "title": "t-graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3361,10 +3202,7 @@
             "TestCase"
           ],
           "title": "simple reorder (1)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3420,10 +3258,7 @@
             "TestCase"
           ],
           "title": "simple reorder (1) (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3477,10 +3312,7 @@
             "TestCase"
           ],
           "title": "simple reorder (2)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3536,10 +3368,7 @@
             "TestCase"
           ],
           "title": "simple reorder (2) (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3593,10 +3422,7 @@
             "TestCase"
           ],
           "title": "unnamed graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3652,10 +3478,7 @@
             "TestCase"
           ],
           "title": "unnamed graph (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3709,10 +3532,7 @@
             "TestCase"
           ],
           "title": "unnamed graph with blank node objects",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3768,10 +3588,7 @@
             "TestCase"
           ],
           "title": "n-quads parsing",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3827,10 +3644,7 @@
             "TestCase"
           ],
           "title": "n-quads escaping",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3886,10 +3700,7 @@
             "TestCase"
           ],
           "title": "n-quads escaping (map test)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -3943,10 +3754,7 @@
             "TestCase"
           ],
           "title": "same literal value with multiple languages",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4002,10 +3810,7 @@
             "TestCase"
           ],
           "title": "same literal value with multiple datatypes",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4062,10 +3867,7 @@
           ],
           "title": "blank node - diamond (with _:b)",
           "rdfs:comment": "This duplicates #test020, but uses _:b as a blank node prefix",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4122,10 +3924,7 @@
           ],
           "title": "blank node - diamond (with _:b) (map test)",
           "rdfs:comment": "This duplicates #test020, but uses _:b as a blank node prefix",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4179,10 +3978,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-1-2, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4238,10 +4034,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (0-2-1, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4297,10 +4090,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-0-2, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4356,10 +4146,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (1-2-0, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4415,10 +4202,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-1-0, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4474,10 +4258,7 @@
             "TestCase"
           ],
           "title": "blank node - double circle of 3 (2-0-1, reversed)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "3"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "medium",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4485,27 +4266,27 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test069-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b392",
+              "@id": "_:b280",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b393",
+                "@id": "_:b281",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b113",
+              "@id": "_:b1",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b114",
+                "@id": "_:b2",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4534,10 +4315,7 @@
           ],
           "title": "dataset - isomorphic default and iri named",
           "rdfs:comment": "Isomorphic graphs in default and IRI named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4592,10 +4370,7 @@
           ],
           "title": "dataset - isomorphic default and iri named (map test)",
           "rdfs:comment": "Isomorphic graphs in default and IRI named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4650,10 +4425,7 @@
           ],
           "title": "dataset - isomorphic default and node named",
           "rdfs:comment": "Isomorphic graphs in default and blank node named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4708,10 +4480,7 @@
           ],
           "title": "dataset - isomorphic default and node named (map test)",
           "rdfs:comment": "Isomorphic graphs in default and blank node named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4766,10 +4535,7 @@
           ],
           "title": "dataset - shared blank nodes",
           "rdfs:comment": "Blank nodes shared in default and named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4824,10 +4590,7 @@
           ],
           "title": "dataset - shared blank nodes (map test)",
           "rdfs:comment": "Blank nodes shared in default and named graph",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4882,10 +4645,7 @@
           ],
           "title": "dataset - referencing graph name",
           "rdfs:comment": "Default graph with blank node shared with graph name",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4940,10 +4700,7 @@
           ],
           "title": "dataset - referencing graph name (map test)",
           "rdfs:comment": "Default graph with blank node shared with graph name",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "0"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -4998,10 +4755,7 @@
           ],
           "title": "poison - Clique Graph (negative test)",
           "rdfs:comment": "A 10-node Clique of blank node resources all inter-related.",
-          "https://w3c.github.io/rdf-canon/tests/vocab#poisonFactor": {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "40"
-          },
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -5032,14 +4786,14 @@
               "assertedBy": null
             },
             {
-              "@id": "_:b278",
+              "@id": "_:b116",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b279",
+                "@id": "_:b117",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
