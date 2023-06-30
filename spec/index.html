@@ -368,9 +368,9 @@
         from a blank node. This recursively includes transitively related
         <a>mentions</a> until any named node or blank node already labeled by
         a particular <a>identifier issuer</a> is reached. Gossip paths are
-        encoded and operated on in the <a>RDFC-1.0</a> algorithm as strings (see
+        encoded and operated on in the <a>RDFC-1.0</a> algorithm as strings. (See
         <a href="#hash-nd-quads" class="sectionRef"></a> for more information
-        on the construction of gossip paths).
+        on the construction of gossip paths.)
       </dd>
       <dt><dfn data-lt="canonical n-quads" class="no-export">canonical n-quads form</dfn></dt>
       <dd>
@@ -1865,7 +1865,7 @@
         this by creating deterministic paths that emanate out from the blank
         node through any other adjacent blank nodes.</p>
 
-      <p>Ultimately, the algorithm selects a shortest <a>gossip path</a>
+      <p>Ultimately, the algorithm selects the shortest <a>gossip path</a>
         (based on its encoding as a string), distributing canonical
         identifiers to the unlabeled blank nodes in the order in which they
         appear in this path.
