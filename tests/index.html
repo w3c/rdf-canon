@@ -28,7 +28,7 @@
       footer {text-align: center;}
     </style>
     <title>
-      RDF Dataset Canonicalization (RDFC-1.0)
+      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
     </title>
     <style>
       em.rfc2119 {
@@ -52,7 +52,7 @@
         <img alt='W3C' height='48' src='http://www.w3.org/Icons/w3c_home' width='72'>
       </a>
     </p>
-    <h1 property='rdfs:label'>RDF Dataset Canonicalization (RDFC-1.0)</h1>
+    <h1 property='rdfs:label'>RDF Dataset Canonicalization (RDFC-1.0) Test Suite</h1>
     <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
@@ -61,9 +61,7 @@
     <p>The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.</p>
     <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
-      <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.
-      The maximum number of calls that should be allowed for running these tests is forty times the total number of blank nodes
-      in the input dataset.</p>
+      <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.</p>
     <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
     <p>The result file is in the JSON format with keys representing
       the blank node identifiers from the test input,
@@ -74,7 +72,7 @@
       <a href="https://www.w3.org/TR/rdf-canon/#canon-algo-algo">RDFC1.0 Canonicalization Algorithm</a>.
       The test passes if the value of the resulting
       <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
-      matches the corresponding test result.</p>
+      matches the corresponding expected test result that can be loaded via the <code>result</code> field of the test.</p>
     <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
       must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
       Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
@@ -110,7 +108,7 @@
       OR THE PERFORMANCE OR IMPLEMENTATION OF THE CONTENTS THEREOF.</p>
     <section>
       <h2>
-        RDF Dataset Canonicalization (RDFC-1.0) (82 entries)
+        RDF Dataset Canonicalization (RDFC-1.0) Test Suite (82 entries)
       </h2>
       <dl class='test-description'>
         <dt id='test001c'>

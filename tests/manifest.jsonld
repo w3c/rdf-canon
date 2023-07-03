@@ -33,7 +33,7 @@
   },
   "id": "manifest",
   "type": "mf:Manifest",
-  "label": "RDF Dataset Canonicalization (RDFC-1.0)",
+  "label": "RDF Dataset Canonicalization (RDFC-1.0) Test Suite",
   "comment": "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.",
   "entries": [
     {

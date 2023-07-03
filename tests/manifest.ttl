@@ -22,7 +22,7 @@
 
 <manifest>  a mf:Manifest ;
 
-  rdfs:label "RDF Dataset Canonicalization (RDFC-1.0)";
+  rdfs:label "RDF Dataset Canonicalization (RDFC-1.0) Test Suite";
   rdfs:comment "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.";
   mf:entries (
     :test001c :test001m :test002c :test002m :test003c :test003m :test004c :test004m

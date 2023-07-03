@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-06-30"
+        "@value": "2023-07-03"
       },
       "revision": "0.8.0"
     },
@@ -242,7 +242,7 @@
         "mf:Manifest",
         "Report"
       ],
-      "rdfs:label": "RDF Dataset Canonicalization (RDFC-1.0)",
+      "rdfs:label": "RDF Dataset Canonicalization (RDFC-1.0) Test Suite",
       "rdfs:comment": "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.",
       "entries": [
         {

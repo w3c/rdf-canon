@@ -1,5 +1,5 @@
 <https://w3c.github.io/rdf-canon/tests/manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#Manifest> .
-<https://w3c.github.io/rdf-canon/tests/manifest> <http://www.w3.org/2000/01/rdf-schema#label> "RDF Dataset Canonicalization (RDFC-1.0)" .
+<https://w3c.github.io/rdf-canon/tests/manifest> <http://www.w3.org/2000/01/rdf-schema#label> "RDF Dataset Canonicalization (RDFC-1.0) Test Suite" .
 <https://w3c.github.io/rdf-canon/tests/manifest> <http://www.w3.org/2000/01/rdf-schema#comment> "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps." .
 <https://w3c.github.io/rdf-canon/tests/manifest> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#entries> _:g8360 .
 _:g8360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3c.github.io/rdf-canon/tests/manifest#test001c> .

@@ -21,7 +21,7 @@
 
 # Manifests
 <https://w3c.github.io/rdf-canon/tests/manifest> a mf:Manifest, earl:Report ;
-  rdfs:label "RDF Dataset Canonicalization (RDFC-1.0)" ;
+  rdfs:label "RDF Dataset Canonicalization (RDFC-1.0) Test Suite" ;
   rdfs:comment "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps." ;
   mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest#test001c>
     <https://w3c.github.io/rdf-canon/tests/manifest#test002c>
@@ -2988,5 +2988,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-06-30"^^xsd:date;
+  doap:created "2023-07-03"^^xsd:date;
   doap:revision "0.8.0" .
