@@ -42,7 +42,7 @@ The vocabulary is published by the <a href="https://www.w3.org/community/credent
 <section>
 <h3 id='classes'>Classes</h3>
 <dl>
-<dt about='rdfc:RDFC10EvalTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10EvalTest</dt>
+<dt about='rdfc:RDFC10EvalTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10EvalTest</dt>
 <dd about='rdfc:RDFC10EvalTest'>
 <em property='rdfs:label'>RDFC-1.0 Evaluation Test</em>
 <span property='rdfs:comment'><p>Canonicalization performed using the RDFC-1.0 algorithm.</p>
@@ -54,7 +54,7 @@ subClassOf:
 <code property='rdfs:subClassOf' resource='rdfc:Test'>rdfc:Test</code>
 </div>
 </dd>
-<dt about='rdfc:RDFC10MapTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10MapTest</dt>
+<dt about='rdfc:RDFC10MapTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10MapTest</dt>
 <dd about='rdfc:RDFC10MapTest'>
 <em property='rdfs:label'>RDFC-1.0 Issued Identifiers Test</em>
 <span property='rdfs:comment'><p>The result is a map of input blank node identifiers to their associated canonical identifiers.</p>
@@ -66,7 +66,7 @@ subClassOf:
 <code property='rdfs:subClassOf' resource='rdfc:Test'>rdfc:Test</code>
 </div>
 </dd>
-<dt about='rdfc:RDFC10NegativeEvalTest' property='rdfs:label' typeof='rdfc:Test'>rdfc:RDFC10NegativeEvalTest</dt>
+<dt about='rdfc:RDFC10NegativeEvalTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10NegativeEvalTest</dt>
 <dd about='rdfc:RDFC10NegativeEvalTest'>
 <em property='rdfs:label'>RDFC-1.0 Negative Evaluation Test</em>
 <span property='rdfs:comment'><p>An attempt to canonicalize a poison dataset should result in an error.</p>
@@ -104,7 +104,7 @@ subClassOf:
 <dl>
 <dt about='rdfc:computationalComplexity' property='rdfs:label' typeof='rdf:Property'>rdfc:computationalComplexity</dt>
 <dd about='rdfc:computationalComplexity'>
-<em property='rdfs:label'>Poison dataset.</em>
+<em property='rdfs:label'>Computational complexity.</em>
 <span property='rdfs:comment'><p>The input can be canonicalized with representation of relative computational complexity: &quot;low&quot;, &quot;medium&quot;, or &quot;high&quot;. Inputs with high computational complexity are likely poison datasets.</p>
 </span>
 <div>
@@ -124,7 +124,7 @@ range:
 </section>
 </section>
 <footer>
-<span property='dc:publisher'>W3C Credentials Community Group</span>
+<span property='dc:publisher'>W3C RDF Dataset Canonicalization and Hash Working Group</span>
 </footer>
 </body>
 </html>

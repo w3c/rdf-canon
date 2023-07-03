@@ -7,8 +7,6 @@ The test passes if the result compares identically as the expected result as tex
 
 For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
 [Hash N-Degree Quads](https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm).
-The maximum number of calls that should be allowed for running these tests is forty times the total number of blank nodes
-in the input dataset.
 
 ### Tests for RDFC-1.0 Issued Identifiers Map.
 
@@ -21,11 +19,11 @@ from [Step 7](https://www.w3.org/TR/rdf-canon/#ca.7) of the
 [RDFC1.0 Canonicalization Algorithm](https://www.w3.org/TR/rdf-canon/#canon-algo-algo).
 The test passes if the value of the resulting
 [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
-matches the corresponding test result.
+matches the corresponding expected test result that can be loaded via the `result` field of the test.
 
 Additionally, the keys of the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
 must exactly match the values of the [input blank node identifier map](https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map).
-Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.
+Note that all blank nodes appearing in the test appear in input blank node identifier map represent blank nodes and the specific value is not considered for test purposes
 
 ## Contributing Tests
 The test manifests and entries are built automatically from

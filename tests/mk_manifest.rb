@@ -17,7 +17,7 @@ class Manifest
     :array_nl     => "\n"
   )
 
-  TITLE = "RDF Dataset Canonicalization (RDFC-1.0)"
+  TITLE = "RDF Dataset Canonicalization (RDFC-1.0) Test Suite"
   DESCRIPTION = "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps."
 
   Test = Struct.new(:id, :name, :comment, :complexity, :approval, :action, :rdfc10, :rdfc10map) do

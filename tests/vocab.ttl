@@ -13,7 +13,7 @@
 
 : dc:title         "RDF Dataset Canonicalization Test Vocabulary";
   dc:creator       "Gregg Kellogg";
-  dc:publisher     "W3C Credentials Community Group";
+  dc:publisher     "W3C RDF Dataset Canonicalization and Hash Working Group";
   dc:description   """
     This is a vocabulary document used to define classes and properties used in
     [RDF Dataset Canonicalization Test Cases](http://w3c.github.io/rdf-canon/tests/) and associated test manifests.
@@ -22,7 +22,7 @@
     This is a vocabulary document used to define classes and properties used in
     [RDF Dataset Canonicalization Test Cases](http://w3c.github.io/rdf-canon/tests/) and associated test manifests.
   """;
-  dc:date          "2015-05-19";
+  dc:date          "2023-07-03";
   dc:identifier    rdfc: .
 
 ## ---- Test Case Classes ---
@@ -37,21 +37,21 @@
     where the result of running the test is serialized to canonical N-Quads, lexicographically-sorted.
   """ .
 
-:RDFC10EvalTest a :Test;
+:RDFC10EvalTest a rdfs:Class;
   rdfs:label "RDFC-1.0 Evaluation Test";
   rdfs:subClassOf :Test;
   rdfs:comment """
     Canonicalization performed using the RDFC-1.0 algorithm.
   """ .
 
-:RDFC10MapTest a :Test;
+:RDFC10MapTest a rdfs:Class;
   rdfs:label "RDFC-1.0 Issued Identifiers Test";
   rdfs:subClassOf :Test;
   rdfs:comment """
     The result is a map of input blank node identifiers to their associated canonical identifiers.
   """ .
 
-:RDFC10NegativeEvalTest a :Test;
+:RDFC10NegativeEvalTest a rdfs:Class;
   rdfs:label "RDFC-1.0 Negative Evaluation Test";
   rdfs:subClassOf :Test;
   rdfs:comment """
@@ -59,7 +59,7 @@
   """ .
 
 :computationalComplexity a rdf:Property;
-  rdfs:label "Poison dataset.";
+  rdfs:label "Computational complexity.";
   rdfs:comment """
     The input can be canonicalized with representation of relative
     computational complexity: "low", "medium", or "high".
