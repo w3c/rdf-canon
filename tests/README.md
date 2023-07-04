@@ -1,6 +1,29 @@
 ## General instructions for running the RDF Dataset Canonicalization Test suites
 
-* Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.
+### Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.
+
+The result file is in the N-Quads format.
+The test passes if the result compares identically as the expected result as text files.
+
+For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
+[Hash N-Degree Quads](https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm).
+
+### Tests for RDFC-1.0 Issued Identifiers Map.
+
+The result file is in the JSON format with keys representing
+the blank node identifiers from the test input,
+and values representing the associated canonical identifier
+from the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+created as an alternate result
+from [Step 7](https://www.w3.org/TR/rdf-canon/#ca.7) of the
+[RDFC1.0 Canonicalization Algorithm](https://www.w3.org/TR/rdf-canon/#canon-algo-algo).
+The test passes if the value of the resulting
+[issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+matches the corresponding expected test result that can be loaded via the `result` field of the test.
+
+Additionally, the keys of the [issued identifiers map](https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map)
+must exactly match the values of the [input blank node identifier map](https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map).
+Note that all blank nodes appearing in the test appear in input blank node identifier map represent blank nodes and the specific value is not considered for test purposes
 
 ## Contributing Tests
 The test manifests and entries are built automatically from

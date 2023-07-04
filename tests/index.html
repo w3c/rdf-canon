@@ -28,7 +28,7 @@
       footer {text-align: center;}
     </style>
     <title>
-      RDF Dataset Canonicalization Test Cases
+      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
     </title>
     <style>
       em.rfc2119 {
@@ -46,18 +46,36 @@
       }
     </style>
   </head>
-  <body resource='' typeof='mf:Manifest'>
+  <body resource='manifest' typeof='mf:Manifest'>
     <p>
       <a href='http://www.w3.org/'>
         <img alt='W3C' height='48' src='http://www.w3.org/Icons/w3c_home' width='72'>
       </a>
     </p>
-    <h1 property='rdfs:label'>RDF Dataset Canonicalization Test Cases</h1>
-    <p property='rdfs:comment'>Includes manifests for different application profiles.</p>
+    <h1 property='rdfs:label'>RDF Dataset Canonicalization (RDFC-1.0) Test Suite</h1>
+    <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
     <h2 id="general-instructions-for-running-the-rdf-dataset-canonicalization-test-suites">General instructions for running the RDF Dataset Canonicalization Test suites</h2>
-    <p>FIXME</p>
+    <h3 id="tests-for-rdfc-10-take-input-files-specified-as-n-quads-and-generate-canonical-n-quads-output-as-required-by-the-rdfc-10-algorithm">Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
+    <p>The result file is in the N-Quads format.
+      The test passes if the result compares identically as the expected result as text files.</p>
+    <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
+      <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.</p>
+    <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
+    <p>The result file is in the JSON format with keys representing
+      the blank node identifiers from the test input,
+      and values representing the associated canonical identifier
+      from the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
+      created as an alternate result
+      from <a href="https://www.w3.org/TR/rdf-canon/#ca.7">Step 7</a> of the
+      <a href="https://www.w3.org/TR/rdf-canon/#canon-algo-algo">RDFC1.0 Canonicalization Algorithm</a>.
+      The test passes if the value of the resulting
+      <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
+      matches the corresponding expected test result that can be loaded via the <code>result</code> field of the test.</p>
+    <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
+      must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
+      Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
     <h2 id="contributing-tests">Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
@@ -88,29 +106,18 @@
       COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL
       OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE DOCUMENT
       OR THE PERFORMANCE OR IMPLEMENTATION OF THE CONTENTS THEREOF.</p>
-    <section class='contents'>
-      <h2>Contents</h2>
-      <ol>
-        <li>
-          <a href='#manifest-rdfc10'>RDF Dataset Canonicalization (RDFC-1.0)</a>
-          – 61 entries
-        </li>
-      </ol>
-    </section>
-    <section id='manifest-rdfc10' inlist property='mf:entry' resource='manifest-rdfc10' typeof='mf:Manifest'>
-      <h2>RDF Dataset Canonicalization (RDFC-1.0) (61 entries)</h2>
-      <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization.</p>
-      <p>
-        Instructions specific to running RDFC-1.0 tests.
-      </p>
+    <section>
+      <h2>
+        RDF Dataset Canonicalization (RDFC-1.0) Test Suite (82 entries)
+      </h2>
       <dl class='test-description'>
-        <dt id='manifest-rdfc10%23test001'>
-          <a class='testlink' href='#manifest-rdfc10%23test001'>
-            manifest-rdfc10#test001:
+        <dt id='test001c'>
+          <a class='testlink' href='#test001c'>
+            test001c:
           </a>
-          <span about='manifest-rdfc10#test001' property='mf:name'>simple id</span>
+          <span about='#test001c' property='mf:name'>simple id</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test001' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test001c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -118,6 +125,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test001-in.nq' property='mf:action'>rdfc10/test001-in.nq</a>
@@ -128,13 +137,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test002'>
-          <a class='testlink' href='#manifest-rdfc10%23test002'>
-            manifest-rdfc10#test002:
+        <dt id='test002c'>
+          <a class='testlink' href='#test002c'>
+            test002c:
           </a>
-          <span about='manifest-rdfc10#test002' property='mf:name'>duplicate property iri values</span>
+          <span about='#test002c' property='mf:name'>duplicate property iri values</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test002' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test002c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -142,6 +151,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test002-in.nq' property='mf:action'>rdfc10/test002-in.nq</a>
@@ -152,13 +163,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test003'>
-          <a class='testlink' href='#manifest-rdfc10%23test003'>
-            manifest-rdfc10#test003:
+        <dt id='test003c'>
+          <a class='testlink' href='#test003c'>
+            test003c:
           </a>
-          <span about='manifest-rdfc10#test003' property='mf:name'>bnode</span>
+          <span about='#test003c' property='mf:name'>bnode</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test003' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test003c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -166,6 +177,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test003-in.nq' property='mf:action'>rdfc10/test003-in.nq</a>
@@ -176,13 +189,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test004'>
-          <a class='testlink' href='#manifest-rdfc10%23test004'>
-            manifest-rdfc10#test004:
+        <dt id='test003m'>
+          <a class='testlink' href='#test003m'>
+            test003m:
           </a>
-          <span about='manifest-rdfc10#test004' property='mf:name'>bnode plus embed w/subject</span>
+          <span about='#test003m' property='mf:name'>bnode (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test004' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test003m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test003-in.nq' property='mf:action'>rdfc10/test003-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test003-rdfc10map.json' property='mf:result'>rdfc10/test003-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test004c'>
+          <a class='testlink' href='#test004c'>
+            test004c:
+          </a>
+          <span about='#test004c' property='mf:name'>bnode plus embed w/subject</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test004c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -190,6 +229,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test004-in.nq' property='mf:action'>rdfc10/test004-in.nq</a>
@@ -200,13 +241,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test005'>
-          <a class='testlink' href='#manifest-rdfc10%23test005'>
-            manifest-rdfc10#test005:
+        <dt id='test004m'>
+          <a class='testlink' href='#test004m'>
+            test004m:
           </a>
-          <span about='manifest-rdfc10#test005' property='mf:name'>bnode embed</span>
+          <span about='#test004m' property='mf:name'>bnode plus embed w/subject (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test005' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test004m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test004-in.nq' property='mf:action'>rdfc10/test004-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test004-rdfc10map.json' property='mf:result'>rdfc10/test004-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test005c'>
+          <a class='testlink' href='#test005c'>
+            test005c:
+          </a>
+          <span about='#test005c' property='mf:name'>bnode embed</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test005c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -214,6 +281,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test005-in.nq' property='mf:action'>rdfc10/test005-in.nq</a>
@@ -224,13 +293,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test006'>
-          <a class='testlink' href='#manifest-rdfc10%23test006'>
-            manifest-rdfc10#test006:
+        <dt id='test005m'>
+          <a class='testlink' href='#test005m'>
+            test005m:
           </a>
-          <span about='manifest-rdfc10#test006' property='mf:name'>multiple rdf types</span>
+          <span about='#test005m' property='mf:name'>bnode embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test006' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test005m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test005-in.nq' property='mf:action'>rdfc10/test005-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test005-rdfc10map.json' property='mf:result'>rdfc10/test005-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test006c'>
+          <a class='testlink' href='#test006c'>
+            test006c:
+          </a>
+          <span about='#test006c' property='mf:name'>multiple rdf types</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test006c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -238,6 +333,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test006-in.nq' property='mf:action'>rdfc10/test006-in.nq</a>
@@ -248,13 +345,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test008'>
-          <a class='testlink' href='#manifest-rdfc10%23test008'>
-            manifest-rdfc10#test008:
+        <dt id='test008c'>
+          <a class='testlink' href='#test008c'>
+            test008c:
           </a>
-          <span about='manifest-rdfc10#test008' property='mf:name'>single subject complex</span>
+          <span about='#test008c' property='mf:name'>single subject complex</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test008' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test008c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -262,6 +359,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test008-in.nq' property='mf:action'>rdfc10/test008-in.nq</a>
@@ -272,13 +371,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test009'>
-          <a class='testlink' href='#manifest-rdfc10%23test009'>
-            manifest-rdfc10#test009:
+        <dt id='test009c'>
+          <a class='testlink' href='#test009c'>
+            test009c:
           </a>
-          <span about='manifest-rdfc10#test009' property='mf:name'>multiple subjects - complex</span>
+          <span about='#test009c' property='mf:name'>multiple subjects - complex</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test009' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test009c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -286,6 +385,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test009-in.nq' property='mf:action'>rdfc10/test009-in.nq</a>
@@ -296,13 +397,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test010'>
-          <a class='testlink' href='#manifest-rdfc10%23test010'>
-            manifest-rdfc10#test010:
+        <dt id='test010c'>
+          <a class='testlink' href='#test010c'>
+            test010c:
           </a>
-          <span about='manifest-rdfc10#test010' property='mf:name'>type</span>
+          <span about='#test010c' property='mf:name'>type</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test010' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test010c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -310,6 +411,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test010-in.nq' property='mf:action'>rdfc10/test010-in.nq</a>
@@ -320,13 +423,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test011'>
-          <a class='testlink' href='#manifest-rdfc10%23test011'>
-            manifest-rdfc10#test011:
+        <dt id='test011c'>
+          <a class='testlink' href='#test011c'>
+            test011c:
           </a>
-          <span about='manifest-rdfc10#test011' property='mf:name'>type-coerced type</span>
+          <span about='#test011c' property='mf:name'>type-coerced type</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test011' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test011c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -334,6 +437,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test011-in.nq' property='mf:action'>rdfc10/test011-in.nq</a>
@@ -344,13 +449,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test013'>
-          <a class='testlink' href='#manifest-rdfc10%23test013'>
-            manifest-rdfc10#test013:
+        <dt id='test013c'>
+          <a class='testlink' href='#test013c'>
+            test013c:
           </a>
-          <span about='manifest-rdfc10#test013' property='mf:name'>type-coerced type, cycle</span>
+          <span about='#test013c' property='mf:name'>type-coerced type, cycle</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test013' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test013c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -358,6 +463,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test013-in.nq' property='mf:action'>rdfc10/test013-in.nq</a>
@@ -368,13 +475,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test014'>
-          <a class='testlink' href='#manifest-rdfc10%23test014'>
-            manifest-rdfc10#test014:
+        <dt id='test014c'>
+          <a class='testlink' href='#test014c'>
+            test014c:
           </a>
-          <span about='manifest-rdfc10#test014' property='mf:name'>check types</span>
+          <span about='#test014c' property='mf:name'>check types</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test014' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test014c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -382,6 +489,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test014-in.nq' property='mf:action'>rdfc10/test014-in.nq</a>
@@ -392,13 +501,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test016'>
-          <a class='testlink' href='#manifest-rdfc10%23test016'>
-            manifest-rdfc10#test016:
+        <dt id='test016c'>
+          <a class='testlink' href='#test016c'>
+            test016c:
           </a>
-          <span about='manifest-rdfc10#test016' property='mf:name'>blank node - dual link - embed</span>
+          <span about='#test016c' property='mf:name'>blank node - dual link - embed</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test016' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test016c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -406,6 +515,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test016-in.nq' property='mf:action'>rdfc10/test016-in.nq</a>
@@ -416,13 +527,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test017'>
-          <a class='testlink' href='#manifest-rdfc10%23test017'>
-            manifest-rdfc10#test017:
+        <dt id='test016m'>
+          <a class='testlink' href='#test016m'>
+            test016m:
           </a>
-          <span about='manifest-rdfc10#test017' property='mf:name'>blank node - dual link - non-embed</span>
+          <span about='#test016m' property='mf:name'>blank node - dual link - embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test017' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test016m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test016-in.nq' property='mf:action'>rdfc10/test016-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test016-rdfc10map.json' property='mf:result'>rdfc10/test016-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test017c'>
+          <a class='testlink' href='#test017c'>
+            test017c:
+          </a>
+          <span about='#test017c' property='mf:name'>blank node - dual link - non-embed</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test017c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -430,6 +567,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test017-in.nq' property='mf:action'>rdfc10/test017-in.nq</a>
@@ -440,13 +579,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test018'>
-          <a class='testlink' href='#manifest-rdfc10%23test018'>
-            manifest-rdfc10#test018:
+        <dt id='test017m'>
+          <a class='testlink' href='#test017m'>
+            test017m:
           </a>
-          <span about='manifest-rdfc10#test018' property='mf:name'>blank node - self link</span>
+          <span about='#test017m' property='mf:name'>blank node - dual link - non-embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test018' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test017m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test017-in.nq' property='mf:action'>rdfc10/test017-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test017-rdfc10map.json' property='mf:result'>rdfc10/test017-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test018c'>
+          <a class='testlink' href='#test018c'>
+            test018c:
+          </a>
+          <span about='#test018c' property='mf:name'>blank node - self link</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test018c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -454,6 +619,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test018-in.nq' property='mf:action'>rdfc10/test018-in.nq</a>
@@ -464,13 +631,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test019'>
-          <a class='testlink' href='#manifest-rdfc10%23test019'>
-            manifest-rdfc10#test019:
+        <dt id='test018m'>
+          <a class='testlink' href='#test018m'>
+            test018m:
           </a>
-          <span about='manifest-rdfc10#test019' property='mf:name'>blank node - disjoint self links</span>
+          <span about='#test018m' property='mf:name'>blank node - self link (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test019' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test018m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test018-in.nq' property='mf:action'>rdfc10/test018-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test018-rdfc10map.json' property='mf:result'>rdfc10/test018-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test019c'>
+          <a class='testlink' href='#test019c'>
+            test019c:
+          </a>
+          <span about='#test019c' property='mf:name'>blank node - disjoint self links</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test019c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -478,6 +671,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test019-in.nq' property='mf:action'>rdfc10/test019-in.nq</a>
@@ -488,13 +683,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test020'>
-          <a class='testlink' href='#manifest-rdfc10%23test020'>
-            manifest-rdfc10#test020:
+        <dt id='test020c'>
+          <a class='testlink' href='#test020c'>
+            test020c:
           </a>
-          <span about='manifest-rdfc10#test020' property='mf:name'>blank node - diamond</span>
+          <span about='#test020c' property='mf:name'>blank node - diamond</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test020' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test020c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -502,6 +697,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test020-in.nq' property='mf:action'>rdfc10/test020-in.nq</a>
@@ -512,13 +709,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test021'>
-          <a class='testlink' href='#manifest-rdfc10%23test021'>
-            manifest-rdfc10#test021:
+        <dt id='test020m'>
+          <a class='testlink' href='#test020m'>
+            test020m:
           </a>
-          <span about='manifest-rdfc10#test021' property='mf:name'>blank node - circle of 2</span>
+          <span about='#test020m' property='mf:name'>blank node - diamond (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test021' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test020m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test020-in.nq' property='mf:action'>rdfc10/test020-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test020-rdfc10map.json' property='mf:result'>rdfc10/test020-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test021c'>
+          <a class='testlink' href='#test021c'>
+            test021c:
+          </a>
+          <span about='#test021c' property='mf:name'>blank node - circle of 2</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test021c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -526,6 +749,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test021-in.nq' property='mf:action'>rdfc10/test021-in.nq</a>
@@ -536,13 +761,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test022'>
-          <a class='testlink' href='#manifest-rdfc10%23test022'>
-            manifest-rdfc10#test022:
+        <dt id='test022c'>
+          <a class='testlink' href='#test022c'>
+            test022c:
           </a>
-          <span about='manifest-rdfc10#test022' property='mf:name'>blank node - double circle of 2</span>
+          <span about='#test022c' property='mf:name'>blank node - double circle of 2</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test022' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test022c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -550,6 +775,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test022-in.nq' property='mf:action'>rdfc10/test022-in.nq</a>
@@ -560,13 +787,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test023'>
-          <a class='testlink' href='#manifest-rdfc10%23test023'>
-            manifest-rdfc10#test023:
+        <dt id='test023c'>
+          <a class='testlink' href='#test023c'>
+            test023c:
           </a>
-          <span about='manifest-rdfc10#test023' property='mf:name'>blank node - circle of 3</span>
+          <span about='#test023c' property='mf:name'>blank node - circle of 3</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test023' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test023c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -574,6 +801,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test023-in.nq' property='mf:action'>rdfc10/test023-in.nq</a>
@@ -584,13 +813,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test024'>
-          <a class='testlink' href='#manifest-rdfc10%23test024'>
-            manifest-rdfc10#test024:
+        <dt id='test024c'>
+          <a class='testlink' href='#test024c'>
+            test024c:
           </a>
-          <span about='manifest-rdfc10#test024' property='mf:name'>blank node - double circle of 3 (0-1-2)</span>
+          <span about='#test024c' property='mf:name'>blank node - double circle of 3 (0-1-2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test024' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test024c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -598,6 +827,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test024-in.nq' property='mf:action'>rdfc10/test024-in.nq</a>
@@ -608,13 +839,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test025'>
-          <a class='testlink' href='#manifest-rdfc10%23test025'>
-            manifest-rdfc10#test025:
+        <dt id='test025c'>
+          <a class='testlink' href='#test025c'>
+            test025c:
           </a>
-          <span about='manifest-rdfc10#test025' property='mf:name'>blank node - double circle of 3 (0-2-1)</span>
+          <span about='#test025c' property='mf:name'>blank node - double circle of 3 (0-2-1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test025' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test025c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -622,6 +853,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test025-in.nq' property='mf:action'>rdfc10/test025-in.nq</a>
@@ -632,13 +865,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test026'>
-          <a class='testlink' href='#manifest-rdfc10%23test026'>
-            manifest-rdfc10#test026:
+        <dt id='test026c'>
+          <a class='testlink' href='#test026c'>
+            test026c:
           </a>
-          <span about='manifest-rdfc10#test026' property='mf:name'>blank node - double circle of 3 (1-0-2)</span>
+          <span about='#test026c' property='mf:name'>blank node - double circle of 3 (1-0-2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test026' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test026c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -646,6 +879,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test026-in.nq' property='mf:action'>rdfc10/test026-in.nq</a>
@@ -656,13 +891,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test027'>
-          <a class='testlink' href='#manifest-rdfc10%23test027'>
-            manifest-rdfc10#test027:
+        <dt id='test027c'>
+          <a class='testlink' href='#test027c'>
+            test027c:
           </a>
-          <span about='manifest-rdfc10#test027' property='mf:name'>blank node - double circle of 3 (1-2-0)</span>
+          <span about='#test027c' property='mf:name'>blank node - double circle of 3 (1-2-0)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test027' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test027c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -670,6 +905,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test027-in.nq' property='mf:action'>rdfc10/test027-in.nq</a>
@@ -680,13 +917,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test028'>
-          <a class='testlink' href='#manifest-rdfc10%23test028'>
-            manifest-rdfc10#test028:
+        <dt id='test028c'>
+          <a class='testlink' href='#test028c'>
+            test028c:
           </a>
-          <span about='manifest-rdfc10#test028' property='mf:name'>blank node - double circle of 3 (2-1-0)</span>
+          <span about='#test028c' property='mf:name'>blank node - double circle of 3 (2-1-0)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test028' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test028c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -694,6 +931,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test028-in.nq' property='mf:action'>rdfc10/test028-in.nq</a>
@@ -704,13 +943,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test029'>
-          <a class='testlink' href='#manifest-rdfc10%23test029'>
-            manifest-rdfc10#test029:
+        <dt id='test029c'>
+          <a class='testlink' href='#test029c'>
+            test029c:
           </a>
-          <span about='manifest-rdfc10#test029' property='mf:name'>blank node - double circle of 3 (2-0-1)</span>
+          <span about='#test029c' property='mf:name'>blank node - double circle of 3 (2-0-1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test029' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test029c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -718,6 +957,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test029-in.nq' property='mf:action'>rdfc10/test029-in.nq</a>
@@ -728,13 +969,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test030'>
-          <a class='testlink' href='#manifest-rdfc10%23test030'>
-            manifest-rdfc10#test030:
+        <dt id='test030c'>
+          <a class='testlink' href='#test030c'>
+            test030c:
           </a>
-          <span about='manifest-rdfc10#test030' property='mf:name'>blank node - point at circle of 3</span>
+          <span about='#test030c' property='mf:name'>blank node - point at circle of 3</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test030' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test030c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -742,6 +983,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test030-in.nq' property='mf:action'>rdfc10/test030-in.nq</a>
@@ -752,13 +995,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test033'>
-          <a class='testlink' href='#manifest-rdfc10%23test033'>
-            manifest-rdfc10#test033:
+        <dt id='test030m'>
+          <a class='testlink' href='#test030m'>
+            test030m:
           </a>
-          <span about='manifest-rdfc10#test033' property='mf:name'>disjoint identical subgraphs (1)</span>
+          <span about='#test030m' property='mf:name'>blank node - point at circle of 3 (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test033' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test030m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test030-in.nq' property='mf:action'>rdfc10/test030-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test030-rdfc10map.json' property='mf:result'>rdfc10/test030-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test033c'>
+          <a class='testlink' href='#test033c'>
+            test033c:
+          </a>
+          <span about='#test033c' property='mf:name'>disjoint identical subgraphs (1)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test033c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -766,6 +1035,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test033-in.nq' property='mf:action'>rdfc10/test033-in.nq</a>
@@ -776,13 +1047,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test034'>
-          <a class='testlink' href='#manifest-rdfc10%23test034'>
-            manifest-rdfc10#test034:
+        <dt id='test034c'>
+          <a class='testlink' href='#test034c'>
+            test034c:
           </a>
-          <span about='manifest-rdfc10#test034' property='mf:name'>disjoint identical subgraphs (2)</span>
+          <span about='#test034c' property='mf:name'>disjoint identical subgraphs (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test034' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test034c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -790,6 +1061,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test034-in.nq' property='mf:action'>rdfc10/test034-in.nq</a>
@@ -800,13 +1073,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test035'>
-          <a class='testlink' href='#manifest-rdfc10%23test035'>
-            manifest-rdfc10#test035:
+        <dt id='test035c'>
+          <a class='testlink' href='#test035c'>
+            test035c:
           </a>
-          <span about='manifest-rdfc10#test035' property='mf:name'>reordered w/strings (1)</span>
+          <span about='#test035c' property='mf:name'>reordered w/strings (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test035' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test035c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -814,6 +1087,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test035-in.nq' property='mf:action'>rdfc10/test035-in.nq</a>
@@ -824,13 +1099,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test036'>
-          <a class='testlink' href='#manifest-rdfc10%23test036'>
-            manifest-rdfc10#test036:
+        <dt id='test036c'>
+          <a class='testlink' href='#test036c'>
+            test036c:
           </a>
-          <span about='manifest-rdfc10#test036' property='mf:name'>reordered w/strings (2)</span>
+          <span about='#test036c' property='mf:name'>reordered w/strings (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test036' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test036c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -838,6 +1113,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test036-in.nq' property='mf:action'>rdfc10/test036-in.nq</a>
@@ -848,13 +1125,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test038'>
-          <a class='testlink' href='#manifest-rdfc10%23test038'>
-            manifest-rdfc10#test038:
+        <dt id='test038c'>
+          <a class='testlink' href='#test038c'>
+            test038c:
           </a>
-          <span about='manifest-rdfc10#test038' property='mf:name'>reordered 4 bnodes, reordered 2 properties (1)</span>
+          <span about='#test038c' property='mf:name'>reordered 4 bnodes, reordered 2 properties (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test038' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test038c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -862,6 +1139,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test038-in.nq' property='mf:action'>rdfc10/test038-in.nq</a>
@@ -872,13 +1151,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test039'>
-          <a class='testlink' href='#manifest-rdfc10%23test039'>
-            manifest-rdfc10#test039:
+        <dt id='test039c'>
+          <a class='testlink' href='#test039c'>
+            test039c:
           </a>
-          <span about='manifest-rdfc10#test039' property='mf:name'>reordered 4 bnodes, reordered 2 properties (2)</span>
+          <span about='#test039c' property='mf:name'>reordered 4 bnodes, reordered 2 properties (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test039' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test039c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -886,6 +1165,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test039-in.nq' property='mf:action'>rdfc10/test039-in.nq</a>
@@ -896,13 +1177,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test040'>
-          <a class='testlink' href='#manifest-rdfc10%23test040'>
-            manifest-rdfc10#test040:
+        <dt id='test040c'>
+          <a class='testlink' href='#test040c'>
+            test040c:
           </a>
-          <span about='manifest-rdfc10#test040' property='mf:name'>reordered 6 bnodes (1)</span>
+          <span about='#test040c' property='mf:name'>reordered 6 bnodes (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test040' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test040c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -910,6 +1191,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test040-in.nq' property='mf:action'>rdfc10/test040-in.nq</a>
@@ -920,13 +1203,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test043'>
-          <a class='testlink' href='#manifest-rdfc10%23test043'>
-            manifest-rdfc10#test043:
+        <dt id='test043c'>
+          <a class='testlink' href='#test043c'>
+            test043c:
           </a>
-          <span about='manifest-rdfc10#test043' property='mf:name'>literal with language</span>
+          <span about='#test043c' property='mf:name'>literal with language</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test043' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test043c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -934,6 +1217,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test043-in.nq' property='mf:action'>rdfc10/test043-in.nq</a>
@@ -944,20 +1229,23 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test044'>
-          <a class='testlink' href='#manifest-rdfc10%23test044'>
-            manifest-rdfc10#test044:
+        <dt id='test044c'>
+          <a class='testlink' href='#test044c'>
+            test044c:
           </a>
-          <span about='manifest-rdfc10#test044' property='mf:name'>evil (1)</span>
+          <span about='#test044c' property='mf:name'>poison – evil (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test044' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test044c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
+            <p>A poison graph which is computable given defined limits.</p>
           </div>
           <dl class='test-detail'>
             <dt>type</dt>
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test044-in.nq' property='mf:action'>rdfc10/test044-in.nq</a>
@@ -968,20 +1256,23 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test045'>
-          <a class='testlink' href='#manifest-rdfc10%23test045'>
-            manifest-rdfc10#test045:
+        <dt id='test045c'>
+          <a class='testlink' href='#test045c'>
+            test045c:
           </a>
-          <span about='manifest-rdfc10#test045' property='mf:name'>evil (2)</span>
+          <span about='#test045c' property='mf:name'>poison – evil (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test045' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test045c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
+            <p>A poison graph which is computable given defined limits.</p>
           </div>
           <dl class='test-detail'>
             <dt>type</dt>
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test045-in.nq' property='mf:action'>rdfc10/test045-in.nq</a>
@@ -992,20 +1283,23 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test046'>
-          <a class='testlink' href='#manifest-rdfc10%23test046'>
-            manifest-rdfc10#test046:
+        <dt id='test046c'>
+          <a class='testlink' href='#test046c'>
+            test046c:
           </a>
-          <span about='manifest-rdfc10#test046' property='mf:name'>evil (3)</span>
+          <span about='#test046c' property='mf:name'>poison – evil (3)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test046' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test046c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
+            <p>A poison graph which is computable given defined limits.</p>
           </div>
           <dl class='test-detail'>
             <dt>type</dt>
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test046-in.nq' property='mf:action'>rdfc10/test046-in.nq</a>
@@ -1016,13 +1310,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test047'>
-          <a class='testlink' href='#manifest-rdfc10%23test047'>
-            manifest-rdfc10#test047:
+        <dt id='test047c'>
+          <a class='testlink' href='#test047c'>
+            test047c:
           </a>
-          <span about='manifest-rdfc10#test047' property='mf:name'>deep diff (1)</span>
+          <span about='#test047c' property='mf:name'>deep diff (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test047' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test047c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1030,6 +1324,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test047-in.nq' property='mf:action'>rdfc10/test047-in.nq</a>
@@ -1040,13 +1336,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test048'>
-          <a class='testlink' href='#manifest-rdfc10%23test048'>
-            manifest-rdfc10#test048:
+        <dt id='test047m'>
+          <a class='testlink' href='#test047m'>
+            test047m:
           </a>
-          <span about='manifest-rdfc10#test048' property='mf:name'>deep diff (2)</span>
+          <span about='#test047m' property='mf:name'>deep diff (1) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test048' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test047m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test047-in.nq' property='mf:action'>rdfc10/test047-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test047-rdfc10map.json' property='mf:result'>rdfc10/test047-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test048c'>
+          <a class='testlink' href='#test048c'>
+            test048c:
+          </a>
+          <span about='#test048c' property='mf:name'>deep diff (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test048c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1054,6 +1376,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test048-in.nq' property='mf:action'>rdfc10/test048-in.nq</a>
@@ -1064,13 +1388,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test053'>
-          <a class='testlink' href='#manifest-rdfc10%23test053'>
-            manifest-rdfc10#test053:
+        <dt id='test048m'>
+          <a class='testlink' href='#test048m'>
+            test048m:
           </a>
-          <span about='manifest-rdfc10#test053' property='mf:name'>@list</span>
+          <span about='#test048m' property='mf:name'>deep diff (2) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test053' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test048m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test048-in.nq' property='mf:action'>rdfc10/test048-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test048-rdfc10map.json' property='mf:result'>rdfc10/test048-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test053c'>
+          <a class='testlink' href='#test053c'>
+            test053c:
+          </a>
+          <span about='#test053c' property='mf:name'>@list</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test053c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1078,6 +1428,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test053-in.nq' property='mf:action'>rdfc10/test053-in.nq</a>
@@ -1088,13 +1440,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test054'>
-          <a class='testlink' href='#manifest-rdfc10%23test054'>
-            manifest-rdfc10#test054:
+        <dt id='test053m'>
+          <a class='testlink' href='#test053m'>
+            test053m:
           </a>
-          <span about='manifest-rdfc10#test054' property='mf:name'>t-graph</span>
+          <span about='#test053m' property='mf:name'>@list (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test054' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test053m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test053-in.nq' property='mf:action'>rdfc10/test053-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test053-rdfc10map.json' property='mf:result'>rdfc10/test053-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test054c'>
+          <a class='testlink' href='#test054c'>
+            test054c:
+          </a>
+          <span about='#test054c' property='mf:name'>t-graph</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test054c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1102,6 +1480,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test054-in.nq' property='mf:action'>rdfc10/test054-in.nq</a>
@@ -1112,13 +1492,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test055'>
-          <a class='testlink' href='#manifest-rdfc10%23test055'>
-            manifest-rdfc10#test055:
+        <dt id='test055c'>
+          <a class='testlink' href='#test055c'>
+            test055c:
           </a>
-          <span about='manifest-rdfc10#test055' property='mf:name'>simple reorder (1)</span>
+          <span about='#test055c' property='mf:name'>simple reorder (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test055' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test055c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1126,6 +1506,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test055-in.nq' property='mf:action'>rdfc10/test055-in.nq</a>
@@ -1136,13 +1518,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test056'>
-          <a class='testlink' href='#manifest-rdfc10%23test056'>
-            manifest-rdfc10#test056:
+        <dt id='test055m'>
+          <a class='testlink' href='#test055m'>
+            test055m:
           </a>
-          <span about='manifest-rdfc10#test056' property='mf:name'>simple reorder (2)</span>
+          <span about='#test055m' property='mf:name'>simple reorder (1) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test056' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test055m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test055-in.nq' property='mf:action'>rdfc10/test055-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test055-rdfc10map.json' property='mf:result'>rdfc10/test055-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test056c'>
+          <a class='testlink' href='#test056c'>
+            test056c:
+          </a>
+          <span about='#test056c' property='mf:name'>simple reorder (2)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test056c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1150,6 +1558,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test056-in.nq' property='mf:action'>rdfc10/test056-in.nq</a>
@@ -1160,13 +1570,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test057'>
-          <a class='testlink' href='#manifest-rdfc10%23test057'>
-            manifest-rdfc10#test057:
+        <dt id='test056m'>
+          <a class='testlink' href='#test056m'>
+            test056m:
           </a>
-          <span about='manifest-rdfc10#test057' property='mf:name'>unnamed graph</span>
+          <span about='#test056m' property='mf:name'>simple reorder (2) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test057' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test056m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test056-in.nq' property='mf:action'>rdfc10/test056-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test056-rdfc10map.json' property='mf:result'>rdfc10/test056-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test057c'>
+          <a class='testlink' href='#test057c'>
+            test057c:
+          </a>
+          <span about='#test057c' property='mf:name'>unnamed graph</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test057c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1174,6 +1610,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test057-in.nq' property='mf:action'>rdfc10/test057-in.nq</a>
@@ -1184,13 +1622,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test058'>
-          <a class='testlink' href='#manifest-rdfc10%23test058'>
-            manifest-rdfc10#test058:
+        <dt id='test057m'>
+          <a class='testlink' href='#test057m'>
+            test057m:
           </a>
-          <span about='manifest-rdfc10#test058' property='mf:name'>unnamed graph with blank node objects</span>
+          <span about='#test057m' property='mf:name'>unnamed graph (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test058' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test057m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test057-in.nq' property='mf:action'>rdfc10/test057-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test057-rdfc10map.json' property='mf:result'>rdfc10/test057-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test058c'>
+          <a class='testlink' href='#test058c'>
+            test058c:
+          </a>
+          <span about='#test058c' property='mf:name'>unnamed graph with blank node objects</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test058c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1198,6 +1662,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test058-in.nq' property='mf:action'>rdfc10/test058-in.nq</a>
@@ -1208,13 +1674,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test059'>
-          <a class='testlink' href='#manifest-rdfc10%23test059'>
-            manifest-rdfc10#test059:
+        <dt id='test059c'>
+          <a class='testlink' href='#test059c'>
+            test059c:
           </a>
-          <span about='manifest-rdfc10#test059' property='mf:name'>n-quads parsing</span>
+          <span about='#test059c' property='mf:name'>n-quads parsing</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test059' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test059c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1222,6 +1688,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test059-in.nq' property='mf:action'>rdfc10/test059-in.nq</a>
@@ -1232,13 +1700,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test060'>
-          <a class='testlink' href='#manifest-rdfc10%23test060'>
-            manifest-rdfc10#test060:
+        <dt id='test060c'>
+          <a class='testlink' href='#test060c'>
+            test060c:
           </a>
-          <span about='manifest-rdfc10#test060' property='mf:name'>n-quads escaping</span>
+          <span about='#test060c' property='mf:name'>n-quads escaping</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test060' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test060c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1246,6 +1714,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test060-in.nq' property='mf:action'>rdfc10/test060-in.nq</a>
@@ -1256,13 +1726,39 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test061'>
-          <a class='testlink' href='#manifest-rdfc10%23test061'>
-            manifest-rdfc10#test061:
+        <dt id='test060m'>
+          <a class='testlink' href='#test060m'>
+            test060m:
           </a>
-          <span about='manifest-rdfc10#test061' property='mf:name'>same literal value with multiple languages</span>
+          <span about='#test060m' property='mf:name'>n-quads escaping (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test061' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test060m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test060-in.nq' property='mf:action'>rdfc10/test060-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test060-rdfc10map.json' property='mf:result'>rdfc10/test060-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test061c'>
+          <a class='testlink' href='#test061c'>
+            test061c:
+          </a>
+          <span about='#test061c' property='mf:name'>same literal value with multiple languages</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test061c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1270,6 +1766,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test061-in.nq' property='mf:action'>rdfc10/test061-in.nq</a>
@@ -1280,13 +1778,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test062'>
-          <a class='testlink' href='#manifest-rdfc10%23test062'>
-            manifest-rdfc10#test062:
+        <dt id='test062c'>
+          <a class='testlink' href='#test062c'>
+            test062c:
           </a>
-          <span about='manifest-rdfc10#test062' property='mf:name'>same literal value with multiple datatypes</span>
+          <span about='#test062c' property='mf:name'>same literal value with multiple datatypes</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test062' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test062c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1294,6 +1792,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test062-in.nq' property='mf:action'>rdfc10/test062-in.nq</a>
@@ -1304,13 +1804,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test063'>
-          <a class='testlink' href='#manifest-rdfc10%23test063'>
-            manifest-rdfc10#test063:
+        <dt id='test063c'>
+          <a class='testlink' href='#test063c'>
+            test063c:
           </a>
-          <span about='manifest-rdfc10#test063' property='mf:name'>blank node - diamond (with _:b)</span>
+          <span about='#test063c' property='mf:name'>blank node - diamond (with _:b)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test063' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test063c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>This duplicates #test020, but uses _:b as a blank node prefix</p>
           </div>
@@ -1319,6 +1819,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test063-in.nq' property='mf:action'>rdfc10/test063-in.nq</a>
@@ -1329,13 +1831,40 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test064'>
-          <a class='testlink' href='#manifest-rdfc10%23test064'>
-            manifest-rdfc10#test064:
+        <dt id='test063m'>
+          <a class='testlink' href='#test063m'>
+            test063m:
           </a>
-          <span about='manifest-rdfc10#test064' property='mf:name'>blank node - double circle of 3 (0-1-2, reversed)</span>
+          <span about='#test063m' property='mf:name'>blank node - diamond (with _:b) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test064' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test063m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>This duplicates #test020, but uses _:b as a blank node prefix</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test063-in.nq' property='mf:action'>rdfc10/test063-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test063-rdfc10map.json' property='mf:result'>rdfc10/test063-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test064c'>
+          <a class='testlink' href='#test064c'>
+            test064c:
+          </a>
+          <span about='#test064c' property='mf:name'>blank node - double circle of 3 (0-1-2, reversed)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test064c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1343,6 +1872,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test064-in.nq' property='mf:action'>rdfc10/test064-in.nq</a>
@@ -1353,13 +1884,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test065'>
-          <a class='testlink' href='#manifest-rdfc10%23test065'>
-            manifest-rdfc10#test065:
+        <dt id='test065c'>
+          <a class='testlink' href='#test065c'>
+            test065c:
           </a>
-          <span about='manifest-rdfc10#test065' property='mf:name'>blank node - double circle of 3 (0-2-1, reversed)</span>
+          <span about='#test065c' property='mf:name'>blank node - double circle of 3 (0-2-1, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test065' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test065c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1367,6 +1898,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test065-in.nq' property='mf:action'>rdfc10/test065-in.nq</a>
@@ -1377,13 +1910,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test066'>
-          <a class='testlink' href='#manifest-rdfc10%23test066'>
-            manifest-rdfc10#test066:
+        <dt id='test066c'>
+          <a class='testlink' href='#test066c'>
+            test066c:
           </a>
-          <span about='manifest-rdfc10#test066' property='mf:name'>blank node - double circle of 3 (1-0-2, reversed)</span>
+          <span about='#test066c' property='mf:name'>blank node - double circle of 3 (1-0-2, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test066' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test066c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1391,6 +1924,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test066-in.nq' property='mf:action'>rdfc10/test066-in.nq</a>
@@ -1401,13 +1936,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test067'>
-          <a class='testlink' href='#manifest-rdfc10%23test067'>
-            manifest-rdfc10#test067:
+        <dt id='test067c'>
+          <a class='testlink' href='#test067c'>
+            test067c:
           </a>
-          <span about='manifest-rdfc10#test067' property='mf:name'>blank node - double circle of 3 (1-2-0, reversed)</span>
+          <span about='#test067c' property='mf:name'>blank node - double circle of 3 (1-2-0, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test067' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test067c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1415,6 +1950,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test067-in.nq' property='mf:action'>rdfc10/test067-in.nq</a>
@@ -1425,13 +1962,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test068'>
-          <a class='testlink' href='#manifest-rdfc10%23test068'>
-            manifest-rdfc10#test068:
+        <dt id='test068c'>
+          <a class='testlink' href='#test068c'>
+            test068c:
           </a>
-          <span about='manifest-rdfc10#test068' property='mf:name'>blank node - double circle of 3 (2-1-0, reversed)</span>
+          <span about='#test068c' property='mf:name'>blank node - double circle of 3 (2-1-0, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test068' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test068c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1439,6 +1976,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test068-in.nq' property='mf:action'>rdfc10/test068-in.nq</a>
@@ -1449,13 +1988,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test069'>
-          <a class='testlink' href='#manifest-rdfc10%23test069'>
-            manifest-rdfc10#test069:
+        <dt id='test069c'>
+          <a class='testlink' href='#test069c'>
+            test069c:
           </a>
-          <span about='manifest-rdfc10#test069' property='mf:name'>blank node - double circle of 3 (2-0-1, reversed)</span>
+          <span about='#test069c' property='mf:name'>blank node - double circle of 3 (2-0-1, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test069' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test069c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1463,6 +2002,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>medium</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test069-in.nq' property='mf:action'>rdfc10/test069-in.nq</a>
@@ -1473,13 +2014,13 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test070'>
-          <a class='testlink' href='#manifest-rdfc10%23test070'>
-            manifest-rdfc10#test070:
+        <dt id='test070c'>
+          <a class='testlink' href='#test070c'>
+            test070c:
           </a>
-          <span about='manifest-rdfc10#test070' property='mf:name'>dataset - isomorphic default and iri named</span>
+          <span about='#test070c' property='mf:name'>dataset - isomorphic default and iri named</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test070' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test070c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and IRI named graph</p>
           </div>
@@ -1488,6 +2029,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test070-in.nq' property='mf:action'>rdfc10/test070-in.nq</a>
@@ -1498,13 +2041,40 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test071'>
-          <a class='testlink' href='#manifest-rdfc10%23test071'>
-            manifest-rdfc10#test071:
+        <dt id='test070m'>
+          <a class='testlink' href='#test070m'>
+            test070m:
           </a>
-          <span about='manifest-rdfc10#test071' property='mf:name'>dataset - isomorphic default and node named</span>
+          <span about='#test070m' property='mf:name'>dataset - isomorphic default and iri named (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test071' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test070m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Isomorphic graphs in default and IRI named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test070-in.nq' property='mf:action'>rdfc10/test070-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test070-rdfc10map.json' property='mf:result'>rdfc10/test070-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test071c'>
+          <a class='testlink' href='#test071c'>
+            test071c:
+          </a>
+          <span about='#test071c' property='mf:name'>dataset - isomorphic default and node named</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test071c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and blank node named graph</p>
           </div>
@@ -1513,6 +2083,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test071-in.nq' property='mf:action'>rdfc10/test071-in.nq</a>
@@ -1523,13 +2095,40 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test072'>
-          <a class='testlink' href='#manifest-rdfc10%23test072'>
-            manifest-rdfc10#test072:
+        <dt id='test071m'>
+          <a class='testlink' href='#test071m'>
+            test071m:
           </a>
-          <span about='manifest-rdfc10#test072' property='mf:name'>dataset - shared blank nodes</span>
+          <span about='#test071m' property='mf:name'>dataset - isomorphic default and node named (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test072' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test071m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Isomorphic graphs in default and blank node named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test071-in.nq' property='mf:action'>rdfc10/test071-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test071-rdfc10map.json' property='mf:result'>rdfc10/test071-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test072c'>
+          <a class='testlink' href='#test072c'>
+            test072c:
+          </a>
+          <span about='#test072c' property='mf:name'>dataset - shared blank nodes</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test072c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Blank nodes shared in default and named graph</p>
           </div>
@@ -1538,6 +2137,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test072-in.nq' property='mf:action'>rdfc10/test072-in.nq</a>
@@ -1548,13 +2149,40 @@
             </dd>
           </dl>
         </dd>
-        <dt id='manifest-rdfc10%23test073'>
-          <a class='testlink' href='#manifest-rdfc10%23test073'>
-            manifest-rdfc10#test073:
+        <dt id='test072m'>
+          <a class='testlink' href='#test072m'>
+            test072m:
           </a>
-          <span about='manifest-rdfc10#test073' property='mf:name'>dataset - referencing graph name</span>
+          <span about='#test072m' property='mf:name'>dataset - shared blank nodes (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='manifest-rdfc10#test073' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist property='mf:entry' resource='#test072m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Blank nodes shared in default and named graph</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test072-in.nq' property='mf:action'>rdfc10/test072-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test072-rdfc10map.json' property='mf:result'>rdfc10/test072-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test073c'>
+          <a class='testlink' href='#test073c'>
+            test073c:
+          </a>
+          <span about='#test073c' property='mf:name'>dataset - referencing graph name</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test073c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Default graph with blank node shared with graph name</p>
           </div>
@@ -1563,6 +2191,8 @@
             <dd>rdfc:RDFC10EvalTest</dd>
             <dt>approval</dt>
             <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test073-in.nq' property='mf:action'>rdfc10/test073-in.nq</a>
@@ -1573,10 +2203,60 @@
             </dd>
           </dl>
         </dd>
+        <dt id='test073m'>
+          <a class='testlink' href='#test073m'>
+            test073m:
+          </a>
+          <span about='#test073m' property='mf:name'>dataset - referencing graph name (map test)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test073m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Default graph with blank node shared with graph name</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test073-in.nq' property='mf:action'>rdfc10/test073-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test073-rdfc10map.json' property='mf:result'>rdfc10/test073-rdfc10map.json</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test074c'>
+          <a class='testlink' href='#test074c'>
+            test074c:
+          </a>
+          <span about='#test074c' property='mf:name'>poison - Clique Graph (negative test)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test074c' typeof='rdfc:RDFC10NegativeEvalTest'>
+          <div property='rdfs:comment'>
+            <p>A 10-node Clique of blank node resources all inter-related.</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10NegativeEvalTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>high</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test074-in.nq' property='mf:action'>rdfc10/test074-in.nq</a>
+            </dd>
+          </dl>
+        </dd>
       </dl>
     </section>
     <footer>
-      <p><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright ©</a> 2015 <a href="http://www.w3.org/">W3C</a>® (<a href="http://www.csail.mit.edu/">MIT</a>, <a href="http://www.ercim.org/">ERCIM</a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C® <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+      <p><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2004-2023 <a href="https://www.w3.org/">World Wide Web Consortium</a>. <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.</p>
     </footer>
   </body>
 </html>

@@ -92,8 +92,8 @@ RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
 EARL results from the RDF Dataset Canonicalization and Hash 1.0 Test Suite
 </h2>
 <h2 id='w3c-document-28-october-2015'>
-<time class='dt-published' datetime='2023-06-21' property='dc:issued'>
-21 June 2023
+<time class='dt-published' datetime='2023-07-04' property='dc:issued'>
+04 July 2023
 </time>
 </h2>
 <dl>
@@ -183,8 +183,8 @@ Test Manifests
 <ul class='toc'>
 <li class='tocline'>
 <span class='secno'>3.1</span>
-<a class='tocxref' href='#RDF-Dataset-Canonicalization-(RDFC-1.0)'>
-RDF Dataset Canonicalization (RDFC-1.0)
+<a class='tocxref' href='#RDF-Dataset-Canonicalization-(RDFC-1.0)-Test-Suite'>
+RDF Dataset Canonicalization (RDFC-1.0) Test Suite
 </a>
 </li>
 </ul>
@@ -289,12 +289,12 @@ top of such libraries.</p>
 <span class='secno'>3.</span>
 Test Manifests
 </h2>
-<section id='RDF-Dataset-Canonicalization-(RDFC-1.0)'>
+<section id='RDF-Dataset-Canonicalization-(RDFC-1.0)-Test-Suite'>
 <h2>
 <span class='secno'>3.1</span>
-<span>RDF Dataset Canonicalization (RDFC-1.0)</span>
+<span>RDF Dataset Canonicalization (RDFC-1.0) Test Suite</span>
 </h2>
-<p>Tests the 1.0 version of RDF Dataset Canonicalization.</p>
+<p>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
 
 <table class='report'>
 <tr>
@@ -325,7 +325,7 @@ Ruby RDF::Normalize
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test001'>Test test001: simple id</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test001c'>Test test001c: simple id</a>
 </td>
 <td class='PASS'>
 PASS
@@ -339,7 +339,7 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test002'>Test test002: duplicate property iri values</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test002c'>Test test002c: duplicate property iri values</a>
 </td>
 <td class='PASS'>
 PASS
@@ -353,7 +353,7 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test003'>Test test003: bnode</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test003c'>Test test003c: bnode</a>
 </td>
 <td class='PASS'>
 PASS
@@ -367,763 +367,7 @@ PASS
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test004'>Test test004: bnode plus embed w/subject</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test005'>Test test005: bnode embed</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test006'>Test test006: multiple rdf types</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test008'>Test test008: single subject complex</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test009'>Test test009: multiple subjects - complex</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test010'>Test test010: type</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test011'>Test test011: type-coerced type</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test013'>Test test013: type-coerced type, cycle</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test014'>Test test014: check types</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test016'>Test test016: blank node - dual link - embed</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test017'>Test test017: blank node - dual link - non-embed</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test018'>Test test018: blank node - self link</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test019'>Test test019: blank node - disjoint self links</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test020'>Test test020: blank node - diamond</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test021'>Test test021: blank node - circle of 2</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test022'>Test test022: blank node - double circle of 2</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test023'>Test test023: blank node - circle of 3</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test024'>Test test024: blank node - double circle of 3 (0-1-2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test025'>Test test025: blank node - double circle of 3 (0-2-1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test026'>Test test026: blank node - double circle of 3 (1-0-2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test027'>Test test027: blank node - double circle of 3 (1-2-0)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test028'>Test test028: blank node - double circle of 3 (2-1-0)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test029'>Test test029: blank node - double circle of 3 (2-0-1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test030'>Test test030: blank node - point at circle of 3</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test033'>Test test033: disjoint identical subgraphs (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test034'>Test test034: disjoint identical subgraphs (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test035'>Test test035: reordered w/strings (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test036'>Test test036: reordered w/strings (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test038'>Test test038: reordered 4 bnodes, reordered 2 properties (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test039'>Test test039: reordered 4 bnodes, reordered 2 properties (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test040'>Test test040: reordered 6 bnodes (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test043'>Test test043: literal with language</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test044'>Test test044: evil (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test045'>Test test045: evil (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test046'>Test test046: evil (3)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test047'>Test test047: deep diff (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test048'>Test test048: deep diff (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test053'>Test test053: @list</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test054'>Test test054: t-graph</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test055'>Test test055: simple reorder (1)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test056'>Test test056: simple reorder (2)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test057'>Test test057: unnamed graph</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test058'>Test test058: unnamed graph with blank node objects</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test059'>Test test059: n-quads parsing</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test060'>Test test060: n-quads escaping</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test061'>Test test061: same literal value with multiple languages</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test062'>Test test062: same literal value with multiple datatypes</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test063'>Test test063: blank node - diamond (with _:b)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test064'>Test test064: blank node - double circle of 3 (0-1-2, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test065'>Test test065: blank node - double circle of 3 (0-2-1, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test066'>Test test066: blank node - double circle of 3 (1-0-2, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test067'>Test test067: blank node - double circle of 3 (1-2-0, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test068'>Test test068: blank node - double circle of 3 (2-1-0, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test069'>Test test069: blank node - double circle of 3 (2-0-1, reversed)</a>
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-<td class='PASS'>
-PASS
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test070'>Test test070: dataset - isomorphic default and iri named</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test003m'>Test test003m: bnode (map test)</a>
 </td>
 <td class='UNTESTED'>
 UNTESTED
@@ -1131,41 +375,27 @@ UNTESTED
 <td class='UNTESTED'>
 UNTESTED
 </td>
-<td class='UNTESTED'>
-UNTESTED
+<td class='PASS'>
+PASS
 </td>
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test071'>Test test071: dataset - isomorphic default and node named</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test004c'>Test test004c: bnode plus embed w/subject</a>
 </td>
-<td class='UNTESTED'>
-UNTESTED
+<td class='PASS'>
+PASS
 </td>
-<td class='UNTESTED'>
-UNTESTED
+<td class='PASS'>
+PASS
 </td>
-<td class='UNTESTED'>
-UNTESTED
-</td>
-</tr>
-<tr class='normative'>
-<td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test072'>Test test072: dataset - shared blank nodes</a>
-</td>
-<td class='UNTESTED'>
-UNTESTED
-</td>
-<td class='UNTESTED'>
-UNTESTED
-</td>
-<td class='UNTESTED'>
-UNTESTED
+<td class='PASS'>
+PASS
 </td>
 </tr>
 <tr class='normative'>
 <td>
-<a href='https://w3c.github.io/rdf-canon/tests#manifest-rdfc10%23test073'>Test test073: dataset - referencing graph name</a>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test004m'>Test test004m: bnode plus embed w/subject (map test)</a>
 </td>
 <td class='UNTESTED'>
 UNTESTED
@@ -1173,22 +403,1086 @@ UNTESTED
 <td class='UNTESTED'>
 UNTESTED
 </td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test005c'>Test test005c: bnode embed</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test005m'>Test test005m: bnode embed (map test)</a>
+</td>
 <td class='UNTESTED'>
 UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test006c'>Test test006c: multiple rdf types</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test008c'>Test test008c: single subject complex</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test009c'>Test test009c: multiple subjects - complex</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test010c'>Test test010c: type</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test011c'>Test test011c: type-coerced type</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test013c'>Test test013c: type-coerced type, cycle</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test014c'>Test test014c: check types</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test016c'>Test test016c: blank node - dual link - embed</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test016m'>Test test016m: blank node - dual link - embed (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test017c'>Test test017c: blank node - dual link - non-embed</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test017m'>Test test017m: blank node - dual link - non-embed (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test018c'>Test test018c: blank node - self link</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test018m'>Test test018m: blank node - self link (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test019c'>Test test019c: blank node - disjoint self links</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test020c'>Test test020c: blank node - diamond</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test020m'>Test test020m: blank node - diamond (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test021c'>Test test021c: blank node - circle of 2</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test022c'>Test test022c: blank node - double circle of 2</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test023c'>Test test023c: blank node - circle of 3</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test024c'>Test test024c: blank node - double circle of 3 (0-1-2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test025c'>Test test025c: blank node - double circle of 3 (0-2-1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test026c'>Test test026c: blank node - double circle of 3 (1-0-2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test027c'>Test test027c: blank node - double circle of 3 (1-2-0)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test028c'>Test test028c: blank node - double circle of 3 (2-1-0)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test029c'>Test test029c: blank node - double circle of 3 (2-0-1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test030c'>Test test030c: blank node - point at circle of 3</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test030m'>Test test030m: blank node - point at circle of 3 (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test033c'>Test test033c: disjoint identical subgraphs (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test034c'>Test test034c: disjoint identical subgraphs (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test035c'>Test test035c: reordered w/strings (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test036c'>Test test036c: reordered w/strings (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test038c'>Test test038c: reordered 4 bnodes, reordered 2 properties (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test039c'>Test test039c: reordered 4 bnodes, reordered 2 properties (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test040c'>Test test040c: reordered 6 bnodes (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test043c'>Test test043c: literal with language</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test044c'>Test test044c: poison – evil (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test045c'>Test test045c: poison – evil (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test046c'>Test test046c: poison – evil (3)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test047c'>Test test047c: deep diff (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test047m'>Test test047m: deep diff (1) (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test048c'>Test test048c: deep diff (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test048m'>Test test048m: deep diff (2) (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test053c'>Test test053c: @list</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test053m'>Test test053m: @list (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test054c'>Test test054c: t-graph</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test055c'>Test test055c: simple reorder (1)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test055m'>Test test055m: simple reorder (1) (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test056c'>Test test056c: simple reorder (2)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test056m'>Test test056m: simple reorder (2) (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test057c'>Test test057c: unnamed graph</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test057m'>Test test057m: unnamed graph (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test058c'>Test test058c: unnamed graph with blank node objects</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test059c'>Test test059c: n-quads parsing</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test060c'>Test test060c: n-quads escaping</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test060m'>Test test060m: n-quads escaping (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test061c'>Test test061c: same literal value with multiple languages</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test062c'>Test test062c: same literal value with multiple datatypes</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test063c'>Test test063c: blank node - diamond (with _:b)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test063m'>Test test063m: blank node - diamond (with _:b) (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test064c'>Test test064c: blank node - double circle of 3 (0-1-2, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test065c'>Test test065c: blank node - double circle of 3 (0-2-1, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test066c'>Test test066c: blank node - double circle of 3 (1-0-2, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test067c'>Test test067c: blank node - double circle of 3 (1-2-0, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test068c'>Test test068c: blank node - double circle of 3 (2-1-0, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test069c'>Test test069c: blank node - double circle of 3 (2-0-1, reversed)</a>
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test070c'>Test test070c: dataset - isomorphic default and iri named</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test070m'>Test test070m: dataset - isomorphic default and iri named (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test071c'>Test test071c: dataset - isomorphic default and node named</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test071m'>Test test071m: dataset - isomorphic default and node named (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test072c'>Test test072c: dataset - shared blank nodes</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test072m'>Test test072m: dataset - shared blank nodes (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test073c'>Test test073c: dataset - referencing graph name</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test073m'>Test test073m: dataset - referencing graph name (map test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
+</td>
+</tr>
+<tr class='normative'>
+<td>
+<a href='https://w3c.github.io/rdf-canon/tests/manifest#test074c'>Test test074c: poison - Clique Graph (negative test)</a>
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='UNTESTED'>
+UNTESTED
+</td>
+<td class='PASS'>
+PASS
 </td>
 </tr>
 <tr class='summary'>
 <td>
-Percentage passed out of 61 Tests
+Percentage passed out of 82 Tests
 </td>
 <td class='passed-some'>
-93.4%
+69.5%
 </td>
 <td class='passed-some'>
-93.4%
+69.5%
 </td>
-<td class='passed-some'>
-93.4%
+<td class='passed-all'>
+100.0%
 </td>
 </tr>
 </table>
@@ -1241,8 +1535,8 @@ Test Suite Compliance
 <td>
 
 </td>
-<td class='passed-most'>
-57/61 (93.4%)
+<td class='passed-some'>
+57/82 (69.5%)
 </td>
 </tr>
 </tbody>
@@ -1291,8 +1585,8 @@ Test Suite Compliance
 <td>
 
 </td>
-<td class='passed-most'>
-57/61 (93.4%)
+<td class='passed-some'>
+57/82 (69.5%)
 </td>
 </tr>
 </tbody>
@@ -1341,8 +1635,8 @@ Test Suite Compliance
 <td>
 
 </td>
-<td class='passed-most'>
-57/61 (93.4%)
+<td class='passed-all'>
+82/82 (100.0%)
 </td>
 </tr>
 </tbody>
