@@ -32,8 +32,8 @@ RDF Dataset Canonicalization Test Vocabulary
 and <a href="http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#">Test Manifest Vocabulary</a> with Normalization-specific tests.
 The URI of the vocabulary is <code>https://w3c.github.io/rdf-canon/tests/vocab#</code>
 (abbreviated by <code>rdfc</code> in this document).
-<a href="vocab.ttl">Turtle</a> and <a href="vocab.jsonld">JSON-LD</a> versions of the vocabular are also available.
-The vocabulary is published by the <a href="https://www.w3.org/community/credentials/">W3C Credentials Community Group</a>.</p>
+<a href="vocab.ttl">Turtle</a> and <a href="vocab.jsonld">JSON-LD</a> versions of the vocabulary are also available.
+The vocabulary is published by the <a href="https://www.w3.org/groups/wg/rch">W3C RDF Dataset Canonicalization Working Group</a>.</p>
 
 </span>
 <section>
@@ -45,7 +45,7 @@ The vocabulary is published by the <a href="https://www.w3.org/community/credent
 <dt about='rdfc:RDFC10EvalTest' property='rdfs:label' typeof='rdfs:Class'>rdfc:RDFC10EvalTest</dt>
 <dd about='rdfc:RDFC10EvalTest'>
 <em property='rdfs:label'>RDFC-1.0 Evaluation Test</em>
-<span property='rdfs:comment'><p>Canonicalization performed using the RDFC-1.0 algorithm.</p>
+<span property='rdfs:comment'><p>Canonicalization performed using the RDFC-1.0 algorithm. Results are compared as text where the result of running the test is serialized to canonical N-Quads, sorted in code point order.</p>
 </span>
 <div>
 <strong>
@@ -81,7 +81,7 @@ subClassOf:
 <dt about='rdfc:Test' property='rdfs:label' typeof='rdfs:Class'>rdfc:Test</dt>
 <dd about='rdfc:Test'>
 <em property='rdfs:label'>Superclass of all RDF Dataset Canonicalization tests</em>
-<span property='rdfs:comment'><p>All RDF Dataset Canonicalization tests have an input file referenced using <code>mf:action</code> and a result file referenced using <code>mf:result</code>. Results are compared as text where the result of running the test is serialized to canonical N-Quads, lexicographically-sorted.</p>
+<span property='rdfs:comment'><p>All RDF Dataset Canonicalization tests have an input file referenced using <code>mf:action</code> and a result file referenced using <code>mf:result</code>.</p>
 </span>
 <div>
 <strong>

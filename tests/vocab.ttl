@@ -33,8 +33,7 @@
   rdfs:subClassOf rdft:Test;
   rdfs:comment """
     All RDF Dataset Canonicalization tests have an input file referenced using `mf:action`
-    and a result file referenced using `mf:result`. Results are compared as text
-    where the result of running the test is serialized to canonical N-Quads, lexicographically-sorted.
+    and a result file referenced using `mf:result`.
   """ .
 
 :RDFC10EvalTest a rdfs:Class;
@@ -42,6 +41,7 @@
   rdfs:subClassOf :Test;
   rdfs:comment """
     Canonicalization performed using the RDFC-1.0 algorithm.
+    Results are compared as text where the result of running the test is serialized to canonical N-Quads, sorted in code point order.
   """ .
 
 :RDFC10MapTest a rdfs:Class;
