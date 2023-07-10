@@ -7,7 +7,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 <> foaf:primaryTopic <https://iherman.github.io/rdfjs-c14n/> ;
-  dc:issued  "2023-06-14T11:46:45.444Z"^^xsd:dateTime ;
+  dc:issued  "2023-07-05T13:06:38.489Z"^^xsd:dateTime ;
   foaf:maker <https://www.ivan-herman.net/foaf#me> .
 
 <https://iherman.github.io/rdfjs-c14n/> a doap:Project ;
@@ -31,8 +31,8 @@
   doap:release [
     a doap:Version ;
     doap:name     "rdfjs-c14n";
-    doap:revision "2.0.0";
-    doap:created  "2013-06-14"^^xsd:date ;
+    doap:revision "2.0.2";
+    doap:created  "2013-07-05"^^xsd:date ;
   ] ;
   doap:repository [
     a doap:GitRepository ;
@@ -53,7 +53,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -66,7 +66,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -79,7 +79,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -92,7 +105,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -105,7 +131,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -118,7 +157,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -131,7 +170,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -144,7 +183,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -157,7 +196,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -170,7 +209,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -183,7 +222,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -196,7 +235,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -209,7 +248,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -222,7 +274,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -235,7 +300,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -248,7 +326,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -261,7 +339,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -274,7 +365,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -287,7 +378,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -300,7 +391,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -313,7 +404,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -326,7 +417,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -339,7 +430,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -352,7 +443,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -365,7 +456,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -378,7 +469,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -391,7 +482,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -404,7 +508,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -417,7 +521,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -430,7 +534,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -443,7 +547,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -456,7 +560,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -469,7 +573,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -482,7 +586,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -495,7 +599,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -508,7 +612,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -521,7 +625,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -534,7 +638,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -547,7 +651,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -560,7 +677,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -573,7 +703,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -586,7 +729,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -599,7 +742,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -612,7 +768,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -625,7 +794,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -638,7 +820,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -651,7 +833,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -664,7 +846,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -677,7 +872,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -690,7 +885,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -703,7 +898,20 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -716,7 +924,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -729,7 +937,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -742,7 +950,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -755,7 +963,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -768,7 +976,7 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .
@@ -781,7 +989,124 @@
     earl:result [
         a earl:TestResult ;
         earl:outcome earl:passed ;
-        dc:date      "2023-06-14T11:46:45.444Z"^^xsd:dateTime
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
+    ];
+    earl:mode earl:automatic
+] .
+
+[ 
+    a earl:Assertion ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
+    earl:subject    <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+    earl:result [
+        a earl:TestResult ;
+        earl:outcome earl:passed ;
+        dc:date      "2023-07-05T13:06:38.489Z"^^xsd:dateTime
     ];
     earl:mode earl:automatic
 ] .

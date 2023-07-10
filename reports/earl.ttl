@@ -231,8 +231,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
@@ -299,8 +300,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
@@ -367,8 +369,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
@@ -680,8 +683,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
@@ -748,8 +752,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
@@ -816,8 +821,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
@@ -919,8 +925,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
@@ -1302,8 +1309,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
@@ -1758,8 +1766,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
@@ -1826,8 +1835,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
@@ -1894,8 +1904,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
@@ -1997,8 +2008,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
@@ -2065,8 +2077,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
@@ -2133,8 +2146,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
@@ -2271,8 +2285,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
@@ -2411,8 +2426,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
@@ -2655,8 +2671,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
@@ -2689,8 +2706,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
@@ -2723,8 +2741,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
@@ -2757,8 +2776,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
@@ -2791,8 +2811,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
@@ -2825,8 +2846,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
@@ -2859,8 +2881,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
@@ -2893,8 +2916,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
@@ -2926,8 +2950,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
@@ -2956,7 +2981,7 @@
   doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
   doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces"@en ;
   doap:programming-language "TypeScript" ;
-  doap:release [doap:revision "2.0.0"] .
+  doap:release [doap:revision "2.0.2"] .
 
 <https://www.ivan-herman.net/foaf#me> a foaf:Person, earl:Assertor ;
   foaf:name "Ivan Herman" ;
@@ -2988,5 +3013,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-07-04"^^xsd:date;
+  doap:created "2023-07-10"^^xsd:date;
   doap:revision "0.8.0" .
