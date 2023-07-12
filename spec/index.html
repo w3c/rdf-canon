@@ -989,6 +989,18 @@
     <section id="canon-algo-algo">
       <h3>Algorithm</h3>
 
+      <p>The following algorithm will run with a minimal number of iterations in each step
+        for well formed <a>input datasets</a>.
+        In some extreme cases, the algorihm can behave poorly, particularly in <a href="#ca.5">Step 5</a>.
+        Implementations MUST prevent against potenial denial-of-service attacks.
+        See <a href="#dataset-poisoning"></a> for futher information.</p>
+
+      <p class="note">Implementations can consider placing limits on the number of
+        calls to <a href="#hash-nd-quads"></a> based on the number
+        of blank nodes in the <a>hash to blank nodes map</a>.
+        For most well-formed datasets, no more than a couple
+        of iterations on <a href="#hash-nd-quads"></a> per blank node would be unusual.</p>
+
       <ol id="ca">
         <li id="ca.1">Create the <a>canonicalization state</a>.
           If the <a>input dataset</a> is an N-Quads document,
