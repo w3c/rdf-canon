@@ -194,7 +194,7 @@ class Manifest
     # Entries for each test and variant
     tests.map do |test|
       %I(rdfc10 rdfc10map).map do |variant|
-        ":#{test.anchor(variant)}" unless test.send(variant).to_s.empty?
+        ":#{test.anchor(variant)}" unless test.send(variant) == 'FALSE'
       end
     end.flatten.compact.each_slice(8) do |entries|
       output << %(    #{entries.join(' ')})
