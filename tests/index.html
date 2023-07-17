@@ -56,13 +56,13 @@
     <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
-    <h2>General instructions for running the RDF Dataset Canonicalization Test suites</h2>
-    <h3>Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
+    <h2 id="general-instructions-for-running-the-rdf-dataset-canonicalization-test-suites">General instructions for running the RDF Dataset Canonicalization Test suites</h2>
+    <h3 id="tests-for-rdfc-10-take-input-files-specified-as-n-quads-and-generate-canonical-n-quads-output-as-required-by-the-rdfc-10-algorithm">Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
     <p>The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.</p>
     <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
       <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.</p>
-    <h3>Tests for RDFC-1.0 Issued Identifiers Map.</h3>
+    <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
     <p>The result file is in the JSON format with keys representing
       the blank node identifiers from the test input,
       and values representing the associated canonical identifier
@@ -76,7 +76,7 @@
     <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
       must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
       Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
-    <h2>Contributing Tests</h2>
+    <h2 id="contributing-tests">Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
       where each row defines a combination of Validation tests for the same
@@ -84,17 +84,17 @@
       Tests may be contributed via pull request to
       <a href="https://github.com/w3c/rdf-canon">https://github.com/w3c/rdf-canon</a>
       with suitable changes to the
-      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files. </p>
-    <h2>Distribution</h2>
+      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files.</p>
+    <h2 id="distribution">Distribution</h2>
     <p>Distributed under both the
       <a href="http://www.w3.org/Consortium/Legal/2008/04-testsuite-license">W3C Test Suite License</a>
       and the
       <a href="http://www.w3.org/Consortium/Legal/2008/03-bsd-license">W3C 3-clause BSD License</a>.
       To contribute to a W3C Test Suite, see the
       <a href="http://www.w3.org/2004/10/27-testcases">policies and contribution forms</a>.</p>
-    <h2>Disclaimer</h2>
+    <h2 id="disclaimer">Disclaimer</h2>
     <p>UNDER BOTH MUTUALLY EXCLUSIVE LICENSES, THIS DOCUMENT AND ALL DOCUMENTS,
-      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED &quot;AS IS,&quot;
+      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED "AS IS,"
       AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES,
       EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
       WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
