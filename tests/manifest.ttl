@@ -25,22 +25,17 @@
   rdfs:label "RDF Dataset Canonicalization (RDFC-1.0) Test Suite";
   rdfs:comment "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.";
   mf:entries (
-    :test001c :test001m :test002c :test002m :test003c :test003m :test004c :test004m
-    :test005c :test005m :test006c :test006m :test008c :test008m :test009c :test009m
-    :test010c :test010m :test011c :test011m :test013c :test013m :test014c :test014m
-    :test016c :test016m :test017c :test017m :test018c :test018m :test019c :test019m
-    :test020c :test020m :test021c :test021m :test022c :test022m :test023c :test023m
-    :test024c :test024m :test025c :test025m :test026c :test026m :test027c :test027m
-    :test028c :test028m :test029c :test029m :test030c :test030m :test033c :test033m
-    :test034c :test034m :test035c :test035m :test036c :test036m :test038c :test038m
-    :test039c :test039m :test040c :test040m :test043c :test043m :test044c :test044m
-    :test045c :test045m :test046c :test046m :test047c :test047m :test048c :test048m
-    :test053c :test053m :test054c :test054m :test055c :test055m :test056c :test056m
-    :test057c :test057m :test058c :test058m :test059c :test059m :test060c :test060m
-    :test061c :test061m :test062c :test062m :test063c :test063m :test064c :test064m
-    :test065c :test065m :test066c :test066m :test067c :test067m :test068c :test068m
-    :test069c :test069m :test070c :test070m :test071c :test071m :test072c :test072m
-    :test073c :test073m :test074c :test074m
+    :test001c :test002c :test003c :test003m :test004c :test004m :test005c :test005m
+    :test006c :test008c :test009c :test010c :test011c :test013c :test014c :test016c
+    :test016m :test017c :test017m :test018c :test018m :test019c :test020c :test020m
+    :test021c :test022c :test023c :test024c :test025c :test026c :test027c :test028c
+    :test029c :test030c :test030m :test033c :test034c :test035c :test036c :test038c
+    :test039c :test040c :test043c :test044c :test045c :test046c :test047c :test047m
+    :test048c :test048m :test053c :test053m :test054c :test055c :test055m :test056c
+    :test056m :test057c :test057m :test058c :test059c :test060c :test060m :test061c
+    :test062c :test063c :test063m :test064c :test065c :test066c :test067c :test068c
+    :test069c :test070c :test070m :test071c :test071m :test072c :test072m :test073c
+    :test073m :test074c
   ) .
 
 :test001c a rdfc:RDFC10EvalTest;
