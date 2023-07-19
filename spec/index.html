@@ -1797,6 +1797,11 @@
             <p>If no identifier, canonical or temporary, has already been issued,
               a new identifier is created using the
               <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>.</p>
+            <p>Note that <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a>
+              has already been called on all blank node in step <a href="#ca.3">3</a>
+              of the <a href="#canon-algorithm">Canonicalization algorithm</a>.
+              It might be more efficient to reuse that result than to execute
+              <a href="#hash-1d-quads">Hash First Degree Quads algorithm</a> again.</p>
           </details>
         </li>
         <li id="hrbn.5">Return the <a>hash</a> that results from passing <var>input</var>
