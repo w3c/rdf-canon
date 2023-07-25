@@ -12,6 +12,11 @@ Editorial changes that improve the readability of the spec or correct spelling o
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
+## Test Suite and Reports
+
+* [Test Suite](https://w3c.github.io/rdf-canon/tests/)
+* [Test Reports](https://w3c.github.io/rdf-canon/reports/)
+
 ## Code of Conduct
 
 W3C functions under a [code of conduct](https://www.w3.org/Consortium/cepc/).
