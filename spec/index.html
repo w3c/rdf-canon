@@ -505,7 +505,7 @@
       <a>RDFC-1.0</a> uses the SHA-256 hash algorithm.</p>
 
     <p class="note">The "degree" terminology is used within this specification
-      as coloquial way of describing
+      as colloquial way of describing
       the <a href="https://en.wikipedia.org/wiki/Distance_(graph_theory)#Related_concepts">eccentricity</a> or
       <a href="https://en.wikipedia.org/wiki/Distance_(graph_theory)#Related_concepts">radius</a>
       of any two nodes within a dataset.
@@ -965,7 +965,7 @@
           the <a>canonicalized dataset</a>
           with the <a>canonical issuer</a>,
           containing an <a>issued identifiers map</a>
-          mapping blank node identifers from the input dataset
+          mapping blank node identifiers from the input dataset
           to their canonical identifiers:</p>
 
         <pre id="ex-ca-canonicalized-shared-dataset" data-transform="updateExample">
@@ -985,9 +985,9 @@
 
       <p>The following algorithm will run with a minimal number of iterations in each step
         for typical <a>input datasets</a>.
-        In some extreme cases, the algorihm can behave poorly, particularly in <a href="#ca.5">Step 5</a>.
-        Implementations MUST prevent against potenial denial-of-service attacks.
-        See <a href="#dataset-poisoning"></a> for futher information.</p>
+        In some extreme cases, the algorithm can behave poorly, particularly in <a href="#ca.5">Step 5</a>.
+        Implementations MUST prevent against potential denial-of-service attacks.
+        See <a href="#dataset-poisoning"></a> for further information.</p>
 
       <p class="note">Implementations can consider placing limits on the number of
         calls to <a href="#hash-nd-quads"></a> based on the number
@@ -1043,7 +1043,7 @@
                   is based on the
                   <a data-cite="RDF11-CONCEPTS#dfn-lexical-form">lexical form</a>,
                   rather than the <a data-cite="RDF11-CONCEPTS#dfn-literal-value">literal value</a>,
-                  so two literals `"01"^^xs:integer` and `"1"^^xs:integer` are treated as distinct resources.
+                  so two literals `"01"^^xsd:integer` and `"1"^^xsd:integer` are treated as distinct resources.
                 </p>
               </details>
             </li>
@@ -2089,7 +2089,7 @@
               <td>`e0&nbsp;:p&nbsp;e2&nbsp;.`</td>
               <td>`o`</td>
               <td>
-                <!-- canonical identifer _:e2 is _:c14n0 -->
+                <!-- canonical identifier _:e2 is _:c14n0 -->
                 <!-- hash "o<http://example.com/#p>_:c14n0"-->
                 <code><abbr title="29cf7e22790bc2ed395b81b3933e5329fc7b25390486085cac31ce7252ca60fa">29cf7e2279...7252ca60fa</abbr></code></td>
             </tr>
@@ -2200,7 +2200,7 @@
               <td>`e1&nbsp;:p&nbsp;e3&nbsp;.`</td>
               <td>`o`</td>
               <td>
-                <!-- canonical identifer _:e3 is _:c14n1 -->
+                <!-- canonical identifier _:e3 is _:c14n1 -->
                 <!-- hash "o<http://example.com/#p>_:c14n1"-->
                 <code><abbr title="b7956ea1d654d5824496eb439a1f2b79478bd7d02d4a115f4c97cbff6b098216">b7956ea1d6...ff6b098216</abbr></code></td>
             </tr>
@@ -3283,7 +3283,7 @@ disclose.
             the following code block
           </a>.</p>
       </object>
-      <figcaption>An illustration of a dataset containg a graph named with a blank node.<br/>
+      <figcaption>An illustration of a dataset containing a graph named with a blank node.<br/>
         Image available in
         <a href="dataset-bn-graph.svg" title="SVG image of dataset containg a graph named with a blank node">
           <abbr title="Scalable Vector Graphics">SVG</abbr>
