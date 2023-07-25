@@ -13,14 +13,10 @@ const process = require('process');
 const APIKEY = process.env.APIKEY || process.argv[2];
 const GROUP = process.env.GROUP || process.argv[3] || "wg/rch";
 
-if (!APIKEY) {
-  console.error('Error: APIKEY must be specified as either an environment variable or a command-line argument.');
-  process.exit(1);
-}
 
 const groupOptions = {
   hostname: 'api.w3.org',
-  path: `/groups/${GROUP}?items=50&apikey=${APIKEY}`,
+  path: `/groups/${GROUP}?items=50`,
   headers: {
     'Accept': 'application/json'
   }
@@ -28,11 +24,16 @@ const groupOptions = {
 
 const userOptions = {
   hostname: 'api.w3.org',
-  path: `/groups/${GROUP}/users?items=50&apikey=${APIKEY}`,
+  path: `/groups/${GROUP}/users?items=50`,
   headers: {
     'Accept': 'application/json'
   }
 };
+
+if (APIKEY) {
+  groupOptions.path += `&apikey=${APIKEY}`
+  userOptions.path += `&apikey=${APIKEY}`
+}
 
 https.get(groupOptions, (res) => {
   let groupData = '';
