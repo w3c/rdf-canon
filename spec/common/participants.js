@@ -24,7 +24,7 @@ const groupOptions = {
 
 const userOptions = {
   hostname: 'api.w3.org',
-  path: `/groups/${GROUP}/users?items=50`,
+  path: `/groups/${GROUP}/users?former=true&items=50`,
   headers: {
     'Accept': 'application/json'
   }
