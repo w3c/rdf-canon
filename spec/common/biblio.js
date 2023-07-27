@@ -10,7 +10,7 @@ const rch = {
         "Dave Longley",
         "Manu Sporny"
       ],
-      date: "2022-10-09",
+      date: "October 9, 2022",
       href: "https://www.w3.org/community/reports/credentials/CG-FINAL-rdf-dataset-canonicalization-20221009/",
       status: "CG-FINAL",
       publisher: "W3C"
@@ -19,7 +19,7 @@ const rch = {
       id: "DesignIssues-Diff",
       title: "Delta: an ontology for the distribution of differences between RDF graphs",
       authors: ["Tim Berners-Leee"],
-      date: "2015-09-25",
+      date: "Septmber 25, 2015",
       href: "https://www.w3.org/DesignIssues/Diff",
       status: "unofficial",
       publisher: "W3C"
@@ -37,16 +37,16 @@ const rch = {
       id: "Hogan-Canonical-RDF",
       title: "Canonical Forms for Isomorphic and Equivalent RDF Graphs: Algorithms for Leaning and Labelling Blank Nodes",
       authors: ["Aiden Hogan"],
-      date: "2017-07-17",
+      date: "November 2017",
       href: "https://aidanhogan.com/docs/rdf-canonicalisation.pdf",
-      status: "unofficial",
-      publisher: "ACM Transactions on the Web"
+      status: "ACM Trans. Web 11, 4, Article 22",
+      publisher: "ACM"
     },
     "HPL-2003-142": {
       id: "HPL-2003-142",
       title: "Signing RDF Graphs",
       authors: ["Jeremy J. Carroll"],
-      date: "2003-07-23",
+      date: "July 23, 2003",
       href: "https://www.hpl.hp.com/techreports/2003/HPL-2003-142.pdf",
       publisher: "HP Laboratories Bristol",
       status: "unofficial"
