@@ -19,7 +19,7 @@ const rch = {
       id: "DesignIssues-Diff",
       title: "Delta: an ontology for the distribution of differences between RDF graphs",
       authors: ["Tim Berners-Leee"],
-      date: "Septmber 25, 2015",
+      date: "September 25, 2015",
       href: "https://www.w3.org/DesignIssues/Diff",
       status: "unofficial",
       publisher: "W3C"
