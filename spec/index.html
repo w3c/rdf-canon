@@ -1063,14 +1063,6 @@
               <a>input dataset</a> with both their original identifiers,
               and associated canonical identifiers.</p>
           </details>
-          <div class="issue" data-number="155">
-            [[RDF11-CONCEPTS]] allows implementations to convert
-            <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a> to lower case
-            leading to different canonical forms of <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a>.
-            A possible solution is to require that all triples including a
-            <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged string</a>
-            be represented using only a lower case <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tag</a>.
-            Alternatively, the algorithm could simply detect such language tags and warn about the potential
             interoperability issue.
           </div>
         </li>
@@ -3531,19 +3523,9 @@ disclose.
       and <code>graphLabel</code>,
       each of which MUST be a single space (<code>U+0020</code>).</li>
     <li><a data-cite="RDF11-CONCEPTS#dfn-literal">Literals</a> with the
-      datatypes <code>http://www.w3.org/2001/XMLSchema#string</code> and
-      <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</code>
+      datatype <code>http://www.w3.org/2001/XMLSchema#string</code>
       MUST NOT use the datatype IRI part of the <a data-cite="N-QUADS#grammar-production-literal">literal</a>,
-      and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>
-        and <a href="N-QUADS#grammar-production-LANGTAG">LANGTAG</a>,
-        as appropriate.
-        <div class="issue" data-number="155">
-          [[RDF11-CONCEPTS]] allows implementations to convert
-          <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a>.
-          This represents a potential interoperability issue if language tags
-          are not converted to lower case uniformly, as different implementations
-          might end up using different canonical representations of such language tags.
-        </div>
+      and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>.
     </li>
     <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only uppercase letters (<code>[A-F]</code>).</li>
     <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>,
