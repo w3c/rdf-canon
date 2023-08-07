@@ -194,7 +194,7 @@
   <div class="note">
     <p>[[[RDF11-CONCEPTS]]] [[RDF11-CONCEPTS]] lacks clarity on the representation of
       <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a>,
-      where <a data-cite="RDF12-CONCEPTS#dfn-language-tag">language tags</a> of the form `xx-YY`
+      where <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a> of the form `xx-YY`
       are treated as being case insensitive. Implementations might represent language tags
       using all lower case in the form `xx-yy`,
       retain the original representation `xx-YY`,
@@ -202,10 +202,10 @@
       leading to different canonical forms, and therefore, different hashed values.</p>
     <ul>
       <li>The Canonicalization algorithm is based on the RDF 1.1 definition,
-        in the sense that the <a data-cite="RDF12-CONCEPTS#dfn-language-tag">language tag</a> `xx-YY`
+        in the sense that the <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tag</a> `xx-YY`
         is case insensitive, which might lead to different canonicalizations if the user is not aware of this problem.</li>
       <li>User communities ought to agree to use lower case
-        <a data-cite="RDF12-CONCEPTS#dfn-language-tag">language tags</a>,
+        <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a>,
         while being aware that some implementations might normalize language tags,
         affecting hash values.</li>
       <li>Future evolution of RDF might regulate this issue, which RDF environments might have to adapt to,
@@ -1064,8 +1064,8 @@
               and associated canonical identifiers.</p>
           </details>
           <div class="issue" data-number="155">
-            [[RDF12-CONCEPTS]] allows implementations to convert
-            <a data-cite="RDF12-CONCEPTS#dfn-language-tag">language tags</a> to lower case
+            [[RDF11-CONCEPTS]] allows implementations to convert
+            <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a> to lower case
             leading to different canonical forms of <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a>.
             A possible solution is to require that all triples including a
             <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged string</a>
@@ -3539,7 +3539,7 @@ disclose.
         as appropriate.
         <div class="issue" data-number="155">
           [[RDF11-CONCEPTS]] allows implementations to convert
-          <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a>
+          <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a>.
           This represents a potential interoperability issue if language tags
           are not converted to lower case uniformly, as different implementations
           might end up using different canonical representations of such language tags.
