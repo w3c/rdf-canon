@@ -191,6 +191,28 @@
     <strong>RDF Canonicalization algorithm version 1.0</strong> or
     <a>RDFC-1.0</a>.</p>
 
+  <div class="note">
+    <p>[[[RDF11-CONCEPTS]]] [[RDF11-CONCEPTS]] lacks clarity on the representation of
+      <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a>,
+      where <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a> of the form `xx-YY`
+      are treated as being case insensitive. Implementations might represent language tags
+      using all lower case in the form `xx-yy`,
+      retain the original representation `xx-YY`,
+      or use [[BCP47]] <a data-cite="BCP47#section-2.1.1">formatting conventions</a>,
+      leading to different canonical forms, and therefore, different hashed values.</p>
+    <ul>
+      <li>The Canonicalization algorithm is based on the RDF 1.1 definition,
+        in the sense that the <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tag</a> `xx-YY`
+        is case insensitive, which might lead to different canonicalizations if the user is not aware of this problem.</li>
+      <li>User communities ought to agree to use lower case
+        <a data-cite="RDF11-CONCEPTS#dfn-language-tag">language tags</a>,
+        while being aware that some implementations might normalize language tags,
+        affecting hash values.</li>
+      <li>Future evolution of RDF might regulate this issue, which RDF environments might have to adapt to,
+        and this might lead to an update of <a>RDFC-1.0</a>.</li>
+    </ul>
+    
+  </div>
   <p class="note">See <a href="#urdna2015" class="sectionRef"></a>
     for a comparison with the version of the algorithm published
     in [[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]].</p>
@@ -3536,7 +3558,7 @@ disclose.
     The minor change is in the <a>canonical n-quads form</a> where
     some control characters were previously represented without escaping.
     The version of the algorithm defined in <a href="#canonical-quads" class="sectionRef"></a>
-    clarifies the representation of <a data-cite="RDF11-CONCEPTS#dfn-language-tagged-string">language-tagged strings</a> and the characters
+    clarifies the representation of <a data-cite="RDF11-CONCEPTS#dfn-simple-literal">simple literals</a> and the characters
     within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>
     that are encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.</p>
 </section>
