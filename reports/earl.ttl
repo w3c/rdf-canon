@@ -3715,3 +3715,54 @@
 <http://champin.net/#pa> a foaf:Person ;
   foaf:name "Pierre-Antoine Champin" .
 
+<https://github.com/zkp-ld/rdf-canon> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name "zkp-ld/rdf-canon" ;
+  doap:developer <https://github.com/yamdan> ;
+  doap:homepage <https://github.com/zkp-ld/rdf-canon> ;
+  doap:description "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf."@en ;
+  doap:programming-language "Rust" ;
+  doap:release [doap:revision "0.13.0"] .
+
+<https://github.com/yamdan> a foaf:Person, earl:Assertor ;
+  foaf:name "Dan Yamamoto" .
+
+<https://iherman.github.io/rdfjs-c14n/> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name "rdfjs-c14n" ;
+  doap:developer <https://www.ivan-herman.net/foaf#me> ;
+  doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
+  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces"@en ;
+  doap:programming-language "TypeScript" ;
+  doap:release [doap:revision "2.0.2"] .
+
+<https://www.ivan-herman.net/foaf#me> a foaf:Person, earl:Assertor ;
+  foaf:name "Ivan Herman" ;
+  foaf:homepage <https://www.ivan-herman.net/> .
+
+<https://rubygems.org/gems/rdf-normalize> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name "Ruby RDF::Normalize" ;
+  doap:developer <https://greggkellogg.net/foaf#me> ;
+  doap:homepage <https://github.com/ruby-rdf/rdf-normalize> ;
+  doap:description "RDF::Normalize performs Dataset Canonicalization for RDF.rb."@en ;
+  doap:programming-language "Ruby" ;
+  doap:release [doap:revision "0.6.0"] .
+
+<https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor ;
+  foaf:name "Gregg Kellogg" ;
+  foaf:homepage <https://greggkellogg.net/> .
+
+
+# Report Generation Software
+<https://rubygems.org/gems/earl-report> a earl:Software, doap:Project;
+   doap:name "earl-report";
+   doap:shortdesc "Earl Report summary generator"@en;
+   doap:description "EarlReport generates HTML+RDFa rollups of multiple EARL reports"@en;
+   doap:homepage <https://github.com/gkellogg/earl-report>;
+   doap:programming-language "Ruby";
+   doap:license <http://unlicense.org>;
+   doap:release <https://github.com/gkellogg/earl-report/tree/0.8.0>;
+   doap:developer <https://greggkellogg.net/foaf#me> .
+
+<https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
+  doap:name "earl-report-0.8.0";
+  doap:created "2023-08-15"^^xsd:date;
+  doap:revision "0.8.0" .

@@ -199,13 +199,13 @@
           "foaf:name": "Dan Yamamoto"
         }
       ],
+      "homepage": "https://github.com/zkp-ld/rdf-canon",
       "doapDesc": "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf.",
       "language": "Rust",
       "release": {
         "@id": "_:b444",
         "revision": "0.13.0"
-      },
-      "homepage": null
+      }
     },
     {
       "@id": "https://iherman.github.io/rdfjs-c14n/",
