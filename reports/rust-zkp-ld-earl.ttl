@@ -19,6 +19,7 @@
   doap:developer            <https://github.com/yamdan> ;
   doap:description          "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf."@en ;
   doap:programming-language "Rust" ;
+  doap:homepage             <https://github.com/zkp-ld/rdf-canon> ;
   doap:implements           <https://www.w3.org/TR/rdf-canon/> .
 
 <https://github.com/yamdan> a foaf:Person, earl:Assertor ;
