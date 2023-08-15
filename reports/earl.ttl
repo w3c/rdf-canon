@@ -13,8 +13,10 @@
   earl:generatedBy <https://rubygems.org/gems/earl-report> ;
   mf:report earl:rdfjs-c14n-report.ttl,
     earl:ruby-earl.ttl,
-    earl:rust-sophia-urdna2015.ttl ;
+    earl:rust-sophia-urdna2015.ttl,
+    earl:rust-zkp-ld-earl.ttl ;
   earl:testSubjects <https://github.com/pchampin/sophia_rs>,
+    <https://github.com/zkp-ld/rdf-canon>,
     <https://iherman.github.io/rdfjs-c14n/>,
     <https://rubygems.org/gems/rdf-normalize> ;
   mf:entries (<https://w3c.github.io/rdf-canon/tests/manifest>) .
@@ -124,6 +126,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -156,6 +167,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
@@ -194,6 +214,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -225,6 +254,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
@@ -263,6 +301,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -294,6 +341,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
@@ -332,6 +388,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -363,6 +428,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
@@ -401,6 +475,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -433,6 +516,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
@@ -471,6 +563,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -503,6 +604,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
@@ -541,6 +651,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -573,6 +692,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
@@ -611,6 +739,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -646,6 +783,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -677,6 +823,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
@@ -715,6 +870,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -746,6 +910,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
@@ -784,6 +957,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -815,6 +997,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
@@ -853,6 +1044,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -888,6 +1088,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -919,6 +1128,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
@@ -957,6 +1175,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -989,6 +1216,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
@@ -1027,6 +1263,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1059,6 +1304,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
@@ -1097,6 +1351,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1129,6 +1392,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
@@ -1167,6 +1439,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1199,6 +1480,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
@@ -1237,6 +1527,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1272,6 +1571,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1303,6 +1611,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
@@ -1341,6 +1658,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1373,6 +1699,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
@@ -1411,6 +1746,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1443,6 +1787,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
@@ -1481,6 +1834,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1513,6 +1875,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
@@ -1551,6 +1922,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1583,6 +1963,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
@@ -1622,6 +2011,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1655,6 +2053,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
@@ -1694,6 +2101,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1729,6 +2145,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1760,6 +2185,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
@@ -1798,6 +2232,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1829,6 +2272,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
@@ -1867,6 +2319,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1898,6 +2359,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
@@ -1936,6 +2406,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -1971,6 +2450,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2002,6 +2490,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
@@ -2040,6 +2537,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2071,6 +2577,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
@@ -2109,6 +2624,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2140,6 +2664,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
@@ -2178,6 +2711,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2210,6 +2752,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
@@ -2248,6 +2799,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2279,6 +2839,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
@@ -2317,6 +2886,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2349,6 +2927,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
@@ -2388,6 +2975,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2420,6 +3016,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
@@ -2458,6 +3063,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2490,6 +3104,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
@@ -2528,6 +3151,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2560,6 +3192,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
@@ -2598,6 +3239,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2630,6 +3280,15 @@
       earl:outcome earl:passed
     ] ;
     earl:assertedBy <http://champin.net/#pa> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
@@ -2668,6 +3327,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2700,6 +3368,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
@@ -2738,6 +3415,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2770,6 +3456,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
@@ -2808,6 +3503,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2840,6 +3544,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
@@ -2878,6 +3591,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2910,6 +3632,15 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
@@ -2947,6 +3678,15 @@
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
@@ -2975,43 +3715,3 @@
 <http://champin.net/#pa> a foaf:Person ;
   foaf:name "Pierre-Antoine Champin" .
 
-<https://iherman.github.io/rdfjs-c14n/> a doap:Project, earl:TestSubject, earl:Software ;
-  doap:name "rdfjs-c14n" ;
-  doap:developer <https://www.ivan-herman.net/foaf#me> ;
-  doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
-  doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces"@en ;
-  doap:programming-language "TypeScript" ;
-  doap:release [doap:revision "2.0.2"] .
-
-<https://www.ivan-herman.net/foaf#me> a foaf:Person, earl:Assertor ;
-  foaf:name "Ivan Herman" ;
-  foaf:homepage <https://www.ivan-herman.net/> .
-
-<https://rubygems.org/gems/rdf-normalize> a doap:Project, earl:TestSubject, earl:Software ;
-  doap:name "Ruby RDF::Normalize" ;
-  doap:developer <https://greggkellogg.net/foaf#me> ;
-  doap:homepage <https://github.com/ruby-rdf/rdf-normalize> ;
-  doap:description "RDF::Normalize performs Dataset Canonicalization for RDF.rb."@en ;
-  doap:programming-language "Ruby" ;
-  doap:release [doap:revision "0.6.0"] .
-
-<https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor ;
-  foaf:name "Gregg Kellogg" ;
-  foaf:homepage <https://greggkellogg.net/> .
-
-
-# Report Generation Software
-<https://rubygems.org/gems/earl-report> a earl:Software, doap:Project;
-   doap:name "earl-report";
-   doap:shortdesc "Earl Report summary generator"@en;
-   doap:description "EarlReport generates HTML+RDFa rollups of multiple EARL reports"@en;
-   doap:homepage <https://github.com/gkellogg/earl-report>;
-   doap:programming-language "Ruby";
-   doap:license <http://unlicense.org>;
-   doap:release <https://github.com/gkellogg/earl-report/tree/0.8.0>;
-   doap:developer <https://greggkellogg.net/foaf#me> .
-
-<https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
-  doap:name "earl-report-0.8.0";
-  doap:created "2023-07-17"^^xsd:date;
-  doap:revision "0.8.0" .
