@@ -1,4 +1,4 @@
-test,name,comment,complexity,approval,algorithm,rdfc10,rdfc10map
+test,name,comment,complexity,approval,hashAlgorithm,rdfc10,rdfc10map
 test001,simple id,,0,,,TRUE,FALSE
 test002,duplicate property iri values,,0,,,TRUE,FALSE
 test003,bnode,,0,,,TRUE,TRUE
