@@ -106,7 +106,9 @@
     <https://w3c.github.io/rdf-canon/tests/manifest#test072m>
     <https://w3c.github.io/rdf-canon/tests/manifest#test073c>
     <https://w3c.github.io/rdf-canon/tests/manifest#test073m>
-    <https://w3c.github.io/rdf-canon/tests/manifest#test074c>) .
+    <https://w3c.github.io/rdf-canon/tests/manifest#test074c>
+    <https://w3c.github.io/rdf-canon/tests/manifest#test075c>
+    <https://w3c.github.io/rdf-canon/tests/manifest#test075m>) .
 
 <https://w3c.github.io/rdf-canon/tests/manifest#test001c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple id" ;
@@ -3704,6 +3706,90 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
+<https://w3c.github.io/rdf-canon/tests/manifest#test075c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "poison – evil (1)" ;
+  rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm> "SHA384" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "high" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest#test075m> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "poison – evil (1) (map test)" ;
+  rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm> "SHA384" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "high" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
 <https://github.com/pchampin/sophia_rs> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "Sophia" ;
   doap:developer <http://champin.net/#pa> ;
@@ -3764,5 +3850,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-08-15"^^xsd:date;
+  doap:created "2023-08-30"^^xsd:date;
   doap:revision "0.8.0" .
