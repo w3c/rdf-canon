@@ -370,11 +370,11 @@
       <dt><dfn>hash</dfn></dt>
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
-      <dd>The hash algorithm used by <a>RDFC-1.0</a>, namely, SHA-256.
-        <div class="note">Implementations can be written to parameterize the
-        hash algorithm without any other changes. However, using a different
-        hash algorithm is expected to generate different output from
-        <a>RDFC-1.0</a>.</div>
+      <dd>The default hash algorithm used by <a>RDFC-1.0</a>, namely, SHA-256.
+        <p>Implementations can be written to parameterize the
+          hash algorithm without any other changes. However, using a different
+          hash algorithm is expected to generate different output from
+          <a>RDFC-1.0</a>.</p>
       </dd>
       <dt><dfn>mention</dfn></dt>
       <dd>
@@ -549,7 +549,7 @@
       The <a>hash</a> of a string <var>s</var>, is the lower-case,
       hexadecimal representation of the result of passing <var>s</var>
       through a cryptographic hash function.
-      <a>RDFC-1.0</a> uses the SHA-256 hash algorithm.</p>
+      By default, <a>RDFC-1.0</a> uses the SHA-256 hash algorithm.</p>
 
     <p class="note">The "degree" terminology is used within this specification
       as colloquial way of describing
@@ -2887,7 +2887,7 @@ disclose.
   <section id="insecure-hash-algorithms" class="informative">
     <h3>Insecure Hash Algorithms</h3>
 
-    <p>It is possible that the <a>hash algorithm</a> used by RDFC-1.0 might become
+    <p>It is possible that the default <a>hash algorithm</a> used by RDFC-1.0 might become
       insecure at some point in the future. To mitigate this, this algorithm
       and implementations of it can be parameterized to use a different
       hash function, without the need to make any changes to the
