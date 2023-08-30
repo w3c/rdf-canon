@@ -13,6 +13,7 @@
       "@id": "mf:action",
       "@type": "@id"
     },
+    "algorithm": "rdfc:hashAlgorithm",
     "approval": {
       "@id": "rdft:approval",
       "@type": "@id"
@@ -854,6 +855,28 @@
       "computationalComplexity": "high",
       "approval": "rdft:Proposed",
       "action": "rdfc10/test074-in.nq"
+    },
+    {
+      "id": "#test075c",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "poison – evil (1)",
+      "comment": "A poison graph which is computable given defined limits. (Uses SHA-384)",
+      "algorithm": "SHA384",
+      "computationalComplexity": "high",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test075-in.nq",
+      "result": "rdfc10/test075-rdfc10.nq"
+    },
+    {
+      "id": "#test075m",
+      "type": "rdfc:RDFC10MapTest",
+      "name": "poison – evil (1) (map test)",
+      "comment": "A poison graph which is computable given defined limits. (Uses SHA-384)",
+      "algorithm": "SHA384",
+      "computationalComplexity": "high",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test075-in.nq",
+      "result": "rdfc10/test075-rdfc10map.json"
     }
   ]
 }
