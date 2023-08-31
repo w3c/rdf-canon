@@ -222,7 +222,7 @@ class Manifest
         output << ":#{test.anchor(variant)} a #{test.type(variant)};"
         output << %(  mf:name "#{name}";)
         output << %(  rdfs:comment "#{test.comment}";) if test.comment
-        output << %(  rdfc:hashAlgoirhtm "#{test.hashAlgorithm}";) if test.hashAlgorithm
+        output << %(  rdfc:hashAlgorithm "#{test.hashAlgorithm}";) if test.hashAlgorithm
         output << %(  rdfc:computationalComplexity "#{test.computational_complexity}";)
         output << %(  rdft:approval #{(test.approval ? "rdft:#{test.approval}" : "rdft:Proposed")};)
         output << %(  mf:action <#{test.action}>;)

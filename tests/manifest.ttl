@@ -710,7 +710,7 @@
 :test075c a rdfc:RDFC10EvalTest;
   mf:name "poison – evil (1)";
   rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)";
-  rdfc:hashAlgoirhtm "SHA384";
+  rdfc:hashAlgorithm "SHA384";
   rdfc:computationalComplexity "high";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test075-in.nq>;
@@ -720,7 +720,7 @@
 :test075m a rdfc:RDFC10MapTest;
   mf:name "poison – evil (1) (map test)";
   rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)";
-  rdfc:hashAlgoirhtm "SHA384";
+  rdfc:hashAlgorithm "SHA384";
   rdfc:computationalComplexity "high";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test075-in.nq>;
