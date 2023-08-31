@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-08-30"
+        "@value": "2023-08-31"
       },
       "revision": "0.8.0"
     },
@@ -3723,6 +3723,7 @@
             "TestCase"
           ],
           "title": "@list",
+          "rdfs:comment": "RDF Collections using rdf:first/rest ladders.",
           "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
@@ -3792,6 +3793,7 @@
             "TestCase"
           ],
           "title": "@list (map test)",
+          "rdfs:comment": "RDF Collections using rdf:first/rest ladders.",
           "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
@@ -5925,10 +5927,10 @@
             "TestCriterion",
             "TestCase"
           ],
-          "title": "poison – evil (1)",
-          "rdfs:comment": "A poison graph which is computable given defined limits. (Uses SHA-384)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm": "SHA384",
-          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
+          "title": "blank node - diamond (uses SHA-384)",
+          "rdfs:comment": "Same as test020 except for using SHA-384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm": "SHA384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },
@@ -5992,10 +5994,10 @@
             "TestCriterion",
             "TestCase"
           ],
-          "title": "poison – evil (1) (map test)",
-          "rdfs:comment": "A poison graph which is computable given defined limits. (Uses SHA-384)",
-          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm": "SHA384",
-          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "high",
+          "title": "blank node - diamond (uses SHA-384) (map test)",
+          "rdfs:comment": "Same as test020 except for using SHA-384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm": "SHA384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
           },

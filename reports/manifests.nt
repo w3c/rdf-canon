@@ -475,12 +475,14 @@ _:g5100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/199
 <https://w3c.github.io/rdf-canon/tests/manifest#test048m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10map.json> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "@list" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/2000/01/rdf-schema#comment> "RDF Collections using rdf:first/rest ladders." .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-in.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "@list (map test)" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test053m> <http://www.w3.org/2000/01/rdf-schema#comment> "RDF Collections using rdf:first/rest ladders." .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053m> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053m> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test053m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-in.nq> .
@@ -676,18 +678,18 @@ _:g5100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/199
 <https://w3c.github.io/rdf-canon/tests/manifest#test074c> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test074c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test074-in.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "poison – evil (1)" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2000/01/rdf-schema#comment> "A poison graph which is computable given defined limits. (Uses SHA-384)" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm> "SHA384" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "high" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond (uses SHA-384)" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2000/01/rdf-schema#comment> "Same as test020 except for using SHA-384" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm> "SHA384" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075c> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075c> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest> .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "poison – evil (1) (map test)" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2000/01/rdf-schema#comment> "A poison graph which is computable given defined limits. (Uses SHA-384)" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgoirhtm> "SHA384" .
-<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "high" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#name> "blank node - diamond (uses SHA-384) (map test)" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2000/01/rdf-schema#comment> "Same as test020 except for using SHA-384" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm> "SHA384" .
+<https://w3c.github.io/rdf-canon/tests/manifest#test075m> <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Proposed> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#action> <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq> .
 <https://w3c.github.io/rdf-canon/tests/manifest#test075m> <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#result> <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json> .
