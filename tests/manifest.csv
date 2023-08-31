@@ -39,7 +39,7 @@ test045,poison – evil (2),A poison graph which is computable given defined lim
 test046,poison – evil (3),A poison graph which is computable given defined limits.,39,,,TRUE,FALSE
 test047,deep diff (1),,1,,,TRUE,TRUE
 test048,deep diff (2),,1,,,TRUE,TRUE
-test053,@list,,0,,,TRUE,TRUE
+test053,@list,RDF Collections using rdf:first/rest ladders.,0,,,TRUE,TRUE
 test054,t-graph,,1,,,TRUE,FALSE
 test055,simple reorder (1),,0,,,TRUE,TRUE
 test056,simple reorder (2),,0,,,TRUE,TRUE
@@ -61,4 +61,4 @@ test071,dataset - isomorphic default and node named,Isomorphic graphs in default
 test072,dataset - shared blank nodes,Blank nodes shared in default and named graph,0,,,TRUE,TRUE
 test073,dataset - referencing graph name,Default graph with blank node shared with graph name,0,,,TRUE,TRUE
 test074,poison - Clique Graph,A 10-node Clique of blank node resources all inter-related.,40,,,RDFC10NegativeEvalTest,FALSE
-test075,poison – evil (1),A poison graph which is computable given defined limits. (Uses SHA-384),39,,SHA384,TRUE,TRUE
+test075,blank node - diamond (uses SHA-384),Same as test020 except for using SHA-384,0,,SHA384,TRUE,TRUE

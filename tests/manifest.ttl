@@ -443,6 +443,7 @@
 
 :test053c a rdfc:RDFC10EvalTest;
   mf:name "@list";
+  rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test053-in.nq>;
@@ -451,6 +452,7 @@
 
 :test053m a rdfc:RDFC10MapTest;
   mf:name "@list (map test)";
+  rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test053-in.nq>;
@@ -708,20 +710,20 @@
   .
 
 :test075c a rdfc:RDFC10EvalTest;
-  mf:name "poison – evil (1)";
-  rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)";
+  mf:name "blank node - diamond (uses SHA-384)";
+  rdfs:comment "Same as test020 except for using SHA-384";
   rdfc:hashAlgorithm "SHA384";
-  rdfc:computationalComplexity "high";
+  rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test075-in.nq>;
   mf:result <rdfc10/test075-rdfc10.nq>;
   .
 
 :test075m a rdfc:RDFC10MapTest;
-  mf:name "poison – evil (1) (map test)";
-  rdfs:comment "A poison graph which is computable given defined limits. (Uses SHA-384)";
+  mf:name "blank node - diamond (uses SHA-384) (map test)";
+  rdfs:comment "Same as test020 except for using SHA-384";
   rdfc:hashAlgorithm "SHA384";
-  rdfc:computationalComplexity "high";
+  rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test075-in.nq>;
   mf:result <rdfc10/test075-rdfc10map.json>;
