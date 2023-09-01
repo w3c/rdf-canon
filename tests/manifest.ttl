@@ -35,7 +35,7 @@
     :test056m :test057c :test057m :test058c :test059c :test060c :test060m :test061c
     :test062c :test063c :test063m :test064c :test065c :test066c :test067c :test068c
     :test069c :test070c :test070m :test071c :test071m :test072c :test072m :test073c
-    :test073m :test074c
+    :test073m :test074c :test075c :test075m
   ) .
 
 :test001c a rdfc:RDFC10EvalTest;
@@ -443,6 +443,7 @@
 
 :test053c a rdfc:RDFC10EvalTest;
   mf:name "@list";
+  rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test053-in.nq>;
@@ -451,6 +452,7 @@
 
 :test053m a rdfc:RDFC10MapTest;
   mf:name "@list (map test)";
+  rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test053-in.nq>;
@@ -705,4 +707,24 @@
   rdfc:computationalComplexity "high";
   rdft:approval rdft:Proposed;
   mf:action <rdfc10/test074-in.nq>;
+  .
+
+:test075c a rdfc:RDFC10EvalTest;
+  mf:name "blank node - diamond (uses SHA-384)";
+  rdfs:comment "Same as test020 except for using SHA-384";
+  rdfc:hashAlgorithm "SHA384";
+  rdfc:computationalComplexity "low";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test075-in.nq>;
+  mf:result <rdfc10/test075-rdfc10.nq>;
+  .
+
+:test075m a rdfc:RDFC10MapTest;
+  mf:name "blank node - diamond (uses SHA-384) (map test)";
+  rdfs:comment "Same as test020 except for using SHA-384";
+  rdfc:hashAlgorithm "SHA384";
+  rdfc:computationalComplexity "low";
+  rdft:approval rdft:Proposed;
+  mf:action <rdfc10/test075-in.nq>;
+  mf:result <rdfc10/test075-rdfc10map.json>;
   .

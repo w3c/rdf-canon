@@ -69,6 +69,14 @@
       "rdfs:comment": "The input can be canonicalized with representation of relative computational complexity: \"low\", \"medium\", or \"high\". Inputs with high computational complexity are likely poison datasets.",
       "rdfs:domain": "rdfc:Test",
       "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "rdfc:hashAlgorithm",
+      "@type": "rdf:Property",
+      "rdfs:label": "Hash algorithm to use",
+      "rdfs:comment": "Used to specify an alternative hash algorithm. If unspecified, the default is \"SHA256\". Alternative values include \"SHA384\" and \"SHA512\".",
+      "rdfs:domain": "rdfc:Test",
+      "rdfs:range": "xsd:string"
     }
   ]
 }

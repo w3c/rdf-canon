@@ -135,7 +135,7 @@
       "name": "earl-report-0.8.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-08-15"
+        "@value": "2023-09-01"
       },
       "revision": "0.8.0"
     },
@@ -3723,6 +3723,7 @@
             "TestCase"
           ],
           "title": "@list",
+          "rdfs:comment": "RDF Collections using rdf:first/rest ladders.",
           "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
@@ -3792,6 +3793,7 @@
             "TestCase"
           ],
           "title": "@list (map test)",
+          "rdfs:comment": "RDF Collections using rdf:first/rest ladders.",
           "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
           "http://www.w3.org/ns/rdftest#approval": {
             "@id": "http://www.w3.org/ns/rdftest#Proposed"
@@ -5915,6 +5917,140 @@
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "blank node - diamond (uses SHA-384)",
+          "rdfs:comment": "Same as test020 except for using SHA-384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm": "SHA384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10.nq",
+          "assertions": [
+            {
+              "@id": "_:b663",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "result": {
+                "@id": "_:b664",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b665",
+              "@type": "Assertion",
+              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "result": {
+                "@id": "_:b666",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b659",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "result": {
+                "@id": "_:b660",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b661",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "result": {
+                "@id": "_:b662",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            }
+          ]
+        },
+        {
+          "@id": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+          "@type": [
+            "https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest",
+            "TestCriterion",
+            "TestCase"
+          ],
+          "title": "blank node - diamond (uses SHA-384) (map test)",
+          "rdfs:comment": "Same as test020 except for using SHA-384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#hashAlgorithm": "SHA384",
+          "https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity": "low",
+          "http://www.w3.org/ns/rdftest#approval": {
+            "@id": "http://www.w3.org/ns/rdftest#Proposed"
+          },
+          "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq",
+          "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json",
+          "assertions": [
+            {
+              "@id": "_:b671",
+              "@type": "Assertion",
+              "subject": "https://github.com/pchampin/sophia_rs",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "result": {
+                "@id": "_:b672",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b673",
+              "@type": "Assertion",
+              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "result": {
+                "@id": "_:b674",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b667",
+              "@type": "Assertion",
+              "subject": "https://iherman.github.io/rdfjs-c14n/",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "result": {
+                "@id": "_:b668",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
+            },
+            {
+              "@id": "_:b669",
+              "@type": "Assertion",
+              "subject": "https://rubygems.org/gems/rdf-normalize",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "result": {
+                "@id": "_:b670",
+                "@type": "TestResult",
+                "outcome": "earl:untested"
+              },
+              "assertedBy": null
             }
           ]
         }

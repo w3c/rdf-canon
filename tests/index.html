@@ -108,7 +108,7 @@
       OR THE PERFORMANCE OR IMPLEMENTATION OF THE CONTENTS THEREOF.</p>
     <section>
       <h2>
-        RDF Dataset Canonicalization (RDFC-1.0) Test Suite (82 entries)
+        RDF Dataset Canonicalization (RDFC-1.0) Test Suite (84 entries)
       </h2>
       <dl class='test-description'>
         <dt id='test001c'>
@@ -1422,6 +1422,7 @@
         </dt>
         <dd inlist property='mf:entry' resource='#test053c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
+            <p>RDF Collections using rdf:first/rest ladders.</p>
           </div>
           <dl class='test-detail'>
             <dt>type</dt>
@@ -1448,6 +1449,7 @@
         </dt>
         <dd inlist property='mf:entry' resource='#test053m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
+            <p>RDF Collections using rdf:first/rest ladders.</p>
           </div>
           <dl class='test-detail'>
             <dt>type</dt>
@@ -2250,6 +2252,60 @@
             <dt>action</dt>
             <dd>
               <a href='rdfc10/test074-in.nq' property='mf:action'>rdfc10/test074-in.nq</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test075c'>
+          <a class='testlink' href='#test075c'>
+            test075c:
+          </a>
+          <span about='#test075c' property='mf:name'>blank node - diamond (uses SHA-384)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test075c' typeof='rdfc:RDFC10EvalTest'>
+          <div property='rdfs:comment'>
+            <p>Same as test020 except for using SHA-384</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10EvalTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test075-in.nq' property='mf:action'>rdfc10/test075-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test075-rdfc10.nq' property='mf:result'>rdfc10/test075-rdfc10.nq</a>
+            </dd>
+          </dl>
+        </dd>
+        <dt id='test075m'>
+          <a class='testlink' href='#test075m'>
+            test075m:
+          </a>
+          <span about='#test075m' property='mf:name'>blank node - diamond (uses SHA-384) (map test)</span>
+        </dt>
+        <dd inlist property='mf:entry' resource='#test075m' typeof='rdfc:RDFC10MapTest'>
+          <div property='rdfs:comment'>
+            <p>Same as test020 except for using SHA-384</p>
+          </div>
+          <dl class='test-detail'>
+            <dt>type</dt>
+            <dd>rdfc:RDFC10MapTest</dd>
+            <dt>approval</dt>
+            <dd property='mf:approval' resource='rdft:Proposed'>rdft:Proposed</dd>
+            <dt>computationalComplexity</dt>
+            <dd>low</dd>
+            <dt>action</dt>
+            <dd>
+              <a href='rdfc10/test075-in.nq' property='mf:action'>rdfc10/test075-in.nq</a>
+            </dd>
+            <dt>result</dt>
+            <dd>
+              <a href='rdfc10/test075-rdfc10map.json' property='mf:result'>rdfc10/test075-rdfc10map.json</a>
             </dd>
           </dl>
         </dd>

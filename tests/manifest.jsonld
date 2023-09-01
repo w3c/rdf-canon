@@ -23,6 +23,7 @@
       "@type": "@id",
       "@container": "@list"
     },
+    "hashAlgorithm": "rdfc:hashAlgorithm",
     "label": "rdfs:label",
     "name": "mf:name",
     "computationalComplexity": "rdfc:computationalComplexity",
@@ -540,7 +541,7 @@
       "id": "#test053c",
       "type": "rdfc:RDFC10EvalTest",
       "name": "@list",
-      "comment": null,
+      "comment": "RDF Collections using rdf:first/rest ladders.",
       "computationalComplexity": "low",
       "approval": "rdft:Proposed",
       "action": "rdfc10/test053-in.nq",
@@ -550,7 +551,7 @@
       "id": "#test053m",
       "type": "rdfc:RDFC10MapTest",
       "name": "@list (map test)",
-      "comment": null,
+      "comment": "RDF Collections using rdf:first/rest ladders.",
       "computationalComplexity": "low",
       "approval": "rdft:Proposed",
       "action": "rdfc10/test053-in.nq",
@@ -854,6 +855,28 @@
       "computationalComplexity": "high",
       "approval": "rdft:Proposed",
       "action": "rdfc10/test074-in.nq"
+    },
+    {
+      "id": "#test075c",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "blank node - diamond (uses SHA-384)",
+      "comment": "Same as test020 except for using SHA-384",
+      "computationalComplexity": "low",
+      "hashAlgorithm": "SHA384",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test075-in.nq",
+      "result": "rdfc10/test075-rdfc10.nq"
+    },
+    {
+      "id": "#test075m",
+      "type": "rdfc:RDFC10MapTest",
+      "name": "blank node - diamond (uses SHA-384) (map test)",
+      "comment": "Same as test020 except for using SHA-384",
+      "computationalComplexity": "low",
+      "hashAlgorithm": "SHA384",
+      "approval": "rdft:Proposed",
+      "action": "rdfc10/test075-in.nq",
+      "result": "rdfc10/test075-rdfc10map.json"
     }
   ]
 }

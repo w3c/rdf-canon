@@ -20,7 +20,7 @@ class Manifest
   TITLE = "RDF Dataset Canonicalization (RDFC-1.0) Test Suite"
   DESCRIPTION = "Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps."
 
-  Test = Struct.new(:id, :name, :comment, :complexity, :approval, :action, :rdfc10, :rdfc10map) do
+  Test = Struct.new(:id, :name, :comment, :complexity, :approval, :hashAlgorithm, :action, :rdfc10, :rdfc10map) do
     def anchor(variant)
       %(#{self.id}#{variant == :rdfc10 ? "c" : "m"})
     end
@@ -72,7 +72,7 @@ class Manifest
       # Create entry as object indexed by symbolized column name
       line.each_with_index {|v, i| entry[columns[i]] = v ? v.gsub("\r", "\n").gsub("\\", "\\\\") : nil}
 
-      Test.new(entry[:test], entry[:name], entry[:comment], entry[:complexity], entry[:approval],
+      Test.new(entry[:test], entry[:name], entry[:comment], entry[:complexity], entry[:approval], entry[:hashAlgorithm],
                "rdfc10/#{entry[:test]}-in.nq",
                entry[:rdfc10],
                entry[:rdfc10map])
@@ -104,6 +104,7 @@ class Manifest
       "approval": {"@id": "rdft:approval", "@type": "@id"},
       "comment": "rdfs:comment",
       "entries": {"@id": "mf:entries", "@type": "@id", "@container": "@list"},
+      "hashAlgorithm": "rdfc:hashAlgorithm",
       "label": "rdfs:label",
       "name": "mf:name",
       "computationalComplexity": "rdfc:computationalComplexity",
@@ -137,11 +138,13 @@ class Manifest
           "name" => name,
           "comment" => test.comment,
           "computationalComplexity" => test.computational_complexity,
+          "hashAlgorithm" => test.hashAlgorithm,
           "approval" => (test.approval ? "rdft:#{test.approval}" : "rdft:Proposed"),
           "action" => test.action,
           "result" => test.result(variant)
         }
         entry.delete('result') unless entry['result']
+        entry.delete('hashAlgorithm') unless entry['hashAlgorithm']
         manifest["entries"] << entry
       end
     end
@@ -219,6 +222,7 @@ class Manifest
         output << ":#{test.anchor(variant)} a #{test.type(variant)};"
         output << %(  mf:name "#{name}";)
         output << %(  rdfs:comment "#{test.comment}";) if test.comment
+        output << %(  rdfc:hashAlgorithm "#{test.hashAlgorithm}";) if test.hashAlgorithm
         output << %(  rdfc:computationalComplexity "#{test.computational_complexity}";)
         output << %(  rdft:approval #{(test.approval ? "rdft:#{test.approval}" : "rdft:Proposed")};)
         output << %(  mf:action <#{test.action}>;)
