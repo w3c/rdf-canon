@@ -3747,8 +3747,9 @@
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
 <https://w3c.github.io/rdf-canon/tests/manifest#test075m> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10MapTest>, earl:TestCriterion, earl:TestCase ;
@@ -3790,8 +3791,9 @@
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
 <https://github.com/pchampin/sophia_rs> a doap:Project, earl:TestSubject, earl:Software ;
@@ -3834,7 +3836,7 @@
   doap:homepage <https://github.com/ruby-rdf/rdf-normalize> ;
   doap:description "RDF::Normalize performs Dataset Canonicalization for RDF.rb."@en ;
   doap:programming-language "Ruby" ;
-  doap:release [doap:revision "0.6.0"] .
+  doap:release [doap:revision "0.7.0"] .
 
 <https://greggkellogg.net/foaf#me> a foaf:Person, earl:Assertor ;
   foaf:name "Gregg Kellogg" ;
