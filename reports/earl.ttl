@@ -3738,8 +3738,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
@@ -3780,8 +3781,9 @@
     earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://www.ivan-herman.net/foaf#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
@@ -3820,7 +3822,7 @@
   doap:homepage <https://iherman.github.io/rdfjs-c14n/> ;
   doap:description "Implementation in Typescript of the RDF Canonicalization Algorithm RDFC-1.0, on top of the RDF/JS interfaces"@en ;
   doap:programming-language "TypeScript" ;
-  doap:release [doap:revision "2.0.2"] .
+  doap:release [doap:revision "2.0.5"] .
 
 <https://www.ivan-herman.net/foaf#me> a foaf:Person, earl:Assertor ;
   foaf:name "Ivan Herman" ;
@@ -3852,5 +3854,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
   doap:name "earl-report-0.8.0";
-  doap:created "2023-09-01"^^xsd:date;
+  doap:created "2023-09-05"^^xsd:date;
   doap:revision "0.8.0" .
