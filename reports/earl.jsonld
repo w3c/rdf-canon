@@ -204,7 +204,7 @@
       "language": "Rust",
       "release": {
         "@id": "_:b452",
-        "revision": "0.13.0"
+        "revision": "0.14.0"
       }
     },
     {
@@ -495,12 +495,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b617",
+              "@id": "_:b621",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
               "result": {
-                "@id": "_:b618",
+                "@id": "_:b622",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -632,12 +632,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b619",
+              "@id": "_:b623",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
               "result": {
-                "@id": "_:b620",
+                "@id": "_:b624",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -769,12 +769,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b621",
+              "@id": "_:b625",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
               "result": {
-                "@id": "_:b622",
+                "@id": "_:b626",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1389,12 +1389,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b623",
+              "@id": "_:b627",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
               "result": {
-                "@id": "_:b624",
+                "@id": "_:b628",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1526,12 +1526,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b625",
+              "@id": "_:b629",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
               "result": {
-                "@id": "_:b626",
+                "@id": "_:b630",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1663,12 +1663,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b627",
+              "@id": "_:b631",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
               "result": {
-                "@id": "_:b628",
+                "@id": "_:b632",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -1869,12 +1869,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b629",
+              "@id": "_:b633",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
               "result": {
-                "@id": "_:b630",
+                "@id": "_:b634",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -2627,12 +2627,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b631",
+              "@id": "_:b635",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
               "result": {
-                "@id": "_:b632",
+                "@id": "_:b636",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3526,12 +3526,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b633",
+              "@id": "_:b637",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
               "result": {
-                "@id": "_:b634",
+                "@id": "_:b638",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3663,12 +3663,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b635",
+              "@id": "_:b639",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
               "result": {
-                "@id": "_:b636",
+                "@id": "_:b640",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -3802,12 +3802,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b637",
+              "@id": "_:b641",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
               "result": {
-                "@id": "_:b638",
+                "@id": "_:b642",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -4008,12 +4008,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b639",
+              "@id": "_:b643",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
               "result": {
-                "@id": "_:b640",
+                "@id": "_:b644",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -4145,12 +4145,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b641",
+              "@id": "_:b645",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
               "result": {
-                "@id": "_:b642",
+                "@id": "_:b646",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -4282,12 +4282,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b643",
+              "@id": "_:b647",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
               "result": {
-                "@id": "_:b644",
+                "@id": "_:b648",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -4557,12 +4557,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b645",
+              "@id": "_:b649",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "result": {
-                "@id": "_:b646",
+                "@id": "_:b650",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -4834,12 +4834,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b647",
+              "@id": "_:b651",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "result": {
-                "@id": "_:b648",
+                "@id": "_:b652",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5317,12 +5317,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b649",
+              "@id": "_:b653",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "result": {
-                "@id": "_:b650",
+                "@id": "_:b654",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5386,12 +5386,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b651",
+              "@id": "_:b655",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "result": {
-                "@id": "_:b652",
+                "@id": "_:b656",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5455,12 +5455,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b653",
+              "@id": "_:b657",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "result": {
-                "@id": "_:b654",
+                "@id": "_:b658",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5524,12 +5524,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b655",
+              "@id": "_:b659",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "result": {
-                "@id": "_:b656",
+                "@id": "_:b660",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5593,12 +5593,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b657",
+              "@id": "_:b661",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "result": {
-                "@id": "_:b658",
+                "@id": "_:b662",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5662,12 +5662,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b659",
+              "@id": "_:b663",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "result": {
-                "@id": "_:b660",
+                "@id": "_:b664",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5731,12 +5731,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b661",
+              "@id": "_:b665",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "result": {
-                "@id": "_:b662",
+                "@id": "_:b666",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5800,12 +5800,12 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test073-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b663",
+              "@id": "_:b667",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "result": {
-                "@id": "_:b664",
+                "@id": "_:b668",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5868,12 +5868,12 @@
           "testAction": "https://w3c.github.io/rdf-canon/tests/rdfc10/test074-in.nq",
           "assertions": [
             {
-              "@id": "_:b665",
+              "@id": "_:b669",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "result": {
-                "@id": "_:b666",
+                "@id": "_:b670",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
@@ -5938,28 +5938,29 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b667",
+              "@id": "_:b671",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
               "result": {
-                "@id": "_:b668",
+                "@id": "_:b672",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b669",
+              "@id": "_:b617",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "assertedBy": "https://github.com/yamdan",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b670",
+                "@id": "_:b618",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
               "@id": "_:b165",
@@ -6007,21 +6008,9 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b671",
-              "@type": "Assertion",
-              "subject": "https://github.com/pchampin/sophia_rs",
-              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
-              "result": {
-                "@id": "_:b672",
-                "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
-            },
-            {
               "@id": "_:b673",
               "@type": "Assertion",
-              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "result": {
                 "@id": "_:b674",
@@ -6029,6 +6018,19 @@
                 "outcome": "earl:untested"
               },
               "assertedBy": null
+            },
+            {
+              "@id": "_:b619",
+              "@type": "Assertion",
+              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "assertedBy": "https://github.com/yamdan",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b620",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
             },
             {
               "@id": "_:b167",
