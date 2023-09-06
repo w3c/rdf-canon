@@ -7,14 +7,14 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 <> foaf:primaryTopic <https://github.com/zkp-ld/rdf-canon> ;
-  dc:issued "2023-08-15"^^xsd:date ;
+  dc:issued "2023-09-06"^^xsd:date ;
   foaf:maker <https://github.com/yamdan> .
 
 <https://github.com/zkp-ld/rdf-canon> a doap:Project ;
   doap:name                 "zkp-ld/rdf-canon" ;
-  doap:release              [ doap:name     "zkp-ld/rdf-canon-0.13.0" ;
-                              doap:revision "0.13.0" ;
-                              doap:created  "2023-08-02"^^xsd:date ;
+  doap:release              [ doap:name     "zkp-ld/rdf-canon-0.14.0" ;
+                              doap:revision "0.14.0" ;
+                              doap:created  "2023-09-01"^^xsd:date ;
                             ] ;
   doap:developer            <https://github.com/yamdan> ;
   doap:description          "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf."@en ;
@@ -31,7 +31,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -42,7 +42,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -53,7 +53,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -64,7 +64,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -75,7 +75,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -86,7 +86,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -97,7 +97,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -108,7 +108,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -119,7 +119,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -130,7 +130,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -141,7 +141,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -152,7 +152,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -163,7 +163,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -174,7 +174,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -185,7 +185,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -196,7 +196,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -207,7 +207,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -218,7 +218,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -229,7 +229,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -240,7 +240,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -251,7 +251,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -262,7 +262,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -273,7 +273,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -284,7 +284,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -295,7 +295,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -306,7 +306,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -317,7 +317,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -328,7 +328,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -339,7 +339,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -350,7 +350,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -361,7 +361,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -372,7 +372,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -383,7 +383,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -394,7 +394,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -405,7 +405,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -416,7 +416,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -427,7 +427,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -438,7 +438,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -449,7 +449,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -460,7 +460,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -471,7 +471,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -482,7 +482,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -493,7 +493,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -504,7 +504,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -515,7 +515,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -526,7 +526,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -537,7 +537,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -548,7 +548,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -559,7 +559,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -570,7 +570,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -581,7 +581,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -592,7 +592,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -603,7 +603,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -614,7 +614,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -625,7 +625,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -636,7 +636,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -647,7 +647,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -658,7 +658,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -669,7 +669,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -680,7 +680,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -691,7 +691,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -702,7 +702,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -713,7 +713,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -724,7 +724,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -735,7 +735,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -746,7 +746,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -757,7 +757,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -768,7 +768,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -779,7 +779,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -790,7 +790,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -801,7 +801,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -812,7 +812,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -823,7 +823,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -834,7 +834,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -845,7 +845,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -856,7 +856,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -867,7 +867,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -878,7 +878,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -889,7 +889,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -900,7 +900,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -911,7 +911,7 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
@@ -922,7 +922,29 @@
   earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
   earl:result     [ a            earl:TestResult ;
                     earl:outcome earl:passed ;
-                    dc:date      "2023-08-15T11:03:02Z"^^xsd:dateTime 
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
+                  ] ;
+  earl:mode     earl:automatic 
+] .
+
+[ a               earl:Assertion ;
+  earl:assertedBy <https://github.com/yamdan> ;
+  earl:subject    <https://github.com/zkp-ld/rdf-canon> ;
+  earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+  earl:result     [ a            earl:TestResult ;
+                    earl:outcome earl:passed ;
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
+                  ] ;
+  earl:mode     earl:automatic 
+] .
+
+[ a               earl:Assertion ;
+  earl:assertedBy <https://github.com/yamdan> ;
+  earl:subject    <https://github.com/zkp-ld/rdf-canon> ;
+  earl:test       <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+  earl:result     [ a            earl:TestResult ;
+                    earl:outcome earl:passed ;
+                    dc:date      "2023-09-06T03:16:07Z"^^xsd:dateTime 
                   ] ;
   earl:mode     earl:automatic 
 ] .
