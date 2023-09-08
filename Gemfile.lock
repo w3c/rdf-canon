@@ -85,7 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   csv
-  earl-report
+  earl-report (>= 0.9)
   getoptlong
   htmlbeautifier (~> 1.4)
   rake
