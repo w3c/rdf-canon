@@ -56,13 +56,13 @@
     <p property='rdfs:comment'>Tests the 1.0 version of RDF Dataset Canonicalization and the generation of canonical maps.</p>
     <p>This page describes RDF Dataset Canonicalization tests for the RDFC-1.0 profile. These tests are also described in <a href="manifest.jsonld">JSON-LD</a> and <a href="manifest.ttl">Turtle</a> formats for convenience. The manifest vocabulary is described in the <a href="vocab.html">RDF Dataset Canonicalization Test Vocabulary</a> (<a href="vocab.jsonld">JSON-LD</a>, <a href="vocab.ttl">Turtle</a>) and is based on the <a href="http://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF Test Vocabulary</a>.</p>
     <p>A previous version of this test suite included tests for the URGNA2012 profile, which is non-normative. Those tests continue to be avaliable in the <a href="https://w3c-ccg.github.io/rdf-dataset-canonicalization/tests">Credentials Community Group repository</a>.</p>
-    <h2 id="general-instructions-for-running-the-rdf-dataset-canonicalization-test-suites">General instructions for running the RDF Dataset Canonicalization Test suites</h2>
-    <h3 id="tests-for-rdfc-10-take-input-files-specified-as-n-quads-and-generate-canonical-n-quads-output-as-required-by-the-rdfc-10-algorithm">Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
+    <h2>General instructions for running the RDF Dataset Canonicalization Test suites</h2>
+    <h3>Tests for RDFC-1.0 take input files, specified as N-Quads, and generate Canonical N-Quads output as required by the RDFC-1.0 algorithm.</h3>
     <p>The result file is in the N-Quads format.
       The test passes if the result compares identically as the expected result as text files.</p>
     <p>For a negative evaluation test, the test passes if the implementation generates an error due to excessive calls to
       <a href="https://www.w3.org/TR/rdf-canon/#hash-nd-quads-algorithm">Hash N-Degree Quads</a>.</p>
-    <h3 id="tests-for-rdfc-10-issued-identifiers-map">Tests for RDFC-1.0 Issued Identifiers Map.</h3>
+    <h3>Tests for RDFC-1.0 Issued Identifiers Map.</h3>
     <p>The result file is in the JSON format with keys representing
       the blank node identifiers from the test input,
       and values representing the associated canonical identifier
@@ -76,7 +76,7 @@
     <p>Additionally, the keys of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-map">issued identifiers map</a>
       must exactly match the values of the <a href="https://www.w3.org/TR/rdf-canon/#dfn-input-blank-node-identifier-map">input blank node identifier map</a>.
       Note that the keys of the input blank node identifier map represent blank nodes and the specific value is not considered for test purposes.</p>
-    <h2 id="contributing-tests">Contributing Tests</h2>
+    <h2>Contributing Tests</h2>
     <p>The test manifests and entries are built automatically from
       <a href="manifest.csv">manifest.csv</a> using <a href="mk_manifest.rb">mk_manifest.rb</a>,
       where each row defines a combination of Validation tests for the same
@@ -84,17 +84,17 @@
       Tests may be contributed via pull request to
       <a href="https://github.com/w3c/rdf-canon">https://github.com/w3c/rdf-canon</a>
       with suitable changes to the
-      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files.</p>
-    <h2 id="distribution">Distribution</h2>
+      <a href="manifest.csv">manifest.csv</a> and necessary <em>action</em> and <em>result</em> files. </p>
+    <h2>Distribution</h2>
     <p>Distributed under both the
       <a href="http://www.w3.org/Consortium/Legal/2008/04-testsuite-license">W3C Test Suite License</a>
       and the
       <a href="http://www.w3.org/Consortium/Legal/2008/03-bsd-license">W3C 3-clause BSD License</a>.
       To contribute to a W3C Test Suite, see the
       <a href="http://www.w3.org/2004/10/27-testcases">policies and contribution forms</a>.</p>
-    <h2 id="disclaimer">Disclaimer</h2>
+    <h2>Disclaimer</h2>
     <p>UNDER BOTH MUTUALLY EXCLUSIVE LICENSES, THIS DOCUMENT AND ALL DOCUMENTS,
-      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED "AS IS,"
+      TESTS AND SOFTWARE THAT LINK THIS STATEMENT ARE PROVIDED &quot;AS IS,&quot;
       AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES,
       EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
       WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
@@ -117,7 +117,7 @@
           </a>
           <span about='#test001c' property='mf:name'>simple id</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test001c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test001c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -143,7 +143,7 @@
           </a>
           <span about='#test002c' property='mf:name'>duplicate property iri values</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test002c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test002c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -169,7 +169,7 @@
           </a>
           <span about='#test003c' property='mf:name'>bnode</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test003c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test003c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -195,7 +195,7 @@
           </a>
           <span about='#test003m' property='mf:name'>bnode (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test003m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test003m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -221,7 +221,7 @@
           </a>
           <span about='#test004c' property='mf:name'>bnode plus embed w/subject</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test004c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test004c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -247,7 +247,7 @@
           </a>
           <span about='#test004m' property='mf:name'>bnode plus embed w/subject (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test004m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test004m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -273,7 +273,7 @@
           </a>
           <span about='#test005c' property='mf:name'>bnode embed</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test005c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test005c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -299,7 +299,7 @@
           </a>
           <span about='#test005m' property='mf:name'>bnode embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test005m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test005m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -325,7 +325,7 @@
           </a>
           <span about='#test006c' property='mf:name'>multiple rdf types</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test006c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test006c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -351,7 +351,7 @@
           </a>
           <span about='#test008c' property='mf:name'>single subject complex</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test008c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test008c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -377,7 +377,7 @@
           </a>
           <span about='#test009c' property='mf:name'>multiple subjects - complex</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test009c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test009c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -403,7 +403,7 @@
           </a>
           <span about='#test010c' property='mf:name'>type</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test010c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test010c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -429,7 +429,7 @@
           </a>
           <span about='#test011c' property='mf:name'>type-coerced type</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test011c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test011c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -455,7 +455,7 @@
           </a>
           <span about='#test013c' property='mf:name'>type-coerced type, cycle</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test013c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test013c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -481,7 +481,7 @@
           </a>
           <span about='#test014c' property='mf:name'>check types</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test014c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test014c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -507,7 +507,7 @@
           </a>
           <span about='#test016c' property='mf:name'>blank node - dual link - embed</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test016c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test016c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -533,7 +533,7 @@
           </a>
           <span about='#test016m' property='mf:name'>blank node - dual link - embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test016m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test016m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -559,7 +559,7 @@
           </a>
           <span about='#test017c' property='mf:name'>blank node - dual link - non-embed</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test017c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test017c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -585,7 +585,7 @@
           </a>
           <span about='#test017m' property='mf:name'>blank node - dual link - non-embed (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test017m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test017m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -611,7 +611,7 @@
           </a>
           <span about='#test018c' property='mf:name'>blank node - self link</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test018c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test018c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -637,7 +637,7 @@
           </a>
           <span about='#test018m' property='mf:name'>blank node - self link (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test018m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test018m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -663,7 +663,7 @@
           </a>
           <span about='#test019c' property='mf:name'>blank node - disjoint self links</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test019c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test019c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -689,7 +689,7 @@
           </a>
           <span about='#test020c' property='mf:name'>blank node - diamond</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test020c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test020c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -715,7 +715,7 @@
           </a>
           <span about='#test020m' property='mf:name'>blank node - diamond (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test020m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test020m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -741,7 +741,7 @@
           </a>
           <span about='#test021c' property='mf:name'>blank node - circle of 2</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test021c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test021c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -767,7 +767,7 @@
           </a>
           <span about='#test022c' property='mf:name'>blank node - double circle of 2</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test022c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test022c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -793,7 +793,7 @@
           </a>
           <span about='#test023c' property='mf:name'>blank node - circle of 3</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test023c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test023c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -819,7 +819,7 @@
           </a>
           <span about='#test024c' property='mf:name'>blank node - double circle of 3 (0-1-2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test024c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test024c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -845,7 +845,7 @@
           </a>
           <span about='#test025c' property='mf:name'>blank node - double circle of 3 (0-2-1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test025c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test025c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -871,7 +871,7 @@
           </a>
           <span about='#test026c' property='mf:name'>blank node - double circle of 3 (1-0-2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test026c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test026c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -897,7 +897,7 @@
           </a>
           <span about='#test027c' property='mf:name'>blank node - double circle of 3 (1-2-0)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test027c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test027c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -923,7 +923,7 @@
           </a>
           <span about='#test028c' property='mf:name'>blank node - double circle of 3 (2-1-0)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test028c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test028c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -949,7 +949,7 @@
           </a>
           <span about='#test029c' property='mf:name'>blank node - double circle of 3 (2-0-1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test029c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test029c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -975,7 +975,7 @@
           </a>
           <span about='#test030c' property='mf:name'>blank node - point at circle of 3</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test030c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test030c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1001,7 +1001,7 @@
           </a>
           <span about='#test030m' property='mf:name'>blank node - point at circle of 3 (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test030m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test030m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1027,7 +1027,7 @@
           </a>
           <span about='#test033c' property='mf:name'>disjoint identical subgraphs (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test033c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test033c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1053,7 +1053,7 @@
           </a>
           <span about='#test034c' property='mf:name'>disjoint identical subgraphs (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test034c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test034c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1079,7 +1079,7 @@
           </a>
           <span about='#test035c' property='mf:name'>reordered w/strings (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test035c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test035c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1105,7 +1105,7 @@
           </a>
           <span about='#test036c' property='mf:name'>reordered w/strings (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test036c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test036c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1131,7 +1131,7 @@
           </a>
           <span about='#test038c' property='mf:name'>reordered 4 bnodes, reordered 2 properties (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test038c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test038c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1157,7 +1157,7 @@
           </a>
           <span about='#test039c' property='mf:name'>reordered 4 bnodes, reordered 2 properties (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test039c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test039c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1183,7 +1183,7 @@
           </a>
           <span about='#test040c' property='mf:name'>reordered 6 bnodes (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test040c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test040c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1209,7 +1209,7 @@
           </a>
           <span about='#test043c' property='mf:name'>literal with language</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test043c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test043c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1235,7 +1235,7 @@
           </a>
           <span about='#test044c' property='mf:name'>poison – evil (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test044c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test044c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>A poison graph which is computable given defined limits.</p>
           </div>
@@ -1262,7 +1262,7 @@
           </a>
           <span about='#test045c' property='mf:name'>poison – evil (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test045c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test045c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>A poison graph which is computable given defined limits.</p>
           </div>
@@ -1289,7 +1289,7 @@
           </a>
           <span about='#test046c' property='mf:name'>poison – evil (3)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test046c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test046c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>A poison graph which is computable given defined limits.</p>
           </div>
@@ -1316,7 +1316,7 @@
           </a>
           <span about='#test047c' property='mf:name'>deep diff (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test047c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test047c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1342,7 +1342,7 @@
           </a>
           <span about='#test047m' property='mf:name'>deep diff (1) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test047m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test047m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1368,7 +1368,7 @@
           </a>
           <span about='#test048c' property='mf:name'>deep diff (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test048c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test048c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1394,7 +1394,7 @@
           </a>
           <span about='#test048m' property='mf:name'>deep diff (2) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test048m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test048m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1420,7 +1420,7 @@
           </a>
           <span about='#test053c' property='mf:name'>@list</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test053c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test053c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>RDF Collections using rdf:first/rest ladders.</p>
           </div>
@@ -1447,7 +1447,7 @@
           </a>
           <span about='#test053m' property='mf:name'>@list (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test053m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test053m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>RDF Collections using rdf:first/rest ladders.</p>
           </div>
@@ -1474,7 +1474,7 @@
           </a>
           <span about='#test054c' property='mf:name'>t-graph</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test054c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test054c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1500,7 +1500,7 @@
           </a>
           <span about='#test055c' property='mf:name'>simple reorder (1)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test055c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test055c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1526,7 +1526,7 @@
           </a>
           <span about='#test055m' property='mf:name'>simple reorder (1) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test055m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test055m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1552,7 +1552,7 @@
           </a>
           <span about='#test056c' property='mf:name'>simple reorder (2)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test056c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test056c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1578,7 +1578,7 @@
           </a>
           <span about='#test056m' property='mf:name'>simple reorder (2) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test056m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test056m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1604,7 +1604,7 @@
           </a>
           <span about='#test057c' property='mf:name'>unnamed graph</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test057c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test057c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1630,7 +1630,7 @@
           </a>
           <span about='#test057m' property='mf:name'>unnamed graph (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test057m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test057m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1656,7 +1656,7 @@
           </a>
           <span about='#test058c' property='mf:name'>unnamed graph with blank node objects</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test058c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test058c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1682,7 +1682,7 @@
           </a>
           <span about='#test059c' property='mf:name'>n-quads parsing</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test059c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test059c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1708,7 +1708,7 @@
           </a>
           <span about='#test060c' property='mf:name'>n-quads escaping</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test060c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test060c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1734,7 +1734,7 @@
           </a>
           <span about='#test060m' property='mf:name'>n-quads escaping (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test060m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test060m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1760,7 +1760,7 @@
           </a>
           <span about='#test061c' property='mf:name'>same literal value with multiple languages</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test061c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test061c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1786,7 +1786,7 @@
           </a>
           <span about='#test062c' property='mf:name'>same literal value with multiple datatypes</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test062c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test062c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1812,7 +1812,7 @@
           </a>
           <span about='#test063c' property='mf:name'>blank node - diamond (with _:b)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test063c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test063c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>This duplicates #test020, but uses _:b as a blank node prefix</p>
           </div>
@@ -1839,7 +1839,7 @@
           </a>
           <span about='#test063m' property='mf:name'>blank node - diamond (with _:b) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test063m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test063m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>This duplicates #test020, but uses _:b as a blank node prefix</p>
           </div>
@@ -1866,7 +1866,7 @@
           </a>
           <span about='#test064c' property='mf:name'>blank node - double circle of 3 (0-1-2, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test064c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test064c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1892,7 +1892,7 @@
           </a>
           <span about='#test065c' property='mf:name'>blank node - double circle of 3 (0-2-1, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test065c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test065c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1918,7 +1918,7 @@
           </a>
           <span about='#test066c' property='mf:name'>blank node - double circle of 3 (1-0-2, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test066c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test066c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1944,7 +1944,7 @@
           </a>
           <span about='#test067c' property='mf:name'>blank node - double circle of 3 (1-2-0, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test067c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test067c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1970,7 +1970,7 @@
           </a>
           <span about='#test068c' property='mf:name'>blank node - double circle of 3 (2-1-0, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test068c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test068c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -1996,7 +1996,7 @@
           </a>
           <span about='#test069c' property='mf:name'>blank node - double circle of 3 (2-0-1, reversed)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test069c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test069c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
           </div>
           <dl class='test-detail'>
@@ -2022,7 +2022,7 @@
           </a>
           <span about='#test070c' property='mf:name'>dataset - isomorphic default and iri named</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test070c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test070c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and IRI named graph</p>
           </div>
@@ -2049,7 +2049,7 @@
           </a>
           <span about='#test070m' property='mf:name'>dataset - isomorphic default and iri named (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test070m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test070m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and IRI named graph</p>
           </div>
@@ -2076,7 +2076,7 @@
           </a>
           <span about='#test071c' property='mf:name'>dataset - isomorphic default and node named</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test071c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test071c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and blank node named graph</p>
           </div>
@@ -2103,7 +2103,7 @@
           </a>
           <span about='#test071m' property='mf:name'>dataset - isomorphic default and node named (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test071m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test071m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>Isomorphic graphs in default and blank node named graph</p>
           </div>
@@ -2130,7 +2130,7 @@
           </a>
           <span about='#test072c' property='mf:name'>dataset - shared blank nodes</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test072c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test072c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Blank nodes shared in default and named graph</p>
           </div>
@@ -2157,7 +2157,7 @@
           </a>
           <span about='#test072m' property='mf:name'>dataset - shared blank nodes (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test072m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test072m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>Blank nodes shared in default and named graph</p>
           </div>
@@ -2184,7 +2184,7 @@
           </a>
           <span about='#test073c' property='mf:name'>dataset - referencing graph name</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test073c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test073c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Default graph with blank node shared with graph name</p>
           </div>
@@ -2211,7 +2211,7 @@
           </a>
           <span about='#test073m' property='mf:name'>dataset - referencing graph name (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test073m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test073m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>Default graph with blank node shared with graph name</p>
           </div>
@@ -2238,7 +2238,7 @@
           </a>
           <span about='#test074c' property='mf:name'>poison - Clique Graph (negative test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test074c' typeof='rdfc:RDFC10NegativeEvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test074c' typeof='rdfc:RDFC10NegativeEvalTest'>
           <div property='rdfs:comment'>
             <p>A 10-node Clique of blank node resources all inter-related.</p>
           </div>
@@ -2261,7 +2261,7 @@
           </a>
           <span about='#test075c' property='mf:name'>blank node - diamond (uses SHA-384)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test075c' typeof='rdfc:RDFC10EvalTest'>
+        <dd inlist='true' property='mf:entry' resource='#test075c' typeof='rdfc:RDFC10EvalTest'>
           <div property='rdfs:comment'>
             <p>Same as test020 except for using SHA-384</p>
           </div>
@@ -2288,7 +2288,7 @@
           </a>
           <span about='#test075m' property='mf:name'>blank node - diamond (uses SHA-384) (map test)</span>
         </dt>
-        <dd inlist property='mf:entry' resource='#test075m' typeof='rdfc:RDFC10MapTest'>
+        <dd inlist='true' property='mf:entry' resource='#test075m' typeof='rdfc:RDFC10MapTest'>
           <div property='rdfs:comment'>
             <p>Same as test020 except for using SHA-384</p>
           </div>
