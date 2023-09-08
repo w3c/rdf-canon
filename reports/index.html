@@ -244,7 +244,7 @@
       </ul>
     </section>
     <section id='introduction'>
-      <h2 id="introduction">Introduction</h2>
+      <h2>Introduction</h2>
       <p>This implementation report covers the implementations of the RDF Dataset Canonicalization and Hash 1.0
         specifications which have submitted test results. It is intended to be
         maintained by the <a href="https://www.w3.org/groups/wg/rch">RDF Dataset Canonicalization and Hash Working Group</a>.
@@ -266,7 +266,7 @@
         top of such libraries.</p>
     </section>
     <section id='instructions-for-submitting-implementation-reports'>
-      <h2 id="instructions-for-submitting-implementation-reports">Instructions for submitting implementation reports</h2>
+      <h2>Instructions for submitting implementation reports</h2>
       <p>Reports should be submitted in Turtle format to
         <a href="mailto:public-rch-wg@w3.org">Public RCH WG</a> or via a Pull
         Request to the <a href="https://github.com/w3c/rdf-canon/pulls">w3c/rdf-canon</a>.</p>
@@ -282,32 +282,32 @@
     earl:result [
       a earl:TestResult;
       earl:outcome earl:passed;
-      dc:date "2023-01-25T10:18:04-08:00"^^xsd:dateTime];
+      dc:date &quot;2023-01-25T10:18:04-08:00&quot;^^xsd:dateTime];
     earl:mode earl:automatic ] .
 </code></pre>
       <p>The Test Subject should be defined as a <code>doap:Project</code>, including the name,
         homepage and developer(s) of the software (see <a href="https://github.com/edumbill/doap/wiki">DOAP</a>). Optionally, including the
         project description and programming language. An example test subject description is the following:</p>
       <pre><code>  &lt;&gt; foaf:primaryTopic &lt;--your-software-identifier--&gt; ;
-    dc:issued "2016-12-26T10:18:04-08:00"^^xsd:dateTime ;
+    dc:issued &quot;2016-12-26T10:18:04-08:00&quot;^^xsd:dateTime ;
     foaf:maker &lt;--your-developer-identifier--&gt; .
 
   &lt;--your-software-identifier--&gt; a doap:Project, earl:TestSubject, earl:Software ;
-    doap:name          "My Cool RDF Canonicalizer" ;
+    doap:name          &quot;My Cool RDF Canonicalizer&quot; ;
     doap:release [
-      doap:name     "--short name wih version number--";
-      doap:revision "--Software version number--" ;
-      doap:created  "2020-02-19"^^xsd:date;
+      doap:name     &quot;--short name wih version number--&quot;;
+      doap:revision &quot;--Software version number--&quot; ;
+      doap:created  &quot;2020-02-19&quot;^^xsd:date;
     ] ;
     doap:developer     &lt;--your-developer-identifier--&gt; ;
     doap:homepage      &lt;--your-software-homepace--&gt; ;
-    doap:description   "--your-project-description--"@en ;
-    doap:programming-language "--your-implementation-language--" .
+    doap:description   &quot;--your-project-description--&quot;@en ;
+    doap:programming-language &quot;--your-implementation-language--&quot; .
 </code></pre>
       <p>The software developer, either an organization or one or more individuals SHOULD be
         referenced from <code>doap:developer</code> using <a href="http://xmlns.com/foaf/spec">FOAF</a>. For example:</p>
       <pre><code>  &lt;--your-developer-identifier--&gt; a foaf:Person, earl:Assertor;
-    foaf:name "--My Name--";
+    foaf:name &quot;--My Name--&quot;;
     foaf:homepage &lt;--my homepage--&gt; .
 </code></pre>
     </section>
@@ -1849,6 +1849,7 @@
                 <tbody>
                   <tr>
                     <td>
+                      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
                     </td>
                     <td class='passed-some'>
                       57/84 (67.9%)
@@ -1895,6 +1896,7 @@
                 <tbody>
                   <tr>
                     <td>
+                      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
                     </td>
                     <td class='passed-all'>
                       84/84 (100.0%)
@@ -1944,6 +1946,7 @@
                 <tbody>
                   <tr>
                     <td>
+                      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
                     </td>
                     <td class='passed-all'>
                       84/84 (100.0%)
@@ -1993,6 +1996,7 @@
                 <tbody>
                   <tr>
                     <td>
+                      RDF Dataset Canonicalization (RDFC-1.0) Test Suite
                     </td>
                     <td class='passed-all'>
                       84/84 (100.0%)

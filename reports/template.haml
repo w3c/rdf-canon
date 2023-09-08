@@ -388,14 +388,14 @@
               %dd
                 %table.report
                   %tbody
-                    - tests['entries'].sort_by {|m| m['title'].to_s.downcase}.each_with_index do |manifest, ndx|
+                    - tests['entries'].sort_by {|m| m['rdfs:label'].to_s.downcase}.each_with_index do |manifest, ndx|
                       - passed = passed_tests[ndx][index].to_i
                       - next if passed == 0
                       - total = manifest['entries'].length
                       - pct = (passed * 100.0) / total
                       %tr
                         %td
-                          ~ manifest['title']
+                          ~ manifest['rdfs:label']
                         %td{class: (pct == 100.0 ? 'passed-all' : (pct >= 85.0 ? 'passed-most' : 'passed-some'))}
                           = "#{passed}/#{total} (#{'%.1f' % pct}%)"
     - unless tests['assertions'].empty?
