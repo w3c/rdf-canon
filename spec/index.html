@@ -3537,7 +3537,7 @@ disclose.
       MUST NOT use the datatype IRI part of the <a data-cite="N-QUADS#grammar-production-literal">literal</a>,
       and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>.
     </li>
-    <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only uppercase letters (<code>[A-F]</code>).</li>
+    <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only digits `[0-9]` and uppercase letters (<code>[A-F]</code>).</li>
     <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>:
       <ul>
         <li>Characters
@@ -3549,13 +3549,17 @@ disclose.
           <code>&quot;</code> (quotation mark, code point <code class="codepoint">U+0022</code>), and
           <code>\</code> (backslash, code point <code class="codepoint">U+005C</code>)
           MUST be encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.</li>
-        <li>Characters in the range from <code class="codepoint">U+0000</code> to <code class="codepoint">U+001F</code>,
+        <li>Characters in the range from <code class="codepoint">U+0000</code> to <code class="codepoint">U+0007</code>,
+          <code>VT</code> (vertical tab, code point <code class="codepoint">U+000B</code>),
+          characters in the range from <code class="codepoint">U+000E</code> to <code class="codepoint">U+001F</code>,
           <code>DEL</code> (delete, code point <code class="codepoint">U+007F</code>),
           and characters not matching the <a data-cite="XML11#charsets">Char</a> production from [[XML11]]
-          that are not represented using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>
           MUST be represented by <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>
-          using the shortest possible encoding.</li>
-        <li>All other characters MUST be represented by their native [[UNICODE]] representation.</li>
+          using a lowercase <code>\u</code> with 4 <code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code>es.</li>
+        <li>All characters not required to be represented by
+          <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code> or
+          <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>
+          MUST be represented by their native [[UNICODE]] representation.</li>
       </ul>
      </li>
     <li>The token <code><a href="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).</li>
