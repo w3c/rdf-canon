@@ -158,7 +158,7 @@ class Manifest
     json_man = File.expand_path("../manifest.jsonld", __FILE__)
     manifest = ::JSON.load(File.read(json_man))
 
-    rendered = Haml::Engine.new(template, :format => :html5).render(self,
+    rendered = Haml::Template.new(format: :html5) {template}.render(self,
       man: manifest
     )
     HtmlBeautifier.beautify(rendered)
