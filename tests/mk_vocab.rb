@@ -7,6 +7,7 @@
 require 'linkeddata'
 require 'haml'
 require 'active_support'
+require 'htmlbeautifier'
 
 File.open("vocab.jsonld", "w") do |f|
   r = RDF::Repository.load("vocab.ttl")
@@ -28,7 +29,7 @@ File.open("vocab.jsonld", "w") do |f|
         classes:    compacted['@graph'].select {|o| %w(rdfs:Class rdfc:Test).include?(o['@type'])}.sort_by {|o| o['rdfs:label']},
         properties: compacted['@graph'].select {|o| o['@type'] == "rdf:Property"}.sort_by {|o| o['rdfs:label']}
       )
-      File.open("vocab.html", "w") {|fh| fh.write html}
+      File.open("vocab.html", "w") {|fh| fh.write HtmlBeautifier.beautify(html)}
     end
   end
 end
