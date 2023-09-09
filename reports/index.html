@@ -1,247 +1,296 @@
 <!DOCTYPE html>
 <html>
-<!-- This file is generated automatciallly from earl.jsonld, and should not be edited directly. -->
-<head>
-<meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
-<link href='earl.jsonld' rel='alternate' />
-<link href='https://www.w3.org/StyleSheets/TR/base' rel='stylesheet' />
-<link href='rdfjs-c14n-report.ttl' rel='related' />
-<link href='ruby-earl.ttl' rel='related' />
-<link href='rust-sophia-urdna2015.ttl' rel='related' />
-<link href='rust-zkp-ld-earl.ttl' rel='related' />
-<title>
-RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
-</title>
-<style type='text/css'>
-  /*<![CDATA[*/
-    span[property='dc:description rdfs:comment'] { display: none; }
-    td.PASS { color: green; }
-    td.FAIL { color: red; }
-    table.report {
-      border-width: 1px;
-      border-spacing: 2px;
-      border-style: outset;
-      border-color: gray;
-      border-collapse: separate;
-      background-color: white;
-    }
-    table.report th {
-      border-width: 1px;
-      padding: 1px;
-      border-style: inset;
-      border-color: gray;
-      background-color: white;
-      -moz-border-radius: ;
-    }
-    table.report td {
-      border-width: 1px;
-      padding: 1px;
-      border-style: inset;
-      border-color: gray;
-      background-color: white;
-      -moz-border-radius: ;
-    }
-    tr.summary {font-weight: bold;}
-    td.passed-all {color: green;}
-    td.passed-most {color: darkorange;}
-    td.passed-some {color: red;}
-    em.rfc2119 {
-      text-transform: lowercase;
-      font-variant:   small-caps;
-      font-style:     normal;
-      color:          #900;
-    }
-    a.testlink {
-      color: inherit;
-      text-decoration: none;
-    }
-    a.testlink:hover {
-      text-decoration: underline;
-    }
-    pre > code {
-      color: #C83500;
-    }
-    .non-normative, .non-normative a:visited, .non-normative a:link {
-      color: gray;
-    }
-    #test-manifests .report td:last-child::before {
-      position: absolute;
-      left: 1em;
-      content: "X";
-      color: red;
-      font-weight: bold;
-    }
-    #test-manifests .report tr.summary td:last-child::before,
-    #test-manifests .report .PASS ~ td.PASS:last-child::before,
-    #test-manifests .report .PASS ~ .PASS ~ td:last-child::before {
-      display: none;
-    }
-  /*]]>*/
-</style>
-</head>
-<body prefix='bibo: http://purl.org/ontology/bibo/ earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# mf: http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#' vocab='http://www.w3.org/ns/earl#'>
-<div class='head' role='contentinfo'>
-<p>
-<a href='https://www.w3.org/'>
-<img alt='W3C' height='48' src='https://www.w3.org/Icons/w3c_home' width='72' />
-</a>
-</p>
-<h1 class='title p-name' id='title' property='dc:title'>
-RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
-</h1>
-<h2 class='subtitle'>
-EARL results from the RDF Dataset Canonicalization and Hash 1.0 Test Suite
-</h2>
-<h2 id='w3c-document-28-october-2015'>
-<time class='dt-published' datetime='2023-09-08' property='dc:issued'>
-08 September 2023
-</time>
-</h2>
-<dl>
-<dt>Editor:</dt><dd inlist='inlist' property='bibo:editor'><span typeof='foaf:Person'><meta content='Gregg Kellogg' property='foaf:name' /><a property='foaf:homepage'>Gregg Kellogg</a></span></dd></dl>
-<p>
-This document is also available in these non-normative formats:
-<a href='earl.jsonld' re='alternate'>JSON-LD</a>
-.
-</p>
-<p class='copyright'>
-<a href='https://www.w3.org/Consortium/Legal/ipr-notice#Copyright'>
-Copyright
-</a>
-© 2010-2023
-<a href='https://www.w3.org/'>
-World Wide Web Consortium
-</a>
-W3C<sup>@</sup>
-<a href='http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer'>liability</a>
-,
-<a href='http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks'>trademark</a>
-and
-<a href='http://www.w3.org/Consortium/Legal/copyright-documents' rel='license'>document use</a>
-rules apply.
-</p>
-<hr />
-</div>
-<section id='abstract'>
-<h2>Abstract</h2>
-<p>
-This document report test subject conformance for and related specifications for
-<span property='doap:name'>RDF Dataset Canonicalization and Hash 1.0 Test Suite</span>
-according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema
-[<a href='https://www.w3.org/TR/EARL10-Schema/'>EARL10-SCHEMA</a>].
-</p>
-<p>
-This report is also available in alternate formats:
-<a href='earl.ttl'>
-Turtle
-</a>
-and
-<a href='earl.jsonld'>
-JSON-LD
-</a>
-</p>
-</section>
-<section id='sodt'>
-<h2 id='h-sotd' resource='#h-sotd'>
-<span property='xhv:role' resource='xhv:heading'>
-Status of This Document
-</span>
-</h2>
-<p>
-This document is merely a <abbr title='World Wide Web Consortium'>W3C</abbr>-internal  document.
-It has no official standing of any kind and does not represent consensus of the
-<abbr title='World Wide Web Consortium'>W3C</abbr>
-Membership.
-</p>
-<p>
-This report describes the state of implementation conformance at the time of publication.
-</p>
-</section>
-<section id='toc'>
-<h2 class='introductory' id='h-toc' resource='#h-toc'>
-<span property='xhv:role' resource='xhv:heading'>
-Table of Contents
-</span>
-</h2>
-<ul class='toc' id='respecContents' role='directory'>
-<li class='tocline'>
-<a class='tocxref' href='#introduction'>
-<span class='secno'>1.</span>
-Introduction
-</a>
-</li>
-<li class='tocline'>
-<a class='tocxref' href='#instructions-for-submitting-implementation-reports'>
-<span class='secno'>2.</span>
-Instructions for submitting implementation reports
-</a>
-</li>
-<li class='tocline'>
-<a class='tocxref' href='#test-manifests'>
-<span class='secno'>3.</span>
-Test Manifests
-</a>
-<ul class='toc'>
-<li class='tocline'>
-<span class='secno'>3.1</span>
-<a class='tocxref' href='#RDF-Dataset-Canonicalization-(RDFC-1.0)-Test-Suite'>
-RDF Dataset Canonicalization (RDFC-1.0) Test Suite
-</a>
-</li>
-</ul>
-</li>
-<li class='tocline'>
-<a class='tocxref' href='#test-subjects'>
-<span class='secno'>A.</span>
-Test Subjects
-</a>
-<ul class='toc'>
-<li class='tocline'>
-<span class='secno'>A.1</span>
-<a class='tocxref' href='#subj_Sophia_Rust'>
-Sophia
- (Rust)
-</a>
-</li>
-<li class='tocline'>
-<span class='secno'>A.2</span>
-<a class='tocxref' href='#subj_zkp_ld_rdf_canon_Rust'>
-zkp-ld/rdf-canon
- (Rust)
-</a>
-</li>
-<li class='tocline'>
-<span class='secno'>A.3</span>
-<a class='tocxref' href='#subj_rdfjs_c14n_TypeScript'>
-rdfjs-c14n
- (TypeScript)
-</a>
-</li>
-<li class='tocline'>
-<span class='secno'>A.4</span>
-<a class='tocxref' href='#subj_Ruby_RDF_Normalize_Ruby'>
-Ruby RDF::Normalize
- (Ruby)
-</a>
-</li>
-</ul>
-</li>
-<li class='tocline'>
-<a class='tocxref' href='#individual-test-results'>
-<span class='secno'>B.</span>
-Individual Test Results
-</a>
-</li>
-<li class='tocline'>
-<a class='tocxref' href='#report-generation-software'>
-<span class='secno'>C.</span>
-Report Generation Software
-</a>
-</li>
-</ul>
-</section>
-<section id='introduction'>
-<h2 id="introduction">Introduction</h2>
+  <!-- This file is generated automatciallly from earl.jsonld, and should not be edited directly. -->
+  <head>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <link href='earl.jsonld' rel='alternate' />
+    <link href='https://www.w3.org/StyleSheets/TR/base' rel='stylesheet' />
+    <link href='rdfjs-c14n-report.ttl' rel='related' />
+    <link href='ruby-earl.ttl' rel='related' />
+    <link href='rust-sophia-urdna2015.ttl' rel='related' />
+    <link href='rust-zkp-ld-earl.ttl' rel='related' />
+    <title>
+      RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
+    </title>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        span[property='dc:description rdfs:comment'] { display: none; }
+        td.PASS { color: green; }
+        td.FAIL { color: red; }
+        table.report {
+          border-width: 1px;
+          border-spacing: 2px;
+          border-style: outset;
+          border-color: gray;
+          border-collapse: separate;
+          background-color: white;
+        }
+        table.report th {
+          border-width: 1px;
+          padding: 1px;
+          border-style: inset;
+          border-color: gray;
+          background-color: white;
+          -moz-border-radius: ;
+        }
+        table.report td {
+          border-width: 1px;
+          padding: 1px;
+          border-style: inset;
+          border-color: gray;
+          background-color: white;
+          -moz-border-radius: ;
+        }
+        tr.summary {font-weight: bold;}
+        td.passed-all {color: green;}
+        td.passed-most {color: darkorange;}
+        td.passed-some {color: red;}
+        em.rfc2119 {
+          text-transform: lowercase;
+          font-variant:   small-caps;
+          font-style:     normal;
+          color:          #900;
+        }
+        a.testlink {
+          color: inherit;
+          text-decoration: none;
+        }
+        a.testlink:hover {
+          text-decoration: underline;
+        }
+        pre > code {
+          color: #C83500;
+        }
+        .non-normative, .non-normative a:visited, .non-normative a:link {
+          color: gray;
+        }
+        #test-manifests .report td:last-child::before {
+          position: absolute;
+          left: 1em;
+          content: "X";
+          color: red;
+          font-weight: bold;
+        }
+        #test-manifests .report tr.summary td:last-child::before,
+        #test-manifests .report .PASS ~ td.PASS:last-child::before,
+        #test-manifests .report .PASS ~ .PASS ~ td:last-child::before {
+          display: none;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body prefix='bibo: http://purl.org/ontology/bibo/ earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# mf: http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#' vocab='http://www.w3.org/ns/earl#'>
+    <div class='head' role='contentinfo'>
+      <p>
+        <a href='https://www.w3.org/'>
+          <img alt='W3C' height='48' src='https://www.w3.org/Icons/w3c_home' width='72' />
+        </a>
+      </p>
+      <h1 class='title p-name' id='title' property='dc:title'>
+        RDF Dataset Canonicalization and Hash 1.0 Processor Conformance
+      </h1>
+      <h2 class='subtitle'>
+        EARL results from the RDF Dataset Canonicalization and Hash 1.0 Test Suite
+      </h2>
+      <h2 id='w3c-document-28-october-2015'>
+        <time class='dt-published' datetime='2023-09-09' property='dc:issued'>
+          09 September 2023
+        </time>
+      </h2>
+      <dl>
+        <dt>Editor:</dt>
+        <dd inlist='true' property='bibo:editor'><span typeof='foaf:Person'><meta content='Gregg Kellogg' property='foaf:name' /><a href='' property='foaf:homepage'>Gregg Kellogg</a></span></dd>
+      </dl>
+      <p>
+        This document is also available in these non-normative formats:
+        <a href='earl.jsonld' re='alternate'>JSON-LD</a>
+        .
+      </p>
+      <p class='copyright'>
+        <a href='https://www.w3.org/Consortium/Legal/ipr-notice#Copyright'>
+          Copyright
+        </a>
+        © 2010-2023
+        <a href='https://www.w3.org/'>
+          World Wide Web Consortium
+        </a>
+        W3C<sup>@</sup>
+        <a href='http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer'>liability</a>
+        ,
+        <a href='http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks'>trademark</a>
+        and
+        <a href='http://www.w3.org/Consortium/Legal/copyright-documents' rel='license'>document use</a>
+        rules apply.
+      </p>
+      <hr />
+    </div>
+    <section id='abstract'>
+      <h2>Abstract</h2>
+      <p>
+        This document report test subject conformance for and related specifications for
+        <span property='doap:name'>RDF Dataset Canonicalization and Hash 1.0 Test Suite</span>
+        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema
+        [<a href='https://www.w3.org/TR/EARL10-Schema/'>EARL10-SCHEMA</a>].
+      </p>
+      <p>
+        This report is also available in alternate formats:
+        <a href='earl.ttl'>
+          Turtle
+        </a>
+        and
+        <a href='earl.jsonld'>
+          JSON-LD
+        </a>
+      </p>
+    </section>
+    <section id='sodt'>
+      <h2 id='h-sotd' resource='#h-sotd'>
+        <span property='xhv:role' resource='xhv:heading'>
+          Status of This Document
+        </span>
+      </h2>
+      <p>
+        This document is merely a
+        <abbr title='World Wide Web Consortium'>W3C</abbr>-internal  document.
+        It has no official standing of any kind and does not represent consensus of the
+        <abbr title='World Wide Web Consortium'>W3C</abbr>
+        Membership.
+      </p>
+      <p>
+        This report describes the state of implementation conformance at the time of publication.
+      </p>
+    </section>
+    <section id='toc'>
+      <h2 class='introductory' id='h-toc' resource='#h-toc'>
+        <span property='xhv:role' resource='xhv:heading'>
+          Table of Contents
+        </span>
+      </h2>
+      <ul class='toc' id='respecContents' role='directory'>
+        <li class='tocline'>
+          <a class='tocxref' href='#introduction'>
+            <span class='secno'>1.</span>
+            Introduction
+          </a>
+        </li>
+        <li class='tocline'>
+          <a class='tocxref' href='#instructions-for-submitting-implementation-reports'>
+            <span class='secno'>2.</span>
+            Instructions for submitting implementation reports
+          </a>
+        </li>
+        <li class='tocline'>
+          <a class='tocxref' href='#test-manifests'>
+            <span class='secno'>3.</span>
+            Test Manifests
+          </a>
+          <ul class='toc'>
+            <li class='tocline'>
+              <span class='secno'>3.1</span>
+              <a class='tocxref' href='#RDF-Dataset-Canonicalization-(RDFC-1.0)-Test-Suite'>
+                RDF Dataset Canonicalization (RDFC-1.0) Test Suite
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class='tocline'>
+          <a class='tocxref' href='#test-subjects'>
+            <span class='secno'>A.</span>
+            Test Subjects
+          </a>
+          <ul class='toc'>
+            <li class='tocline'>
+              <span class='secno'>A.1</span>
+              <a class='tocxref' href='#subj_Sophia_Rust'>
+                Sophia
+                (Rust)
+              </a>
+            </li>
+            <li class='tocline'>
+              <span class='secno'>A.2</span>
+              <a class='tocxref' href='#subj_zkp_ld_rdf_canon_Rust'>
+                zkp-ld/rdf-canon
+                (Rust)
+              </a>
+            </li>
+            <li class='tocline'>
+              <span class='secno'>A.3</span>
+              <a class='tocxref' href='#subj_rdfjs_c14n_TypeScript'>
+                rdfjs-c14n
+                (TypeScript)
+              </a>
+            </li>
+            <li class='tocline'>
+              <span class='secno'>A.4</span>
+              <a class='tocxref' href='#subj_Ruby_RDF_Normalize_Ruby'>
+                Ruby RDF::Normalize
+                (Ruby)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class='tocline'>
+          <a class='tocxref' href='#individual-test-results'>
+            <span class='secno'>B.</span>
+            Individual Test Results
+          </a>
+        </li>
+        <li class='tocline'>
+          <a class='tocxref' href='#report-generation-software'>
+            <span class='secno'>C.</span>
+            Report Generation Software
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id='introduction'>
+      <h2 id="introduction">Introduction</h2>
+      <p>This implementation report covers the implementations of the RDF Dataset Canonicalization and Hash 1.0
+        specifications which have submitted test results. It is intended to be
+        maintained by the <a href="https://www.w3.org/groups/wg/rch">RDF Dataset Canonicalization and Hash Working Group</a>.
+        The implementation report serves two purposes:</p>
+      <ol>
+        <li>
+          <p>To demonstrate that there are multiple, independent implementations of
+            the specifications. This is a prerequisite for progression of any
+            standard to Recommendation.</p>
+        </li>
+        <li>
+          <p>To catalog the known, conforming implementations and which features
+            each supports.</p>
+        </li>
+      </ol>
+      <p>There may be other <a href="https://github.com/w3c/rdf-canon/wiki/List-of-available-implementations">implementations</a> which are not listed in this
+        report, either due to not submitting tests or by not being intended as
+        direct implementations of the specification, but instead layering on
+        top of such libraries.</p>
+    </section>
+    <section id='instructions-for-submitting-implementation-reports'>
+      <h2 id="instructions-for-submitting-implementation-reports">Instructions for submitting implementation reports</h2>
+      <p>Reports should be submitted in Turtle format to
+        <a href="mailto:public-rch-wg@w3.org">Public RCH WG</a> or via a Pull
+        Request to the <a href="https://github.com/w3c/rdf-canon/pulls">w3c/rdf-canon</a>.</p>
+      <p>Tests should be run using the test manifests defined in the
+        <a href="#test-manifests">Test Manifests</a> Section.</p>
+      <p>Include an <code>earl:Assertion</code> for each test, referencing the test
+        resource from the associated manifest and the test subject being
+        reported upon. See the example below:</p>
+      <pre><code>  [ a earl:Assertion;
+    earl:assertedBy &lt;--your-developer-identifier--&gt;;
+    earl:subject &lt;--your-software-identifier--&gt;;
+    earl:test &lt;--uri-of-test-from-manifest&gt;;
+    earl:result [
+      a earl:TestResult;
+      earl:outcome earl:passed;
+      dc:date "2023-01-25T10:18:04-08:00"^^xsd:dateTime];
+    earl:mode earl:automatic ] .
+</code></pre>
+      <p>The Test Subject should be defined as a <code>doap:Project</code>, including the name,
+        homepage and developer(s) of the software (see <a href="https://github.com/edumbill/doap/wiki">DOAP</a>). Optionally, including the
+        project description and programming language. An example test subject description is the following:</p>
+      <pre><code>  &lt;&gt; foaf:primaryTopic &lt;--your-software-identifier--&gt; ;
+    dc:issued "2016-12-26T10:18:04-08:00"^^xsd:dateTime ;
+    foaf:maker &lt;--your-developer-identifier--&gt; .
 
 <p>This implementation report covers the implementations of the RDF Dataset Canonicalization and Hash 1.0
 specifications which have submitted test results. It is intended to be

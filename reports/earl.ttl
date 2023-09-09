@@ -3856,7 +3856,7 @@
    doap:release <https://github.com/gkellogg/earl-report/tree/0.8.0>;
    doap:developer <https://greggkellogg.net/foaf#me> .
 
-<https://github.com/gkellogg/earl-report/tree/0.8.0> a doap:Version;
-  doap:name "earl-report-0.8.0";
-  doap:created "2023-09-08"^^xsd:date;
-  doap:revision "0.8.0" .
+<https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
+  doap:name "earl-report-0.9.0";
+  doap:created "2023-09-09"^^xsd:date;
+  doap:revision "0.9.0" .
