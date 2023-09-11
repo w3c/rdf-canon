@@ -1,4 +1,5 @@
-task default: [ "manifests.nt", "earl.jsonld", "earl.ttl", "index.html" ]
+# task default: [ "manifests.nt", "earl.jsonld", "earl.ttl", "index.html" ]
+task default: [ "earl.jsonld", "earl.ttl", "index.html" ]
 
 desc "Create concatenated test manifests"
 file "manifests.nt" => File.expand_path("../../tests/manifest.ttl", __FILE__) do
@@ -6,10 +7,12 @@ file "manifests.nt" => File.expand_path("../../tests/manifest.ttl", __FILE__) do
   require 'json/ld'
   require 'rdf/ntriples'
   require 'rdf/turtle'
-  graph = RDF::Graph.load(
+  graph = RDF::Graph.new do |g|
+    g << RDF::Turtle::Reader.open(
     File.expand_path("../../tests/manifest.ttl", __FILE__),
     base_uri: "https://w3c.github.io/rdf-canon/tests/",
     unique_bnodes: true)
+  end
   puts "write"
   RDF::NTriples::Writer.open("manifests.nt", unique_bnodes: true, validate: false) {|w| w << graph}
 end
