@@ -2826,16 +2826,6 @@
 <section id="privacy-considerations" class="informative">
   <h2>Privacy Considerations</h2>
 
-    <p class="issue" data-number="70" title="Dataset structure might reveal information">
-Add text that warns implementers using this specification in selective
-disclosure schemes that graph structure might reveal information about the
-entity disclosing the information. For example, knowing that a blank node
-contains two triples vs. five triples might reveal that the entity that
-is disclosing the information is a part of a subclass of a population,
-which might be enough to disclose information beyond what the discloser intended to
-disclose.
-    </p>
-
     <p>The nature of the canonicalization algorithm inherently correlates its output,
       i.e., the canonical labels and the sorted order of quads, with the input dataset.
       This could pose issues, particularly when dealing with datasets containing personal information.
@@ -2847,7 +2837,7 @@ disclose.
       This specification has been designed to help make additional processing easier, but
       other specifications that build on top of this one are responsible for providing any
       specific details.
-      See the Data Integrity specification for more details about such post-processing methods.
+      See the [[[vc-data-integrity]]] [[vc-data-integrity]] for more details about such post-processing methods.
     </p>
 </section>
 
