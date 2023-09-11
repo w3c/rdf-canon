@@ -41,7 +41,7 @@
 :test001c a rdfc:RDFC10EvalTest;
   mf:name "simple id";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test001-in.nq>;
   mf:result <rdfc10/test001-rdfc10.nq>;
   .
@@ -49,7 +49,7 @@
 :test002c a rdfc:RDFC10EvalTest;
   mf:name "duplicate property iri values";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test002-in.nq>;
   mf:result <rdfc10/test002-rdfc10.nq>;
   .
@@ -57,7 +57,7 @@
 :test003c a rdfc:RDFC10EvalTest;
   mf:name "bnode";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test003-in.nq>;
   mf:result <rdfc10/test003-rdfc10.nq>;
   .
@@ -65,7 +65,7 @@
 :test003m a rdfc:RDFC10MapTest;
   mf:name "bnode (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test003-in.nq>;
   mf:result <rdfc10/test003-rdfc10map.json>;
   .
@@ -73,7 +73,7 @@
 :test004c a rdfc:RDFC10EvalTest;
   mf:name "bnode plus embed w/subject";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test004-in.nq>;
   mf:result <rdfc10/test004-rdfc10.nq>;
   .
@@ -81,7 +81,7 @@
 :test004m a rdfc:RDFC10MapTest;
   mf:name "bnode plus embed w/subject (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test004-in.nq>;
   mf:result <rdfc10/test004-rdfc10map.json>;
   .
@@ -89,7 +89,7 @@
 :test005c a rdfc:RDFC10EvalTest;
   mf:name "bnode embed";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test005-in.nq>;
   mf:result <rdfc10/test005-rdfc10.nq>;
   .
@@ -97,7 +97,7 @@
 :test005m a rdfc:RDFC10MapTest;
   mf:name "bnode embed (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test005-in.nq>;
   mf:result <rdfc10/test005-rdfc10map.json>;
   .
@@ -105,7 +105,7 @@
 :test006c a rdfc:RDFC10EvalTest;
   mf:name "multiple rdf types";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test006-in.nq>;
   mf:result <rdfc10/test006-rdfc10.nq>;
   .
@@ -113,7 +113,7 @@
 :test008c a rdfc:RDFC10EvalTest;
   mf:name "single subject complex";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test008-in.nq>;
   mf:result <rdfc10/test008-rdfc10.nq>;
   .
@@ -121,7 +121,7 @@
 :test009c a rdfc:RDFC10EvalTest;
   mf:name "multiple subjects - complex";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test009-in.nq>;
   mf:result <rdfc10/test009-rdfc10.nq>;
   .
@@ -129,7 +129,7 @@
 :test010c a rdfc:RDFC10EvalTest;
   mf:name "type";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test010-in.nq>;
   mf:result <rdfc10/test010-rdfc10.nq>;
   .
@@ -137,7 +137,7 @@
 :test011c a rdfc:RDFC10EvalTest;
   mf:name "type-coerced type";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test011-in.nq>;
   mf:result <rdfc10/test011-rdfc10.nq>;
   .
@@ -145,7 +145,7 @@
 :test013c a rdfc:RDFC10EvalTest;
   mf:name "type-coerced type, cycle";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test013-in.nq>;
   mf:result <rdfc10/test013-rdfc10.nq>;
   .
@@ -153,7 +153,7 @@
 :test014c a rdfc:RDFC10EvalTest;
   mf:name "check types";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test014-in.nq>;
   mf:result <rdfc10/test014-rdfc10.nq>;
   .
@@ -161,7 +161,7 @@
 :test016c a rdfc:RDFC10EvalTest;
   mf:name "blank node - dual link - embed";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test016-in.nq>;
   mf:result <rdfc10/test016-rdfc10.nq>;
   .
@@ -169,7 +169,7 @@
 :test016m a rdfc:RDFC10MapTest;
   mf:name "blank node - dual link - embed (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test016-in.nq>;
   mf:result <rdfc10/test016-rdfc10map.json>;
   .
@@ -177,7 +177,7 @@
 :test017c a rdfc:RDFC10EvalTest;
   mf:name "blank node - dual link - non-embed";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test017-in.nq>;
   mf:result <rdfc10/test017-rdfc10.nq>;
   .
@@ -185,7 +185,7 @@
 :test017m a rdfc:RDFC10MapTest;
   mf:name "blank node - dual link - non-embed (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test017-in.nq>;
   mf:result <rdfc10/test017-rdfc10map.json>;
   .
@@ -193,7 +193,7 @@
 :test018c a rdfc:RDFC10EvalTest;
   mf:name "blank node - self link";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test018-in.nq>;
   mf:result <rdfc10/test018-rdfc10.nq>;
   .
@@ -201,7 +201,7 @@
 :test018m a rdfc:RDFC10MapTest;
   mf:name "blank node - self link (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test018-in.nq>;
   mf:result <rdfc10/test018-rdfc10map.json>;
   .
@@ -209,7 +209,7 @@
 :test019c a rdfc:RDFC10EvalTest;
   mf:name "blank node - disjoint self links";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test019-in.nq>;
   mf:result <rdfc10/test019-rdfc10.nq>;
   .
@@ -217,7 +217,7 @@
 :test020c a rdfc:RDFC10EvalTest;
   mf:name "blank node - diamond";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test020-in.nq>;
   mf:result <rdfc10/test020-rdfc10.nq>;
   .
@@ -225,7 +225,7 @@
 :test020m a rdfc:RDFC10MapTest;
   mf:name "blank node - diamond (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test020-in.nq>;
   mf:result <rdfc10/test020-rdfc10map.json>;
   .
@@ -233,7 +233,7 @@
 :test021c a rdfc:RDFC10EvalTest;
   mf:name "blank node - circle of 2";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test021-in.nq>;
   mf:result <rdfc10/test021-rdfc10.nq>;
   .
@@ -241,7 +241,7 @@
 :test022c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 2";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test022-in.nq>;
   mf:result <rdfc10/test022-rdfc10.nq>;
   .
@@ -249,7 +249,7 @@
 :test023c a rdfc:RDFC10EvalTest;
   mf:name "blank node - circle of 3";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test023-in.nq>;
   mf:result <rdfc10/test023-rdfc10.nq>;
   .
@@ -257,7 +257,7 @@
 :test024c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-1-2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test024-in.nq>;
   mf:result <rdfc10/test024-rdfc10.nq>;
   .
@@ -265,7 +265,7 @@
 :test025c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-2-1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test025-in.nq>;
   mf:result <rdfc10/test025-rdfc10.nq>;
   .
@@ -273,7 +273,7 @@
 :test026c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-0-2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test026-in.nq>;
   mf:result <rdfc10/test026-rdfc10.nq>;
   .
@@ -281,7 +281,7 @@
 :test027c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-2-0)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test027-in.nq>;
   mf:result <rdfc10/test027-rdfc10.nq>;
   .
@@ -289,7 +289,7 @@
 :test028c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-1-0)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test028-in.nq>;
   mf:result <rdfc10/test028-rdfc10.nq>;
   .
@@ -297,7 +297,7 @@
 :test029c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-0-1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test029-in.nq>;
   mf:result <rdfc10/test029-rdfc10.nq>;
   .
@@ -305,7 +305,7 @@
 :test030c a rdfc:RDFC10EvalTest;
   mf:name "blank node - point at circle of 3";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test030-in.nq>;
   mf:result <rdfc10/test030-rdfc10.nq>;
   .
@@ -313,7 +313,7 @@
 :test030m a rdfc:RDFC10MapTest;
   mf:name "blank node - point at circle of 3 (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test030-in.nq>;
   mf:result <rdfc10/test030-rdfc10map.json>;
   .
@@ -321,7 +321,7 @@
 :test033c a rdfc:RDFC10EvalTest;
   mf:name "disjoint identical subgraphs (1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test033-in.nq>;
   mf:result <rdfc10/test033-rdfc10.nq>;
   .
@@ -329,7 +329,7 @@
 :test034c a rdfc:RDFC10EvalTest;
   mf:name "disjoint identical subgraphs (2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test034-in.nq>;
   mf:result <rdfc10/test034-rdfc10.nq>;
   .
@@ -337,7 +337,7 @@
 :test035c a rdfc:RDFC10EvalTest;
   mf:name "reordered w/strings (1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test035-in.nq>;
   mf:result <rdfc10/test035-rdfc10.nq>;
   .
@@ -345,7 +345,7 @@
 :test036c a rdfc:RDFC10EvalTest;
   mf:name "reordered w/strings (2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test036-in.nq>;
   mf:result <rdfc10/test036-rdfc10.nq>;
   .
@@ -353,7 +353,7 @@
 :test038c a rdfc:RDFC10EvalTest;
   mf:name "reordered 4 bnodes, reordered 2 properties (1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test038-in.nq>;
   mf:result <rdfc10/test038-rdfc10.nq>;
   .
@@ -361,7 +361,7 @@
 :test039c a rdfc:RDFC10EvalTest;
   mf:name "reordered 4 bnodes, reordered 2 properties (2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test039-in.nq>;
   mf:result <rdfc10/test039-rdfc10.nq>;
   .
@@ -369,7 +369,7 @@
 :test040c a rdfc:RDFC10EvalTest;
   mf:name "reordered 6 bnodes (1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test040-in.nq>;
   mf:result <rdfc10/test040-rdfc10.nq>;
   .
@@ -377,7 +377,7 @@
 :test043c a rdfc:RDFC10EvalTest;
   mf:name "literal with language";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test043-in.nq>;
   mf:result <rdfc10/test043-rdfc10.nq>;
   .
@@ -386,7 +386,7 @@
   mf:name "poison – evil (1)";
   rdfs:comment "A poison graph which is computable given defined limits.";
   rdfc:computationalComplexity "high";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test044-in.nq>;
   mf:result <rdfc10/test044-rdfc10.nq>;
   .
@@ -395,7 +395,7 @@
   mf:name "poison – evil (2)";
   rdfs:comment "A poison graph which is computable given defined limits.";
   rdfc:computationalComplexity "high";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test045-in.nq>;
   mf:result <rdfc10/test045-rdfc10.nq>;
   .
@@ -404,7 +404,7 @@
   mf:name "poison – evil (3)";
   rdfs:comment "A poison graph which is computable given defined limits.";
   rdfc:computationalComplexity "high";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test046-in.nq>;
   mf:result <rdfc10/test046-rdfc10.nq>;
   .
@@ -412,7 +412,7 @@
 :test047c a rdfc:RDFC10EvalTest;
   mf:name "deep diff (1)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test047-in.nq>;
   mf:result <rdfc10/test047-rdfc10.nq>;
   .
@@ -420,7 +420,7 @@
 :test047m a rdfc:RDFC10MapTest;
   mf:name "deep diff (1) (map test)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test047-in.nq>;
   mf:result <rdfc10/test047-rdfc10map.json>;
   .
@@ -428,7 +428,7 @@
 :test048c a rdfc:RDFC10EvalTest;
   mf:name "deep diff (2)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test048-in.nq>;
   mf:result <rdfc10/test048-rdfc10.nq>;
   .
@@ -436,7 +436,7 @@
 :test048m a rdfc:RDFC10MapTest;
   mf:name "deep diff (2) (map test)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test048-in.nq>;
   mf:result <rdfc10/test048-rdfc10map.json>;
   .
@@ -445,7 +445,7 @@
   mf:name "@list";
   rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test053-in.nq>;
   mf:result <rdfc10/test053-rdfc10.nq>;
   .
@@ -454,7 +454,7 @@
   mf:name "@list (map test)";
   rdfs:comment "RDF Collections using rdf:first/rest ladders.";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test053-in.nq>;
   mf:result <rdfc10/test053-rdfc10map.json>;
   .
@@ -462,7 +462,7 @@
 :test054c a rdfc:RDFC10EvalTest;
   mf:name "t-graph";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test054-in.nq>;
   mf:result <rdfc10/test054-rdfc10.nq>;
   .
@@ -470,7 +470,7 @@
 :test055c a rdfc:RDFC10EvalTest;
   mf:name "simple reorder (1)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test055-in.nq>;
   mf:result <rdfc10/test055-rdfc10.nq>;
   .
@@ -478,7 +478,7 @@
 :test055m a rdfc:RDFC10MapTest;
   mf:name "simple reorder (1) (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test055-in.nq>;
   mf:result <rdfc10/test055-rdfc10map.json>;
   .
@@ -486,7 +486,7 @@
 :test056c a rdfc:RDFC10EvalTest;
   mf:name "simple reorder (2)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test056-in.nq>;
   mf:result <rdfc10/test056-rdfc10.nq>;
   .
@@ -494,7 +494,7 @@
 :test056m a rdfc:RDFC10MapTest;
   mf:name "simple reorder (2) (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test056-in.nq>;
   mf:result <rdfc10/test056-rdfc10map.json>;
   .
@@ -502,7 +502,7 @@
 :test057c a rdfc:RDFC10EvalTest;
   mf:name "unnamed graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test057-in.nq>;
   mf:result <rdfc10/test057-rdfc10.nq>;
   .
@@ -510,7 +510,7 @@
 :test057m a rdfc:RDFC10MapTest;
   mf:name "unnamed graph (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test057-in.nq>;
   mf:result <rdfc10/test057-rdfc10map.json>;
   .
@@ -518,7 +518,7 @@
 :test058c a rdfc:RDFC10EvalTest;
   mf:name "unnamed graph with blank node objects";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test058-in.nq>;
   mf:result <rdfc10/test058-rdfc10.nq>;
   .
@@ -526,7 +526,7 @@
 :test059c a rdfc:RDFC10EvalTest;
   mf:name "n-quads parsing";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test059-in.nq>;
   mf:result <rdfc10/test059-rdfc10.nq>;
   .
@@ -534,7 +534,7 @@
 :test060c a rdfc:RDFC10EvalTest;
   mf:name "n-quads escaping";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test060-in.nq>;
   mf:result <rdfc10/test060-rdfc10.nq>;
   .
@@ -542,7 +542,7 @@
 :test060m a rdfc:RDFC10MapTest;
   mf:name "n-quads escaping (map test)";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test060-in.nq>;
   mf:result <rdfc10/test060-rdfc10map.json>;
   .
@@ -550,7 +550,7 @@
 :test061c a rdfc:RDFC10EvalTest;
   mf:name "same literal value with multiple languages";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test061-in.nq>;
   mf:result <rdfc10/test061-rdfc10.nq>;
   .
@@ -558,7 +558,7 @@
 :test062c a rdfc:RDFC10EvalTest;
   mf:name "same literal value with multiple datatypes";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test062-in.nq>;
   mf:result <rdfc10/test062-rdfc10.nq>;
   .
@@ -567,7 +567,7 @@
   mf:name "blank node - diamond (with _:b)";
   rdfs:comment "This duplicates #test020, but uses _:b as a blank node prefix";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test063-in.nq>;
   mf:result <rdfc10/test063-rdfc10.nq>;
   .
@@ -576,7 +576,7 @@
   mf:name "blank node - diamond (with _:b) (map test)";
   rdfs:comment "This duplicates #test020, but uses _:b as a blank node prefix";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test063-in.nq>;
   mf:result <rdfc10/test063-rdfc10map.json>;
   .
@@ -584,7 +584,7 @@
 :test064c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-1-2, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test064-in.nq>;
   mf:result <rdfc10/test064-rdfc10.nq>;
   .
@@ -592,7 +592,7 @@
 :test065c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (0-2-1, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test065-in.nq>;
   mf:result <rdfc10/test065-rdfc10.nq>;
   .
@@ -600,7 +600,7 @@
 :test066c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-0-2, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test066-in.nq>;
   mf:result <rdfc10/test066-rdfc10.nq>;
   .
@@ -608,7 +608,7 @@
 :test067c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (1-2-0, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test067-in.nq>;
   mf:result <rdfc10/test067-rdfc10.nq>;
   .
@@ -616,7 +616,7 @@
 :test068c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-1-0, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test068-in.nq>;
   mf:result <rdfc10/test068-rdfc10.nq>;
   .
@@ -624,7 +624,7 @@
 :test069c a rdfc:RDFC10EvalTest;
   mf:name "blank node - double circle of 3 (2-0-1, reversed)";
   rdfc:computationalComplexity "medium";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test069-in.nq>;
   mf:result <rdfc10/test069-rdfc10.nq>;
   .
@@ -633,7 +633,7 @@
   mf:name "dataset - isomorphic default and iri named";
   rdfs:comment "Isomorphic graphs in default and IRI named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test070-in.nq>;
   mf:result <rdfc10/test070-rdfc10.nq>;
   .
@@ -642,7 +642,7 @@
   mf:name "dataset - isomorphic default and iri named (map test)";
   rdfs:comment "Isomorphic graphs in default and IRI named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test070-in.nq>;
   mf:result <rdfc10/test070-rdfc10map.json>;
   .
@@ -651,7 +651,7 @@
   mf:name "dataset - isomorphic default and node named";
   rdfs:comment "Isomorphic graphs in default and blank node named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test071-in.nq>;
   mf:result <rdfc10/test071-rdfc10.nq>;
   .
@@ -660,7 +660,7 @@
   mf:name "dataset - isomorphic default and node named (map test)";
   rdfs:comment "Isomorphic graphs in default and blank node named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test071-in.nq>;
   mf:result <rdfc10/test071-rdfc10map.json>;
   .
@@ -669,7 +669,7 @@
   mf:name "dataset - shared blank nodes";
   rdfs:comment "Blank nodes shared in default and named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test072-in.nq>;
   mf:result <rdfc10/test072-rdfc10.nq>;
   .
@@ -678,7 +678,7 @@
   mf:name "dataset - shared blank nodes (map test)";
   rdfs:comment "Blank nodes shared in default and named graph";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test072-in.nq>;
   mf:result <rdfc10/test072-rdfc10map.json>;
   .
@@ -687,7 +687,7 @@
   mf:name "dataset - referencing graph name";
   rdfs:comment "Default graph with blank node shared with graph name";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test073-in.nq>;
   mf:result <rdfc10/test073-rdfc10.nq>;
   .
@@ -696,7 +696,7 @@
   mf:name "dataset - referencing graph name (map test)";
   rdfs:comment "Default graph with blank node shared with graph name";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test073-in.nq>;
   mf:result <rdfc10/test073-rdfc10map.json>;
   .
@@ -705,7 +705,7 @@
   mf:name "poison - Clique Graph (negative test)";
   rdfs:comment "A 10-node Clique of blank node resources all inter-related.";
   rdfc:computationalComplexity "high";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test074-in.nq>;
   .
 
@@ -714,7 +714,7 @@
   rdfs:comment "Same as test020 except for using SHA-384";
   rdfc:hashAlgorithm "SHA384";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test075-in.nq>;
   mf:result <rdfc10/test075-rdfc10.nq>;
   .
@@ -724,7 +724,7 @@
   rdfs:comment "Same as test020 except for using SHA-384";
   rdfc:hashAlgorithm "SHA384";
   rdfc:computationalComplexity "low";
-  rdft:approval rdft:Proposed;
+  rdft:approval rdft:Approved;
   mf:action <rdfc10/test075-in.nq>;
   mf:result <rdfc10/test075-rdfc10map.json>;
   .
