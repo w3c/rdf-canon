@@ -398,7 +398,7 @@
       <dd>
         The canonicalized representation of a quad is defined in <a href="#canonical-quads" class="sectionRef"></a>.
         A quad in <a>canonical n-quads form</a> represents a <a>graph name</a>, if present, in the same manner as
-        a <a>subject</a>, and each quad is terminated with a single new line character (`U+000A`).
+        a <a>subject</a>, and each quad is terminated with a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).
       </dd>
       <dt><dfn data-lt="quad|quads" class="no-export">quad</dfn></dt>
       <dd>A tuple composed of <a>subject</a>, <a>predicate</a>, <a>object</a>, and <a>graph name</a>.
@@ -3531,30 +3531,39 @@ disclose.
       <code>predicate</code>, 
       <code>object</code>,
       and <code>graphLabel</code>,
-      each of which MUST be a single space (<code>U+0020</code>).</li>
+      each of which MUST be a single space (code point <code class="codepoint">U+0020</code>).</li>
     <li><a data-cite="RDF11-CONCEPTS#dfn-literal">Literals</a> with the
       datatype <code>http://www.w3.org/2001/XMLSchema#string</code>
       MUST NOT use the datatype IRI part of the <a data-cite="N-QUADS#grammar-production-literal">literal</a>,
       and are represented using only <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>.
     </li>
-    <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only uppercase letters (<code>[A-F]</code>).</li>
-    <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>,
-      the characters
-      <code>U+0008</code> (<code title="BACKSPACE"><sub>BS</sub></code>),
-      <code>U+0009</code> (<code title="HORIZONTAL TAB"><sub>HT</sub></code>),
-      <code>U+000A</code> (<code title="LINE FEED"><sub>LF</sub></code>),
-      <code>U+000C</code> (<code title="FORM FEED"><sub>FF</sub></code>),
-      <code>U+000D</code>  (<code title="CARRIAGE RETURN"><sub>CR</sub></code>),
-      <code>U+0022</code> (<code title="DOUBLE QUOTE">&quot;</code>), and
-      <code>U+005C</code> (<code title="BACKSLASH">\</code>)
-      MUST be encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.
-      Characters in the range from <code>U+0000</code> to <code>U+001F</code>
-      and <code>U+007F</code>  (<code title="delete"><sub>DEL</sub></code>)
-      that are not represented using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>
-      MUST be represented by <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>.
-      All other characters MUST be represented by their native [[UNICODE]] representation.</li>
-    <li>The token <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>U+000A</code>.</li>
-    <li>The final <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
+    <li><code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code> MUST use only digits (<code>[0-9]</code>) and uppercase letters (<code>[A-F]</code>).</li>
+    <li>Within <a data-cite="N-QUADS#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE</a>:
+      <ul>
+        <li>Characters
+          <code>BS</code> (backspace, code point <code class="codepoint">U+0008</code>),
+          <code>HT</code> (horizontal tab, code point <code class="codepoint">U+0009</code>),
+          <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>),
+          <code>FF</code> (form feed, code point <code class="codepoint">U+000C</code>),
+          <code>CR</code> (carriage return, code point <code class="codepoint">U+000D</code>),
+          <code>&quot;</code> (quotation mark, code point <code class="codepoint">U+0022</code>), and
+          <code>\</code> (backslash, code point <code class="codepoint">U+005C</code>)
+          MUST be encoded using <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code>.</li>
+        <li>Characters in the range from <code class="codepoint">U+0000</code> to <code class="codepoint">U+0007</code>,
+          <code>VT</code> (vertical tab, code point <code class="codepoint">U+000B</code>),
+          characters in the range from <code class="codepoint">U+000E</code> to <code class="codepoint">U+001F</code>,
+          <code>DEL</code> (delete, code point <code class="codepoint">U+007F</code>),
+          and characters not matching the <a data-cite="XML11#charsets">Char</a> production from [[XML11]]
+          MUST be represented by <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>
+          using a lowercase <code>\u</code> with 4 <code><a data-cite="N-QUADS#grammar-production-HEX">HEX</a></code>es.</li>
+        <li>All characters not required to be represented by
+          <code><a data-cite="N-QUADS#grammar-production-ECHAR">ECHAR</a></code> or
+          <code><a data-cite="N-QUADS#grammar-production-UCHAR">UCHAR</a></code>
+          MUST be represented by their native [[UNICODE]] representation.</li>
+      </ul>
+     </li>
+    <li>The token <code><a href="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).</li>
+    <li>The final <code><a href="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
   </ul>  
 </section>
 

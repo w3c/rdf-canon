@@ -40,3 +40,4 @@
 <urn:ex:s:006> <urn:ex:037> "o" <urn:ex:∞> .
 <urn:ex:s:006> <urn:ex:038> "o" <urn:ex:∞> .
 <urn:ex:s:006> <urn:ex:039> "\t <>\"{}|^`\\" .
+<urn:ex:s:007> <urn:ex:040> "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F" .
