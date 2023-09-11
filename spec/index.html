@@ -280,8 +280,6 @@
       it may be possible to correlate the original blank node identifiers
       used within that N-Quads document with those issued in the
       <a>canonicalized dataset</a>.</p>
-
-    <div class="issue" data-number="19"></div>
   </section>
 
   <section id="how-to-read">
@@ -371,9 +369,10 @@
       <dd>The lowercase, hexadecimal representation of a message digest.</dd>
       <dt><dfn>hash algorithm</dfn></dt>
       <dd>The default hash algorithm used by <a>RDFC-1.0</a>, namely, SHA-256 [[FIPS-180-4]].
-        <p>Implementations can be written to parameterize the
-          hash algorithm without any other changes. Using a different
-          hash algorithm will generally result in different output than
+        <p>Implementations MUST support a parameter to define the <a>hash algorithm</a>,
+          MUST support SHA-256 and SHA-384 [[FIPS-180-4]],
+          and SHOULD support the ability to specify other hash algorithms.
+          Using a different hash algorithm will generally result in different output than
           using the default.</p>
       </dd>
       <dt><dfn>mention</dfn></dt>
@@ -631,9 +630,6 @@
 
   <section id="canon-algorithm" class="algorithm">
     <h2>Canonicalization Algorithm</h2>
-
-    <p class="ednote">At the time of writing, there are several open issues that will determine important details of the canonicalization algorithm.</p>
-    <div class="issue" data-number="98"></div>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
       into a <a>canonicalized dataset</a>. This algorithm will assign
