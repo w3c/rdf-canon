@@ -284,13 +284,15 @@
       used within that N-Quads document with those issued in the
       <a>canonicalized dataset</a>.</p>
 
-    <p class="note">Although alternative <a>hash algorithms</a> may be used
+    <p class="note">Although alternative <a>hash algorithms</a> might be used
       with this specification,
-      applications should carefully weigh the advantages
+      applications ought to carefully weigh the advantages
       and disadvantates of using an alternative hash function.
       This is the case, in particular, for any representation of the <a>canonical n-quads form</a>
       or <a>issued identifiers map</a>
-      without identifying the associated hash algorithm.
+      that does not identify the associated hash algorithm. Any use case
+      that requires reproduction of the same output is expected to
+      unequivocally express or communicate the hash algorithm.
     </p>
   </section>
 
@@ -387,8 +389,9 @@
           Using a different hash algorithm will generally result in different output than
           using the default.</p>
 
-        <p class="note">There is no expectation that the default hash function
-          is also used to create a hash signature of the canonical N-Quads result.</p>
+        <p class="note">There is no expectation that the default hash algorithm
+          will also be used by any application creating a hash digest of the
+          canonical N-Quads result.</p>
       </dd>
       <dt><dfn>mention</dfn></dt>
       <dd>
