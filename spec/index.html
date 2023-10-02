@@ -270,7 +270,7 @@
       As a result, a graph signature can be obtained by hashing a canonical serialization
       of the resulting <a>canonicalized dataset</a>,
       allowing for the isomorphism and digital signing use cases.
-      This algorithm does not define such a graph signature.</p>
+      This specification does not define such a graph signature.</p>
 
     <p>As blank node identifiers can be stable even with other changes to a graph (dataset),
       in some cases it is possible to compute the difference between two graphs (datasets),
@@ -287,7 +287,7 @@
     <p class="note">Although alternative <a>hash algorithms</a> might be used
       with this specification,
       applications ought to carefully weigh the advantages
-      and disadvantates of using an alternative hash function.
+      and disadvantages of using an alternative hash function.
       This is the case, in particular, for any representation of the <a>canonical n-quads form</a>
       or <a>issued identifiers map</a>
       that does not identify the associated hash algorithm. Any use case
@@ -2899,12 +2899,12 @@
       hash function, without the need to make any changes to the
       canonicalization algorithm itself.
       However, using a different hash algorithm will generally lead to different results;
-      applications making use of this specification should carfully weigh the advantages
-      and disadvantates of using an alternative hash function.
+      applications making use of this specification should carefully weigh the advantages
+      and disadvantages of using an alternative hash function.
     </p>
 
     <p class="note">The possible implications of the default hash algorithm
-      becoming insecure are mitegated by that fact that no internal hash
+      becoming insecure are mitigated by that fact that no internal hash
       values are revealed, and the algorithms are designed to cope
       with hash collisions.</p>
   </section>
