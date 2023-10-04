@@ -270,7 +270,9 @@
       As a result, a graph signature can be obtained by hashing a canonical serialization
       of the resulting <a>canonicalized dataset</a>,
       allowing for the isomorphism and digital signing use cases.
-      As blank node identifiers can be stable even with other changes to a graph (dataset),
+      This specification does not define such a graph signature.</p>
+
+    <p>As blank node identifiers can be stable even with other changes to a graph (dataset),
       in some cases it is possible to compute the difference between two graphs (datasets),
       for example if changes are made only to ground triples,
       or if new blank nodes are introduced which do not create an automorphic confusion
@@ -281,6 +283,19 @@
       it may be possible to correlate the original blank node identifiers
       used within that N-Quads document with those issued in the
       <a>canonicalized dataset</a>.</p>
+
+    <p class="note">Although alternative <a>hash algorithms</a> might be used
+      with this specification,
+      applications ought to carefully weigh the advantages
+      and disadvantages of using an alternative hash function.
+      This is the case, in particular, for any representation of the <a>canonical n-quads form</a>
+      or <a>issued identifiers map</a>
+      that does not identify the associated hash algorithm. Any use case
+      that requires reproduction of the same output is expected to
+      unequivocally express or communicate the internal 
+      hash algorithm that was used when generating 
+      the <a>canonical n-quads form</a>.
+    </p>
   </section>
 
   <section id="how-to-read">
@@ -375,6 +390,10 @@
           and SHOULD support the ability to specify other hash algorithms.
           Using a different hash algorithm will generally result in different output than
           using the default.</p>
+
+        <p class="note">There is no expectation that the default hash algorithm
+          will also be used by any application creating a hash digest of the
+          canonical N-Quads result.</p>
       </dd>
       <dt><dfn>mention</dfn></dt>
       <dd>
@@ -2881,8 +2900,15 @@
       and implementations of it can be parameterized to use a different
       hash function, without the need to make any changes to the
       canonicalization algorithm itself.
-      However, using a different hash algorithm will generally lead to different results.
+      However, using a different hash algorithm will generally lead to different results;
+      applications making use of this specification should carefully weigh the advantages
+      and disadvantages of using an alternative hash function.
     </p>
+
+    <p class="note">The possible implications of the default hash algorithm
+      becoming insecure are mitigated by that fact that no internal hash
+      values are revealed, and the canonicalization algorithm is designed to cope
+      with first-degree hash collisions.</p>
   </section>
 
 </section>
