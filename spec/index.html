@@ -292,7 +292,9 @@
       or <a>issued identifiers map</a>
       that does not identify the associated hash algorithm. Any use case
       that requires reproduction of the same output is expected to
-      unequivocally express or communicate the hash algorithm.
+      unequivocally express or communicate the internal 
+      hash algorithm that was used when generating 
+      the <a>canonical n-quads form</a>.
     </p>
   </section>
 
@@ -2906,7 +2908,7 @@
     <p class="note">The possible implications of the default hash algorithm
       becoming insecure are mitigated by that fact that no internal hash
       values are revealed, and the algorithms are designed to cope
-      with hash collisions.</p>
+      with first-degree hash collisions.</p>
   </section>
 
 </section>
