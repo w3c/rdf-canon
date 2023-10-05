@@ -16,7 +16,7 @@ jobs:
         with:
           TOOLCHAIN: respec
           SOURCE: spec/index.html
-          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}
+          # W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}
           VALIDATE_LINKS: false
           VALIDATE_MARKUP: true
           ACTIONS_STEP_DEBUG: true
