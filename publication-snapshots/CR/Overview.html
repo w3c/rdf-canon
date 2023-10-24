@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 34.1.8">
+<meta name="generator" content="ReSpec 34.2.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 span.example-title{text-transform:none}
@@ -215,7 +215,7 @@ ul.index code{color:inherit}
   "name": "RDF Dataset Canonicalization",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2023/software-license",
-  "datePublished": "2023-10-04",
+  "datePublished": "2023-10-31",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -228,7 +228,7 @@ ul.index code{color:inherit}
     {
       "type": "Person",
       "name": "Dave Longley",
-      "url": "https://digitalbazaar.com/author/dlongley/",
+      "url": "https://github.com/dlongley",
       "worksFor": {
         "name": "Digital Bazaar",
         "url": "https://digitalbazaar.com/"
@@ -249,7 +249,7 @@ ul.index code{color:inherit}
     {
       "type": "Person",
       "name": "Dave Longley",
-      "url": "https://digitalbazaar.com/author/dlongley/",
+      "url": "https://github.com/dlongley",
       "worksFor": {
         "name": "Digital Bazaar",
         "url": "https://digitalbazaar.com/"
@@ -549,6 +549,20 @@ ul.index code{color:inherit}
       }
     },
     {
+      "id": "https://www.w3.org/TR/rch-explainer/",
+      "type": "TechArticle",
+      "name": "RDF Dataset Canonicalization and Hash Working Group — Explainer and Use Cases",
+      "url": "https://www.w3.org/TR/rch-explainer/",
+      "creator": [
+        {
+          "name": "Phil Archer"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
       "id": "https://aidanhogan.com/docs/rdf-canonicalisation.pdf",
       "type": "TechArticle",
       "name": "Canonical Forms for Isomorphic and Equivalent RDF Graphs: Algorithms for Leaning and Labelling Blank Nodes",
@@ -658,7 +672,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "editors": [
     {
       "name": "Dave Longley",
-      "url": "https://digitalbazaar.com/author/dlongley/",
+      "url": "https://github.com/dlongley",
       "w3cid": "48025",
       "company": "Digital Bazaar",
       "companyURL": "https://digitalbazaar.com/"
@@ -677,7 +691,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "formerEditors": [
     {
       "name": "Manu Sporny",
-      "url": "http://manu.sporny.org/",
+      "url": "https://www.linkedin.com/in/manusporny/",
       "w3cid": "41758",
       "company": "Digital Bazaar",
       "companyURL": "https://digitalbazaar.com/",
@@ -687,13 +701,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "authors": [
     {
       "name": "Dave Longley",
-      "url": "https://digitalbazaar.com/author/dlongley/",
+      "url": "https://github.com/dlongley",
       "w3cid": "48025",
       "company": "Digital Bazaar",
       "companyURL": "https://digitalbazaar.com/"
     }
   ],
   "group": "rch",
+  "crEnd": "2023-11-28",
   "testSuiteURI": "https://w3c.github.io/rdf-canon/tests/",
   "implementationReportURI": "https://w3c.github.io/rdf-canon/reports/",
   "xref": [
@@ -704,9 +719,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "lint": {
     "informative-dfn": false
   },
-  "crEnd": "2023-11-09",
-  "publishISODate": "2023-10-04T00:00:00.000Z",
-  "generatedSubtitle": "W3C Candidate Recommendation Snapshot 04 October 2023"
+  "publishDate": "2023-10-31",
+  "publishISODate": "2023-10-31T00:00:00.000Z",
+  "generatedSubtitle": "W3C Candidate Recommendation Snapshot 31 October 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-CR"></head>
 
@@ -714,12 +729,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">RDF Dataset Canonicalization</h1> <h2 id="subtitle" class="subtitle">A Standard RDF Dataset Canonicalization Algorithm</h2>
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#CR">W3C Candidate Recommendation Snapshot</a> <time class="dt-published" datetime="2023-10-04">04 October 2023</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#CR">W3C Candidate Recommendation Snapshot</a> <time class="dt-published" datetime="2023-10-31">31 October 2023</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/2023/CR-rdf-canon-20231004/">https://www.w3.org/TR/2023/CR-rdf-canon-20231004/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2023/CR-rdf-canon-20231031/">https://www.w3.org/TR/2023/CR-rdf-canon-20231031/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/rdf-canon/">https://www.w3.org/TR/rdf-canon/</a>
@@ -738,7 +753,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         
         <dt>Editors:</dt><dd class="editor p-author h-card vcard" data-editor-id="48025">
-    <a class="u-url url p-name fn" href="https://digitalbazaar.com/author/dlongley/">Dave Longley</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>)
+    <a class="u-url url p-name fn" href="https://github.com/dlongley">Dave Longley</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="44770">
     <a class="u-url url p-name fn" href="https://greggkellogg.net/">Gregg Kellogg</a>
   </dd><dd class="editor p-author h-card vcard" data-editor-id="139477">
@@ -747,10 +762,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <dt>
                 Former editor:
               </dt><dd class="editor p-author h-card vcard" data-editor-id="41758">
-    <a class="u-url url p-name fn" href="http://manu.sporny.org/">Manu Sporny</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>) (CG Report)
+    <a class="u-url url p-name fn" href="https://www.linkedin.com/in/manusporny/">Manu Sporny</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>) (CG Report)
   </dd>
         <dt>Author:</dt><dd class="editor p-author h-card vcard" data-editor-id="48025">
-    <a class="u-url url p-name fn" href="https://digitalbazaar.com/author/dlongley/">Dave Longley</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>)
+    <a class="u-url url p-name fn" href="https://github.com/dlongley">Dave Longley</a> (<a class="p-org org h-org" href="https://digitalbazaar.com/">Digital Bazaar</a>)
   </dd>
         <dt>Feedback:</dt><dd>
         <a href="https://github.com/w3c/rdf-canon/">GitHub w3c/rdf-canon</a>
@@ -805,6 +820,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     normatively in this specification with the expectation
     that a future update to this specification will replace those with normative
     references to updated RDF specifications.</p>
+
+  <p>To successfully advance to Proposed Recommendation,
+    each test in the <a href="https://w3c.github.io/rdf-canon/tests/">test suite</a>
+    <em class="rfc2119">MUST</em> be passed by at least three independent implementations.
+    Two independent implementations <em class="rfc2119">MUST</em> pass all tests.</p>
 <p>
     This document was published by the <a href="https://www.w3.org/groups/wg/rch">RDF Dataset Canonicalization and Hash Working Group</a> as
     a Candidate Recommendation Snapshot using the
@@ -818,7 +838,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Requirements">royalty-free licensing</a>
         for implementations.</p><p>
           This Candidate Recommendation is not expected to advance to Proposed
-          Recommendation any earlier than 09 November 2023.
+          Recommendation any earlier than 28 November 2023.
         </p><p>
     
         This document was produced by a group
@@ -1853,7 +1873,7 @@ _:c14n3 :p _:c14n0 .</code></pre>
                   As noted in
                   <a href="https://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal" id="ref-for-index-term-section-3-3-1">Section 3.3</a>
                   of [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf11-concepts" title="RDF 1.1 Concepts and Abstract Syntax">RDF11-CONCEPTS</a></cite>],
-                  <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-term-equal" id="ref-for-index-term-literal-term-equality-1">literal term equality</a>
+                  <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal-term-equality" id="ref-for-index-term-literal-term-equality-1">literal term equality</a>
                   is based on the
                   <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-lexical-form" id="ref-for-index-term-lexical-form-1">lexical form</a>,
                   rather than the <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal-value" id="ref-for-index-term-literal-value-1">literal value</a>,
@@ -3506,7 +3526,7 @@ _:c14n1 &lt;http://example.com/t&gt; &lt;http://example.com/u&gt; .</pre>
 
 <section id="use-cases" class="informative"><div class="header-wrapper"><h2 id="x8-use-cases"><bdi class="secno">8. </bdi>Use Cases</h2><a class="self-link" href="#use-cases" aria-label="Permalink for Section 8."></a></div><p><em>This section is non-normative.</em></p>
   
-  <div class="issue" id="issue-container-number-110"><div role="heading" class="issue-title marker" id="h-issue" aria-level="3"><a href="https://github.com/w3c/rdf-canon/issues/110"><span class="issue-number">Issue 110</span></a><span class="issue-label">: Use cases <a class="respec-gh-label" href="https://github.com/w3c/rdf-canon/issues/?q=is%3Aissue+is%3Aopen+label%3A%22spec%3Aeditorial%22" style="background-color: rgb(88, 130, 10); color: rgb(0, 0, 0);" aria-label="GitHub label: spec:editorial">spec:editorial</a></span></div><p dir="auto">The Explainer document provides a good basis for the WG's work. However, during the evolution of the c14n spec, we have recognized further features that need to be documented. Therefore, the use cases section of the spec can usefully be filled with a reference to the explainer doc <em>plus</em> some text around the features around output formats and mappings.</p></div>
+  <p>The use cases that have driven the development of the RDF Dataset Canonicalization algorithm are documented in a separate document. It includes further background and explanations for the design decisions taken [<cite><a class="bibref" data-link-type="biblio" href="#bib-rch-explainer" title="RDF Dataset Canonicalization and Hash Working Group — Explainer and Use Cases">RCH-EXPLAINER</a></cite>].</p>
 </section>
 
 <section id="examples" class="informative"><div class="header-wrapper"><h2 id="x9-examples"><bdi class="secno">9. </bdi>Examples</h2><a class="self-link" href="#examples" aria-label="Permalink for Section 9."></a></div><p><em>This section is non-normative.</em></p>
@@ -4138,8 +4158,8 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
           <em class="rfc2119">MUST</em> be represented by their native [<cite><a class="bibref" data-link-type="biblio" href="#bib-unicode" title="The Unicode Standard">UNICODE</a></cite>] representation.</li>
       </ul>
      </li>
-    <li>The token <code><a href="N-QUADS#grammar-production-EOL">EOL</a></code> <em class="rfc2119">MUST</em> be a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).</li>
-    <li>The final <code><a href="N-QUADS#grammar-production-EOL">EOL</a></code> <em class="rfc2119">MUST</em> be provided.</li>
+    <li>The token <code><a href="https://www.w3.org/TR/n-quads/#grammar-production-EOL" id="ref-for-index-term-eol-1">EOL</a></code> <em class="rfc2119">MUST</em> be a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).</li>
+    <li>The final <code><a href="https://www.w3.org/TR/n-quads/#grammar-production-EOL" id="ref-for-index-term-eol-2">EOL</a></code> <em class="rfc2119">MUST</em> be provided.</li>
   </ul>  
 </section>
 
@@ -4311,6 +4331,8 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
   </li><li>
     <span class="index-term" data-href="https://www.w3.org/TR/n-quads/#grammar-production-ECHAR" id="index-term-echar" tabindex="0" aria-haspopup="dialog">ECHAR</span>
   </li><li>
+    <span class="index-term" data-href="https://www.w3.org/TR/n-quads/#grammar-production-EOL" id="index-term-eol" tabindex="0" aria-haspopup="dialog">EOL</span>
+  </li><li>
     <span class="index-term" data-href="https://www.w3.org/TR/n-quads/#grammar-production-graphLabel" id="index-term-graphlabel" tabindex="0" aria-haspopup="dialog">graphLabel</span>
   </li><li>
     <span class="index-term" data-href="https://www.w3.org/TR/n-quads/#grammar-production-HEX" id="index-term-hex" tabindex="0" aria-haspopup="dialog">HEX</span>
@@ -4355,7 +4377,7 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
   </li><li>
     <span class="index-term" data-href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal" id="index-term-literal-0" tabindex="0" aria-haspopup="dialog">literal</span>
   </li><li>
-    <span class="index-term" data-href="https://www.w3.org/TR/rdf11-concepts/#dfn-term-equal" id="index-term-literal-term-equality" tabindex="0" aria-haspopup="dialog">literal term equality</span>
+    <span class="index-term" data-href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal-term-equality" id="index-term-literal-term-equality" tabindex="0" aria-haspopup="dialog">literal term equality</span>
   </li><li>
     <span class="index-term" data-href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal-value" id="index-term-literal-value" tabindex="0" aria-haspopup="dialog">literal value</span>
   </li><li>
@@ -4552,10 +4574,12 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
       <a href="https://www.w3.org/community/reports/credentials/CG-FINAL-rdf-dataset-canonicalization-20221009/"><cite>RDF Dataset Canonicalization</cite></a>. Dave Longley.  W3C. October 9, 2022. CG-FINAL. URL: <a href="https://www.w3.org/community/reports/credentials/CG-FINAL-rdf-dataset-canonicalization-20221009/">https://www.w3.org/community/reports/credentials/CG-FINAL-rdf-dataset-canonicalization-20221009/</a>
     </dd><dt id="bib-hogan-canonical-rdf">[Hogan-Canonical-RDF]</dt><dd>
       <a href="https://aidanhogan.com/docs/rdf-canonicalisation.pdf"><cite>Canonical Forms for Isomorphic and Equivalent RDF Graphs: Algorithms for Leaning and Labelling Blank Nodes</cite></a>. Aiden Hogan.  ACM. November 2017. ACM Trans. Web 11, 4, Article 22. URL: <a href="https://aidanhogan.com/docs/rdf-canonicalisation.pdf">https://aidanhogan.com/docs/rdf-canonicalisation.pdf</a>
+    </dd><dt id="bib-rch-explainer">[RCH-EXPLAINER]</dt><dd>
+      <a href="https://www.w3.org/TR/rch-explainer/"><cite>RDF Dataset Canonicalization and Hash Working Group — Explainer and Use Cases</cite></a>. Phil Archer.  W3C. 19 October 2023. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/rch-explainer/">https://www.w3.org/TR/rch-explainer/</a>
     </dd><dt id="bib-rdf11-mt">[RDF11-MT]</dt><dd>
       <a href="https://www.w3.org/TR/rdf11-mt/"><cite>RDF 1.1 Semantics</cite></a>. Patrick Hayes; Peter Patel-Schneider.  W3C. 25 February 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/rdf11-mt/">https://www.w3.org/TR/rdf11-mt/</a>
     </dd><dt id="bib-vc-data-integrity">[VC-DATA-INTEGRITY]</dt><dd>
-      <a href="https://www.w3.org/TR/vc-data-integrity/"><cite>Verifiable Credential Data Integrity 1.0</cite></a>. Manu Sporny; Dave Longley; Greg Bernstein; Dmitri Zagidulin; Sebastian Crane.  W3C. 25 September 2023. W3C Working Draft. URL: <a href="https://www.w3.org/TR/vc-data-integrity/">https://www.w3.org/TR/vc-data-integrity/</a>
+      <a href="https://www.w3.org/TR/vc-data-integrity/"><cite>Verifiable Credential Data Integrity 1.0</cite></a>. Manu Sporny; Dave Longley; Greg Bernstein; Dmitri Zagidulin; Sebastian Crane.  W3C. 21 October 2023. W3C Working Draft. URL: <a href="https://www.w3.org/TR/vc-data-integrity/">https://www.w3.org/TR/vc-data-integrity/</a>
     </dd><dt id="bib-yaml">[YAML]</dt><dd>
       <a href="http://yaml.org/spec/1.2/spec.html"><cite>YAML Ain’t Markup Language (YAML™) Version 1.2</cite></a>. Oren Ben-Kiki; Clark Evans; Ingy döt Net. 1 October 2009. URL: <a href="http://yaml.org/spec/1.2/spec.html">http://yaml.org/spec/1.2/spec.html</a>
     </dd></dl>
@@ -5261,6 +5285,18 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
       <a href="#ref-for-index-term-echar-4" title="§ B. URDNA2015">§ B. URDNA2015</a> 
     </li>
   </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-eol" aria-label="Links in this document to definition: EOL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="https://www.w3.org/TR/n-quads/#grammar-production-EOL" aria-label="Permalink for definition: EOL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-index-term-eol-1" title="§ A. A Canonical form of N-Quads">§ A. A Canonical form of N-Quads</a> <a href="#ref-for-index-term-eol-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-graphlabel" aria-label="Links in this document to definition: graphLabel">
       <span class="caret"></span>
       <div>
@@ -5556,7 +5592,7 @@ _:e1 :p2 <span class="hljs-string">"Bar"</span> _:g0 .</code></pre>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-literal-term-equality" aria-label="Links in this document to definition: literal term equality">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://www.w3.org/TR/rdf11-concepts/#dfn-term-equal" aria-label="Permalink for definition: literal term equality. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://www.w3.org/TR/rdf11-concepts/#dfn-literal-term-equality" aria-label="Permalink for definition: literal term equality. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
