@@ -28,6 +28,6 @@ file "earl.ttl" => "earl.jsonld" do
 end
 
 desc "Build HTML"
-file "index.html" => "earl.jsonld" do
+file "index.html" => ["template.haml", "earl.jsonld"] do
   %x{earl-report --json --format html --template template.haml -o index.html earl.jsonld}
 end
