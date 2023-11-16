@@ -381,8 +381,9 @@
                       - else
                         %span{property: "foaf:name"}<
                       - if dev['foaf:homepage']
-                        %a{property: "foaf:homepage", href: dev['foaf:homepage']}
-                          ~ CGI.escapeHTML dev['foaf:homepage'].is_a?(Hash) ? dev['foaf:homepage']['@id'] : dev['foaf:homepage']
+                        - href = dev['foaf:homepage'].is_a?(Hash) ? dev['foaf:homepage']['@id'] : dev['foaf:homepage']
+                        %a{property: "foaf:homepage", href: href}
+                          ~ CGI.escapeHTML href.to_s
               %dt
                 Test Suite Compliance
               %dd
