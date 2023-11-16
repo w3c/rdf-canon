@@ -3801,5 +3801,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2023-09-16"^^xsd:date;
+  doap:created "2023-11-16"^^xsd:date;
   doap:revision "0.9.0" .
