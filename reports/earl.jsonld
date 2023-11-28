@@ -239,7 +239,7 @@
       "doapDesc": "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf.",
       "language": "Rust",
       "release": {
-        "@id": "_:b507",
+        "@id": "_:b675",
         "revision": "0.14.0"
       }
     },
@@ -324,65 +324,66 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b1",
+              "@id": "_:b167",
               "@type": "Assertion",
               "subject": "https://github.com/digitalbazaar/rdf-canonize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://digitalbazaar.com/",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b2",
+                "@id": "_:b168",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b676",
+              "@id": "_:b673",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b677",
+                "@id": "_:b674",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b508",
+              "@id": "_:b842",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b509",
+                "@id": "_:b843",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b170",
+              "@id": "_:b336",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b171",
+                "@id": "_:b337",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b339",
+              "@id": "_:b505",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b340",
+                "@id": "_:b506",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -418,26 +419,27 @@
               }
             },
             {
-              "@id": "_:b678",
+              "@id": "_:b509",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b679",
+                "@id": "_:b510",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b510",
+              "@id": "_:b678",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b511",
+                "@id": "_:b679",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -499,26 +501,27 @@
               }
             },
             {
-              "@id": "_:b680",
+              "@id": "_:b511",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b681",
+                "@id": "_:b512",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b512",
+              "@id": "_:b680",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b513",
+                "@id": "_:b681",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -580,26 +583,27 @@
               }
             },
             {
-              "@id": "_:b682",
+              "@id": "_:b513",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b683",
+                "@id": "_:b514",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b514",
+              "@id": "_:b682",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b515",
+                "@id": "_:b683",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -661,26 +665,27 @@
               }
             },
             {
-              "@id": "_:b684",
+              "@id": "_:b515",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b685",
+                "@id": "_:b516",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b516",
+              "@id": "_:b684",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b517",
+                "@id": "_:b685",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -742,26 +747,27 @@
               }
             },
             {
-              "@id": "_:b686",
+              "@id": "_:b517",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b687",
+                "@id": "_:b518",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b518",
+              "@id": "_:b686",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b519",
+                "@id": "_:b687",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -823,26 +829,27 @@
               }
             },
             {
-              "@id": "_:b688",
+              "@id": "_:b519",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b689",
+                "@id": "_:b520",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b520",
+              "@id": "_:b688",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b521",
+                "@id": "_:b689",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -904,26 +911,27 @@
               }
             },
             {
-              "@id": "_:b690",
+              "@id": "_:b521",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b691",
+                "@id": "_:b522",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b522",
+              "@id": "_:b690",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b523",
+                "@id": "_:b691",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -985,26 +993,27 @@
               }
             },
             {
-              "@id": "_:b692",
+              "@id": "_:b523",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b693",
+                "@id": "_:b524",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b524",
+              "@id": "_:b692",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b525",
+                "@id": "_:b693",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1066,26 +1075,27 @@
               }
             },
             {
-              "@id": "_:b694",
+              "@id": "_:b525",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b695",
+                "@id": "_:b526",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b526",
+              "@id": "_:b694",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b527",
+                "@id": "_:b695",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1147,26 +1157,27 @@
               }
             },
             {
-              "@id": "_:b696",
+              "@id": "_:b527",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b697",
+                "@id": "_:b528",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b528",
+              "@id": "_:b696",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b529",
+                "@id": "_:b697",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1228,26 +1239,27 @@
               }
             },
             {
-              "@id": "_:b698",
+              "@id": "_:b529",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b699",
+                "@id": "_:b530",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b530",
+              "@id": "_:b698",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b531",
+                "@id": "_:b699",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1309,26 +1321,27 @@
               }
             },
             {
-              "@id": "_:b700",
+              "@id": "_:b531",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b701",
+                "@id": "_:b532",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b532",
+              "@id": "_:b700",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b533",
+                "@id": "_:b701",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1390,26 +1403,27 @@
               }
             },
             {
-              "@id": "_:b702",
+              "@id": "_:b533",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b703",
+                "@id": "_:b534",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b534",
+              "@id": "_:b702",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b535",
+                "@id": "_:b703",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1471,26 +1485,27 @@
               }
             },
             {
-              "@id": "_:b704",
+              "@id": "_:b535",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b705",
+                "@id": "_:b536",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b536",
+              "@id": "_:b704",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b537",
+                "@id": "_:b705",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1552,26 +1567,27 @@
               }
             },
             {
-              "@id": "_:b706",
+              "@id": "_:b537",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b707",
+                "@id": "_:b538",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b538",
+              "@id": "_:b706",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b539",
+                "@id": "_:b707",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1633,26 +1649,27 @@
               }
             },
             {
-              "@id": "_:b708",
+              "@id": "_:b539",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b709",
+                "@id": "_:b540",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b540",
+              "@id": "_:b708",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b541",
+                "@id": "_:b709",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1714,26 +1731,27 @@
               }
             },
             {
-              "@id": "_:b710",
+              "@id": "_:b541",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b711",
+                "@id": "_:b542",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b542",
+              "@id": "_:b710",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b543",
+                "@id": "_:b711",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1795,26 +1813,27 @@
               }
             },
             {
-              "@id": "_:b712",
+              "@id": "_:b543",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b713",
+                "@id": "_:b544",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b544",
+              "@id": "_:b712",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b545",
+                "@id": "_:b713",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1876,26 +1895,27 @@
               }
             },
             {
-              "@id": "_:b714",
+              "@id": "_:b545",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b715",
+                "@id": "_:b546",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b546",
+              "@id": "_:b714",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b547",
+                "@id": "_:b715",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1957,26 +1977,27 @@
               }
             },
             {
-              "@id": "_:b716",
+              "@id": "_:b547",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b717",
+                "@id": "_:b548",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b548",
+              "@id": "_:b716",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b549",
+                "@id": "_:b717",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2038,26 +2059,27 @@
               }
             },
             {
-              "@id": "_:b718",
+              "@id": "_:b549",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b719",
+                "@id": "_:b550",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b550",
+              "@id": "_:b718",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b551",
+                "@id": "_:b719",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2119,26 +2141,27 @@
               }
             },
             {
-              "@id": "_:b720",
+              "@id": "_:b551",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b721",
+                "@id": "_:b552",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b552",
+              "@id": "_:b720",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b553",
+                "@id": "_:b721",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2200,26 +2223,27 @@
               }
             },
             {
-              "@id": "_:b722",
+              "@id": "_:b553",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b723",
+                "@id": "_:b554",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b554",
+              "@id": "_:b722",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b555",
+                "@id": "_:b723",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2281,26 +2305,27 @@
               }
             },
             {
-              "@id": "_:b724",
+              "@id": "_:b555",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b725",
+                "@id": "_:b556",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b556",
+              "@id": "_:b724",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b557",
+                "@id": "_:b725",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2362,26 +2387,27 @@
               }
             },
             {
-              "@id": "_:b726",
+              "@id": "_:b557",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b727",
+                "@id": "_:b558",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b558",
+              "@id": "_:b726",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b559",
+                "@id": "_:b727",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2443,26 +2469,27 @@
               }
             },
             {
-              "@id": "_:b728",
+              "@id": "_:b559",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b729",
+                "@id": "_:b560",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b560",
+              "@id": "_:b728",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b561",
+                "@id": "_:b729",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2524,26 +2551,27 @@
               }
             },
             {
-              "@id": "_:b730",
+              "@id": "_:b561",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b731",
+                "@id": "_:b562",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b562",
+              "@id": "_:b730",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b563",
+                "@id": "_:b731",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2605,26 +2633,27 @@
               }
             },
             {
-              "@id": "_:b732",
+              "@id": "_:b563",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b733",
+                "@id": "_:b564",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b564",
+              "@id": "_:b732",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b565",
+                "@id": "_:b733",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2686,26 +2715,27 @@
               }
             },
             {
-              "@id": "_:b734",
+              "@id": "_:b565",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b735",
+                "@id": "_:b566",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b566",
+              "@id": "_:b734",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b567",
+                "@id": "_:b735",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2767,26 +2797,27 @@
               }
             },
             {
-              "@id": "_:b736",
+              "@id": "_:b567",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b737",
+                "@id": "_:b568",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b568",
+              "@id": "_:b736",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b569",
+                "@id": "_:b737",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2848,26 +2879,27 @@
               }
             },
             {
-              "@id": "_:b738",
+              "@id": "_:b569",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b739",
+                "@id": "_:b570",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b570",
+              "@id": "_:b738",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b571",
+                "@id": "_:b739",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2929,26 +2961,27 @@
               }
             },
             {
-              "@id": "_:b740",
+              "@id": "_:b571",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b741",
+                "@id": "_:b572",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b572",
+              "@id": "_:b740",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b573",
+                "@id": "_:b741",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3010,26 +3043,27 @@
               }
             },
             {
-              "@id": "_:b742",
+              "@id": "_:b573",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b743",
+                "@id": "_:b574",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b574",
+              "@id": "_:b742",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b575",
+                "@id": "_:b743",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3091,26 +3125,27 @@
               }
             },
             {
-              "@id": "_:b744",
+              "@id": "_:b575",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b745",
+                "@id": "_:b576",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b576",
+              "@id": "_:b744",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b577",
+                "@id": "_:b745",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3172,26 +3207,27 @@
               }
             },
             {
-              "@id": "_:b746",
+              "@id": "_:b577",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b747",
+                "@id": "_:b578",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b578",
+              "@id": "_:b746",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b579",
+                "@id": "_:b747",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3253,26 +3289,27 @@
               }
             },
             {
-              "@id": "_:b748",
+              "@id": "_:b579",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b749",
+                "@id": "_:b580",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b580",
+              "@id": "_:b748",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b581",
+                "@id": "_:b749",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3334,26 +3371,27 @@
               }
             },
             {
-              "@id": "_:b750",
+              "@id": "_:b581",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b751",
+                "@id": "_:b582",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b582",
+              "@id": "_:b750",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b583",
+                "@id": "_:b751",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3415,26 +3453,27 @@
               }
             },
             {
-              "@id": "_:b752",
+              "@id": "_:b583",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b753",
+                "@id": "_:b584",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b584",
+              "@id": "_:b752",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b585",
+                "@id": "_:b753",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3496,26 +3535,27 @@
               }
             },
             {
-              "@id": "_:b754",
+              "@id": "_:b585",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b755",
+                "@id": "_:b586",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b586",
+              "@id": "_:b754",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b587",
+                "@id": "_:b755",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3577,26 +3617,27 @@
               }
             },
             {
-              "@id": "_:b756",
+              "@id": "_:b587",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b757",
+                "@id": "_:b588",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b588",
+              "@id": "_:b756",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b589",
+                "@id": "_:b757",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3658,26 +3699,27 @@
               }
             },
             {
-              "@id": "_:b758",
+              "@id": "_:b589",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b759",
+                "@id": "_:b590",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b590",
+              "@id": "_:b758",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b591",
+                "@id": "_:b759",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3739,26 +3781,27 @@
               }
             },
             {
-              "@id": "_:b760",
+              "@id": "_:b591",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b761",
+                "@id": "_:b592",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b592",
+              "@id": "_:b760",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b593",
+                "@id": "_:b761",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3821,26 +3864,27 @@
               }
             },
             {
-              "@id": "_:b762",
+              "@id": "_:b593",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b763",
+                "@id": "_:b594",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b594",
+              "@id": "_:b762",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b595",
+                "@id": "_:b763",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3903,26 +3947,27 @@
               }
             },
             {
-              "@id": "_:b764",
+              "@id": "_:b595",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b765",
+                "@id": "_:b596",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b596",
+              "@id": "_:b764",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b597",
+                "@id": "_:b765",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3985,26 +4030,27 @@
               }
             },
             {
-              "@id": "_:b766",
+              "@id": "_:b597",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b767",
+                "@id": "_:b598",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b598",
+              "@id": "_:b766",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b599",
+                "@id": "_:b767",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4066,26 +4112,27 @@
               }
             },
             {
-              "@id": "_:b768",
+              "@id": "_:b599",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b769",
+                "@id": "_:b600",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b600",
+              "@id": "_:b768",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b601",
+                "@id": "_:b769",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4147,26 +4194,27 @@
               }
             },
             {
-              "@id": "_:b770",
+              "@id": "_:b601",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b771",
+                "@id": "_:b602",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b602",
+              "@id": "_:b770",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b603",
+                "@id": "_:b771",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4228,26 +4276,27 @@
               }
             },
             {
-              "@id": "_:b772",
+              "@id": "_:b603",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b773",
+                "@id": "_:b604",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b604",
+              "@id": "_:b772",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b605",
+                "@id": "_:b773",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4309,26 +4358,27 @@
               }
             },
             {
-              "@id": "_:b774",
+              "@id": "_:b605",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b775",
+                "@id": "_:b606",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b606",
+              "@id": "_:b774",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b607",
+                "@id": "_:b775",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4391,26 +4441,27 @@
               }
             },
             {
-              "@id": "_:b776",
+              "@id": "_:b607",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b777",
+                "@id": "_:b608",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b608",
+              "@id": "_:b776",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b609",
+                "@id": "_:b777",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4473,26 +4524,27 @@
               }
             },
             {
-              "@id": "_:b778",
+              "@id": "_:b609",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b779",
+                "@id": "_:b610",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b610",
+              "@id": "_:b778",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b611",
+                "@id": "_:b779",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4554,26 +4606,27 @@
               }
             },
             {
-              "@id": "_:b780",
+              "@id": "_:b611",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b781",
+                "@id": "_:b612",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b612",
+              "@id": "_:b780",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b613",
+                "@id": "_:b781",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4635,26 +4688,27 @@
               }
             },
             {
-              "@id": "_:b782",
+              "@id": "_:b613",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b783",
+                "@id": "_:b614",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b614",
+              "@id": "_:b782",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b615",
+                "@id": "_:b783",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4716,26 +4770,27 @@
               }
             },
             {
-              "@id": "_:b784",
+              "@id": "_:b615",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b785",
+                "@id": "_:b616",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b616",
+              "@id": "_:b784",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b617",
+                "@id": "_:b785",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4797,26 +4852,27 @@
               }
             },
             {
-              "@id": "_:b786",
+              "@id": "_:b617",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b787",
+                "@id": "_:b618",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b618",
+              "@id": "_:b786",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b619",
+                "@id": "_:b787",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4878,26 +4934,27 @@
               }
             },
             {
-              "@id": "_:b788",
+              "@id": "_:b619",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b789",
+                "@id": "_:b620",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b620",
+              "@id": "_:b788",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b621",
+                "@id": "_:b789",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4959,26 +5016,27 @@
               }
             },
             {
-              "@id": "_:b790",
+              "@id": "_:b621",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b791",
+                "@id": "_:b622",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b622",
+              "@id": "_:b790",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b623",
+                "@id": "_:b791",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5040,26 +5098,27 @@
               }
             },
             {
-              "@id": "_:b792",
+              "@id": "_:b623",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b793",
+                "@id": "_:b624",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b624",
+              "@id": "_:b792",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b625",
+                "@id": "_:b793",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5121,26 +5180,27 @@
               }
             },
             {
-              "@id": "_:b794",
+              "@id": "_:b625",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b795",
+                "@id": "_:b626",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b626",
+              "@id": "_:b794",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b627",
+                "@id": "_:b795",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5202,26 +5262,27 @@
               }
             },
             {
-              "@id": "_:b796",
+              "@id": "_:b627",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b797",
+                "@id": "_:b628",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b628",
+              "@id": "_:b796",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b629",
+                "@id": "_:b797",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5283,26 +5344,27 @@
               }
             },
             {
-              "@id": "_:b798",
+              "@id": "_:b629",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b799",
+                "@id": "_:b630",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b630",
+              "@id": "_:b798",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b631",
+                "@id": "_:b799",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5364,26 +5426,27 @@
               }
             },
             {
-              "@id": "_:b800",
+              "@id": "_:b631",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b801",
+                "@id": "_:b632",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b632",
+              "@id": "_:b800",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b633",
+                "@id": "_:b801",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5445,26 +5508,27 @@
               }
             },
             {
-              "@id": "_:b802",
+              "@id": "_:b633",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b803",
+                "@id": "_:b634",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b634",
+              "@id": "_:b802",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b635",
+                "@id": "_:b803",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5526,26 +5590,27 @@
               }
             },
             {
-              "@id": "_:b804",
+              "@id": "_:b635",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b805",
+                "@id": "_:b636",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b636",
+              "@id": "_:b804",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b637",
+                "@id": "_:b805",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5608,26 +5673,27 @@
               }
             },
             {
-              "@id": "_:b806",
+              "@id": "_:b637",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b807",
+                "@id": "_:b638",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b638",
+              "@id": "_:b806",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b639",
+                "@id": "_:b807",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5690,26 +5756,27 @@
               }
             },
             {
-              "@id": "_:b808",
+              "@id": "_:b639",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b809",
+                "@id": "_:b640",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b640",
+              "@id": "_:b808",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b641",
+                "@id": "_:b809",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5771,26 +5838,27 @@
               }
             },
             {
-              "@id": "_:b810",
+              "@id": "_:b641",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b811",
+                "@id": "_:b642",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b642",
+              "@id": "_:b810",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b643",
+                "@id": "_:b811",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5852,26 +5920,27 @@
               }
             },
             {
-              "@id": "_:b812",
+              "@id": "_:b643",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b813",
+                "@id": "_:b644",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b644",
+              "@id": "_:b812",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b645",
+                "@id": "_:b813",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5933,26 +6002,27 @@
               }
             },
             {
-              "@id": "_:b814",
+              "@id": "_:b645",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b815",
+                "@id": "_:b646",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b646",
+              "@id": "_:b814",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b647",
+                "@id": "_:b815",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6014,26 +6084,27 @@
               }
             },
             {
-              "@id": "_:b816",
+              "@id": "_:b647",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b817",
+                "@id": "_:b648",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b648",
+              "@id": "_:b816",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b649",
+                "@id": "_:b817",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6095,26 +6166,27 @@
               }
             },
             {
-              "@id": "_:b818",
+              "@id": "_:b649",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b819",
+                "@id": "_:b650",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b650",
+              "@id": "_:b818",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b651",
+                "@id": "_:b819",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6176,26 +6248,27 @@
               }
             },
             {
-              "@id": "_:b820",
+              "@id": "_:b651",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b821",
+                "@id": "_:b652",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b652",
+              "@id": "_:b820",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b653",
+                "@id": "_:b821",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6258,26 +6331,27 @@
               }
             },
             {
-              "@id": "_:b822",
+              "@id": "_:b653",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b823",
+                "@id": "_:b654",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b654",
+              "@id": "_:b822",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b655",
+                "@id": "_:b823",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6340,26 +6414,27 @@
               }
             },
             {
-              "@id": "_:b824",
+              "@id": "_:b655",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b825",
+                "@id": "_:b656",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b656",
+              "@id": "_:b824",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b657",
+                "@id": "_:b825",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6422,26 +6497,27 @@
               }
             },
             {
-              "@id": "_:b826",
+              "@id": "_:b657",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b827",
+                "@id": "_:b658",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b658",
+              "@id": "_:b826",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b659",
+                "@id": "_:b827",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6504,26 +6580,27 @@
               }
             },
             {
-              "@id": "_:b828",
+              "@id": "_:b659",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b829",
+                "@id": "_:b660",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b660",
+              "@id": "_:b828",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b661",
+                "@id": "_:b829",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6586,26 +6663,27 @@
               }
             },
             {
-              "@id": "_:b830",
+              "@id": "_:b661",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b831",
+                "@id": "_:b662",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b662",
+              "@id": "_:b830",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b663",
+                "@id": "_:b831",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6668,26 +6746,27 @@
               }
             },
             {
-              "@id": "_:b832",
+              "@id": "_:b663",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b833",
+                "@id": "_:b664",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b664",
+              "@id": "_:b832",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b665",
+                "@id": "_:b833",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6750,26 +6829,27 @@
               }
             },
             {
-              "@id": "_:b834",
+              "@id": "_:b665",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b835",
+                "@id": "_:b666",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b666",
+              "@id": "_:b834",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b667",
+                "@id": "_:b835",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6832,26 +6912,27 @@
               }
             },
             {
-              "@id": "_:b836",
+              "@id": "_:b667",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b837",
+                "@id": "_:b668",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b668",
+              "@id": "_:b836",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b669",
+                "@id": "_:b837",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6913,26 +6994,27 @@
               }
             },
             {
-              "@id": "_:b838",
+              "@id": "_:b669",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b839",
+                "@id": "_:b670",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b670",
+              "@id": "_:b838",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b671",
+                "@id": "_:b839",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6996,26 +7078,27 @@
               }
             },
             {
-              "@id": "_:b840",
+              "@id": "_:b671",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b841",
+                "@id": "_:b672",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b672",
+              "@id": "_:b840",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b673",
+                "@id": "_:b841",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7066,65 +7149,66 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json",
           "assertions": [
             {
-              "@id": "_:b167",
+              "@id": "_:b1",
               "@type": "Assertion",
               "subject": "https://github.com/digitalbazaar/rdf-canonize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "https://digitalbazaar.com/",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b168",
+                "@id": "_:b2",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b842",
+              "@id": "_:b507",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b843",
+                "@id": "_:b508",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b674",
+              "@id": "_:b676",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b675",
+                "@id": "_:b677",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b336",
+              "@id": "_:b170",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b337",
+                "@id": "_:b171",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b505",
+              "@id": "_:b339",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b506",
+                "@id": "_:b340",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
