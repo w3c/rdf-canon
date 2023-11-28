@@ -1,6 +1,6 @@
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX earl: <https://www.w3.org/ns/earl#>
+PREFIX earl: <http://www.w3.org/ns/earl#>
 
 <>
   dct:issued "2023-09-15T16:58:44.930088350+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
@@ -14,7 +14,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.893243416+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "simple id";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c>.
 
 [] a earl:Assertion;
@@ -24,7 +24,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.893425254+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "duplicate property iri values";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c>.
 
 [] a earl:Assertion;
@@ -34,7 +34,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.893610798+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c>.
 
 [] a earl:Assertion;
@@ -44,7 +44,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.893784627+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m>.
 
 [] a earl:Assertion;
@@ -54,7 +54,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.893959967+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode plus embed w/subject";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c>.
 
 [] a earl:Assertion;
@@ -64,7 +64,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.894132753+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode plus embed w/subject (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m>.
 
 [] a earl:Assertion;
@@ -74,7 +74,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.894316344+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode embed";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c>.
 
 [] a earl:Assertion;
@@ -84,7 +84,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.894491262+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "bnode embed (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m>.
 
 [] a earl:Assertion;
@@ -94,7 +94,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.894668235+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "multiple rdf types";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c>.
 
 [] a earl:Assertion;
@@ -104,7 +104,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.894852231+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "single subject complex";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c>.
 
 [] a earl:Assertion;
@@ -114,7 +114,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895040844+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "multiple subjects - complex";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c>.
 
 [] a earl:Assertion;
@@ -124,7 +124,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895211765+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "type";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c>.
 
 [] a earl:Assertion;
@@ -134,7 +134,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895380753+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "type-coerced type";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c>.
 
 [] a earl:Assertion;
@@ -144,7 +144,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895554745+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "type-coerced type, cycle";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c>.
 
 [] a earl:Assertion;
@@ -154,7 +154,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895729383+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "check types";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c>.
 
 [] a earl:Assertion;
@@ -164,7 +164,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.895905396+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - dual link - embed";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c>.
 
 [] a earl:Assertion;
@@ -174,7 +174,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896079728+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - dual link - embed (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m>.
 
 [] a earl:Assertion;
@@ -184,7 +184,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896253035+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - dual link - non-embed";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c>.
 
 [] a earl:Assertion;
@@ -194,7 +194,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896423238+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - dual link - non-embed (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m>.
 
 [] a earl:Assertion;
@@ -204,7 +204,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896600007+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - self link";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c>.
 
 [] a earl:Assertion;
@@ -214,7 +214,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896768321+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - self link (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m>.
 
 [] a earl:Assertion;
@@ -224,7 +224,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.896947718+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - disjoint self links";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c>.
 
 [] a earl:Assertion;
@@ -234,7 +234,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.897128054+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c>.
 
 [] a earl:Assertion;
@@ -244,7 +244,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.897307512+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m>.
 
 [] a earl:Assertion;
@@ -254,7 +254,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.897514679+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - circle of 2";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c>.
 
 [] a earl:Assertion;
@@ -264,7 +264,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.897741585+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 2";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c>.
 
 [] a earl:Assertion;
@@ -274,7 +274,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.897982944+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - circle of 3";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c>.
 
 [] a earl:Assertion;
@@ -284,7 +284,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.898274490+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (0-1-2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c>.
 
 [] a earl:Assertion;
@@ -294,7 +294,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.898564544+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (0-2-1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c>.
 
 [] a earl:Assertion;
@@ -304,7 +304,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.898856282+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (1-0-2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c>.
 
 [] a earl:Assertion;
@@ -314,7 +314,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.899148626+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (1-2-0)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c>.
 
 [] a earl:Assertion;
@@ -324,7 +324,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.899438417+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (2-1-0)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c>.
 
 [] a earl:Assertion;
@@ -334,7 +334,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.899727699+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (2-0-1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c>.
 
 [] a earl:Assertion;
@@ -344,7 +344,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.899915569+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - point at circle of 3";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c>.
 
 [] a earl:Assertion;
@@ -354,7 +354,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.900099136+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - point at circle of 3 (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m>.
 
 [] a earl:Assertion;
@@ -364,7 +364,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.900299393+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "disjoint identical subgraphs (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c>.
 
 [] a earl:Assertion;
@@ -374,7 +374,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.900543848+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "disjoint identical subgraphs (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c>.
 
 [] a earl:Assertion;
@@ -384,7 +384,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.900750297+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "reordered w/strings (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c>.
 
 [] a earl:Assertion;
@@ -394,7 +394,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.900953598+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "reordered w/strings (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c>.
 
 [] a earl:Assertion;
@@ -404,7 +404,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.901137486+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "reordered 4 bnodes, reordered 2 properties (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c>.
 
 [] a earl:Assertion;
@@ -414,7 +414,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.901320629+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "reordered 4 bnodes, reordered 2 properties (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c>.
 
 [] a earl:Assertion;
@@ -424,7 +424,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.901549708+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "reordered 6 bnodes (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c>.
 
 [] a earl:Assertion;
@@ -434,7 +434,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.901762774+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "literal with language";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c>.
 
 [] a earl:Assertion;
@@ -444,7 +444,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.908591536+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "poison – evil (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c>.
 
 [] a earl:Assertion;
@@ -454,7 +454,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.915505601+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "poison – evil (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c>.
 
 [] a earl:Assertion;
@@ -464,7 +464,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.922023115+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "poison – evil (3)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c>.
 
 [] a earl:Assertion;
@@ -474,7 +474,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.922258641+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "deep diff (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c>.
 
 [] a earl:Assertion;
@@ -484,7 +484,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.922470425+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "deep diff (1) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m>.
 
 [] a earl:Assertion;
@@ -494,7 +494,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.922680586+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "deep diff (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c>.
 
 [] a earl:Assertion;
@@ -504,7 +504,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.922887577+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "deep diff (2) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m>.
 
 [] a earl:Assertion;
@@ -514,7 +514,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.923098424+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "@list";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c>.
 
 [] a earl:Assertion;
@@ -524,7 +524,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.923298651+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "@list (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m>.
 
 [] a earl:Assertion;
@@ -534,7 +534,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.923660387+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "t-graph";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c>.
 
 [] a earl:Assertion;
@@ -544,7 +544,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.923825513+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "simple reorder (1)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c>.
 
 [] a earl:Assertion;
@@ -554,7 +554,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.923985937+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "simple reorder (1) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m>.
 
 [] a earl:Assertion;
@@ -564,7 +564,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.924148808+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "simple reorder (2)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c>.
 
 [] a earl:Assertion;
@@ -574,7 +574,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.924308485+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "simple reorder (2) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m>.
 
 [] a earl:Assertion;
@@ -584,7 +584,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.924488536+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "unnamed graph";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c>.
 
 [] a earl:Assertion;
@@ -594,7 +594,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.924652661+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "unnamed graph (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m>.
 
 [] a earl:Assertion;
@@ -604,7 +604,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.924824154+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "unnamed graph with blank node objects";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c>.
 
 [] a earl:Assertion;
@@ -614,7 +614,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.925181719+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "n-quads parsing";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c>.
 
 [] a earl:Assertion;
@@ -624,7 +624,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.925417739+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "n-quads escaping";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c>.
 
 [] a earl:Assertion;
@@ -634,7 +634,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.925661957+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "n-quads escaping (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m>.
 
 [] a earl:Assertion;
@@ -644,7 +644,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.925822439+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "same literal value with multiple languages";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c>.
 
 [] a earl:Assertion;
@@ -654,7 +654,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.925979589+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "same literal value with multiple datatypes";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c>.
 
 [] a earl:Assertion;
@@ -664,7 +664,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.926148462+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond (with _:b)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c>.
 
 [] a earl:Assertion;
@@ -674,7 +674,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.926313439+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond (with _:b) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m>.
 
 [] a earl:Assertion;
@@ -684,7 +684,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.926585175+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (0-1-2, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c>.
 
 [] a earl:Assertion;
@@ -694,7 +694,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.926853567+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (0-2-1, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c>.
 
 [] a earl:Assertion;
@@ -704,7 +704,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.927122294+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (1-0-2, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c>.
 
 [] a earl:Assertion;
@@ -714,7 +714,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.927389601+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (1-2-0, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c>.
 
 [] a earl:Assertion;
@@ -724,7 +724,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.927656704+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (2-1-0, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c>.
 
 [] a earl:Assertion;
@@ -734,7 +734,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.927922251+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - double circle of 3 (2-0-1, reversed)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c>.
 
 [] a earl:Assertion;
@@ -744,7 +744,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928095280+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - isomorphic default and iri named";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c>.
 
 [] a earl:Assertion;
@@ -754,7 +754,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928265411+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - isomorphic default and iri named (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m>.
 
 [] a earl:Assertion;
@@ -764,7 +764,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928440225+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - isomorphic default and node named";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c>.
 
 [] a earl:Assertion;
@@ -774,7 +774,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928620069+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - isomorphic default and node named (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m>.
 
 [] a earl:Assertion;
@@ -784,7 +784,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928791339+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - shared blank nodes";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c>.
 
 [] a earl:Assertion;
@@ -794,7 +794,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.928960951+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - shared blank nodes (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m>.
 
 [] a earl:Assertion;
@@ -804,7 +804,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.929158061+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - referencing graph name";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c>.
 
 [] a earl:Assertion;
@@ -814,7 +814,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.929356905+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "dataset - referencing graph name (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m>.
 
 [] a earl:Assertion;
@@ -824,7 +824,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.929668338+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "poison - Clique Graph (negative test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c>.
 
 [] a earl:Assertion;
@@ -834,7 +834,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.929850975+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond (uses SHA-384)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c>.
 
 [] a earl:Assertion;
@@ -844,7 +844,7 @@ PREFIX earl: <https://www.w3.org/ns/earl#>
       dct:date "2023-09-15T16:58:44.930017316+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
       dct:title "blank node - diamond (uses SHA-384) (map test)";
       earl:outcome earl:passed];
-  earl:subject <https://crates.io/crates/sophia/0.8.0-alpha.2>;
+  earl:subject <https://github.com/pchampin/sophia_rs>;
   earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m>.
 
 # manually added:

@@ -133,8 +133,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
@@ -185,8 +186,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
@@ -237,8 +239,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
@@ -289,8 +292,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
@@ -341,8 +345,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
@@ -393,8 +398,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
@@ -445,8 +451,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
@@ -497,8 +504,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
@@ -549,8 +557,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
@@ -601,8 +610,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
@@ -653,8 +663,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
@@ -705,8 +716,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
@@ -757,8 +769,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
@@ -809,8 +822,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
@@ -861,8 +875,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
@@ -913,8 +928,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
@@ -965,8 +981,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
@@ -1017,8 +1034,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
@@ -1069,8 +1087,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
@@ -1121,8 +1140,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
@@ -1173,8 +1193,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
@@ -1225,8 +1246,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
@@ -1277,8 +1299,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
@@ -1329,8 +1352,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
@@ -1381,8 +1405,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
@@ -1433,8 +1458,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
@@ -1485,8 +1511,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
@@ -1537,8 +1564,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
@@ -1589,8 +1617,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
@@ -1641,8 +1670,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
@@ -1693,8 +1723,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
@@ -1745,8 +1776,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
@@ -1797,8 +1829,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
@@ -1849,8 +1882,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
@@ -1901,8 +1935,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
@@ -1953,8 +1988,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
@@ -2005,8 +2041,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
@@ -2057,8 +2094,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
@@ -2109,8 +2147,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
@@ -2161,8 +2200,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
@@ -2213,8 +2253,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
@@ -2265,8 +2306,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
@@ -2317,8 +2359,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
@@ -2370,8 +2413,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
@@ -2423,8 +2467,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
@@ -2476,8 +2521,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
@@ -2528,8 +2574,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
@@ -2580,8 +2627,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
@@ -2632,8 +2680,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
@@ -2684,8 +2733,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
@@ -2737,8 +2787,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
@@ -2790,8 +2841,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
@@ -2842,8 +2894,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
@@ -2894,8 +2947,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
@@ -2946,8 +3000,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
@@ -2998,8 +3053,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
@@ -3050,8 +3106,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
@@ -3102,8 +3159,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
@@ -3154,8 +3212,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
@@ -3206,8 +3265,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
@@ -3258,8 +3318,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
@@ -3310,8 +3371,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
@@ -3362,8 +3424,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
@@ -3414,8 +3477,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
@@ -3466,8 +3530,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
@@ -3519,8 +3584,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
@@ -3572,8 +3638,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
@@ -3624,8 +3691,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
@@ -3676,8 +3744,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
@@ -3728,8 +3797,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
@@ -3780,8 +3850,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
@@ -3832,8 +3903,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
@@ -3884,8 +3956,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
@@ -3937,8 +4010,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
@@ -3990,8 +4064,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
@@ -4043,8 +4118,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
@@ -4096,8 +4172,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
@@ -4149,8 +4226,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
@@ -4202,8 +4280,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
@@ -4255,8 +4334,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
@@ -4308,8 +4388,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
@@ -4360,8 +4441,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
@@ -4414,8 +4496,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
@@ -4468,8 +4551,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
