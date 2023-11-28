@@ -658,7 +658,7 @@
     <h2>Canonicalization Algorithm</h2>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
-      into a <a>canonicalized dataset</a> or raise an error if
+      into a <a>canonicalized dataset</a> or raises an error if
       the input dataset is determined to be overly complex.
       This algorithm will assign
       deterministic identifiers to any <a>blank nodes</a> in the
@@ -1058,7 +1058,7 @@
         for typical <a>input datasets</a>.
         In some extreme cases, the algorithm can behave poorly, particularly in <a href="#ca.5">Step 5</a>.
         Implementations MUST prevent against potential denial-of-service attacks
-        by raising a suitable exception and terminating early.
+        by raising suitable exceptions and terminating early.
         See <a href="#dataset-poisoning"></a> for further information.</p>
 
       <p class="note">Implementations can consider placing limits on the number of
