@@ -658,7 +658,9 @@
     <h2>Canonicalization Algorithm</h2>
 
     <p>The canonicalization algorithm converts an <a>input dataset</a>
-      into a <a>canonicalized dataset</a>. This algorithm will assign
+      into a <a>canonicalized dataset</a> or raises an error if
+      the input dataset is determined to be overly complex.
+      This algorithm will assign
       deterministic identifiers to any <a>blank nodes</a> in the
       <a>input dataset</a>.</p>
 
@@ -1055,7 +1057,8 @@
       <p>The following algorithm will run with a minimal number of iterations in each step
         for typical <a>input datasets</a>.
         In some extreme cases, the algorithm can behave poorly, particularly in <a href="#ca.5">Step 5</a>.
-        Implementations MUST prevent against potential denial-of-service attacks.
+        Implementations MUST defend against potential denial-of-service attacks
+        by raising suitable exceptions and terminating early.
         See <a href="#dataset-poisoning"></a> for further information.</p>
 
       <p class="note">Implementations can consider placing limits on the number of
@@ -3715,6 +3718,16 @@
       which is composed of the <a>input dataset</a>,
       <a>input blank node identifier map</a>, and
       <a>issued identifiers map</a>.</li>
+  </ul>
+</section>
+
+<section class="appendix informative" id="changes-from-cr">
+  <h2>Changes since the Candidate Recommentation Snapshot of 31 October 2023</h2>
+  <ul>
+    <li>
+      Clarified that detecting a poison dataset will result in an exception and early
+      termination of the <a href="#canon-algo-algo">Canonicalization Algorithm</a>.
+    </li>
   </ul>
 </section>
 
