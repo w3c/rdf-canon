@@ -218,7 +218,7 @@
       <li>Future evolution of RDF might regulate this issue, which RDF environments might have to adapt to,
         and this might lead to an update of <a>RDFC-1.0</a>.</li>
     </ul>
-    
+
   </div>
   <p class="note">See <a href="#urdna2015" class="sectionRef"></a>
     for a comparison with the version of the algorithm published
@@ -298,8 +298,8 @@
       or <a>issued identifiers map</a>
       that does not identify the associated hash algorithm. Any use case
       that requires reproduction of the same output is expected to
-      unequivocally express or communicate the internal 
-      hash algorithm that was used when generating 
+      unequivocally express or communicate the internal
+      hash algorithm that was used when generating
       the <a>canonical n-quads form</a>.
     </p>
   </section>
@@ -438,7 +438,7 @@
         terminating in a reasonable amount of time (see <a href="#dataset-poisoning" class="sectionRef"></a>),
         in which case the algorithm can be considered to be
         a <dfn class="export">partial canonicalization function</dfn>.
-        
+
       </dd>
     </dl>
   </section>
@@ -2814,7 +2814,7 @@
     created by representing each <a>quad</a> from the <a>canonicalized dataset</a>
     in <a>canonical n-quads form</a>,
     sorting them into <a>code point order</a>,
-    and concatenating them. (Note that each canonical N-Quads statement ends with a new line, 
+    and concatenating them. (Note that each canonical N-Quads statement ends with a new line,
     so no additional separators are needed in the concatenation.)
     The resulting document has a media type of `application/n-quads`,
     as described in <a data-cite="N-QUADS#sec-mediaReg">C. N-Quads Internet Media Type, File Extension and Macintosh File Type</a>
@@ -2842,7 +2842,7 @@
       <http://example.com/p> <http://example.com/r> _:c14n1 .
       _:c14n0 <http://example.com/s> <http://example.com/u> .
       _:c14n1 <http://example.com/t> <http://example.com/u> .
-      
+
     -->
     </pre>
   </aside>
@@ -3483,7 +3483,7 @@
 
       <p><a href="#ca.4">Step 4</a> creates canonical identifiers for each
         blank node which has a unique hash:</p>
-        
+
       <table id="ex-dataset-bn-graph-ca.4"
              class="hash-related numbered">
         <caption>Canonical identifiers for dataset with blank node named graph</caption>
@@ -3552,7 +3552,7 @@
   <ul>
     <li>White space MUST NOT be used except after
       <code>subject</code>,
-      <code>predicate</code>, 
+      <code>predicate</code>,
       <code>object</code>,
       and <code>graphLabel</code>,
       each of which MUST be a single space (code point <code class="codepoint">U+0020</code>).</li>
@@ -3588,7 +3588,7 @@
      </li>
     <li>The token <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be a single <code>LF</code> (line feed, code point <code class="codepoint">U+000A</code>).</li>
     <li>The final <code><a data-cite="N-QUADS#grammar-production-EOL">EOL</a></code> MUST be provided.</li>
-  </ul>  
+  </ul>
 </section>
 
 <section id="urdna2015" class="appendix informative">
@@ -3597,7 +3597,7 @@
   <p>[[[CCG-RDC-FINAL]]] [[CCG-RDC-FINAL]] describes
     "Universal RDF Dataset Normalization Algorithm 2015"
     (<abbr title="Universal RDF Dataset Normalization Algorithm 2015"><dfn class="export">URDNA2015</dfn></abbr>),
-    essentially the same algorithm    
+    essentially the same algorithm
     as <a>RDFC-1.0</a>, and generally implementations implementing URDNA2015
     should be compatible with this specification.
     The minor change is in the <a>canonical n-quads form</a> where
