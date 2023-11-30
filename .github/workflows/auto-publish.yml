@@ -8,7 +8,7 @@ on:
     paths: ["spec/**"]
 jobs:
   main:
-    name: Echidna Auto-publish WD
+    name: Echidna Auto-publish CRD
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
