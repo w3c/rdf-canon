@@ -62,3 +62,5 @@ test072,dataset - shared blank nodes,Blank nodes shared in default and named gra
 test073,dataset - referencing graph name,Default graph with blank node shared with graph name,0,Approved,,TRUE,TRUE
 test074,poison - Clique Graph,A 10-node Clique of blank node resources all inter-related.,40,Approved,,RDFC10NegativeEvalTest,FALSE
 test075,blank node - diamond (uses SHA-384),Same as test020 except for using SHA-384,0,Approved,SHA384,TRUE,TRUE
+test076,duplicate ground triple in input,The duplicate triples must be removed,0,Approved,,TRUE,FALSE
+test077,duplicate triple with blank node in input,The duplicate triples must be removed,0,Approved,,TRUE,FALSE
