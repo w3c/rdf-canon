@@ -877,6 +877,26 @@
       "approval": "rdft:Approved",
       "action": "rdfc10/test075-in.nq",
       "result": "rdfc10/test075-rdfc10map.json"
+    },
+    {
+      "id": "#test076c",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "duplicate ground triple in input",
+      "comment": "The duplicate triples must be removed",
+      "computationalComplexity": "low",
+      "approval": "rdft:Approved",
+      "action": "rdfc10/test076-in.nq",
+      "result": "rdfc10/test076-rdfc10.nq"
+    },
+    {
+      "id": "#test077c",
+      "type": "rdfc:RDFC10EvalTest",
+      "name": "duplicate triple with blank node in input",
+      "comment": "The duplicate triples must be removed",
+      "computationalComplexity": "low",
+      "approval": "rdft:Approved",
+      "action": "rdfc10/test077-in.nq",
+      "result": "rdfc10/test077-rdfc10.nq"
     }
   ]
 }
