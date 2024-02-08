@@ -110,7 +110,9 @@
     <https://w3c.github.io/rdf-canon/tests/manifest#test073m>
     <https://w3c.github.io/rdf-canon/tests/manifest#test074c>
     <https://w3c.github.io/rdf-canon/tests/manifest#test075c>
-    <https://w3c.github.io/rdf-canon/tests/manifest#test075m>) .
+    <https://w3c.github.io/rdf-canon/tests/manifest#test075m>
+    <https://w3c.github.io/rdf-canon/tests/manifest#test076c>
+    <https://w3c.github.io/rdf-canon/tests/manifest#test077c>) .
 
 <https://w3c.github.io/rdf-canon/tests/manifest#test001c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
   mf:name "simple id" ;
@@ -4583,6 +4585,104 @@
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
+<https://w3c.github.io/rdf-canon/tests/manifest#test076c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "duplicate ground triple in input" ;
+  rdfs:comment "The duplicate triples must be removed" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Approved> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test076-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test076-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
+<https://w3c.github.io/rdf-canon/tests/manifest#test077c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
+  mf:name "duplicate triple with blank node in input" ;
+  rdfs:comment "The duplicate triples must be removed" ;
+  <https://w3c.github.io/rdf-canon/tests/vocab#computationalComplexity> "low" ;
+  <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Approved> ;
+  mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test077-in.nq> ;
+  mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test077-rdfc10.nq> ;
+  earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://github.com/pchampin/sophia_rs> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://github.com/zkp-ld/rdf-canon> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://iherman.github.io/rdfjs-c14n/> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://rubygems.org/gems/rdf-normalize> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:untested
+    ] ;
+  ] .
+
 <https://github.com/digitalbazaar/rdf-canonize> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "rdf-canonize" ;
   doap:developer <https://digitalbazaar.com/> ;
@@ -4655,5 +4755,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2023-09-08"^^xsd:date;
+  doap:created "2024-02-08"^^xsd:date;
   doap:revision "0.9.0" .
