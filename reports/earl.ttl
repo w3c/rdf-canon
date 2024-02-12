@@ -4631,8 +4631,9 @@
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
 <https://w3c.github.io/rdf-canon/tests/manifest#test077c> a <https://w3c.github.io/rdf-canon/tests/vocab#RDFC10EvalTest>, earl:TestCriterion, earl:TestCase ;
@@ -4681,8 +4682,9 @@
     earl:subject <https://rubygems.org/gems/rdf-normalize> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
 
 <https://github.com/digitalbazaar/rdf-canonize> a doap:Project, earl:TestSubject, earl:Software ;
