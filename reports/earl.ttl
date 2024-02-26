@@ -4615,8 +4615,9 @@
     earl:subject <https://github.com/zkp-ld/rdf-canon> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
@@ -4667,8 +4668,9 @@
     earl:subject <https://github.com/zkp-ld/rdf-canon> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <https://github.com/yamdan> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
@@ -4718,7 +4720,7 @@
   doap:homepage <https://github.com/zkp-ld/rdf-canon> ;
   doap:description "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf."@en ;
   doap:programming-language "Rust" ;
-  doap:release [doap:revision "0.14.0"] .
+  doap:release [doap:revision "0.15.0-alpha.4"] .
 
 <https://github.com/yamdan> a foaf:Person, earl:Assertor ;
   foaf:name "Dan Yamamoto" .
@@ -4761,5 +4763,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2024-02-12"^^xsd:date;
+  doap:created "2024-02-26"^^xsd:date;
   doap:revision "0.9.0" .
