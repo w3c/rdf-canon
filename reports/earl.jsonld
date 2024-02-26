@@ -135,7 +135,7 @@
       "name": "earl-report-0.9.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-02-12"
+        "@value": "2024-02-26"
       },
       "revision": "0.9.0"
     },
@@ -240,7 +240,7 @@
       "language": "Rust",
       "release": {
         "@id": "_:b687",
-        "revision": "0.14.0"
+        "revision": "0.15.0-alpha.4"
       }
     },
     {
@@ -7245,28 +7245,29 @@
               }
             },
             {
-              "@id": "_:b856",
+              "@id": "_:b860",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
               "result": {
-                "@id": "_:b857",
+                "@id": "_:b861",
                 "@type": "TestResult",
                 "outcome": "earl:untested"
               },
               "assertedBy": null
             },
             {
-              "@id": "_:b858",
+              "@id": "_:b856",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
+              "assertedBy": "https://github.com/yamdan",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b859",
+                "@id": "_:b857",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
               "@id": "_:b342",
@@ -7326,21 +7327,9 @@
               }
             },
             {
-              "@id": "_:b860",
-              "@type": "Assertion",
-              "subject": "https://github.com/pchampin/sophia_rs",
-              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
-              "result": {
-                "@id": "_:b861",
-                "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
-            },
-            {
               "@id": "_:b862",
               "@type": "Assertion",
-              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "result": {
                 "@id": "_:b863",
@@ -7348,6 +7337,19 @@
                 "outcome": "earl:untested"
               },
               "assertedBy": null
+            },
+            {
+              "@id": "_:b858",
+              "@type": "Assertion",
+              "subject": "https://github.com/zkp-ld/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
+              "assertedBy": "https://github.com/yamdan",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b859",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
             },
             {
               "@id": "_:b344",
