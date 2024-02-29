@@ -1,0 +1,876 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    dc:issued "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+    foaf:maker <http://marcelotto.net/#me> ;
+    foaf:primaryTopic <https://hex.pm/packages/rdf> .
+
+<http://marcelotto.net/#me>
+    a earl:Assertor, foaf:Person ;
+    foaf:homepage <http://marcelotto.net/> ;
+    foaf:name "Marcel Otto" .
+
+<https://hex.pm/packages/rdf>
+    a doap:Project, earl:Software, earl:TestSubject ;
+    dc:creator <http://marcelotto.net/#me> ;
+    <http://usefulinc.com/ns/doap#bug-database> <https://github.com/rdf-elixir/rdf-ex/issues> ;
+    doap:category <http://dbpedia.org/resource/Elixir_(programming_language)>, <http://dbpedia.org/resource/Resource_Description_Framework> ;
+    doap:created "2017-06-25"^^xsd:date ;
+    doap:description "RDF.ex is a pure-Elixir library for working with Resource Description Framework (RDF) data."@en ;
+    doap:developer <http://marcelotto.net/#me> ;
+    doap:documenter <http://marcelotto.net/#me> ;
+    <http://usefulinc.com/ns/doap#download-page> <https://hex.pm/packages/rdf> ;
+    doap:homepage <https://rdf-elixir.dev/> ;
+    doap:implements <http://www.w3.org/TR/n-quads/>, <http://www.w3.org/TR/n-triples/>, <http://www.w3.org/TR/rdf11-concepts/>, <http://www.w3.org/TR/turtle/>, <https://w3c.github.io/rdf-star/rdf-star-cg-spec.html> ;
+    doap:maintainer <http://marcelotto.net/#me> ;
+    doap:name "RDF.ex" ;
+    doap:platform "Erlang/OTP" ;
+    <http://usefulinc.com/ns/doap#programming-language> "Elixir" ;
+    doap:release <https://hex.pm/packages/rdf/1.2.0> ;
+    doap:repository <https://github.com/rdf-elixir/rdf-ex> ;
+    doap:shortdesc "An implementation of RDF for Elixir" ;
+    foaf:maker <http://marcelotto.net/#me> .
+
+<https://hex.pm/packages/rdf/1.2.0>
+    doap:name "RDF.ex 1.2.0" ;
+    doap:revision "1.2.0" .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c>
+] .
+
+[
+    a earl:Assertion ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
+    earl:mode earl:automatic ;
+    earl:result [
+        a earl:TestResult ;
+        dc:date "2024-02-28T17:56:45.371458Z"^^xsd:dateTime ;
+        earl:outcome earl:passed
+    ] ;
+    earl:subject <https://hex.pm/packages/rdf> ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c>
+] .
