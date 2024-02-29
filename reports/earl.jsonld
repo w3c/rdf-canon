@@ -135,7 +135,7 @@
       "name": "earl-report-0.9.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-02-28"
+        "@value": "2024-02-29"
       },
       "revision": "0.9.0"
     },
@@ -352,40 +352,40 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test001-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b299",
+              "@id": "_:b129",
               "@type": "Assertion",
               "subject": "https://github.com/digitalbazaar/rdf-canonize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://digitalbazaar.com/",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b300",
+                "@id": "_:b130",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b813",
+              "@id": "_:b647",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b814",
+                "@id": "_:b648",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b986",
+              "@id": "_:b816",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b987",
+                "@id": "_:b817",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -404,27 +404,27 @@
               }
             },
             {
-              "@id": "_:b472",
+              "@id": "_:b302",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b473",
+                "@id": "_:b303",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b645",
+              "@id": "_:b475",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b646",
+                "@id": "_:b476",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3139,14 +3139,14 @@
               }
             },
             {
-              "@id": "_:b0",
+              "@id": "_:b126",
               "@type": "Assertion",
               "subject": "https://hex.pm/packages/rdf",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
               "assertedBy": "http://marcelotto.net/#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1",
+                "@id": "_:b127",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4565,14 +4565,14 @@
               }
             },
             {
-              "@id": "_:b126",
+              "@id": "_:b0",
               "@type": "Assertion",
               "subject": "https://hex.pm/packages/rdf",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
               "assertedBy": "http://marcelotto.net/#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b127",
+                "@id": "_:b1",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8248,14 +8248,14 @@
               }
             },
             {
-              "@id": "_:b647",
+              "@id": "_:b813",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "http://champin.net/#pa",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b648",
+                "@id": "_:b814",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8425,14 +8425,14 @@
           "testResult": "https://w3c.github.io/rdf-canon/tests/rdfc10/test077-rdfc10.nq",
           "assertions": [
             {
-              "@id": "_:b129",
+              "@id": "_:b299",
               "@type": "Assertion",
               "subject": "https://github.com/digitalbazaar/rdf-canonize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "assertedBy": "https://digitalbazaar.com/",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b130",
+                "@id": "_:b300",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8450,14 +8450,14 @@
               "assertedBy": null
             },
             {
-              "@id": "_:b816",
+              "@id": "_:b986",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b817",
+                "@id": "_:b987",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8476,27 +8476,27 @@
               }
             },
             {
-              "@id": "_:b302",
+              "@id": "_:b472",
               "@type": "Assertion",
               "subject": "https://iherman.github.io/rdfjs-c14n/",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "assertedBy": "https://www.ivan-herman.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b303",
+                "@id": "_:b473",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
             },
             {
-              "@id": "_:b475",
+              "@id": "_:b645",
               "@type": "Assertion",
               "subject": "https://rubygems.org/gems/rdf-normalize",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "assertedBy": "https://greggkellogg.net/foaf#me",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b476",
+                "@id": "_:b646",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
