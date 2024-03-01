@@ -341,8 +341,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
@@ -464,8 +465,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
@@ -587,8 +589,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
@@ -1144,8 +1147,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
@@ -1267,8 +1271,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
@@ -1390,8 +1395,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
@@ -1575,8 +1581,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
@@ -2256,8 +2263,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
@@ -3064,8 +3072,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
@@ -3187,8 +3196,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
@@ -3312,8 +3322,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
@@ -3497,8 +3508,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
@@ -3620,8 +3632,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
@@ -3743,8 +3756,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
@@ -3990,8 +4004,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
@@ -4239,8 +4254,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
@@ -4736,8 +4752,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
@@ -4861,8 +4878,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
@@ -4986,8 +5004,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
@@ -5111,8 +5130,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
@@ -5172,8 +5192,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
@@ -5299,8 +5320,9 @@
     earl:subject <https://hex.pm/packages/rdf> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://marcelotto.net/#me> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
@@ -5529,5 +5551,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2024-02-29"^^xsd:date;
+  doap:created "2024-02-28"^^xsd:date;
   doap:revision "0.9.0" .
