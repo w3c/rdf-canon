@@ -179,7 +179,7 @@ class Manifest
 ##
 ## Test types
 ## * rdfc:RDFC10EvalTest – Canonicalization using RDFC-1.0
-## * rdfc:RDFC10NegativeEvalTest – Canonicalization using RDFC-1.0
+## * rdfc:RDFC10NegativeEvalTest – Negative Canonicalization using RDFC-1.0
 ## * rdfc:RDFC10MapTest  – RDFC-1.0 Issued Identifiers Test
 
 @prefix : <manifest#> .
