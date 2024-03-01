@@ -175,7 +175,7 @@ class Manifest
 ## 2. http://www.w3.org/Consortium/Legal/2008/03-bsd-license
 ## 3. http://www.w3.org/2004/10/27-testcases
 ##
-## This file is generated automatciallly from manifest.csv, and should not be edited directly.
+## This file is generated automatically from manifest.csv, and should not be edited directly.
 ##
 ## Test types
 ## * rdfc:RDFC10EvalTest – Canonicalization using RDFC-1.0
