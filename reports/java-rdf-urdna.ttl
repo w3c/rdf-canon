@@ -1,0 +1,905 @@
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX earl: <http://www.w3.org/ns/earl#>
+
+<>
+  dct:issued "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+  foaf:maker <mailto:simon.greatrix@pippsford.com>;
+  foaf:primaryTopic <https://w3c.github.io/rdf-canon/tests/>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "simple id";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "duplicate property iri values";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode plus embed w/subject";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode plus embed w/subject (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode embed";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "bnode embed (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "multiple rdf types";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "single subject complex";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "multiple subjects - complex";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "type";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "type-coerced type";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "type-coerced type, cycle";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "check types";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - dual link - embed";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - dual link - embed (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - dual link - non-embed";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - dual link - non-embed (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - self link";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - self link (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - disjoint self links";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - circle of 2";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 2";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - circle of 3";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (0-1-2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (0-2-1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (1-0-2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (1-2-0)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (2-1-0)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (2-0-1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - point at circle of 3";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - point at circle of 3 (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "disjoint identical subgraphs (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "disjoint identical subgraphs (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "reordered w/strings (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "reordered w/strings (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "reordered 4 bnodes, reordered 2 properties (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "reordered 4 bnodes, reordered 2 properties (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "reordered 6 bnodes (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "literal with language";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "poison – evil (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "poison – evil (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "poison – evil (3)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "deep diff (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "deep diff (1) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "deep diff (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "deep diff (2) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "@list";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "@list (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "t-graph";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "simple reorder (1)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "simple reorder (1) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "simple reorder (2)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "simple reorder (2) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "unnamed graph";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "unnamed graph (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "unnamed graph with blank node objects";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "n-quads parsing";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "n-quads escaping";
+      dct:description "Titanium RDF library does not support IRIs, so test cannot be performed";
+      earl:outcome earl:untested];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "n-quads escaping (map test)";
+      dct:description "Titanium RDF library does not support IRIs, so test cannot be performed";
+      earl:outcome earl:untested];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "same literal value with multiple languages";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "same literal value with multiple datatypes";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond (with _:b)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond (with _:b) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (0-1-2, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (0-2-1, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (1-0-2, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (1-2-0, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (2-1-0, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - double circle of 3 (2-0-1, reversed)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - isomorphic default and iri named";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - isomorphic default and iri named (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - isomorphic default and node named";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - isomorphic default and node named (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - shared blank nodes";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - shared blank nodes (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - referencing graph name";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "dataset - referencing graph name (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "poison - Clique Graph (negative test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond (uses SHA-384)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "blank node - diamond (uses SHA-384) (map test)";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "duplicate ground triple in input";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c>.
+
+[] a earl:Assertion;
+  earl:assertedBy <mailto:simon.greatrix@pippsford.com>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:TestResult;
+      dct:date "2024-03-03T11:00:00.000+00:00"^^<http://www.w3.org/2001/XMLSchema#datetime>;
+      dct:title "duplicate triple with blank node in input";
+      earl:outcome earl:passed];
+  earl:subject <https://github.com/setl/rdf-urdna>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c>.
+
+# manually added:
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX doap: <http://usefulinc.com/ns/doap#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<mailto:simon.greatrix@pippsford.com> a foaf:Person;
+   foaf:mbox <mailto:simon.greatrix@pippsford.com>;
+   foaf:name "Simon Greatrix";
+.
+
+<https://github.com/setl/rdf-urdna/release/1.3>
+  doap:name "1.3";
+  doap:revision "1.3";
+  doap:created "2024-03-03"^^xsd:date;
+.
+
+<https://github.com/setl/rdf-urdna> a doap:Project;
+   dct:creator <mailto:simon.greatrix@pippsford.com>;
+   doap:bug-database <https://github.com/setl/rdf-urdna/issues>;
+   doap:created "2020-10-14"^^xsd:date;
+   doap:description "A Java implementation of the RDF URDNA-2015 algorithm. NOTE: The Titanium RDF library does not currently support IRIs which are required for test 060. That is why that test is skipped."@en;
+   doap:developer <mailto:simon.greatrix@pippsford.com>;
+   doap:documenter <mailto:simon.greatrix@pippsford.com>;
+   doap:homepage <https://github.com/setl/rdf-urdna>;
+   doap:implements
+       <https://www.w3.org/TR/rdf-canon/>;
+   doap:maintainer <mailto:simon.greatrix@pippsford.com>;
+   doap:name "RDF-URDNA";
+   doap:programming-language "Java";
+   doap:shortdesc "A Java implementation of the RDF URDNA-2015 algorithm."@en;
+   foaf:maker <mailto:simon.greatrix@pippsford.com>;
+   doap:release <https://github.com/setl/rdf-urdna/release/1.3>;
+.
