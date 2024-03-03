@@ -5365,8 +5365,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
@@ -5427,8 +5428,9 @@
     earl:subject <https://github.com/pchampin/sophia_rs> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:untested
+      earl:outcome earl:passed
     ] ;
+    earl:assertedBy <http://champin.net/#pa> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
@@ -5485,7 +5487,7 @@
   doap:homepage <https://github.com/pchampin/sophia_rs> ;
   doap:description "A Rust toolkit for RDF and Linked Data."@en ;
   doap:programming-language "Rust" ;
-  doap:release [doap:revision "0.8.0-alpha.2"] .
+  doap:release [doap:revision "#4511da9"] .
 
 <http://champin.net/#pa> a foaf:Person ;
   foaf:name "Pierre-Antoine Champin" .
@@ -5551,5 +5553,5 @@
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2024-03-01"^^xsd:date;
+  doap:created "2024-03-03"^^xsd:date;
   doap:revision "0.9.0" .

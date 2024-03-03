@@ -135,7 +135,7 @@
       "name": "earl-report-0.9.0",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-03-01"
+        "@value": "2024-03-03"
       },
       "revision": "0.9.0"
     },
@@ -214,8 +214,8 @@
       "doapDesc": "A Rust toolkit for RDF and Linked Data.",
       "language": "Rust",
       "release": {
-        "@id": "https://crates.io/crates/sophia/0.8.0-alpha.2",
-        "revision": "0.8.0-alpha.2"
+        "@id": "https://github.com/pchampin/sophia_rs/commit/4511da95c38ec978537295ab5d4ba374a9399961",
+        "revision": "#4511da9"
       }
     },
     {
@@ -240,7 +240,7 @@
       "doapDesc": "A Rust implementation of the RDF Dataset Canonicalization algorithm version 1.0 (RDFC-1.0) compatible with Oxigraph and Oxrdf.",
       "language": "Rust",
       "release": {
-        "@id": "_:b859",
+        "@id": "_:b863",
         "revision": "0.15.0-alpha.4"
       }
     },
@@ -378,14 +378,14 @@
               }
             },
             {
-              "@id": "_:b860",
+              "@id": "_:b864",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b861",
+                "@id": "_:b865",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -473,14 +473,14 @@
               }
             },
             {
-              "@id": "_:b862",
+              "@id": "_:b866",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b863",
+                "@id": "_:b867",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -568,14 +568,14 @@
               }
             },
             {
-              "@id": "_:b864",
+              "@id": "_:b868",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b865",
+                "@id": "_:b869",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -663,14 +663,14 @@
               }
             },
             {
-              "@id": "_:b866",
+              "@id": "_:b870",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b867",
+                "@id": "_:b871",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -758,14 +758,14 @@
               }
             },
             {
-              "@id": "_:b868",
+              "@id": "_:b872",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b869",
+                "@id": "_:b873",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -853,14 +853,14 @@
               }
             },
             {
-              "@id": "_:b870",
+              "@id": "_:b874",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b871",
+                "@id": "_:b875",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -948,14 +948,14 @@
               }
             },
             {
-              "@id": "_:b872",
+              "@id": "_:b876",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b873",
+                "@id": "_:b877",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1043,14 +1043,14 @@
               }
             },
             {
-              "@id": "_:b874",
+              "@id": "_:b878",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b875",
+                "@id": "_:b879",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1138,14 +1138,14 @@
               }
             },
             {
-              "@id": "_:b876",
+              "@id": "_:b880",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b877",
+                "@id": "_:b881",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1233,14 +1233,14 @@
               }
             },
             {
-              "@id": "_:b878",
+              "@id": "_:b882",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b879",
+                "@id": "_:b883",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1328,14 +1328,14 @@
               }
             },
             {
-              "@id": "_:b880",
+              "@id": "_:b884",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b881",
+                "@id": "_:b885",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1423,14 +1423,14 @@
               }
             },
             {
-              "@id": "_:b882",
+              "@id": "_:b886",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b883",
+                "@id": "_:b887",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1518,14 +1518,14 @@
               }
             },
             {
-              "@id": "_:b884",
+              "@id": "_:b888",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b885",
+                "@id": "_:b889",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1613,14 +1613,14 @@
               }
             },
             {
-              "@id": "_:b886",
+              "@id": "_:b890",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b887",
+                "@id": "_:b891",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1708,14 +1708,14 @@
               }
             },
             {
-              "@id": "_:b888",
+              "@id": "_:b892",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b889",
+                "@id": "_:b893",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1803,14 +1803,14 @@
               }
             },
             {
-              "@id": "_:b890",
+              "@id": "_:b894",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b891",
+                "@id": "_:b895",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1898,14 +1898,14 @@
               }
             },
             {
-              "@id": "_:b892",
+              "@id": "_:b896",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b893",
+                "@id": "_:b897",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1993,14 +1993,14 @@
               }
             },
             {
-              "@id": "_:b894",
+              "@id": "_:b898",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b895",
+                "@id": "_:b899",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2088,14 +2088,14 @@
               }
             },
             {
-              "@id": "_:b896",
+              "@id": "_:b900",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b897",
+                "@id": "_:b901",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2183,14 +2183,14 @@
               }
             },
             {
-              "@id": "_:b898",
+              "@id": "_:b902",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b899",
+                "@id": "_:b903",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2278,14 +2278,14 @@
               }
             },
             {
-              "@id": "_:b900",
+              "@id": "_:b904",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b901",
+                "@id": "_:b905",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2373,14 +2373,14 @@
               }
             },
             {
-              "@id": "_:b902",
+              "@id": "_:b906",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b903",
+                "@id": "_:b907",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2468,14 +2468,14 @@
               }
             },
             {
-              "@id": "_:b904",
+              "@id": "_:b908",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b905",
+                "@id": "_:b909",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2563,14 +2563,14 @@
               }
             },
             {
-              "@id": "_:b906",
+              "@id": "_:b910",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b907",
+                "@id": "_:b911",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2658,14 +2658,14 @@
               }
             },
             {
-              "@id": "_:b908",
+              "@id": "_:b912",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b909",
+                "@id": "_:b913",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2753,14 +2753,14 @@
               }
             },
             {
-              "@id": "_:b910",
+              "@id": "_:b914",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b911",
+                "@id": "_:b915",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2848,14 +2848,14 @@
               }
             },
             {
-              "@id": "_:b912",
+              "@id": "_:b916",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b913",
+                "@id": "_:b917",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2943,14 +2943,14 @@
               }
             },
             {
-              "@id": "_:b914",
+              "@id": "_:b918",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b915",
+                "@id": "_:b919",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3038,14 +3038,14 @@
               }
             },
             {
-              "@id": "_:b916",
+              "@id": "_:b920",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b917",
+                "@id": "_:b921",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3133,14 +3133,14 @@
               }
             },
             {
-              "@id": "_:b918",
+              "@id": "_:b922",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b919",
+                "@id": "_:b923",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3228,14 +3228,14 @@
               }
             },
             {
-              "@id": "_:b920",
+              "@id": "_:b924",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b921",
+                "@id": "_:b925",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3323,14 +3323,14 @@
               }
             },
             {
-              "@id": "_:b922",
+              "@id": "_:b926",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b923",
+                "@id": "_:b927",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3418,14 +3418,14 @@
               }
             },
             {
-              "@id": "_:b924",
+              "@id": "_:b928",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b925",
+                "@id": "_:b929",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3513,14 +3513,14 @@
               }
             },
             {
-              "@id": "_:b926",
+              "@id": "_:b930",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b927",
+                "@id": "_:b931",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3608,14 +3608,14 @@
               }
             },
             {
-              "@id": "_:b928",
+              "@id": "_:b932",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b929",
+                "@id": "_:b933",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3703,14 +3703,14 @@
               }
             },
             {
-              "@id": "_:b930",
+              "@id": "_:b934",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b931",
+                "@id": "_:b935",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3798,14 +3798,14 @@
               }
             },
             {
-              "@id": "_:b932",
+              "@id": "_:b936",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b933",
+                "@id": "_:b937",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3893,14 +3893,14 @@
               }
             },
             {
-              "@id": "_:b934",
+              "@id": "_:b938",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b935",
+                "@id": "_:b939",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3988,14 +3988,14 @@
               }
             },
             {
-              "@id": "_:b936",
+              "@id": "_:b940",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b937",
+                "@id": "_:b941",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4083,14 +4083,14 @@
               }
             },
             {
-              "@id": "_:b938",
+              "@id": "_:b942",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b939",
+                "@id": "_:b943",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4178,14 +4178,14 @@
               }
             },
             {
-              "@id": "_:b940",
+              "@id": "_:b944",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b941",
+                "@id": "_:b945",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4273,14 +4273,14 @@
               }
             },
             {
-              "@id": "_:b942",
+              "@id": "_:b946",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b943",
+                "@id": "_:b947",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4368,14 +4368,14 @@
               }
             },
             {
-              "@id": "_:b944",
+              "@id": "_:b948",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b945",
+                "@id": "_:b949",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4464,14 +4464,14 @@
               }
             },
             {
-              "@id": "_:b946",
+              "@id": "_:b950",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b947",
+                "@id": "_:b951",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4560,14 +4560,14 @@
               }
             },
             {
-              "@id": "_:b948",
+              "@id": "_:b952",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b949",
+                "@id": "_:b953",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4656,14 +4656,14 @@
               }
             },
             {
-              "@id": "_:b950",
+              "@id": "_:b954",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b951",
+                "@id": "_:b955",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4751,14 +4751,14 @@
               }
             },
             {
-              "@id": "_:b952",
+              "@id": "_:b956",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b953",
+                "@id": "_:b957",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4846,14 +4846,14 @@
               }
             },
             {
-              "@id": "_:b954",
+              "@id": "_:b958",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b955",
+                "@id": "_:b959",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4941,14 +4941,14 @@
               }
             },
             {
-              "@id": "_:b956",
+              "@id": "_:b960",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b957",
+                "@id": "_:b961",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5036,14 +5036,14 @@
               }
             },
             {
-              "@id": "_:b958",
+              "@id": "_:b962",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b959",
+                "@id": "_:b963",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5132,14 +5132,14 @@
               }
             },
             {
-              "@id": "_:b960",
+              "@id": "_:b964",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b961",
+                "@id": "_:b965",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5228,14 +5228,14 @@
               }
             },
             {
-              "@id": "_:b962",
+              "@id": "_:b966",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b963",
+                "@id": "_:b967",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5323,14 +5323,14 @@
               }
             },
             {
-              "@id": "_:b964",
+              "@id": "_:b968",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b965",
+                "@id": "_:b969",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5418,14 +5418,14 @@
               }
             },
             {
-              "@id": "_:b966",
+              "@id": "_:b970",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b967",
+                "@id": "_:b971",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5513,14 +5513,14 @@
               }
             },
             {
-              "@id": "_:b968",
+              "@id": "_:b972",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b969",
+                "@id": "_:b973",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5608,14 +5608,14 @@
               }
             },
             {
-              "@id": "_:b970",
+              "@id": "_:b974",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b971",
+                "@id": "_:b975",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5703,14 +5703,14 @@
               }
             },
             {
-              "@id": "_:b972",
+              "@id": "_:b976",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b973",
+                "@id": "_:b977",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5798,14 +5798,14 @@
               }
             },
             {
-              "@id": "_:b974",
+              "@id": "_:b978",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b975",
+                "@id": "_:b979",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5893,14 +5893,14 @@
               }
             },
             {
-              "@id": "_:b976",
+              "@id": "_:b980",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b977",
+                "@id": "_:b981",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5988,14 +5988,14 @@
               }
             },
             {
-              "@id": "_:b978",
+              "@id": "_:b982",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b979",
+                "@id": "_:b983",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6083,14 +6083,14 @@
               }
             },
             {
-              "@id": "_:b980",
+              "@id": "_:b984",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b981",
+                "@id": "_:b985",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6178,14 +6178,14 @@
               }
             },
             {
-              "@id": "_:b982",
+              "@id": "_:b986",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b983",
+                "@id": "_:b987",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6273,14 +6273,14 @@
               }
             },
             {
-              "@id": "_:b984",
+              "@id": "_:b988",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b985",
+                "@id": "_:b989",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6368,14 +6368,14 @@
               }
             },
             {
-              "@id": "_:b986",
+              "@id": "_:b990",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b987",
+                "@id": "_:b991",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6463,14 +6463,14 @@
               }
             },
             {
-              "@id": "_:b988",
+              "@id": "_:b992",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b989",
+                "@id": "_:b993",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6559,14 +6559,14 @@
               }
             },
             {
-              "@id": "_:b990",
+              "@id": "_:b994",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b991",
+                "@id": "_:b995",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6655,14 +6655,14 @@
               }
             },
             {
-              "@id": "_:b992",
+              "@id": "_:b996",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b993",
+                "@id": "_:b997",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6750,14 +6750,14 @@
               }
             },
             {
-              "@id": "_:b994",
+              "@id": "_:b998",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b995",
+                "@id": "_:b999",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6845,14 +6845,14 @@
               }
             },
             {
-              "@id": "_:b996",
+              "@id": "_:b1000",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b997",
+                "@id": "_:b1001",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6940,14 +6940,14 @@
               }
             },
             {
-              "@id": "_:b998",
+              "@id": "_:b1002",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b999",
+                "@id": "_:b1003",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7035,14 +7035,14 @@
               }
             },
             {
-              "@id": "_:b1000",
+              "@id": "_:b1004",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1001",
+                "@id": "_:b1005",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7130,14 +7130,14 @@
               }
             },
             {
-              "@id": "_:b1002",
+              "@id": "_:b1006",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1003",
+                "@id": "_:b1007",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7225,14 +7225,14 @@
               }
             },
             {
-              "@id": "_:b1004",
+              "@id": "_:b1008",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1005",
+                "@id": "_:b1009",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7321,14 +7321,14 @@
               }
             },
             {
-              "@id": "_:b1006",
+              "@id": "_:b1010",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1007",
+                "@id": "_:b1011",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7417,14 +7417,14 @@
               }
             },
             {
-              "@id": "_:b1008",
+              "@id": "_:b1012",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1009",
+                "@id": "_:b1013",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7513,14 +7513,14 @@
               }
             },
             {
-              "@id": "_:b1010",
+              "@id": "_:b1014",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1011",
+                "@id": "_:b1015",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7609,14 +7609,14 @@
               }
             },
             {
-              "@id": "_:b1012",
+              "@id": "_:b1016",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1013",
+                "@id": "_:b1017",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7705,14 +7705,14 @@
               }
             },
             {
-              "@id": "_:b1014",
+              "@id": "_:b1018",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1015",
+                "@id": "_:b1019",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7801,14 +7801,14 @@
               }
             },
             {
-              "@id": "_:b1016",
+              "@id": "_:b1020",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1017",
+                "@id": "_:b1021",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7897,14 +7897,14 @@
               }
             },
             {
-              "@id": "_:b1018",
+              "@id": "_:b1022",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1019",
+                "@id": "_:b1023",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7993,14 +7993,14 @@
               }
             },
             {
-              "@id": "_:b1020",
+              "@id": "_:b1024",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1021",
+                "@id": "_:b1025",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8088,14 +8088,14 @@
               }
             },
             {
-              "@id": "_:b1022",
+              "@id": "_:b1026",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1023",
+                "@id": "_:b1027",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8185,14 +8185,14 @@
               }
             },
             {
-              "@id": "_:b1024",
+              "@id": "_:b1028",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1025",
+                "@id": "_:b1029",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8282,14 +8282,14 @@
               }
             },
             {
-              "@id": "_:b1026",
+              "@id": "_:b1030",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1027",
+                "@id": "_:b1031",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8365,26 +8365,27 @@
               }
             },
             {
-              "@id": "_:b1032",
+              "@id": "_:b859",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1033",
+                "@id": "_:b860",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b1028",
+              "@id": "_:b1032",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1029",
+                "@id": "_:b1033",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8460,26 +8461,27 @@
               }
             },
             {
-              "@id": "_:b1034",
+              "@id": "_:b861",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
+              "assertedBy": "http://champin.net/#pa",
+              "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1035",
+                "@id": "_:b862",
                 "@type": "TestResult",
-                "outcome": "earl:untested"
-              },
-              "assertedBy": null
+                "outcome": "earl:passed"
+              }
             },
             {
-              "@id": "_:b1030",
+              "@id": "_:b1034",
               "@type": "Assertion",
               "subject": "https://github.com/zkp-ld/rdf-canon",
               "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
               "assertedBy": "https://github.com/yamdan",
               "mode": "earl:automatic",
               "result": {
-                "@id": "_:b1031",
+                "@id": "_:b1035",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
