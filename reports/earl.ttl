@@ -161,7 +161,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
@@ -241,7 +241,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
@@ -321,7 +321,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
@@ -401,7 +401,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
@@ -481,7 +481,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
@@ -561,7 +561,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
@@ -641,7 +641,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
@@ -721,7 +721,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
@@ -801,7 +801,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
@@ -881,7 +881,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
@@ -961,7 +961,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
@@ -1041,7 +1041,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
@@ -1121,7 +1121,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
@@ -1201,7 +1201,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
@@ -1281,7 +1281,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
@@ -1361,7 +1361,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
@@ -1441,7 +1441,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
@@ -1521,7 +1521,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
@@ -1601,7 +1601,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
@@ -1681,7 +1681,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
@@ -1761,7 +1761,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
@@ -1841,7 +1841,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
@@ -1921,7 +1921,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
@@ -2001,7 +2001,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
@@ -2081,7 +2081,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
@@ -2161,7 +2161,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
@@ -2241,7 +2241,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
@@ -2321,7 +2321,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
@@ -2401,7 +2401,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
@@ -2481,7 +2481,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
@@ -2561,7 +2561,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
@@ -2641,7 +2641,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
@@ -2721,7 +2721,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
@@ -2801,7 +2801,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
@@ -2881,7 +2881,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
@@ -2961,7 +2961,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
@@ -3041,7 +3041,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
@@ -3121,7 +3121,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
@@ -3201,7 +3201,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
@@ -3281,7 +3281,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
@@ -3361,7 +3361,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
@@ -3441,7 +3441,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
@@ -3521,7 +3521,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
@@ -3602,7 +3602,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
@@ -3683,7 +3683,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
@@ -3764,7 +3764,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
@@ -3844,7 +3844,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
@@ -3924,7 +3924,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
@@ -4004,7 +4004,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
@@ -4084,7 +4084,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
@@ -4165,7 +4165,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
@@ -4246,7 +4246,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
@@ -4326,7 +4326,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
@@ -4406,7 +4406,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
@@ -4486,7 +4486,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
@@ -4566,7 +4566,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
@@ -4646,7 +4646,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
@@ -4726,7 +4726,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
@@ -4806,7 +4806,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
@@ -4886,7 +4886,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
@@ -4966,7 +4966,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
@@ -5046,7 +5046,7 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
@@ -5126,7 +5126,7 @@
       a earl:TestResult ;
       earl:outcome earl:untested
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
@@ -5206,7 +5206,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
@@ -5286,7 +5286,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
@@ -5367,7 +5367,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
@@ -5448,7 +5448,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
@@ -5528,7 +5528,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
@@ -5608,7 +5608,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
@@ -5688,7 +5688,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
@@ -5768,7 +5768,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
@@ -5848,7 +5848,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
@@ -5928,7 +5928,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
@@ -6009,7 +6009,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
@@ -6090,7 +6090,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
@@ -6171,7 +6171,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
@@ -6252,7 +6252,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
@@ -6333,7 +6333,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
@@ -6414,7 +6414,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
@@ -6495,7 +6495,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
@@ -6576,7 +6576,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
@@ -6656,7 +6656,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
@@ -6738,7 +6738,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
@@ -6820,7 +6820,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
@@ -6901,7 +6901,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
@@ -6982,7 +6982,7 @@
       a earl:TestResult ;
       earl:outcome earl:passed
     ] ;
-    earl:assertedBy mailto:simon.greatrix@pippsford.com ;
+    earl:assertedBy <mailto:simon.greatrix@pippsford.com> ;
   ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
@@ -7057,13 +7057,13 @@
 
 <https://github.com/setl/rdf-urdna> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "RDF-URDNA" ;
-  doap:developer mailto:simon.greatrix@pippsford.com ;
+  doap:developer <mailto:simon.greatrix@pippsford.com> ;
   doap:homepage <https://github.com/setl/rdf-urdna> ;
   doap:description "A Java implementation of the RDF URDNA-2015 algorithm. NOTE: The Titanium RDF library does not currently support IRIs which are required for test 060. That is why that test is skipped."@en ;
   doap:programming-language "Java" ;
   doap:release [doap:revision "1.3"] .
 
-mailto:simon.greatrix@pippsford.com a foaf:Person ;
+<mailto:simon.greatrix@pippsford.com> a foaf:Person ;
   foaf:name "Simon Greatrix" .
 
 <https://github.com/zkp-ld/rdf-canon> a doap:Project, earl:TestSubject, earl:Software ;
@@ -7122,10 +7122,10 @@ mailto:simon.greatrix@pippsford.com a foaf:Person ;
    doap:homepage <https://github.com/gkellogg/earl-report>;
    doap:programming-language "Ruby";
    doap:license <http://unlicense.org>;
-   doap:release <https://github.com/gkellogg/earl-report/tree/0.9.0>;
+   doap:release <https://github.com/gkellogg/earl-report/tree/0.9.1>;
    doap:developer <https://greggkellogg.net/foaf#me> .
 
-<https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
-  doap:name "earl-report-0.9.0";
+<https://github.com/gkellogg/earl-report/tree/0.9.1> a doap:Version;
+  doap:name "earl-report-0.9.1";
   doap:created "2024-03-07"^^xsd:date;
-  doap:revision "0.9.0" .
+  doap:revision "0.9.1" .
