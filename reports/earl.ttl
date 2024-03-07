@@ -12,13 +12,15 @@
   dc:bibliographicCitation "[[rdf-canon]]" ;
   earl:generatedBy <https://rubygems.org/gems/earl-report> ;
   mf:report earl:elixir-earl-report.ttl,
+    earl:java-corese-report.ttl,
     earl:java-rdf-urdna.ttl,
     earl:js-rdf-canonize-earl.ttl,
     earl:rdfjs-c14n-report.ttl,
     earl:ruby-earl.ttl,
     earl:rust-sophia-rdfc10.ttl,
     earl:rust-zkp-ld-earl.ttl ;
-  earl:testSubjects <https://github.com/digitalbazaar/rdf-canonize>,
+  earl:testSubjects <https://github.com/Wimmics/corese>,
+    <https://github.com/digitalbazaar/rdf-canonize>,
     <https://github.com/pchampin/sophia_rs>,
     <https://github.com/setl/rdf-urdna>,
     <https://github.com/zkp-ld/rdf-canon>,
@@ -127,6 +129,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -196,6 +207,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test002-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -269,6 +289,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -338,6 +367,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test003-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -411,6 +449,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -480,6 +527,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test004-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -553,6 +609,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -622,6 +687,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test005-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -695,6 +769,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -764,6 +847,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test008-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -837,6 +929,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -906,6 +1007,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test010-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -979,6 +1089,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1048,6 +1167,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test013-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1121,6 +1249,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1190,6 +1327,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test016-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1263,6 +1409,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1332,6 +1487,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test017-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1405,6 +1569,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1474,6 +1647,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test018-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1547,6 +1729,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1616,6 +1807,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test019-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1689,6 +1889,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1758,6 +1967,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test020-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1831,6 +2049,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -1900,6 +2127,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test022-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -1973,6 +2209,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2042,6 +2287,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test024-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2115,6 +2369,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2184,6 +2447,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test026-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2257,6 +2529,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2326,6 +2607,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test028-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2399,6 +2689,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2468,6 +2767,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test030-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2541,6 +2849,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2610,6 +2927,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test033-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2683,6 +3009,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2752,6 +3087,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test035-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2825,6 +3169,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -2894,6 +3247,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test038-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -2967,6 +3329,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3038,6 +3409,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3107,6 +3487,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test043-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3181,6 +3570,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3251,6 +3649,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test045-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3325,6 +3732,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3394,6 +3810,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test047-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3467,6 +3892,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3538,6 +3972,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3607,6 +4050,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test048-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3681,6 +4133,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3751,6 +4212,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test053-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3824,6 +4294,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -3893,6 +4372,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test055-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -3966,6 +4454,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4035,6 +4532,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test056-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4108,6 +4614,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4177,6 +4692,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test057-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4250,6 +4774,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4319,6 +4852,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test058-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4392,6 +4934,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4461,6 +5012,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test060-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:failed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4534,6 +5094,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:failed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4605,6 +5174,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4674,6 +5252,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test062-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4748,6 +5335,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4818,6 +5414,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test063-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -4891,6 +5496,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -4960,6 +5574,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test065-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5033,6 +5656,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5102,6 +5734,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test067-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5175,6 +5816,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5244,6 +5894,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test069-rdfc10.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5318,6 +5977,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5388,6 +6056,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test070-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test070-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5462,6 +6139,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5532,6 +6218,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test071-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test071-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5606,6 +6301,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5676,6 +6380,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test072-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test072-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5750,6 +6463,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5822,6 +6544,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -5891,6 +6622,15 @@
   <http://www.w3.org/ns/rdftest#approval> <http://www.w3.org/ns/rdftest#Approved> ;
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test074-in.nq> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -5966,6 +6706,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -6037,6 +6786,15 @@
   mf:action <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-in.nq> ;
   mf:result <https://w3c.github.io/rdf-canon/tests/rdfc10/test075-rdfc10map.json> ;
   earl:assertions [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
@@ -6111,6 +6869,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -6183,6 +6950,15 @@
   earl:assertions [
     a earl:Assertion ;
     earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+    earl:subject <https://github.com/Wimmics/corese> ;
+    earl:result [
+      a earl:TestResult ;
+      earl:outcome earl:passed
+    ] ;
+    earl:assertedBy <https://team.inria.fr/wimmics> ;
+  ], [
+    a earl:Assertion ;
+    earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
     earl:subject <https://github.com/digitalbazaar/rdf-canonize> ;
     earl:result [
       a earl:TestResult ;
@@ -6244,6 +7020,17 @@
     ] ;
     earl:assertedBy <https://greggkellogg.net/foaf#me> ;
   ] .
+
+<https://github.com/Wimmics/corese> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name "Corese" ;
+  doap:developer <https://team.inria.fr/wimmics> ;
+  doap:homepage <https://project.inria.fr/corese/> ;
+  doap:description "Software platform implementing and extending the standards of the Semantic Web."@en ;
+  doap:programming-language "Java" ;
+  doap:release [doap:revision "#1606452"] .
+
+<https://team.inria.fr/wimmics> a foaf:Person, earl:Assertor ;
+  foaf:name "Wimmics Team" .
 
 <https://github.com/digitalbazaar/rdf-canonize> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "rdf-canonize" ;
@@ -6340,5 +7127,5 @@ mailto:simon.greatrix@pippsford.com a foaf:Person ;
 
 <https://github.com/gkellogg/earl-report/tree/0.9.0> a doap:Version;
   doap:name "earl-report-0.9.0";
-  doap:created "2024-03-03"^^xsd:date;
+  doap:created "2024-03-06"^^xsd:date;
   doap:revision "0.9.0" .

@@ -1,0 +1,979 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://team.inria.fr/wimmics> a foaf:Person ;
+  a earl:Assertor ;
+  foaf:name "Wimmics Team" .
+
+<https://github.com/Wimmics/corese> doap:blog <https://github.com/Wimmics/corese/discussions/> ;
+  doap:bug-database <https://github.com/Wimmics/corese/issues> ;
+  doap:description "Software platform implementing and extending the standards of the Semantic Web."@en ;
+  doap:developer <https://team.inria.fr/wimmics> ;
+  doap:download-page <https://project.inria.fr/corese/download/> ;
+  doap:homepage <https://project.inria.fr/corese/> ;
+  doap:license <http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html> ;
+  doap:mailing-list <mailto:corese-users@inria.fr> ;
+  doap:name "Corese" ;
+  doap:programming-language "Java" ;
+  doap:release <https://github.com/Wimmics/corese/commit/160645274c021c59eaebc113054ec55d0be8995b> ;
+  a doap:Project ;
+  a earl:Software ;
+  a earl:TestSubject .
+
+<https://github.com/Wimmics/corese/commit/160645274c021c59eaebc113054ec55d0be8995b> doap:created "2024-03-07"^^xsd:date ;
+  doap:name "Corese #1606452" ;
+  doap:revision "#1606452" .
+
+<> dc:issued "2024-03-07T09:22:09+01:00"^^xsd:dateTime ;
+  foaf:maker <https://team.inria.fr/wimmics> ;
+  foaf:primaryTopic <https://github.com/Wimmics/corese> .
+
+_:b149 dc:date "2024-03-07T09:22:03+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b148 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b149 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> .
+
+_:b147 dc:date "2024-03-07T09:22:03+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b146 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b147 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> .
+
+_:b145 dc:date "2024-03-07T09:22:03+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b144 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b145 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> .
+
+_:b143 dc:date "2024-03-07T09:22:02+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b142 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b143 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> .
+
+_:b141 dc:date "2024-03-07T09:22:02+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b140 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b141 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> .
+
+_:b99 dc:date "2024-03-07T09:21:56+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b98 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b99 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> .
+
+_:b97 dc:date "2024-03-07T09:21:56+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b139 dc:date "2024-03-07T09:22:02+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b96 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b97 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> .
+
+_:b138 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b139 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> .
+
+_:b137 dc:date "2024-03-07T09:22:02+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b95 dc:date "2024-03-07T09:21:55+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b136 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b137 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> .
+
+_:b94 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b95 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> .
+
+_:b135 dc:date "2024-03-07T09:22:01+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b93 dc:date "2024-03-07T09:21:55+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b134 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b135 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> .
+
+_:b92 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b93 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> .
+
+_:b133 dc:date "2024-03-07T09:22:01+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b91 dc:date "2024-03-07T09:21:55+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b132 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b133 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> .
+
+_:b90 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b91 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> .
+
+_:b131 dc:date "2024-03-07T09:22:01+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b130 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b131 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> .
+
+_:b89 dc:date "2024-03-07T09:21:54+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b88 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b89 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> .
+
+_:b129 dc:date "2024-03-07T09:22:00+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b87 dc:date "2024-03-07T09:21:54+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b128 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b129 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> .
+
+_:b86 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b87 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> .
+
+_:b127 dc:date "2024-03-07T09:22:00+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b85 dc:date "2024-03-07T09:21:54+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b126 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b127 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> .
+
+_:b84 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b85 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> .
+
+_:b125 dc:date "2024-03-07T09:22:00+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:failed .
+
+_:b83 dc:date "2024-03-07T09:21:53+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b124 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b125 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> .
+
+_:b82 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b83 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> .
+
+_:b123 dc:date "2024-03-07T09:22:00+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:failed .
+
+_:b81 dc:date "2024-03-07T09:21:53+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b122 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b123 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> .
+
+_:b80 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b81 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> .
+
+_:b121 dc:date "2024-03-07T09:21:59+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b120 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b121 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> .
+
+_:b79 dc:date "2024-03-07T09:21:53+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b78 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b79 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> .
+
+_:b119 dc:date "2024-03-07T09:21:59+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b77 dc:date "2024-03-07T09:21:52+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b118 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b119 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> .
+
+_:b76 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b77 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> .
+
+_:b117 dc:date "2024-03-07T09:21:59+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b75 dc:date "2024-03-07T09:21:52+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b116 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b117 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> .
+
+_:b74 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b75 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> .
+
+_:b115 dc:date "2024-03-07T09:21:58+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b73 dc:date "2024-03-07T09:21:52+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b114 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b115 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> .
+
+_:b72 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b73 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> .
+
+_:b113 dc:date "2024-03-07T09:21:58+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b71 dc:date "2024-03-07T09:21:51+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b112 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b113 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> .
+
+_:b70 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b71 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> .
+
+_:b111 dc:date "2024-03-07T09:21:58+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b110 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b111 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> .
+
+_:b69 dc:date "2024-03-07T09:21:51+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b68 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b69 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> .
+
+_:b109 dc:date "2024-03-07T09:21:57+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b67 dc:date "2024-03-07T09:21:51+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b108 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b109 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> .
+
+_:b66 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b67 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> .
+
+_:b107 dc:date "2024-03-07T09:21:57+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b65 dc:date "2024-03-07T09:21:51+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b106 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b107 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> .
+
+_:b64 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b65 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> .
+
+_:b105 dc:date "2024-03-07T09:21:57+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b63 dc:date "2024-03-07T09:21:50+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b104 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b105 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> .
+
+_:b62 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b63 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> .
+
+_:b103 dc:date "2024-03-07T09:21:57+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b61 dc:date "2024-03-07T09:21:50+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b102 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b103 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> .
+
+_:b60 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b61 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> .
+
+_:b101 dc:date "2024-03-07T09:21:56+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b100 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b101 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> .
+
+_:b59 dc:date "2024-03-07T09:21:50+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b58 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b59 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> .
+
+_:b57 dc:date "2024-03-07T09:21:49+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b56 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b57 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> .
+
+_:b55 dc:date "2024-03-07T09:21:49+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b54 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b55 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> .
+
+_:b53 dc:date "2024-03-07T09:21:49+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b52 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b53 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> .
+
+_:b51 dc:date "2024-03-07T09:21:48+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b50 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b51 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> .
+
+_:b49 dc:date "2024-03-07T09:21:48+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b48 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b49 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> .
+
+_:b47 dc:date "2024-03-07T09:21:48+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b46 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b47 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> .
+
+_:b45 dc:date "2024-03-07T09:21:47+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b44 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b45 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> .
+
+_:b43 dc:date "2024-03-07T09:21:47+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b42 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b43 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> .
+
+_:b41 dc:date "2024-03-07T09:21:47+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b40 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b41 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> .
+
+_:b39 dc:date "2024-03-07T09:21:47+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b38 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b39 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> .
+
+_:b37 dc:date "2024-03-07T09:21:46+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b36 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b37 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> .
+
+_:b35 dc:date "2024-03-07T09:21:46+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b34 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b35 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> .
+
+_:b33 dc:date "2024-03-07T09:21:46+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b32 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b33 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> .
+
+_:b31 dc:date "2024-03-07T09:21:46+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b30 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b31 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> .
+
+_:b29 dc:date "2024-03-07T09:21:45+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b28 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b29 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> .
+
+_:b27 dc:date "2024-03-07T09:21:45+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b26 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b27 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> .
+
+_:b25 dc:date "2024-03-07T09:21:45+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b24 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b25 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> .
+
+_:b23 dc:date "2024-03-07T09:21:44+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b22 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b23 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> .
+
+_:b21 dc:date "2024-03-07T09:21:44+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b20 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b21 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> .
+
+_:b19 dc:date "2024-03-07T09:21:44+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b18 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b19 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> .
+
+_:b17 dc:date "2024-03-07T09:21:43+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b16 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b17 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> .
+
+_:b15 dc:date "2024-03-07T09:21:43+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b14 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b15 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> .
+
+_:b13 dc:date "2024-03-07T09:21:43+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b12 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b13 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> .
+
+_:b11 dc:date "2024-03-07T09:21:42+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b10 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b11 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> .
+
+_:b171 dc:date "2024-03-07T09:22:06+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b170 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b171 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> .
+
+_:b169 dc:date "2024-03-07T09:22:06+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b168 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b169 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> .
+
+_:b167 dc:date "2024-03-07T09:22:06+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b166 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b167 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> .
+
+_:b165 dc:date "2024-03-07T09:22:06+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b164 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b165 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> .
+
+_:b163 dc:date "2024-03-07T09:22:05+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b162 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b163 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> .
+
+_:b161 dc:date "2024-03-07T09:22:05+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b160 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b161 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> .
+
+_:b159 dc:date "2024-03-07T09:22:05+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b158 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b159 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> .
+
+_:b157 dc:date "2024-03-07T09:22:04+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b156 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b157 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> .
+
+_:b155 dc:date "2024-03-07T09:22:04+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b9 dc:date "2024-03-07T09:21:42+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b154 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b155 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> .
+
+_:b8 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b9 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> .
+
+_:b153 dc:date "2024-03-07T09:22:04+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b7 dc:date "2024-03-07T09:21:42+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b152 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b153 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> .
+
+_:b6 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b7 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> .
+
+_:b151 dc:date "2024-03-07T09:22:04+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b5 dc:date "2024-03-07T09:21:42+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b150 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b151 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> .
+
+_:b4 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b5 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> .
+
+_:b3 dc:date "2024-03-07T09:21:41+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b2 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b3 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> .
+
+_:b1 dc:date "2024-03-07T09:21:41+01:00"^^xsd:dateTime ;
+  a earl:TestResult ;
+  earl:outcome earl:passed .
+
+_:b0 a earl:Assertion ;
+  earl:assertedBy <https://team.inria.fr/wimmics> ;
+  earl:mode earl:automatic ;
+  earl:result _:b1 ;
+  earl:subject <https://github.com/Wimmics/corese> ;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> .
+
