@@ -47,7 +47,7 @@ const rch = {
       title: "Signing RDF Graphs",
       authors: ["Jeremy J. Carroll"],
       date: "July 23, 2003",
-      href: "https://www.hpl.hp.com/techreports/2003/HPL-2003-142.pdf",
+      href: "https://web.archive.org/web/20230129125726/https://www.hpl.hp.com/techreports/2003/HPL-2003-142.pdf",
       publisher: "HP Laboratories Bristol",
       status: "unofficial"
     }
