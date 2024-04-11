@@ -5017,7 +5017,7 @@
     earl:subject <https://github.com/Wimmics/corese> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:failed
+      earl:outcome earl:passed
     ] ;
     earl:assertedBy <https://team.inria.fr/wimmics> ;
   ], [
@@ -5097,7 +5097,7 @@
     earl:subject <https://github.com/Wimmics/corese> ;
     earl:result [
       a earl:TestResult ;
-      earl:outcome earl:failed
+      earl:outcome earl:passed
     ] ;
     earl:assertedBy <https://team.inria.fr/wimmics> ;
   ], [
@@ -7027,7 +7027,7 @@
   doap:homepage <https://project.inria.fr/corese/> ;
   doap:description "Software platform implementing and extending the standards of the Semantic Web."@en ;
   doap:programming-language "Java" ;
-  doap:release [doap:revision "#1606452"] .
+  doap:release [doap:revision "#fc18259"] .
 
 <https://team.inria.fr/wimmics> a foaf:Person, earl:Assertor ;
   foaf:name "Wimmics Team" .
