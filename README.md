@@ -12,6 +12,11 @@ Editorial changes that improve the readability of the spec or correct spelling o
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
+## Errata
+
+ * [Errata on the spec](https://w3c.github.io/rdf-canon/errata/)
+ * [Submit an erratum](https://github.com/w3c/rdf-canon/issues/new)
+
 ## Test Suite and Reports
 
 * [Test Suite](https://w3c.github.io/rdf-canon/tests/)
