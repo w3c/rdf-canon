@@ -1,0 +1,810 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> foaf:primaryTopic <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+foaf:maker <https://github.com/dcdpr> ;
+dc:issued "2024-05-20T02:31:43Z"^^xsd:dateTime .
+
+<https://github.com/dcdpr/rdf-canonicalization-cpp> a earl:TestSubject, doap:Project, earl:Software ;
+doap:name "rdf-canonicalization-cpp" ;
+doap:description "A RDF Dataset Canonicalization (RDFC-1.0) Implementation for C++"@en ;
+doap:homepage <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+doap:license <https://github.com/dcdpr/rdf-canonicalization-cpp/blob/master/LICENSE> ;
+doap:creator <https://github.com/dcdpr> ;
+doap:developer <https://github.com/dcdpr> ;
+doap:developer <https://github.com/danpape> ;
+doap:organization <https://github.com/dcdpr> ;
+doap:programming-language "C++" ;
+doap:release [ a doap:Version ;
+doap:name "rdf-canonicalization-cpp 1.0.0" ;
+doap:created "2024-05-20"^^xsd:date ; doap:revision "1.0.0" ;
+] .
+
+<https://github.com/danpape> a foaf:Person, earl:Assertor ;
+foaf:name "Dan Pape" ;
+foaf:homepage <https://github.com/danpape/> ;
+.
+
+<https://github.com/dcdpr> a foaf:Organization, earl:Assertor ;
+foaf:name "Digital Contract Design, LLC" ;
+foaf:homepage <https://github.com/dcdpr/> ;
+.
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+[ a earl:Assertion ;
+earl:assertedBy <https://github.com/dcdpr> ;
+earl:subject <https://github.com/dcdpr/rdf-canonicalization-cpp> ;
+earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m> ;
+earl:mode earl:automatic ;
+earl:result [ a earl:TestResult ;
+earl:outcome earl:passed ;
+dc:date "2024-05-20T02:31:43Z"^^xsd:dateTime ] ] .
+
+
