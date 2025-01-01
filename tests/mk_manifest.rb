@@ -242,7 +242,7 @@ options = {
 OPT_ARGS = [
   ["--format", "-f",  GetoptLong::REQUIRED_ARGUMENT,"Output format, default #{options[:format].inspect}"],
   ["--output", "-o",  GetoptLong::REQUIRED_ARGUMENT,"Output to the specified file path"],
-  ["--quiet",         GetoptLong::NO_ARGUMENT,      "Supress most output other than progress indicators"],
+  ["--quiet",         GetoptLong::NO_ARGUMENT,      "Suppress most output other than progress indicators"],
   ["--touch",         GetoptLong::NO_ARGUMENT,      "Create referenced files and directories if missing"],
   ["--help", "-?",    GetoptLong::NO_ARGUMENT,      "This message"]
 ]
