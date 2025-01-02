@@ -1,7 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     bcp47_spec (0.2.1)
+    bigdecimal (3.1.9)
     builder (3.2.4)
     connection_pool (2.4.1)
     csv (3.2.8)
@@ -42,6 +44,7 @@ GEM
     multi_json (1.15.0)
     net-http-persistent (4.0.2)
       connection_pool (~> 2.2)
+    ostruct (0.6.1)
     rack (3.0.9.1)
     rake (13.1.0)
     rdf (3.3.1)
@@ -84,14 +87,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  base64
+  bigdecimal
   csv
   earl-report (>= 0.9)
   getoptlong
   htmlbeautifier (~> 1.4)
+  ostruct
   rake
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.4.1p0
 
 BUNDLED WITH
-   2.5.6
+   2.6.2
