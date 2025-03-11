@@ -135,7 +135,7 @@
       "name": "earl-report-0.9.1",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-01-02"
+        "@value": "2025-03-11"
       },
       "revision": "0.9.1"
     },
@@ -160,7 +160,8 @@
     "rdfjs-c14n-report.ttl",
     "ruby-earl.ttl",
     "rust-sophia-rdfc10.ttl",
-    "rust-zkp-ld-earl.ttl"
+    "rust-zkp-ld-earl.ttl",
+    "titanium-rdf-canon-earl.ttl"
   ],
   "testSubjects": [
     {
@@ -258,6 +259,41 @@
       "release": {
         "@id": "_:b516",
         "revision": "4.0.1"
+      }
+    },
+    {
+      "@id": "https://github.com/filip26/titanium-rdf-canon",
+      "@type": [
+        "doap:Project",
+        "TestSubject",
+        "Software"
+      ],
+      "name": "Titanium RDFC",
+      "developer": [
+        {
+          "@id": "https://github.com/filip26",
+          "@type": [
+            "foaf:Person",
+            "Assertor"
+          ],
+          "foaf:name": "Filip Kolarik",
+          "foaf:homepage": {
+            "@id": "https://github.com/filip26",
+            "@type": [
+              "foaf:Person",
+              "Assertor"
+            ],
+            "foaf:name": "Filip Kolarik",
+            "foaf:homepage": "https://github.com/filip26"
+          }
+        }
+      ],
+      "homepage": "https://github.com/filip26/titanium-rdf-canon",
+      "doapDesc": "A RDF Dataset Canonicalization (RDFC 1.0) in Java",
+      "language": "Java",
+      "release": {
+        "@id": "_:b1553",
+        "revision": "2.0.0"
       }
     },
     {
@@ -479,6 +515,19 @@
               }
             },
             {
+              "@id": "_:b1554",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1555",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1208",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -608,6 +657,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b520",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1556",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1557",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -747,6 +809,19 @@
               }
             },
             {
+              "@id": "_:b1558",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1559",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1212",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -876,6 +951,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b524",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1560",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1561",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1015,6 +1103,19 @@
               }
             },
             {
+              "@id": "_:b1562",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1563",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1216",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -1144,6 +1245,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b528",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1564",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1565",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1283,6 +1397,19 @@
               }
             },
             {
+              "@id": "_:b1566",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1567",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1220",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -1412,6 +1539,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b532",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1568",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1569",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1551,6 +1691,19 @@
               }
             },
             {
+              "@id": "_:b1570",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1571",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1224",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -1680,6 +1833,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b536",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1572",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1573",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1819,6 +1985,19 @@
               }
             },
             {
+              "@id": "_:b1574",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1575",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1228",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -1948,6 +2127,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b540",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1576",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1577",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2087,6 +2279,19 @@
               }
             },
             {
+              "@id": "_:b1578",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1579",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1232",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -2216,6 +2421,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b544",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1580",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1581",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2355,6 +2573,19 @@
               }
             },
             {
+              "@id": "_:b1582",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1583",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1236",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -2484,6 +2715,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b548",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1584",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1585",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2623,6 +2867,19 @@
               }
             },
             {
+              "@id": "_:b1586",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1587",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1240",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -2752,6 +3009,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b552",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1588",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1589",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2891,6 +3161,19 @@
               }
             },
             {
+              "@id": "_:b1590",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1591",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1244",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -3020,6 +3303,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b556",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1592",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1593",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3159,6 +3455,19 @@
               }
             },
             {
+              "@id": "_:b1594",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1595",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1248",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -3288,6 +3597,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b560",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1596",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1597",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3427,6 +3749,19 @@
               }
             },
             {
+              "@id": "_:b1598",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1599",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1252",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -3556,6 +3891,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b564",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1600",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1601",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3695,6 +4043,19 @@
               }
             },
             {
+              "@id": "_:b1602",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1603",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1256",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -3824,6 +4185,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b568",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1604",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1605",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3963,6 +4337,19 @@
               }
             },
             {
+              "@id": "_:b1606",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1607",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1260",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -4092,6 +4479,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b572",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1608",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1609",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4231,6 +4631,19 @@
               }
             },
             {
+              "@id": "_:b1610",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1611",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1264",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -4360,6 +4773,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b576",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1612",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1613",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4499,6 +4925,19 @@
               }
             },
             {
+              "@id": "_:b1614",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1615",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1268",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -4628,6 +5067,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b580",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1616",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1617",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4767,6 +5219,19 @@
               }
             },
             {
+              "@id": "_:b1618",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1619",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1272",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -4896,6 +5361,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b584",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1620",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1621",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5035,6 +5513,19 @@
               }
             },
             {
+              "@id": "_:b1622",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1623",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1276",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -5164,6 +5655,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b588",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1624",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1625",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5303,6 +5807,19 @@
               }
             },
             {
+              "@id": "_:b1626",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1627",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1280",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -5432,6 +5949,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b592",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1628",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1629",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5571,6 +6101,19 @@
               }
             },
             {
+              "@id": "_:b1630",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1631",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1284",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -5700,6 +6243,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b596",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1632",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1633",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5839,6 +6395,19 @@
               }
             },
             {
+              "@id": "_:b1634",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1635",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1288",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -5973,6 +6542,19 @@
               }
             },
             {
+              "@id": "_:b1636",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1637",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1290",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -6102,6 +6684,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b602",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1638",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1639",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6242,6 +6837,19 @@
               }
             },
             {
+              "@id": "_:b1640",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1641",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1294",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -6372,6 +6980,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b606",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1642",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1643",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6512,6 +7133,19 @@
               }
             },
             {
+              "@id": "_:b1644",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1645",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1298",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -6641,6 +7275,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b610",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1646",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1647",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6780,6 +7427,19 @@
               }
             },
             {
+              "@id": "_:b1648",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1649",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1302",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -6914,6 +7574,19 @@
               }
             },
             {
+              "@id": "_:b1650",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1651",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1304",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -7043,6 +7716,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b616",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1652",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1653",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7183,6 +7869,19 @@
               }
             },
             {
+              "@id": "_:b1654",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1655",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1308",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -7313,6 +8012,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b620",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1656",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1657",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7452,6 +8164,19 @@
               }
             },
             {
+              "@id": "_:b1658",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1659",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1312",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -7581,6 +8306,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b624",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1660",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1661",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7720,6 +8458,19 @@
               }
             },
             {
+              "@id": "_:b1662",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1663",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1316",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -7849,6 +8600,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b628",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1664",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1665",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7988,6 +8752,19 @@
               }
             },
             {
+              "@id": "_:b1666",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1667",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1320",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -8117,6 +8894,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b632",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1668",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1669",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8256,6 +9046,19 @@
               }
             },
             {
+              "@id": "_:b1670",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1671",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1324",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -8385,6 +9188,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b636",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1672",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1673",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8524,6 +9340,19 @@
               }
             },
             {
+              "@id": "_:b1674",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1675",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1328",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -8653,6 +9482,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b640",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1676",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1677",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8792,6 +9634,19 @@
               }
             },
             {
+              "@id": "_:b1678",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1679",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1332",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -8926,6 +9781,19 @@
               }
             },
             {
+              "@id": "_:b1680",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1681",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1334",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -9055,6 +9923,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b646",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1682",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1683",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9195,6 +10076,19 @@
               }
             },
             {
+              "@id": "_:b1684",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1685",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1338",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -9325,6 +10219,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b650",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1686",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1687",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9464,6 +10371,19 @@
               }
             },
             {
+              "@id": "_:b1688",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1689",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1342",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -9593,6 +10513,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b654",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1690",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1691",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9732,6 +10665,19 @@
               }
             },
             {
+              "@id": "_:b1692",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1693",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1346",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -9861,6 +10807,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b658",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1694",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1695",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10000,6 +10959,19 @@
               }
             },
             {
+              "@id": "_:b1696",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1697",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1350",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -10129,6 +11101,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b662",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1698",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1699",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10269,6 +11254,19 @@
               }
             },
             {
+              "@id": "_:b1700",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1701",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1354",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -10399,6 +11397,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b666",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1702",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1703",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10539,6 +11550,19 @@
               }
             },
             {
+              "@id": "_:b1704",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1705",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1358",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -10669,6 +11693,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b670",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1706",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1707",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10809,6 +11846,19 @@
               }
             },
             {
+              "@id": "_:b1708",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1709",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1362",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -10939,6 +11989,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b674",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1710",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1711",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11079,6 +12142,19 @@
               }
             },
             {
+              "@id": "_:b1712",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1713",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1366",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -11214,6 +12290,19 @@
               }
             },
             {
+              "@id": "_:b1714",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1715",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1368",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -11343,6 +12432,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b680",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1716",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1717",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11484,6 +12586,19 @@
               }
             },
             {
+              "@id": "_:b1718",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1719",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1372",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -11615,6 +12730,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b684",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1720",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1721",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11755,6 +12883,19 @@
               }
             },
             {
+              "@id": "_:b1722",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1723",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b1376",
               "@type": "Assertion",
               "subject": "https://github.com/pchampin/sophia_rs",
@@ -11885,6 +13026,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b688",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1724",
+              "@type": "Assertion",
+              "subject": "https://github.com/filip26/titanium-rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
+              "assertedBy": "https://apicatalog.com",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1725",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
