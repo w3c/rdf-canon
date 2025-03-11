@@ -11,7 +11,7 @@
 
 <https://github.com/filip26/titanium-rdf-canon> a doap:Project, earl:TestSubject, earl:Software ;
   doap:name "Titanium RDFC" ;
-  doap:description "RDF Dataset Canonicalization (RDFC 1.0) in Java"@en ;
+  doap:description "A RDF Dataset Canonicalization (RDFC 1.0) in Java"@en ;
   doap:organization <https://apicatalog.com> ;
   doap:developer <https://github.com/filip26> ;
   doap:homepage <https://github.com/filip26/titanium-rdf-canon> ;
