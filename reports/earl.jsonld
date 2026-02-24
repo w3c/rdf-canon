@@ -135,7 +135,7 @@
       "name": "earl-report-0.9.1",
       "doap:created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-11"
+        "@value": "2026-02-24"
       },
       "revision": "0.9.1"
     },
@@ -161,7 +161,8 @@
     "ruby-earl.ttl",
     "rust-sophia-rdfc10.ttl",
     "rust-zkp-ld-earl.ttl",
-    "titanium-rdf-canon-earl.ttl"
+    "titanium-rdf-canon-earl.ttl",
+    "youctagh-rdfcanon-earl.ttl"
   ],
   "testSubjects": [
     {
@@ -188,6 +189,41 @@
       "release": {
         "@id": "https://github.com/Wimmics/corese/commit/fc1825918302fec47852dc1f73ad1175c84fd7d1",
         "revision": "#fc18259"
+      }
+    },
+    {
+      "@id": "https://github.com/YoucTagh/rdf-canon",
+      "@type": [
+        "doap:Project",
+        "TestSubject",
+        "Software"
+      ],
+      "name": "YoucTagh RDF Canonicalization",
+      "developer": [
+        {
+          "@id": "https://youctagh.github.io/",
+          "@type": [
+            "foaf:Person",
+            "Assertor"
+          ],
+          "foaf:name": "Yousouf Taghzouti",
+          "foaf:homepage": {
+            "@id": "https://youctagh.github.io/",
+            "@type": [
+              "foaf:Person",
+              "Assertor"
+            ],
+            "foaf:name": "Yousouf Taghzouti",
+            "foaf:homepage": "https://youctagh.github.io/"
+          }
+        }
+      ],
+      "homepage": "https://github.com/YoucTagh/rdf-canon",
+      "doapDesc": "An implementation of RDF Dataset Canonicalization (RDFC 1.0) in Python",
+      "language": "Python",
+      "release": {
+        "@id": "_:b1726",
+        "revision": "1.0.0"
       }
     },
     {
@@ -489,6 +525,19 @@
               }
             },
             {
+              "@id": "_:b1727",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test001c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1728",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b690",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -631,6 +680,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b341",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1729",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test002c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1730",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -783,6 +845,19 @@
               }
             },
             {
+              "@id": "_:b1731",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1732",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b694",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -925,6 +1000,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b335",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1733",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test003m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1734",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1077,6 +1165,19 @@
               }
             },
             {
+              "@id": "_:b1735",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1736",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b696",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -1219,6 +1320,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b311",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1737",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test004m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1738",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1371,6 +1485,19 @@
               }
             },
             {
+              "@id": "_:b1739",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1740",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b698",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -1513,6 +1640,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b307",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1741",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test005m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1742",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1665,6 +1805,19 @@
               }
             },
             {
+              "@id": "_:b1743",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test006c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1744",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b700",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -1807,6 +1960,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b303",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1745",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test008c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1746",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -1959,6 +2125,19 @@
               }
             },
             {
+              "@id": "_:b1747",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test009c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1748",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b704",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -2101,6 +2280,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b299",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1749",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test010c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1750",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2253,6 +2445,19 @@
               }
             },
             {
+              "@id": "_:b1751",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test011c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1752",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b708",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -2395,6 +2600,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b295",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1753",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test013c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1754",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2547,6 +2765,19 @@
               }
             },
             {
+              "@id": "_:b1755",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test014c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1756",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b712",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -2689,6 +2920,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b291",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1757",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1758",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -2841,6 +3085,19 @@
               }
             },
             {
+              "@id": "_:b1759",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test016m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1760",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b826",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -2983,6 +3240,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b287",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1761",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1762",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3135,6 +3405,19 @@
               }
             },
             {
+              "@id": "_:b1763",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test017m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1764",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b828",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -3277,6 +3560,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b283",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1765",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1766",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3429,6 +3725,19 @@
               }
             },
             {
+              "@id": "_:b1767",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test018m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1768",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b830",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -3571,6 +3880,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b279",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1769",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test019c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1770",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -3723,6 +4045,19 @@
               }
             },
             {
+              "@id": "_:b1771",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1772",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b722",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -3865,6 +4200,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b275",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1773",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test020m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1774",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4017,6 +4365,19 @@
               }
             },
             {
+              "@id": "_:b1775",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test021c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1776",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b724",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -4159,6 +4520,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b271",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1777",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test022c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1778",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4311,6 +4685,19 @@
               }
             },
             {
+              "@id": "_:b1779",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test023c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1780",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b728",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -4453,6 +4840,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b267",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1781",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test024c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1782",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4605,6 +5005,19 @@
               }
             },
             {
+              "@id": "_:b1783",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test025c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1784",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b732",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -4747,6 +5160,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b263",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1785",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test026c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1786",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -4899,6 +5325,19 @@
               }
             },
             {
+              "@id": "_:b1787",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test027c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1788",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b736",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -5041,6 +5480,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b255",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1789",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test028c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1790",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5193,6 +5645,19 @@
               }
             },
             {
+              "@id": "_:b1791",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test029c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1792",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b740",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -5335,6 +5800,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b247",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1793",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1794",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5487,6 +5965,19 @@
               }
             },
             {
+              "@id": "_:b1795",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test030m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1796",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b834",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -5629,6 +6120,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b239",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1797",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test033c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1798",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -5781,6 +6285,19 @@
               }
             },
             {
+              "@id": "_:b1799",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test034c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1800",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b746",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -5923,6 +6440,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b231",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1801",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test035c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1802",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6075,6 +6605,19 @@
               }
             },
             {
+              "@id": "_:b1803",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test036c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1804",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b750",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -6217,6 +6760,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b223",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1805",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test038c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1806",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6369,6 +6925,19 @@
               }
             },
             {
+              "@id": "_:b1807",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test039c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1808",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b754",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -6516,6 +7085,19 @@
               }
             },
             {
+              "@id": "_:b1809",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test040c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1810",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b756",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -6658,6 +7240,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b211",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1811",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test043c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1812",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -6811,6 +7406,19 @@
               }
             },
             {
+              "@id": "_:b1813",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test044c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1814",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b760",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -6954,6 +7562,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b203",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1815",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test045c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1816",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7107,6 +7728,19 @@
               }
             },
             {
+              "@id": "_:b1817",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test046c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1818",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b764",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -7249,6 +7883,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b195",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1819",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1820",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7401,6 +8048,19 @@
               }
             },
             {
+              "@id": "_:b1821",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test047m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1822",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b836",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -7548,6 +8208,19 @@
               }
             },
             {
+              "@id": "_:b1823",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1824",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b768",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -7690,6 +8363,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b183",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1825",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test048m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1826",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -7843,6 +8529,19 @@
               }
             },
             {
+              "@id": "_:b1827",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1828",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b770",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -7986,6 +8685,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b257",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1829",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test053m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1830",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8138,6 +8850,19 @@
               }
             },
             {
+              "@id": "_:b1831",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test054c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1832",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b772",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -8280,6 +9005,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b249",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1833",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1834",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8432,6 +9170,19 @@
               }
             },
             {
+              "@id": "_:b1835",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test055m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1836",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b842",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -8574,6 +9325,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b241",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1837",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1838",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -8726,6 +9490,19 @@
               }
             },
             {
+              "@id": "_:b1839",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test056m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1840",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b844",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -8868,6 +9645,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b233",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1841",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1842",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9020,6 +9810,19 @@
               }
             },
             {
+              "@id": "_:b1843",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test057m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1844",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b846",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -9162,6 +9965,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b225",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1845",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test058c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1846",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9314,6 +10130,19 @@
               }
             },
             {
+              "@id": "_:b1847",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test059c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1848",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b782",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -9456,6 +10285,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b217",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1849",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1850",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -9608,6 +10450,19 @@
               }
             },
             {
+              "@id": "_:b1851",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test060m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1852",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b848",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -9755,6 +10610,19 @@
               }
             },
             {
+              "@id": "_:b1853",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test061c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1854",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b786",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -9897,6 +10765,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b205",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1855",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test062c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1856",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10050,6 +10931,19 @@
               }
             },
             {
+              "@id": "_:b1857",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1858",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b790",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -10193,6 +11087,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b197",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1859",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test063m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1860",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10345,6 +11252,19 @@
               }
             },
             {
+              "@id": "_:b1861",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test064c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1862",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b792",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -10487,6 +11407,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b189",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1863",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test065c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1864",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10639,6 +11572,19 @@
               }
             },
             {
+              "@id": "_:b1865",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test066c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1866",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b796",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -10781,6 +11727,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b181",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1867",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test067c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1868",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -10933,6 +11892,19 @@
               }
             },
             {
+              "@id": "_:b1869",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test068c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1870",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b800",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -11075,6 +12047,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b177",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1871",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test069c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1872",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11228,6 +12213,19 @@
               }
             },
             {
+              "@id": "_:b1873",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1874",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b804",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -11371,6 +12369,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b173",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1875",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test070m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1876",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11524,6 +12535,19 @@
               }
             },
             {
+              "@id": "_:b1877",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1878",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b806",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -11667,6 +12691,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b333",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1879",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test071m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1880",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -11820,6 +12857,19 @@
               }
             },
             {
+              "@id": "_:b1881",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1882",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b808",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -11963,6 +13013,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b327",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1883",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test072m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1884",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -12116,6 +13179,19 @@
               }
             },
             {
+              "@id": "_:b1885",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1886",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b810",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -12264,6 +13340,19 @@
               }
             },
             {
+              "@id": "_:b1887",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test073m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1888",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b858",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -12406,6 +13495,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b321",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1889",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test074c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1890",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -12560,6 +13662,19 @@
               }
             },
             {
+              "@id": "_:b1891",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1892",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b814",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -12704,6 +13819,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b317",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1893",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test075m",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1894",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
@@ -12857,6 +13985,19 @@
               }
             },
             {
+              "@id": "_:b1895",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test076c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1896",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
               "@id": "_:b816",
               "@type": "Assertion",
               "subject": "https://github.com/dcdpr/rdf-canonicalization-cpp",
@@ -13000,6 +14141,19 @@
               "mode": "earl:automatic",
               "result": {
                 "@id": "_:b313",
+                "@type": "TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@id": "_:b1897",
+              "@type": "Assertion",
+              "subject": "https://github.com/YoucTagh/rdf-canon",
+              "test": "https://w3c.github.io/rdf-canon/tests/manifest#test077c",
+              "assertedBy": "https://youctagh.github.io/",
+              "mode": "earl:automatic",
+              "result": {
+                "@id": "_:b1898",
                 "@type": "TestResult",
                 "outcome": "earl:passed"
               }
