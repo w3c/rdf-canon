@@ -64,3 +64,4 @@ test074,poison - Clique Graph,A 10-node Clique of blank node resources all inter
 test075,blank node - diamond (uses SHA-384),Same as test020 except for using SHA-384,0,Approved,SHA384,TRUE,TRUE
 test076,duplicate ground triple in input,The duplicate triples must be removed,0,Approved,,TRUE,FALSE
 test077,duplicate triple with blank node in input,The duplicate triples must be removed,0,Approved,,TRUE,FALSE
+test078,code point order,Sorting must use Unicode code point order; U+FF21 sorts before U+1F600 although UTF-16 code unit order puts it after,0,,,TRUE,TRUE

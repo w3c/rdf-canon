@@ -1,0 +1,5 @@
+<urn:ex:s> <urn:ex:p> _:e0 .
+<urn:ex:s> <urn:ex:p> _:e1 .
+_:e0 <urn:ex:q> "\uFF21" .
+_:e0 <urn:ex:q> "\U0001F600" .
+_:e1 <urn:ex:q> "e" .

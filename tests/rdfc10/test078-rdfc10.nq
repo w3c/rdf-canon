@@ -1,0 +1,5 @@
+<urn:ex:s> <urn:ex:p> _:c14n0 .
+<urn:ex:s> <urn:ex:p> _:c14n1 .
+_:c14n0 <urn:ex:q> "Ａ" .
+_:c14n0 <urn:ex:q> "😀" .
+_:c14n1 <urn:ex:q> "e" .
