@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4.1
+          ruby-version: '3.4'
       - name: Install dependencies
         run:  bundle install
       - name: Generate Test Manifests
@@ -26,6 +26,7 @@ jobs:
       - name: Generate Report
         run:  (cd reports; rake)
       - uses: stefanzweifel/git-auto-commit-action@v4
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
         with:
           commit_message: Automated report generation
           commit_user_name: Report generation bot
