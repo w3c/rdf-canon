@@ -1,0 +1,1149 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/Accredifysg/PHP-RDF-Canonicalize> a earl:TestSubject, doap:Project, earl:Software;
+  dc:title "PHP-RDF-Canonicalize";
+  dc:creator <https://github.com/Accredifysg>;
+  doap:description "A PHP implementation of the W3C RDF Dataset Canonicalization (RDFC-1.0) algorithm."@en;
+  doap:developer <https://github.com/Accredifysg>;
+  doap:homepage <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  doap:implements <https://www.w3.org/TR/rdf-canon/>;
+  doap:license <https://github.com/Accredifysg/PHP-RDF-Canonicalize/blob/main/LICENSE>;
+  doap:name "PHP-RDF-Canonicalize";
+  doap:programming-language "PHP";
+  doap:download-page <https://packagist.org/packages/accredifysg/php-rdf-canonicalize>;
+  doap:release [
+    doap:created "2026-10-29"^^xsd:date;
+    doap:name "PHP-RDF-Canonicalize 1.0.1";
+    doap:revision "1.0.1"
+  ] .
+
+<https://github.com/Accredifysg> a foaf:Organization, earl:Assertor;
+  foaf:homepage <https://github.com/Accredifysg>;
+  foaf:name "Accredify" .
+
+<> foaf:primaryTopic <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  dc:issued "2026-10-29T07:19:35Z"^^xsd:dateTime;
+  foaf:maker <https://github.com/Accredifysg> .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test001c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test002c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test003m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test004m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test005m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test006c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test008c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test009c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test010c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test011c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test013c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test014c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test016m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test017m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test018m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test019c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test020m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test021c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test022c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test023c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test024c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test025c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test026c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test027c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test028c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test029c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test030m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test033c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test034c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test035c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test036c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test038c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test039c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test040c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test043c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test044c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test045c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test046c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test047m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test048m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test053m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test054c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test055m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test056m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test057m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test058c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test059c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test060m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test061c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test062c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test063m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test064c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test065c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test066c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test067c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test068c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test069c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test070m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test071m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test072m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test073m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test074c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test075m>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test076c>
+] .
+
+[
+  a earl:Assertion;
+  earl:assertedBy <https://github.com/Accredifysg>;
+  earl:mode earl:automatic;
+  earl:result [
+    a earl:TestResult;
+    dc:date "2026-10-29T07:19:35Z"^^xsd:dateTime;
+    earl:outcome earl:passed
+  ];
+  earl:subject <https://github.com/Accredifysg/PHP-RDF-Canonicalize>;
+  earl:test <https://w3c.github.io/rdf-canon/tests/manifest#test077c>
+] .
+
